@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Trivial notes</title><link>/</link><description></description><lastBuildDate>Tue, 23 Mar 2021 12:00:00 +0100</lastBuildDate><item><title>Hello World</title><link>/hello-world.html</link><description>&lt;p&gt;C'est le premier post de ce blog&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;hello world&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anthony Le Goff</dc:creator><pubDate>Tue, 23 Mar 2021 11:59:00 +0100</pubDate><guid isPermaLink="false">tag:None,2021-03-23:/hello-world.html</guid><category>Inclassable</category><category>Premier</category><category>Inclassable</category></item></channel></rss>
