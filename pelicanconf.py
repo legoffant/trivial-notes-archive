@@ -24,8 +24,7 @@ STATIC_PATHS = ['img']
 # Blogroll
 LINKS = (('Pelican', 'https://getpelican.com/'),
          ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         
+         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
