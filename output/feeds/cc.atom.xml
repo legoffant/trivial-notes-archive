@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - C/C++</title><link href="/" rel="alternate"></link><link href="/feeds/cc.atom.xml" rel="self"></link><id>/</id><updated>2021-03-24T21:08:00+01:00</updated><entry><title>Apprendre à programmer en langage C/C++</title><link href="/apprendre-a-programmer-en-langage-cc.html" rel="alternate"></link><published>2021-03-24T21:07:00+01:00</published><updated>2021-03-24T21:08:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2021-03-24:/apprendre-a-programmer-en-langage-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Vous n'avez pas les bases comme dirait Orelsan. Alors on reprend depuis le début. Tout le monde n'a pas la possibilité de faire une école d'ingénieur ou des écoles plus specialisé tels que Epitech ou 42. Je crois que le passionné en informatique soit capable de ce former seul grâce aux ressources sur le web et une bonne librairie. &lt;/p&gt;
+&lt;p&gt;En vérité la majorité des hackers et informaticiens sont autodidacte et continu à apprendre tout les jours. L'une des compétences les plus prisés de ce siècle se fait par formation sur le web. Encore faut-il trouver du contenu pertinent. Car on peut tomber sur de la mauvaise qualité ou encore des problèmes de mise à jours de la norme.&lt;/p&gt;
+&lt;p&gt;Le rendez-vous de tout les passionnés d'informatique passe par l'ancien site du Zéro renommé &lt;a href="https://openclassrooms.com/fr/"&gt;openclassrooms&lt;/a&gt; qui a longtemps servi de référence sur ces cours d'informatique. Si je ne savais pas par ou commencer j'y jeterai un oeil comme ressource crédible francophone. Il ne faut pas occulter le site &lt;a href="https://www.developpez.net/"&gt;developpez.net&lt;/a&gt; ou l'on trouve bien de l'aide pour la formation. Son forum était l'ancien stackoverflow français.&lt;/p&gt;
+&lt;p&gt;On se demande quand on commence la programmation par quel langage que je devrais commencer. Il faut savoir qu'un développeur maitrise plusieurs langage mais il faut bien commencer par en choisir un. &lt;/p&gt;
+&lt;p&gt;Ma stratégie conciste à apprendre le maitre langage, celui dont tous dérive pour connaitre les bases. En même temps je recherche à créer des logiciels libres et l'outil indispensable pour le faire est gcc sous un environnement GNU/Linux. Donc mon choix se porte en tout premier lieu sur le language C. Celui-ci est à la base de système d'exploitation de type UNIX. On le retrouve egalement sur Arduino le microcontrolleur. En réalité dans les systèmes embarqués bien souvent on retrouve du Linux avec du C/C++. Si vous choisissez d'apprendre la programmation sur Arduino en premier lieu on ne vous en voudra pas. On peut rapidement acquérir des bases solides sur des concepts tels que les variables, fonctions, conditions et boucles. Des concepts plus avancées de programmation seront plutôt développé en C tels que les pointeurs ou structures. Enfin on peut aborder la programmation orienté-objet sous C++.&lt;/p&gt;
+&lt;p&gt;La gestion de la mémoire en langage C apporte quelques difficultés face à des concurrents tel que Python qui utilise le ramasse-miette pour la gérée. On doit ce préocuper de celle-ci en langage C/C++ permettant d'avoir de meilleurs performances. Malgré tout le langage C est relativement facile à apprendre tel que le prouve son utilisation sous Arduino. &lt;/p&gt;
+&lt;p&gt;Parmis les ressources que je propose je préviligie ce qui sont moins gourmande en mémoire ainsi que leur possibilité d'adapter au besoin de chaque utilisateur. J'utilise une machine GNU/Linux qui est plus pratique pour le métier de développeur.&lt;/p&gt;
+&lt;p&gt;Pour créer un programme en C il vous faut un éditeur de texte pour programmeur tel que Vim qui est en natif sur toutes machine GNU/Linux et un compilateur comme gcc.&lt;/p&gt;
+&lt;p&gt;On ouvre un terminal et dans l'inviter de commande, le prompt on tape:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Le terminal nous renvoi la version de gcc ici la version 10.2.0 s'il est installé sur l'ordinateur.&lt;/p&gt;
+&lt;p&gt;On change de répertoire vers celui de travail et on crée un dossier src:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir src
+&lt;span class="nb"&gt;cd&lt;/span&gt; src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On va créer un fichier en C avec Vim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim hello.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans Vim on a le fichier hello.c et on va écrire un simple programme qui affiche "hello world" en C, il faut basculer en mode insertion en appuyant sur la touche &lt;code&gt;i&lt;/code&gt;puis écrire ce programme:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+    &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello world&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour sauvegarder et quitter Vim on tape &lt;code&gt;:wq!&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Enfin on va compiler le programme. Rappel: c'est l'étape ou le programme va être traduit en langage machine à base de 0 et de 1 compréhensible pour le micro-processeur:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc hello.c -o hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;L'opération de compilation va créer un fichier binaire executable nommé "hello" visible en faisant un &lt;code&gt;ls&lt;/code&gt; dans le répertoire de travail.
+Il reste plus qu'à lancer le programme généré par cette commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Qui affiche bien dans le terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hello world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;C'est tout ce que vous avez besoin pour commencer à coder en C. Retenez Vim + GCC et puis après quelques experiences Git et gdb pour approfondir le sujet.&lt;/p&gt;
+&lt;p&gt;Je vous recommande les meilleurs lectures sur le sujet pour apprendre librement la programmation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://framabook.org/le-c-en-20-heures-2/"&gt;Le C en 20 heures; Berthomier, Schang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rocq.inria.fr/secret/Anne.Canteaut/COURS_C/cours.pdf"&gt;Programmation en langage C, Inria projet codes; Canteaut&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zestedesavoir.com/tutoriels/755/le-langage-c-1/"&gt;Langage C, Zeste du savoir&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="C/C++"></category><category term="C"></category><category term="C++"></category><category term="programmation"></category><category term="livres"></category></entry></feed>
