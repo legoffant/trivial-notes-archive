@@ -1,4 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Trivial notes - Anthony Le Goff</title><link>/</link><description></description><lastBuildDate>Tue, 23 Mar 2021 12:00:00 +0100</lastBuildDate><item><title>Hello World</title><link>/hello-world.html</link><description>&lt;p&gt;C'est le premier post de ce blog&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;hello world&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anthony Le Goff</dc:creator><pubDate>Tue, 23 Mar 2021 11:59:00 +0100</pubDate><guid isPermaLink="false">tag:None,2021-03-23:/hello-world.html</guid><category>Inclassable</category><category>Premier</category><category>Inclassable</category></item></channel></rss>
+<rss version="2.0"><channel><title>Trivial notes - Anthony Le Goff</title><link>/</link><description></description><lastBuildDate>Wed, 24 Mar 2021 21:08:00 +0100</lastBuildDate><item><title>Apprendre à programmer en langage C/C++</title><link>/apprendre-a-programmer-en-langage-cc.html</link><description>&lt;p&gt;Vous n'avez pas les bases comme dirait Orelsan. Alors on reprend depuis le début. Tout le monde n'a pas la possibilité de faire une école d'ingénieur ou des écoles plus specialisé tels que Epitech ou 42. Je crois que le passionné en informatique soit capable de ce former seul grâce aux ressources sur le web et une bonne librairie. &lt;/p&gt;
+&lt;p&gt;En vérité la majorité des hackers et informaticiens sont autodidacte et continu à apprendre tout les jours. L'une des compétences les plus prisés de ce siècle se fait par formation sur le web. Encore faut-il trouver du contenu pertinent. Car on peut tomber sur de la mauvaise qualité ou encore des problèmes de mise à jours de la norme.&lt;/p&gt;
+&lt;p&gt;Le rendez-vous de tout les passionnés d'informatique passe par l'ancien site du Zéro renommé &lt;a href="https://openclassrooms.com/fr/"&gt;openclassrooms&lt;/a&gt; qui a longtemps servi de référence sur ces cours d'informatique. Si je ne savais pas par ou commencer j'y jeterai un oeil comme ressource crédible francophone. Il ne faut pas occulter le site &lt;a href="https://www.developpez.net/"&gt;developpez.net&lt;/a&gt; ou l'on trouve bien de l'aide pour la formation. Son forum était l'ancien stackoverflow français.&lt;/p&gt;
+&lt;p&gt;On se demande quand on commence la programmation par quel langage que je devrais commencer. Il faut savoir qu'un développeur maitrise plusieurs langage mais il faut bien commencer par en choisir un. &lt;/p&gt;
+&lt;p&gt;Ma stratégie conciste à apprendre le maitre langage, celui dont tous dérive pour connaitre les bases. En même temps je recherche à créer des logiciels libres et l'outil indispensable pour le faire est gcc sous un environnement GNU/Linux. Donc mon choix se porte en tout premier lieu sur le language C. Celui-ci est à la base de système d'exploitation de type UNIX. On le retrouve egalement sur Arduino le microcontrolleur. En réalité dans les systèmes embarqués bien souvent on retrouve du Linux avec du C/C++. Si vous choisissez d'apprendre la programmation sur Arduino en premier lieu on ne vous en voudra pas. On peut rapidement acquérir des bases solides sur des concepts tels que les variables, fonctions, conditions et boucles. Des concepts plus avancées de programmation seront plutôt développé en C tels que les pointeurs ou structures. Enfin on peut aborder la programmation orienté-objet sous C++.&lt;/p&gt;
+&lt;p&gt;La gestion de la mémoire en langage C apporte quelques difficultés face à des concurrents tel que Python qui utilise le ramasse-miette pour la gérée. On doit ce préocuper de celle-ci en langage C/C++ permettant d'avoir de meilleurs performances. Malgré tout le langage C est relativement facile à apprendre tel que le prouve son utilisation sous Arduino. &lt;/p&gt;
+&lt;p&gt;Parmis les ressources que je propose je préviligie ce qui sont moins gourmande en mémoire ainsi que leur possibilité d'adapter au besoin de chaque utilisateur. J'utilise une machine GNU/Linux qui est plus pratique pour le métier de développeur.&lt;/p&gt;
+&lt;p&gt;Pour créer un programme en C il vous faut un éditeur de texte pour programmeur tel que Vim qui est en natif sur toutes machine GNU/Linux et un compilateur comme gcc.&lt;/p&gt;
+&lt;p&gt;On ouvre un terminal et dans l'inviter de commande, le prompt on tape:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Le terminal nous renvoi la version de gcc ici la version 10.2.0 s'il est installé sur l'ordinateur.&lt;/p&gt;
+&lt;p&gt;On change de répertoire vers celui de travail et on crée un dossier src:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir src
+&lt;span class="nb"&gt;cd&lt;/span&gt; src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On va créer un fichier en C avec Vim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim hello.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans Vim on a le fichier hello.c et on va écrire un simple programme qui affiche "hello world" en C, il faut basculer en mode insertion en appuyant sur la touche &lt;code&gt;i&lt;/code&gt;puis écrire ce programme:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+    &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello world&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour sauvegarder et quitter Vim on tape &lt;code&gt;:wq!&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Enfin on va compiler le programme. Rappel: c'est l'étape ou le programme va être traduit en langage machine à base de 0 et de 1 compréhensible pour le micro-processeur:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc hello.c -o hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;L'opération de compilation va créer un fichier binaire executable nommé "hello" visible en faisant un &lt;code&gt;ls&lt;/code&gt; dans le répertoire de travail.
+Il reste plus qu'à lancer le programme généré par cette commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Qui affiche bien dans le terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hello world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;C'est tout ce que vous avez besoin pour commencer à coder en C. Retenez Vim + GCC et puis après quelques experiences Git et gdb pour approfondir le sujet.&lt;/p&gt;
+&lt;p&gt;Je vous recommande les meilleurs lectures sur le sujet pour apprendre librement la programmation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://framabook.org/le-c-en-20-heures-2/"&gt;Le C en 20 heures; Berthomier, Schang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rocq.inria.fr/secret/Anne.Canteaut/COURS_C/cours.pdf"&gt;Programmation en langage C, Inria projet codes; Canteaut&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zestedesavoir.com/tutoriels/755/le-langage-c-1/"&gt;Langage C, Zeste du savoir&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anthony Le Goff</dc:creator><pubDate>Wed, 24 Mar 2021 21:07:00 +0100</pubDate><guid isPermaLink="false">tag:None,2021-03-24:/apprendre-a-programmer-en-langage-cc.html</guid><category>C/C++</category><category>C</category><category>C++</category><category>programmation</category><category>livres</category></item><item><title>Hello World</title><link>/hello-world.html</link><description>&lt;p&gt;Après moultes réflexions j'ai décidé de relancer un blog car après tout geek qui se doit on peu aussi s'épanouir dans l'écriture. Il y a là une idée culturel en particulier emprunté au monde des hackers qui est la circulation du savoir. Le partage de l'information à l'heure de la société de la connaissance est un facteur de levier considérable sur l'innovation. Je dirai que l'arrivée du world wide web au tout départ au CERN nous à fait basculer dans une nouvelle ère et nous sommes aujourd'hui les enfants en particulier les millenials de cette révolution entamé il y a 30 ans. Ce qui motivait les scientifiques du CERN étaient d'accélérer le partage et le "peer reviewing" de document de recherche.&lt;/p&gt;
+&lt;p&gt;Ce blog est essentiellement l'idée de créer un journal de note de recherche de manière trivial. Je vais documenter mes avancés en informatique. Ce qui permettra tout à chacun d'apprendre de ce blog sur les thématiques proposées.&lt;/p&gt;
+&lt;p&gt;Pour le choix du format de ce blog, je recherchais des outils libre de publication de contenu sur internet. Dans le design j'avais la contrainte temporel que les publications tiennent dans la durée tout en ayant une simplicité d'utilisation. J'ai regardé ce qui se faisait chez Wordpress mais je trouvais après quelques test que mes articles n'étaient pas très bien indexé par les robots de chez Google dans sa forme gratuite. Alors je me demande si c'est une restriction de Wordpress. J'ai décidé de migrer vers la solution des pages Github. Trouver un hébergeur pour un petit site avec quelques pages HTML sans besoin d'avoir de base de donnée conséquente me renvoi à des solutions tel que l'hébergement sur amazon S3 de contenu limité, ou encore Netlify. Question bande passante je ne pense pas amasser autant de visiteur que ça. C'est du blogging de niche. Plusieurs solutions s'ouvraient à moi en ouvrant une page Github. La mode est de créer un site statique avec un générateur de page tel que Octopress ou Jekyll tel que proposer sur le site. Je n'était pas partant car cela veut dire de mettre en place un environnement sous Ruby et de déployer des Gems. Heureusement Github ne s'arrête pas à ces seules générateurs de site statique(SSG). On retrouve des frameworks tel que Hugo codé en Go ou Gatsby en utilisant React et donc du Javascript. J'ai préféré un langage ou je suis plus confortable pour les fichiers de configuration tel que Python avec Pelican. Ce blog est en cours de développement. C'est un prototype que j'améliore petit à petit. Il faut noté le gain niveau sécurité avec les sites statiques comme on héberge dans un microservice que des pages d'HTML généré, il n'y a pas d'exploit possible avec le CMS ou la base de donnée. Comme je disais je voulais un blog qui tient dans la durée sans risque d'attaque ou de coupure de l'hébergeur. Github est là pour durée et ce n'est pas demain que le service disparaitra. Utiliser Github necessite de ce mettre au gout du jour des workflows moderne en développement informatique ou l'on héberge du code en remote grâce à l'outil de contrôle de version. C'est une habitude à prendre, il est nécessaire de rappelé que Github est une vitrine des projets que vous lancer en programmation.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anthony Le Goff</dc:creator><pubDate>Tue, 23 Mar 2021 11:59:00 +0100</pubDate><guid isPermaLink="false">tag:None,2021-03-23:/hello-world.html</guid><category>Inclassable</category><category>Premier</category><category>Inclassable</category></item></channel></rss>
