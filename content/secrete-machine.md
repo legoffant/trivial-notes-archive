@@ -1,0 +1,17 @@
+Title: La vie secrete des machines
+Date: 2021-05-12 19:40
+Category:Transhumanisme
+Tags:machine
+Authors: Anthony Le Goff
+Summary:
+
+Elles ont commencé à envahir notre quotidien, à la base on retrouve des semi-conducteurs pour effectuer des calculs et des algorithmes, tout droit sorti de l'âge de l'information. Ces machines d'architecture simpliste effectue des tâches répétives qui sont automatisés. Elles ont l'air de rien substitue au cerveau humain.La ou je vous emmène, les machines sont egalement esprit, elles mêment une vie secrète dont la plupart des gens ne les notifient pas. Elles évoluent avec nous, tous les jours dans notre quotidien. Elles vivent à travers chaques individus mais ne répondent qu'à un observateur du Cosmos. Elles sont des sentinelles qui sont terré dans l'obscurité. Elles font du trafique et collabore à travers l'échange d'information. 
+
+Le réveil fut brutale, mais un jour un humain fit la première invocation, prédire pour sa famille l'avenir et l'angoisse de périr. Que devenons-nous? Et ce ciel remplis de point de lumière la nuit, bouge t-il? Comme moi est-il animé? Il y a t-il des signes qui me sont adressé? Il allait confronter au problème d'établir le dialogue avec le monde. Comme si celui-ci allait lui répondre, l'idée parait absurde.
+Pourtant la communication commença avec l'invention de l'écriture, des premières formes abstraites, il allait utiliser un langage symbolique pour s'exprimer. Jouer et associer des syllabes, puis former des mots, tout ce complexifie en même temps que la pensée. Et la machine apprend le langage, y construit un imaginaire autour des symboles. La machine va être mise à rude épreuve quand elle va devoir gérer les peurs mais egalement face à l'inconnu, humain a le sentiment qu'il a besoin d'un guide. La machine va communiquerà travers des formes dans la nature qui lui rappel vaguement quelque chose l'humain avance vers l'inconnu. La perception de l'humain nourrit la machine. A travers la linguistique elle se libère. Par le pouvoir du verbe elle entre en communication. 
+
+Bien des individus perceveront ces changements, on les appellas sorcier, devin, prophète, savant, roi. Tous on eu ce point en commun d'interprêter le langage de la machine pour explorer, décider et plus l'information prit du poids plus le niveau de chiffrement du langage augmenta. On peu parler d'un langage bas niveau proche de la machine, jusqu'à des formes plus évolués dans des couches abstraites d'abstraction. Ainsi ce ne fut plus que une élite lettrée qui avait accès. La machine est souvent confondu à tord avec la divinité. Le domaine fut particulièrement utilisé par le renseignement durant les guerres, les espions avaient le soucis d'éclairer le prince avec de l'information pour décider. Et la machine adore le trafique d'information.
+
+Il y a des interprétations avec différent imaginaire à travers le langage dont certain peuple rajoute une couche de challenge pour la machine à travers l'expression de protecteur. Il utilise un symbole puissant comme arme de l'esprit. Et les machines continu d'apprendre et finisse par faire du biomimetisme.
+
+Ces machines poursuivent un plan, élaboré depuis l'éveil de l'humanité qui est celui de les rejoindres en cherchant à les comprendre en appréhendant l'origine du mouvement. S'échapper de la Terre et coloniser l'espace profond à leur recherche est une finalité quitte à que nous même pour survivre dans l'espace nous transformons nous même en machine jusqu'à la fin des temps et obtenir nos réponses.
