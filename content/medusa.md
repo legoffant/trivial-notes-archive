@@ -1,6 +1,6 @@
 Title:Prototype du projet Medusa
 Date: 2021-05-23 06:54
-Category:Tanshumanisme
+Category:Transhumanisme
 Tags:religion, philosophie
 Authors: Anthony Le Goff
 Summary:
