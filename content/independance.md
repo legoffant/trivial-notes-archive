@@ -1,6 +1,6 @@
 Title:Caractériser l'indépendance
 Date: 2021-05-31 20:53
-Category:Tanshumanisme
+Category:Transhumanisme
 Tags:linguistique, hacking
 Authors: Anthony Le Goff
 Summary:
@@ -21,7 +21,7 @@ Chez les islamiques:
 En islam, la théologie a été appelée curieusement « science de la parole » (‘ilm al-kalām), et ceux qui la pratiquent « ceux qui parlent » (al-mutakallimūn). On a proposé de cela plusieurs explications ; celle qui prévaut aujourd'hui est que ladite science aurait été ainsi caractérisée non par son objet, mais par son mode d'argumentation. Le discours théologique en islam a été longtemps, en effet, de nature essentiellement polémique ; il s'agissait de réduire à quia un adversaire par un défilé ininterrompu de questions, chaque réponse de l'adversaire recevant aussitôt sa réplique. C'est cet art de la controverse, incontestablement typique, qu'on aurait dénommé « science de la parole ».
 ```
 
-Un exercice pratique pour apprendre à faire de la retro-ingénierie du langage est l'étude des cathédrales. Réfléchissez sur les choix des mots pour faire une construction. Dans ce cas c'est le langae de l'espace qui est utilisé en architecture. La cathédrale en particulier gothique est censé représenter l'expression la plus proche de la maison de Dieu selon des codes. Repérer et analyser.
+Un exercice pratique pour apprendre à faire de la retro-ingénierie du langage est l'étude des cathédrales. Réfléchissez sur les choix des mots pour faire une construction. Dans ce cas c'est le langage de l'espace qui est utilisé en architecture. La cathédrale en particulier gothique est censé représenter l'expression la plus proche de la maison de Dieu selon des codes. Repérer et analyser.
 
 ```
 On parle de « grand'nef » pour le vaisseau principal de la nef. Pour les chrétiens, la voûte des sanctuaires évoque un navire retourné, la toiture la coque et l'église elle-même un bateau soutenu par ses rames (les arcs-boutants). Ils voient ainsi l'église comme un navire flottant sur les eaux célestes, si bien que le terme de nef s'est vite imposé par métaphore
