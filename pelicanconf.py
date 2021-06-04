@@ -4,7 +4,7 @@
 AUTHOR = 'Anthony Le Goff'
 SITENAME = 'Trivial notes'
 SITEURL = ''
-THEME = "new-bootstrap2"
+THEME = "themes/pelican-themes/new-bootstrap2"
 
 PATH = 'content'
 
