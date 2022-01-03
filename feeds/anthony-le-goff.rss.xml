@@ -1,5 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Trivial notes - Anthony Le Goff</title><link>/</link><description></description><lastBuildDate>Sun, 02 Jan 2022 21:25:00 +0100</lastBuildDate><item><title>[MASTER PLAN] Devenir un kernel hacker</title><link>/master-plan-devenir-un-kernel-hacker.html</link><description>&lt;p&gt;Dans la série &lt;em&gt;from scratch&lt;/em&gt; comment contribuer à la communauté du logiciel libre en ce formant à moindre frais en autodidacte par internet et quelques bouquins.
+<rss version="2.0"><channel><title>Trivial notes - Anthony Le Goff</title><link>/</link><description></description><lastBuildDate>Mon, 03 Jan 2022 22:57:00 +0100</lastBuildDate><item><title>Configurer un environnement C/C++</title><link>/configurer-un-environnement-cc.html</link><description>&lt;h3&gt;Quelques informations&lt;/h3&gt;
+&lt;p&gt;Ce topic est pour les grands débutants en informatique. Mon but est de rendre accessible à tous les outils pour la programmation des logiciels libres [1]. L'esprit hacker est très lié au mouvement. Ayant des projets d'entreprises j'ai des intérêts à vulgariser l'informatique pour former du personnel de tout horizons. Ce qui m'importe est la motivation et la capacité à apprendre continuellement. De l'importance de savoir coder dans notre société pour ne pas être seulement consommateur et subir la technologie. Programmer c'est fun, on peut créer des jeux, des sites web, faire bouger des robots, créer des logiciels. Ce que vous avez besoin est d'un ordinateur et une connexion à internet. Connaitre les bonnes sources d'information. Ce que apporte la programmation:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;La tenacité, l'esprit critique, la logique, le défi intellectuel  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les salaires les plus rémunéré  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'apprentissage en permanence  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les compétences essentielles aux entrepreneurs  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La porte d'entrée à l'ingénierie et la robotique.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je vais travailler sur les idées reçus. Pour commencer la plupart des outils de développement sont sous Linux à travers l'expansion des logiciels libres. Utiliser Windows pour du développement informatique, c'est ce mettre une balle dans le pieds car trop limité. Si vous aspiré à devenir un virtuose de l'informatique le passage vers Linux est une obligation. Secondement le langage python n'est pas le plus conseillé aux débutants. Personnellement j'utilise trois langages qui sont nécessaire aux systèmes embarqués et donc la programmation de micro-controlleur.  &lt;/p&gt;
+&lt;p&gt;COMPILER:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;C, pour la programmation système, noyau et Arduino  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C++, pour le paradigme orienté-objet  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SCRIPTING:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(Bash, langage du shell Linux)&lt;/li&gt;
+&lt;li&gt;Python, standard chez les hackers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le C/C++ est considéré comme le langage le plus performant utilisé entre autres pour créer des compilateurs, des jeux vidéos, application en robotique et temps réels. On dit que le C++ est une extension du langage C avec classe dans le paradigme orienté-objet. Ainsi Le Rover Curiosity sur Mars fonctionne avec 2,5 millions de lignes de code en C. Parlons également de l'avion de chasse furtif le F-35 qui utilise plus de 8 millions de lignes de code en C/C++. Pourquoi ce succès? C/C++ a une gestion de la mémoire manuel, l'utilisation des pointeurs ou de l'allocation dynamique permet de contrôler au mieux les ressources processeurs et mémoires. Etre à la pointe de la technologie se traduit par l'apprentissage du C/C++ héritage de Denis Ritchie et d'UNIX. Troisième idée reçu, il n'est pas nécessaire de commencer la programmation avec un IDE(integrated development environnement) et ce n'est pas conseillé car cela n'apprend pas les bases pour compiler. Ce que vous avez besoin pour débuter:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Compilateur libre GCC  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make[13]  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git, outil de version contrôle  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim , éditeur de texte dans un terminal&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Une dose de café ou de thé, voir des cocktails à base de redbull&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;WSL (Windows Subsystem for Linux)&lt;/h3&gt;
+&lt;p&gt;Vous débuter en informatique et maintenant vous savez qu'il faut utiliser des logiciels libres, comment je fais cela depuis Windows? Nous allons installer WSL [5]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Le Sous-système Windows pour Linux (WSL, Windows System for Linux) permet aux développeurs d’exécuter un environnement GNU/Linux (et notamment la plupart des utilitaires, applications et outils en ligne de commande) directement sur Windows, sans modification et tout en évitant la surcharge d’une machine virtuelle traditionnelle ou d’une configuration à double démarrage.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;L'installation s'éffectue par cette ligne de commande depuis PowerShell qui va configurer le noyau linux et par défaut choisir la distribution Ubuntu, le redémarrage de l'ordinateur est nécessaire après l'installation de WSL:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;wsl --install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ensuite nous allons configurer le nom d'utilisateur et le mot de passe sous Ubuntu. Pour cela aller dans le menu démarrer, chercher et lancer l'application "ubuntu". Vous serez inviter à faire les modifications. Quitter l'environnement PowerShell en tapant:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;exit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Mettre à jour la distribution ubuntu&lt;/h3&gt;
+&lt;p&gt;Relancer WSL en recherchant "ubuntu" dans le menu démarrer et lancer votre première ligne de commande[5] pour mettre à jour la distribution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Installer Windows Terminal&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Windows Terminal pouvez exécuter n’importe quelle application avec une interface de ligne de commande. Ses principales fonctionnalités comprennent un affichage multi-onglet, des volets, une prise en charge des caractères Unicode et UTF-8, un moteur de rendu de texte accéléré par GPU, ainsi que la possibilité de créer vos propres thèmes et de personnaliser le texte, les couleurs, les arrière-plans et les touches de raccourci.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pour installer Windows Terminal[7] puis choisir le profile avec WSL&lt;/p&gt;
+&lt;h3&gt;Installer l'environnement de développement&lt;/h3&gt;
+&lt;p&gt;Lancer un terminal, nous allons installer les composants nécessaire dans WSL pour notre environnement[9] dont le meta-package "build-essential" qui inclus GNU Compiler Collection[2], GNU Debugger, Make pour le langage C/C++ ainsi que Git et Vim.  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install build-essential git vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Hello World&lt;/h3&gt;
+&lt;p&gt;L'écriture de votre premier programme passe par le traditionnel "Hello World". Nous avons besoin d'un éditeur de texte tel que Vim pour écrire le code source. Ne vous affoler pas pour l'apprentissage de Vim, il y a un ebook disponible à cette adresse[14] pour le reste suivez cette procédure[15] et plus généralement l'utilisation de GCC[3] en ligne de commande, pour compiler votre premier programme en langage C. La compilation d'un programme C++ on change de compilateur en utilisant g++, mais le principe est le même car c'est les mêmes outils.&lt;/p&gt;
+&lt;h3&gt;Apprendre à coder&lt;/h3&gt;
+&lt;p&gt;Maintenant vous avez tous les outils pour apprendre à coder. Je vous conseil de commencer par le langage C puis connaitre le paradigme orienté-objet à travers le C++. Sachez que le C++ a évolué et il est difficile de trouver de la documentation en français sur ce que l'on appel le C++ moderne. Pour bien commencer à coder, procurer vous les livres pour grand débutant en informatique:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le C en 20 heures - Berthomier, Schang - 2010&lt;/li&gt;
+&lt;li&gt;Le guide du C++ moderne – De débutant à développeur - Benharrats, Vittupier - 2021&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Pour aller plus loin&lt;/h3&gt;
+&lt;p&gt;Pour participer sur des projets open source et savoir gérer son code on utilise Git et Github[4]. Cette étape d'apprentissage est nécessaire à tous développeur sans exception. Dans votre apprentissage n'oublié pas de lire la documentation du langage[8]. Vous allez utiliser des librairies pour le C[12] et C++[10] tel que Boost[11] qui ajoute des fonctions au langage comme les pointeurs intelligents comme pratique de programmation avancée et moderne.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources bibliographiques:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[1] Introduction aux logiciels libres &lt;a href="https://www.april.org/files/documents/html/intro.html?q=groupes/gnufr/intro.html"&gt;https://www.april.org/files/documents/html/intro.html?q=groupes/gnufr/intro.html&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[2] GNU Compiler Collection &lt;a href="https://fr.wikipedia.org/wiki/GNU_Compiler_Collection"&gt;https://fr.wikipedia.org/wiki/GNU_Compiler_Collection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] Première compilation avec GCC &lt;a href="http://perso.univ-lyon1.fr/jean-claude.iehl/Public/educ/gcc.html"&gt;http://perso.univ-lyon1.fr/jean-claude.iehl/Public/educ/gcc.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[4] Gérer du code avec Git &amp;amp; Github &lt;a href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github"&gt;https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[5] Console: Ligne de commande &lt;a href="https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande"&gt;https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[6] Documentation pour le sous-système Linux sous Windows &lt;a href="https://docs.microsoft.com/fr-fr/windows/wsl/"&gt;https://docs.microsoft.com/fr-fr/windows/wsl/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[7] Windows Terminal &lt;a href="https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&amp;amp;activetab=pivot:overviewtab#"&gt;https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&amp;amp;activetab=pivot:overviewtab#&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[8] C/C++ référence documentation &lt;a href="https://en.cppreference.com/w/"&gt;https://en.cppreference.com/w/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[9] Hacking cpp, development setup &lt;a href="https://hackingcpp.com/cpp/tools/beginner_dev_setup.html"&gt;https://hackingcpp.com/cpp/tools/beginner_dev_setup.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[10] bibliothèques en vue pour la programmation C++ &lt;a href="https://www.lemondeinformatique.fr/actualites/lire-9-bibliotheques-en-vue-pour-la-programmation-en-c-82199.html"&gt;https://www.lemondeinformatique.fr/actualites/lire-9-bibliotheques-en-vue-pour-la-programmation-en-c-82199.html&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/"&gt;&lt;/a&gt;[11] Quels sont les avantages de l'utilisation des bibliothèques C ++ Boost?​​​​​​​ &lt;a href="https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/"&gt;https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[12] List of open source C librairy &lt;a href="https://en.cppreference.com/w/c/links/libs"&gt;https://en.cppreference.com/w/c/links/libs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[13] Makefile &lt;a href="https://gl.developpez.com/tutoriel/outil/makefile/"&gt;https://gl.developpez.com/tutoriel/outil/makefile/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[14] Vim pour les humains &lt;a href="https://vimebook.com/fr"&gt;https://vimebook.com/fr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[15] Apprendre à programmer en C/C++ &lt;a href="https://legoffant.github.io/apprendre-a-programmer-en-langage-cc.html"&gt;https://legoffant.github.io/apprendre-a-programmer-en-langage-cc.html&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Anthony Le Goff</dc:creator><pubDate>Mon, 03 Jan 2022 22:57:00 +0100</pubDate><guid isPermaLink="false">tag:None,2022-01-03:/configurer-un-environnement-cc.html</guid><category>C/C++</category><category>C</category><category>C++</category></item><item><title>[MASTER PLAN] Devenir un kernel hacker</title><link>/master-plan-devenir-un-kernel-hacker.html</link><description>&lt;p&gt;Dans la série &lt;em&gt;from scratch&lt;/em&gt; comment contribuer à la communauté du logiciel libre en ce formant à moindre frais en autodidacte par internet et quelques bouquins.
 Je vais vous présenter un métier très recherché depuis que les systèmes embarqués sous Linux ont fait leur apparition en particulier tel que Android. C'est une expertise demandé par les plus grandes entreprises dont Google, IBM, Intel. Je parle du kernel hacker. Il n'y a aucune formation en France à ce que je sache pour en devenir. La meilleure voie est encore de choisir des métiers de l'ingénierie des systèmes embarqués. Sachez que c'est l'élite du domaine car le noyau est le coeur du système d'exploitation.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Cela consiste en quoi?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A terme c'est d'être un ingénieur capable de maintenir le code source du noyau linux et de trouver et corriger des vulnérabilités tels que des failles 0days.&lt;/p&gt;
