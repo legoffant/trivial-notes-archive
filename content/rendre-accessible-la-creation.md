@@ -28,7 +28,7 @@ L'utilisation d'une intelligence artificielle comme chatbot en ligne de commande
 
 Ces pistes sont synthétisé dans ce diagramme:
 
-![diagramme](img/diaz-diagram.drawio.png "diagramme diaz")
+![diagramme](images/diaz-diagram.drawio.png "diagramme diaz")
 
 
 Ainsi ont peut retrouver les liens vers:
