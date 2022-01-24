@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - C/C++</title><link href="/" rel="alternate"></link><link href="/feeds/cc.atom.xml" rel="self"></link><id>/</id><updated>2022-01-15T03:38:00+01:00</updated><entry><title>Ressources pour apprendre C/C++</title><link href="/ressources-pour-apprendre-cc.html" rel="alternate"></link><published>2022-01-15T03:38:00+01:00</published><updated>2022-01-10T03:38:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-01-15:/ressources-pour-apprendre-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;strong&gt;MAJ JANVIER 2022&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ici je vais rassembler, des ressources pour les futurs développeurs C/C++. Je défend la formation tout au long de la vie et je pense que l'on peut devenir un très bon programmeur informatique en tant qu' autodidacte. Il y a des ressources en anglais si vous recherché "self-taught programmer". Lire des livres techniques en anglais est un bon moyen de travailler la langue sachant qu'en informatique la documentation de référence est en anglais. Donc je vais proposer des livres en anglais, des cours et MOOC. Le problème est de trouver de la ressource à jour avec les nouvelles normes pour ne pas prendre de mauvaise habitude de programmation. Autant en langage C n'a que très peu évolué avec la norme C99 et C11, le C++ au contraire a été entièrement repensé dans le C++ Moderne.&lt;/p&gt;
+&lt;p&gt;Je rappel que le langage C a l'origine a été inventé par Dennis Ritchie pour écrire le système d'exploitation UNIX. On le retrouve pour le noyau Linux, les drivers, l'écriture de compileur en PHP, Ruby, Python. C++ inventé par Bjarne Stroustrup est orienté-objet, plus utilisé dans la conception logiciel, le calcul scientifique, l'intelligence artificielle et les jeux vidéos. Le C/C++ est un passage obligé pour toutes personnes décidées à s'initier aux systèmes embarqués et la robotique. On utilise de nos jours principalement les compileurs en logiciel libre GCC et G++ ainsi que Clang LLVM qui a de meilleur performance de compilation. Les éditeurs de texte standard avec auto-complétion du code sont Vim et VS Code.&lt;/p&gt;
+&lt;p&gt;Egalement l'école 42, l'intégration par la piscine est un examen en C/C++.&lt;/p&gt;
+&lt;h3&gt;SECTION DEBUTANT&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://framabook.org/docs/c20h/C20H_integrale_creative-commons-by-sa.pdf"&gt;Le C en 20 Heures&lt;/a&gt;; Framabook; D.Schang, E.Berthomier&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.d-booker.fr/cppmoderne/656-le-guide-du-c-moderne-de-debutant-a-developpeur.html"&gt;Le guide du C++ Moderne&lt;/a&gt; - de débutant à développeur; B.Vittupier et M.Benharrats&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0"&gt;CS50: Introduction to Computer Science&lt;/a&gt;; Harvard University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A ce stade vous aller être en mesure de développer vos premiers projets, d'utiliser un outil de version contrôle pour gérer votre code avec Git, recherchez des projets open source sur Github. Garder dans l'optique de démarrer des petits projets, lancez-vous pour créer un Space Invaders, Pong, Jeu de la Vie de Conway(le planeur est le symbole des hackers). Il y a bien d'autres possibilités, mais cela reste des classiques.&lt;/p&gt;
+&lt;h3&gt;APPROFONDIR LIVRE REFERENCE DANS VOTRE BIBLIOTHEQUE&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;C&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.eyrolles.com/Informatique/Livre/le-guide-complet-du-langage-c-9782212679229/"&gt;Le guide complet du langage C&lt;/a&gt;; Claude Delannoy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.decitre.fr/livres/le-langage-c-9782100051168.html"&gt;Le langage C - 2e éd - Norme ANSI&lt;/a&gt;; D.Ritchie, Kernighan&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/c-in-a/0596006977/"&gt;C in a Nutshell&lt;/a&gt;; O'Reilly; P.Prinz, T.Crawford&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learncodethehardway.org/c/"&gt;Learn C, The Hard Way&lt;/a&gt;; Zed A.Shaw&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;C++&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://livre.fnac.com/a4704930/Stanley-B-Lippman-C-primer"&gt;C++ Primer, Fifth Edition&lt;/a&gt;; Stanley B. Lippman   &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.fr/dp/1491903996?tag=hackr06-21&amp;amp;geniuslink=true"&gt;Effective Modern C++&lt;/a&gt;; O'Reilly; Scott Meyers&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/c-pocket-reference/9780596801762/"&gt;C++ Pocket Reference&lt;/a&gt;; O'Reilly; Kyle Loudon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;COURS EN LIGNE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/the-complete-c-developer-course-build-7-exciting-projects/?utm_source=adwords&amp;amp;utm_medium=udemyads&amp;amp;utm_campaign=LongTail_la.EN_cc.ROW&amp;amp;utm_content=deal4584&amp;amp;utm_term=_._ag_77879424134_._ad_535397245863_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9055186_._pd__._&amp;amp;matchtype=&amp;amp;gclid=CjwKCAiA24SPBhB0EiwAjBgkhpY1srynWwHhTgzwI1p0MtnEAMsnAbvu3Sx12ctLwvY_UitVs7WGXxoCKAUQAvD_BwE"&gt;The Complete C Developer Course&lt;/a&gt; - Build 7 Exciting Projects! Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/learn/initiation-programmation-cpp"&gt;Initiation à la programmation (C++)&lt;/a&gt; EPFL; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/the-complete-cpp-developer-course/"&gt;The complete C++ developer course&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/datastructurescncpp/"&gt;Mastering Data Structures &amp;amp; Algorithms using C and C++&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/video-course-c-from-beginner-to-expert/"&gt;C++: From Beginner to Expert&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/learn-intermediate-modern-c/"&gt;Learn Advanced modern C++&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/specializations/coding-for-everyone"&gt;Spécialisation Coding for Everyone: C and C++&lt;/a&gt;; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/specializations/hands-on-cpp"&gt;Spécialisation Programming in C++: A Hands-on Introduction&lt;/a&gt;; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/learn/cs-fundamentals-1"&gt;Object-Oriented Data Structures in C++&lt;/a&gt;; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/learn/c-plus-plus-a"&gt;C++ For C Programmers, Part A;&lt;/a&gt; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.edx.org/course/c-programming-language-foundations"&gt;C Programming: Language Foundations&lt;/a&gt;; EdX&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.edx.org/professional-certificate/dartmouth-imtx-c-programming-with-linux"&gt;C Programming with Linux&lt;/a&gt;; EdX    &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.edx.org/course/advanced-programming-in-c"&gt;Advanced Programming in C++&lt;/a&gt;; EdX&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/learning/c-plus-plus-essential-training"&gt;C++ Essential Training&lt;/a&gt;; Linkedin learning&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/learning/paths/advance-your-skills-in-c-plus-plus"&gt;Advance your skills in C++&lt;/a&gt;: Linkedin learning&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/learning/c-plus-plus-best-practices-for-developers"&gt;C++ Best Practices for Developers&lt;/a&gt;; Linkedin learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ce topic manque de ressource pour la programmation avancée des algorithmes et structures de données en C/C++ ainsi que le design pattern. J'ai des livres références en ebook disponible sur mon repository Github.&lt;/p&gt;</content><category term="C/C++"></category><category term="langage C"></category><category term="Cpp"></category><category term="livres"></category><category term="mooc"></category><category term="cours"></category></entry><entry><title>Configurer un environnement C/C++</title><link href="/configurer-un-environnement-cc.html" rel="alternate"></link><published>2022-01-03T22:57:00+01:00</published><updated>2022-01-03T22:57:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-01-03:/configurer-un-environnement-cc.html</id><summary type="html"></summary><content type="html">&lt;h3&gt;Quelques informations&lt;/h3&gt;
+&lt;p&gt;Ce topic est pour les grands débutants en informatique. Mon but est de rendre accessible à tous les outils pour la programmation des logiciels libres [1]. L'esprit hacker est très lié au mouvement. Ayant des projets d'entreprises j'ai des intérêts à vulgariser l'informatique pour former du personnel de tout horizons. Ce qui m'importe est la motivation et la capacité à apprendre continuellement. De l'importance de savoir coder dans notre société pour ne pas être seulement consommateur et subir la technologie. Programmer c'est fun, on peut créer des jeux, des sites web, faire bouger des robots, créer des logiciels. Ce que vous avez besoin est d'un ordinateur et une connexion à internet. Connaitre les bonnes sources d'information. Ce que apporte la programmation:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;La tenacité, l'esprit critique, la logique, le défi intellectuel  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les salaires les plus rémunéré  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'apprentissage en permanence  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les compétences essentielles aux entrepreneurs  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La porte d'entrée à l'ingénierie et la robotique.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je vais travailler sur les idées reçus. Pour commencer la plupart des outils de développement sont sous Linux à travers l'expansion des logiciels libres. Utiliser Windows pour du développement informatique, c'est ce mettre une balle dans le pieds car trop limité. Si vous aspiré à devenir un virtuose de l'informatique le passage vers Linux est une obligation. Secondement le langage python n'est pas le plus conseillé aux débutants. Personnellement j'utilise trois langages qui sont nécessaire aux systèmes embarqués et donc la programmation de micro-controlleur.  &lt;/p&gt;
+&lt;p&gt;COMPILER:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;C, pour la programmation système, noyau et Arduino  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C++, pour le paradigme orienté-objet  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SCRIPTING:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(Bash, langage du shell Linux)&lt;/li&gt;
+&lt;li&gt;Python, standard chez les hackers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le C/C++ est considéré comme le langage le plus performant utilisé entre autres pour créer des compilateurs, des jeux vidéos, application en robotique et temps réels. On dit que le C++ est une extension du langage C avec classe dans le paradigme orienté-objet. Ainsi Le Rover Curiosity sur Mars fonctionne avec 2,5 millions de lignes de code en C. Parlons également de l'avion de chasse furtif le F-35 qui utilise plus de 8 millions de lignes de code en C/C++. Pourquoi ce succès? C/C++ a une gestion de la mémoire manuel, l'utilisation des pointeurs ou de l'allocation dynamique permet de contrôler au mieux les ressources processeurs et mémoires. Etre à la pointe de la technologie se traduit par l'apprentissage du C/C++ héritage de Denis Ritchie et d'UNIX. Troisième idée reçu, il n'est pas nécessaire de commencer la programmation avec un IDE(integrated development environnement) et ce n'est pas conseillé car cela n'apprend pas les bases pour compiler. Ce que vous avez besoin pour débuter:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Compilateur libre GCC  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make[13]  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git, outil de version contrôle  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim , éditeur de texte dans un terminal&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Une dose de café ou de thé, voir des cocktails à base de redbull&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;WSL (Windows Subsystem for Linux)&lt;/h3&gt;
+&lt;p&gt;Vous débuter en informatique et maintenant vous savez qu'il faut utiliser des logiciels libres, comment je fais cela depuis Windows? Nous allons installer WSL [5]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Le Sous-système Windows pour Linux (WSL, Windows System for Linux) permet aux développeurs d’exécuter un environnement GNU/Linux (et notamment la plupart des utilitaires, applications et outils en ligne de commande) directement sur Windows, sans modification et tout en évitant la surcharge d’une machine virtuelle traditionnelle ou d’une configuration à double démarrage.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;L'installation s'éffectue par cette ligne de commande depuis PowerShell qui va configurer le noyau linux et par défaut choisir la distribution Ubuntu, le redémarrage de l'ordinateur est nécessaire après l'installation de WSL:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;wsl --install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ensuite nous allons configurer le nom d'utilisateur et le mot de passe sous Ubuntu. Pour cela aller dans le menu démarrer, chercher et lancer l'application "ubuntu". Vous serez inviter à faire les modifications. Quitter l'environnement PowerShell en tapant:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;exit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Mettre à jour la distribution ubuntu&lt;/h3&gt;
+&lt;p&gt;Relancer WSL en recherchant "ubuntu" dans le menu démarrer et lancer votre première ligne de commande[5] pour mettre à jour la distribution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Installer Windows Terminal&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Windows Terminal pouvez exécuter n’importe quelle application avec une interface de ligne de commande. Ses principales fonctionnalités comprennent un affichage multi-onglet, des volets, une prise en charge des caractères Unicode et UTF-8, un moteur de rendu de texte accéléré par GPU, ainsi que la possibilité de créer vos propres thèmes et de personnaliser le texte, les couleurs, les arrière-plans et les touches de raccourci.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pour installer Windows Terminal[7] puis choisir le profile avec WSL&lt;/p&gt;
+&lt;h3&gt;Installer l'environnement de développement&lt;/h3&gt;
+&lt;p&gt;Lancer un terminal, nous allons installer les composants nécessaire dans WSL pour notre environnement[9] dont le meta-package "build-essential" qui inclus GNU Compiler Collection[2], GNU Debugger, Make pour le langage C/C++ ainsi que Git et Vim.  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install build-essential git vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Hello World&lt;/h3&gt;
+&lt;p&gt;L'écriture de votre premier programme passe par le traditionnel "Hello World". Nous avons besoin d'un éditeur de texte tel que Vim pour écrire le code source. Ne vous affoler pas pour l'apprentissage de Vim, il y a un ebook disponible à cette adresse[14] pour le reste suivez cette procédure[15] et plus généralement l'utilisation de GCC[3] en ligne de commande, pour compiler votre premier programme en langage C. La compilation d'un programme C++ on change de compilateur en utilisant g++, mais le principe est le même car c'est les mêmes outils.&lt;/p&gt;
+&lt;h3&gt;Apprendre à coder&lt;/h3&gt;
+&lt;p&gt;Maintenant vous avez tous les outils pour apprendre à coder. Je vous conseil de commencer par le langage C puis connaitre le paradigme orienté-objet à travers le C++. Sachez que le C++ a évolué et il est difficile de trouver de la documentation en français sur ce que l'on appel le C++ moderne. Pour bien commencer à coder, procurer vous les livres pour grand débutant en informatique:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le C en 20 heures - Berthomier, Schang - 2010&lt;/li&gt;
+&lt;li&gt;Le guide du C++ moderne – De débutant à développeur - Benharrats, Vittupier - 2021&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Pour aller plus loin&lt;/h3&gt;
+&lt;p&gt;Pour participer sur des projets open source et savoir gérer son code on utilise Git et Github[4]. Cette étape d'apprentissage est nécessaire à tous développeur sans exception. Dans votre apprentissage n'oublié pas de lire la documentation du langage[8]. Vous allez utiliser des librairies pour le C[12] et C++[10] tel que Boost[11] qui ajoute des fonctions au langage comme les pointeurs intelligents comme pratique de programmation avancée et moderne.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources bibliographiques:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[1] Introduction aux logiciels libres &lt;a href="https://www.april.org/files/documents/html/intro.html?q=groupes/gnufr/intro.html"&gt;https://www.april.org/files/documents/html/intro.html?q=groupes/gnufr/intro.html&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[2] GNU Compiler Collection &lt;a href="https://fr.wikipedia.org/wiki/GNU_Compiler_Collection"&gt;https://fr.wikipedia.org/wiki/GNU_Compiler_Collection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] Première compilation avec GCC &lt;a href="http://perso.univ-lyon1.fr/jean-claude.iehl/Public/educ/gcc.html"&gt;http://perso.univ-lyon1.fr/jean-claude.iehl/Public/educ/gcc.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[4] Gérer du code avec Git &amp;amp; Github &lt;a href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github"&gt;https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[5] Console: Ligne de commande &lt;a href="https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande"&gt;https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[6] Documentation pour le sous-système Linux sous Windows &lt;a href="https://docs.microsoft.com/fr-fr/windows/wsl/"&gt;https://docs.microsoft.com/fr-fr/windows/wsl/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[7] Windows Terminal &lt;a href="https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&amp;amp;activetab=pivot:overviewtab#"&gt;https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&amp;amp;activetab=pivot:overviewtab#&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[8] C/C++ référence documentation &lt;a href="https://en.cppreference.com/w/"&gt;https://en.cppreference.com/w/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[9] Hacking cpp, development setup &lt;a href="https://hackingcpp.com/cpp/tools/beginner_dev_setup.html"&gt;https://hackingcpp.com/cpp/tools/beginner_dev_setup.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[10] bibliothèques en vue pour la programmation C++ &lt;a href="https://www.lemondeinformatique.fr/actualites/lire-9-bibliotheques-en-vue-pour-la-programmation-en-c-82199.html"&gt;https://www.lemondeinformatique.fr/actualites/lire-9-bibliotheques-en-vue-pour-la-programmation-en-c-82199.html&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/"&gt;&lt;/a&gt;[11] Quels sont les avantages de l'utilisation des bibliothèques C ++ Boost?​​​​​​​ &lt;a href="https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/"&gt;https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[12] List of open source C librairy &lt;a href="https://en.cppreference.com/w/c/links/libs"&gt;https://en.cppreference.com/w/c/links/libs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[13] Makefile &lt;a href="https://gl.developpez.com/tutoriel/outil/makefile/"&gt;https://gl.developpez.com/tutoriel/outil/makefile/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[14] Vim pour les humains &lt;a href="https://vimebook.com/fr"&gt;https://vimebook.com/fr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[15] Apprendre à programmer en C/C++ &lt;a href="https://legoffant.github.io/apprendre-a-programmer-en-langage-cc.html"&gt;https://legoffant.github.io/apprendre-a-programmer-en-langage-cc.html&lt;/a&gt;&lt;/p&gt;</content><category term="C/C++"></category><category term="C"></category><category term="C++"></category></entry><entry><title>[MASTER PLAN] Devenir un kernel hacker</title><link href="/master-plan-devenir-un-kernel-hacker.html" rel="alternate"></link><published>2022-01-02T21:25:00+01:00</published><updated>2022-01-02T21:25:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-01-02:/master-plan-devenir-un-kernel-hacker.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Dans la série &lt;em&gt;from scratch&lt;/em&gt; comment contribuer à la communauté du logiciel libre en ce formant à moindre frais en autodidacte par internet et quelques bouquins.
+Je vais vous présenter un métier très recherché depuis que les systèmes embarqués sous Linux ont fait leur apparition en particulier tel que Android. C'est une expertise demandé par les plus grandes entreprises dont Google, IBM, Intel. Je parle du kernel hacker. Il n'y a aucune formation en France à ce que je sache pour en devenir. La meilleure voie est encore de choisir des métiers de l'ingénierie des systèmes embarqués. Sachez que c'est l'élite du domaine car le noyau est le coeur du système d'exploitation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Cela consiste en quoi?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A terme c'est d'être un ingénieur capable de maintenir le code source du noyau linux et de trouver et corriger des vulnérabilités tels que des failles 0days.&lt;/p&gt;
+&lt;p&gt;Le noyau consiste à une interface entre le matériel de l'ordinateur et ces processus, on retrouve en particulier la gestion:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;de la mémoire : suivi des contenus stockés, de leur emplacement et de l'espace mémoire utilisé&lt;/li&gt;
+&lt;li&gt;des processus : identification des processus susceptibles de solliciter le processeur, à quel moment et pour quelle durée&lt;/li&gt;
+&lt;li&gt;Pilote des périphériques : médiateur/interprète entre le matériel et les processus&lt;/li&gt;
+&lt;li&gt;Gestionnaire des appels système et de la sécurité : réception des demandes de service envoyées par les processus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si votre intention est de devenir en autodidacte un kernel hacker il va falloir des bases en compétence qui sont tout à fait possible d'acquérir en dehors des institutions. Cela reste un métier de passionné, de contributeur à la communauté du logiciel libre ou l'on apprend tous les jours un peu plus. Connaitre le noyau permet également de créer son propre système d'exploitation d'ordinateur.&lt;/p&gt;
+&lt;h2&gt;[COEUR DE LA PROGRAMMATION SYSTEME]&lt;/h2&gt;
+&lt;p&gt;En premier, il est nécessaire d'apprendre le langage C. Celui-ci est le langage principal du noyau et des systèmes d'exploitations en particulier basé sur Linux. Le langage de bas-niveau proche de la machine est majoritairement défini par le C et l'assembleur en petite proportion. Il vous faudra choisir un compileur et c'est l'occasion d'utiliser GCC "GNU compiler collection" sous Linux pour produire du logiciel libre avec un éditeur de texte tels que VS Code ou Vim. Plus tard il sera possible d'apprendre à utiliser Make pour automatiser la tâche de compilation du code pour des projets volumineux.&lt;/p&gt;
+&lt;p&gt;Une fois que les bases du langage C sont acquises, éssayer de développer des jeux tels que Space Invaders, Pong ou encore s'initier aux automates cellulaires avec le jeu de la vie de Conway. Il sera possible d'apprendre en même temps Git pour le contrôle de version en créant un repository sur Github du projet. Git est une compétence essentiel pour tout travail de collaboration sur du code open source dont le noyau inventé par Linus Torvalds.&lt;/p&gt;
+&lt;p&gt;Quelques livres pour démarrer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le C en 20 heures, Schang &amp;amp; Berthomier&lt;/li&gt;
+&lt;li&gt;Programmer en C pour les Nuls, grand format, 3e éd, Gookin&lt;/li&gt;
+&lt;li&gt;Le langage C - 2e éd - Norme ANSI, Kernighan &amp;amp; Ritchie&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pour aller plus loin, il est possible d'explorer d'autres langages de programmation système tels que Rust, Nim et Zig.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;[ALGORITHME ET STRUCTURE DE DONNEE]&lt;/h2&gt;
+&lt;p&gt;Il faudra maitriser l'algorithmique pour résoudre des problèmes et savoir organiser les données grâce aux structures de données. Connaitre ces principes est un gain de temps et de mémoire pour résoudre des problèmes.&lt;/p&gt;
+&lt;p&gt;Il est possible de trouver des ressources sur le web pour ce former tels que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Algorithmique pour l'apprenti programmeur - Zeste de Savoir [PDF]&lt;/li&gt;
+&lt;li&gt;Algorithmes Et Structures De Donnees - Cours Et Exercices Corrigés En Langage C - Divay&lt;/li&gt;
+&lt;li&gt;Langage C : Structure de Données et d' Algorithmes en C, Udemy&lt;/li&gt;
+&lt;li&gt;Algorithmique, Structures de données et langage C, Enjalbert [PDF]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[RESEAUX]&lt;/h2&gt;
+&lt;p&gt;Un ordinateur n'a pas de sens à fonctionner seul, les protocoles réseaux ont été développé en même temps que les ordinateurs et c'est directement implémenté dans le noyau. La plupart des hackers ont des solides compétences en protocole et réseau que cela soit pour maitriser internet tel que le TCP/IP. Et cela se développe de plus en plus avec l'internet des objets.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Réseaux informatiques - Notions fondamentales (8e édition) - (Protocoles, Architectures, Réseaux sans fil, Virtualisation, Sécurité, IPv6...), Dordoigne&lt;/li&gt;
+&lt;li&gt;Les réseaux informatiques par la pratique, Launay&lt;/li&gt;
+&lt;li&gt;Tout sur les réseaux et Internet - 5e éd, Lemainque &amp;amp; Pillou&lt;/li&gt;
+&lt;li&gt;Linux - 4e éd - Programmation système et réseau - Cours et exercices corrigés: Programmation système et réseau, Delacroix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[SYSTEME D'EXPLOITATION]&lt;/h2&gt;
+&lt;p&gt;Une fois que l'on a de bonne base de programmation système, on doit apprendre les concepts des systèmes d'exploitation sous Linux. Apprendre à utiliser une distribution comme Arch Linux ou l'on construit soit même son propre système d'exploitation permet d'acquérir des compétences vitales dans le domaine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction aux systèmes d'exploitation - Cours et exercices en GNU/Linux, Boucheneb &amp;amp; Torres-Moreno&lt;/li&gt;
+&lt;li&gt;LINUX - Maîtrisez l'administration du système (6e édition), Rohaut&lt;/li&gt;
+&lt;li&gt;UNIX, pour aller plus loin dans la ligne de commande, Lozano [PDF]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[LINUX KERNEL]&lt;/h2&gt;
+&lt;p&gt;Pour la littérature sur le noyau Linux, tout est en anglais. Il n'y a pas d'article de référence en français. Il est important de développer à ce stade ces compétences pour pouvoir maitriser et entrée de la communauté du logiciel libre à l'internationnal. Le projet du noyau Linux inclus des développeurs du monde entier dont le langage de référence, celui d'internet est l'anglais. On retrouve sur internet toute la documentation du noyau à l'adresse "The Linux Kernel documentation". &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux Kernel Development, third edition - R.Love&lt;/li&gt;
+&lt;li&gt;Linux Device Drivers, J.Corbet&lt;/li&gt;
+&lt;li&gt;A Beginner’s Guide to Linux Kernel Development (LFD103), The Linux Foundation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[CHALLENGE DE PROGRAMMATION]&lt;/h2&gt;
+&lt;p&gt;Il ne faut pas négliger l'entrainement à la résolution de problème. En tant que Kernel Hacker chaques jours sont lot de problème à résoudre avec le moins d'effort. Il faut développer des automatismes et entrainer le cerveau à travers des exemples et cas pratique. Les challenges de programmation permettent de progresser en algorithme et structure de donnée. Quelques sites de références:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Codewars&lt;/li&gt;
+&lt;li&gt;CodinGame&lt;/li&gt;
+&lt;/ul&gt;</content><category term="C/C++"></category><category term="C"></category><category term="kernel"></category></entry><entry><title>Apprendre à programmer en langage C/C++</title><link href="/apprendre-a-programmer-en-langage-cc.html" rel="alternate"></link><published>2021-03-24T21:07:00+01:00</published><updated>2021-03-24T21:08:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2021-03-24:/apprendre-a-programmer-en-langage-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Vous n'avez pas les bases comme dirait Orelsan. Alors on reprend depuis le début. Tout le monde n'a pas la possibilité de faire une école d'ingénieur ou des écoles plus specialisé tels que Epitech ou 42. Je crois que le passionné en informatique soit capable de ce former seul grâce aux ressources sur le web et une bonne librairie. &lt;/p&gt;
+&lt;p&gt;En vérité la majorité des hackers et informaticiens sont autodidacte et continu à apprendre tout les jours. L'une des compétences les plus prisés de ce siècle se fait par formation sur le web. Encore faut-il trouver du contenu pertinent. Car on peut tomber sur de la mauvaise qualité ou encore des problèmes de mise à jours de la norme.&lt;/p&gt;
+&lt;p&gt;Le rendez-vous de tout les passionnés d'informatique passe par l'ancien site du Zéro renommé &lt;a href="https://openclassrooms.com/fr/"&gt;openclassrooms&lt;/a&gt; qui a longtemps servi de référence sur ces cours d'informatique. Si je ne savais pas par ou commencer j'y jeterai un oeil comme ressource crédible francophone. Il ne faut pas occulter le site &lt;a href="https://www.developpez.net/"&gt;developpez.net&lt;/a&gt; ou l'on trouve bien de l'aide pour la formation. Son forum était l'ancien stackoverflow français.&lt;/p&gt;
+&lt;p&gt;On se demande quand on commence la programmation par quel langage que je devrais commencer. Il faut savoir qu'un développeur maitrise plusieurs langage mais il faut bien commencer par en choisir un. &lt;/p&gt;
+&lt;p&gt;Ma stratégie conciste à apprendre le maitre langage, celui dont tous dérive pour connaitre les bases. En même temps je recherche à créer des logiciels libres et l'outil indispensable pour le faire est gcc sous un environnement GNU/Linux. Donc mon choix se porte en tout premier lieu sur le language C. Celui-ci est à la base de système d'exploitation de type UNIX. On le retrouve egalement sur Arduino le microcontrolleur. En réalité dans les systèmes embarqués bien souvent on retrouve du Linux avec du C/C++. Si vous choisissez d'apprendre la programmation sur Arduino en premier lieu on ne vous en voudra pas. On peut rapidement acquérir des bases solides sur des concepts tels que les variables, fonctions, conditions et boucles. Des concepts plus avancées de programmation seront plutôt développé en C tels que les pointeurs ou structures. Enfin on peut aborder la programmation orienté-objet sous C++.&lt;/p&gt;
+&lt;p&gt;La gestion de la mémoire en langage C apporte quelques difficultés face à des concurrents tel que Python qui utilise le ramasse-miette pour la gérée. On doit ce préocuper de celle-ci en langage C/C++ permettant d'avoir de meilleurs performances. Malgré tout le langage C est relativement facile à apprendre tel que le prouve son utilisation sous Arduino. &lt;/p&gt;
+&lt;p&gt;Parmis les ressources que je propose je préviligie ce qui sont moins gourmande en mémoire ainsi que leur possibilité d'adapter au besoin de chaque utilisateur. J'utilise une machine GNU/Linux qui est plus pratique pour le métier de développeur.&lt;/p&gt;
+&lt;p&gt;Pour créer un programme en C il vous faut un éditeur de texte pour programmeur tel que Vim qui est en natif sur toutes machine GNU/Linux et un compilateur comme gcc.&lt;/p&gt;
+&lt;p&gt;On ouvre un terminal et dans l'inviter de commande, le prompt on tape:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Le terminal nous renvoi la version de gcc ici la version 10.2.0 s'il est installé sur l'ordinateur.&lt;/p&gt;
+&lt;p&gt;On change de répertoire vers celui de travail et on crée un dossier src:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir src
+&lt;span class="nb"&gt;cd&lt;/span&gt; src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On va créer un fichier en C avec Vim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim hello.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans Vim on a le fichier hello.c et on va écrire un simple programme qui affiche "hello world" en C, il faut basculer en mode insertion en appuyant sur la touche &lt;code&gt;i&lt;/code&gt;puis écrire ce programme:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello world&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour sauvegarder et quitter Vim on tape &lt;code&gt;:wq!&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Enfin on va compiler le programme. Rappel: c'est l'étape ou le programme va être traduit en langage machine à base de 0 et de 1 compréhensible pour le micro-processeur:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc hello.c -o hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;L'opération de compilation va créer un fichier binaire executable nommé "hello" visible en faisant un &lt;code&gt;ls&lt;/code&gt; dans le répertoire de travail.
+Il reste plus qu'à lancer le programme généré par cette commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Qui affiche bien dans le terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hello world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;C'est tout ce que vous avez besoin pour commencer à coder en C. Retenez Vim + GCC et puis après quelques experiences Git et gdb pour approfondir le sujet.&lt;/p&gt;
+&lt;p&gt;Je vous recommande les meilleurs lectures sur le sujet pour apprendre librement la programmation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://framabook.org/le-c-en-20-heures-2/"&gt;Le C en 20 heures; Berthomier, Schang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rocq.inria.fr/secret/Anne.Canteaut/COURS_C/cours.pdf"&gt;Programmation en langage C, Inria projet codes; Canteaut&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zestedesavoir.com/tutoriels/755/le-langage-c-1/"&gt;Langage C, Zeste du savoir&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="C/C++"></category><category term="C"></category><category term="C++"></category><category term="programmation"></category><category term="livres"></category></entry></feed>
