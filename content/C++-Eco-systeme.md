@@ -5,13 +5,12 @@ Tags: outils, communauté, c++
 Authors: Anthony Le Goff
 Summary:
 
-# C++ Eco-système
 
 Ce sujet traite de l'éco-système C++ en allant aux outils à la communauté pour être plus productif dans le travail et devenir un développeur averti.
 
 ### Compileurs
 
-![](content/gccegg-65.png)
+![GCC Logo](images/gccegg-65.png)
 
 **GCC g++**  
 
@@ -21,7 +20,7 @@ De facto le standard sous GNU/Linux: 
     
 *   sur Windows WinLibs: [https://winlibs.com/](https://winlibs.com/) et [WSL](https://docs.microsoft.com/fr-fr/windows/wsl/about)
 
-![](content/LLVM-Logo-Derivative-3.png)
+![LLVM Logo](images/LLVM-Logo-Derivative-3.png)
 
 **LLVM clang++**
 
@@ -30,7 +29,7 @@ Un compileur concurrent de GCC qui offre de meilleur performance
 *   [https://llvm.org/](https://llvm.org/)  
     
 
-![](content/visual-logo.png)
+![Visual C++ Logo](images/visual-logo.png)
 
 **Microsoft visual C++**  
 
