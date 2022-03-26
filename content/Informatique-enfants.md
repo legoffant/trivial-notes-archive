@@ -33,8 +33,10 @@ Avec ce matériel, vos enfants vont pouvoir découvrir l'informatique, les compo
 
 Vous allez devoir installer sur votre carte microSD le système d'exploitation officiel de Raspberry Pi, nommé Raspberry Pi OS (anciennement Raspbian) est un système d’exploitation GNU/Linux basé sur Debian spécialement conçu et optimisé pour la Raspberry Pi. [Suivez cette page pour télécharger.](https://raspberry-pi.fr/telechargements/) Il vous faudra créer une carte SD depuis Windows, Mac, Linux avec l'outil Raspberry Pi Imager [en suivant ce guide](https://raspberry-pi.fr/creer-carte-sd-windows-mac-linux-raspberry-pi-imager/). Ainsi une fois votre OS sur la carte, il reste plus qu'à l'insérer dans le slot microSD du nano-ordinateur. Au démarrage, il vous sera demandé un identifiant qui sont:
 
+```
 ID: pi
 Mot de passe: raspberry
+```
 
 Vous allez alors acccéder à Raspberry Pi OS pour plus ample information accéder à [la documentation officielle sur cette page](https://www.raspberrypi.com/documentation/) en anglais (traduisez-là avec Google si nécessaire).
 
