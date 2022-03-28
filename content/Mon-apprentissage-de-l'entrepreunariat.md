@@ -1,4 +1,4 @@
-﻿Title:Mon apprentissage de l'entrepreunariat
+﻿Title:Mon apprentissage de l'entrepreneuriat
 Date: 2022-03-28 15:16
 Category:Entrepreneurship
 Tags: entrepreneur, industrie
