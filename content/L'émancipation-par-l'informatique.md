@@ -1,0 +1,35 @@
+Title:L'émancipation par l'informatique
+Date: 2022-04-04 07:56
+Category:Entrepreneurship
+Tags: logiciel libre, informatique, émancipation, stratégie
+Authors: Anthony Le Goff
+Summary:
+
+
+﻿La communauté informatique lutte contre toute forme de privatisation du savoir et de la connaissance. Ainsi la libre circulation de l'information est au coeur des débats depuis les premiers hackers. Car l'information pourrait être traité de manière automatique via des machines si sa circulation n'était pas entravé. C'est faire le jeu des machines et accélérer leurs développements.  
+
+### Une utopie réaliste  
+
+L'informatique et internet a été construit sur une utopie réaliste de l'accélération du partage de la connaissance entre chercheur ou l'on a mis en lien les universités. Ainsi la recherche est très dépendante de la communauté du logiciel libre car elle est l'un des principaux acteurs. Si vous regardez les recommandations de l'INRIA (Institut national de recherche en informatique et en automatique) principal centre de recherche en France il recommande le logiciel libre et a mis en place un système de formation: Academy. Pour aller plus loin on peut également se référer au CERN (Organisation européenne pour la recherche nucléaire) qui prône une [science ouverte](https://home.cern/fr/science/open-source-open-science) à travers le logiciel libre car on peut étudier, modifier et enfin développer des innovations. L'ouverture des données et l'open data fait partie des questions modernes de la gouvernance internet. Car plus on a accès aux données, plus les algorithmes de machine learning peuvent faire des découvertes.  
+
+### Question de probabilité  
+
+La [sérendipité](https://fr.wikipedia.org/wiki/S%C3%A9rendipit%C3%A9) est la capacité à faire des découvertes à travers une réflexion stimulé par la créativité né du savoir et l'intelligence collective. Ainsi l'essence du logiciel libre est de mettre à disposition au plus grand nombre possible la possibilité de créer du logiciel par la mise à disposition de compilateur et divers outils pour qu'il puisse y avoir un programmeur brillant est une idée lumineuse. C'est aller plus loin que le système des essais et erreurs de l'inventeur, en multipliant les essais en mettant à disposition le matériel nécessaire qu'une découverte soit faite et disposer de loi par l'expérience. Ainsi le logiciel libre participe à l'innovation et est ouvertement progressiste et surtout propulse la science en utilisant les mathématiques et simulant la physique. L'innovation est incrémentale quand elle n'est pas de rupture, l'ouverture du code source en informatique permet l'étude et l'amélioration logiciel au fil du temps mais également l'opportunité à chacun de contribuer grâce à des outils de version contrôle. La communauté en informatique est inclusive, même si celle-ci peut paraitre élitiste par le niveau recommandé. C'est pour ça que l'on éduque à considérer l'étude par la lecture et la pratique de la programmation. Il faut 10 000h pour devenir un virtuose soit 9 ans avec une moyenne de 2-4h par jours, ce que aspire tout hackers. Beaucoup échouerons, d'autres abandonnerons mais en donnant l'opportunité on multiplie les probabilités d'obtenir un résultat.  
+
+### Connaitre les sources émancipatrices  
+
+Il est donc important de réduire les coûts d'accès matériels grâce à des initiatives tels que Raspberry Pi et la mise en place de système d'exploitation libre comme [GNU/Linux](https://www.getgnulinux.org/fr/linux/). Il est permis d'installer des outils de création logiciel robuste comme des compilateurs libres comme GCC et des outils de scripting (Python, Ruby, Perl etc...) dans divers domaine tel que la création de site web pour diffuser la connaissance, proposer un service, vendre un produit et dynamiser l'économie et l'innovation. Cela passe par de la data science et du ML (machine learning) en intelligence artificielle parmis les techniques les plus à la pointe. Le domaine du blockchain est très porteur également ou des développeurs travails sur la finance décentralisée ou les smarts contracts.  
+
+### Cul-de-sac
+
+Car les entreprises capitalistes n'ont plus le choix, elles doivent innover ou périr face à la compétivité que celle-ci font appel à l'open source tels que Google qui a une politique [transhumaniste](https://fr.wikipedia.org/wiki/Transhumanisme) que pour espérer acquérir des talents en informatiques et autres ingénieurs, celle-ci multiplie les sources de formation en recrutant à travers le monde, dans les pays en voie de développement. Le modèle propriétaire ne fonctionne plus car bloque l'innovation, Microsoft à du faire un virage vers l'open source en développant Windows 10 à travers WSL pour garder les développeurs sur le système d'exploitation. La compétitivité des marchés et le risque de nouveaux entrants obligent les entreprises à revoir leur stratégie et payer les créatifs à leur juste valeur pour les garder ou alors ceux-ci vont voir la concurrence.  
+
+Car le code source est ouvert, celui-ci est auditable et permet sa correction puis son amélioration que son développement est plus rapide, la contribution et avoir une communauté de développeurs disponible autour d'un logiciel et d'une entreprise sont les nouveaux modèles économiques tels que fait Rapid7 via son logiciel [Metasploit](https://fr.wikipedia.org/wiki/Metasploit). Les entreprises cherchent à protéger leurs clients, marchés  et produits pour avoir un avantage concurrentiel, ainsi des entreprises tels que dans l'armement se trouve dans un cul-de-sac car ne pouvant plus innover assez vite à cause de l'opacité du système d'information qui sont classifié, les programmes de développement sont devenu trop long. Le développement est restreint à quelques personnes. Elles ne font plus le poids et vont périr si elles sont incapable de prendre un virage vers l'[Open Innovation](https://fr.wikipedia.org/wiki/Innovation_ouverte) en introduisant du logiciel libre dans leur processus métier. Cela demande d'être ouvert à créer des pépinières de futurs industriels de l'armement dans les start-ups face à l'inertie des géants. Les futurs industriels de l'armement suivront des directives stricts de sécurité et recherche en vulnérabilité informatique au coeur des métiers avec une politique communautaire autour du logiciel libre accélérant l'innovation et la science comme capitale de soft power. Car la réputation d'une entreprise prédatrice, torsionnaire des créatifs devient un véritable poids pour son développement, que la concurrence s'emploi à tout faire pour retenir les talents. Si Google ne veut pas réduire l'innovation au sein de son entreprise, alors elle doit refuser tout contrat avec les militaires qui obligent à classifier l'information.
+
+### Pour aller plus loin, des ressources en libre accès  
+
+*   GOFOSS Liberté numérique pour tou·tes. [https://gofoss.net/fr/](https://gofoss.net/fr/)  
+    
+*   OSSU Open Source Society University [https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)  
+    
+*   Root Me, plate-forme d'apprentissage hacking [https://www.root-me.org/](https://www.root-me.org/)
