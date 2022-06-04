@@ -1,5 +1,5 @@
 Title:Ma propre émancipation
-Date: 2021-06-04 12:10
+Date: 2022-06-04 12:10
 Category:Linux
 Tags:linux, informatique, ingénierie
 Authors: Anthony Le Goff
