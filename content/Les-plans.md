@@ -48,4 +48,4 @@ J'espère investir le plus tot possible en devenant propriétaire terrien sur le
 
 C'est un QG pour piloter la prospection minière d'uranium et camper la zone. J'estime à 700m2 en surface, et 800m2 en souterrain bunkerisé. Soit une propriété de 1500 m2, avec bien 2 hectares pour la culture et le jardinage. On reste des agriculteurs, qui viennent de la terre et de la poussière.
 
-![Villa brutaliste](images/brutalist.jg)
+![Villa brutaliste](images/brutalist.jpg)
