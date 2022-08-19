@@ -1,2 +1,0 @@
-# legoffant.github.io
-Blog

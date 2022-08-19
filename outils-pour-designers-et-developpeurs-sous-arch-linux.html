@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Outils pour designers et développeurs sous Arch Linux | Trivial notes</title>
+    <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anthony Le Goff" />
+    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_position" content="top=60,right=60" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li ><a href="/pages/contact.html">Contact</a></li>
+                <li ><a href="/pages/ltcb.html">LTCB</a></li>
+                <li class="divider-vertical"></li>
+                <li >
+                  <a href="/category/cc.html">
+						        <i class="icon-folder-open icon-large"></i>C/C++
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/entrepreneurship.html">
+						        <i class="icon-folder-open icon-large"></i>Entrepreneurship
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/inclassable.html">
+						        <i class="icon-folder-open icon-large"></i>Inclassable
+					         </a>
+                </li>
+                <li class="active">
+                  <a href="/category/linux.html">
+						        <i class="icon-folder-open icon-large"></i>Linux
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/transhumanisme.html">
+						        <i class="icon-folder-open icon-large"></i>Transhumanisme
+					         </a>
+                </li>
+              <ul class="nav pull-right">
+                    <li><a href="/"><i class="icon-th-list"></i>Archives</a></li>
+              </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8" id="content">
+<div class="row">
+    <div class="span2">
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2022-03-30T20:16:00+02:00">
+    <i class="icon-calendar"></i>&nbsp;mer. 30 mars 2022
+</abbr>
+<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+
+
+<br/>
+	&nbsp;&nbsp;<a href="/tag/linux.html" class="label"><i class="icon-tag"></i>&nbsp;Linux</a>
+	&nbsp;&nbsp;<a href="/tag/arch.html" class="label"><i class="icon-tag"></i>&nbsp;arch</a>
+	&nbsp;&nbsp;<a href="/tag/logiciel.html" class="label"><i class="icon-tag"></i>&nbsp;logiciel</a>
+</footer><!-- /.post-info -->        </div>
+    </div>
+    <div class="span6">
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Outils pour designers et développeurs sous Arch Linux">
+                        Outils pour designers et développeurs sous Arch Linux
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
+
+        <hr>
+<p>Liste d'outils essentiels pour la productivité sous des distributions de type Arch Linux (Inclus Manjaro et Garuda Linux) utilisant le gestionnaire de packet Pacman. L'AUR Helper utilisé est yay.</p>
+<hr>
+<h2>Navigateurs web</h2>
+<h3><strong>Chromium</strong> (Google Chrome)</h3>
+<p>Le navigateur le plus populaire d'internet, il permet de synchroniser son compte Google sur tous les appareils et d'utiliser les services associés. Ne respecte pas la vie privée, est très intrusif.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S chromium</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.fr/Chromium</li>
+</ul>
+<h3><strong>Mozilla Firefox</strong></h3>
+<p>Ce navigateur est installé en standard sur la plupart des distributions GNU/Linux car est un logiciel libre qui fut populaire avant l'arrivée de Chrome.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S firefox</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.fr/Firefox</li>
+</ul>
+<h3><strong>LibreWolf</strong></h3>
+<p>LibreWolf, un fork de Firefox axé sur la confidentialité, la sécurité et la liberté. Les avantages liés à l’utilisation de LibreWolf sont nombreux. La plupart de ses fonctionnalités ont été conçues pour garantir votre sécurité et respecter votre vie privée. Dans un premier temps, LibreWolf a désactivé toute la télémétrie. En d’autres termes, aucune donnée de navigation ou de données personnelles ne sera collectée. Il intègre en natif un bloqueur de publicité.</p>
+<p>Installation dans un terminal: <code>sudo yay -S librewolf</code></p>
+<ul>
+<li>Guide: https://librewolf.net/installation/arch/</li>
+</ul>
+<h2>Music Player</h2>
+<h3><strong>MOC Music On Console</strong></h3>
+<p>MOC est une lecteur de musique basé sur la ligne de commande dans un terminal. Il permet de lire de la musique dans un dossier. Il est customisable avec des thèmes.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S moc</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/MOC</li>
+</ul>
+<h2>Music streaming</h2>
+<h3><strong>Spotify</strong></h3>
+<p>Le service de music en streaming Spotify a un logiciel en natif sous GNU/Linux même si l'application web fait très bien le travail. Beaucoup de gens sont plus productif en écoutant de la musique.</p>
+<p>Installation dans un terminal: <code>sudo yay -S spotify</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Spotify </li>
+</ul>
+<h2>Lecteur vidéo</h2>
+<h3><strong>VLC</strong></h3>
+<p>VLC est un logiciel open-source, lecteur multimedia qui accepte la plupart des formats vidéos, DVD, CD.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S vlc</code></p>
+<ul>
+<li>Guide : https://www.videolan.org/vlc/download-archlinux.html</li>
+</ul>
+<h2>IRC Client</h2>
+<h3><strong>WeeChat</strong></h3>
+<p>Client IRC pour chatter sur le réseau.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S weechat</code></p>
+<ul>
+<li>Guide Wiki: https://wiki.archlinux.org/title/WeeChat</li>
+</ul>
+<h2>Service de stockage Cloud</h2>
+<p>Les services cloud ont permis d'améliorer la portabilité des documents, la collaboration et le partage en synchronisant sur plusieurs appareils à la fois et permettant d'avoir une sauvegarde de ces documents les plus utiles sans avoir besoin d'avoir avec soi une clé USB.</p>
+<h3><strong>Dropbox</strong></h3>
+<p>Dropbox est le service de stockage cloud le plus populaire, il permet d'avoir une offre gratuite de 2GB. Il existe un client natif GNU/Linux qui permet de synchroniser ces dossiers avec le serveur de Dropbox.</p>
+<p>Installation dans un terminal: <code>sudo yay -S dropbox</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Dropbox</li>
+</ul>
+<h3><strong>MEGA</strong></h3>
+<p>MEGA est un service cloud respectant la vie privée ou les documents sont chiffrés sur le serveur. Il existe un client en natif sous GNU/LINUX. Il offre 20GB de stockage gratuit.</p>
+<p>Installation dans un terminal: <code>sudo yay -S megasync</code></p>
+<ul>
+<li>Guide: https://www.linuxadictos.com/en/how-to-install-megasync-on-arch-linux-and-derivatives-and-fix-ibcryptopp-so-error.html</li>
+</ul>
+<h2>Editeurs d'image</h2>
+<h3><strong>Gimp</strong> (Adobe photoshop)</h3>
+<p>Gimp est le standard en open-source pour l'édition d'image, il y a de nombreuse ressource sur internet pour apprendre à s'en servir. Il permet la création de dessin ou encore l'utilisation de filtre photos dans la palette d'utilisation possible.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S gimp</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/GIMP</li>
+</ul>
+<h3><strong>Inkscape</strong> (Abobe Illustrator)</h3>
+<p>Inkscape est un logiciel de dessin vectoriel populaire dans le milieu des graphistes, il permet des retouches et des créations rapides. Etant un logiciel libre, il y a une liste importante de tutorial sur le sujet.</p>
+<p>Installation dans un terminal : <code>sudo pacman -S inkscape</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Inkscape</li>
+</ul>
+<h2>Logiciel Paint</h2>
+<h3><strong>Krita</strong></h3>
+<p>Krita est un logiciel de digital painting, vous pouvez créer de l'art digital, des comics ou encore des animations. C'est un outil professionnel utilisé dans les écoles d'art graphique et open source. </p>
+<p>Installation dans un terminal: <code>sudo pacman -S krita</code></p>
+<ul>
+<li>Guide installation: https://docs.krita.org/en/user_manual/getting_started/installation.html</li>
+</ul>
+<h2>Application de photographie</h2>
+<h3><strong>Shotwell</strong> (GNOME)</h3>
+<p>Shotwell est un logiciel d'organisation d'images et de visualisation.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S shotwell</code></p>
+<ul>
+<li>Guide: http://shotwell-project.org/doc/html/</li>
+</ul>
+<h2>Edition vidéo</h2>
+<h3><strong>Shotcut</strong></h3>
+<p><a href="https://shotcut.org/">Shotcut</a> est un logiciel d'édition et création vidéo open-source.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S shotcut</code></p>
+<ul>
+<li>Tutorial: https://shotcut.org/tutorials/</li>
+</ul>
+<h2>Outils de screenshot et enregistrement d'écran</h2>
+<h3><strong>Shutter</strong></h3>
+<p><a href="https://shutter-project.org/">Shutter</a> est un outil d'édition et de partage de capture d'écran, il est installé en natif sous Ubuntu.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S shutter</code></p>
+<ul>
+<li>Guide installation: https://www.makeuseof.com/install-shutter-linux/</li>
+</ul>
+<h3><strong>Kazam</strong></h3>
+<p>Kazam est un logiciel capable d'enregistrer votre écran (screen recording). Il vous laissera le choix de faire soit une capture en continu (format vidéo) ou une simple capture d'écran.</p>
+<p>Installation dans un terminal: <code>sudo yay -S kazam</code></p>
+<h2>Bureautique</h2>
+<h3><strong>LibreOffice</strong></h3>
+<p>LibreOffice est une suite bureautique libre et gratuite, dérivée du projet OpenOffice.org, créée et gérée par The Document Foundation. N'oubliez pas d'installer le pack de langage, les correcteurs orthographique et grammaticale pour l'outil de texte.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S libreoffice-still</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.fr/LibreOffice</li>
+</ul>
+<h3><strong>Cryptpad</strong></h3>
+<p>CryptPad est une solution open source en ligne d'édition collaborative en temps réel et chiffrée.</p>
+<p>Site web: https://cryptpad.fr/</p>
+<h3><strong>Ghostwriter</strong></h3>
+<p>Un éditeur de Markdown simple, libre et gratuit. Il permet de prévisualiser le document Markdown en HTML. L'aperçu ne se met à jour que lorsque vous arrêtez de taper, ce qui vous permet de continuer à travailler sur un document volumineux sans que l'application ne gèle.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S ghostwriter</code></p>
+<ul>
+<li>Documentation: https://wereturtle.github.io/ghostwriter/documentation.html</li>
+</ul>
+<h3><strong>Texmaker</strong></h3>
+<p><a href="https://www.xm1math.net/texmaker/index_fr.html">Texmaker</a> est un éditeur LaTeX libre et gratuit avec support de l'unicode, correction orthographique, auto-complétion et repliage de code. Il intègre un afficheur pdf intégré avec support pour synctex et affichage en mode continu.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S texmaker</code></p>
+<ul>
+<li>Info LaTeX: https://wiki.archlinux.fr/LaTeX</li>
+</ul>
+<h2>Outils de téléchargement</h2>
+<h3><strong>Youtube-dl</strong></h3>
+<p>Youtube-dl est un outil pour télécharger des vidéos et audios depuis plus de 1000 sites dont Youtube ou Dailymotion. Il s'utilise en ligne de commande.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S youtube-dl</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Youtube-dl</li>
+</ul>
+<h3><strong>uGet</strong></h3>
+<p><a href="https://ugetdm.com/">uGet</a> est le premier outil open-source de management de téléchargement depuis internet incluant via HTTP, FTP, Bitorrent. Il permet de reprendre un téléchargement si celui-ci est trop long en particulier pour les connexions internet à bas débit.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S uget</code></p>
+<h2>IDE et éditeur de texte pour codeur</h2>
+<h3><strong>Vim</strong></h3>
+<p>Vim est un éditeur de texte, c'est-à-dire un logiciel permettant la manipulation de fichiers texte. Il est directement inspiré de vi, dont il est le clone le plus populaire. Son nom signifie d'ailleurs Vi IMproved, que l'on peut traduire par « VI aMélioré. S'utilise en ligne de commande.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S vim</code></p>
+<h3><strong>VSCodium</strong></h3>
+<p><a href="https://vscodium.com/">VSCodium</a> est un fork de Visual Studio Code de Microsoft sans la télémétrie. S'utilise de la même façon.</p>
+<p>Installation dans un terminal: <code>sudo yay -S vscodium-bin</code></p>
+<h3><strong>Eclipse</strong></h3>
+<p>Eclipse est un projet, décliné et organisé en un ensemble de sous-projets de développements logiciels, de la fondation Eclipse visant à développer un environnement de production de logiciels libre qui soit extensible, universel et polyvalent, en s'appuyant principalement sur Java.</p>
+<p>Installation dans un terminal: <code>sudo yay -S eclipse-java</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Eclipse</li>
+</ul>
+<h3><strong>Code::Blocks</strong></h3>
+<p>Code::Blocks est un environnement de développement intégré libre et multiplate-forme.Il est écrit en C++ et utilise la bibliothèque wxWidgets. Code::Blocks est orienté C et C++, mais il supporte d'autres langages comme FORTRAN ou le D. Il nécessite l'installation de Xterm pour fonctionner correctement.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S codeblocks</code></p>
+<p>Guide wiki: https://wiki.codeblocks.org/index.php/Main_Page</p>
+<h3><strong>PyCharm</strong></h3>
+<p>Python IDE pour développeur professionnel.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S pycharm-community-edition</code></p>
+<h2>PDF et eBook application</h2>
+<h3><strong>Calibre</strong></h3>
+<p><a href="https://calibre-ebook.com/">Calibre</a> est pour les bibliophiles qui collectent des ebooks pour manager et créer ces propres ebooks dans divers formats dont EPUB. Il permet de convertir dans divers formats.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S calibre</code></p>
+<h2>Notes et To-do list</h2>
+<p>Dans tout processus d'apprentissage, la prise de note est essentiel car nous ne pouvons pas tout retenir.</p>
+<h3><strong>Zim</strong></h3>
+<p>Zim est un éditeur de texte, inspiré de la forme wiki, pensé pour gérer et organiser une collection de textes interconnectables stockés localement. Chaque page-wiki peut contenir du texte avec un formatage léger, des liens vers d'autres pages, des pièces-jointes et des images.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S zim</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Zim</li>
+</ul>
+<h3><strong>Planner</strong></h3>
+<p><a href="https://useplanner.com/">Planner</a> est une application to-do list pour faire de la GTD(Getting thing done) pour manager des tâches à accomplir.</p>
+<p>Installation dans un terminal: <code>sudo yay -S elementary-planner</code></p>
+<h2>mots de passe protection et chiffrement de dossiers</h2>
+<h3><strong>KeePass</strong></h3>
+<p><a href="https://keepass.info/">KeePass</a> Password Safe est un gestionnaire de mots de passe publié sous la licence libre GPL v2 ou ultérieure, permettant de sauvegarder un ensemble de mots de passe dans une base de données chiffrée sous la forme d'un seul fichier dont l'extension est.kdb ou *.kdbx selon la version. Il permet egalement de générer des mots de passe fort contre les attaques brutes forces.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S keepass</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/KeePass</li>
+</ul>
+<h3><strong>VeraCrypt</strong></h3>
+<p>VeraCrypt est un logiciel utilitaire sous licence libre utilisé pour le chiffrement à la volée (OTFE). Il est développé par la société française IDRIX2 et permet de créer un disque virtuel chiffré dans un fichier ou une partition. L'ensemble du dispositif de stockage demande une authentification avant de monter le disque virtuel.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S veracrypt</code></p>
+<p>Guide wiki (fork TrueCrypt): https://wiki.archlinux.org/title/TrueCrypt</p>
+<h2>Système maintenance</h2>
+<h3><strong>Deja-Dup</strong></h3>
+<p>Deja-Dup est un outil de sauvegarde de système minimaliste basé sur Duplicity. Il permet de sauvegarder vers des emplacements distants et de la programmer automatiquement.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S deja-dup</code></p>
+<ul>
+<li>Guide d'installation: https://ostechnix.com/how-to-backup-and-restore-files-using-deja-dup-in-linux/</li>
+</ul>
+<h3><strong>Par-feu GUFW</strong></h3>
+<p>UFW est un nouvel outil de configuration simplifié en ligne de commande de Netfilter, qui donne une alternative à l'outil iptables. UFW devrait à terme permettre une configuration automatique du pare-feu lors de l'installation de programmes en ayant besoin. Gufw est le front-end GUI.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S gufw</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Uncomplicated_Firewall</li>
+</ul>
+<h3><strong>CUPS</strong></h3>
+<p>Common Unix Printing System (CUPS) est un système modulaire d'impression numérique pour les systèmes d'exploitation Unix et assimilés. Tout ordinateur qui utilise CUPS peut se comporter comme un serveur d'impression ; il peut accepter des documents envoyés par d'autres machines (ordinateurs clients), les traiter, et les envoyer à l'imprimante qui convient. </p>
+<p>Installation dans un terminal : <code>sudo pacman -S cups</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.fr/CUPS</li>
+</ul>
+<h3><strong>Neofetch</strong></h3>
+<p>C'est un outil en ligne de commande qui permet d'afficher les informations du système, thèmes icones, manager de fenêtre avec un style ASCII pour le logo de la distribution GNU/Linux.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S neofetch</code></p>
+<h3><strong>Etcher</strong></h3>
+<p><a href="https://www.balena.io/etcher/">Etcher</a> est un logiciel de création de live USB, multi-plateforme et open source.</p>
+<p>Installation dans un terminal: <code>sudo yay -S balena-etcher</code></p>
+<h2>Virtualisation</h2>
+<h3><strong>VirtualBox</strong></h3>
+<p>VirtualBox (ou VBox) est un produit pour la virtualisation d'un environnement 32 (x86) ou 64 bits (AMD64/Intel64) et il est aussi valable pour le milieu de l'entreprise que pour les particuliers. Il supporte un nombre important de systèmes d'exploitation, propose une interface graphique (Qt / SDL) de même qu'une interface en ligne de commande. </p>
+<p>Installation dans un terminal: <code>sudo pacman -S virtualbox</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.fr/VirtualBox</li>
+</ul>
+<h3><strong>KVM</strong></h3>
+<p>KVM est un hyperviseur de virtualisation, il s'utilise avec QEMU et l'interface graphique de gestion des machines virtuelles Virt-Manager.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat</code></p>
+<ul>
+<li>Guide d'installation: https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar/</li>
+</ul>
+<h2>Contrôle de version</h2>
+<h3><strong>Git</strong></h3>
+<p>Git est un logiciel de gestion de versions décentralisé. C'est un logiciel libre créé par Linus Torvalds, auteur du noyau Linux, et distribué selon les termes de la licence publique générale GNU version 2. Il est utilisé par plus de douze millions de personnes.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S git</code></p>
+<p>Guide wiki: https://wiki.archlinux.org/title/Git</p>
+<h2>Management de base de donnée SQL</h2>
+<h3><strong>Beekeeper Studio</strong></h3>
+<p>Beekeeper Studio est un logiciel cross-plateforme d'édition et management de requête SQL. C'est un client pour MySQL, Postgres, SQLite, SQL Server, MariaDB etc.</p>
+<p>Installation dans un terminal: <code>sudo yay -S beekeeper-studio-bin</code></p>
+<ul>
+<li>Guide d'installation: https://docs.beekeeperstudio.io/installation/#linux-installation</li>
+</ul>
+<h2>Transfert de fichier</h2>
+<h3><strong>FileZilla</strong></h3>
+<p>FileZilla Client est un client FTP, FTPS et SFTP, développé sous la licence publique générale GNU.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S filezilla</code></p>
+<ul>
+<li>Guide wiki: https://wiki.filezilla-project.org/Main_Page</li>
+</ul>
+<h2>RDP (Remote desktop client)</h2>
+<h3><strong>Remmina</strong></h3>
+<p>Remmina est un client graphique de connexion et de prise de contrôle de bureau multi-protocoles pour les systèmes d'exploitation basés sur le noyau Linux. Il supporte the Remote Desktop Protocol, VNC, NX, XDMCP, SPICE, X2Go and SSH protocols</p>
+<p>Installation dans un terminal: <code>sudo pacman -S remmina</code></p>
+<ul>
+<li>Guide d'installation: https://remmina.org/how-to-install-remmina/</li>
+</ul>
+<h2>API Client</h2>
+<h3><strong>Insomnia</strong></h3>
+<p><a href="https://insomnia.rest/">Insomnia</a> est un outil open-source de design et client API(Application programming interface) qui facilite l'envoi de requête REST, SOAP, GraphQL, and GRPC.</p>
+<p>Installation dans un terminal: <code>sudo yay -S insomnia-bin</code></p>
+<ul>
+<li>Guide docs: https://docs.insomnia.rest/</li>
+</ul>
+<h2>Diagramme et flowchart</h2>
+<h3><strong>Draw.io</strong></h3>
+<p>draw.io est une application de création de diagrammes et schémas sous licence Apache disponible sous Windows, MacOs, Linux, sous forme d'application web et intégrée à des services cloud tels NextCloud ou Google Drive.</p>
+<p>Site web: https://app.diagrams.net/</p>
+<h2>Mindmapping</h2>
+<h3><strong>Freemind</strong></h3>
+<p>FreeMind est un logiciel libre qui permet de créer des cartes heuristiques, diagrammes représentant les connexions sémantiques entre différentes idées.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S freemind</code></p>
+<h2>Container</h2>
+<h3><strong>Docker</strong></h3>
+<p>Docker est une plateforme logicielle qui permet de construire des applications dans un environnement isolé basé sur des containers.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S docker</code></p>
+<p>Guide d'installation: https://www.linuxfordevices.com/tutorials/linux/install-docker-on-arch</p>
+<h2>Outils Terminal</h2>
+<h3><strong>Oh My Zsh</strong></h3>
+<p>Oh-My-Zsh est un outil pour manager Zsh qui est un shell tout comme en natif sous GNU/Linux Bash. Utiliser Oh-My-Zsh c'est avoir un terminal plus design, intégrant des outils et l'auto-completion des lignes de commandes.</p>
+<p>Site web: https://ohmyz.sh/</p>
+<ul>
+<li>Docs: https://github.com/ohmyzsh/ohmyzsh/wiki</li>
+</ul>
+<h3><strong>Guake terminal</strong></h3>
+<p>Guake est un terminal déroulant. Il permet d'obtenir un terminal en appuyant simplement sur la touche F12 (par défaut, configurable). C'est un clone de Yakuake pour Gnome. </p>
+<p>Installation dans un terminal: <code>sudo pacman -S guake</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.org/title/Guake</li>
+</ul>
+<h3><strong>Tmux</strong></h3>
+<p>Tmux est un terminal multiplexer qui permet à un nombre de terminal pouvant être créé, contrôlé et accédé depuis un seul écran.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S tmux</code></p>
+<ul>
+<li>Guide d'installation: https://computingforgeeks.com/linux-tmux-cheat-sheet/</li>
+</ul>
+<h3><strong>SSH</strong></h3>
+<p>SSH est un protocole permettant d'établir une communication chiffrée, donc sécurisée (on parle parfois de tunnel), sur un réseau informatique (intranet ou Internet) entre une machine locale (le client) et une machine distante (le serveur). La sécurité du chiffrement peut être assurée par différentes méthodes, entre autre par mot de passe ou par un système de clés publique / privée (mieux sécurisé, on parle alors de cryptographie asymétrique). C'est un outil essentiel pour développeurs pour ce connecter à un serveur distant.</p>
+<p>Installation dans un terminal: <code>sudo pacman -S openssh</code></p>
+<ul>
+<li>Guide wiki: https://wiki.archlinux.fr/Ssh</li>
+</ul>
+<h2>Documentation</h2>
+<p>Rappelez-vous de lire le manuel. Les distributions de type Arch Linux sont bien documenté via le wiki Arch en anglais et français. Référez-vous aux Man Pages dans un terminal pour documenter la ligne de commande.</p>
+<p>Si vous ne comprenez pas une ligne de commande, prenez l'habitude d'utiliser des sites comme https://explainshell.com/ qui va analyser la ligne de commande.</p>
+<h3><strong>DevDocs</strong></h3>
+<p>DevDocs API documentation rassemble sur un site web: https://devdocs.io/ les sources des langages, frameworks.</p>
+<h3><strong>Zeal</strong></h3>
+<p>Zeal est une application de documentation hors-ligne pour développeurs de logiciel. Les langages sont référencés, API, Frameworks etc...</p>
+<p>Installation dans un terminal: <code>sudo yay -S zeal</code></p>
+<ul>
+<li>Guide d'utilisation: https://zealdocs.org/usage.html</li>
+</ul>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+</div>
+</div>
+        </div><!--/span-->
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><div><i class="icon-external-link"></i><a href="https://getpelican.com/">Pelican</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.python.org/">Python.org</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://framabook.org/le-c-en-20-heures-2/">Apprendre le C en 20H</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://archlinux.org/">Arch Linux</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.blackarch.io/">Blackarch</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.kernel.org/">Kernel</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.arduino.cc/">Arduino</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://beagleboard.org/bone">BeagleBoard</a></div></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
