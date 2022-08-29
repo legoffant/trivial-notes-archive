@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-06-22T14:52:00+02:00</updated><entry><title>﻿L'ouverture du WIKI LibreHack</title><link href="/louverture-du-wiki-librehack.html" rel="alternate"></link><published>2022-06-22T14:52:00+02:00</published><updated>2022-06-22T14:52:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-06-22:/louverture-du-wiki-librehack.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Etre un hacker demande de la discipline et de la patience, il faut s'exercer à bien des domaines de compétence, j'apprends tous les jours quelque chose de nouveau. Devenez des avides lecteurs de livre technique numérique ou papier, maitriser l'anglais pour la documentation et se tenir informer à l'echelle mondiale des tendances technologiques ainsi que les bonnes pratiques.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-08-28T01:07:00+02:00</updated><entry><title>Créer un site web statique sécurisé sous Nginx</title><link href="/creer-un-site-web-statique-securise-sous-nginx.html" rel="alternate"></link><published>2022-08-28T01:07:00+02:00</published><updated>2022-08-28T01:07:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-08-28:/creer-un-site-web-statique-securise-sous-nginx.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Mon retour d'expérience pour créer un site web simple avec une page statique. Je vais expliquer la construction en moins de 3 heures de &lt;a href="https://qasari.net"&gt;https://qasari.net&lt;/a&gt; en apprenant à gérer son propre serveur chez un hébergeur.&lt;/p&gt;
+&lt;h3&gt;Configuration de base&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hébergeur: &lt;a href="https://www.ovhcloud.com/fr/"&gt;OVH&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Type de serveur: VPS(Virtual Private Server) - 1vcore, 2 Go, 40 Go SSD&lt;/li&gt;
+&lt;li&gt;OS configuré: Linux Debian 11&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nota: Nom de domaine qasari.net également chez OVH fournisseur français.&lt;/p&gt;
+&lt;p&gt;Vous pouvez choisir un autre hébergeur tel que Ionos ou infomaniak en Suisse. De l'auto-hébergement sur un Raspberry Pi est possible.&lt;/p&gt;
+&lt;h3&gt;Première connexion au VPS&lt;/h3&gt;
+&lt;p&gt;Vous allez recevoir à votre achat de VPS via email les identifiants pour une connexion à distance via SSH. Vous avez besoin de l'adresse IPv4 et de l'identifiant avec un mot de passe provisoire.&lt;/p&gt;
+&lt;p&gt;Depuis un terminal(natif sous UNIX-like) connecter vous au serveur:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="mf"&gt;@23.2.34.7&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans cette exemple on ce connecte en root sur l'IP 23.2.34.7. Votre mot de passe sera demandé une fois la connexion établie. L'identifiant, ici root peu changer.&lt;/p&gt;
+&lt;p&gt;Bien maintenant installons le serveur. Une fois sur le serveur votre prompt change avec le nom de celui-ci et un message d'accueil, le MOTD.&lt;/p&gt;
+&lt;h3&gt;Installation du serveur&lt;/h3&gt;
+&lt;p&gt;Vérifier et installer que vous avez un éditeur de texte ainsi que la completion pour bash:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ apt install nano vim bash-completion
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configurer l'hosts réseau en fonction de votre nom de domaine:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ nano /etc/hosts
+
+&lt;span class="m"&gt;127&lt;/span&gt;.0.0.1       localhost.qasari.net   localhost
+&lt;span class="m"&gt;37&lt;/span&gt;.187.181.161  qasari.net     qasari
+
+&lt;span class="c1"&gt;# Ligne désirée si en configuration IPv6&lt;/span&gt;
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Changer le nom du serveur:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ nano /etc/hostname
+
+qasari
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Relancer le serveur pour que la configuration prenne effet puis reconnecter vous en ssh:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vérifier si le nom du serveur est correct:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ hostname
+$ hostname -f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Mettre à jour le système avec les sources des paquets. Ajoutez contrib non-free:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;nano&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;/etc/apt/sources.list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian-security&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye/updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian-security&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye/updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye-updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye-updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Mise à jour du système:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; apt-get upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Linux"></category><category term="sysadmin"></category><category term="ingénierie"></category><category term="nginx"></category></entry><entry><title>﻿L'ouverture du WIKI LibreHack</title><link href="/louverture-du-wiki-librehack.html" rel="alternate"></link><published>2022-06-22T14:52:00+02:00</published><updated>2022-06-22T14:52:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-06-22:/louverture-du-wiki-librehack.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Etre un hacker demande de la discipline et de la patience, il faut s'exercer à bien des domaines de compétence, j'apprends tous les jours quelque chose de nouveau. Devenez des avides lecteurs de livre technique numérique ou papier, maitriser l'anglais pour la documentation et se tenir informer à l'echelle mondiale des tendances technologiques ainsi que les bonnes pratiques.  &lt;/p&gt;
 &lt;p&gt;L'esprit des libertés numériques s'apprend de plus en plus jeune, on peut ainsi former à la bidouille sur Raspberry Pi dès 10 ans, avoir son propre ordinateur(et filtrer internet) ou à la programmation avec Python. Les hackers ont un temps d'avance sur les autres car il cherche à trouver des failles sur les systèmes pour les analyser et tirer un bénéfice que cela soit de la connaissance, de l'argent etc... Ainsi le groupe Lapsus$, le mastermind n'avait que 16 ans au Royaume-Unis. C'est une affaire de passionné, faut-il donner les bons outils pour progresser. Savoir exploiter des failles est une grande qualité, ce n'est pas seulement être le plus malin mais de profiter ce que nous donne le système  &lt;/p&gt;
 &lt;p&gt;Devenir un virtuose en informatique prend du temps, comme si vous apprenez à jouer un instrument de musique, il faut de la pratique, soit environ 10 000h. Ce n'est pas impossible à atteindre en pratiquant tous les jours un peu. Il faut définir un temps dédié à l'apprentissage en sachant que le retour sur investissement est réel. Les hackers sont très côté sur le marché de l'emploi, certain lancent leur entreprise. On négocie rapidement des salaires de 28k€/an pour un système administrateur bac+3 comme entrée sur le marché en province. Cela peut monter jusqu'à 60K€/an pour un sénior. Un pentester, le salaire médian est de 54K€/an montant à 120K€ pour les plus expérimentés. En sachant que faire une école d'ingénieur, le salaire moyen en sortie est de 34-36k€/an. Alors on me dira la tune est dans la cybersécurité? Certain deviennent millionnaire rapidement, tel qu'en faisant des bug bounty ou de la revente de faille 0-Days.  &lt;/p&gt;
 &lt;p&gt;Faire des études c'est contraignant, mais je reste ouvert à l'idée pour les classes moyennes qui ont les moyens d'économiser pour faire un bac+3, une licence à l'université en informatique généraliste pour entrée correctement sur le marché. Oublier les formations bullshit à 8000€ tel que Guardia en France qui ont des accords commerciaux. C'est une arnaque. Seul l'enseignement généraliste universitaire en informatique est valable comme rapport qualité/prix.  &lt;/p&gt;
