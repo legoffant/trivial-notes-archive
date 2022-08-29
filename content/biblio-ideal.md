@@ -26,6 +26,8 @@ Je me devais d'introduire ces livres par de la philosophie et formater à une pe
 * Discours de la méthode; R. Descarte
 * Empirisme et métaphysique: l'Essai sur l'origine des connaissances humaines de Condillac; André Charrak
 * Introduction à la pensée complexe; Edgar Morin
+* Les épistémologies constructivistes; J-L Le Moigne 
+
 
 
 ### Essais et livre de sciences
@@ -56,6 +58,12 @@ On retrouve dans ce volet sciences, des ouvrages et théories scientifiques sur 
 * Physique quantique et représentation du monde; E. Schrodinger
 * Les objets fractals; B. Mandelbrot
 * Le cygne noir; N.Taleb
+* La Plénitude de l'univers; David Bohm
+
+### Programmation C++
+
+* Le guide du C++ moderne – De débutant à développeur; Benharrats, Vittupier
+* Programmer en C++: Des premiers pas à la maîtrise de C++20; A. Gibaud
 
 ### Physique
 
@@ -102,7 +110,6 @@ Des élements introductifs aux maths en passant par des ouvrages de référence 
 * Découvrir et comprendre l'ingénierie système; AFIS Collectif G.Fiorese
 * Méthode des éléments finis: appr. prat. mécanique stuctures 2e Éd; Michel Cazenave
 * Résistance des matériaux: aide-mémoire 10e Éd.; J.Goulet, F.Lerouge
-* Structures métalliques: ouvrages simples; Eyrolles
 * Mémotech Sciences de l'ingénieur; M. Jakubowicz, R.Bourgeois, D.Bauer
 * Mémotech plus conception et dessin; C.Barlier, R.Bourgeois
 * Automatique; Granjon
@@ -144,7 +151,6 @@ Des élements introductifs aux maths en passant par des ouvrages de référence 
 * Theory of Machines and Mechanisms 5th Edition; Uicker, Pennock, Shighley
 * Design Paradigms: Case Histories of Error and Judgment in Engineering; H.Petroski
 * The Existential Pleasures of Engineering; S.Florman
-* Studying Engineering: A Roadmap to a Rewarding Career 5th Edition; Landis, Peuker, Mott
 * Basic Machines and How They Work; Naval education and training program
 * Engineering: A Very Short Introduction; Blockley
 * To Engineer Is Human: The Role of Failure in Successful Design; H.Petroski
@@ -154,10 +160,30 @@ Des élements introductifs aux maths en passant par des ouvrages de référence 
 * The Perfectionists: How Precision Engineers Created the Modern World – Simon Winchester
 * Skunk Works: A Personal Memoir of My Years at Lockheed – Ben R. Rich
 * Structures: Or Why Things Don’t Fall Down – J. E. Gordon
+* The Engineering Design of Systems: Models and Methods; D M. Buede
+* Pocket Ref 4th Edition; Thomas Glover
+* Engineering Formulas 8th Edition; K. Gieck
+* Nuclear Engineering Fundamentals: A Practical Perspective; R Masterson
 
-### Propulsion
+### Aerospace
 
 * Deep Space Propulsion: A Roadmap to Interstellar Flight (Astronomers' Universe) 2012th Edition; K F. Long
 * Fundamentals of Aerospace Engineering: (Beginner's Guide); Ali Baghchehsara
 * Rocket Propulsion Elements 9th Edition; G. P Sutton
+* Basic Wing and Airfoil Theory; Alan Pope
+* Theory of Flight; Richard Von Mises
+* Theoretical Aerodynamics; L.M Milne-Thomson
+* Dynamics of Atmospheric Flight; Bernard Etkin
+* Introduction to Space Dynamics; W T Thomson
+* A History and Philosophy of Fluid Mechanics; G.A Tokaty
+* An introduction to theoretical and computational aerodynamics; Jack Moran
+* Aircraft Structures; David J. Peery
+* Aerospace Engineering: Design, Development and Applications; S. Baggins
 
+
+# Mining
+
+* Principles of Mineral Processing; Fuerstenau, Han
+* Mining Engineering Analysis, Second Edition; C. Bise
+* Underground Mining Methods; Hustrulid, Bullock
+* SME Mining Reference Handbook; Lowrie
