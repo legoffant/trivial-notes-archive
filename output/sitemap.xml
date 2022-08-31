@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2022-08-19T10:29:06-00:00</lastmod>
+<lastmod>2022-08-29T17:15:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2022-08-19T10:29:06-00:00</lastmod>
+<lastmod>2022-08-29T17:15:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2022-08-19T10:29:06-00:00</lastmod>
+<lastmod>2022-08-29T17:15:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2022-08-19T10:29:06-00:00</lastmod>
+<lastmod>2022-08-29T17:15:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2022-08-19T10:29:06-00:00</lastmod>
+<lastmod>2022-08-29T17:15:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/linvocation-du-belphegor.html</loc>
+<lastmod>2022-08-29T17:07:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/creer-un-site-web-statique-securise-sous-nginx.html</loc>
+<lastmod>2022-08-28T01:07:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -537,14 +551,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/inclassable.html</loc>
-<lastmod>2022-08-19T10:15:00+00:09</lastmod>
+<lastmod>2022-08-29T17:07:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/category/linux.html</loc>
-<lastmod>2022-06-22T14:52:00+00:09</lastmod>
+<lastmod>2022-08-28T01:07:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -557,14 +571,56 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/livre.html</loc>
-<lastmod>2022-08-19T10:15:00+00:09</lastmod>
+<loc>/tag/roman.html</loc>
+<lastmod>2022-08-29T17:07:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/belphegor.html</loc>
+<lastmod>2022-08-29T17:07:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/islam.html</loc>
+<lastmod>2022-08-29T17:07:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/heresie.html</loc>
+<lastmod>2022-08-29T17:07:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/sysadmin.html</loc>
+<lastmod>2022-08-28T01:07:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/ingenierie.html</loc>
+<lastmod>2022-08-28T01:07:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/nginx.html</loc>
+<lastmod>2022-08-28T01:07:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/livre.html</loc>
 <lastmod>2022-08-19T10:15:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -662,13 +718,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/sysadmin.html</loc>
-<lastmod>2022-07-29T15:47:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/logiciel-libre.html</loc>
 <lastmod>2022-07-25T13:10:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -760,21 +809,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/islam.html</loc>
-<lastmod>2022-07-14T15:44:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/bretagne.html</loc>
-<lastmod>2022-07-14T15:44:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/roman.html</loc>
 <lastmod>2022-07-14T15:44:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -1272,7 +1307,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2022-08-19T10:15:00+00:09</lastmod>
+<lastmod>2022-08-29T17:07:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
