@@ -81,17 +81,21 @@ League of Professional System Administrators (LOPSA):
 ### Sites références
 
 En français, le site de François Goffinet sur l'administration Linux:
+
 * [https://linux.goffinet.org/](https://linux.goffinet.org/)
 
 Le wiki r/sysadmin de la communauté Reddit:
+
 * [https://www.reddit.com/r/sysadmin/wiki/index/](https://www.reddit.com/r/sysadmin/wiki/index/)
 
 
 La documentation Ubuntu pour serveur:
+
 * [https://help.ubuntu.com/community/Servers](https://help.ubuntu.com/community/Servers)
 * [https://ubuntu.com/server/docs](https://ubuntu.com/server/docs)
 
 L'administration sous Debian:
+
 * [Guide de référence Debian](https://www.debian.org/doc/manuals/debian-reference/)
 * [The Debian Administrator's Handbook](https://debian-handbook.info/browse/stable/)
 * [Guide de sécurité du Debian 3.19](https://www.debian.org/doc/manuals/securing-debian-manual/index.fr.html)
@@ -103,18 +107,23 @@ L'administration sous Debian:
 ### Outils
 
 10 outils Linux à connaître en tant que Sysadmin
+
 * [https://geekflare.com/fr/linux-tools-for-sysadmin/](https://geekflare.com/fr/linux-tools-for-sysadmin/)
 
 10 Must Have Tools for Linux System Administrators
+
 * [https://www.makeuseof.com/best-tools-for-linux-system-administrators/](https://www.makeuseof.com/best-tools-for-linux-system-administrators/)
 
 What’s your favorite automation tool?
+
 * [https://www.redhat.com/sysadmin/favorite-automation-tool](https://www.redhat.com/sysadmin/favorite-automation-tool)
 
 30 Linux System Monitoring Tools Every SysAdmin Should Know
+
 * [https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
 
 Some useful tools for Linux sysAdmin
+
 * [https://ostechnix.com/some-useful-tools-for-linux-system-admins/](https://ostechnix.com/some-useful-tools-for-linux-system-admins/)
 
 ### Roadmap
@@ -126,7 +135,9 @@ Some useful tools for Linux sysAdmin
 ### List Awesome
 
 sysadmin-reading-list
+
 * [https://github.com/unixorn/sysadmin-reading-list#online-communities](https://github.com/unixorn/sysadmin-reading-list#online-communities)
 
 Awesome SysAdmin
+
 * [https://github.com/kahun/awesome-sysadmin](https://github.com/kahun/awesome-sysadmin)

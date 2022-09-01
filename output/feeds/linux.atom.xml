@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-08-31T02:15:00+02:00</updated><entry><title>L'avenir de l'informatique</title><link href="/lavenir-de-linformatique.html" rel="alternate"></link><published>2022-08-31T02:15:00+02:00</published><updated>2022-08-31T02:15:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-08-31:/lavenir-de-linformatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Exposons donc et partageons une vision de l'informatique, en tant qu'entrepreneur comment je vois l'informatique évoluer.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-09-01T19:16:00+02:00</updated><entry><title>Ressources pour SysAdmin Linux</title><link href="/ressources-pour-sysadmin-linux.html" rel="alternate"></link><published>2022-09-01T19:16:00+02:00</published><updated>2022-09-01T19:16:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-09-01:/ressources-pour-sysadmin-linux.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Dans cette article nous allons nous pencher sur le métier d'administrateur système (sysAdmin) sous Linux. Je vais utiliser ce topic pour noter les ressources sur le métier.&lt;/p&gt;
+&lt;p&gt;Quelques livres pour introduire le sujet à lire et avoir dans sa bibliothèque:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;UNIX and Linux System Administration Handbook, 5th Edition, 2017&lt;/li&gt;
+&lt;li&gt;Practice of System and Network Administration, The Volume 1&lt;/li&gt;
+&lt;li&gt;The Linux Philosophy for SysAdmins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Intro SysAdmin&lt;/h3&gt;
+&lt;p&gt;Une série de vidéo sur Youtube pour ce lancer dans l'administration système Linux, de niveau débutant à SysAdmin: The Linux Basics Course: &lt;a href="https://www.youtube.com/watch?v=bju_FdCo42w&amp;amp;list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK"&gt;Beginner to SysAdmin, Step by Step&lt;/a&gt; suivi d'un très bon cours pour savoir configurer un serveur: &lt;a href="https://www.youtube.com/watch?v=WMy3OzvBWc0"&gt;Linux Server Course - System Configuration and Opération&lt;/a&gt;. &lt;/p&gt;
+&lt;h3&gt;Avoir son propre serveur&lt;/h3&gt;
+&lt;p&gt;Pour aller plus loin, déployer un &lt;a href="https://fr.linuxteaching.com/article/how_to_build_a_server_at_home"&gt;serveur domestique DIY&lt;/a&gt; chez vous, pour prototyper, apprendre des services, créer vos virtuals Labs pour tester des configurations. Ne dépensez pas plus de 1000€ pour un serveur en neuf, &lt;a href="https://www.ldlc.com/configurateur-pc/"&gt;lien vers le configurateur PC&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;########################################################&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Config&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Server&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mini&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ITX&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Ryzen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CPU&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;32&lt;/span&gt;&lt;span class="k"&gt;GO&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;RAM&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="n"&gt;x2TO&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HDD&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;RAID&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;########################################################&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Par&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ldlc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ASRock&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;A520M&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ITX&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ac&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;119&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;95&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;AMD&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Ryzen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5500&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Wraith&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Stealth&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;3.6&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;GHz&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;4.2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;GHz&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;157&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;96&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Fractal&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Design&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Node&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;304&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Noir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;119&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;95&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Corsair&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Vengeance&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LPX&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Series&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Low&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Profile&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;32&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;Go&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;Go&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;DDR4&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3200&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;MHz&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CL16&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;159&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;95&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Seagate&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;IronWolf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;To&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;395&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Seasonic&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CORE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;GM&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="n"&gt;PLUS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Gold&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;74&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;95&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Corsair&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Câbles&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;SATA&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Gainés&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Droits&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Coudés&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;coloris&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bleu&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;29&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;90&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Advance&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;GTA&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;230&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;AZERTY&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Français&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;19&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="mi"&gt;94&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="nl"&gt;total&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1078&lt;/span&gt;&lt;span class="err"&gt;€&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Certifications&lt;/h3&gt;
+&lt;p&gt;Pour vous faire reconnaître sur le marché du travail, passez des certifications, elles permettent de juger de vos connaissances, quelques une des plus demandés:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux Essentials &lt;/li&gt;
+&lt;li&gt;RHCSA - Red Hat Certified System Administrator&lt;/li&gt;
+&lt;li&gt;RHCE - Red Hat Certified Engineer&lt;/li&gt;
+&lt;li&gt;LPIC 1 - Linux Administrator&lt;/li&gt;
+&lt;li&gt;LPIC 2 - Linux Engineer&lt;/li&gt;
+&lt;li&gt;LPIC 3 - Linux Enterprise Professional Certification&lt;/li&gt;
+&lt;li&gt;LFCS - Linux Foundation Certified System Administrator&lt;/li&gt;
+&lt;li&gt;compTIA Linux+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://hackr.io/blog/best-linux-certifications"&gt;Plus d'information sur les certifications&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Programmation&lt;/h3&gt;
+&lt;p&gt;Pour automatiser les tâches d'administrations il faut savoir programmer en bash, python voir du perl. Pour du scripting. Livre recommandé:&lt;/p&gt;
+&lt;p&gt;Bash &amp;amp; scripting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Linux Command Line, 2nd Edition&lt;/li&gt;
+&lt;li&gt;Linux® Command Line and Shell Scripting Bible, Third Edition&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automate the Boring Stuff with Python&lt;/li&gt;
+&lt;li&gt;Python for Unix and Linux System Administration 1st Edition &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;E-Learning&lt;/h3&gt;
+&lt;p&gt;Quelques liens de cours d'administrateur système:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://training.linuxfoundation.org/training/essentials-of-linux-system-administration/"&gt;Essentials of Linux System Administration (LFS201)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/linux-administration-bootcamp/"&gt;Linux Administration Bootcamp: Go from Beginner to Advanced&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Organisation&lt;/h3&gt;
+&lt;p&gt;League of Professional System Administrators (LOPSA):&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://lopsa.org/"&gt;https://lopsa.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Sites références&lt;/h3&gt;
+&lt;p&gt;En français, le site de François Goffinet sur l'administration Linux:
+* &lt;a href="https://linux.goffinet.org/"&gt;https://linux.goffinet.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Le wiki r/sysadmin de la communauté Reddit:
+* &lt;a href="https://www.reddit.com/r/sysadmin/wiki/index/"&gt;https://www.reddit.com/r/sysadmin/wiki/index/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;La documentation Ubuntu pour serveur:
+* &lt;a href="https://help.ubuntu.com/community/Servers"&gt;https://help.ubuntu.com/community/Servers&lt;/a&gt;
+* &lt;a href="https://ubuntu.com/server/docs"&gt;https://ubuntu.com/server/docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;L'administration sous Debian:
+* &lt;a href="https://www.debian.org/doc/manuals/debian-reference/"&gt;Guide de référence Debian&lt;/a&gt;
+* &lt;a href="https://debian-handbook.info/browse/stable/"&gt;The Debian Administrator's Handbook&lt;/a&gt;
+* &lt;a href="https://www.debian.org/doc/manuals/securing-debian-manual/index.fr.html"&gt;Guide de sécurité du Debian 3.19&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://meta.serverfault.com/"&gt;Meta Serveur Fault&lt;/a&gt; est un site de questions et réponses pour administrateur système et réseau.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tldp.org/index.html"&gt;TLDP The Linux Documentation Project&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Outils&lt;/h3&gt;
+&lt;p&gt;10 outils Linux à connaître en tant que Sysadmin
+* &lt;a href="https://geekflare.com/fr/linux-tools-for-sysadmin/"&gt;https://geekflare.com/fr/linux-tools-for-sysadmin/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;10 Must Have Tools for Linux System Administrators
+* &lt;a href="https://www.makeuseof.com/best-tools-for-linux-system-administrators/"&gt;https://www.makeuseof.com/best-tools-for-linux-system-administrators/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What’s your favorite automation tool?
+* &lt;a href="https://www.redhat.com/sysadmin/favorite-automation-tool"&gt;https://www.redhat.com/sysadmin/favorite-automation-tool&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;30 Linux System Monitoring Tools Every SysAdmin Should Know
+* &lt;a href="https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html"&gt;https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Some useful tools for Linux sysAdmin
+* &lt;a href="https://ostechnix.com/some-useful-tools-for-linux-system-admins/"&gt;https://ostechnix.com/some-useful-tools-for-linux-system-admins/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Roadmap&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://roadmap.sh/devops"&gt;https://roadmap.sh/devops&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/infinite-education/linux-admin-roadmap"&gt;https://github.com/infinite-education/linux-admin-roadmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nrstickley.com/system-admin-roadmap/"&gt;http://www.nrstickley.com/system-admin-roadmap/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;List Awesome&lt;/h3&gt;
+&lt;p&gt;sysadmin-reading-list
+* &lt;a href="https://github.com/unixorn/sysadmin-reading-list#online-communities"&gt;https://github.com/unixorn/sysadmin-reading-list#online-communities&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Awesome SysAdmin
+* &lt;a href="https://github.com/kahun/awesome-sysadmin"&gt;https://github.com/kahun/awesome-sysadmin&lt;/a&gt;&lt;/p&gt;</content><category term="Linux"></category><category term="Ressources"></category><category term="Linux"></category><category term="SysAdmin"></category></entry><entry><title>L'avenir de l'informatique</title><link href="/lavenir-de-linformatique.html" rel="alternate"></link><published>2022-08-31T02:15:00+02:00</published><updated>2022-08-31T02:15:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-08-31:/lavenir-de-linformatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Exposons donc et partageons une vision de l'informatique, en tant qu'entrepreneur comment je vois l'informatique évoluer.&lt;/p&gt;
 &lt;p&gt;Je pense que nous allons aller vers l'informatique modulaire que cela soit niveau matériel mais également logiciel. L'ordinateur dont on peut modifier les composants pour les réparer ou mettre à jour va bénéficier à l'économie circulaire. On va dans ce sens avec un indice de réparabilité des composants électroniques et mécaniques. Cela ouvre la voie au hacking du materiel que l'on va pouvoir remplacer par des versions custom personnalisé qui sera porteur pour tout un écosystème de l'économie. Ainsi un fabricant d'ordinateur sera architecte de système intégrateur de composant de base et éprouvé techniquement pour leur fiabilité et ouvrira la porte à la customisation en adoptant des standards sur la gestion des interfaces de communication.&lt;/p&gt;
 &lt;p&gt;On peut faire le parallèle avec certaine pratique de l'open source et du logiciel libre dans la conception logicielle sur la mise en place d'API de programmation et de plugins pour des architectures modulaires.&lt;/p&gt;
 &lt;p&gt;Le constructeur DELL a proposé un prototype qui va dans se sens avec Luna dans sa gamme d'ordinateur portable.&lt;/p&gt;
