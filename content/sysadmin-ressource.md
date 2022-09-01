@@ -1,0 +1,132 @@
+Title: Ressources pour SysAdmin Linux
+Date: 2022-09-01 19:16
+Category:Linux
+Tags:Ressources, Linux, SysAdmin
+Authors: Anthony Le Goff
+Summary:
+
+Dans cette article nous allons nous pencher sur le métier d'administrateur système (sysAdmin) sous Linux. Je vais utiliser ce topic pour noter les ressources sur le métier.
+
+Quelques livres pour introduire le sujet à lire et avoir dans sa bibliothèque:
+
+* UNIX and Linux System Administration Handbook, 5th Edition, 2017
+* Practice of System and Network Administration, The Volume 1
+* The Linux Philosophy for SysAdmins
+
+### Intro SysAdmin
+Une série de vidéo sur Youtube pour ce lancer dans l'administration système Linux, de niveau débutant à SysAdmin: The Linux Basics Course: [Beginner to SysAdmin, Step by Step](https://www.youtube.com/watch?v=bju_FdCo42w&list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) suivi d'un très bon cours pour savoir configurer un serveur: [Linux Server Course - System Configuration and Opération](https://www.youtube.com/watch?v=WMy3OzvBWc0). 
+
+### Avoir son propre serveur
+Pour aller plus loin, déployer un [serveur domestique DIY](https://fr.linuxteaching.com/article/how_to_build_a_server_at_home) chez vous, pour prototyper, apprendre des services, créer vos virtuals Labs pour tester des configurations. Ne dépensez pas plus de 1000€ pour un serveur en neuf, [lien vers le configurateur PC](https://www.ldlc.com/configurateur-pc/):
+
+```
+########################################################
+Config Server mini-ITX Ryzen CPU 32GO RAM 4x2TO HDD RAID
+########################################################
+Par ldlc.com
+
+- ASRock A520M-ITX/ac 119€95
+- AMD Ryzen 5 5500 Wraith Stealth (3.6 GHz / 4.2 GHz) 157€96
+- Fractal Design Node 304 Noir 119€95
+- Corsair Vengeance LPX Series Low Profile 32 Go (2x 16 Go) DDR4 3200 MHz CL16 159€95
+- 4 x Seagate IronWolf 2 To 395€80
+- Seasonic CORE GM-500 80PLUS Gold 74€95
+- 2 x Corsair Câbles SATA Gainés Droits/Coudés 30 cm (coloris bleu) 29€90
+- Advance GTA 230 (AZERTY Français) 19€94 
+
+total: 1078€
+```
+
+### Certifications
+Pour vous faire reconnaître sur le marché du travail, passez des certifications, elles permettent de juger de vos connaissances, quelques une des plus demandés:
+
+* Linux Essentials 
+* RHCSA - Red Hat Certified System Administrator
+* RHCE - Red Hat Certified Engineer
+* LPIC 1 - Linux Administrator
+* LPIC 2 - Linux Engineer
+* LPIC 3 - Linux Enterprise Professional Certification
+* LFCS - Linux Foundation Certified System Administrator
+* compTIA Linux+
+
+[Plus d'information sur les certifications](https://hackr.io/blog/best-linux-certifications)
+
+### Programmation
+
+Pour automatiser les tâches d'administrations il faut savoir programmer en bash, python voir du perl. Pour du scripting. Livre recommandé:
+
+Bash & scripting:
+
+* The Linux Command Line, 2nd Edition
+* Linux® Command Line and Shell Scripting Bible, Third Edition
+
+Python:
+
+* Automate the Boring Stuff with Python
+* Python for Unix and Linux System Administration 1st Edition 
+
+### E-Learning
+
+Quelques liens de cours d'administrateur système:
+
+* [Essentials of Linux System Administration (LFS201)](https://training.linuxfoundation.org/training/essentials-of-linux-system-administration/)
+* [Linux Administration Bootcamp: Go from Beginner to Advanced](https://www.udemy.com/course/linux-administration-bootcamp/)
+
+### Organisation
+
+League of Professional System Administrators (LOPSA):
+
+[https://lopsa.org/](https://lopsa.org/)
+
+### Sites références
+
+En français, le site de François Goffinet sur l'administration Linux:
+* [https://linux.goffinet.org/](https://linux.goffinet.org/)
+
+Le wiki r/sysadmin de la communauté Reddit:
+* [https://www.reddit.com/r/sysadmin/wiki/index/](https://www.reddit.com/r/sysadmin/wiki/index/)
+
+
+La documentation Ubuntu pour serveur:
+* [https://help.ubuntu.com/community/Servers](https://help.ubuntu.com/community/Servers)
+* [https://ubuntu.com/server/docs](https://ubuntu.com/server/docs)
+
+L'administration sous Debian:
+* [Guide de référence Debian](https://www.debian.org/doc/manuals/debian-reference/)
+* [The Debian Administrator's Handbook](https://debian-handbook.info/browse/stable/)
+* [Guide de sécurité du Debian 3.19](https://www.debian.org/doc/manuals/securing-debian-manual/index.fr.html)
+
+[Meta Serveur Fault](https://meta.serverfault.com/) est un site de questions et réponses pour administrateur système et réseau.
+
+[TLDP The Linux Documentation Project](https://tldp.org/index.html)
+
+### Outils
+
+10 outils Linux à connaître en tant que Sysadmin
+* [https://geekflare.com/fr/linux-tools-for-sysadmin/](https://geekflare.com/fr/linux-tools-for-sysadmin/)
+
+10 Must Have Tools for Linux System Administrators
+* [https://www.makeuseof.com/best-tools-for-linux-system-administrators/](https://www.makeuseof.com/best-tools-for-linux-system-administrators/)
+
+What’s your favorite automation tool?
+* [https://www.redhat.com/sysadmin/favorite-automation-tool](https://www.redhat.com/sysadmin/favorite-automation-tool)
+
+30 Linux System Monitoring Tools Every SysAdmin Should Know
+* [https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)
+
+Some useful tools for Linux sysAdmin
+* [https://ostechnix.com/some-useful-tools-for-linux-system-admins/](https://ostechnix.com/some-useful-tools-for-linux-system-admins/)
+
+### Roadmap
+
+* [https://roadmap.sh/devops](https://roadmap.sh/devops)
+* [https://github.com/infinite-education/linux-admin-roadmap](https://github.com/infinite-education/linux-admin-roadmap)
+* [http://www.nrstickley.com/system-admin-roadmap/](http://www.nrstickley.com/system-admin-roadmap/)
+
+### List Awesome
+
+sysadmin-reading-list
+* [https://github.com/unixorn/sysadmin-reading-list#online-communities](https://github.com/unixorn/sysadmin-reading-list#online-communities)
+
+Awesome SysAdmin
+* [https://github.com/kahun/awesome-sysadmin](https://github.com/kahun/awesome-sysadmin)
