@@ -62,30 +62,48 @@
 &lt;p&gt;League of Professional System Administrators (LOPSA):&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://lopsa.org/"&gt;https://lopsa.org/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Sites références&lt;/h3&gt;
-&lt;p&gt;En français, le site de François Goffinet sur l'administration Linux:
-* &lt;a href="https://linux.goffinet.org/"&gt;https://linux.goffinet.org/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Le wiki r/sysadmin de la communauté Reddit:
-* &lt;a href="https://www.reddit.com/r/sysadmin/wiki/index/"&gt;https://www.reddit.com/r/sysadmin/wiki/index/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;La documentation Ubuntu pour serveur:
-* &lt;a href="https://help.ubuntu.com/community/Servers"&gt;https://help.ubuntu.com/community/Servers&lt;/a&gt;
-* &lt;a href="https://ubuntu.com/server/docs"&gt;https://ubuntu.com/server/docs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;L'administration sous Debian:
-* &lt;a href="https://www.debian.org/doc/manuals/debian-reference/"&gt;Guide de référence Debian&lt;/a&gt;
-* &lt;a href="https://debian-handbook.info/browse/stable/"&gt;The Debian Administrator's Handbook&lt;/a&gt;
-* &lt;a href="https://www.debian.org/doc/manuals/securing-debian-manual/index.fr.html"&gt;Guide de sécurité du Debian 3.19&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En français, le site de François Goffinet sur l'administration Linux:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://linux.goffinet.org/"&gt;https://linux.goffinet.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le wiki r/sysadmin de la communauté Reddit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.reddit.com/r/sysadmin/wiki/index/"&gt;https://www.reddit.com/r/sysadmin/wiki/index/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La documentation Ubuntu pour serveur:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://help.ubuntu.com/community/Servers"&gt;https://help.ubuntu.com/community/Servers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ubuntu.com/server/docs"&gt;https://ubuntu.com/server/docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L'administration sous Debian:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.debian.org/doc/manuals/debian-reference/"&gt;Guide de référence Debian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://debian-handbook.info/browse/stable/"&gt;The Debian Administrator's Handbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.debian.org/doc/manuals/securing-debian-manual/index.fr.html"&gt;Guide de sécurité du Debian 3.19&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;a href="https://meta.serverfault.com/"&gt;Meta Serveur Fault&lt;/a&gt; est un site de questions et réponses pour administrateur système et réseau.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://tldp.org/index.html"&gt;TLDP The Linux Documentation Project&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Outils&lt;/h3&gt;
-&lt;p&gt;10 outils Linux à connaître en tant que Sysadmin
-* &lt;a href="https://geekflare.com/fr/linux-tools-for-sysadmin/"&gt;https://geekflare.com/fr/linux-tools-for-sysadmin/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;10 Must Have Tools for Linux System Administrators
-* &lt;a href="https://www.makeuseof.com/best-tools-for-linux-system-administrators/"&gt;https://www.makeuseof.com/best-tools-for-linux-system-administrators/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;What’s your favorite automation tool?
-* &lt;a href="https://www.redhat.com/sysadmin/favorite-automation-tool"&gt;https://www.redhat.com/sysadmin/favorite-automation-tool&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;30 Linux System Monitoring Tools Every SysAdmin Should Know
-* &lt;a href="https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html"&gt;https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Some useful tools for Linux sysAdmin
-* &lt;a href="https://ostechnix.com/some-useful-tools-for-linux-system-admins/"&gt;https://ostechnix.com/some-useful-tools-for-linux-system-admins/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;10 outils Linux à connaître en tant que Sysadmin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://geekflare.com/fr/linux-tools-for-sysadmin/"&gt;https://geekflare.com/fr/linux-tools-for-sysadmin/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10 Must Have Tools for Linux System Administrators&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.makeuseof.com/best-tools-for-linux-system-administrators/"&gt;https://www.makeuseof.com/best-tools-for-linux-system-administrators/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What’s your favorite automation tool?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/sysadmin/favorite-automation-tool"&gt;https://www.redhat.com/sysadmin/favorite-automation-tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;30 Linux System Monitoring Tools Every SysAdmin Should Know&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html"&gt;https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some useful tools for Linux sysAdmin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ostechnix.com/some-useful-tools-for-linux-system-admins/"&gt;https://ostechnix.com/some-useful-tools-for-linux-system-admins/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Roadmap&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://roadmap.sh/devops"&gt;https://roadmap.sh/devops&lt;/a&gt;&lt;/li&gt;
@@ -93,10 +111,14 @@
 &lt;li&gt;&lt;a href="http://www.nrstickley.com/system-admin-roadmap/"&gt;http://www.nrstickley.com/system-admin-roadmap/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;List Awesome&lt;/h3&gt;
-&lt;p&gt;sysadmin-reading-list
-* &lt;a href="https://github.com/unixorn/sysadmin-reading-list#online-communities"&gt;https://github.com/unixorn/sysadmin-reading-list#online-communities&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Awesome SysAdmin
-* &lt;a href="https://github.com/kahun/awesome-sysadmin"&gt;https://github.com/kahun/awesome-sysadmin&lt;/a&gt;&lt;/p&gt;</content><category term="Linux"></category><category term="Ressources"></category><category term="Linux"></category><category term="SysAdmin"></category></entry><entry><title>L'avenir de l'informatique</title><link href="/lavenir-de-linformatique.html" rel="alternate"></link><published>2022-08-31T02:15:00+02:00</published><updated>2022-08-31T02:15:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-08-31:/lavenir-de-linformatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Exposons donc et partageons une vision de l'informatique, en tant qu'entrepreneur comment je vois l'informatique évoluer.&lt;/p&gt;
+&lt;p&gt;sysadmin-reading-list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/unixorn/sysadmin-reading-list#online-communities"&gt;https://github.com/unixorn/sysadmin-reading-list#online-communities&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Awesome SysAdmin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kahun/awesome-sysadmin"&gt;https://github.com/kahun/awesome-sysadmin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Linux"></category><category term="Ressources"></category><category term="Linux"></category><category term="SysAdmin"></category></entry><entry><title>L'avenir de l'informatique</title><link href="/lavenir-de-linformatique.html" rel="alternate"></link><published>2022-08-31T02:15:00+02:00</published><updated>2022-08-31T02:15:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-08-31:/lavenir-de-linformatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Exposons donc et partageons une vision de l'informatique, en tant qu'entrepreneur comment je vois l'informatique évoluer.&lt;/p&gt;
 &lt;p&gt;Je pense que nous allons aller vers l'informatique modulaire que cela soit niveau matériel mais également logiciel. L'ordinateur dont on peut modifier les composants pour les réparer ou mettre à jour va bénéficier à l'économie circulaire. On va dans ce sens avec un indice de réparabilité des composants électroniques et mécaniques. Cela ouvre la voie au hacking du materiel que l'on va pouvoir remplacer par des versions custom personnalisé qui sera porteur pour tout un écosystème de l'économie. Ainsi un fabricant d'ordinateur sera architecte de système intégrateur de composant de base et éprouvé techniquement pour leur fiabilité et ouvrira la porte à la customisation en adoptant des standards sur la gestion des interfaces de communication.&lt;/p&gt;
 &lt;p&gt;On peut faire le parallèle avec certaine pratique de l'open source et du logiciel libre dans la conception logicielle sur la mise en place d'API de programmation et de plugins pour des architectures modulaires.&lt;/p&gt;
 &lt;p&gt;Le constructeur DELL a proposé un prototype qui va dans se sens avec Luna dans sa gamme d'ordinateur portable.&lt;/p&gt;
