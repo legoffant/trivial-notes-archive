@@ -1,7 +1,7 @@
 Title: ARCH LINUX INSTALL: BTRFS - CHIFFREMENT - UEFI - XFCE - Timeshift
 Date: 2022-09-04 14:49
 Category:Linux
-Tags:informatique, arch, xfce, luks, btrfs
+Tags:arch, xfce, luks, btrfs
 Authors: Anthony Le Goff
 Summary:
 
@@ -64,7 +64,7 @@ shred -v -n 1 /dev/sda
 
 Utilitaire de partitionnement
 ```
-cgdisk /dev/sda
+gdisk /dev/sda
 ```
 Créer une nouvelle table de partition GPT
 
@@ -104,6 +104,7 @@ Créer les subvolumes
 ```
 btrfs subvolume create @
 btrfs subvolume create @home
+btrfs subvolume create @snapshots
 ```
 
 Démonter la partition
@@ -118,7 +119,8 @@ mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/ma
 
 Créer les dossiers boot et home
 ```
-mkdir /mnt/{boot,home}
+mkdir /mnt/{boot,home,.snapshots}
+mkdir /mnt/boot/efi
 ```
 
 Monter le subvolume @home
@@ -126,19 +128,25 @@ Monter le subvolume @home
 mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/mapper/root /mnt/home
 ```
 
+Monter le subvolume @snapshots
+```
+mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@snapshots /dev/mapper/root /mnt/.snapshots
+```
+
 Monter la partition EFI
 ```
-mount /dev/sda1 /mnt/boot
+mount /dev/sda1 /mnt/boot/efi
 ```
+
 
 ### Système de base
 ```
-pacstrap /mnt base linux linux-firmware git vim intel-ucode ntp
+pacstrap /mnt base linux linux-firmware btrfs-progs git vim intel-ucode ntp
 ```
 
 Générer fstab
 ```
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -L -p /mnt >> /mnt/etc/fstab
 ```
 
 Chrooter l'environnement
@@ -149,8 +157,7 @@ arch-chroot /mnt
 Editer mkinitcpio
 ```
 vim /etc/mkinitcpio.conf
-	Modules=(btrfs)
-	Hooks=(base udev autodetect keyboard keymap consolefont modconf block encrypt filesystems fsck)
+	Hooks=(base udev autodetect keyboard keymap consolefont modconf block encrypt filesystems btrfs fsck)
 ```
 
 Générer initramfs
@@ -160,11 +167,11 @@ mkinitcpio -p linux
 
 Nom de la machine
 ```
-nano /etc/hostname
+vim /etc/hostname
 ```
 Configuration de local paramétrage des langues
 ```
-nano /etc/locale.gen
+vim /etc/locale.gen
 en_US.UTF-8 UTF-8
 fr_FR.UTF-8 UTF-8
 ```
@@ -174,7 +181,7 @@ locale-gen
 ```
 Configuration des langues par defaut
 ```
-nano /etc/locale.conf
+vim /etc/locale.conf
 LANG="fr_FR.UTF-8"
 LC_COLLATE="fr_FR.UTF-8"
 ```
@@ -184,7 +191,7 @@ export LANG=fr_FR.UTF-8
 ```
 Console, fonts, clavier azerty
 ```
-nano /etc/vconsole.conf
+vim /etc/vconsole.conf
 KEYMAP=fr-pc
 FONT=
 FONT_MAP=
@@ -192,7 +199,7 @@ FONT_MAP=
 
 Assigne le fuseau horaire
 ```
-timedatectl set-timezone Europe/Paris
+ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
 ```
 
 Active la synchronisation par serveur NTP
@@ -211,7 +218,7 @@ passwd
 
 Installation de paquets supplémentaires:
 ```
-pacman - S grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-pulse pipeware-jack pavucontrol bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop rsync tmux wget pciutils lshw syslog-ng
+pacman - S grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-pulse pipeware-jack pavucontrol bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng
 ```
 
 Driver carte graphique, openGL, touchpad
@@ -225,20 +232,17 @@ virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-ne
 ```
 
 ### Configuration de GRUB
-```
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
-```
-
-
-Mise à jour de la langue local du GRUB
-```
-cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
-```
 
 Modification du fichier de configuration grub, appel de la partition root chiffrée
 ```
 vim /etc/default/grub
-GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:root rootflags=subvol=@ rw quiet"
+GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:root root=/dev/mapper/root rootflags=subvol=@ rw quiet"
+
+GRUB_ENABLE_CRYPTODISK=y
+```
+
+```
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 ```
 
 ```
@@ -263,6 +267,7 @@ systemctl enable ufw
 
 ```
 useradd -m trivial
+passwd trivial
 ```
 
 ```
@@ -276,6 +281,7 @@ echo "trivial ALL=(ALL) ALL" >> /etc/sudoers.d/trivial
 
 Démonter et reboot
 ```
+exit
 umount -R /mnt
 reboot
 ```
