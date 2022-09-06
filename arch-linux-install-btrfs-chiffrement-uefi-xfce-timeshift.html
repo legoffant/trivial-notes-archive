@@ -189,30 +189,43 @@ Vérifier le démarrage UEFI.</p>
 </code></pre></div>
 
 <p>Formatage de la partition EFI</p>
-<div class="highlight"><pre><span></span><code>mkfs.fat -F32 /dev/sda1
+<div class="highlight"><pre><span></span><code>mkfs.vfat -F32 -n BOOT /dev/sda1
 </code></pre></div>
 
 <h3>Chiffrement</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">cryptsetup</span> <span class="o">--</span><span class="nv">cipher</span> <span class="nv">aes</span><span class="o">-</span><span class="nv">xts</span><span class="o">-</span><span class="nv">plain64</span> <span class="o">--</span><span class="nv">hash</span> <span class="nv">sha512</span> <span class="o">--</span><span class="nv">use</span><span class="o">-</span><span class="k">random</span> <span class="o">--</span><span class="nv">verify</span><span class="o">-</span><span class="nv">passphrase</span> <span class="nv">luksFormat</span> <span class="o">/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">sda2</span>
+<div class="highlight"><pre><span></span><code><span class="n">cryptsetup</span><span class="w"> </span><span class="o">--</span><span class="n">align</span><span class="o">-</span><span class="n">payload</span><span class="w"> </span><span class="mi">8192</span><span class="w"> </span><span class="o">--</span><span class="n">type</span><span class="w"> </span><span class="n">luks2</span><span class="w"> </span><span class="o">--</span><span class="n">pbkdf</span><span class="w"> </span><span class="n">argon2id</span><span class="w"> </span><span class="o">--</span><span class="n">verify</span><span class="o">-</span><span class="n">passphrase</span><span class="w"> </span><span class="n">luksFormat</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda2</span><span class="w"></span>
 </code></pre></div>
 
 <p>Ouverture du container chiffré:</p>
-<div class="highlight"><pre><span></span><code>cryptsetup luksOpen /dev/sda2 root
+<div class="highlight"><pre><span></span><code>cryptsetup luksOpen --allow-discards /dev/sda2 root
+</code></pre></div>
+
+<h3>Systèmes de fichiers</h3>
+<div class="highlight"><pre><span></span><code># Initialize un groupe physique de volume LVM
+pvcreate --dataalignment 4M /dev/mapper/root
+
+# Initialise un groupe virtuel attaché au groupe physique
+vgcreate vg /dev/mapper/root
+
+# Initialise une partition nommée &#39;arch&#39; dans le volume group &#39;vg&#39;
+$ lvcreate -l +100%FREE vg -n arch
+
+# Affiche les volumes logiques créés
+$ lvdisplay
 </code></pre></div>
 
 <p>Formater la partition root</p>
-<div class="highlight"><pre><span></span><code>mkfs.btrfs /dev/mapper/root
+<div class="highlight"><pre><span></span><code>mkfs.btrfs -KL ARCH /dev/mapper/vg-arch
 </code></pre></div>
 
 <p>Monter les partitions:</p>
-<div class="highlight"><pre><span></span><code>mount /dev/mapper/root /mnt
+<div class="highlight"><pre><span></span><code>mount /dev/mapper/vg-arch /mnt
 cd /mnt
 </code></pre></div>
 
 <p>Créer les subvolumes</p>
 <div class="highlight"><pre><span></span><code><span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="err">@</span><span class="w"></span>
 <span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="nv">@home</span><span class="w"></span>
-<span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="nv">@snapshots</span><span class="w"></span>
 </code></pre></div>
 
 <p>Démonter la partition</p>
@@ -220,28 +233,23 @@ cd /mnt
 </code></pre></div>
 
 <p>Remonter le subvolume @</p>
-<div class="highlight"><pre><span></span><code>mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/mapper/root /mnt
+<div class="highlight"><pre><span></span><code>mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@ /dev/mapper/vg-arch /mnt
 </code></pre></div>
 
 <p>Créer les dossiers boot et home</p>
 <div class="highlight"><pre><span></span><code>mkdir /mnt/{boot,home,.snapshots}
-mkdir /mnt/boot/efi
 </code></pre></div>
 
 <p>Monter le subvolume @home</p>
-<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">discard</span><span class="o">=</span><span class="n">async</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@home</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">root</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">home</span><span class="w"></span>
-</code></pre></div>
-
-<p>Monter le subvolume @snapshots</p>
-<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">discard</span><span class="o">=</span><span class="n">async</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@snapshots</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">root</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="p">.</span><span class="n">snapshots</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@home</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">home</span><span class="w"></span>
 </code></pre></div>
 
 <p>Monter la partition EFI</p>
-<div class="highlight"><pre><span></span><code>mount /dev/sda1 /mnt/boot/efi
+<div class="highlight"><pre><span></span><code>mount /dev/sda1 /mnt/boot
 </code></pre></div>
 
 <h3>Système de base</h3>
-<div class="highlight"><pre><span></span><code>pacstrap /mnt base linux linux-firmware btrfs-progs git vim intel-ucode ntp
+<div class="highlight"><pre><span></span><code>pacstrap /mnt base linux linux-firmware btrfs-progs git lvm2 vim intel-ucode ntp
 </code></pre></div>
 
 <p>Générer fstab</p>
@@ -254,7 +262,8 @@ mkdir /mnt/boot/efi
 
 <p>Editer mkinitcpio</p>
 <div class="highlight"><pre><span></span><code>vim /etc/mkinitcpio.conf
-    Hooks=(base udev autodetect keyboard keymap consolefont modconf block encrypt filesystems btrfs fsck)
+    BINARIES=(btrfsck)
+    HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 fsck filesystems)
 </code></pre></div>
 
 <p>Générer initramfs</p>
@@ -296,10 +305,6 @@ FONT_MAP=
 <div class="highlight"><pre><span></span><code>ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
 </code></pre></div>
 
-<p>Active la synchronisation par serveur NTP</p>
-<div class="highlight"><pre><span></span><code>timedatectl set-ntp true
-</code></pre></div>
-
 <div class="highlight"><pre><span></span><code>hwclock --systohc
 </code></pre></div>
 
@@ -308,7 +313,7 @@ FONT_MAP=
 </code></pre></div>
 
 <p>Installation de paquets supplémentaires:</p>
-<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">grub</span><span class="w"> </span><span class="n">efibootmgr</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipeware</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipeware</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="w"></span>
 </code></pre></div>
 
 <p>Driver carte graphique, openGL, touchpad</p>
@@ -319,18 +324,31 @@ FONT_MAP=
 <div class="highlight"><pre><span></span><code>pacman -S virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
 </code></pre></div>
 
-<h3>Configuration de GRUB</h3>
-<p>Modification du fichier de configuration grub, appel de la partition root chiffrée</p>
-<div class="highlight"><pre><span></span><code>vim /etc/default/grub
-GRUB_CMDLINE_LINUX=&quot;cryptdevice=/dev/sda2:root root=/dev/mapper/root rootflags=subvol=@ rw quiet&quot;
-
-GRUB_ENABLE_CRYPTODISK=y
+<h3>Configuration de systemd-boot</h3>
+<div class="highlight"><pre><span></span><code>bootctl --esp=/boot install
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">grub</span><span class="o">-</span><span class="n">install</span><span class="w"> </span><span class="o">--</span><span class="n">target</span><span class="o">=</span><span class="n">x86_64</span><span class="o">-</span><span class="n">efi</span><span class="w"> </span><span class="o">--</span><span class="n">efi</span><span class="o">-</span><span class="n">directory</span><span class="o">=/</span><span class="n">boot</span><span class="o">/</span><span class="n">efi</span><span class="w"> </span><span class="o">--</span><span class="n">bootloader</span><span class="o">-</span><span class="n">id</span><span class="o">=</span><span class="n">GRUB</span><span class="w"></span>
+<p>Configuration générale du chargeur</p>
+<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">loader</span><span class="o">.</span><span class="n">conf</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span><span class="w"></span>
+<span class="n">editor</span><span class="w"> </span><span class="n">no</span><span class="w"></span>
+<span class="n">timeout</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
+<span class="n">console</span><span class="o">-</span><span class="n">mode</span><span class="w"> </span><span class="nb">max</span><span class="w"></span>
+<span class="n">EOF</span><span class="w"></span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>grub-mkconfig -o /boot/grub/grub.cfg
+<p>Récupérez le champs UUID= de la partition LUKS</p>
+<div class="highlight"><pre><span></span><code>blkid | grep /dev/sda2
+</code></pre></div>
+
+<p>Configuration d’une entrée du menu de démarrage.</p>
+<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">entries</span><span class="o">/</span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span><span class="w"></span>
+
+<span class="n">title</span><span class="w"> </span><span class="n">Arch</span><span class="w"> </span><span class="n">Linux</span><span class="w"></span>
+<span class="n">linux</span><span class="w"> </span><span class="o">/</span><span class="n">vmlinuz</span><span class="o">-</span><span class="n">linux</span><span class="w"></span>
+<span class="n">initrd</span><span class="w"> </span><span class="o">&lt;</span><span class="n">cpu</span><span class="o">&gt;-</span><span class="n">ucode</span><span class="o">.</span><span class="n">img</span><span class="w"></span>
+<span class="n">initrd</span><span class="w"> </span><span class="o">/</span><span class="n">initramfs</span><span class="o">-</span><span class="n">linux</span><span class="o">.</span><span class="n">img</span><span class="w"></span>
+<span class="n">options</span><span class="w"> </span><span class="n">rd</span><span class="o">.</span><span class="n">luks</span><span class="o">.</span><span class="n">uuid</span><span class="o">=&lt;</span><span class="n">UUID</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rd</span><span class="o">.</span><span class="n">luks</span><span class="o">.</span><span class="n">options</span><span class="o">=</span><span class="n">discard</span><span class="w"> </span><span class="n">root</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="n">rootflags</span><span class="o">=</span><span class="n">subvol</span><span class="o">=</span><span class="err">@</span><span class="w"> </span><span class="n">rw</span><span class="w"></span>
 </code></pre></div>
 
 <h3>Activer les services systemD</h3>
