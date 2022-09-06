@@ -179,7 +179,7 @@ Vérifier le démarrage UEFI.</p>
 </code></pre></div>
 
 <p>Utilitaire de partitionnement</p>
-<div class="highlight"><pre><span></span><code>cgdisk /dev/sda
+<div class="highlight"><pre><span></span><code>gdisk /dev/sda
 </code></pre></div>
 
 <p>Créer une nouvelle table de partition GPT</p>
@@ -212,6 +212,7 @@ cd /mnt
 <p>Créer les subvolumes</p>
 <div class="highlight"><pre><span></span><code><span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="err">@</span><span class="w"></span>
 <span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="nv">@home</span><span class="w"></span>
+<span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="nv">@snapshots</span><span class="w"></span>
 </code></pre></div>
 
 <p>Démonter la partition</p>
@@ -223,23 +224,28 @@ cd /mnt
 </code></pre></div>
 
 <p>Créer les dossiers boot et home</p>
-<div class="highlight"><pre><span></span><code>mkdir /mnt/{boot,home}
+<div class="highlight"><pre><span></span><code>mkdir /mnt/{boot,home,.snapshots}
+mkdir /mnt/boot/efi
 </code></pre></div>
 
 <p>Monter le subvolume @home</p>
 <div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">discard</span><span class="o">=</span><span class="n">async</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@home</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">root</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">home</span><span class="w"></span>
 </code></pre></div>
 
+<p>Monter le subvolume @snapshots</p>
+<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">discard</span><span class="o">=</span><span class="n">async</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@snapshots</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">root</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="p">.</span><span class="n">snapshots</span><span class="w"></span>
+</code></pre></div>
+
 <p>Monter la partition EFI</p>
-<div class="highlight"><pre><span></span><code>mount /dev/sda1 /mnt/boot
+<div class="highlight"><pre><span></span><code>mount /dev/sda1 /mnt/boot/efi
 </code></pre></div>
 
 <h3>Système de base</h3>
-<div class="highlight"><pre><span></span><code>pacstrap /mnt base linux linux-firmware git vim intel-ucode ntp
+<div class="highlight"><pre><span></span><code>pacstrap /mnt base linux linux-firmware btrfs-progs git vim intel-ucode ntp
 </code></pre></div>
 
 <p>Générer fstab</p>
-<div class="highlight"><pre><span></span><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+<div class="highlight"><pre><span></span><code>genfstab -L -p /mnt &gt;&gt; /mnt/etc/fstab
 </code></pre></div>
 
 <p>Chrooter l'environnement</p>
@@ -247,9 +253,8 @@ cd /mnt
 </code></pre></div>
 
 <p>Editer mkinitcpio</p>
-<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">mkinitcpio</span><span class="p">.</span><span class="n">conf</span><span class="w"></span>
-<span class="w">    </span><span class="n">Modules</span><span class="o">=</span><span class="p">(</span><span class="n">btrfs</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">Hooks</span><span class="o">=</span><span class="p">(</span><span class="n">base</span><span class="w"> </span><span class="n">udev</span><span class="w"> </span><span class="n">autodetect</span><span class="w"> </span><span class="n">keyboard</span><span class="w"> </span><span class="n">keymap</span><span class="w"> </span><span class="n">consolefont</span><span class="w"> </span><span class="n">modconf</span><span class="w"> </span><span class="n">block</span><span class="w"> </span><span class="n">encrypt</span><span class="w"> </span><span class="n">filesystems</span><span class="w"> </span><span class="n">fsck</span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>vim /etc/mkinitcpio.conf
+    Hooks=(base udev autodetect keyboard keymap consolefont modconf block encrypt filesystems btrfs fsck)
 </code></pre></div>
 
 <p>Générer initramfs</p>
@@ -257,11 +262,11 @@ cd /mnt
 </code></pre></div>
 
 <p>Nom de la machine</p>
-<div class="highlight"><pre><span></span><code>nano /etc/hostname
+<div class="highlight"><pre><span></span><code>vim /etc/hostname
 </code></pre></div>
 
 <p>Configuration de local paramétrage des langues</p>
-<div class="highlight"><pre><span></span><code>nano /etc/locale.gen
+<div class="highlight"><pre><span></span><code>vim /etc/locale.gen
 en_US.UTF-8 UTF-8
 fr_FR.UTF-8 UTF-8
 </code></pre></div>
@@ -271,7 +276,7 @@ fr_FR.UTF-8 UTF-8
 </code></pre></div>
 
 <p>Configuration des langues par defaut</p>
-<div class="highlight"><pre><span></span><code>nano /etc/locale.conf
+<div class="highlight"><pre><span></span><code>vim /etc/locale.conf
 LANG=&quot;fr_FR.UTF-8&quot;
 LC_COLLATE=&quot;fr_FR.UTF-8&quot;
 </code></pre></div>
@@ -281,14 +286,14 @@ LC_COLLATE=&quot;fr_FR.UTF-8&quot;
 </code></pre></div>
 
 <p>Console, fonts, clavier azerty</p>
-<div class="highlight"><pre><span></span><code>nano /etc/vconsole.conf
+<div class="highlight"><pre><span></span><code>vim /etc/vconsole.conf
 KEYMAP=fr-pc
 FONT=
 FONT_MAP=
 </code></pre></div>
 
 <p>Assigne le fuseau horaire</p>
-<div class="highlight"><pre><span></span><code>timedatectl set-timezone Europe/Paris
+<div class="highlight"><pre><span></span><code>ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
 </code></pre></div>
 
 <p>Active la synchronisation par serveur NTP</p>
@@ -303,7 +308,7 @@ FONT_MAP=
 </code></pre></div>
 
 <p>Installation de paquets supplémentaires:</p>
-<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">grub</span><span class="w"> </span><span class="n">efibootmgr</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipeware</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">grub</span><span class="w"> </span><span class="n">efibootmgr</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipeware</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="w"></span>
 </code></pre></div>
 
 <p>Driver carte graphique, openGL, touchpad</p>
@@ -311,20 +316,18 @@ FONT_MAP=
 </code></pre></div>
 
 <p>Installation de QEMU/KVM pour la virtualisation</p>
-<div class="highlight"><pre><span></span><code>virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
+<div class="highlight"><pre><span></span><code>pacman -S virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
 </code></pre></div>
 
 <h3>Configuration de GRUB</h3>
-<div class="highlight"><pre><span></span><code><span class="n">grub</span><span class="o">-</span><span class="n">install</span><span class="w"> </span><span class="o">--</span><span class="n">target</span><span class="o">=</span><span class="n">x86_64</span><span class="o">-</span><span class="n">efi</span><span class="w"> </span><span class="o">--</span><span class="n">efi</span><span class="o">-</span><span class="n">directory</span><span class="o">=/</span><span class="n">boot</span><span class="o">/</span><span class="n">efi</span><span class="w"> </span><span class="o">--</span><span class="n">bootloader</span><span class="o">-</span><span class="n">id</span><span class="o">=</span><span class="n">GRUB</span><span class="w"></span>
-</code></pre></div>
-
-<p>Mise à jour de la langue local du GRUB</p>
-<div class="highlight"><pre><span></span><code><span class="n">cp</span><span class="w"> </span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">locale</span><span class="o">/</span><span class="n">en</span><span class="err">\</span><span class="nv">@quot</span><span class="o">/</span><span class="n">LC_MESSAGES</span><span class="o">/</span><span class="n">grub</span><span class="p">.</span><span class="n">mo</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">grub</span><span class="o">/</span><span class="n">locale</span><span class="o">/</span><span class="n">en</span><span class="p">.</span><span class="n">mo</span><span class="w"></span>
-</code></pre></div>
-
 <p>Modification du fichier de configuration grub, appel de la partition root chiffrée</p>
 <div class="highlight"><pre><span></span><code>vim /etc/default/grub
-GRUB_CMDLINE_LINUX=&quot;cryptdevice=/dev/sda2:root rootflags=subvol=@ rw quiet&quot;
+GRUB_CMDLINE_LINUX=&quot;cryptdevice=/dev/sda2:root root=/dev/mapper/root rootflags=subvol=@ rw quiet&quot;
+
+GRUB_ENABLE_CRYPTODISK=y
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">grub</span><span class="o">-</span><span class="n">install</span><span class="w"> </span><span class="o">--</span><span class="n">target</span><span class="o">=</span><span class="n">x86_64</span><span class="o">-</span><span class="n">efi</span><span class="w"> </span><span class="o">--</span><span class="n">efi</span><span class="o">-</span><span class="n">directory</span><span class="o">=/</span><span class="n">boot</span><span class="o">/</span><span class="n">efi</span><span class="w"> </span><span class="o">--</span><span class="n">bootloader</span><span class="o">-</span><span class="n">id</span><span class="o">=</span><span class="n">GRUB</span><span class="w"></span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>grub-mkconfig -o /boot/grub/grub.cfg
@@ -344,6 +347,7 @@ systemctl enable ufw
 
 <h3>Créer un utilisateur</h3>
 <div class="highlight"><pre><span></span><code>useradd -m trivial
+passwd trivial
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>usermod -aG libvirt trivial
@@ -354,8 +358,9 @@ systemctl enable ufw
 </code></pre></div>
 
 <p>Démonter et reboot</p>
-<div class="highlight"><pre><span></span><code>umount -R /mnt
-reboot
+<div class="highlight"><pre><span></span><code><span class="k">exit</span>
+<span class="nv">umount</span> <span class="o">-</span><span class="nv">R</span> <span class="o">/</span><span class="nv">mnt</span>
+<span class="nv">reboot</span>
 </code></pre></div>
 
 <h3>Post-installation</h3>

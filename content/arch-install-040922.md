@@ -76,27 +76,43 @@ Mise en place de la table de partition:
 
 Formatage de la partition EFI
 ```
-mkfs.fat -F32 /dev/sda1
+mkfs.vfat -F32 -n BOOT /dev/sda1
 ```
 
 ### Chiffrement 
 ```
-cryptsetup --cipher aes-xts-plain64 --hash sha512 --use-random --verify-passphrase luksFormat /dev/sda2
+cryptsetup --align-payload 8192 --type luks2 --pbkdf argon2id --verify-passphrase luksFormat /dev/sda2
 ```
 
 Ouverture du container chiffré:
 ```
-cryptsetup luksOpen /dev/sda2 root
+cryptsetup luksOpen --allow-discards /dev/sda2 root
+```
+
+### Systèmes de fichiers
+
+```
+# Initialize un groupe physique de volume LVM
+pvcreate --dataalignment 4M /dev/mapper/root
+
+# Initialise un groupe virtuel attaché au groupe physique
+vgcreate vg /dev/mapper/root
+
+# Initialise une partition nommée 'arch' dans le volume group 'vg'
+$ lvcreate -l +100%FREE vg -n arch
+
+# Affiche les volumes logiques créés
+$ lvdisplay
 ```
 
 Formater la partition root
 ```
-mkfs.btrfs /dev/mapper/root
+mkfs.btrfs -KL ARCH /dev/mapper/vg-arch
 ```
 
 Monter les partitions:
 ```
-mount /dev/mapper/root /mnt
+mount /dev/mapper/vg-arch /mnt
 cd /mnt
 ```
 
@@ -104,7 +120,6 @@ Créer les subvolumes
 ```
 btrfs subvolume create @
 btrfs subvolume create @home
-btrfs subvolume create @snapshots
 ```
 
 Démonter la partition
@@ -114,34 +129,28 @@ umount /mnt
 
 Remonter le subvolume @
 ```
-mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/mapper/root /mnt
+mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@ /dev/mapper/vg-arch /mnt
 ```
 
 Créer les dossiers boot et home
 ```
 mkdir /mnt/{boot,home,.snapshots}
-mkdir /mnt/boot/efi
 ```
 
 Monter le subvolume @home
 ```
-mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/mapper/root /mnt/home
-```
-
-Monter le subvolume @snapshots
-```
-mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@snapshots /dev/mapper/root /mnt/.snapshots
+mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@home /dev/mapper/vg-arch /mnt/home
 ```
 
 Monter la partition EFI
 ```
-mount /dev/sda1 /mnt/boot/efi
+mount /dev/sda1 /mnt/boot
 ```
 
 
 ### Système de base
 ```
-pacstrap /mnt base linux linux-firmware btrfs-progs git vim intel-ucode ntp
+pacstrap /mnt base linux linux-firmware btrfs-progs git lvm2 vim intel-ucode ntp
 ```
 
 Générer fstab
@@ -157,7 +166,9 @@ arch-chroot /mnt
 Editer mkinitcpio
 ```
 vim /etc/mkinitcpio.conf
-	Hooks=(base udev autodetect keyboard keymap consolefont modconf block encrypt filesystems btrfs fsck)
+	BINARIES=(btrfsck)
+	HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 fsck filesystems)
+
 ```
 
 Générer initramfs
@@ -202,10 +213,6 @@ Assigne le fuseau horaire
 ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
 ```
 
-Active la synchronisation par serveur NTP
-```
-timedatectl set-ntp true
-```
 
 ```
 hwclock --systohc
@@ -218,7 +225,7 @@ passwd
 
 Installation de paquets supplémentaires:
 ```
-pacman - S grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-pulse pipeware-jack pavucontrol bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng
+pacman - S networkmanager network-manager-applet dialog wpa_supplicant reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-pulse pipeware-jack pavucontrol bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng
 ```
 
 Driver carte graphique, openGL, touchpad
@@ -231,22 +238,39 @@ Installation de QEMU/KVM pour la virtualisation
 pacman -S virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
 ```
 
-### Configuration de GRUB
-
-Modification du fichier de configuration grub, appel de la partition root chiffrée
-```
-vim /etc/default/grub
-GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:root root=/dev/mapper/root rootflags=subvol=@ rw quiet"
-
-GRUB_ENABLE_CRYPTODISK=y
-```
+### Configuration de systemd-boot
 
 ```
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+bootctl --esp=/boot install
 ```
 
+Configuration générale du chargeur
+
 ```
-grub-mkconfig -o /boot/grub/grub.cfg
+vim /boot/loader/loader.conf
+default arch.conf
+editor no
+timeout 4
+console-mode max
+EOF
+```
+
+Récupérez le champs UUID= de la partition LUKS
+
+```
+blkid | grep /dev/sda2
+```
+
+Configuration d’une entrée du menu de démarrage.
+
+```
+vim /boot/loader/entries/arch.conf
+
+title Arch Linux
+linux /vmlinuz-linux
+initrd <cpu>-ucode.img
+initrd /initramfs-linux.img
+options rd.luks.uuid=<UUID> rd.luks.options=discard root=/dev/mapper/vg-arch rootflags=subvol=@ rw
 ```
 
 ### Activer les services systemD
