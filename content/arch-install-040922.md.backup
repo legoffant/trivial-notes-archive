@@ -150,7 +150,7 @@ mount /dev/sda1 /mnt/boot
 
 ### Système de base
 ```
-pacstrap /mnt base linux linux-firmware btrfs-progs git lvm2 vim intel-ucode ntp
+pacstrap /mnt base linux linux-firmware btrfs-progs git lvm2 vim intel-ucode
 ```
 
 Générer fstab
@@ -252,7 +252,6 @@ default arch.conf
 editor no
 timeout 4
 console-mode max
-EOF
 ```
 
 Récupérez le champs UUID= de la partition LUKS
