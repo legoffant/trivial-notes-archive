@@ -260,16 +260,6 @@ cd /mnt
 <div class="highlight"><pre><span></span><code>arch-chroot /mnt
 </code></pre></div>
 
-<p>Editer mkinitcpio</p>
-<div class="highlight"><pre><span></span><code>vim /etc/mkinitcpio.conf
-    BINARIES=(btrfsck)
-    HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 fsck filesystems)
-</code></pre></div>
-
-<p>Générer initramfs</p>
-<div class="highlight"><pre><span></span><code>mkinitcpio -p linux
-</code></pre></div>
-
 <p>Nom de la machine</p>
 <div class="highlight"><pre><span></span><code>vim /etc/hostname
 </code></pre></div>
@@ -308,16 +298,26 @@ FONT_MAP=
 <div class="highlight"><pre><span></span><code>hwclock --systohc
 </code></pre></div>
 
+<p>Editer mkinitcpio</p>
+<div class="highlight"><pre><span></span><code>vim /etc/mkinitcpio.conf
+    BINARIES=(btrfsck)
+    HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 fsck filesystems)
+</code></pre></div>
+
+<p>Générer initramfs</p>
+<div class="highlight"><pre><span></span><code>mkinitcpio -p linux
+</code></pre></div>
+
 <p>Mot de passe super-administrateur root</p>
 <div class="highlight"><pre><span></span><code>passwd
 </code></pre></div>
 
 <p>Installation de paquets supplémentaires:</p>
-<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipeware</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="w"></span>
 </code></pre></div>
 
 <p>Driver carte graphique, openGL, touchpad</p>
-<div class="highlight"><pre><span></span><code>pacman -S xf86-video-intel mesa xf86-input-libinput
+<div class="highlight"><pre><span></span><code>pacman -S xf86-video-intel xf86-input-libinput
 </code></pre></div>
 
 <p>Installation de QEMU/KVM pour la virtualisation</p>
@@ -402,10 +402,11 @@ makepkg -si
 </code></pre></div>
 
 <p>Installation de timeshift et zramd</p>
-<div class="highlight"><pre><span></span><code>yay -S timeshift-bin timeshift-autosnap zramd
+<div class="highlight"><pre><span></span><code>yay -S timeshift-bin zramd
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>sudo systemctl enable zramd.service
+sudo systemctl start zramd.service
 </code></pre></div>
 
 <p>Vérification que la swap est active:</p>
@@ -413,14 +414,14 @@ makepkg -si
 </code></pre></div>
 
 <p>Configuration de reflector</p>
-<div class="highlight"><pre><span></span><code>reflector --verbose --country &#39;France&#39; -a 6 -p https --sort rate --save /etc/pacman.d/mirrorlist
+<div class="highlight"><pre><span></span><code>reflector --verbose --country &#39;France&#39; -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>sudo pacman -Syy
 </code></pre></div>
 
 <h3>Installation du bureau XFCE4</h3>
-<div class="highlight"><pre><span></span><code>sudo pacman -S xorg xfce4 xfce4-goodies lightdm-gtk-greeter-settings gtk-xfce-engine
+<div class="highlight"><pre><span></span><code>sudo pacman -S xorg xfce4 xfce4-goodies lightdm-gtk-greeter-settings gtk-engines
 </code></pre></div>
 
 <p>Activer le gestionnaire de démarrage</p>
@@ -435,6 +436,17 @@ greeter-session = lightdm-gtk-greeter
 
 <p>Configuration de xinitrc</p>
 <div class="highlight"><pre><span></span><code><span class="nv">echo</span> <span class="s2">&quot;</span><span class="s">exec startxfce4</span><span class="s2">&quot;</span> <span class="o">&gt;</span> <span class="o">~/</span>.<span class="nv">xinitrc</span>
+</code></pre></div>
+
+<p>Modification de la configuration du clavier sous Xorg</p>
+<div class="highlight"><pre><span></span><code>nano /etc/X11/xorg.conf.d/10-evdev.conf
+Section &quot;InputClass&quot;
+  Identifier &quot;evdev keyboard catchall&quot;
+  MatchIsKeyboard &quot;on&quot;
+  MatchDevicePath &quot;/dev/input/event*&quot;
+  Option &quot;XkbLayout&quot; &quot;fr&quot;
+  Driver &quot;evdev&quot;
+EndSection
 </code></pre></div>
 
 <p>Installation de fonts</p>
