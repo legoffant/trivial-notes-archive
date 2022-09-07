@@ -134,7 +134,7 @@ mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@ /dev/mapper/vg-arch /
 
 Créer les dossiers boot et home
 ```
-mkdir /mnt/{boot,home,.snapshots}
+mkdir /mnt/{boot,home}
 ```
 
 Monter le subvolume @home
@@ -161,19 +161,6 @@ genfstab -L -p /mnt >> /mnt/etc/fstab
 Chrooter l'environnement
 ```
 arch-chroot /mnt
-```
-
-Editer mkinitcpio
-```
-vim /etc/mkinitcpio.conf
-	BINARIES=(btrfsck)
-	HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 fsck filesystems)
-
-```
-
-Générer initramfs
-```
-mkinitcpio -p linux
 ```
 
 Nom de la machine
@@ -218,6 +205,19 @@ ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 hwclock --systohc
 ```
 
+Editer mkinitcpio
+```
+vim /etc/mkinitcpio.conf
+	BINARIES=(btrfsck)
+	HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 fsck filesystems)
+
+```
+
+Générer initramfs
+```
+mkinitcpio -p linux
+```
+
 Mot de passe super-administrateur root
 ```
 passwd
@@ -225,12 +225,12 @@ passwd
 
 Installation de paquets supplémentaires:
 ```
-pacman - S networkmanager network-manager-applet dialog wpa_supplicant reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-pulse pipeware-jack pavucontrol bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng
+pacman - S networkmanager network-manager-applet dialog wpa_supplicant reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack pavucontrol bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng
 ```
 
 Driver carte graphique, openGL, touchpad
 ```
-pacman -S xf86-video-intel mesa xf86-input-libinput
+pacman -S xf86-video-intel xf86-input-libinput
 ```
 
 Installation de QEMU/KVM pour la virtualisation
@@ -337,11 +337,12 @@ makepkg -si
 
 Installation de timeshift et zramd
 ```
-yay -S timeshift-bin timeshift-autosnap zramd
+yay -S timeshift-bin zramd
 ```
 
 ```
 sudo systemctl enable zramd.service
+sudo systemctl start zramd.service
 ```
 
 Vérification que la swap est active:
@@ -351,7 +352,7 @@ lsblk
 
 Configuration de reflector
 ```
-reflector --verbose --country 'France' -a 6 -p https --sort rate --save /etc/pacman.d/mirrorlist
+reflector --verbose --country 'France' -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
 ```
 
 ```
@@ -361,7 +362,7 @@ sudo pacman -Syy
 ### Installation du bureau XFCE4
 
 ```
-sudo pacman -S xorg xfce4 xfce4-goodies lightdm-gtk-greeter-settings gtk-xfce-engine
+sudo pacman -S xorg xfce4 xfce4-goodies lightdm-gtk-greeter-settings gtk-engines
 ```
 
 Activer le gestionnaire de démarrage
@@ -380,6 +381,19 @@ Configuration de xinitrc
 ```
 echo "exec startxfce4" > ~/.xinitrc
 ```
+
+Modification de la configuration du clavier sous Xorg
+```
+nano /etc/X11/xorg.conf.d/10-evdev.conf
+Section "InputClass"
+  Identifier "evdev keyboard catchall"
+  MatchIsKeyboard "on"
+  MatchDevicePath "/dev/input/event*"
+  Option "XkbLayout" "fr"
+  Driver "evdev"
+EndSection
+```
+
 
 Installation de fonts
 ```
