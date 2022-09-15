@@ -1,0 +1,28 @@
+Title:L'ère des pleureuses
+Date: 2022-09-15 18:55
+Category:Inclassable
+Tags: Microsoft
+Authors: Anthony Le Goff
+Summary:
+
+Jacques Attali a prédit l'hypersurveillance, mais c'était sans compter sur les pleureuses. Je vais raconter une histoire drôle, car cela me fait marrer un tel niveau d'irresponsable politique.
+
+L'agenda est prévu depuis des décennies, tout les dirigeants savent, avec l'arrivée d'internet et la mondialisation qu'il y aura une hypersurveillance centralisée tel que la NSA qui va capter les données, les analysées et les distribuer aux acteurs pour en faire du profit par des contrats entre l'état et les compagnies privées plus particulièrement du secteur de la défense grâce à l'opacité du secret defense. On a utilisé le terrorisme pour justifier la surveillance de quelques pecnots pour élargir au vol de donnée des contrats, recherches et secrets industriels. Après tout si on peut surveiller les réseaux, entrée sur l'ordinateur d'un terroriste, pourquoi pas considérer une nation ou une entreprise individuel terroriste? Dans le langage, le politique fait exprès, plus c'est gros plus ça passe.
+
+Sachez-le il faut tuer dans l'oeuf toute concurrence, j'en sais quelques choses en tant qu'entrepreneur: on m'a volé un PC portable à Londres, j'ai été H.S, sans outil de travail, mis hors d'état de nuire pour quelques temps. Grâce à la surveillance c'est facile, on peut vous tracer, implanter un malware sur votre PC pour récupérer des données. Manque de pot, étend un singe, j'avais choisi d'étudier la cyberdefense, chiche de me pirater? Viens, ose pour voir.
+
+Alors la France et les occidentaux, mais un peu tout le monde, par profit, on mit en place à la manière de TAO de la NSA, une petite sauterie offensive pour faire des opérations de guerre, ou tout les coups sont permis du moment à travers le réseau que l'on valorise de la donnée. Snowden a alerté, mais les politiques ont rien compris: on vous le redit pourtant le monde d'avant est mort, l'agenda UNIX Epoch Time et celui des machines est en marche.
+
+Snowden a révélé et prévenu,si vous maitrisez pas l'informatique et en particulier les techniques de communication sous Linux, tel que Tail, vous êtes une cible potentielle de la surveillance. C'est à dire, l'hypersurveillance est un produit des multi-nationales qui ont créer des vulnérabilité par design dans leur système pour favoriser la captation de donnée pour les enquêtes et protéger le politique.
+
+Et les gouvernements y tienne à faire des enquêtes et ficher la population depuis l'hypersurveillance, tous les politiques tombent dans le panneau, la purge à la moindre réaction de la population aura lieu, car ils s'entêtent.
+
+Ainsi depuis Snowden, aucun pouvoir public n'a pris la précaution d'apprendre la cryptographie à la population. Il y a des programmes numériques en France, des recommandations européennes, mais à l'école vous n'apprendrez jamais la cryptographie et encore moins la ligne de commande.
+
+Une histoire de langage, Microsoft a construit ces produits sur l'accès restreint au système sans possibilité d'élévation de privilège et d'accès au noyau, le code source est propriétaire, empêchant toute copie, et donc amélioration ou audit. Des portes dérobés dans du code propriétaire est le standard. Ils font partie des pleureuses aujourd'hui, les développeurs on fait pression de ne plus utiliser Microsoft si celui-ci n'intégrait pas un terminal complet en ligne de commande, pour autant l'élévation de privilège est impossible, la commande Linux: `rm rf /` qui détruit tout le système et oblige à la ré-installation n'existe pas. C'est un choix politique, du designer pour prévenir que le produit qu'utilise la population maintream interdit la destruction du système, vous n'avez pas les droits. Des investisseurs de Microsoft au tout début on parier sur cette "feature" du système pour exploiter, pardon d'exploitation.. Bref ils ont financé par un accord à travers le langage et le design.
+
+La plupart des gouvernements ont adhéré à l'offre: c'était vendu, pour vos policiers on peut accéder à l'ordinateur à distance, l'utilisateur ne contrôle rien car le système est propriétaire et le code source fermé. Besoin d'un crédit d'amorce, un fond? On va vous aider. Bill Gates a fait sa richesse sur un accord de surveillance vendu aux politiques.
+
+Mais c'est fini, cela retombe sur ces ânes, car les pleureuses ont tellement de vulnérabilité que les banques et industriels, voir des universités se plaignent du vol de donnée. On n'a pas voulu former la population à la sécurité informatique, la ligne de commande devait rester loin du niveau d'abstraction de l'interface graphique, on a éduqué toute une génération de politique allergique à la ligne de commande. Et cela continue, dans le metaverse certain voit la l'espoir car l'abstraction de l'outil, il n'y a plus de clavier et encore moins de ligne de commande. Tu peux rêver, il y a que quelques dircom dans un plan marketing qui voit le metavers comme une source de revenu, mais en faites les gosses s'éclatent sur Minecraft. OSEF du metavers. 
+
+Depuis il y a quelques gouvernements qui disent: la piraterie c'est mal, mais reste chez Microsoft. Plus la piraterie pose problème plus le politique va verrouiller l'éducation à la cryptographie et la ligne de commande. Effet Streisand garantie. Pourquoi il y a aucun hacker qui fait de la politique? C'est le nouveau pouvoir, l'élite est les kernel developer, à la source pour faire tourner nos supercalculateurs et d'incorporer la compatibilité matériel. Car surement que le meilleur moyen de voir bruler ce système est de rien faire et les laissers pleurer jusqu'au jour qu'ils vont nous supplier. 
