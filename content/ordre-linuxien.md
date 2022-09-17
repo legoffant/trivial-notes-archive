@@ -1,5 +1,5 @@
 Title: Le nouvel ordre linuxien
-Date: 2022-0917 18:06
+Date: 2022-09-17 18:06
 Category:Linux
 Tags:Raspberry pi, Linux
 Authors: Anthony Le Goff
