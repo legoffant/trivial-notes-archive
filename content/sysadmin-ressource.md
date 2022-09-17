@@ -30,11 +30,12 @@ Par ldlc.com
 - Fractal Design Node 304 Noir 119€95
 - Corsair Vengeance LPX Series Low Profile 32 Go (2x 16 Go) DDR4 3200 MHz CL16 159€95
 - 4 x Seagate IronWolf 2 To 395€80
-- Seasonic CORE GM-500 80PLUS Gold 74€95
+- be quiet! Straight Power 11 450W 80PLUS Gold  107€95
 - 2 x Corsair Câbles SATA Gainés Droits/Coudés 30 cm (coloris bleu) 29€90
 - Advance GTA 230 (AZERTY Français) 19€94 
 
-total: 1078€
+total: 1111€
+
 ```
 
 ### Certifications
