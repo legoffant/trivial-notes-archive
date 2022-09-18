@@ -182,28 +182,24 @@ environment
 <li>tint2 - custom taskbar</li>
 <li>MenuMaker - is a powerful tool that creates XML-based menus</li>
 <li>Nitrogen - Fast and lightweight wallpaper browser /setter for X</li>
-<li>Thin - Startup Manager</li>
+<li>Slim - Startup Manager</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="n">S</span><span class="w"> </span><span class="n">obconf</span><span class="w"> </span><span class="n">menumaker</span><span class="w"> </span><span class="n">tint2</span><span class="w"> </span><span class="n">lxinput</span><span class="w"> </span><span class="n">lxappearance</span><span class="w"> </span><span class="n">nitrogen</span><span class="w"> </span><span class="n">thin</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="n">S</span><span class="w"> </span><span class="n">obconf</span><span class="w"> </span><span class="n">menumaker</span><span class="w"> </span><span class="n">tint2</span><span class="w"> </span><span class="n">lxinput</span><span class="w"> </span><span class="n">lxappearance</span><span class="w"> </span><span class="n">nitrogen</span><span class="w"> </span><span class="n">slim</span><span class="w"></span>
 </code></pre></div>
 
 <p>Configurer autostart pour que démarre au démarrage:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">vim</span> <span class="o">~/</span>.<span class="nv">config</span><span class="o">/</span><span class="nv">openbox</span><span class="o">/</span><span class="nv">autostart</span>.<span class="nv">sh</span>
+<div class="highlight"><pre><span></span><code><span class="nv">vim</span> <span class="o">~/</span>.<span class="nv">config</span><span class="o">/</span><span class="nv">openbox</span><span class="o">/</span><span class="nv">autostart</span>
 
 <span class="nv">tint2</span> <span class="o">&amp;</span>
 <span class="nv">nitrogen</span> <span class="o">--</span><span class="nv">restaure</span> <span class="o">&amp;</span>
 <span class="nv">compton</span> <span class="o">-</span><span class="nv">b</span> <span class="o">-</span><span class="nv">c</span> <span class="o">&amp;</span>
 <span class="k">exec</span> <span class="nv">alacritty</span>
+<span class="nv">nm</span><span class="o">-</span><span class="nv">applet</span>
 </code></pre></div>
 
 <p>Dans ce fichier on démarre la taskbar, le fond d'écran, le compositeur et un terminal</p>
 <h3>Générer un menu démarrer</h3>
 <div class="highlight"><pre><span></span><code>mmaker -v OpenBox3
-</code></pre></div>
-
-<h3>Thèmes et apparences</h3>
-<p>Installer des thèmes supplémentaires:</p>
-<div class="highlight"><pre><span></span><code>sudo pacman -S openbox-themes
 </code></pre></div>
 
 <h3>Activer le login manager</h3>

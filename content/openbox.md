@@ -78,7 +78,7 @@ Dans ce fichier on démarre la taskbar, le fond d'écran, le compositeur et un t
 ### Générer un menu démarrer
 
 ```
-mmaker -v OpenBox3
+mmaker -v -f OpenBox3
 ```
 
 ### Activer le login manager
