@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-09-17T18:06:00+02:00</updated><entry><title>Le nouvel ordre linuxien</title><link href="/le-nouvel-ordre-linuxien.html" rel="alternate"></link><published>2022-09-17T18:06:00+02:00</published><updated>2022-09-17T18:06:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-09-17:/le-nouvel-ordre-linuxien.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On a longtemps relégué les utilisateurs de GNU/Linux comme des geeks ou nerds un peu libertarien voir anticapitaliste, car son modèle économique a été basé sur l'activité bénévole en dehors du temps de travail rémunéré. Une catégorie expérimenté est né dans le cadre des serveurs, c'est à dire l'optimisation des ressources qui demande une disponibilité 24h/24. On peut donc dire que GNU/Linux était fiable et économe. Le capitalisme est très friand dans la nécessité de trouver le meilleur rapport/qualité prix, Linux a trouvé sa place chez les professionnels et Administrateurs systèmes qui eux même ont amélioré le produit en participant au modèle de logiciel libre qui est un système incrémental de la qualité. C'est l'émergence de l'open source. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-09-18T14:26:00+02:00</updated><entry><title>Open Box environnement minimaliste</title><link href="/open-box-environnement-minimaliste.html" rel="alternate"></link><published>2022-09-18T14:26:00+02:00</published><updated>2022-09-18T14:26:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-09-18:/open-box-environnement-minimaliste.html</id><summary type="html"></summary><content type="html">&lt;p&gt;J'explore toujours les environnements minimalistes et customisables sous Arch Linux. Voici une configuration sous Open Box qui n'utilise que 500MB de RAM.&lt;/p&gt;
+&lt;p&gt;Pour installer changer à partir "installation du bureau XFCE4" de mon précedent poste &lt;a href="https://gist.github.com/legoffant/0a90e1067e3130711bf3f728a8a4a356"&gt;https://gist.github.com/legoffant/0a90e1067e3130711bf3f728a8a4a356&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Garder la configuration:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chiffrement LUKS&lt;/li&gt;
+&lt;li&gt;Partionnement BTRFS&lt;/li&gt;
+&lt;li&gt;Systemd-boot&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;zramd&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enlever guake terminal remplacer par alacritty.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Ne pas oublier la configuration du clavier sous Xorg en français&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Installation du serveur X&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S xorg-server xorg-xinit xorg-fonts-misc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Installation des composants&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Openbox Windows Manager&lt;/li&gt;
+&lt;li&gt;Thunar File Manager&lt;/li&gt;
+&lt;li&gt;Alacritty Terminal&lt;/li&gt;
+&lt;li&gt;Compton Compositor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S openbox thunar alacritty compton
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Configurer Openbox&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir -p ~/.config/openbox
+cp -a /etc/xdg/openbox/ ~/.config/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will copy 4 files into the ~/.config/openbox directory&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rc.xml
+menu.xml
+autostart
+environment
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Plugins pour Openbox&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;obconf - The Openbox Configuration Manager, can be used for general configuration.&lt;/li&gt;
+&lt;li&gt;lxappearance-obconf - The lxde Openbox Configuration Manager can be used to configure themes and other general customizations&lt;/li&gt;
+&lt;li&gt;lxinput - Can be used to configure mouse and keyboard, allows mouse speed and acceleration to be adjusted.&lt;/li&gt;
+&lt;li&gt;tint2 - custom taskbar&lt;/li&gt;
+&lt;li&gt;MenuMaker - is a powerful tool that creates XML-based menus&lt;/li&gt;
+&lt;li&gt;Nitrogen - Fast and lightweight wallpaper browser /setter for X&lt;/li&gt;
+&lt;li&gt;Thin - Startup Manager&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pacman&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;obconf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;menumaker&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tint2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lxinput&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lxappearance&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;nitrogen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;thin&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configurer autostart pour que démarre au démarrage:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;.&lt;span class="nv"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;openbox&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;autostart&lt;/span&gt;.&lt;span class="nv"&gt;sh&lt;/span&gt;
+
+&lt;span class="nv"&gt;tint2&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;
+&lt;span class="nv"&gt;nitrogen&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;restaure&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;
+&lt;span class="nv"&gt;compton&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;b&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;
+&lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="nv"&gt;alacritty&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans ce fichier on démarre la taskbar, le fond d'écran, le compositeur et un terminal&lt;/p&gt;
+&lt;h3&gt;Générer un menu démarrer&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mmaker -v OpenBox3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Thèmes et apparences&lt;/h3&gt;
+&lt;p&gt;Installer des thèmes supplémentaires:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S openbox-themes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Activer le login manager&lt;/h3&gt;
+&lt;p&gt;Créer un script par defaut xinitrc:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cp /etc/X11/xinit/xinitrc ~/.xinitrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Editer-le et ajouter:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;.&lt;span class="nv"&gt;xinitrc&lt;/span&gt;
+
+&lt;span class="k"&gt;exec&lt;/span&gt; &lt;span class="nv"&gt;openbox&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;session&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Activer Slim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo systemctl enable slim.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Enfin:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;En complément: Trash &amp;amp; drive Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;gvfs - volumes and have trash control&lt;/li&gt;
+&lt;li&gt;udisks2 - Automatic mounting&lt;/li&gt;
+&lt;li&gt;udiskie - Removable disk automounter using udisks&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Linux"></category><category term="Openbox"></category><category term="Linux"></category></entry><entry><title>Le nouvel ordre linuxien</title><link href="/le-nouvel-ordre-linuxien.html" rel="alternate"></link><published>2022-09-17T18:06:00+02:00</published><updated>2022-09-17T18:06:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-09-17:/le-nouvel-ordre-linuxien.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On a longtemps relégué les utilisateurs de GNU/Linux comme des geeks ou nerds un peu libertarien voir anticapitaliste, car son modèle économique a été basé sur l'activité bénévole en dehors du temps de travail rémunéré. Une catégorie expérimenté est né dans le cadre des serveurs, c'est à dire l'optimisation des ressources qui demande une disponibilité 24h/24. On peut donc dire que GNU/Linux était fiable et économe. Le capitalisme est très friand dans la nécessité de trouver le meilleur rapport/qualité prix, Linux a trouvé sa place chez les professionnels et Administrateurs systèmes qui eux même ont amélioré le produit en participant au modèle de logiciel libre qui est un système incrémental de la qualité. C'est l'émergence de l'open source. &lt;/p&gt;
 &lt;p&gt;Le système capitaliste a entretenu en suivant la Loi de Moore des prix élevés d'accès à l'informatique qui est en réalité un privilège de riche. Que vous soyez en 1990 ou en 2022, un ordinateur est aussi cher, juste que la puissance a changé, augmentant la qualité. Les systèmes d'exploitations modernes grand public demandent toujours plus de ressources, alors que les serveurs cherchent à les réduire. La miniaturisation des ordinateurs avec la nanotechnolgie est imparable et fera donc appel à une base sur les serveurs.&lt;/p&gt;
 &lt;p&gt;C'est l'analyse de l'émergence de Raspberry Pi dans les nano-ordinateurs ou le système d'exploitation est basé sur Debian, considéré comme robuste sur serveur. Raspberry Pi a coupé court au délire de puissance sur ordinateur augmentant le prix toujours en hausse. Pour une entrée de gamme à 40€ il était possible de ce procurer un nano-ordinateur fonctionnel sous Raspbian, système d'exploitation qui avec 1GO de RAM, vous pourrez faire des tâches de base. Cela sera peut-être un peu lent, on utilise plutôt pour un mode serveur. Pour avoir une certaine fluidité du système d'exploitation 2GO de RAM est nécessaire pour l'interface graphique du bureau.&lt;/p&gt;
 &lt;p&gt;Microsoft a laché l'affaire, il a bien vu qu'un marché existait, Raspberry Pi a été vendu à 30 Millions d'exemplaires depuis 2019. Mais son système d'exploitation n'est pas optimisé pour des systèmes embarqués: trop lourd, usine à gaz. Ici on veut du minimaliste. "Less is more" Ainsi Le Raspberry Pi est devenu un cheval de Troie d'adoption de GNU/Linux. L'éducation étant très demandeur, pour apprendre l'informatique mais également les pays en voie de développement avec enfin un ordinateur à bas coup. &lt;/p&gt;
