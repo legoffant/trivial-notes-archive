@@ -65,7 +65,7 @@ environment
 
 &lt;p&gt;Dans ce fichier on démarre la taskbar, le fond d'écran, le compositeur et un terminal&lt;/p&gt;
 &lt;h3&gt;Générer un menu démarrer&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mmaker -v OpenBox3
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mmaker -v -f OpenBox3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Activer le login manager&lt;/h3&gt;
