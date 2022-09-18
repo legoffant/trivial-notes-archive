@@ -56,20 +56,21 @@ This will copy 4 files into the ~/.config/openbox directory
 * tint2 - custom taskbar
 * MenuMaker - is a powerful tool that creates XML-based menus
 * Nitrogen - Fast and lightweight wallpaper browser /setter for X
-* Thin - Startup Manager
+* Slim - Startup Manager
 
 ```
-sudo pacman -S obconf menumaker tint2 lxinput lxappearance nitrogen thin
+sudo pacman -S obconf menumaker tint2 lxinput lxappearance nitrogen slim
 ```
 
 Configurer autostart pour que démarre au démarrage:
 ```
-vim ~/.config/openbox/autostart.sh
+vim ~/.config/openbox/autostart
 
 tint2 &
 nitrogen --restaure &
 compton -b -c &
 exec alacritty
+nm-applet
 ```
 
 Dans ce fichier on démarre la taskbar, le fond d'écran, le compositeur et un terminal
@@ -78,13 +79,6 @@ Dans ce fichier on démarre la taskbar, le fond d'écran, le compositeur et un t
 
 ```
 mmaker -v OpenBox3
-```
-
-### Thèmes et apparences 
-
-Installer des thèmes supplémentaires:
-```
-sudo pacman -S openbox-themes
 ```
 
 ### Activer le login manager
