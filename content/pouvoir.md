@@ -23,39 +23,49 @@ Comment repérer un futur PDG rêveur-analyste? Ces intérêts pour l’entrepre
 Avant tout le PDG est un avide lecteur et doit étudier toutes les formes de pouvoir sur le storytelling, son savoir vient des livres. Quelques références:
 
 Stratégie:
+
 * Le Prince, Machiavel
 * L'art de la guerre, Sun Tzu
 
 Management:
+
 * Lean Start-up, E.Riess
 * Le manager minute, K. Blanchard
 
 Entrepreneuriat:
+
 * L'art de se lancer: Le guide tout-terrain pour tout entrepreneur; Guy Kawasaki
 * Réflechissez et devenez riche; Napoléon Hill
 
 Finance:
+
 * Le personal MBA, Kaufman
 * Père riche, père pauvre; Kiyosaki
 
 Speed Séduction:
+
 * La Mystery Method; Mystery
 * The Game; Neil Strauss
 
 Communication:
+
 * Les secrets de la communication; Bandler, Grinder
 
 Religion:
+
 * Le Coran
 
 Recherche & développement, invention:
+
 * Skunk Works: A Personal Memoir of My Years at Lockheed; Rich
 * Et soudain apparut l'inventeur; Altschuller
 
 Intelligence économique:
+
 * Manuel d'intelligence économique; Harbulot
 
 Incertitude:
+
 * Le cygne noir, Taleb
 
 
