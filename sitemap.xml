@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2022-09-24T19:21:31-00:00</lastmod>
+<lastmod>2022-09-28T18:35:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2022-09-24T19:21:31-00:00</lastmod>
+<lastmod>2022-09-28T18:35:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2022-09-24T19:21:31-00:00</lastmod>
+<lastmod>2022-09-28T18:35:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2022-09-24T19:21:31-00:00</lastmod>
+<lastmod>2022-09-28T18:35:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2022-09-24T19:21:31-00:00</lastmod>
+<lastmod>2022-09-28T18:35:10-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/les-assoiffes-du-pouvoir.html</loc>
+<lastmod>2022-09-28T18:31:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -642,7 +649,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/entrepreneurship.html</loc>
-<lastmod>2022-09-13T19:48:00+00:09</lastmod>
+<lastmod>2022-09-28T18:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -664,6 +671,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/category/transhumanisme.html</loc>
 <lastmod>2022-09-18T20:06:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/innovation.html</loc>
+<lastmod>2022-09-28T18:31:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/entreprise.html</loc>
+<lastmod>2022-09-28T18:31:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/reference.html</loc>
+<lastmod>2022-09-28T18:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1019,13 +1047,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/entreprise.html</loc>
-<lastmod>2022-07-19T19:05:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/informatique.html</loc>
 <lastmod>2022-07-18T08:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -1266,13 +1287,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/communaute.html</loc>
 <lastmod>2022-02-15T08:59:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/innovation.html</loc>
-<lastmod>2022-02-13T23:33:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1531,7 +1545,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2022-09-24T19:18:00+00:09</lastmod>
+<lastmod>2022-09-28T18:31:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
