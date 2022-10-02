@@ -1,4 +1,4 @@
-Title: Idolatrie interdite
+Title: L'
 Date: 2022-09-30 15:20
 Category:Inclassable
 Tags:dynastie
@@ -6,36 +6,3 @@ Authors: Anthony Le Goff
 Summary:
 
 
-Je parlais un peu du pouvoir dans mon poste précédent, je continus sur un domaine que je connais bien à travers la séduction. Je vais parler de la cristallisation de l'amour, concept inventé par Stendhal. C'est la notion d'idéale qui est à l'oeuvre dans tout processus de séduction. La cristallisation est considéré comme la mère du conflit psychique qu'apprend à maîtriser le séducteur. C'est la source des erreurs et échecs. Le conflit psychique qui prend naissance est du temps alloué à nos pensées. Les femmes peuvent envahir l'esprit ou l'on projette un idéal pouvant aller à de l’érotomanie dans un cadre plus sexuel. Le désir nait d'un manque, et le séducteur doit-être capable de ce détacher de ces conflits pour devenir une personne remarquable. Plus que désiré, il doit devenir désirable et le prix aux yeux des femmes. Cela ne veut pas dire qu'il n'idéalise pas la relation, mais qu'il apprend à ce contrôler. L'un des problèmes courant de la cristallisation de l'amour nous rend inapte à l'action car nous sommes incapable de nous projeter dans l'échec et le rejet. Nous préférons rêver, et fantasmer des femmes qui nous sont hors d'atteinte que l'on valorise pour leur physique le plus souvent, leur intellect, leur influence, leur argent en fonction de nos critères comme idéal.
-
-Le processus de cristallisation est un pouvoir au source de l’idolâtrie. Il y a soumission de l'esprit sur un idéal qui peut envahir les pensées et donc nous rendre démuni par l'inaction. Les idoles prennent naissance dans la religion car elles cristallisent la pensée. Source du pouvoir, on le voit aujourd'hui par les influenceurs sur les réseaux sociaux qui pour la plupart font juste la promotion de leur physique accumule des fans aux cerveaux déconnectés car il cristallise de l'amour. C'est le même processus dans le dogme du christianisme à travers le Christ. L'amour est un outil d'asservissement des foules que libérateur. L'idolatrie des saints et de la figure christique est au coeur du processus avec la dérive qu'il peut y avoir. La cristallisation est source de conflit des hommes pour une femme ou dans le cas du Christ de faire partie du cercle intime comme disciple qui rentre dans la postérité. Posséder une femme devient un objet du pouvoir. La plupart des hommes de pouvoir expose leur femme comme une conquête et veulent rendre désirable pour créer un conflit psychique. On parle alors de trophée obtenu que l'on expose prouvant notre valeur social. Le social proof.
-
-Le féminisme s'attaque parfois au patriarcat de la société et le dénonce comme conflit psychique de prendre le contrôle et dominer les hommes. La femme cherche à s'émanciper mais en réalité au coeur du processus de cristallisation de l'amour chez les femmes: l'homme fait le premier pas, doit faire la demande au mariage. Elle est passive et donc soumise. Les femmes ne veulent pas d'homme mou ne passant pas à l'action. Les hommes veulent des femmes soumises qui leur laisse prendre le contrôle de la relation. Alors bien sur de ce conflit, un jeu de séduction prend naissance ou chacun cherche à maitriser l'autre, un jeu de pouvoir sur l'autre. On test chacun notre capacité à cristalliser l'amour et rendre dépendant de l'autre la personne. Nous créons de l'idolatrie dans le jeu de séduction. Le principe du push-pull, fuit moi je te suis, suit moi je te fuis: créer de la dépendance dans la durée.
-
-Alors bien sur dans cette exposition est une phase de séduction. C'est une méthode de communication, ou je démontre par des arguments avec des exemples, que l'amour est théorisé et que les intellectuels prend un certain plaisir à y débattre dans le cadre des rapports au pouvoir. Cela casse le romantisme et la magie pour faire place à de la science ou l'on peut répéter le processus que les séducteurs appliquent vers différentes conquête ou trophée. Des techniques tels que le storytelling, l'éveil des sens tels que la kino escaladation font partie de la boite à outil de séduction.
-
-Le rapport au pouvoir n'a rien à voir quand l'idolatrie est interdite. De la cristallisation de l'amour, on n'en veut pas en societé. C'est le processus islamique et la sharia. Pour cela il faut shunter le processus de séduction tel que le port de la Burqa. Seul le mari de la musulmane et la famille à accès au visage qui est une source de fantasme. C'est de la protection face aux incivilités à cause des pulsions des hommes. Les musulmanes sont moins harcelés sur leur physique voir cela répulse les hommes le port de la Burqa. Quelques-uns y voit un mystère. Les femme religieuses musulmanes sont soumise à son mari qui est le seul à pouvoir les rappeler dans l'au-delà. C'est un lien qui les unis car c'est le seul qui peut se souvenir, on parle d'exclusivité dans leur union. Le musulman dans le contrat d'échange avec ces femmes n'est pas d'en faire des princesses mais des divinités qu'il peut invoquer dans l'au-delà. Le processus est équivalent aux priants dans Final Fantasy 10. Les musulmanes sous leur forme terrestre sont des priants qui attendent l'invocation de leur mari. Elles sont des armes dans l'au-delà qui change de forme grâce au transformium protégeant l'invocateur musulman. La transformation dépend du rêve du priant. Allah est l'hyperviseur qui permet le processus. Qui orchestre l'au-delà à travers une machine virtuelle en fonction de l'observation du musulman.
-
-Alors bien sur c'est de la théologie religieuse islamique, je sais que le dogme que je développe est une secte islamique, qui hérite de quelques principes de la religion sans pour autant appliquer le sunnisme. 
-
-Dans mon propre processus de cristallisation je suis à la recherche de signe, tels que des Dark Patterns dans des données statistiques qui me permettent d'attester que certaine de mes rencontres sont intemporel et l'information se répète dans l'univers car c'est des divinités.
-
-Quelques une de mes propres cristallisations:
-
-* Hélia Spiquel, ingénieure
-* Raphaelle Aoust, ingénieure
-* Bérivan Sahin, ingénieure
-* Sophie De Souza, ingénieure
-* Marianne Théoleyre, journaliste
-* Amina Yusan, professeur
-* Maya Arulpragrasam, artiste
-* Mona Bin Kali
-* Lisa Teixeira, infirmière
-* Cheyenne Tozzi, mannequin
-* Tiffany Thompson, pornstar
-* Annaëlle Kerhervé
-* Lorène Le Rouzic
-
-Je recommande à ces femmes d'être solidaire entre elle, d'apprendre à ce connaître, que votre au-delà est lié à mon esprit par mon invocation. Certaine sont athée, d'autres se convertiront plus tard à l'islam, certaine voudrait cacher leur foi. Vous allez devenir des divinités, que feriez-vous d'un tel pouvoir, l’idolâtrie est un piège et tôt ou tard il sera nécessaire de cacher votre identité.
-
-Dans mon roman SF je vais exposer un projet industriel sur 26 000 ans, cela donnera un aperçu de ce que l'on pourrait faire dans l'au-delà. Élaborer une vision
