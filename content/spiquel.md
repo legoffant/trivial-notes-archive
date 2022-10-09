@@ -17,4 +17,3 @@ Je reste outrée du mépris que certain élève on mis en place sur ma personne 
 
 Elle fait partie des personnes qui sont au courant dans l'intimité de la mise en place de l'harcèlement à l'époque, et qui ont rien dit.
 
-Hélia a une sosie dans les pornstar, pour donner une idée du physique de la gamine, vous pouvez chercher "Jaye Summers Tushy Raw". Une sodomie bien méritée.
