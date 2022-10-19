@@ -1,7 +1,7 @@
 Title: Quand Cap Gemini ne veut pas rémunérer d'ancien mineur plus que bac+2 à moins de 30K€
 Date: 2022-10-18 18:24
 Category:Inclassable
-Tags:capsule
+Tags:cap gemini 
 Authors: Anthony Le Goff
 Summary:
 
