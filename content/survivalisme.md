@@ -18,18 +18,19 @@ Fournisseur:
 
 Vous allez avoir besoin de matériel de randonnée pour du bivouac sur 2-3 jours.
 
-* Manuel de survie
-* Carte
+* Manuel "Aventure et Survie", Wiseman
+* Carte, topo + étui plastique de rangement
 * Livre
 * Boussole à visée
 
 ### Technologie
 
-* Radio solaire, à manivelle & piles, SOS
-* Lampe LED à manivelle, USB
+* Radio solaire, dynamo & piles, SOS
+* Lampe LED dynamo, USB
 * Batterie solaire IP66 30000mAH recharge smartphone
 * Lampe frontale à pile
 * Extra: Ordinateur portable 11"
+* GPS Garmin Foretrex 601
 
 ### Bivouac
 
@@ -89,14 +90,17 @@ Eté:
 ### Autres
 
 * Trousse de secours & couverture de survie
-* Cordelette
-* Mousqueton
+* Cordelette 15m
+* Mousqueton X3
+* Couteau de survie militaire
 * Ruban adhésif (shatterton)
 * Hygiène, papier toilette
-* kit Allume-feu et allumettes
+* kit Allume-feu / pierre à feu et allumettes
 * Pochette étanche pour les papiers, information personnel
 * (Pioche pliable)
 * (Bâtons de randonnées)
+* Ceinture tactique
+* Kit de pêche, une ligne, quelques hameçons, plomb, leurre
 
 ### Poids
 
