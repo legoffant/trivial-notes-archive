@@ -36,7 +36,7 @@ Vous allez avoir besoin de matériel de randonnée pour du bivouac sur 2-3 jours
 
 * Tente 1 place
 * Couchage 0°c - 5°c température de confort
-* Matelas lite type Thermarest
+* Matelas Z lite type Thermarest
 * Drap en soie de couchage (gain de 2-3°C)
 
 ### Sac
@@ -89,18 +89,32 @@ Eté:
 
 ### Autres
 
-* Trousse de secours & couverture de survie
-* Cordelette 15m
+* Trousse de secours(inclus pince à épiler, ciseau chirurgien) & couverture de survie
+* Cordelette 20m
 * Mousqueton X3
-* Couteau de survie militaire
 * Ruban adhésif (shatterton)
 * Hygiène, papier toilette
-* kit Allume-feu / pierre à feu et allumettes
 * Pochette étanche pour les papiers, information personnel
 * (Pioche pliable)
 * (Bâtons de randonnées)
 * Ceinture tactique
+
+### Kit de survie
+
+A garder dans une petite boite metallique 10x6x2 entouré de shatterton.
+
 * Kit de pêche, une ligne, quelques hameçons, plomb, leurre
+* Couteau pliant de survie militaire, type CAC
+* kit Allume-feu / pierre à feu et allumettes tempêtes
+* Bâton phosphorescent 
+* Bougie
+* Fil et aiguille
+* Fil à collets acier inox 0,3mm
+* Fil à scier
+* Lame de scalpel
+* Steri-strips
+* Préservatif
+* Iodure de potassium (radiation)
 
 ### Poids
 
