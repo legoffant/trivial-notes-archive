@@ -31,6 +31,7 @@ Vous allez avoir besoin de matériel de randonnée pour du bivouac sur 2-3 jours
 * Lampe frontale à pile
 * Extra: Ordinateur portable 11"
 * GPS Garmin Foretrex 601
+* Talkie-Walkie UV-5R émétteur-récepteur UHF-VHF
 
 ### Bivouac
 
