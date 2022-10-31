@@ -24,7 +24,7 @@
 &lt;h3&gt;Vos premiers programmes informatiques&lt;/h3&gt;
 &lt;p&gt;Nota: &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Installer https://zealdocs.org/ pour avoir la documentation hors ligne des langages informatiques&lt;/p&gt;
+&lt;p&gt;Installer &lt;a href="https://zealdocs.org/"&gt;https://zealdocs.org/&lt;/a&gt; pour avoir la documentation hors ligne des langages informatiques&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Vous allez apprendre à développer, et bien le faire. Pour cela il existe des méthodes d'outils pour le développement de logiciel libre. Nous allons donc poser les bases de la doctrine de votre futur workflow:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -41,8 +41,8 @@
 &lt;h4&gt;La prise en main de la POO (Programmation orientée-objet)&lt;/h4&gt;
 &lt;p&gt;L'apprentissage du C++ est difficile vous allez ramer, vous êtes prévenu, cela prend du temps. Mais c'est un bagage important. Le compilateur est g++ s'utilise comme GCC. A la base le C++ est du langage C avec classe, même si aujourd'hui le langage à bien changé. Comme le C, c'est un langage privilégié pour des instructions bas niveaux proche de la machine et de la mémoire.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Tutorial https://www.learncpp.com/&lt;/li&gt;
-&lt;li&gt;Ressources C++ https://hackingcpp.com/&lt;/li&gt;
+&lt;li&gt;Tutorial &lt;a href="https://www.learncpp.com/"&gt;https://www.learncpp.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ressources C++ &lt;a href="https://hackingcpp.com/"&gt;https://hackingcpp.com/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/"&gt;La programmation en C++ Moderne&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/"&gt;Learn C++ Programming for Beginners – Free 31-Hour Course&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Livre C++ Primer&lt;/li&gt;
