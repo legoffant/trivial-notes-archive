@@ -36,7 +36,7 @@ Nous allons graver une image de la distribution [Xubuntu](https://xubuntu.org/do
 ### Vos premiers programmes informatiques
 
 Nota: 
-> Installer https://zealdocs.org/ pour avoir la documentation hors ligne des langages informatiques
+> Installer [https://zealdocs.org/](https://zealdocs.org/) pour avoir la documentation hors ligne des langages informatiques
 
 Vous allez apprendre à développer, et bien le faire. Pour cela il existe des méthodes d'outils pour le développement de logiciel libre. Nous allons donc poser les bases de la doctrine de votre futur workflow:
 
@@ -55,8 +55,8 @@ La base est de connaître l'utilisation d'un compilateur tels que GCC avec un é
 
 L'apprentissage du C++ est difficile vous allez ramer, vous êtes prévenu, cela prend du temps. Mais c'est un bagage important. Le compilateur est g++ s'utilise comme GCC. A la base le C++ est du langage C avec classe, même si aujourd'hui le langage à bien changé. Comme le C, c'est un langage privilégié pour des instructions bas niveaux proche de la machine et de la mémoire.
 
-* Tutorial https://www.learncpp.com/
-* Ressources C++ https://hackingcpp.com/
+* Tutorial [https://www.learncpp.com/](https://www.learncpp.com/)
+* Ressources C++ [https://hackingcpp.com/](https://hackingcpp.com/)
 * [La programmation en C++ Moderne](https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/)
 * [Learn C++ Programming for Beginners – Free 31-Hour Course](https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/)
 * Livre C++ Primer
