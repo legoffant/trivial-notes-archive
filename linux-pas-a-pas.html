@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Linux pas à pas | Trivial notes</title>
+    <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anthony Le Goff" />
+    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_position" content="top=60,right=60" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li ><a href="/pages/contact.html">Contact</a></li>
+                <li ><a href="/pages/ltcb.html">LTCB</a></li>
+                <li class="divider-vertical"></li>
+                <li >
+                  <a href="/category/cc.html">
+						        <i class="icon-folder-open icon-large"></i>C/C++
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/entrepreneurship.html">
+						        <i class="icon-folder-open icon-large"></i>Entrepreneurship
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/inclassable.html">
+						        <i class="icon-folder-open icon-large"></i>Inclassable
+					         </a>
+                </li>
+                <li class="active">
+                  <a href="/category/linux.html">
+						        <i class="icon-folder-open icon-large"></i>Linux
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/transhumanisme.html">
+						        <i class="icon-folder-open icon-large"></i>Transhumanisme
+					         </a>
+                </li>
+              <ul class="nav pull-right">
+                    <li><a href="/"><i class="icon-th-list"></i>Archives</a></li>
+              </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8" id="content">
+<div class="row">
+    <div class="span2">
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2022-10-31T06:53:00+01:00">
+    <i class="icon-calendar"></i>&nbsp;lun. 31 octobre 2022
+</abbr>
+<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+
+
+<br/>
+	&nbsp;&nbsp;<a href="/tag/linux.html" class="label"><i class="icon-tag"></i>&nbsp;Linux</a>
+</footer><!-- /.post-info -->        </div>
+    </div>
+    <div class="span6">
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Linux pas à pas">
+                        Linux pas à pas
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
+
+        <p>Basculer sous GNU/Linux est souvent pas idéologie, quand on commence à comprendre l'intérêt du code source ouvert et du logiciel libre dans l'infrastructure informatique. Défendre les libertés numériques devraient être une nécessité. Là ou il y a de l'expertise informatique, il y a GNU/Linux.</p>
+<p>Faire ce basculement nécessite du matériel dédié, qui est conforme aux standards des drivers, dont le risque de non comptabilité est négligeable car certaines firmes ont fait des alliances avec des groupes commerciaux sous GNU/Linux. C'est le Cas de IBM avec Red Hat ainsi que la section ordinateur Lenovo dont les Thinkpads sont réputés dans l'industrie.</p>
+<p>Commencez sérieusement sous Linux, achetez un Thinkpad reconditionné aux alentours de 300€, que vous n'aurez pas peur de casser. On trouve des offres intéressantes sur <a href="https://www.backmarket.fr/fr-fr/search?q=thinkpad">BackMarket</a>. Ou si vous voulez sérieusement apprendre l'informatique à vos adolescents, l'achat d'un vieux Thinkpad fait largement l'affaire. Il n'y a pas d'âge pour s'y mettre et ce n'est pas qu'un truc de geek et de barbu. On peut faire des choses très "kawaii". Aujourd'hui le Rover Persévérance de la NASA fonctionne sous GNU/Linux, c'est privilégié dans les systèmes complexes.</p>
+<p>Notez bien, que les environnements de développement sont optimisé sous GNU/Linux pour les programmeurs et ingénieurs. La base, c'est que l'on est des fainéants et sur GNU/Linux ont peu tout automatiser mais également personnaliser selon ces besoins. 26% des développeurs du sondage de Stack Overflow admettent êtres sous GNU/Linux.</p>
+<p>NOTA: </p>
+<blockquote>
+<p>Pour votre apprentissage, créer un profil de social bookmarking sur Pearltrees ou vous allez sauvegarder toutes les pages internets et notion à apprendre au fur à mesure.</p>
+</blockquote>
+<h3>Choisir une image ISO Live USB</h3>
+<p>On commence à apprendre doucement, on va utiliser des images ISO du système d'exploitation que l'on va installer sur le disque dur de l'ordinateur. Vous devez commencer à Googler sur internet comment accéder au BIOS / UEFI de votre ordinateur, en tapant le modèle. Il va être nécessaire de faire une manipulation, tel que désactiver le "secure boot" et "booter" sur une clé USB avec l'image ISO.</p>
+<p>Entre temps, choisissez un logiciel pour graver l'image ISO du système d'exploitation sur une clé USB tels que:</p>
+<ul>
+<li><a href="https://www.ventoy.net/en/index.html">Ventoy</a></li>
+<li><a href="https://etcherpc.com/">Etcher</a></li>
+<li><a href="http://rufus.ie/fr/">Rufus</a></li>
+</ul>
+<p>Nous allons graver une image de la distribution <a href="https://xubuntu.org/download/">Xubuntu</a> qui est une version alléger d'Ubuntu avec le bureau XFCE. Nous allons tout le temps utiliser ce bureau. Car il est facile à utiliser, léger et simple à installer, voir à customiser. Ainsi il fonctionne très bien sur des vieux ordinateurs. Il a l'avantage d'être une "Ubuntu" et donc le support associé en particulier la documentation. Suivez la procédure d'installation. Si vous êtes perdu il est temps d'aller sur la <a href="https://doc.ubuntu-fr.org/">documentation du wiki-fr</a></p>
+<ul>
+<li>N'oubliez pas de parcourir le <a href="https://doc.ubuntu-fr.org/debutant">guide de débutant</a> pour la prise en main</li>
+<li>Suivez votre premier cours en ligne en <a href="https://openclassrooms.com/fr/courses/7170491-initiez-vous-a-linux?archived-source=43538">reprenant le contrôle sous GNU/Linux</a></li>
+<li>Cours De la Linux Foundation <a href="https://training.linuxfoundation.org/training/introduction-to-linux/">Introduction à Linux</a></li>
+</ul>
+<h3>Vos premiers programmes informatiques</h3>
+<p>Nota: </p>
+<blockquote>
+<p>Installer https://zealdocs.org/ pour avoir la documentation hors ligne des langages informatiques</p>
+</blockquote>
+<p>Vous allez apprendre à développer, et bien le faire. Pour cela il existe des méthodes d'outils pour le développement de logiciel libre. Nous allons donc poser les bases de la doctrine de votre futur workflow:</p>
+<blockquote>
+<p>Vim + GCC + Makefile + Git</p>
+</blockquote>
+<p>Nous allons commencer par apprendre le langage C qui est utilisé pour coder le noyau Linux et le système d'exploitation, certains bureaux comme KDE sont codés en C++ à aborder également car c'est le langage de la robotique.</p>
+<p>La base est de connaître l'utilisation d'un compilateur tels que GCC avec un éditeur de texte comme Vim dans un terminal. </p>
+<ul>
+<li>Pour vous lancez dans l'apprentissage de Vim, essayez la commande <code>vimtutor</code> dans un terminal ainsi que le livre <a href="https://vimebook.com/fr">Vim pour les humains</a>. Adoptez Vim va améliorer votre workflow.</li>
+<li>Pour créer vos premiers programmes suivez le livre <a href="https://archives.framabook.org/docs/c20h/C20H_integrale_creative-commons-by-sa.pdf">Le langage C en 20h</a></li>
+<li><a href="https://gl.developpez.com/tutoriel/outil/makefile/">Introduction à Makefile</a> , comment automatiser les liens avec les bibliothèques à la compilation.</li>
+<li><a href="https://www.pierre-giraud.com/git-github-apprendre-cours/">Tutorial contrôle de version avec Git &amp; Github</a> + Github <a href="https://docs.github.com/en">Handbook</a>. Versionner son code est une bonne habitude à prendre dès le départ, que cela soit pour corriger des erreurs, suivre les modifications et faire du social coding.</li>
+</ul>
+<h4>La prise en main de la POO (Programmation orientée-objet)</h4>
+<p>L'apprentissage du C++ est difficile vous allez ramer, vous êtes prévenu, cela prend du temps. Mais c'est un bagage important. Le compilateur est g++ s'utilise comme GCC. A la base le C++ est du langage C avec classe, même si aujourd'hui le langage à bien changé. Comme le C, c'est un langage privilégié pour des instructions bas niveaux proche de la machine et de la mémoire.</p>
+<ul>
+<li>Tutorial https://www.learncpp.com/</li>
+<li>Ressources C++ https://hackingcpp.com/</li>
+<li><a href="https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/">La programmation en C++ Moderne</a></li>
+<li><a href="https://www.freecodecamp.org/news/learn-c-with-free-31-hour-course/">Learn C++ Programming for Beginners – Free 31-Hour Course</a></li>
+<li>Livre C++ Primer</li>
+</ul>
+<h4>Quelques bases en algorithmes et structures de données</h4>
+<p>Lisez: <a href="https://zestedesavoir.com/tutoriels/621/algorithmique-pour-lapprenti-programmeur/">Algorithmique pour l'apprenti programmeur</a></p>
+<p>Vous devriez maintenant vous lancez dans des petits projets sur Github tels que faire un "jeu de la vie de Conway" voir un Space Invaders en C++. C'est en faisant des projets que vous allez apprendre. Apprendre à apprendre est une compétence essentielle.</p>
+<h3>Lancer vous dans le LPIC</h3>
+<p>Pour une maîtrise des compétences sous GNU/Linux, rien de tel que le passage de la <a href="https://www.lpi.org/fr/our-certifications/summary-of-certifications">certification LPIC</a> qui n'est pas trop cher. Ainsi trouvez-vous le livre(pirater-le s'il faut):</p>
+<ul>
+<li>Préparation à la certification LPIC-1 Linux 101 et 102</li>
+</ul>
+<p>Vous allez comme ça valider des bases:</p>
+<ul>
+<li>Package Manager</li>
+<li>Shell Scripting</li>
+<li>Gestion des disques</li>
+<li>Automatisation des tâches</li>
+<li>Sauvegardes</li>
+<li>Sécurité</li>
+<li>Gestion des utilisateurs et privilèges </li>
+<li>Réseaux TCP/IP, SSH, DNS</li>
+<li>Monitoring</li>
+</ul>
+<p>Cela fera de vous un administrateur système "sysAdmin" prêt pour une utilisation avancée du système d'exploitation. </p>
+<p>Pour allez plus loin:</p>
+<ul>
+<li>Linux Administration <a href="https://linux.goffinet.org/">https://linux.goffinet.org/</a></li>
+<li><a href="https://archives.framabook.org/docs/Pour_aller_plus_loin_avec_la_ligne_de_commande/Pour_aller_plus_loin_avec_la_ligne_de_commande_art-libre.pdf">Pour aller plus loins avec la ligne de commande UNIX</a></li>
+<li>Langage de scripting: le Python dont le <a href="https://inforef.be/swi/download/apprendre_python3_5.pdf">livre de Gerard Swinnen</a> comme base d'apprentissage</li>
+</ul>
+<h3>Utilisation avancée: Arch Linux</h3>
+<p>Pour connaitre tout le système en profondeur et recherchez une distribution sur mesure, passons à Arch Linux. Pour les plus fous d'entre vous il y a "Linux From Scratch".</p>
+<p>Maintenant nous passons au niveau supérieur, nous allons supprimer et sauvegarder notre système Xubuntu d'apprentissage pour l'utilisation professionnel à travers Arch Linux qui est plus sécurisé(signature des paquets entre autre), minimaliste et customisable. Ainsi il y a l'avantage de AUR pour les paquets.</p>
+<p>Sauvegarder sur une clé USB de 64GB vos documents fichiers depuis /home, cela devrait suffire.</p>
+<h4>Virtualisation avec KVM</h4>
+<p>Vous pouvez d'abord vous entraînez dans une machine virtuelle sous Linux avec KVM. Suivez ce <a href="https://phoenixnap.com/kb/ubuntu-install-kvm">tutorial</a> pour installer sous Ubuntu.</p>
+<p>Visitez le wiki Arch Linux en français pour débuter l'installation: <a href="https://wiki.archlinux.fr/Accueil">https://wiki.archlinux.fr/Accueil</a>. N'hésitez pas à aller sur le chat IRC via le client Weechat, ou j'y suis personnellement sous le pseudo: Trivial régulièrement pour toutes aides.  </p>
+<p>Apprenez les lignes de commandes et leur utilité pour configurer le système. Regardez des vidéos sur Youtube sur l'installation comme guide complet: <a href="https://www.youtube.com/watch?v=DPLnBPM4DhI&amp;t=3747s">https://www.youtube.com/watch?v=DPLnBPM4DhI&amp;t=3747s</a></p>
+<p>Une fois que vous avez pris vos marques, on démarre l'installation sur l'ordinateur. Vous avez le droit à l'erreur, c'est même conseillé.</p>
+<h4>Installation Arch Linux</h4>
+<p>Sur votre ordinateur personnel, tel qu'un Thinkpad, pour une utilisation avancée je recommande:</p>
+<ul>
+<li>Système de fichier BTRFS</li>
+<li>Chiffrement dm-crypt/LUKS</li>
+<li>LVM</li>
+<li>ZRAM</li>
+<li>Bureau: XFCE ou i3, Open Box. Minimaliste "Less is more"</li>
+</ul>
+<p>Vérifier toujours la signature PGP de l'image ISO en cas de corruption. Utilisez l'utilitaire en ligne de commande <code>dd</code> pour graver sur le media USB depuis Linux. Cette clé USB sera votre méthode de secours pour accéder au système en cas de plantage sévère. </p>
+<p>Vous trouverez <a href="https://gist.github.com/legoffant/0a90e1067e3130711bf3f728a8a4a356">ma configuration et installation d'Arch Linux</a>, n'installez que ce que vous comprenez, recherchez à quoi sert un paquet spécifique.
+Liste des <a href="https://gist.github.com/legoffant/f4a05f7b3e246f6495a184072c3aee9c">outils pour désigners et développeurs sous Arch Linux</a></p>
+<p>ENFIN BIENVENUE DANS LA COMMUNAUTE, "I Use Arch BTW"</p>
+<p>N'hésitez pas à vous renseignez tels que sur:</p>
+<ul>
+<li>La programmation système</li>
+<li>Webdev</li>
+<li>Datascience</li>
+<li>Bug Bounty</li>
+<li>Reverse-engineering</li>
+</ul>
+<p>Les sujets ne manque pas, en devenant un "archer" vous êtes administrateur système dans la voie de devenir un ingénieur système Linux. Et cela est un parcours ouvert aux autodidactes.</p>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+</div>
+</div>
+        </div><!--/span-->
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><div><i class="icon-external-link"></i><a href="https://getpelican.com/">Pelican</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.python.org/">Python.org</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://framabook.org/le-c-en-20-heures-2/">Apprendre le C en 20H</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://archlinux.org/">Arch Linux</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.blackarch.io/">Blackarch</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.kernel.org/">Kernel</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.arduino.cc/">Arduino</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://beagleboard.org/bone">BeagleBoard</a></div></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
