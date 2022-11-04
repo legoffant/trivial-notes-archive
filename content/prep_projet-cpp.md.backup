@@ -53,8 +53,7 @@ LICENCE
 **Paquets prérequis en particulier quelques librairies externes C++ utiles pour les développeurs et ingénieurs:**
 
 ```
-sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen 
-qt6-base sfml sdl2
+sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen qt6-base sfml sdl2
 ```
 
 * base-devel pour les outils de compilation GCC
@@ -249,7 +248,7 @@ Nos fichiers de configurations pour notre projet:
 spaceinvaders/CMakeLists.txt
 ```
 cmake_minimum_required ( VERSION 3.10 )
-set(CMAKE_BUILD_TYPE RElease)
+set(CMAKE_BUILD_TYPE Release)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(spaceinvaders version 1.0)
