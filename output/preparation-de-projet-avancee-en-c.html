@@ -149,6 +149,7 @@
 <li>Compilateur: <a href="https://gcc.gnu.org/">g++</a></li>
 <li>Documentation: <a href="https://www.doxygen.nl/">Doxygen</a></li>
 <li>Gérer la compilation du projet: <a href="https://cmake.org/">cmake</a></li>
+<li>Contrôle de version: <a href="https://git-scm.com/">Git</a></li>
 <li>Système d'exploitation: <a href="https://archlinux.org/">Arch Linux</a></li>
 </ul>
 <p>Pour apprendre à coder en C++ on peut s'appuyer sur ces livres:</p>
@@ -175,8 +176,7 @@
 </code></pre></div>
 
 <p><strong>Paquets prérequis en particulier quelques librairies externes C++ utiles pour les développeurs et ingénieurs:</strong></p>
-<div class="highlight"><pre><span></span><code>sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen 
-qt6-base sfml sdl2
+<div class="highlight"><pre><span></span><code>sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen qt6-base sfml sdl2
 </code></pre></div>
 
 <ul>
@@ -342,7 +342,7 @@ nmap &lt;C-p&gt; :CtrlP&lt;CR&gt;
 <p>Nos fichiers de configurations pour notre projet:</p>
 <p>spaceinvaders/CMakeLists.txt</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cmake_minimum_required</span> <span class="p">(</span><span class="w"> </span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.10</span><span class="w"> </span><span class="p">)</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_BUILD_TYPE</span><span class="w"> </span><span class="s">RElease</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_BUILD_TYPE</span><span class="w"> </span><span class="s">Release</span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD</span><span class="w"> </span><span class="s">17</span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD_REQUIRED</span><span class="w"> </span><span class="s">ON</span><span class="p">)</span>
 <span class="nb">project</span><span class="p">(</span><span class="s">spaceinvaders</span><span class="w"> </span><span class="s">version</span><span class="w"> </span><span class="s">1.0</span><span class="p">)</span>

@@ -283,7 +283,7 @@ add_library(mainDemo
 install(TARGETS mainDemo
 	DESTINATION lib)
 	
-File(
+file(
 	GLOB
 	headers
 	*.hpp
@@ -316,10 +316,10 @@ if(NOT DOXYGEN_FOUND)
 else()
    configure_file(Doxyfile.in Doxyfile)
 
-   set(DOXYGEN_INPUT ${CMAKE_BINARY_DIR}/docs/Doxyfile)
+   set(DOXYGEN_INPUT ${CMAKE_BINARY_DIR}/docs/Doxyfile.in)
    set(DOXYGEN_OUTPUT ${APIDOC_DIR}/html/index.html)
 
-   add_custom_target(doc ALL
+   add_custom_target(docs ALL
      COMMAND ${CMAKE_COMMAND} -E echo_append "Building API Documentation..."
      COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_INPUT} > /dev/null
      COMMAND ${CMAKE_COMMAND} -E echo "Done."
