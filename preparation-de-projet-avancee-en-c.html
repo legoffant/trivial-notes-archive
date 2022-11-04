@@ -375,7 +375,7 @@ nmap &lt;C-p&gt; :CtrlP&lt;CR&gt;
 <span class="n">install</span><span class="p">(</span><span class="n">TARGETS</span><span class="w"> </span><span class="n">mainDemo</span><span class="w"></span>
 <span class="w">    </span><span class="n">DESTINATION</span><span class="w"> </span><span class="n">lib</span><span class="p">)</span><span class="w"></span>
 
-<span class="n">File</span><span class="p">(</span><span class="w"></span>
+<span class="n">file</span><span class="p">(</span><span class="w"></span>
 <span class="w">    </span><span class="n">GLOB</span><span class="w"></span>
 <span class="w">    </span><span class="n">headers</span><span class="w"></span>
 <span class="w">    </span><span class="o">*.</span><span class="n">hpp</span><span class="w"></span>
@@ -404,10 +404,10 @@ if(NOT DOXYGEN_FOUND)
 else()
    configure_file(Doxyfile.in Doxyfile)
 
-   set(DOXYGEN_INPUT <span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/Doxyfile)
+   set(DOXYGEN_INPUT <span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/Doxyfile.in)
    set(DOXYGEN_OUTPUT <span class="cp">${</span><span class="n">APIDOC_DIR</span><span class="cp">}</span>/html/index.html)
 
-   add_custom_target(doc ALL
+   add_custom_target(docs ALL
      COMMAND <span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span> -E echo_append &quot;Building API Documentation...&quot;
      COMMAND <span class="cp">${</span><span class="n">DOXYGEN_EXECUTABLE</span><span class="cp">}</span> <span class="cp">${</span><span class="n">DOXYGEN_INPUT</span><span class="cp">}</span> &gt; /dev/null
      COMMAND <span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span> -E echo &quot;Done.&quot;
