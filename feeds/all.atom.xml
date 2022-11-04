@@ -13,6 +13,7 @@
 &lt;li&gt;Compilateur: &lt;a href="https://gcc.gnu.org/"&gt;g++&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Documentation: &lt;a href="https://www.doxygen.nl/"&gt;Doxygen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Gérer la compilation du projet: &lt;a href="https://cmake.org/"&gt;cmake&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Contrôle de version: &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Système d'exploitation: &lt;a href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Pour apprendre à coder en C++ on peut s'appuyer sur ces livres:&lt;/p&gt;
@@ -39,8 +40,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Paquets prérequis en particulier quelques librairies externes C++ utiles pour les développeurs et ingénieurs:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen 
-qt6-base sfml sdl2
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen qt6-base sfml sdl2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -206,7 +206,7 @@ nmap &amp;lt;C-p&amp;gt; :CtrlP&amp;lt;CR&amp;gt;
 &lt;p&gt;Nos fichiers de configurations pour notre projet:&lt;/p&gt;
 &lt;p&gt;spaceinvaders/CMakeLists.txt&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cmake_minimum_required&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;VERSION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;3.10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_BUILD_TYPE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;RElease&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_BUILD_TYPE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;Release&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_CXX_STANDARD&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;17&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_CXX_STANDARD_REQUIRED&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;ON&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;project&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;spaceinvaders&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
