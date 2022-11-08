@@ -239,7 +239,7 @@ nmap &amp;lt;C-p&amp;gt; :CtrlP&amp;lt;CR&amp;gt;
 &lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TARGETS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;DESTINATION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-&lt;span class="n"&gt;File&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;GLOB&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;*.&lt;/span&gt;&lt;span class="n"&gt;hpp&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
@@ -268,10 +268,10 @@ if(NOT DOXYGEN_FOUND)
 else()
    configure_file(Doxyfile.in Doxyfile)
 
-   set(DOXYGEN_INPUT &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/Doxyfile)
+   set(DOXYGEN_INPUT &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/Doxyfile.in)
    set(DOXYGEN_OUTPUT &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;APIDOC_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/html/index.html)
 
-   add_custom_target(doc ALL
+   add_custom_target(docs ALL
      COMMAND &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; -E echo_append &amp;quot;Building API Documentation...&amp;quot;
      COMMAND &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_EXECUTABLE&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_INPUT&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; &amp;gt; /dev/null
      COMMAND &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; -E echo &amp;quot;Done.&amp;quot;
