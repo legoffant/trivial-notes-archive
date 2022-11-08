@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Entrepreneurship</title><link href="/" rel="alternate"></link><link href="/feeds/entrepreneurship.atom.xml" rel="self"></link><id>/</id><updated>2022-11-08T10:24:00+01:00</updated><entry><title>Un peu d'hygiène informatique</title><link href="/un-peu-dhygiene-informatique.html" rel="alternate"></link><published>2022-11-08T10:24:00+01:00</published><updated>2022-11-08T10:24:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-08:/un-peu-dhygiene-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila que vous commencer à vous demander comment protéger les individus dans les communications ou business en particulier si vous faites des choses un peu illégal par la loi tels qu'ouvrir un commerce de vente d'arme sur le darknet.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Entrepreneurship</title><link href="/" rel="alternate"></link><link href="/feeds/entrepreneurship.atom.xml" rel="self"></link><id>/</id><updated>2022-11-08T13:14:00+01:00</updated><entry><title>Don à une organisation religieuse narkantique</title><link href="/don-a-une-organisation-religieuse-narkantique.html" rel="alternate"></link><published>2022-11-08T13:14:00+01:00</published><updated>2022-11-08T13:14:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-08:/don-a-une-organisation-religieuse-narkantique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Dans mes projets long terme, j'ai créé un fond d'investissement anonyme pour financer une organisation religieuse qui fait:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Humanitaire&lt;/li&gt;
+&lt;li&gt;Education&lt;/li&gt;
+&lt;li&gt;Construction de mosquée&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Comment fonctionne la sécurité des fonds?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On utilise le BTC (bitcoin) sur un wallet accessible sur deux supports:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Un hard wallet papier dans une capsule temporelle enterrée secrète&lt;/li&gt;
+&lt;li&gt;Un ordinateur personnel protégé&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je suis ma propre banque en charge de garder les fonds&lt;/p&gt;
+&lt;p&gt;Dispositif de sécurité du terminal d'accès:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Système d'exploitation: Arch Linux&lt;/li&gt;
+&lt;li&gt;Chiffrement disque: dm-crypt/LUKS aes-xts-plain64 -key-size 512 &lt;/li&gt;
+&lt;li&gt;Sauvegarde: Duplicity &amp;gt; NAS Synology(local) &amp;gt; Hyperbackup C2 storage(distant)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C'est à dire en cas de vol d'ordinateur, ou de mon NAS. J'ai toujours une sauvegarde chiffré dans le cloud. Le porte-feuille est partagé sur trois sites: Local puis à distance et enfin dans la capsule.&lt;/p&gt;
+&lt;p&gt;L'adresse de don:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;14&lt;/span&gt;&lt;span class="n"&gt;rBfNjVNivzSUePZxfs18uhFgN6zaGUmB&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vous pouvez consulter à tous moment la valeur du fond d'investissement sur &lt;a href="https://www.blockchain.com"&gt;https://www.blockchain.com&lt;/a&gt; en entrant l'adresse du porte-feuille.&lt;/p&gt;</content><category term="Entrepreneurship"></category><category term="don"></category><category term="religion"></category></entry><entry><title>Un peu d'hygiène informatique</title><link href="/un-peu-dhygiene-informatique.html" rel="alternate"></link><published>2022-11-08T10:24:00+01:00</published><updated>2022-11-08T10:24:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-08:/un-peu-dhygiene-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila que vous commencer à vous demander comment protéger les individus dans les communications ou business en particulier si vous faites des choses un peu illégal par la loi tels qu'ouvrir un commerce de vente d'arme sur le darknet.&lt;/p&gt;
 &lt;p&gt;Déjà, il est sain d'être parano, c'est une protection nécessaire à toute réussite d'entreprise.&lt;/p&gt;
 &lt;p&gt;Vous devez &lt;strong&gt;anticiper la perquisition&lt;/strong&gt;. L'échec est possible. Ce que vous devez faire pour tous processus de commerce en règle général:&lt;/p&gt;
 &lt;ul&gt;
