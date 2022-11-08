@@ -24,7 +24,6 @@ Dispositif de sécurité du terminal d'accès:
 
 * Système d'exploitation: Arch Linux
 * Chiffrement disque: dm-crypt/LUKS aes-xts-plain64 -key-size 512 
-* Audit: Lynis & rkhunter
 * Sauvegarde: Duplicity > NAS Synology(local) > Hyperbackup C2 storage(distant)
 
 C'est à dire en cas de vol d'ordinateur, ou de mon NAS. J'ai toujours une sauvegarde chiffré dans le cloud. Le porte-feuille est partagé sur trois sites: Local puis à distance et enfin dans la capsule.
