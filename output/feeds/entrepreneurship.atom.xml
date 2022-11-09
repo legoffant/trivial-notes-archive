@@ -16,6 +16,7 @@
 &lt;ul&gt;
 &lt;li&gt;Système d'exploitation: Arch Linux&lt;/li&gt;
 &lt;li&gt;Chiffrement disque: dm-crypt/LUKS aes-xts-plain64 -key-size 512 &lt;/li&gt;
+&lt;li&gt;Audit: Lynis &amp;amp; rkhunter&lt;/li&gt;
 &lt;li&gt;Sauvegarde: Duplicity &amp;gt; NAS Synology(local) &amp;gt; Hyperbackup C2 storage(distant)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;C'est à dire en cas de vol d'ordinateur, ou de mon NAS. J'ai toujours une sauvegarde chiffré dans le cloud. Le porte-feuille est partagé sur trois sites: Local puis à distance et enfin dans la capsule.&lt;/p&gt;
