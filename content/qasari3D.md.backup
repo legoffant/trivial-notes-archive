@@ -52,7 +52,7 @@ https://github.com/freeminer/freeminer.git
 3DWorld un moteur écrit en C++ fonctionnant avec l'OpenGL
 
 ```
-https://github.com/fegennari/3DWorld
+https://github.com/fegennari/3DWorld.git
 ```
 
 On ne ré-invente pas la roue, rappelez-vous les ingénieurs sont fainéant, se que l'on peut copier et ré-utiliser est la règle de base, on invente que très peu de chose. On adapte la technologie en fonction du besoin.

@@ -45,14 +45,14 @@ Voici quelques projets open source ou l'on va pouvoir ré-utiliser les algorithm
 Freeminer un fork de Minecraft codé en C++
 
 ```
-https://github.com/freeminer/freeminer.git
+git clone https://github.com/freeminer/freeminer.git
 ```
 
 
 3DWorld un moteur écrit en C++ fonctionnant avec l'OpenGL
 
 ```
-https://github.com/fegennari/3DWorld.git
+git clone https://github.com/fegennari/3DWorld.git
 ```
 
 On ne ré-invente pas la roue, rappelez-vous les ingénieurs sont fainéant, se que l'on peut copier et ré-utiliser est la règle de base, on invente que très peu de chose. On adapte la technologie en fonction du besoin.
