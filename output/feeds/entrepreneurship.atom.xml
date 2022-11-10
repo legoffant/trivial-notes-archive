@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Entrepreneurship</title><link href="/" rel="alternate"></link><link href="/feeds/entrepreneurship.atom.xml" rel="self"></link><id>/</id><updated>2022-11-09T02:50:00+01:00</updated><entry><title>La conquête planétaire pour l'empire</title><link href="/la-conquete-planetaire-pour-lempire.html" rel="alternate"></link><published>2022-11-09T02:50:00+01:00</published><updated>2022-11-09T02:50:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-09:/la-conquete-planetaire-pour-lempire.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Il faudra s'y faire, je me suis auto-proclamé comme un chef de guerre. La finalité est la conquête de la planète pour la miner. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Entrepreneurship</title><link href="/" rel="alternate"></link><link href="/feeds/entrepreneurship.atom.xml" rel="self"></link><id>/</id><updated>2022-11-10T14:29:00+01:00</updated><entry><title>QASARI3D</title><link href="/qasari3d.html" rel="alternate"></link><published>2022-11-10T14:29:00+01:00</published><updated>2022-11-10T14:29:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-10:/qasari3d.html</id><summary type="html"></summary><content type="html">&lt;p&gt;A tout Empire, il faut des outils de construction. On doit pouvoir modéliser, simuler et valider l'allocation des ressources pour créer un objet réel, de n'importe quel complexité.&lt;/p&gt;
+&lt;p&gt;Je reviens sur cette note que j'ai écrite: &lt;a href="https://legoffant.github.io/rendre-accessible-la-creation.html"&gt;Rendre accessible la création&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ou je commence à parler de mes idées de logiciel de conception industrielle open source. Comme je disais la CAO est le caniveau des logiciels propriétaires. Des truands comme Dassault Systèmes.&lt;/p&gt;
+&lt;p&gt;Ce que je veux intégrer [Obligatoire]:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La collaboration sur les ensembles et pièces tels que Git pour le code&lt;/li&gt;
+&lt;li&gt;La génération procédurale en prémisse à nanites.&lt;/li&gt;
+&lt;li&gt;Prototypage rapide et le G-Code&lt;/li&gt;
+&lt;li&gt;Conception architecturale basé sur openBIM&lt;/li&gt;
+&lt;li&gt;Supercalculateur pour de la CFD, FEA etc avec du calcul distribué&lt;/li&gt;
+&lt;li&gt;Intelligence artificielle CLI&lt;/li&gt;
+&lt;li&gt;Blockchain pour la paternité d'une invention dans des registres.&lt;/li&gt;
+&lt;li&gt;Kernel Geometric Modeling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;D'autres Plugins seront possible d'être ajouté par la communauté tels que de la PLM, CFAO. En faite il faut créer une "carte mère" avec des API, gestion de Plugins. Un sorte de CLI dans un terminal avec l'assistance d'une intelligence artificielle pour créer un projet et définir les contraintes, module à utiliser.&lt;/p&gt;
+&lt;p&gt;Je cherche donc des solutions. Ou il va falloir le programme qui fera office de carte mère ou l'on va interfacer des modules et gérer le projet. En ce moment je regardais le "geometric kernel modeling". J'ai laissé tombé Open Cascade, il est ancien et puis appartient à Cap Gemini, petit rappel que ces rats ne veulent pas me payer.&lt;/p&gt;
+&lt;p&gt;J'ai trouvé ce projet Open Source qui intègre des innovations, codé en C++11. Nommé LibFive. Il utilise également le langage de programmation Guile Scheme.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone https://github.com/libfive/libfive
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Cela pourrait être une première base de travail. Il me faut des programmeurs et ingénieurs en C++, il y a quelques mathématiques sur le kernel de niveau ingénieur. Voir comment on peut intégrer la génération procédurale en natif.&lt;/p&gt;
+&lt;p&gt;Comment s'appel le projet: &lt;code&gt;QASARI3D&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Qui va créer le logiciel? Alpharatz Consulting, l'ESN que je veux créer sera en charge du développement, maintenance et de la formation. On va sur un business model basé sur Rapid7.&lt;/p&gt;</content><category term="Entrepreneurship"></category><category term="libfive"></category></entry><entry><title>La conquête planétaire pour l'empire</title><link href="/la-conquete-planetaire-pour-lempire.html" rel="alternate"></link><published>2022-11-09T02:50:00+01:00</published><updated>2022-11-09T02:50:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-09:/la-conquete-planetaire-pour-lempire.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Il faudra s'y faire, je me suis auto-proclamé comme un chef de guerre. La finalité est la conquête de la planète pour la miner. &lt;/p&gt;
 &lt;p&gt;Je suis l'empereur d'un empire colossale, ou je rends riche les individus ou les détruis selon ma volonté sans limite. J'apprends de mes erreurs et adaptent ma stratégie. Je ne vise que la prospérité. &lt;/p&gt;
 &lt;p&gt;Ma stratégie est de déployer une théocratie militaire à partir d'un petit groupe d'individu. Un noyau dur d'environ 20 personnes, dont 13 sont mes femmes. Je fais du team building et prépare des war room dans un serious game. j'éduque au cipherpunk, j'ai mes espions personnels et agents dormant dans les organisations.&lt;/p&gt;
 &lt;p&gt;En tant qu'individu je suis dans la lignée de Napoléon et Hitler pour la construction de l'empire. J'intègre la guerre dans toutes ces dimensions, économique, religieuse et militaire.&lt;/p&gt;
