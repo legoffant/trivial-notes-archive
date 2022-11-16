@@ -1,4 +1,4 @@
-Title: 59 notions essentielles en codage informatique
+Title: 60 notions essentielles en codage informatique
 Date: 2022-11-16 09:44
 Category:Linux
 Tags:codage, cours, notion
@@ -58,6 +58,7 @@ Voici un récapitulatif des notions à connaître en informatique dans la série
 * [Unicode](https://www.ionos.fr/digitalguide/sites-internet/creation-de-sites-internet/unicode/)
 * [Signification du chiffrement de bout en bout](https://www.ibm.com/fr-fr/topics/end-to-end-encryption)
 * [PROFIL: Philip Zimmermann, créateur de Private Good Privacy (PGP)](https://fr.wikipedia.org/wiki/Philip_Zimmermann)
+* [La cryptanalyse d'Al-Kindi](https://samuelgallay.github.io/CryptoTPE/al-kindi/)
 * [Reconnaissance de Motifs(Patterns) et Répétitions : Introduction à
 la Pensée Informatique](https://hal.archives-ouvertes.fr/hal-02151035/document)
 * [Intelligence artificielle (IA), de quoi parle t-on?](https://www.cnil.fr/fr/intelligence-artificielle/intelligence-artificielle-de-quoi-parle-t-on)
