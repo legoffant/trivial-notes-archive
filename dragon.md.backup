@@ -42,6 +42,8 @@ Vous comprenez l'ampleur du problème, voyez une résistance du dragon (la Chine
 7. Rebâtir une cité: Avalon pour exploiter les ressources sur les cendres de l'ancienne civilisation.
 8. Détruire la planète après stockage et transfert des océans.
 
+---
+
 * Conséquence: Il faut purger le système
 * Outil: L'islamo-nazisme et le totalitarisme
 * Régime: Théocratie militaire islamique
