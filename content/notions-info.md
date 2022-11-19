@@ -33,7 +33,7 @@ Voici un récapitulatif des notions à connaître en informatique dans la série
 * [Représentation du langage machine: le binaire au Bits](https://codeur-pro.fr/binaire/)
 * [Type de donnée](https://sites.uclouvain.be/SystInfo/notes/Theorie/C/datatypes.html)
 * [PROFIL: Linus Torvalds, père du noyau Linux](https://fr.secnews.gr/136130/linus-torvalds-qui-est-qui-bio/)
-* [Structure de donnée: les tableaux](https://www.lemagit.fr/definition/Structure-de-donnees)
+* [Les données structurées et leur traitement](https://www.assistancescolaire.com/eleve/2nde/sciences-numeriques-et-technologie/reviser-le-cours/2_snt_04)
 * [Qu’est-ce qu’une variable en informatique ?](https://pro-du-code.com/qu-est-ce-qu-une-variable/)
 * [Instructions conditionnelles, boucles, variables et fonctions](https://codelearn.fr/blog/instructions-conditionnelles-boucles-variables-et-fonctions/)
 * [PROFIL: Steve Wozniak, inventeur de l'Apple II](https://richeetcelebre.fr/steve-wozniak-fortune/)
