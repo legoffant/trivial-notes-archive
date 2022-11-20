@@ -1,5 +1,5 @@
 ﻿Title: Prémices à une catastrophe industrielle et militaire 
-Date: 2022-11-19 06:11
+Date: 2022-11-20 06:11
 Category:Entrepreneurship
 Tags:industrie, innovation
 Authors: Anthony Le Goff
