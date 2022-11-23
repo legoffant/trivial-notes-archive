@@ -9,7 +9,7 @@ Une théorie est répandu depuis quelques années parmi les scientifiques et ing
 
 Réduire l'univers à un programme informatique pose la question de l'architecture mais également de la finalité, c'est à dire que l'automate recherche un état. Pour ce qui on étudié un peu le jeu de la vie de Conway, on peut trouver des particularité tels que parfois un planeur apparait qui est autonome voir que la structure appartient à une méta-structure plus grande et génère de l'organisation dans le système. On parle également de théorie de l'émergence. Et l'étude des automates cellulaires est de pouvoir prédire ces systèmes d'émergence en meta-structure autonome. 
 
-Ainsi ne crier pas au *drama* quand je propose la théorie du dragon comme meta-structure, ou nous vivons dans un vaisseau spatial et quand réalité l'état recherché est l'exploitation des océans.
+Ainsi je crier pas au *drama* quand je propose la théorie du dragon comme meta-structure, ou nous vivons dans un vaisseau spatial et quand réalité l'état recherché est l'exploitation des océans.
 
 Parlons architecture, en informatique on parle d'environnement dans une simulation quand on parle de machine virtuelle. Il faut une base matérielle (hardware) avec une système d'exploitation hôte tels que GNU/Linux qui va orchestrer la machine virtuelle dans un environnement isolé grâce à un hyperviseur KVM.
 
