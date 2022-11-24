@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Début de migration sur Wayland | Trivial notes</title>
+    <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anthony Le Goff" />
+    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_position" content="top=60,right=60" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li ><a href="/pages/contact.html">Contact</a></li>
+                <li ><a href="/pages/ltcb.html">LTCB</a></li>
+                <li class="divider-vertical"></li>
+                <li >
+                  <a href="/category/cc.html">
+						        <i class="icon-folder-open icon-large"></i>C/C++
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/entrepreneurship.html">
+						        <i class="icon-folder-open icon-large"></i>Entrepreneurship
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/inclassable.html">
+						        <i class="icon-folder-open icon-large"></i>Inclassable
+					         </a>
+                </li>
+                <li class="active">
+                  <a href="/category/linux.html">
+						        <i class="icon-folder-open icon-large"></i>Linux
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/transhumanisme.html">
+						        <i class="icon-folder-open icon-large"></i>Transhumanisme
+					         </a>
+                </li>
+              <ul class="nav pull-right">
+                    <li><a href="/"><i class="icon-th-list"></i>Archives</a></li>
+              </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8" id="content">
+<div class="row">
+    <div class="span2">
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2022-11-24T01:34:00+01:00">
+    <i class="icon-calendar"></i>&nbsp;jeu. 24 novembre 2022
+</abbr>
+<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+
+
+<br/>
+	&nbsp;&nbsp;<a href="/tag/wayland.html" class="label"><i class="icon-tag"></i>&nbsp;wayland</a>
+	&nbsp;&nbsp;<a href="/tag/sway.html" class="label"><i class="icon-tag"></i>&nbsp;sway</a>
+</footer><!-- /.post-info -->        </div>
+    </div>
+    <div class="span6">
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Début de migration sur Wayland">
+                        Début de migration sur Wayland
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
+
+        <p>Je m'intéresse toujours à upgrade ma configuration un peu vieillissante d'Arch linux. Je m'attaque à Wayland. J'essaye de prototyper dans une machine virtuelle sous QEMU/KVM, j'ai quelques erreurs, j'arrive à avoir un bureau, un curseur de souris, mais je ne peux pas cliquer, faire de clique droit ni utiliser les raccourcis clavier. C'est embêtant. la VM ne prend en charge, j'essaye de configurer sans succès.</p>
+<p>Configuration en test:</p>
+<div class="highlight"><pre><span></span><code><span class="n">OS</span><span class="o">:</span><span class="w"> </span><span class="n">Arch</span><span class="w"> </span><span class="n">Linux</span><span class="w"></span>
+<span class="n">Shell</span><span class="o">:</span><span class="w"> </span><span class="n">Zsh</span><span class="w"></span>
+<span class="n">Wayland</span><span class="w"> </span><span class="n">compositor</span><span class="o">:</span><span class="w"> </span><span class="n">Sway</span><span class="w"></span>
+<span class="n">Bar</span><span class="o">:</span><span class="w"> </span><span class="n">Waybar</span><span class="w"></span>
+<span class="n">Launcher</span><span class="o">:</span><span class="w"> </span><span class="n">Wofi</span><span class="w"></span>
+<span class="n">Terminal</span><span class="o">:</span><span class="w"> </span><span class="n">Alacritty</span><span class="w"></span>
+<span class="n">Prompt</span><span class="o">:</span><span class="w"> </span><span class="n">Oh</span><span class="o">-</span><span class="n">My</span><span class="o">-</span><span class="n">Zsh</span><span class="w"></span>
+<span class="n">File</span><span class="w"> </span><span class="n">Manager</span><span class="o">:</span><span class="w"> </span><span class="n">Ranger</span><span class="w"></span>
+</code></pre></div>
+
+<p>Sous virt-manager il faut configurer "Display" sous <code>QXL</code> au lieu de <code>virtio</code> pour la VM. </p>
+<h3>Lancer une installation archlinux</h3>
+<p>Puis dans le terminal configurer rapidement avec le script d'installation minimal sans environnement de bureau:</p>
+<div class="highlight"><pre><span></span><code>archinstall
+</code></pre></div>
+
+<h3>Post-install</h3>
+<p>Après un restart installer les paquets nécessaires:</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S sway alacritty waybar wofi ranger xorg-xwayland xorg-xlsclients qt5-wayland glfw-wayland polkit-qt5
+</code></pre></div>
+
+<p>Copiez le fichier de configuration de Sway:</p>
+<div class="highlight"><pre><span></span><code>mkdir ~/.config
+cd ~/.config
+mkdir sway
+cd sway
+cp /etc/sway/config .
+</code></pre></div>
+
+<p>Installer nano et vim si nécessaire pour éditer le fichier de configuration</p>
+<p>Pour rendre visible le curseur de souris:</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">WLR_NO_HARDWARE_CURSORS</span><span class="o">=</span><span class="mi">1</span><span class="w"></span>
+</code></pre></div>
+
+<p>Pour lancer le windows manager Sway:</p>
+<div class="highlight"><pre><span></span><code>sway
+</code></pre></div>
+
+<p>Une fois sur l'écran en GUI normalement on devrait accéder aux touches claviers, et là je coince un peu, j'ai tenté de configurer le clavier en français sans succès. Normalement en lançant <code>super+enter</code> on lance un terminal. La touche <code>super</code> est la touche Windows. Et j'ai l'impression que le clavier ne transfert pas mes commandes quand je suis sur Sway. </p>
+<h3>Sécurité</h3>
+<p>Wayland isole les applications en GUI, ainsi il est plus sécurisé que le serveur X.org.</p>
+<h3>Programmation</h3>
+<p>Sway et Wayland utilise Qt, il est donc possible de développer des applications en C++.</p>
+<h3>En phase de test</h3>
+<p>Il est possible que j'utilise mon second Thinkpad pour tester le déploiement de Wayland jusqu'à obtenir une machine de production stable remplaçant ma configuration. J'ai peu de fichier important, je peux très bien relancer une installation. Le seul hic serait la compatibilité du vpn Proton. J'ai un petit doute. </p>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+</div>
+</div>
+        </div><!--/span-->
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><div><i class="icon-external-link"></i><a href="https://getpelican.com/">Pelican</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.python.org/">Python.org</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://framabook.org/le-c-en-20-heures-2/">Apprendre le C en 20H</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://archlinux.org/">Arch Linux</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.blackarch.io/">Blackarch</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.kernel.org/">Kernel</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.arduino.cc/">Arduino</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://beagleboard.org/bone">BeagleBoard</a></div></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

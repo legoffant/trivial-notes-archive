@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-11-16T09:44:00+01:00</updated><entry><title>60 notions essentielles en codage informatique</title><link href="/60-notions-essentielles-en-codage-informatique.html" rel="alternate"></link><published>2022-11-16T09:44:00+01:00</published><updated>2022-11-16T09:44:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-16:/60-notions-essentielles-en-codage-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voici un récapitulatif des notions à connaître en informatique dans la série de mes cours. Libre à vous d'approfondir les sujets en fonction de vos envies et projets. Si vous suivez ce programme vous deviendrez incollable en codage informatique. Car le codage est la pierre angulaire de la société moderne. Allez plus loin que le code est nécessaire pour contrôler les algorithmes avant qu'ils ne vous contrôlent. Vous allez comprendre l'intérêt de la naissance des ordinateurs et leur utilités à l'automatisation des tâches pour gagner du temps de travail en passant par la prédiction grâce à des données.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2022-11-24T01:34:00+01:00</updated><entry><title>Début de migration sur Wayland</title><link href="/debut-de-migration-sur-wayland.html" rel="alternate"></link><published>2022-11-24T01:34:00+01:00</published><updated>2022-11-24T01:34:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-24:/debut-de-migration-sur-wayland.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je m'intéresse toujours à upgrade ma configuration un peu vieillissante d'Arch linux. Je m'attaque à Wayland. J'essaye de prototyper dans une machine virtuelle sous QEMU/KVM, j'ai quelques erreurs, j'arrive à avoir un bureau, un curseur de souris, mais je ne peux pas cliquer, faire de clique droit ni utiliser les raccourcis clavier. C'est embêtant. la VM ne prend en charge, j'essaye de configurer sans succès.&lt;/p&gt;
+&lt;p&gt;Configuration en test:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;OS&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Linux&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Shell&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Zsh&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Wayland&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;compositor&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sway&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Bar&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Waybar&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Launcher&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Wofi&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Terminal&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Alacritty&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Prompt&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Oh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;My&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Zsh&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;File&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Manager&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Ranger&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sous virt-manager il faut configurer "Display" sous &lt;code&gt;QXL&lt;/code&gt; au lieu de &lt;code&gt;virtio&lt;/code&gt; pour la VM. &lt;/p&gt;
+&lt;h3&gt;Lancer une installation archlinux&lt;/h3&gt;
+&lt;p&gt;Puis dans le terminal configurer rapidement avec le script d'installation minimal sans environnement de bureau:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;archinstall
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Post-install&lt;/h3&gt;
+&lt;p&gt;Après un restart installer les paquets nécessaires:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S sway alacritty waybar wofi ranger xorg-xwayland xorg-xlsclients qt5-wayland glfw-wayland polkit-qt5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Copiez le fichier de configuration de Sway:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir ~/.config
+cd ~/.config
+mkdir sway
+cd sway
+cp /etc/sway/config .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installer nano et vim si nécessaire pour éditer le fichier de configuration&lt;/p&gt;
+&lt;p&gt;Pour rendre visible le curseur de souris:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;WLR_NO_HARDWARE_CURSORS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour lancer le windows manager Sway:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sway
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Une fois sur l'écran en GUI normalement on devrait accéder aux touches claviers, et là je coince un peu, j'ai tenté de configurer le clavier en français sans succès. Normalement en lançant &lt;code&gt;super+enter&lt;/code&gt; on lance un terminal. La touche &lt;code&gt;super&lt;/code&gt; est la touche Windows. Et j'ai l'impression que le clavier ne transfert pas mes commandes quand je suis sur Sway. &lt;/p&gt;
+&lt;h3&gt;Sécurité&lt;/h3&gt;
+&lt;p&gt;Wayland isole les applications en GUI, ainsi il est plus sécurisé que le serveur X.org.&lt;/p&gt;
+&lt;h3&gt;Programmation&lt;/h3&gt;
+&lt;p&gt;Sway et Wayland utilise Qt, il est donc possible de développer des applications en C++.&lt;/p&gt;
+&lt;h3&gt;En phase de test&lt;/h3&gt;
+&lt;p&gt;Il est possible que j'utilise mon second Thinkpad pour tester le déploiement de Wayland jusqu'à obtenir une machine de production stable remplaçant ma configuration. J'ai peu de fichier important, je peux très bien relancer une installation. Le seul hic serait la compatibilité du vpn Proton. J'ai un petit doute. &lt;/p&gt;</content><category term="Linux"></category><category term="wayland"></category><category term="sway"></category></entry><entry><title>60 notions essentielles en codage informatique</title><link href="/60-notions-essentielles-en-codage-informatique.html" rel="alternate"></link><published>2022-11-16T09:44:00+01:00</published><updated>2022-11-16T09:44:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-16:/60-notions-essentielles-en-codage-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voici un récapitulatif des notions à connaître en informatique dans la série de mes cours. Libre à vous d'approfondir les sujets en fonction de vos envies et projets. Si vous suivez ce programme vous deviendrez incollable en codage informatique. Car le codage est la pierre angulaire de la société moderne. Allez plus loin que le code est nécessaire pour contrôler les algorithmes avant qu'ils ne vous contrôlent. Vous allez comprendre l'intérêt de la naissance des ordinateurs et leur utilités à l'automatisation des tâches pour gagner du temps de travail en passant par la prédiction grâce à des données.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.scriptol.fr/programmation/algorithmes-histoire.php"&gt;Histoire de l'algorithmique&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://fr.wikipedia.org/wiki/Al-Khw%C3%A2rizm%C3%AE"&gt;PROFIL: Le musulman Al-Khwarizmi&lt;/a&gt;&lt;/li&gt;
