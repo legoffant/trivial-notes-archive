@@ -1,10 +1,9 @@
 Title: Futur machine de production Arch
-Date: 2022-11-24 18:11
+Date: 2022-11-25 15:45
 Category:Linux
-Tags:arch, wayland
+Tags:arch, env
 Authors: Anthony Le Goff
 Summary:
-
 
 
 *Nota:*
