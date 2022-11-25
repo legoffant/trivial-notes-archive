@@ -155,6 +155,29 @@
 <li>Screenshot: <a href="https://wayland.emersion.fr/grim/">Grim + Slurp</a></li>
 </ul>
 <p>Le but est de simplifier la réinstallation du système en cas de plantage et d'automatiser un peu. Cela pourrait être fait dans un script bash personnalisé. </p>
+<p><strong>ERRATUM</strong></p>
+<p>Archinstall plante un peu chez moi, et le script créé de l'opacité dans l'installation dans le sens que l'on ne contrôle pas, on ne peut pas définir des paramètres avancé de chiffrement. Il vaut mieux faire l'installation manuel. Ou l'on sait quel algorithme de chiffrement on utilise.</p>
+<p>Sway n'est pas encore assez stable pour de la machine de production, en particulier j'ai des soucis d'intégration avec Wofi/Tofi pour le dmenu. Le successeur de i3 n'est pas encore au point pour intégrer les composants sans passer des heures à paramêtrer. Il manque également de la documentation. Pas très user-friendly.</p>
+<h3>Nouveau Projet basé sur Qt</h3>
+<p>Exigences systèmes:</p>
+<ul>
+<li>Robuste</li>
+<li>Minimaliste</li>
+</ul>
+<p>On ne réinvente pas la roue on va utiliser LXQt qui sera notre base de projet toujours avec Qt. Comme ça pour les codeurs il est possible de développer des applications GUI en C++, avoir une base de travail commune dans mes projets. Je privilégie les environnements léger et LXQt utilise 350mo de RAM. Idéal pour un vieux Thinkpad avec 4GO de RAM. </p>
+<p>Stack:</p>
+<ul>
+<li>OS: <a href="https://archlinux.org/">Arch Linux</a></li>
+<li>Chiffrement: <a href="https://fr.wikipedia.org/wiki/Dm-crypt">dmcrypt-LUKS</a></li>
+<li>Bootloader: <a href="https://systemd.network/systemd-boot.html">systemd-boot</a></li>
+<li>Système de fichier: <a href="https://fr.wikipedia.org/wiki/Btrfs">BTRFS</a></li>
+<li>Shell: <a href="https://zsh.sourceforge.io/">Zsh</a></li>
+<li>Environnement: <a href="https://lxqt-project.org/">LXQt</a></li>
+<li>Windows Manager: <a href="http://openbox.org/wiki/Main_Page">Open Box</a></li>
+<li>Terminal: <a href="https://wiki.archlinux.org/title/Yakuake">Yakuake</a></li>
+<li>Prompt: <a href="https://ohmyz.sh/">Oh-My-Zsh</a></li>
+<li>File Manager: <a href="https://ranger.github.io/">Ranger</a></li>
+</ul>
         </div><!-- /.entry-content -->
     </article>
 </section>

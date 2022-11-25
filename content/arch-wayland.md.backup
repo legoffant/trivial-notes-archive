@@ -46,6 +46,7 @@ Exigences systèmes:
 * Robuste
 * Minimaliste
 
+
 On ne réinvente pas la roue on va utiliser LXQt qui sera notre base de projet toujours avec Qt. Comme ça pour les codeurs il est possible de développer des applications GUI en C++, avoir une base de travail commune dans mes projets. Je privilégie les environnements léger et LXQt utilise 350mo de RAM. Idéal pour un vieux Thinkpad avec 4GO de RAM. 
 
 Stack:
