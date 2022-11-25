@@ -5,38 +5,18 @@ Tags:arch, env
 Authors: Anthony Le Goff
 Summary:
 
+Mise à jour de ma machine de production, je partage les meilleurs outils à l'éducation numérique open-source. Pour faire partie de l'élite des développeurs et ingénieurs sous GNU/Linux suivez le Guide et on commence très tôt,faîte un club d'informatique et entraidez-vous, cela vous côutera 250€ à investir dans un PC ThinkPad reconditionné sur BackMarket pour devenir des rockstars en informatique, petit rappel [Linux Pas à Pas](https://legoffant.github.io/linux-pas-a-pas.html) en prélude et les [60 notions essentielles en informatique](https://legoffant.github.io/60-notions-essentielles-en-codage-informatique.html).
+
 
 *Nota:*
 
-Refonte du système d'exploitation et ces composants pour intégrer des innovations et renforcer la sécurité.
-
-### Automatisé avec le script `archinstall`
-
-* OS: [Arch Linux](https://archlinux.org/)
-* Chiffrement: [dmcrypt-LUKS](https://fr.wikipedia.org/wiki/Dm-crypt)
-* Bootloader: [systemd-boot](https://systemd.network/systemd-boot.html)
-* Système de fichier: [BTRFS](https://fr.wikipedia.org/wiki/Btrfs)
-
-### Post-install
-
-* Shell: [Zsh](https://zsh.sourceforge.io/)
-* Wayland compositor: [Sway](https://swaywm.org/)
-* Bar: [Waybar](https://github.com/Alexays/Waybar)
-* Launcher: [Wofi](https://hg.sr.ht/~scoopta/wofi)
-* Terminal: [Alacritty](https://alacritty.org/)
-* Prompt: [Oh-My-Zsh](https://ohmyz.sh/)
-* File Manager: [Ranger](https://ranger.github.io/)
-* Notification daemon: [Mako](https://wayland.emersion.fr/mako/)
-* Screenshot: [Grim + Slurp](https://wayland.emersion.fr/grim/)
-
-
-Le but est de simplifier la réinstallation du système en cas de plantage et d'automatiser un peu. Cela pourrait être fait dans un script bash personnalisé. 
-
 **ERRATUM**
+
+Arch Linux
 
 Archinstall plante un peu chez moi, et le script créé de l'opacité dans l'installation dans le sens que l'on ne contrôle pas, on ne peut pas définir des paramètres avancé de chiffrement. Il vaut mieux faire l'installation manuel. Ou l'on sait quel algorithme de chiffrement on utilise.
 
-Sway n'est pas encore assez stable pour de la machine de production, en particulier j'ai des soucis d'intégration avec Wofi/Tofi pour le dmenu. Le successeur de i3 n'est pas encore au point pour intégrer les composants sans passer des heures à paramêtrer. Il manque également de la documentation. Pas très user-friendly.
+Sway et Wayland n'est pas encore assez stable pour de la machine de production, en particulier j'ai des soucis d'intégration avec Wofi/Tofi pour le dmenu. Le successeur de i3 n'est pas encore au point pour intégrer les composants sans passer des heures à paramêtrer. Il manque également de la documentation. Pas très user-friendly.
 
 ### Nouveau Projet basé sur Qt
 
