@@ -1,10 +1,9 @@
 Title: Futur machine de production Arch
-Date: 2022-11-24 18:11
+Date: 2022-11-25 15:45
 Category:Linux
-Tags:arch, wayland
+Tags:arch, env
 Authors: Anthony Le Goff
 Summary:
-
 
 
 *Nota:*
@@ -49,6 +48,16 @@ Exigences systèmes:
 
 On ne réinvente pas la roue on va utiliser LXQt qui sera notre base de projet toujours avec Qt. Comme ça pour les codeurs il est possible de développer des applications GUI en C++, avoir une base de travail commune dans mes projets. Je privilégie les environnements léger et LXQt utilise 350mo de RAM. Idéal pour un vieux Thinkpad avec 4GO de RAM. 
 
+Mon projet de machine de production Linux est à jour. Dans cette liste les éléments open-source pour une productivité efficace. Elle a la particularité d'utiliser peu de ressource, avec des programmes minimalistes qui permet de faire tourner sur des vieux PC à 250€ en reconditionné pour 4GO ram. L'environnement LXQt ne prenant que 340mo en RAM. La machine est orienté pour la programmation en C/C++, Python, Ruby, Java et bash. Qt permet de développer des applications GUI en C++.
+
+C'est une configuration Arch Linux facile à installer, j'ai recherché la simplicité et la robustesse dans un cadre minimaliste. Dans mon projet j'éduque aux outils de travail des développeurs et ingénieurs pour la jeunesse, la reconversion et les projets de start-up ou je défini du matériel de production stable en intégrant quelques innovations.
+
+
+**CONSIDERER CELA COMME UN STANDARD COMME BASE DE TRAVAIL**
+
+Vous devez connaître tous ces outils, je ferai plus tard un supplément pour la recherche en cybersécurité.
+
+
 Stack:
 
 * OS: [Arch Linux](https://archlinux.org/)
@@ -58,6 +67,37 @@ Stack:
 * Shell: [Zsh](https://zsh.sourceforge.io/)
 * Environnement: [LXQt](https://lxqt-project.org/)
 * Windows Manager: [Open Box](http://openbox.org/wiki/Main_Page)
-* Terminal: [Yakuake](https://wiki.archlinux.org/title/Yakuake)
+* Terminal: [QTerminal](https://github.com/lxqt/qterminal)
 * Prompt: [Oh-My-Zsh](https://ohmyz.sh/)
-* File Manager: [Ranger](https://ranger.github.io/)
+* File Manager: [Ranger](https://ranger.github.io/) (term)
+* Launcher: [Synapse](https://archlinux.org/packages/community/x86_64/synapse/)
+* Virtualisation: [Virt-Manager QEMU/KVM](https://virt-manager.org/)
+* Lecteur audio: [CMUS](https://cmus.github.io/) (term)
+* Lecteur video: [Vlc](https://www.videolan.org/vlc/)
+* IRC: [Weechat](https://weechat.org/) (term)
+* Editeur de texte: [Neovim](http://neovim.io/) (term)
+* Contrôle de version: [Git](https://git-scm.com/) (term)
+* Notepad: [Leafpad](https://archlinux.org/packages/extra/x86_64/leafpad/)
+* Calculatrice: [Galculator](https://archlinux.org/packages/community/x86_64/galculator/)
+* P2P Torrent: [Qbittorrent](https://www.qbittorrent.org/)
+* Navigateur internet: [Firefox](https://www.mozilla.org/fr/firefox/new/)
+* Documentation langage: [Zeal](https://zealdocs.org/)
+* Gestionnaire de mot de passe: [Keepass](https://keepass.info/)
+* Client Serveur FTP: [Filezilla](https://filezilla-project.org/)
+* Carte Mentale: [Freemind](https://freemind.fr.softonic.com/)
+* Editeur d'image: [Gimp](https://www.gimp.org/)
+* EDI Java: [Eclipse](https://www.eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers)
+* Compilateur: [GCC](https://gcc.gnu.org/)
+* Interpréteur Ruby: [IRB](https://github.com/ruby/irb)
+* Notebook Python: [Jupyter](https://jupyter.org/)
+* Container chiffré: [Veracrypt](https://www.veracrypt.fr/code/VeraCrypt/)
+* Outil d'écrivain: [Manuskript](https://www.theologeek.ch/manuskript/)
+* Calcul formel: [SageMath](https://www.sagemath.org/fr/)
+* Par-feu: [Gufw](http://gufw.org/)
+* Sauvegarde: [Deja-dup](https://apps.gnome.org/fr/app/org.gnome.DejaDup/)
+* Cloud: [MEGA](https://mega.nz/)
+* VPN: [Proton](https://protonvpn.com/)
+* Gestion bibliographique: [Zotéro](https://www.zotero.org/)
+* Base de connaissance: [Obsidian](https://obsidian.md/)
+* Editeur LaTex: [Texmaker](https://www.xm1math.net/texmaker/)
+* Office: [Cryptpad](https://cryptpad.fr/)
