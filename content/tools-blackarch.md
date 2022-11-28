@@ -36,7 +36,7 @@ Prétendre à devenir un hacker vous devez connaître une base d'outils et savoi
 
 Installation de dépot BlackArch >> [https://blackarch.org/](https://blackarch.org/)
 ```
-curl -O https :// blackarch .org/strap.sh
+curl -O https://blackarch.org/strap.sh
 sha1sum strap.sh # doit etre egal a d062038042c5f141755ea39dbd615e6ff9e23121
 sudo chmod +x strap.sh
 sudo ./ strap.sh
