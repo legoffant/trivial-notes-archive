@@ -151,7 +151,7 @@ Il vous faudra egalement explorer d'autres sujet en lien avec le hacking tel que
     
 *   Choisir un système d'exploitation ( Arch Linux) et lire [le manuel](https://wiki.archlinux.fr/) customiser l'installation pour chiffrer vos partitions avec dm-crypt/LUKS. Inspirez-vous de ma configuration sous LXQt >> [Archinstall-281122.md](https://gist.github.com/legoffant/11942830b3d267beef03576d1b2101fa)
     
-*   Installe gratuitement un VPN avec protonVPN et télécharger Tor  
+*   Installe gratuitement un VPN (sous GNOME) avec protonVPN et télécharger Tor  
     
 *   Naviguer en sécurité sur internet avec [LibreWolf](https://librewolf.net/)  
     
