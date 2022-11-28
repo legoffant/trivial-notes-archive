@@ -106,7 +106,7 @@ Stack:
 * Traffic capture implementation d'attaque de type man-in-the-middle: [ettercap](https://www.ettercap-project.org/index.html)
 * Web Application Attack and Audit Framework: [w3af](http://w3af.org/)
 * Vulnerability Assessment Scanner: [openvas](https://www.openvas.org/)
-
+* Command and control server et agent post-exploitation HTTP/2 [Merlin](https://github.com/Ne0nd0g/merlin)
 
 
 #### Annotation d'installation
