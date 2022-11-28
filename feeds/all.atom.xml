@@ -161,6 +161,9 @@
 &lt;li&gt;Navigateur exploitation framework: &lt;a href="https://beefproject.com/"&gt;beef&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Outils d'ingénierie sociale: &lt;a href="https://github.com/trustedsec/social-engineer-toolkit"&gt;set&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;DDoS service outils: &lt;a href="https://ufonet.03c8.net/"&gt;ufonet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Traffic capture implementation d'attaque de type man-in-the-middle: &lt;a href="https://www.ettercap-project.org/index.html"&gt;ettercap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Web Application Attack and Audit Framework: &lt;a href="http://w3af.org/"&gt;w3af&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vulnerability Assessment Scanner: &lt;a href="https://www.openvas.org/"&gt;openvas&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Annotation d'installation&lt;/h4&gt;
 &lt;p&gt;Vous trouverez la configuration pour une installation en manuel d'Arch avec les prérequis sur ce lien en markdown d'un dépôt Gist: &lt;a href="https://gist.github.com/legoffant/11942830b3d267beef03576d1b2101fa"&gt;Archinstall-281122-LXQt.md&lt;/a&gt;&lt;/p&gt;
