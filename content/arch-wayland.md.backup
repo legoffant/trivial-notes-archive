@@ -79,8 +79,10 @@ Stack:
 * Base de connaissance: [Obsidian](https://obsidian.md/)
 * Editeur LaTex: [Texmaker](https://www.xm1math.net/texmaker/)
 * Office: [Cryptpad](https://cryptpad.fr/)
-* Flowchart & diagram
-Liste d'application spécifique à la recherche de vulnérabilité:
+* Flowchart & diagram: [draw.io](https://www.draw.io/index.html)
+
+
+**Liste d'application spécifique à la recherche de vulnérabilité:**
 
 * Exploration réseau et audit de sécurité: [nmap](https://nmap.org/)
 * Collection de classe Python pour travailler avec les protocoles réseaux: [impacket](https://www.secureauth.com/labs/open-source-tools/impacket/)
@@ -101,6 +103,10 @@ Liste d'application spécifique à la recherche de vulnérabilité:
 * Navigateur exploitation framework: [beef](https://beefproject.com/)
 * Outils d'ingénierie sociale: [set](https://github.com/trustedsec/social-engineer-toolkit)
 * DDoS service outils: [ufonet](https://ufonet.03c8.net/)
+* Traffic capture implementation d'attaque de type man-in-the-middle: [ettercap](https://www.ettercap-project.org/index.html)
+* Web Application Attack and Audit Framework: [w3af](http://w3af.org/)
+* Vulnerability Assessment Scanner: [openvas](https://www.openvas.org/)
+
 
 
 #### Annotation d'installation

@@ -103,6 +103,10 @@ Stack:
 * Navigateur exploitation framework: [beef](https://beefproject.com/)
 * Outils d'ingénierie sociale: [set](https://github.com/trustedsec/social-engineer-toolkit)
 * DDoS service outils: [ufonet](https://ufonet.03c8.net/)
+* Traffic capture implementation d'attaque de type man-in-the-middle: [ettercap](https://www.ettercap-project.org/index.html)
+* Web Application Attack and Audit Framework: [w3af](http://w3af.org/)
+* Vulnerability Assessment Scanner: [openvas](https://www.openvas.org/)
+
 
 
 #### Annotation d'installation
