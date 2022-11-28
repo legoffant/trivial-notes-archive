@@ -79,3 +79,10 @@ Stack:
 * Base de connaissance: [Obsidian](https://obsidian.md/)
 * Editeur LaTex: [Texmaker](https://www.xm1math.net/texmaker/)
 * Office: [Cryptpad](https://cryptpad.fr/)
+
+
+#### Annotation d'installation
+
+Vous trouverez la configuration pour une installation en manuel d'Arch avec les prérequis sur ce lien en markdown d'un dépôt Gist: [Archinstall-281122-LXQt.md](https://gist.github.com/legoffant/11942830b3d267beef03576d1b2101fa)
+
+Libre à vous de le modifier à votre convenance et de l'utiliser pour s'inspirer.
