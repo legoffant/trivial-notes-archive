@@ -79,6 +79,30 @@ Stack:
 * Base de connaissance: [Obsidian](https://obsidian.md/)
 * Editeur LaTex: [Texmaker](https://www.xm1math.net/texmaker/)
 * Office: [Cryptpad](https://cryptpad.fr/)
+* Flowchart & diagram: [draw.io](https://www.draw.io/index.html)
+
+
+**Liste d'application spécifique à la recherche de vulnérabilité:**
+
+* Exploration réseau et audit de sécurité: [nmap](https://nmap.org/)
+* Collection de classe Python pour travailler avec les protocoles réseaux: [impacket](https://www.secureauth.com/labs/open-source-tools/impacket/)
+* Outil d'analyse de protocoles réseaux: [wireshark](https://www.wireshark.org/)
+* Capturer et analyser les packets sur le réseau: [tcpdump](https://www.tcpdump.org/)
+* Outil de récupération de mot de passe: [hashcat](https://hashcat.net/hashcat/)
+* Sécurité audit de mot de passe: [john](https://www.openwall.com/john/)
+* Surfer anonymement via TOR ou un serveur proxy: [proxychains-ng](https://proxychains.sourceforge.net/)
+* Base de donnée d'exploits [exploitdb](https://www.exploit-db.com/)
+* Client HTTP CLI [httpie](https://httpie.io/)
+* Framework d'audit de sécurité, développement d'exploits: [metasploit](https://www.metasploit.com/)
+* Front-end GUI pour metasploit, aide à l'utilisation [armitage](https://www.offensive-security.com/metasploit-unleashed/armitage/)
+* Bind outil d'administration DNS: [bind-tools]()
+* Framework de retro-ingénierie et analyse de fichier binaire r2: [radare2](https://rada.re/n/radare2.html)
+* Automatisation détection et exploitation injection SQL: [sqlmap](https://sqlmap.org/)
+* Wordpress security scanner: [wpscan](https://wpscan.com/)
+* Outil de copy/coller clipboard en CLI: [xclip]()
+* Navigateur exploitation framework: [beef](https://beefproject.com/)
+* Outils d'ingénierie sociale: [set](https://github.com/trustedsec/social-engineer-toolkit)
+* DDoS service outils: [ufonet](https://ufonet.03c8.net/)
 
 
 #### Annotation d'installation
