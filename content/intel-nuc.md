@@ -17,16 +17,19 @@ Si vous voulez "Upgrade" la configuration mon choix malin: [ZOTAC ZBOX CI625 Nan
 **BAREBONE**
 
 Intel NUC NUC7CJYHN2 Intel Celeron J4005 Intel UHD Graphic 160€
+
 * [https://www.ldlc.com/fiche/PB00462088.html](https://www.ldlc.com/fiche/PB00462088.html)
 
 + RAM
 
 G.Skill RipJaws Series SO-DIMM 4GO DDR4 2400Mhz CL16 21€
+
 * [https://www.ldlc.com/fiche/PB00201793.html](https://www.ldlc.com/fiche/PB00201793.html)
 
 + Disque
 
 Seagate BarraCuda 1 To (ST1000LM048) disque dur 2.5" 54€
+
 * [https://www.ldlc.com/fiche/PB00219924.html](https://www.ldlc.com/fiche/PB00219924.html)
 
 **PERIPHERIQUES**
@@ -34,16 +37,19 @@ Seagate BarraCuda 1 To (ST1000LM048) disque dur 2.5" 54€
 + Ecran  
 
 MSI 23.8" LED - PRO MP242 1920x1080 HDMI/VGA - Haut-parleurs 129€
+
 * [https://www.ldlc.com/fiche/PB00398349.html](https://www.ldlc.com/fiche/PB00398349.html)
 
 + Clavier  
 
 Advance GTA 230 (AZERTY Français) - filaire -  Gaming - Semi-mécanique - Rétroéclairage 19€
+
 * [https://www.ldlc.com/fiche/PB00316051.html](https://www.ldlc.com/fiche/PB00316051.html)
 
 + Souris  
 
 Advance Shape 6D Mouse (noir) - filaire - capteur optique 1000 DPI 10€
+
 * [https://www.ldlc.com/fiche/PB00154490.html](https://www.ldlc.com/fiche/PB00154490.html)
 
 **TOTAL DEVIS CHEZ LDLC 395€**
