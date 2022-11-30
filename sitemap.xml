@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2022-11-29T22:52:57-00:00</lastmod>
+<lastmod>2022-11-30T01:34:55-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2022-11-29T22:52:57-00:00</lastmod>
+<lastmod>2022-11-30T01:34:55-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2022-11-29T22:52:57-00:00</lastmod>
+<lastmod>2022-11-30T01:34:55-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2022-11-29T22:52:57-00:00</lastmod>
+<lastmod>2022-11-30T01:34:55-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2022-11-29T22:52:57-00:00</lastmod>
+<lastmod>2022-11-30T01:34:55-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/les-meilleurs-ressources-pour-apprendre-linformatique-sur-internet.html</loc>
+<lastmod>2022-11-30T01:32:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -900,13 +907,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/category/entreneurship.html</loc>
-<lastmod>2022-11-26T05:27:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/category/entrepreneurship.html</loc>
 <lastmod>2022-11-29T19:21:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -922,7 +922,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/linux.html</loc>
-<lastmod>2022-11-28T11:16:00+00:09</lastmod>
+<lastmod>2022-11-30T01:32:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -930,6 +930,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/category/transhumanisme.html</loc>
 <lastmod>2022-09-18T20:06:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/hacking.html</loc>
+<lastmod>2022-11-30T01:32:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/webdev.html</loc>
+<lastmod>2022-11-30T01:32:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/programmation.html</loc>
+<lastmod>2022-11-30T01:32:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -944,13 +965,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/entreprise.html</loc>
 <lastmod>2022-11-29T19:21:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/hacking.html</loc>
-<lastmod>2022-11-28T11:16:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1698,13 +1712,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/programmation.html</loc>
-<lastmod>2022-04-13T15:49:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/neovim.html</loc>
 <lastmod>2022-04-09T15:04:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -2056,7 +2063,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2022-11-29T22:42:00+00:09</lastmod>
+<lastmod>2022-11-30T01:32:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
