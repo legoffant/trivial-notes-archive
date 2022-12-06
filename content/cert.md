@@ -30,7 +30,7 @@ Les certifications sont un gage de qualité et une reconnaissance. Bien plus acc
 
 Pour apprendre les certifications, achetez les livres d'étude (Study Guide) pour préparer les exams. Ou piratez-les. Cela vous coût 50€ par livres.
 
-* [Complete A+ Guide to IT Hardware and Software - 45$](https://www.amazon.com/Complete-Hardware-Software-Cheryl-Schmidt/dp/9353946328/ref=sr_1_9?crid=2A1VLBB1LUJAJ&keywords=CompTIA+A%2B+Complete+Study+Guide%3A&qid=1670289329&s=books&sprefix=comptia+a%2B+complete+study+guide+%2Cstripbooks-intl-ship%2C154&sr=1-9)
+* [CompTIA A+ Complete Study Guide: Core 1 Exam 220-1101 and Core 2 Exam 220-1102 - 45$](https://www.amazon.fr/gp/product/1119862914/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)
 * [LPIC-1 Linux Professional Institute Certification - 45€](https://www.amazon.fr/Lpic-1-Professional-Institute-Certification-Practice/dp/1119582121/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3SR3FEV29ZUBZ&keywords=LPIC-1&qid=1670324356&sprefix=lpic-1%2Caps%2C112&sr=8-4)
 * [Ceh V11 Certified Ethical Hacker Study Guide - 39€](https://www.amazon.fr/Certified-Ethical-Hacker-Study-Guide/dp/1119800285/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=16G772E3328QN&keywords=ceh+v11&qid=1670289595&sprefix=ceh+v11%2Caps%2C81&sr=8-2)
 
