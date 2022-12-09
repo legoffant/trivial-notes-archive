@@ -29,6 +29,14 @@ Compétences de bases(prérequis) pour devenir un hacker au delà de la patience
 *   L'art de la guerre de Sun Tzu et la duperie  
     
 
+
+Les ressources pour débuter disponible sur internet:
+
+* [Resources for Beginner Bug Bounty Hunters](https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters)
+* [Codingo moteur de recherche de ressource](https://codingo.com/search/)
+* [Security reference guide](https://s0cm0nkey.gitbook.io/s0cm0nkeys-security-reference-guide/)
+* [Awesome Security List on Github](https://github.com/sbilly/awesome-security)
+
 Plateforme pour apprendre le hacking sur des machines virtuelles:  
 
 *   [Root-Me](https://www.root-me.org/) (français)  
@@ -37,13 +45,17 @@ Plateforme pour apprendre le hacking sur des machines virtuelles:
     
 *   [HackTheBox](https://www.hackthebox.com/)  
     
+* [hacker101](https://www.hacker101.com/)
 
 Les meilleurs cours de hacking (anglais):  
 
 *   [Full-Length Hacking Courses - The Cyber Mentor](https://www.youtube.com/playlist?list=PLLKT__MCUeixqHJ1TRqrHsEd6_EdEvo47) Gratuit  
     
 *   [Learn Ethical Hacking From Scratch](https://www.udemy.com/course/learn-ethical-hacking-from-scratch/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-TzojSPZyYCxVTrdqzPQFjg&LSNPUBID=jU79Zysihs4) - Udemy 120€  
-    
+* [Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/) Gratuit
+* [Python 3 For Offensive PenTest: A Complete Practical Course](https://www.udemy.com/course/python-for-offensive-security-practical-course/) Udemy 99€
+* [Python Network Programming | Network Apps & Hacking Tools](https://www.udemy.com/course/python-3-network-programming/) Udemy 99€
+* [Cybersecurity Spécialization](https://www.coursera.org/specializations/cyber-security) Coursera
 
 Un oeil sur les certifications:  
 
