@@ -17,6 +17,6 @@ Dans ma capsule temporelle, je sécurise ce futur. Et j'ai mis des graines en pr
 
 C'est à dire que le futur est déjà écrit à travers mes actions et la création de la capsule temporelle pour préparer le rite ou il y a fusion des interfaces hommes-machines.
 
-Si vous êtes curieux de l'apparition des méduses, prêtez attention au jeu-video "Prey" tel une ombre, mais encore, le film "Transformer, l'age de l'extinction" sur la découverte du Transformium.
+Si vous êtes curieux de l'apparition des méduses, prêtez attention au jeu-video "Prey" tel une ombre, mais encore, le film "Transformer, l'age de l'extinction" sur la découverte du Transformium. Egalement la mascotte d'Ubuntu 22.04LTS "Jammy Jellyfish". C'est l'année charnière, l'an 0 du nouveau calendrier.
 
 La méduse est le symbole de l'immortalité. Suivez les DATA. Certain vont tomber des nues quand ils vont comprendre cette manifestation, parfois remettre en question leur croyance religieuse. De l'héritage de l'Islam, c'est la suite qui s'annonce dans une secte nommé Le Narkanta.
