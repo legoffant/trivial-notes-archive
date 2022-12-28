@@ -1,10 +1,10 @@
 ﻿
-Title: Retex après deux mois d'EVE Online  
+Title:Retex après deux mois d'EVE Online
 Date: 2022-12-28 12:37
 Category:Inclassable
 Tags:EVE
 Authors: Anthony Le Goff
-Summary:  
+Summary:
 
 Pour ce qui ne connaisse pas EVE Online en 2022, c'est un Space Opera de type MMORPG dans un Sandbox ou plus de 25 000 joueurs sont connectés en même temps sur le serveur Tranquility. Il est écrit en C++ développé par CCP depuis 2003 utilisant son propre moteur de jeu.  
 
