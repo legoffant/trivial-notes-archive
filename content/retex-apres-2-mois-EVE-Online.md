@@ -1,5 +1,4 @@
-﻿
-Title:Retex après deux mois d'EVE Online
+﻿Title:Retex après deux mois d'EVE Online
 Date: 2022-12-28 12:37
 Category:Inclassable
 Tags:EVE
