@@ -1,5 +1,5 @@
 ﻿Title:Dans un système capitaliste la création est occultée 
-Date: 2022-01-02 07:35
+Date: 2023-01-02 07:35
 Category:Inclassable
 Tags:capitalisme, prison, cellule
 Authors: Anthony Le Goff
