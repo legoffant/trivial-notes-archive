@@ -1,4 +1,9 @@
-﻿# Dans un système capitaliste la création est occultée  
+﻿Title:Dans un système capitaliste la création est occultée 
+Date: 2022-01-02 07:35
+Category:Inclassable
+Tags:capitalisme, prison, cellule
+Authors: Anthony Le Goff
+Summary:
 
 Si vous devriez créer une prison, les murs sont souvent insuffisant pour limiter l'influence et le déplacement d'un organisme dans une cellule, pour cela il faut des règles défini sur des lois physiques. Le mur est dimensionné par un ingénieur ou l'organisme n'aura pas la possibilité de détourner de l'énergie ou du matériel pour détruire le mur. En l'occurrence de la tenue au choc. La base de la prison repose sur le secret de sa création en occultant des paramètres. Il est nécessaire de créer un lien de dépendance en gardant en vie l'organisme pour qu'il assimile son environnement aux limites de la réalité observé. Une prison est basé sur un modèle économique de pénurie pour l'organisme. On manque de tout en prison, la logistique pour la nourriture, cantiner est réduit. Ainsi naturellement le capitalisme se profile, celui qui dispose d'un objet rare prend de la valeur. Le but étant de faire du profit en fonction de l'offre et la demande. Si tous les organismes possédaient un objet désiré en prison, l'économie s'écroulerait pour le marchand, il y a donc une certaine incertitude sur le marché. C'est une question de privilège. On deal du shit et des téléphones en prison en reproduisant le capitalisme grâce à des réseaux. Ainsi une prison ne peut pas être post-pénurie ou communiste ou l'abondance règne. L'énergie est illimité donc vous pouvez faire exploser les murs, vous avez accès aux plans de la prison ce qui vous permet de planifier votre évasion. Il faudra vous rendre invisible aux yeux des gardiens.  
 
