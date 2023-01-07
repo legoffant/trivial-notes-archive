@@ -7,7 +7,7 @@ Summary:
 
 Petit cours d'ingénierie  
 
-J'aimerai parler un peu plus de l'étude des capsules. En ingénierie avant de prototyper un objet on peut ce referrer à la biologie par mimétisme. Ce que l'on appel le bio-mimétisme. Toute technologie avancée fonctionne sur le bio-mimétisme. On fonctionne par analogie et similitude. Tout est une question d'échelle et de jauge. En physique on résonne par des symétries qui admette des transformations. Ainsi on peut définir un groupe de capsule en fonction de jauge tels que {bactérie, graine, réacteur nucléaire, pile} tous fonctionne sur le principe.  
+J'aimerai parler un peu plus de l'étude des capsules. En ingénierie avant de prototyper un objet on peut ce referrer à la biologie par mimétisme. Ce que l'on appel le bio-mimétisme. Toute technologie avancée fonctionne sur le bio-mimétisme. On fonctionne par analogie et similitude. Tout est une question d'échelle et de jauge. En physique on raisonne par des symétries qui admette des transformations. Ainsi on peut définir un groupe de capsule en fonction de jauge tels que {bactérie, graine, réacteur nucléaire, pile} tous fonctionne sur le principe.  
 
 Ainsi nous allons réfléchir sur les archées, c'est à dire les Prokaryotes. Constitutions:  
 
