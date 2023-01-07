@@ -42,7 +42,7 @@ Pour extraire de l'ADN tels que votre salive pour sa conservation, il est néces
 *   Corps Gras (Savon)  
     
 
-Tout ceci est du carburant pour votre capsule qui va permettre de conserver l'ADN. Votre capsule doit être fermé hermétiquement (sceller) pour une durée indéterminée dans une matrice vitrifiée (du verre) qui va conserver l'information pour des milliards d'années. Bonus: faite muter votre ADN avec celle des méduses symbole de l'immortalité: la transdifférenciation.  
+Tout ceci est du carburant pour votre capsule qui va permettre de conserver l'ADN. Votre capsule doit être fermé hermétiquement (sceller) pour une durée indéterminée dans une matrice vitrifiée (du verre) qui va conserver l'information pour des milliards d'années. Bonus: faite muter votre ADN avec celle [des méduses "Aurelia Aurita" à 27€](https://www.recifart.com/fr/meduses/1310-meduse-aurelia-aurita-meduses-recifart.html) symbole de l'immortalité: la transdifférenciation comme "feature" et enfin une infime quantité de [Physarum polycephalum (Blob) à 15€](https://adopteunblob.fr/boutique-de-physarum-polycephalum-acheter-un-blob/Deux-scl%C3%A9rotes-seules-de-notre-blob-japonais-p363791811) une des cellules les plus massives (mycète et polynucléaire) aux capacités d'apprentissages. 
 
 Ainsi vous aller créer un réacteur à eau pressurisé (REP Nucléaire) car l'eau contient du D2O en trace, c'est à dire du deuterium. Pour catalyser la réaction nucléaire à froid dans notre capsule nous y ajoutons de l'hydroxyde de Lithium, (quelques traces 3-5%) pour produire du tritium par interaction avec un neutron cosmique.  
 
