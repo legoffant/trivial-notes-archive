@@ -48,7 +48,16 @@ Ainsi vous aller créer un réacteur à eau pressurisé (REP Nucléaire) car l'e
 
 Notre capsule est [une fiole en verre de 10ML](https://www.amazon.fr/Hyber-Cara-transparent-bouteilles-d%C3%A9chantillons/dp/B089RKCFGQ/ref=sr_1_15?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3NUSLGTYV19V1&keywords=fiole%2Bverre%2B10ml&qid=1673080243&sprefix=fiole%2Bverre%2B10ml%2Caps%2C116&sr=8-15&th=1) dimensionné pour aller dans un container en aluminium pour produire une batterie nucléaire.  
 
+### Principe d'une pile
+
+![pile](/images/pile.jpg)
+![pile2](/images/pile2.png)
+
 Ah bon on parle de pile et généré de l'électricité. En faite la solution ou baigne l'ADN notre cytoplasme est un électrolyte de pile salin dopé au Lithium. Nous sommes dans un milieu ionisé (ion de sel). Notre fiole de verre est insuffisante pour générer une différence de potentiel pour la circulation des électron. Il faut un [nouveau container, cette fois-ci en aluminium](https://www.amazon.fr/Porte-Cl%C3%A9s-Aluminium-Mini-bouteille-Imperm%C3%A9able-M%C3%A9dicament/dp/B09BL2DGKG/ref=sr_1_11?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1D12I2SQGF8NV&keywords=pilule+bouteille+aluminium&qid=1673081560&sprefix=pillule+bouteille+aluminium%2Caps%2C93&sr=8-11) (qui permet en plus d'arrêter la radioactivité alpha et beta) ou l'on insère notre fiole en verre. Voici notre batterie nucléaire ou les électrons circulent dans notre enceinte. Le vide n'est jamais véritablement vide, il y a les forces de Casimir(cavitation dans notre container) à l'échelle quantique on peut extraire de l'énergie infiniment pour la mise en culture de notre ADN.  
+
+### Notre batterie nucléaire
+
+![batterie](/images/batterie.jpg)
 
 C'est une histoire de couche comme les oignons. Notre cellule à un noyau nucléaire (ADN) alimenté en énergie isolé de l'extérieur. Nous allons rajouter une troisième couche, un nouveau container, [une capsule temporelle](https://www.amazon.fr/Capsule-Anti-Corrosion-Inoxydable-Conteneur-Nourriture/dp/B0792VZBDJ/ref=sr_1_6?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3D1L42MKMOOBF&keywords=capsule%2Btemporelle&qid=1673082040&sprefix=capsule%2Btemporelle%2Caps%2C97&sr=8-6&th=1) en acier inox, ou nous allons sauvegarder de l'information, souvenirs, des graines, mettre en place un système d'exploitation, générer un langage, ajoutez de la valeur et en tant qu'ingénieur créer un drone à partir de la construction de sous-marin. Nous avons créer déjà notre batterie nucléaire. Ajoutons donc:  
 
