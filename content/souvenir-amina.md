@@ -1,5 +1,5 @@
 ﻿Title:Souvenir d'Amina
-Date: 2023-01-14 16:46
+Date: 2023-01-18 07:41
 Category:Inclassable
 Tags:pensée
 Authors: Anthony Le Goff
