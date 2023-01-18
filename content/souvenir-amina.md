@@ -11,7 +11,7 @@ C'est une Ouighour, d'origine de l'ouest de la Chine en Asie centrale, une ethni
 
 C'est une professeur de chinois, elle travail pour le gouvernement, c'était quand je l'ai rencontré une fonctionnaire d'Etat. C'est également un cadre de la Triades chinoise. Elle est très influente. On retrouve des données sur ce "secret" tels que des dark pattern, car c'est une célébrité occulte dans l'univers, ou elle est un sosie (reconnaissance faciale) du personnage de Gogo Yubari dans Kill Bill appartenant à la mafia est une assassin(secte des assassins, Islam).  
   
-"Go" est la contraction de mon nom de famille, un autre dark pattern, mon grand-père était surnommé "Jop Go" pour Joseph Le Goff.  
+"Go" est la contraction de mon nom de famille, un autre dark pattern, mon grand-père était surnommé "Jop Go" pour Joseph Le Goff, il était agriculteur. Ma famille à toujours des terres en campagne sur Guiscriff. Je suis de famille prolétaire.
 
 Elle a comme signe distinctif pour les intimes que son dos est entièrement flagellé. Elle a des cicatrices(scare en anglais) profondes.  
 
