@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-01-29T07:44:00+01:00</updated><entry><title>Linux Kernel Development</title><link href="/linux-kernel-development.html" rel="alternate"></link><published>2023-01-29T07:44:00+01:00</published><updated>2023-01-29T07:44:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-01-29:/linux-kernel-development.html</id><summary type="html"></summary><content type="html">&lt;p&gt;J'avais écris un peu sur ce blog pour devenir Kernel Hacker.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-01-30T19:58:00+01:00</updated><entry><title>Préparation à la saison de trek</title><link href="/preparation-a-la-saison-de-trek.html" rel="alternate"></link><published>2023-01-30T19:58:00+01:00</published><updated>2023-01-30T19:58:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-01-30:/preparation-a-la-saison-de-trek.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je prépare ma saison de trekking, et pour l'instant je traine de la patte pour aller à la salle de sport. Pourtant cette préparation est essentiel pour le renforcement musculaire, la cardio après des années d'inactivités.  &lt;/p&gt;
+&lt;p&gt;Je suis en train de faire ma licence à la FFRandonnée, pour l'assurance particulièrement. J'en ai pour 40€ avec le club local de Brest. Le club fait de la rando, mais j'espère faire quelques contacts sur la pratique du trekking. La rando c'est 15-20km sur une journée soit 3h30. Pour la pratique sportive du trekking ce n'est pas assez, c'est des journées d'au moins en dépense énergétique de 3000Kcal soit plus de 6h de marche. Un trekkeur marche 8h par jour à minima. Il y a une grosse préparation physique en amont.  &lt;/p&gt;
+&lt;p&gt;Mon terrain de jeu est le PNR d'Armorique, plus particulièrement le GR380. Mais le topo n'est plus disponible hélas: "Le tour des Mt d'Arrée".  &lt;/p&gt;
+&lt;p&gt;La liste de mes documents pour la reprise de la saison:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.dropbox.com/scl/fi/czmvib5hgckgi9b2vcvnj/planning-entrainement-2023.ods?dl=0&amp;amp;rlkey=y9bhdlgjznmrzu3vhl3r4rcqc"&gt;Planning entraînement 2023&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.dropbox.com/scl/fi/cj2u58z7kkli60nl2kna3/prepa-physique.odt?dl=0&amp;amp;rlkey=bn7pa1ukjprb8betxay0ln64h"&gt;Préparation physique au trekking&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.dropbox.com/scl/fi/dqe6e494f9kmp1lovhwdx/trekking-jalon.odt?dl=0&amp;amp;rlkey=2tsulnoolag10cbygh6fj7si6"&gt;Entraînement au trekking - Jalon&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.dropbox.com/scl/fi/hh15cclal8wool8p4nak4/listing-matos.ods?dl=0&amp;amp;rlkey=kgx00hej2zituwbky29vj1i4q"&gt;Liste du matériel - calcul de poids&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Un mot d'alimentation que je n'ai pas abordé encore. J'emporte avec moi jusqu'à 2L d'eau avec une poche à eau et une gourde filtrante pour le ravitaillement.  &lt;/p&gt;
+&lt;p&gt;Mon repas du matin c'est du Muesli avec du lait en poudre. Puis une barre de céréale toutes les 2h. Le repas du soir est des sachets individuels de riz / quinoa / ébli / lentille pré-cuit que l'on trouve dans les supermarchés.  &lt;/p&gt;
+&lt;p&gt;J'ai également du chocolat noir, du pain d'épice et des abricots secs enfin un peu de saucisson sec (du gras) comme en-cas si nécessaire et fringale. J'emporte du thé vert avec moi également comme anti-oxydant pour les muscles. En hiver j'ai une thermos de thé supplémentaire. La totalité de l'alimentation doit faire pour 3 jours = 1,5kgs dans le sac (sans compter l'eau).&lt;/p&gt;</content><category term="Inclassable"></category><category term="trek"></category></entry><entry><title>Linux Kernel Development</title><link href="/linux-kernel-development.html" rel="alternate"></link><published>2023-01-29T07:44:00+01:00</published><updated>2023-01-29T07:44:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-01-29:/linux-kernel-development.html</id><summary type="html"></summary><content type="html">&lt;p&gt;J'avais écris un peu sur ce blog pour devenir Kernel Hacker.  &lt;/p&gt;
 &lt;p&gt;Mise à jours des ressources. Il vous faudra apprendre le langage C pour &lt;a href="https://elixir.bootlin.com/linux/latest/source/kernel"&gt;explorer le code source&lt;/a&gt; du kernel Linux. Mais également c'est mieux d'avoir des compétences d'administrateur système. L'équipe de développeur de Greg K-H, le principal mainteneur du kernel Linux tourne sur Arch Linux.  &lt;/p&gt;
 &lt;p&gt;Vous trouverez une liste de livre [PDF] essentiel pour monter en compétence sur le kernel:  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone https://github.com/legoffant/book-kernelDev.git
