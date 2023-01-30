@@ -32,3 +32,7 @@ J'ai également du chocolat noir, du pain d'épice et des abricots secs enfin un
 ### Apprenti Trekkeur pro ?
 
 J'aimerai faire de la performance physique en endurance, et devenir un trekkeur pro. Tel que [Jeff Garmire](https://www.widermag.com/news-trekking-439-km-moins-6-jours-les-forets-nord-est-americain) en autonomie sans assistance, ou il parcours 439km en 6 jours sur le "Long Trail". Soit une moyenne de 72km / jour. Il dépense plus de 5200 Kcal par jours en nourriture, il a une diétetique en déficit calorique. Son sac pèse 9km.
+
+Tu vas te faire un nom dans le trekking, Anthony? En tout cas je compte bien devenir l'expert dans un premier temps du PNR d'Armorique. J'ai le temps, vu que je vis de l'AAH. Je peux passer mes semaines à faire de la préparation physique pour le trek. C'est une question de proscratination et quelques flemmes ou j'ai pris de mauvaise habitude de vie citadine.
+
+C'est en particulier une revenge sur moi-même, ou je me force à la discipline, notre pire ennemi c'est nous même, pas les autres. Je vais devoir perdre 5 à 10kgs pour atteindre une IMC de 20 dans un premier temps.
