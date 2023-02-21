@@ -5,7 +5,7 @@ Tags:freelance
 Authors: Anthony Le Goff
 Summary:
 
-Parlons travail alors, et astuces pour gagner sa vie à partir de l'informatique et Linux. Pourquoi devenir travail indépendant, le freelancing est le début de l'autonomie, ce qui demande de la discipline et souvent des semaines à travailler 70h si on compte la mission (40h), la formation (20h) et l'administratif (5-10h). Moi qui est une marmotte en ce moment faudra revoir mes impératifs, mais je suis excusable car je suis à l'AAH (aucune obligation de travail). L'avantage d'être freelance c'est une meilleure rémunération, le télétravail et l'autonomie.  
+Parlons travail alors, et astuces pour gagner sa vie à partir de l'informatique et Linux. Pourquoi devenir travailleur indépendant, le freelancing est le début de l'autonomie, ce qui demande de la discipline et souvent des semaines à travailler 70h si on compte la mission (40h), la formation (20h) et l'administratif (5-10h). Moi qui est une marmotte en ce moment faudra revoir mes impératifs, mais je suis excusable car je suis à l'AAH (aucune obligation de travail). L'avantage d'être freelance c'est une meilleure rémunération, le télétravail et l'autonomie.  
 
 Pour commencer à avoir le "mindset de l'entrepreneur" il faut lire, je le répète sans arrêt les entrepreneurs sont d'avide lecteur pour monter en compétence. Quelques lectures incontournables que j'ai lu pour ce confronter au capitalisme et ces règles:  
 
