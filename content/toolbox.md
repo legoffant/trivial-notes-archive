@@ -9,7 +9,8 @@ Je me relance, quittant le mode "Marmot" pour mettre à jours mes compétences e
 
 ### Titre: Arch Linux toolbox pour programmeur
 
-```
+```text
+
 0. Prologue à la communauté FOSS pour les archers
 
 I > Linux essentiels
