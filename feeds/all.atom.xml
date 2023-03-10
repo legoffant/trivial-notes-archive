@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-03-07T14:53:00+01:00</updated><entry><title>Mes livres les plus influents</title><link href="/mes-livres-les-plus-influents.html" rel="alternate"></link><published>2023-03-07T14:53:00+01:00</published><updated>2023-03-07T14:53:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-03-07:/mes-livres-les-plus-influents.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Mes livres les plus influents, qui ont façonné mon intellect, et mes réflexions sur ce monde que cela soit philosophique, théologique ou scientifique et du domaine de l'imaginaire.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-03-10T23:39:00+01:00</updated><entry><title>Arch Linux toolbox pour programmeur</title><link href="/arch-linux-toolbox-pour-programmeur.html" rel="alternate"></link><published>2023-03-10T23:39:00+01:00</published><updated>2023-03-10T23:39:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-03-10:/arch-linux-toolbox-pour-programmeur.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je me relance, quittant le mode "Marmot" pour mettre à jours mes compétences et donc je pense que faire un petit livre pour Arch Linux avec les domaines que je dois étudier et approfondir est une solution viable. J'ai donc préparer le sommaire de mes notes et thématiques d'études à mettre au propre. &lt;/p&gt;
+&lt;h3&gt;Titre: Arch Linux toolbox pour programmeur&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Prologue à la communauté FOSS pour les archers&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I &amp;gt; Linux essentiels
+1. Le système de fichier
+2. Les commandes CLI
+3. Les éditeurs de texte
+4. L'administration système&lt;/p&gt;
+&lt;p&gt;II &amp;gt; Arch package management
+1. L'archivage
+2. Connaitre Pacman
+3. La sécurité des paquets
+4. La mise à jour du système
+5. Construire et packager un logiciel avec ABS (Arch Build System)
+6. Repository utilisateur de la communauté via AUR
+7. Repository des outils de hacking Blackarch&lt;/p&gt;
+&lt;p&gt;III &amp;gt; Les langages de programmation sous Linux
+1. Bash Shell Scripting
+2. Python Scripting
+3. C/C++ 
+4. Java
+5. Ruby&lt;/p&gt;
+&lt;p&gt;IV &amp;gt; Construire depuis les sources
+1. Les outils
+2. Le processus
+3. Comprendre les erreurs et les warnings
+4. Debugging&lt;/p&gt;
+&lt;p&gt;V. &amp;gt; Maintenir du code avec Git
+1. Les commandes Git
+2. Manager les fichiers avec Git
+3. Manager les différences entre fichiers
+4. Git avancée&lt;/p&gt;
+&lt;p&gt;VI. Documentation et aides 
+1. Doxygen
+2. docstring
+3. man pages
+4. Arch Wiki
+5. Autres ressources en ligne&lt;/p&gt;
+&lt;p&gt;VII. Réseaux
+1. TCP/IP
+2. Modèle OSI
+3. DNS
+4. MAC
+5. Autres protocoles
+6. Sockets
+7. Les outils CLI&lt;/p&gt;
+&lt;p&gt;VIII. Les bases du kernel
+1. User mode versus Kernel mode
+2. Le processus d'ordonnancement
+3. Comprendre les devices et devices drivers
+4. I/O ordonnanceur
+5. Management de la mémoire dans l'espace utilisateur&lt;/p&gt;
+&lt;p&gt;IX. Comprendre les processus
+1. D'ou viens les processus
+2. La fonction exec
+3. Processus synchronisation avec wait
+4. L'empreinte d'un processus
+5. Configurer les limites d'un processus
+6. Processes et procfs
+7. Outils CLI pour manager des processus&lt;/p&gt;
+&lt;p&gt;X. Communication entre processus
+1. IPC utilisant plain Files
+2. Mémoire partagée
+3. Signals
+4. Pipes
+5. Sockets
+6. File de message
+7. Semaphores&lt;/p&gt;</content><category term="Linux"></category><category term="toolbox"></category></entry><entry><title>Mes livres les plus influents</title><link href="/mes-livres-les-plus-influents.html" rel="alternate"></link><published>2023-03-07T14:53:00+01:00</published><updated>2023-03-07T14:53:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-03-07:/mes-livres-les-plus-influents.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Mes livres les plus influents, qui ont façonné mon intellect, et mes réflexions sur ce monde que cela soit philosophique, théologique ou scientifique et du domaine de l'imaginaire.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Philosophie; Karl Marx  &lt;/p&gt;
