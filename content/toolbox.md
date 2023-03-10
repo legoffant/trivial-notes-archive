@@ -9,6 +9,7 @@ Je me relance, quittant le mode "Marmot" pour mettre à jours mes compétences e
 
 ### Titre: Arch Linux toolbox pour programmeur
 
+```
 0. Prologue à la communauté FOSS pour les archers
 
 I > Linux essentiels
@@ -85,3 +86,5 @@ X. Communication entre processus
 5. Sockets
 6. File de message
 7. Semaphores
+
+```
