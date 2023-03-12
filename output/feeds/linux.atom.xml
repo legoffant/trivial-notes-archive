@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-03-10T23:39:00+01:00</updated><entry><title>Arch Linux toolbox pour programmeur</title><link href="/arch-linux-toolbox-pour-programmeur.html" rel="alternate"></link><published>2023-03-10T23:39:00+01:00</published><updated>2023-03-10T23:39:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-03-10:/arch-linux-toolbox-pour-programmeur.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je me relance, quittant le mode "Marmot" pour mettre à jours mes compétences et donc je pense que faire un petit livre pour Arch Linux avec les domaines que je dois étudier et approfondir est une solution viable. J'ai donc préparer le sommaire de mes notes et thématiques d'études à mettre au propre. &lt;/p&gt;
 &lt;h3&gt;Titre: Arch Linux toolbox pour programmeur&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;0.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Prologue&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;à&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;la&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;communauté&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;FOSS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pour&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;archers&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;0. Prologue à la communauté FOSS pour les archers
 
-&lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Linux&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;essentiels&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;sys&lt;/span&gt;&lt;span class="n"&gt;tème&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fichier&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;commandes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CLI&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;éditeurs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;texte&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;administration&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;sys&lt;/span&gt;&lt;span class="n"&gt;tème&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+I &amp;gt; Linux essentiels
+1. Le système de fichier
+2. Les commandes CLI
+3. Les éditeurs de texte
+4. L&amp;#39;administration système
 
-&lt;span class="n"&gt;II&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;management&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;archivage&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Connaitre&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Pacman&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;La&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sécurité&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;des&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;paquets&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;La&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mise&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;à&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;jour&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;du&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;sys&lt;/span&gt;&lt;span class="n"&gt;tème&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;5.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Construire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;et&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;packager&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;un&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;log&lt;/span&gt;&lt;span class="n"&gt;iciel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;avec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;ABS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;Sys&lt;/span&gt;&lt;span class="n"&gt;tem&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;6.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;utilisateur&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;la&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;communauté&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;via&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;AUR&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;7.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Repository&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;des&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;outils&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hacking&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Blackarch&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+II &amp;gt; Arch package management
+1. L&amp;#39;archivage
+2. Connaitre Pacman
+3. La sécurité des paquets
+4. La mise à jour du système
+5. Construire et packager un logiciel avec ABS (Arch Build System)
+6. Repository utilisateur de la communauté via AUR
+7. Repository des outils de hacking Blackarch
 
-&lt;span class="n"&gt;III&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;langages&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;programmation&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sous&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Linux&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Bash&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Shell&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Scripting&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Python&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Scripting&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Java&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;5.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Ruby&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+III &amp;gt; Les langages de programmation sous Linux
+1. Bash Shell Scripting
+2. Python Scripting
+3. C/C++ 
+4. Java
+5. Ruby
 
-&lt;span class="n"&gt;IV&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Construire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;depuis&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sources&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;outils&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Comprendre&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;erreurs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;et&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;warnings&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Debugging&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+IV &amp;gt; Construire depuis les sources
+1. Les outils
+2. Le processus
+3. Comprendre les erreurs et les warnings
+4. Debugging
 
-&lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Maintenir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;du&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;avec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;commandes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Manager&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fichiers&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;avec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Manager&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;différences&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;entre&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fichiers&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;avancée&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+V. &amp;gt; Maintenir du code avec Git
+1. Les commandes Git
+2. Manager les fichiers avec Git
+3. Manager les différences entre fichiers
+4. Git avancée
 
-&lt;span class="n"&gt;VI&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Documentation&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;et&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;aides&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Doxygen&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;docstring&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;man&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pages&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Wiki&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;5.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Autres&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ressources&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;en&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ligne&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+VI. Documentation et aides 
+1. Doxygen
+2. docstring
+3. man pages
+4. Arch Wiki
+5. Autres ressources en ligne
 
-&lt;span class="n"&gt;VII&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Réseaux&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;TCP&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;IP&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Modèle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;OSI&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;DNS&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;MAC&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;5.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Autres&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;protocoles&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;6.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sockets&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;7.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;outils&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CLI&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+VII. Réseaux
+1. TCP/IP
+2. Modèle OSI
+3. DNS
+4. MAC
+5. Autres protocoles
+6. Sockets
+7. Les outils CLI
 
-&lt;span class="n"&gt;VIII&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bases&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;du&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;kernel&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;User&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;versus&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Kernel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="ow"&gt;or&lt;/span&gt;&lt;span class="n"&gt;donnancement&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Comprendre&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;devices&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;et&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;devices&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;drivers&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;O&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;or&lt;/span&gt;&lt;span class="n"&gt;donnanceur&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;5.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Management&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;la&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mémoire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dans&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;espace&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;utilisateur&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+VIII. Les bases du kernel
+1. User mode versus Kernel mode
+2. Le processus d&amp;#39;ordonnancement
+3. Comprendre les devices et devices drivers
+4. I/O ordonnanceur
+5. Management de la mémoire dans l&amp;#39;espace utilisateur
 
-&lt;span class="n"&gt;IX&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Comprendre&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;ou&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;viens&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;La&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fonction&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;exec&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Processus&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;synchronisation&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;avec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kr"&gt;wait&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;empreinte&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;un&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;5.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Configurer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;les&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;limites&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;un&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;6.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Processes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;et&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;procfs&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;7.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Outils&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CLI&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pour&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;manager&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;des&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+IX. Comprendre les processus
+1. D&amp;#39;ou viens les processus
+2. La fonction exec
+3. Processus synchronisation avec wait
+4. L&amp;#39;empreinte d&amp;#39;un processus
+5. Configurer les limites d&amp;#39;un processus
+6. Processes et procfs
+7. Outils CLI pour manager des processus
 
-&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Communication&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;entre&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;processus&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;IPC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;utilisant&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;plain&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Files&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;2.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Mémoire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;partagée&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Signals&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;4.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Pipes&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;5.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sockets&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;6.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;File&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="mf"&gt;7.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Semaphores&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+X. Communication entre processus
+1. IPC utilisant plain Files
+2. Mémoire partagée
+3. Signals
+4. Pipes
+5. Sockets
+6. File de message
+7. Semaphores
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Linux"></category><category term="toolbox"></category></entry><entry><title>[humour]Quand la religion s'en mêle</title><link href="/humourquand-la-religion-sen-mele.html" rel="alternate"></link><published>2023-03-03T12:12:00+01:00</published><updated>2023-03-03T12:12:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-03-03:/humourquand-la-religion-sen-mele.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Parfois Twitter tourne au sketch en particulier quand la source devient un poste sur Reddit dans /r/sysadmin sur &lt;a href="https://twitter.com/gabsmashh/status/1631415313899323392"&gt;ce post en lien&lt;/a&gt; ou une employée à affirmé qu'elle ne pouvait pas utiliser de produit Windows ou MacOS pour raison religieuse.  &lt;/p&gt;
 &lt;p&gt;Oh le putain de drama, elle a demandé à configurer GNU/Linux sur l'ordinateur portable de l'entreprise. Ce que l'entreprise ne pouvait pas car utilise des logiciels adaptés pour Windows. Tu parles d'une forceuse.  &lt;/p&gt;
 &lt;p&gt;Après tout c'est l'affaire de langage, la rhétorique d'UNIX est plus adapté dans le contrôle des machines. On connaissait l'affaire sérieuse de &lt;a href="https://fr.wikipedia.org/wiki/Guerre_d%27%C3%A9diteurs"&gt;guerre d'éditeurs&lt;/a&gt; et l'Eglise d'Emacs. jusqu'au cas de dialogue en localhost avec Terry A. Davis et Dieu et le fameux &lt;a href="https://templeos.org/"&gt;templeOS&lt;/a&gt;.  &lt;/p&gt;
