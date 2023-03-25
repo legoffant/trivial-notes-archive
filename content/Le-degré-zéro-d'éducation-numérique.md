@@ -1,5 +1,5 @@
 ﻿Title:Le degré zéro d'éducation numérique 
-Date: 2023-03-25 11:517
+Date: 2023-03-25 11:17
 Category:Inclassable
 Tags:numerique, innovation
 Authors: Anthony Le Goff
