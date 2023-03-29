@@ -13,7 +13,7 @@ En réalité l'internet de demain n'aura rien à voir avec l'usine à gaz que l'
 
 Parlons donc du protocole Gemini sorti en 2019 début de réponse comme riposte. Il est dans la continuité de Gopher qui est obsolète. Inventé par Solderpunk, avec le soutien notable de Drew DeVault, illustre hacker minimaliste connu pour [le gestionnaire de fenêtres Sway](https://swaywm.org/) sous GNU/Linux pour Wayland. Le protocole n'est pas extensible pour éviter l'utilisation d'outil de pistage. Le but est de consulter des pages internet. L'HTML a été abandonné, il n'y a pas de CSS et encore moins de Javascript remplacé par du Markdown épuré du Gemtext. J'ai toujours trouvé que les développeurs front-end étaient des idiots proche de l'autisme pour rendre intéractif un website, en chipotant sur des détails à la con comme la couleur et l'effet sur un bouton... augmentant l'utilisation de ressource. Mais c'est un autre débat sur les interfaces et l'UX Design.
 
-Les utilisateurs se sont plein que l'on peut pas échanger des fichiers ou des messages. Le créateur ce défend en utilisant d'autres protocoles pour cela comme Git ou Rsync. Ce n'est pas un protocole pour publier. On peut noter également que des fonctions comme LaTeX ou la cotation de ligne de code ne soit pas possible rendant limité la création de document technique et scientifique.  
+Les utilisateurs se sont plaind que l'on ne peut pas échanger des fichiers ou des messages. Le créateur ce défend en utilisant d'autres protocoles pour cela comme Git ou Rsync. Ce n'est pas un protocole pour publier. On peut noter également que des fonctions comme LaTeX ou la cotation de ligne de code ne soit pas possible rendant limité la création de document technique et scientifique.  
 
 Alors qui utilise Gemini?  
 
