@@ -31,6 +31,11 @@ pacman -S amfora
 
 On peut noter des services d'aggregation de contenu ou l'on peut s'abonner à des "FEEDS" tel que CAPCOM car Gemini reste essentiellement un outil de blogging et que l'on peut retrouver des "directory" pour la curation de contenu tel que medusae.space catégorisé par topic.  
 
+### Web server && blogging
+
+Pour démarrer sur Gemini il faut un web server tel que Agate que vous pouvez auto-héberger sur un raspberry Zero en suivant cette documentation: Build a Gemini Server on Linux and Join the Web That Might Have Been [https://www.makeuseof.com/build-a-gemini-server-linux/](https://www.makeuseof.com/build-a-gemini-server-linux/). Par la suite vous pouvez générer un site statique pour créer les Gemlogs et l'Atom feeds avec [Gloggery](https://github.com/kconner/gloggery). 
+
+
 Ressources:  
 
 *   Bortzmeyer figure de la culture libriste travaillant à l'AFNIC avait écrit un billet de blog sur le protocole: [https://www.bortzmeyer.org/gemini.html](https://www.bortzmeyer.org/gemini.html)  
@@ -38,3 +43,5 @@ Ressources:
 *   Gemini Quickstart [https://geminiquickst.art/](https://geminiquickst.art/)  
     
 *   (Github) Awesome Gemini [https://github.com/kr1sp1n/awesome-gemini](https://github.com/kr1sp1n/awesome-gemini)
+
+
