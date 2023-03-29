@@ -13,6 +13,8 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;On peut noter des services d'aggregation de contenu ou l'on peut s'abonner à des "FEEDS" tel que CAPCOM car Gemini reste essentiellement un outil de blogging et que l'on peut retrouver des "directory" pour la curation de contenu tel que medusae.space catégorisé par topic.  &lt;/p&gt;
+&lt;h3&gt;Web server &amp;amp;&amp;amp; blogging&lt;/h3&gt;
+&lt;p&gt;Pour démarrer sur Gemini il faut un web server tel que Agate que vous pouvez auto-héberger sur un raspberry Zero en suivant cette documentation: Build a Gemini Server on Linux and Join the Web That Might Have Been &lt;a href="https://www.makeuseof.com/build-a-gemini-server-linux/"&gt;https://www.makeuseof.com/build-a-gemini-server-linux/&lt;/a&gt;. Par la suite vous pouvez générer un site statique pour créer les Gemlogs et l'Atom feeds avec &lt;a href="https://github.com/kconner/gloggery"&gt;Gloggery&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;Ressources:  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
