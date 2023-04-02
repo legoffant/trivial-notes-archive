@@ -94,6 +94,10 @@ L'invité de commande du shell peut-être customisé pour intégrer des informat
 *   [yt-dlp](https://github.com/yt-dlp/yt-dlp) Outil de téléchargement de video sur Youtube, etc.  
     
 *   [chatGPT-shell-cli](https://github.com/0xacx/chatGPT-shell-cli) Utiliser chatGPT via l'API d'OpenAi  
+
+*   [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall) Uncomplicated Firewall
+
+*   [ssh](https://wiki.archlinux.org/title/Secure_Shell) Secure Shell est un protocole réseau chiffré pour ce connecter à distance sur un serveur. Voir scp et sftp
     
 
 NOTA: pour partager un fichier / Pastebin utilisez la commande:  
