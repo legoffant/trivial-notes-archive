@@ -79,6 +79,12 @@
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://github.com/0xacx/chatGPT-shell-cli"&gt;chatGPT-shell-cli&lt;/a&gt; Utiliser chatGPT via l'API d'OpenAi  &lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://wiki.archlinux.org/title/Uncomplicated_Firewall"&gt;ufw&lt;/a&gt; Uncomplicated Firewall&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://wiki.archlinux.org/title/Secure_Shell"&gt;ssh&lt;/a&gt; Secure Shell est un protocole réseau chiffré pour ce connecter à distance sur un serveur. Voir scp et sftp&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;NOTA: pour partager un fichier / Pastebin utilisez la commande:  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ cat FILE &lt;span class="p"&gt;|&lt;/span&gt; curl -F &lt;span class="s1"&gt;&amp;#39;sprunge=&amp;lt;-&amp;#39;&lt;/span&gt; http://sprunge.us&lt;span class="sb"&gt;`&lt;/span&gt;
