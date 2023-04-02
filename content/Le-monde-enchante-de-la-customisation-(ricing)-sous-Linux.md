@@ -158,7 +158,7 @@ On note l'utilisation de:
 *   Nerd-fonts  
     
 
-IRC  
+### IRC  
 
 Client IRC pour tchater en CLI: [weechat](https://weechat.org/). D'autres se tournerons vers Matrix et Discord considéré comme plus moderne même si la communauté FOSS et les hackers sont toujours sur IRC.  
 
