@@ -149,7 +149,7 @@
 &lt;p&gt;Nerd-fonts  &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;IRC  &lt;/p&gt;
+&lt;h3&gt;IRC&lt;/h3&gt;
 &lt;p&gt;Client IRC pour tchater en CLI: &lt;a href="https://weechat.org/"&gt;weechat&lt;/a&gt;. D'autres se tournerons vers Matrix et Discord considéré comme plus moderne même si la communauté FOSS et les hackers sont toujours sur IRC.  &lt;/p&gt;
 &lt;h3&gt;Themes et Icones&lt;/h3&gt;
 &lt;p&gt;Il existe des classiques tels que Catppuccin, Gruvbox ou encore Neon aux effets cyberpunk. Un repo de la communauté sur hyprland est disponible sur Github: &lt;a href="https://github.com/hyprland-community/theme-repo"&gt;theme-repo&lt;/a&gt;  &lt;/p&gt;
