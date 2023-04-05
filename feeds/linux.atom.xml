@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-04-05T11:08:00+02:00</updated><entry><title>Mon bureau hyprland</title><link href="/mon-bureau-hyprland.html" rel="alternate"></link><published>2023-04-05T11:08:00+02:00</published><updated>2023-04-05T11:08:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-04-05:/mon-bureau-hyprland.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Sous Arch Linux lancer le script &lt;code&gt;archinstall&lt;/code&gt; et définir:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Chiffrement dm-luks / LUKS&lt;/li&gt;
+&lt;li&gt;Chiffrement dm-crypt / LUKS&lt;/li&gt;
 &lt;li&gt;Système de fichier BTRFS&lt;/li&gt;
 &lt;li&gt;Bootloader systemd-boot&lt;/li&gt;
 &lt;/ul&gt;
