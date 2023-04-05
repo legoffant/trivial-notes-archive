@@ -7,7 +7,7 @@ Summary:
 
 Sous Arch Linux lancer le script `archinstall` et définir:
 
-* Chiffrement dm-luks / LUKS
+* Chiffrement dm-crypt / LUKS
 * Système de fichier BTRFS
 * Bootloader systemd-boot
 
