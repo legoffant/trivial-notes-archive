@@ -63,6 +63,10 @@ Vous pouvez détecter des comportements anormaux sur votre système en faisant d
 
 Un programme malveillant doit être furtif et les hackers effacer leur trace sur la cible. Pourtant ils peuvent laisser des empreintes sur les accès sur le système en vérifiant les logs. Windows n'a toujours pas compris ça et Linux intègre un système de logs avancé tel que sur les services avec systemd et journalctl voir l'outil syslog-ng.  
 
+### Configurer un par-feu
+
+Utilisez des outils comme ufw qui reste simple à configurer, vous n'avez pas besoin d'apprendre des outils compliqué comme iptable ou pfsense.
+
 ### Sauvegarde et restauration  
 
 De nos jours les systèmes les plus avancés intègrent un système de sauvegarde automatisé périodique en cas de compromission. La technique utilisé en particulier est les snapshots qu'il est possible de créer avec des systèmes de fichier comme BTRFS et des outils comme Snapper + snap-pac sur Arch Linux pour sauvegarder à chaque mise à jour en cas que vous casser le système pour le restaurer. Il faut coupler à une sauvegarde de l'environnement utilisateur tels que les .dotfiles et les documents en utilisant des outils pour chiffrer des sauvegardes dans le cloud ou sur un NAS. Il y a Duplicity, Borg, Bacula mais également Rsync ou Rclone. En règle général il faut une sauvegarde locale + distante. En cas de perquisition ou de vol à votre domicile, vos données doivent être disponible à distance.  
