@@ -51,7 +51,7 @@ Vous devez avoir une source de confiance pour les logiciels sur des dépots dist
 
 Les vulnérabilités CVE sont régulièrement mise à jours, la dernière en date "Dirty Pipe" sur le noyau Linux à fait parler d'elle, vous devez auditer le système avec des outils tel que Lynis et appliquer des contres-mesures d' "hardening" en particulier sur le noyau Linux comme AppArmor, SELinux, Grsecurity et LKRG. Il faut faire une recherche de rootkit régulièrement avec chkrootkit mais également de malware, il y en a sur Linux en utilisant Yara avec des règles prédifinis comme le repo ["Protections Artifacts"](https://github.com/elastic/protections-artifacts) d'Elastic Security.  
 
-Rolling Release pour mettre à jours le système  
+### Rolling Release pour mettre à jours le système  
 
 Patcher le système dès que les paquets logiciels sont disponible en intégrant la rolling release. C'est la particularité des distributions GNU/Linux basé sur Arch Linux, tel que Manjaro, Archcraft, etc.  
 
