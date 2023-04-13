@@ -1,5 +1,5 @@
 ﻿Title:Outils CLI et environnement moderne pour hackers
-Date: 2023-04-013 09:04
+Date: 2023-04-13 09:04
 Category:Linux
 Tags:terminal, cli
 Authors: Anthony Le Goff
