@@ -27,7 +27,7 @@ Proxmox permet d'utiliser la technologie PCI Passthrough pour utiliser une carte
 
 La configuration de mon propre serveur Proxmox à titre indicatif:  
 
-```txt
+```Text
 
 ###########################################################
 Config Server mini-ITX CPU Ryzen 5  64GO RAM 4x2TO HDD RAID
