@@ -144,32 +144,32 @@
 <p>Parmis les ressources que je propose je préviligie ce qui sont moins gourmande en mémoire ainsi que leur possibilité d'adapter au besoin de chaque utilisateur. J'utilise une machine GNU/Linux qui est plus pratique pour le métier de développeur.</p>
 <p>Pour créer un programme en C il vous faut un éditeur de texte pour programmeur tel que Vim qui est en natif sur toutes machine GNU/Linux et un compilateur comme gcc.</p>
 <p>On ouvre un terminal et dans l'inviter de commande, le prompt on tape:</p>
-<div class="highlight"><pre><span></span><code>gcc -v
+<div class="highlight"><pre><span></span><code>gcc<span class="w"> </span>-v
 </code></pre></div>
 
 <p>Le terminal nous renvoi la version de gcc ici la version 10.2.0 s'il est installé sur l'ordinateur.</p>
 <p>On change de répertoire vers celui de travail et on crée un dossier src:</p>
-<div class="highlight"><pre><span></span><code>mkdir src
-<span class="nb">cd</span> src
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>src
+<span class="nb">cd</span><span class="w"> </span>src
 </code></pre></div>
 
 <p>On va créer un fichier en C avec Vim:</p>
-<div class="highlight"><pre><span></span><code>vim hello.c
+<div class="highlight"><pre><span></span><code>vim<span class="w"> </span>hello.c
 </code></pre></div>
 
 <p>Dans Vim on a le fichier hello.c et on va écrire un simple programme qui affiche "hello world" en C, il faut basculer en mode insertion en appuyant sur la touche <code>i</code>puis écrire ce programme:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;hello world</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;hello world</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <p>Pour sauvegarder et quitter Vim on tape <code>:wq!</code></p>
 <p>Enfin on va compiler le programme. Rappel: c'est l'étape ou le programme va être traduit en langage machine à base de 0 et de 1 compréhensible pour le micro-processeur:</p>
-<div class="highlight"><pre><span></span><code>gcc hello.c -o hello
+<div class="highlight"><pre><span></span><code>gcc<span class="w"> </span>hello.c<span class="w"> </span>-o<span class="w"> </span>hello
 </code></pre></div>
 
 <p>L'opération de compilation va créer un fichier binaire executable nommé "hello" visible en faisant un <code>ls</code> dans le répertoire de travail.
@@ -178,7 +178,7 @@ Il reste plus qu'à lancer le programme généré par cette commande:</p>
 </code></pre></div>
 
 <p>Qui affiche bien dans le terminal:</p>
-<div class="highlight"><pre><span></span><code>hello world
+<div class="highlight"><pre><span></span><code>hello<span class="w"> </span>world
 </code></pre></div>
 
 <p>C'est tout ce que vous avez besoin pour commencer à coder en C. Retenez Vim + GCC et puis après quelques experiences Git et gdb pour approfondir le sujet.</p>

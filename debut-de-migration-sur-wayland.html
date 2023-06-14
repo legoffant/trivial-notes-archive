@@ -135,14 +135,14 @@
 
         <p>Je m'intéresse toujours à upgrade ma configuration un peu vieillissante d'Arch linux. Je m'attaque à Wayland. J'essaye de prototyper dans une machine virtuelle sous QEMU/KVM, j'ai quelques erreurs, j'arrive à avoir un bureau, un curseur de souris, mais je ne peux pas cliquer, faire de clique droit ni utiliser les raccourcis clavier. C'est embêtant. la VM ne prend en charge, j'essaye de configurer sans succès.</p>
 <p>Configuration en test:</p>
-<div class="highlight"><pre><span></span><code><span class="n">OS</span><span class="o">:</span><span class="w"> </span><span class="n">Arch</span><span class="w"> </span><span class="n">Linux</span><span class="w"></span>
-<span class="n">Shell</span><span class="o">:</span><span class="w"> </span><span class="n">Zsh</span><span class="w"></span>
-<span class="n">Wayland</span><span class="w"> </span><span class="n">compositor</span><span class="o">:</span><span class="w"> </span><span class="n">Sway</span><span class="w"></span>
-<span class="n">Bar</span><span class="o">:</span><span class="w"> </span><span class="n">Waybar</span><span class="w"></span>
-<span class="n">Launcher</span><span class="o">:</span><span class="w"> </span><span class="n">Wofi</span><span class="w"></span>
-<span class="n">Terminal</span><span class="o">:</span><span class="w"> </span><span class="n">Alacritty</span><span class="w"></span>
-<span class="n">Prompt</span><span class="o">:</span><span class="w"> </span><span class="n">Oh</span><span class="o">-</span><span class="n">My</span><span class="o">-</span><span class="n">Zsh</span><span class="w"></span>
-<span class="n">File</span><span class="w"> </span><span class="n">Manager</span><span class="o">:</span><span class="w"> </span><span class="n">Ranger</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">OS</span><span class="o">:</span><span class="w"> </span><span class="n">Arch</span><span class="w"> </span><span class="n">Linux</span>
+<span class="n">Shell</span><span class="o">:</span><span class="w"> </span><span class="n">Zsh</span>
+<span class="n">Wayland</span><span class="w"> </span><span class="n">compositor</span><span class="o">:</span><span class="w"> </span><span class="n">Sway</span>
+<span class="n">Bar</span><span class="o">:</span><span class="w"> </span><span class="n">Waybar</span>
+<span class="n">Launcher</span><span class="o">:</span><span class="w"> </span><span class="n">Wofi</span>
+<span class="n">Terminal</span><span class="o">:</span><span class="w"> </span><span class="n">Alacritty</span>
+<span class="n">Prompt</span><span class="o">:</span><span class="w"> </span><span class="n">Oh</span><span class="o">-</span><span class="n">My</span><span class="o">-</span><span class="n">Zsh</span>
+<span class="n">File</span><span class="w"> </span><span class="n">Manager</span><span class="o">:</span><span class="w"> </span><span class="n">Ranger</span>
 </code></pre></div>
 
 <p>Sous virt-manager il faut configurer "Display" sous <code>QXL</code> au lieu de <code>virtio</code> pour la VM. </p>
@@ -166,7 +166,7 @@ cp /etc/sway/config .
 
 <p>Installer nano et vim si nécessaire pour éditer le fichier de configuration</p>
 <p>Pour rendre visible le curseur de souris:</p>
-<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">WLR_NO_HARDWARE_CURSORS</span><span class="o">=</span><span class="mi">1</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">WLR_NO_HARDWARE_CURSORS</span><span class="o">=</span><span class="mi">1</span>
 </code></pre></div>
 
 <p>Pour lancer le windows manager Sway:</p>

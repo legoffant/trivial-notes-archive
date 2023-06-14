@@ -141,16 +141,16 @@
 Vérifier le démarrage UEFI.</p>
 <h3>pre-check configuration</h3>
 <p>Charger le clavier français en tapant "loqdkeys fr"</p>
-<div class="highlight"><pre><span></span><code><span class="n">loadkeys</span><span class="w"> </span><span class="n">fr</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">loadkeys</span><span class="w"> </span><span class="n">fr</span>
 </code></pre></div>
 
 <p>Verifier boot mode</p>
-<div class="highlight"><pre><span></span><code><span class="n">ls</span><span class="w"> </span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">firmware</span><span class="o">/</span><span class="n">efi</span><span class="o">/</span><span class="n">efivars</span><span class="w">    </span><span class="p">(</span><span class="n">Si</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">répertoire</span><span class="w"> </span><span class="n">existe</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;ordinateur supporte l&#39;</span><span class="n">efi</span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">ls</span><span class="w"> </span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">firmware</span><span class="o">/</span><span class="n">efi</span><span class="o">/</span><span class="n">efivars</span><span class="w">    </span><span class="p">(</span><span class="n">Si</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">répertoire</span><span class="w"> </span><span class="n">existe</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;ordinateur supporte l&#39;</span><span class="n">efi</span><span class="p">)</span>
 </code></pre></div>
 
 <h3>Connexion au réseau</h3>
 <p>Vérifier le nom du reseau et si celui-ci est up</p>
-<div class="highlight"><pre><span></span><code><span class="nv">ip</span> <span class="nv">addr</span> <span class="k">show</span>
+<div class="highlight"><pre><span></span><code><span class="nx">ip</span><span class="w"> </span><span class="kd">addr</span><span class="w"> </span><span class="nx">show</span>
 </code></pre></div>
 
 <p>vérifier la connexion internet</p>
@@ -162,10 +162,10 @@ Vérifier le démarrage UEFI.</p>
 </code></pre></div>
 
 <p>affichage du prompt [IWD]#</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">list</span><span class="w"></span>
-<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">scan</span><span class="w"></span>
-<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="k">get</span><span class="o">-</span><span class="n">networks</span><span class="w"></span>
-<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="k">connect</span><span class="w"> </span><span class="n">SSID</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">list</span>
+<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">scan</span>
+<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="k">get</span><span class="o">-</span><span class="n">networks</span>
+<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="k">connect</span><span class="w"> </span><span class="n">SSID</span>
 </code></pre></div>
 
 <h3>Check les disques</h3>
@@ -193,7 +193,7 @@ Vérifier le démarrage UEFI.</p>
 </code></pre></div>
 
 <h3>Chiffrement</h3>
-<div class="highlight"><pre><span></span><code><span class="n">cryptsetup</span><span class="w"> </span><span class="o">--</span><span class="n">align</span><span class="o">-</span><span class="n">payload</span><span class="w"> </span><span class="mi">8192</span><span class="w"> </span><span class="o">--</span><span class="n">type</span><span class="w"> </span><span class="n">luks2</span><span class="w"> </span><span class="o">--</span><span class="n">pbkdf</span><span class="w"> </span><span class="n">argon2id</span><span class="w"> </span><span class="o">--</span><span class="n">verify</span><span class="o">-</span><span class="n">passphrase</span><span class="w"> </span><span class="n">luksFormat</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda2</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">cryptsetup</span><span class="w"> </span><span class="o">--</span><span class="n">align</span><span class="o">-</span><span class="n">payload</span><span class="w"> </span><span class="mi">8192</span><span class="w"> </span><span class="o">--</span><span class="n">type</span><span class="w"> </span><span class="n">luks2</span><span class="w"> </span><span class="o">--</span><span class="n">pbkdf</span><span class="w"> </span><span class="n">argon2id</span><span class="w"> </span><span class="o">--</span><span class="n">verify</span><span class="o">-</span><span class="n">passphrase</span><span class="w"> </span><span class="n">luksFormat</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sda2</span>
 </code></pre></div>
 
 <p>Ouverture du container chiffré:</p>
@@ -224,8 +224,8 @@ cd /mnt
 </code></pre></div>
 
 <p>Créer les subvolumes</p>
-<div class="highlight"><pre><span></span><code><span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="err">@</span><span class="w"></span>
-<span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="nv">@home</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="err">@</span>
+<span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="nv">@home</span>
 </code></pre></div>
 
 <p>Démonter la partition</p>
@@ -241,7 +241,7 @@ cd /mnt
 </code></pre></div>
 
 <p>Monter le subvolume @home</p>
-<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@home</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">home</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@home</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">home</span>
 </code></pre></div>
 
 <p>Monter la partition EFI</p>
@@ -281,7 +281,7 @@ LC_COLLATE=&quot;fr_FR.UTF-8&quot;
 </code></pre></div>
 
 <p>Exporter le langage actuel pour création dans initramfs</p>
-<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">LANG</span><span class="o">=</span><span class="n">fr_FR</span><span class="o">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">LANG</span><span class="o">=</span><span class="n">fr_FR</span><span class="o">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
 </code></pre></div>
 
 <p>Console, fonts, clavier azerty</p>
@@ -313,7 +313,7 @@ FONT_MAP=
 </code></pre></div>
 
 <p>Installation de paquets supplémentaires:</p>
-<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="n">networkmanager</span><span class="w"> </span><span class="n">network</span><span class="o">-</span><span class="n">manager</span><span class="o">-</span><span class="n">applet</span><span class="w"> </span><span class="n">dialog</span><span class="w"> </span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">reflector</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">headers</span><span class="w"> </span><span class="n">avahi</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">gvfs</span><span class="w"> </span><span class="n">gvfs</span><span class="o">-</span><span class="n">smb</span><span class="w"> </span><span class="n">nfs</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">inetutils</span><span class="w"> </span><span class="n">dnsutils</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="n">hplip</span><span class="w"> </span><span class="n">alsa</span><span class="o">-</span><span class="n">utils</span><span class="w"> </span><span class="n">pipewire</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">alsa</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">pulse</span><span class="w"> </span><span class="n">pipewire</span><span class="o">-</span><span class="n">jack</span><span class="w"> </span><span class="n">pavucontrol</span><span class="w"> </span><span class="n">bash</span><span class="o">-</span><span class="n">completion</span><span class="w"> </span><span class="n">openssh</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">acpi</span><span class="w"> </span><span class="n">acpi_call</span><span class="w"> </span><span class="n">tlp</span><span class="w"> </span><span class="n">ipset</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">sof</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">nss</span><span class="o">-</span><span class="n">mdns</span><span class="w"> </span><span class="n">acpid</span><span class="w"> </span><span class="n">ntfs</span><span class="o">-</span><span class="mh">3</span><span class="n">g</span><span class="w"> </span><span class="n">terminus</span><span class="o">-</span><span class="n">font</span><span class="w"> </span><span class="n">nano</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">db</span><span class="w"> </span><span class="n">man</span><span class="o">-</span><span class="n">pages</span><span class="w"> </span><span class="n">zip</span><span class="w"> </span><span class="n">p7zip</span><span class="w"> </span><span class="n">unzip</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">htop</span><span class="w"> </span><span class="n">tmux</span><span class="w"> </span><span class="n">wget</span><span class="w"> </span><span class="n">pciutils</span><span class="w"> </span><span class="n">lshw</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span>
 </code></pre></div>
 
 <p>Driver carte graphique, openGL, touchpad</p>
@@ -329,11 +329,11 @@ FONT_MAP=
 </code></pre></div>
 
 <p>Configuration générale du chargeur</p>
-<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">loader</span><span class="o">.</span><span class="n">conf</span><span class="w"></span>
-<span class="n">default</span><span class="w"> </span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span><span class="w"></span>
-<span class="n">editor</span><span class="w"> </span><span class="n">no</span><span class="w"></span>
-<span class="n">timeout</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
-<span class="n">console</span><span class="o">-</span><span class="n">mode</span><span class="w"> </span><span class="nb">max</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">loader</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">default</span><span class="w"> </span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">editor</span><span class="w"> </span><span class="n">no</span>
+<span class="n">timeout</span><span class="w"> </span><span class="mi">4</span>
+<span class="n">console</span><span class="o">-</span><span class="n">mode</span><span class="w"> </span><span class="nb">max</span>
 </code></pre></div>
 
 <p>Récupérez le champs UUID= de la partition LUKS</p>
@@ -341,13 +341,13 @@ FONT_MAP=
 </code></pre></div>
 
 <p>Configuration d’une entrée du menu de démarrage.</p>
-<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">entries</span><span class="o">/</span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">entries</span><span class="o">/</span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span>
 
-<span class="n">title</span><span class="w"> </span><span class="n">Arch</span><span class="w"> </span><span class="n">Linux</span><span class="w"></span>
-<span class="n">linux</span><span class="w"> </span><span class="o">/</span><span class="n">vmlinuz</span><span class="o">-</span><span class="n">linux</span><span class="w"></span>
-<span class="n">initrd</span><span class="w"> </span><span class="o">&lt;</span><span class="n">cpu</span><span class="o">&gt;-</span><span class="n">ucode</span><span class="o">.</span><span class="n">img</span><span class="w"></span>
-<span class="n">initrd</span><span class="w"> </span><span class="o">/</span><span class="n">initramfs</span><span class="o">-</span><span class="n">linux</span><span class="o">.</span><span class="n">img</span><span class="w"></span>
-<span class="n">options</span><span class="w"> </span><span class="n">rd</span><span class="o">.</span><span class="n">luks</span><span class="o">.</span><span class="n">uuid</span><span class="o">=&lt;</span><span class="n">UUID</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rd</span><span class="o">.</span><span class="n">luks</span><span class="o">.</span><span class="n">options</span><span class="o">=</span><span class="n">discard</span><span class="w"> </span><span class="n">root</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="n">rootflags</span><span class="o">=</span><span class="n">subvol</span><span class="o">=</span><span class="err">@</span><span class="w"> </span><span class="n">rw</span><span class="w"></span>
+<span class="n">title</span><span class="w"> </span><span class="n">Arch</span><span class="w"> </span><span class="n">Linux</span>
+<span class="n">linux</span><span class="w"> </span><span class="o">/</span><span class="n">vmlinuz</span><span class="o">-</span><span class="n">linux</span>
+<span class="n">initrd</span><span class="w"> </span><span class="o">&lt;</span><span class="n">cpu</span><span class="o">&gt;-</span><span class="n">ucode</span><span class="o">.</span><span class="n">img</span>
+<span class="n">initrd</span><span class="w"> </span><span class="o">/</span><span class="n">initramfs</span><span class="o">-</span><span class="n">linux</span><span class="o">.</span><span class="n">img</span>
+<span class="n">options</span><span class="w"> </span><span class="n">rd</span><span class="o">.</span><span class="n">luks</span><span class="o">.</span><span class="n">uuid</span><span class="o">=&lt;</span><span class="n">UUID</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rd</span><span class="o">.</span><span class="n">luks</span><span class="o">.</span><span class="n">options</span><span class="o">=</span><span class="n">discard</span><span class="w"> </span><span class="n">root</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="n">rootflags</span><span class="o">=</span><span class="n">subvol</span><span class="o">=</span><span class="err">@</span><span class="w"> </span><span class="n">rw</span>
 </code></pre></div>
 
 <h3>Activer les services systemD</h3>
@@ -376,7 +376,7 @@ passwd trivial
 
 <p>Démonter et reboot</p>
 <div class="highlight"><pre><span></span><code><span class="k">exit</span>
-<span class="nv">umount</span> <span class="o">-</span><span class="nv">R</span> <span class="o">/</span><span class="nv">mnt</span>
+<span class="nv">umount</span><span class="w"> </span><span class="o">-</span><span class="nv">R</span><span class="w"> </span><span class="o">/</span><span class="nv">mnt</span>
 <span class="nv">reboot</span>
 </code></pre></div>
 
@@ -435,7 +435,7 @@ greeter-session = lightdm-gtk-greeter
 </code></pre></div>
 
 <p>Configuration de xinitrc</p>
-<div class="highlight"><pre><span></span><code><span class="nv">echo</span> <span class="s2">&quot;</span><span class="s">exec startxfce4</span><span class="s2">&quot;</span> <span class="o">&gt;</span> <span class="o">~/</span>.<span class="nv">xinitrc</span>
+<div class="highlight"><pre><span></span><code><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;exec startxfce4&quot;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">~/</span>.<span class="nv">xinitrc</span>
 </code></pre></div>
 
 <p>Modification de la configuration du clavier sous Xorg</p>
@@ -477,75 +477,75 @@ EndSection
 
 <h4>Configuration de Oh-my-Zsh</h4>
 <p>Install Zsh</p>
-<div class="highlight"><pre><span></span><code>$ yay -S zsh oh-my-zsh-git
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>yay<span class="w"> </span>-S<span class="w"> </span>zsh<span class="w"> </span>oh-my-zsh-git
 </code></pre></div>
 
 <p>Mettre zsh shell par default</p>
-<div class="highlight"><pre><span></span><code>$ chsh -l
-$ chsh -s /usr/bin/zsh
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>chsh<span class="w"> </span>-l
+$<span class="w"> </span>chsh<span class="w"> </span>-s<span class="w"> </span>/usr/bin/zsh
 </code></pre></div>
 
 <p>Install et activer le thème powerlevel10k</p>
-<div class="highlight"><pre><span></span><code>$ yay -S --noconfirm zsh-theme-powerlevel10k-git
-$ <span class="nb">echo</span> <span class="s1">&#39;source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme&#39;</span> &gt;&gt;~/.zshrc
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>yay<span class="w"> </span>-S<span class="w"> </span>--noconfirm<span class="w"> </span>zsh-theme-powerlevel10k-git
+$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme&#39;</span><span class="w"> </span>&gt;&gt;~/.zshrc
 </code></pre></div>
 
 <p>Install nerd fond hack</p>
-<div class="highlight"><pre><span></span><code>yay -S nerd-fonts-hack
+<div class="highlight"><pre><span></span><code>yay<span class="w"> </span>-S<span class="w"> </span>nerd-fonts-hack
 </code></pre></div>
 
 <p>Fichier de configuration ~/.zshrc</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.</span>
 <span class="c1"># Initialization code that may require console input (password prompts, [y/n]</span>
 <span class="c1"># confirmations, etc.) must go above this block; everything else may go below.</span>
-<span class="k">if</span> <span class="o">[[</span> -r <span class="s2">&quot;</span><span class="si">${</span><span class="nv">XDG_CACHE_HOME</span><span class="k">:-</span><span class="nv">$HOME</span><span class="p">/.cache</span><span class="si">}</span><span class="s2">/p10k-instant-prompt-</span><span class="si">${</span><span class="p">(%)</span><span class="k">:-</span><span class="p">%n</span><span class="si">}</span><span class="s2">.zsh&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-  <span class="nb">source</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">XDG_CACHE_HOME</span><span class="k">:-</span><span class="nv">$HOME</span><span class="p">/.cache</span><span class="si">}</span><span class="s2">/p10k-instant-prompt-</span><span class="si">${</span><span class="p">(%)</span><span class="k">:-</span><span class="p">%n</span><span class="si">}</span><span class="s2">.zsh&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">XDG_CACHE_HOME</span><span class="k">:-</span><span class="nv">$HOME</span><span class="p">/.cache</span><span class="si">}</span><span class="s2">/p10k-instant-prompt-</span><span class="si">${</span><span class="p">(%)</span><span class="k">:-</span><span class="p">%n</span><span class="si">}</span><span class="s2">.zsh&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span><span class="nb">source</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">XDG_CACHE_HOME</span><span class="k">:-</span><span class="nv">$HOME</span><span class="p">/.cache</span><span class="si">}</span><span class="s2">/p10k-instant-prompt-</span><span class="si">${</span><span class="p">(%)</span><span class="k">:-</span><span class="p">%n</span><span class="si">}</span><span class="s2">.zsh&quot;</span>
 <span class="k">fi</span>
 
 <span class="c1"># Path to your oh-my-zsh installation.</span>
 <span class="nv">ZSH</span><span class="o">=</span>/usr/share/oh-my-zsh/
 
-<span class="nb">export</span> <span class="nv">DEFAULT_USER</span><span class="o">=</span><span class="s2">&quot;anth&quot;</span>
-<span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span><span class="s2">&quot;xterm-256color&quot;</span>
-<span class="nb">export</span> <span class="nv">ZSH</span><span class="o">=</span>/usr/share/oh-my-zsh
-<span class="nb">export</span> <span class="nv">ZSH_POWER_LEVEL_THEME</span><span class="o">=</span>/usr/share/zsh-theme-powerlevel10k
+<span class="nb">export</span><span class="w"> </span><span class="nv">DEFAULT_USER</span><span class="o">=</span><span class="s2">&quot;anth&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TERM</span><span class="o">=</span><span class="s2">&quot;xterm-256color&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ZSH</span><span class="o">=</span>/usr/share/oh-my-zsh
+<span class="nb">export</span><span class="w"> </span><span class="nv">ZSH_POWER_LEVEL_THEME</span><span class="o">=</span>/usr/share/zsh-theme-powerlevel10k
 
-<span class="nb">source</span> <span class="nv">$ZSH_POWER_LEVEL_THEME</span>/powerlevel10k.zsh-theme
+<span class="nb">source</span><span class="w"> </span><span class="nv">$ZSH_POWER_LEVEL_THEME</span>/powerlevel10k.zsh-theme
 
-<span class="nv">plugins</span><span class="o">=(</span>archlinux 
-    bundler 
-    docker 
-    jsontools 
-    vscode web-search 
-    tig 
-    gitfast 
-    colored-man-pages
-    colorize 
-    command-not-found 
-    cp 
-    dirhistory 
-    sudo
-    zsh-syntax-highlighting
-    zsh-autosuggestions<span class="o">)</span> 
+<span class="nv">plugins</span><span class="o">=(</span>archlinux<span class="w"> </span>
+<span class="w">    </span>bundler<span class="w"> </span>
+<span class="w">    </span>docker<span class="w"> </span>
+<span class="w">    </span>jsontools<span class="w"> </span>
+<span class="w">    </span>vscode<span class="w"> </span>web-search<span class="w"> </span>
+<span class="w">    </span>tig<span class="w"> </span>
+<span class="w">    </span>gitfast<span class="w"> </span>
+<span class="w">    </span>colored-man-pages
+<span class="w">    </span>colorize<span class="w"> </span>
+<span class="w">    </span>command-not-found<span class="w"> </span>
+<span class="w">    </span>cp<span class="w"> </span>
+<span class="w">    </span>dirhistory<span class="w"> </span>
+<span class="w">    </span>sudo
+<span class="w">    </span>zsh-syntax-highlighting
+<span class="w">    </span>zsh-autosuggestions<span class="o">)</span><span class="w"> </span>
 <span class="c1"># /!\ zsh-syntax-highlighting and then zsh-autosuggestions must be at the end</span>
 
-<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+<span class="nb">source</span><span class="w"> </span><span class="nv">$ZSH</span>/oh-my-zsh.sh
 
 <span class="c1"># Uncomment the following line to disable bi-weekly auto-update checks.</span>
 <span class="nv">DISABLE_AUTO_UPDATE</span><span class="o">=</span><span class="s2">&quot;true&quot;</span>
 
 <span class="nv">ZSH_CACHE_DIR</span><span class="o">=</span><span class="nv">$HOME</span>/.cache/oh-my-zsh
-<span class="k">if</span> <span class="o">[[</span> ! -d <span class="nv">$ZSH_CACHE_DIR</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-  mkdir <span class="nv">$ZSH_CACHE_DIR</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span><span class="nv">$ZSH_CACHE_DIR</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">  </span>mkdir<span class="w"> </span><span class="nv">$ZSH_CACHE_DIR</span>
 <span class="k">fi</span>
 
-<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+<span class="nb">source</span><span class="w"> </span><span class="nv">$ZSH</span>/oh-my-zsh.sh
 </code></pre></div>
 
 <p>Cloner les repos de zsh-syntax-highlighting et zsh-autosuggestions</p>
 <p>Dossier de travail: /usr/share/oh-my-zsh/customs/plugins</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/zsh-users/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git zsh-syntax-highlighting
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/zsh-users/zsh-autosuggestions
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/zsh-users/zsh-syntax-highlighting.git<span class="w"> </span>zsh-syntax-highlighting
 </code></pre></div>
 
 <p>redémarrer zsh</p>
@@ -587,7 +587,7 @@ yay -S eclipse-java
 
 <p>init.vim</p>
 <div class="highlight"><pre><span></span><code><span class="ss">&quot; Neovim configuration file init.vim</span>
-<span class="ss">&quot;</span><span class="w"> </span><span class="nl">author</span><span class="p">:</span><span class="w"> </span><span class="n">Anthony</span><span class="w"> </span><span class="n">J</span><span class="p">.</span><span class="n">R</span><span class="w"> </span><span class="n">Le</span><span class="w"> </span><span class="n">Goff</span><span class="w"> </span><span class="n">legoff</span><span class="p">.</span><span class="n">ant</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span><span class="w"></span>
+<span class="ss">&quot;</span><span class="w"> </span><span class="nl">author</span><span class="p">:</span><span class="w"> </span><span class="n">Anthony</span><span class="w"> </span><span class="n">J</span><span class="p">.</span><span class="n">R</span><span class="w"> </span><span class="n">Le</span><span class="w"> </span><span class="n">Goff</span><span class="w"> </span><span class="n">legoff</span><span class="p">.</span><span class="n">ant</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
 <span class="ss">&quot; date: 16th april 2022</span>
 
 <span class="ss">:set number</span>
@@ -596,53 +596,53 @@ yay -S eclipse-java
 <span class="ss">:set shiftwidth=4</span>
 <span class="ss">:set smarttab</span>
 <span class="ss">:set softtabstop=4</span>
-<span class="ss">&quot;</span><span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">mouse</span><span class="o">=</span><span class="n">a</span><span class="w"></span>
+<span class="ss">&quot;</span><span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">mouse</span><span class="o">=</span><span class="n">a</span>
 
 <span class="k">call</span><span class="w"> </span><span class="n">plug#begin</span><span class="p">()</span><span class="w"> </span>
 
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-fugitive&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-surround&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/nerdtree&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/syntastic&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;vim-airline/vim-airline&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tomasr/molokai&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;raimondi/delimitmate&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;kien/ctrlp.vim&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;ryanoasis/vim-devicons&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;majutsushi/tagbar&#39;</span><span class="w"></span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;neoclide/coc.nvim&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">{</span><span class="s1">&#39;branch&#39;</span><span class="err">:</span><span class="w"> </span><span class="s1">&#39;release&#39;</span><span class="err">}</span><span class="w"></span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-fugitive&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-surround&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/nerdtree&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/syntastic&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;vim-airline/vim-airline&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tomasr/molokai&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;raimondi/delimitmate&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;kien/ctrlp.vim&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;ryanoasis/vim-devicons&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;majutsushi/tagbar&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;neoclide/coc.nvim&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">{</span><span class="s1">&#39;branch&#39;</span><span class="err">:</span><span class="w"> </span><span class="s1">&#39;release&#39;</span><span class="err">}</span>
 
-<span class="k">set</span><span class="w"> </span><span class="n">encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span><span class="w"></span>
+<span class="k">set</span><span class="w"> </span><span class="n">encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
 
-<span class="k">call</span><span class="w"> </span><span class="n">plug#end</span><span class="p">()</span><span class="w"></span>
+<span class="k">call</span><span class="w"> </span><span class="n">plug#end</span><span class="p">()</span>
 
-<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="n">#warningmsg</span><span class="err">#</span><span class="w"></span>
-<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="err">{</span><span class="n">SyntasticStatuslineFlag</span><span class="p">()</span><span class="err">}</span><span class="w"></span>
-<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%*</span><span class="w"></span>
+<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="n">#warningmsg</span><span class="err">#</span>
+<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="err">{</span><span class="n">SyntasticStatuslineFlag</span><span class="p">()</span><span class="err">}</span>
+<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%*</span>
 
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_always_populate_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_auto_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_open</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_wq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_always_populate_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_auto_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_open</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_wq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
 
-<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">f</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeFocus</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span><span class="w"></span>
-<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">n</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTree</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span><span class="w"></span>
-<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">t</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">f</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeFocus</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">n</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTree</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">t</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
 
-<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">r</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">TagbarToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span><span class="w"></span>
-<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">p</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">CtrlP</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span><span class="w"></span>
+<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">r</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">TagbarToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">p</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">CtrlP</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
 
-<span class="err">:</span><span class="n">colorscheme</span><span class="w"> </span><span class="n">molokai</span><span class="w"></span>
+<span class="err">:</span><span class="n">colorscheme</span><span class="w"> </span><span class="n">molokai</span>
 
-<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowExpandable</span><span class="o">=</span><span class="ss">&quot;+&quot;</span><span class="w"></span>
-<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowCollapsible</span><span class="o">=</span><span class="ss">&quot;~&quot;</span><span class="w"></span>
+<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowExpandable</span><span class="o">=</span><span class="ss">&quot;+&quot;</span>
+<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowCollapsible</span><span class="o">=</span><span class="ss">&quot;~&quot;</span>
 
 <span class="ss">&quot; air-line</span>
 <span class="ss">let g:airline_powerline_fonts = 1</span>
 
 
-<span class="ss">&quot;</span><span class="w"> </span><span class="err">:</span><span class="n">CocInstall</span><span class="w"> </span><span class="n">coc</span><span class="o">-</span><span class="n">python</span><span class="w"></span>
-<span class="err">&quot;</span><span class="w"> </span><span class="err">:</span><span class="n">CocInstall</span><span class="w"> </span><span class="n">coc</span><span class="o">-</span><span class="n">clangd</span><span class="w"></span>
+<span class="ss">&quot;</span><span class="w"> </span><span class="err">:</span><span class="n">CocInstall</span><span class="w"> </span><span class="n">coc</span><span class="o">-</span><span class="n">python</span>
+<span class="err">&quot;</span><span class="w"> </span><span class="err">:</span><span class="n">CocInstall</span><span class="w"> </span><span class="n">coc</span><span class="o">-</span><span class="n">clangd</span>
 </code></pre></div>
 
 <h4>Outils de Hacking, pentesting, bug bounty, CTF</h4>
@@ -657,7 +657,7 @@ sudo ./ strap.sh
 </code></pre></div>
 
 <p>Installation des outils basics</p>
-<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">blackman</span><span class="w"> </span><span class="o">-</span><span class="n">i</span><span class="w"> </span><span class="n">nmap</span><span class="w"> </span><span class="n">impacket</span><span class="w"> </span><span class="n">whireshark</span><span class="w"> </span><span class="n">tcpdump</span><span class="w"> </span><span class="n">ruby</span><span class="w"> </span><span class="n">hashcat</span><span class="w"> </span><span class="n">john</span><span class="w"> </span><span class="n">proxychains</span><span class="o">-</span><span class="n">ng</span><span class="w"> </span><span class="n">exploitdb</span><span class="w"> </span><span class="n">httpie</span><span class="w"> </span><span class="n">metasploit</span><span class="w"> </span><span class="n">armitage</span><span class="w"> </span><span class="n">bind</span><span class="o">-</span><span class="n">tools</span><span class="w"> </span><span class="n">radare2</span><span class="w"> </span><span class="n">sqlmap</span><span class="w"> </span><span class="n">wpscan</span><span class="w"> </span><span class="n">xclip</span><span class="w"> </span><span class="n">beef</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="n">ufonet</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">blackman</span><span class="w"> </span><span class="o">-</span><span class="n">i</span><span class="w"> </span><span class="n">nmap</span><span class="w"> </span><span class="n">impacket</span><span class="w"> </span><span class="n">whireshark</span><span class="w"> </span><span class="n">tcpdump</span><span class="w"> </span><span class="n">ruby</span><span class="w"> </span><span class="n">hashcat</span><span class="w"> </span><span class="n">john</span><span class="w"> </span><span class="n">proxychains</span><span class="o">-</span><span class="n">ng</span><span class="w"> </span><span class="n">exploitdb</span><span class="w"> </span><span class="n">httpie</span><span class="w"> </span><span class="n">metasploit</span><span class="w"> </span><span class="n">armitage</span><span class="w"> </span><span class="n">bind</span><span class="o">-</span><span class="n">tools</span><span class="w"> </span><span class="n">radare2</span><span class="w"> </span><span class="n">sqlmap</span><span class="w"> </span><span class="n">wpscan</span><span class="w"> </span><span class="n">xclip</span><span class="w"> </span><span class="n">beef</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="n">ufonet</span>
 </code></pre></div>
 
 <p>Configuration WordLists</p>
@@ -711,7 +711,7 @@ wget -q https://github.com/danielmiessler/SecLists/raw/master/Discovery/Web-Cont
 </code></pre></div>
 
 <p>Recherchement des règles du pare-feu pour finir :</p>
-<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">reload</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">reload</span>
 </code></pre></div>
 
 <h3>Services Cloud</h3>
@@ -721,11 +721,11 @@ wget -q https://github.com/danielmiessler/SecLists/raw/master/Discovery/Web-Cont
 </code></pre></div>
 
 <p>Ajoutez ces lignes:</p>
-<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="n">##Repository</span><span class="w"> </span><span class="n">oficial</span><span class="w"> </span><span class="n">MEGA</span><span class="err">###</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="n">##Repository</span><span class="w"> </span><span class="n">oficial</span><span class="w"> </span><span class="n">MEGA</span><span class="err">###</span>
 
-<span class="o">[</span><span class="n">DEB_Arch_Extra</span><span class="o">]</span><span class="w"></span>
-<span class="n">SigLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="w"> </span><span class="n">TrustAll</span><span class="w"></span>
-<span class="n">Server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">mega</span><span class="p">.</span><span class="n">nz</span><span class="o">/</span><span class="n">linux</span><span class="o">/</span><span class="n">MEGAsync</span><span class="o">/</span><span class="n">Arch_Extra</span><span class="o">/</span><span class="err">$</span><span class="n">arch</span><span class="w"></span>
+<span class="o">[</span><span class="n">DEB_Arch_Extra</span><span class="o">]</span>
+<span class="n">SigLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Optional</span><span class="w"> </span><span class="n">TrustAll</span>
+<span class="n">Server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">mega</span><span class="p">.</span><span class="n">nz</span><span class="o">/</span><span class="n">linux</span><span class="o">/</span><span class="n">MEGAsync</span><span class="o">/</span><span class="n">Arch_Extra</span><span class="o">/</span><span class="err">$</span><span class="n">arch</span>
 </code></pre></div>
 
 <p>Mettre à jour pacman</p>
@@ -747,7 +747,7 @@ wget -q https://github.com/danielmiessler/SecLists/raw/master/Discovery/Web-Cont
 </code></pre></div>
 
 <p>Connect to the VPN:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">protonvpn</span><span class="o">-</span><span class="nv">cli</span> <span class="k">connect</span>
+<div class="highlight"><pre><span></span><code><span class="nv">protonvpn</span><span class="o">-</span><span class="nv">cli</span><span class="w"> </span><span class="k">connect</span>
 </code></pre></div>
 
 <p>Pour créer un compte protonVPN: <a href="https://protonvpn.com/free-vpn/linux/">https://protonvpn.com/free-vpn/linux/</a></p>

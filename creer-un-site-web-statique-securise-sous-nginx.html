@@ -146,54 +146,54 @@
 <h3>Première connexion au VPS</h3>
 <p>Vous allez recevoir à votre achat de VPS via email les identifiants pour une connexion à distance via SSH. Vous avez besoin de l'adresse IPv4 et de l'identifiant avec un mot de passe provisoire.</p>
 <p>Depuis un terminal(natif sous UNIX-like) connecter vous au serveur:</p>
-<div class="highlight"><pre><span></span><code><span class="n">ssh</span><span class="w"> </span><span class="n">root</span><span class="mf">@23.2.34.7</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">ssh</span><span class="w"> </span><span class="n">root</span><span class="mf">@23.2.34.7</span>
 </code></pre></div>
 
 <p>Dans cette exemple on ce connecte en root sur l'IP 23.2.34.7. Votre mot de passe sera demandé une fois la connexion établie. L'identifiant, ici root peu changer.</p>
 <p>Bien maintenant installons le serveur. Une fois sur le serveur votre prompt change avec le nom de celui-ci et un message d'accueil, le MOTD.</p>
 <h3>Installation du serveur</h3>
 <p>Vérifier et installer que vous avez un éditeur de texte ainsi que la completion pour bash:</p>
-<div class="highlight"><pre><span></span><code>$ apt install nano vim bash-completion
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nano<span class="w"> </span>vim<span class="w"> </span>bash-completion
 </code></pre></div>
 
 <p>Configurer l'hosts réseau en fonction de votre nom de domaine:</p>
-<div class="highlight"><pre><span></span><code>$ nano /etc/hosts
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nano<span class="w"> </span>/etc/hosts
 
-<span class="m">127</span>.0.0.1       localhost.qasari.net   localhost
-<span class="m">37</span>.187.181.161  qasari.net     qasari
+<span class="m">127</span>.0.0.1<span class="w">       </span>localhost.qasari.net<span class="w">   </span>localhost
+<span class="m">37</span>.187.181.161<span class="w">  </span>qasari.net<span class="w">     </span>qasari
 
 <span class="c1"># Ligne désirée si en configuration IPv6</span>
-::1     localhost ip6-localhost ip6-loopback
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
+::1<span class="w">     </span>localhost<span class="w"> </span>ip6-localhost<span class="w"> </span>ip6-loopback
+ff02::1<span class="w"> </span>ip6-allnodes
+ff02::2<span class="w"> </span>ip6-allrouters
 </code></pre></div>
 
 <p>Changer le nom du serveur:</p>
-<div class="highlight"><pre><span></span><code>$ nano /etc/hostname
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nano<span class="w"> </span>/etc/hostname
 
 qasari
 </code></pre></div>
 
 <p>Relancer le serveur pour que la configuration prenne effet puis reconnecter vous en ssh:</p>
-<div class="highlight"><pre><span></span><code>$ reboot
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>reboot
 </code></pre></div>
 
 <p>Vérifier si le nom du serveur est correct:</p>
-<div class="highlight"><pre><span></span><code>$ hostname
-$ hostname -f
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>hostname
+$<span class="w"> </span>hostname<span class="w"> </span>-f
 </code></pre></div>
 
 <p>Mettre à jour le système avec les sources des paquets. Ajoutez contrib non-free:</p>
 <div class="highlight"><pre><span></span><code><span class="err">$</span><span class="w"> </span><span class="err">nano</span><span class="w"> </span><span class="err">/etc/apt/sources.list</span><span class="w"> </span>
 
-<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span><span class="w"></span>
-<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span><span class="w"></span>
+<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
+<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
 
-<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian-security</span><span class="w"> </span><span class="kp">bullseye/updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span><span class="w"></span>
-<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian-security</span><span class="w"> </span><span class="kp">bullseye/updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span><span class="w"></span>
+<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian-security</span><span class="w"> </span><span class="kp">bullseye/updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
+<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian-security</span><span class="w"> </span><span class="kp">bullseye/updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
 
-<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye-updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span><span class="w"></span>
-<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye-updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span><span class="w"></span>
+<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye-updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
+<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye-updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
 </code></pre></div>
 
 <p>Mise à jour du système:</p>

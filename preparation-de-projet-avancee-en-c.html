@@ -165,14 +165,14 @@
 <li><a href="https://hackingcpp.com/">Hackingcpp</a></li>
 </ul>
 <p>Ce que l'on va construire pour notre projet, un template avec une arborescence root "spaceinvaders":</p>
-<div class="highlight"><pre><span></span><code><span class="na">.git</span><span class="w"></span>
-<span class="na">.gitignore</span><span class="w"></span>
-<span class="nf">build</span><span class="err">/</span><span class="w"></span>
-<span class="nf">docs</span><span class="err">/</span><span class="no">CMakeLists.txt</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="no">Doxyfile.in</span><span class="w"></span>
-<span class="nf">src</span><span class="err">/</span><span class="no">CmakeLists.txt</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="p">*.</span><span class="no">cpp</span><span class="p">,</span><span class="w"> </span><span class="p">*.</span><span class="no">hpp</span><span class="w"></span>
-<span class="nf">CMakeLists.txt</span><span class="w"></span>
-<span class="nf">README.md</span><span class="w"></span>
-<span class="nf">LICENCE</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="na">.git</span>
+<span class="na">.gitignore</span>
+<span class="nf">build</span><span class="err">/</span>
+<span class="nf">docs</span><span class="err">/</span><span class="no">CMakeLists.txt</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="no">Doxyfile.in</span>
+<span class="nf">src</span><span class="err">/</span><span class="no">CmakeLists.txt</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="p">*.</span><span class="no">cpp</span><span class="p">,</span><span class="w"> </span><span class="p">*.</span><span class="no">hpp</span>
+<span class="nf">CMakeLists.txt</span>
+<span class="nf">README.md</span>
+<span class="nf">LICENCE</span>
 </code></pre></div>
 
 <p><strong>Paquets prérequis en particulier quelques librairies externes C++ utiles pour les développeurs et ingénieurs:</strong></p>
@@ -196,33 +196,33 @@
 <li>sfml A simple, fast, cross-platform, objet-oriented multimedia API</li>
 </ul>
 <p><strong>Créer votre dossier</strong> <code>sources</code> dans /home ou vous allez y mettre vos projets</p>
-<div class="highlight"><pre><span></span><code>$ mkdir ~/sources
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>~/sources
 </code></pre></div>
 
 <h3>1. Configurer Git</h3>
 <p>Nous allons d'abord configurer Git pour les nouveaux venus et apprendre le contrôle de version. Vous trouverez sur internet <a href="https://www.youtube.com/watch?v=lhiSnzrvG48">des tutoriels</a> pour gérer votre code.</p>
 <p>Dans un terminal &gt;</p>
 <p><strong>Votre identité</strong></p>
-<div class="highlight"><pre><span></span><code>$ git config --global user.name <span class="s2">&quot;Anthony Le Goff&quot;</span>
-$ git config --global user.mail triviality-lga@protonmail.com
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Anthony Le Goff&quot;</span>
+$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.mail<span class="w"> </span>triviality-lga@protonmail.com
 </code></pre></div>
 
 <p><strong>Votre éditeur de texte</strong></p>
-<div class="highlight"><pre><span></span><code>$ git config --global core.editor nvim
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>nvim
 </code></pre></div>
 
 <p><strong>Votre nom de branche par défaut</strong></p>
-<div class="highlight"><pre><span></span><code>$ git config --global init.defaultBranch main
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span>main
 </code></pre></div>
 
 <p><strong>Vérifier les paramètres</strong></p>
-<div class="highlight"><pre><span></span><code>$ git config --List
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--List
 </code></pre></div>
 
 <h3>2. Générer des clés publiques SSH</h3>
 <p>Si vous le savez pas encore, l'authentification sous Github utilise maintenant SSH par défaut, il faut donc générer une paire de clé et l'ajouter dans Github pour ce connecter au dépôt distant.</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ~/.ssh
-$ ssh-keygen -o
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/.ssh
+$<span class="w"> </span>ssh-keygen<span class="w"> </span>-o
 </code></pre></div>
 
 <p>Suivez la procédure et créer un mot de passe</p>
@@ -242,7 +242,7 @@ $ ssh-keygen -o
 <li>Choose a licence: GNU General Public Licence v3.0</li>
 </ul>
 <p>Cliquez sur "Create repository" puis sur le bouton vert Code/ssh et copiez la ligne:</p>
-<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">monPseudo</span><span class="o">&gt;/</span><span class="n">spaceinvaders</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">monPseudo</span><span class="o">&gt;/</span><span class="n">spaceinvaders</span><span class="p">.</span><span class="n">git</span>
 </code></pre></div>
 
 <h3>5. Cloner votre repository en local</h3>
@@ -251,7 +251,7 @@ $ ssh-keygen -o
 </code></pre></div>
 
 <p>puis cloner le repo git:</p>
-<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">monPseudo</span><span class="o">&gt;/</span><span class="n">spaceinvaders</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">monPseudo</span><span class="o">&gt;/</span><span class="n">spaceinvaders</span><span class="p">.</span><span class="n">git</span>
 </code></pre></div>
 
 <p>Vous avez maintenant un nouveau dossier "spaceinvaders" avec quelques fichiers copiez depuis le dépôt distant Github.</p>
@@ -274,7 +274,7 @@ $ ssh-keygen -o
 <p>N'oubliez pas de créer votre config file dans <code>~/.config/nvim/init.vim</code></p>
 <p>Mon propre init.vim pour information:</p>
 <div class="highlight"><pre><span></span><code><span class="s2">&quot; Neovim configuration file init.vim</span>
-<span class="s2">&quot;</span> author: Anthony J.R Le Goff 
+<span class="s2">&quot;</span><span class="w"> </span>author:<span class="w"> </span>Anthony<span class="w"> </span>J.R<span class="w"> </span>Le<span class="w"> </span>Goff<span class="w"> </span>
 <span class="s2">&quot; date: 16th april 2022</span>
 
 <span class="s2">:set number</span>
@@ -283,54 +283,54 @@ $ ssh-keygen -o
 <span class="s2">:set shiftwidth=4</span>
 <span class="s2">:set smarttab</span>
 <span class="s2">:set softtabstop=4</span>
-<span class="s2">&quot;</span>:set <span class="nv">mouse</span><span class="o">=</span>a
+<span class="s2">&quot;</span>:set<span class="w"> </span><span class="nv">mouse</span><span class="o">=</span>a
 
-call plug#begin<span class="o">()</span> 
+call<span class="w"> </span>plug#begin<span class="o">()</span><span class="w"> </span>
 
-Plug <span class="s1">&#39;tpope/vim-fugitive&#39;</span>
-Plug <span class="s1">&#39;tpope/vim-surround&#39;</span>
-Plug <span class="s1">&#39;scrooloose/nerdtree&#39;</span>
-Plug <span class="s1">&#39;scrooloose/syntastic&#39;</span>
-Plug <span class="s1">&#39;vim-airline/vim-airline&#39;</span>
-Plug <span class="s1">&#39;tomasr/molokai&#39;</span>
-Plug <span class="s1">&#39;raimondi/delimitmate&#39;</span>
-Plug <span class="s1">&#39;kien/ctrlp.vim&#39;</span>
-Plug <span class="s1">&#39;ryanoasis/vim-devicons&#39;</span>
-Plug <span class="s1">&#39;majutsushi/tagbar&#39;</span>
-Plug <span class="s1">&#39;neoclide/coc.nvim&#39;</span>, <span class="o">{</span><span class="s1">&#39;branch&#39;</span>: <span class="s1">&#39;release&#39;</span><span class="o">}</span>
+Plug<span class="w"> </span><span class="s1">&#39;tpope/vim-fugitive&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;tpope/vim-surround&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;scrooloose/nerdtree&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;scrooloose/syntastic&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;vim-airline/vim-airline&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;tomasr/molokai&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;raimondi/delimitmate&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;kien/ctrlp.vim&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;ryanoasis/vim-devicons&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;majutsushi/tagbar&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;neoclide/coc.nvim&#39;</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;branch&#39;</span>:<span class="w"> </span><span class="s1">&#39;release&#39;</span><span class="o">}</span>
 
-<span class="nb">set</span> <span class="nv">encoding</span><span class="o">=</span>UTF-8
+<span class="nb">set</span><span class="w"> </span><span class="nv">encoding</span><span class="o">=</span>UTF-8
 
-call plug#end<span class="o">()</span>
+call<span class="w"> </span>plug#end<span class="o">()</span>
 
-:set <span class="nv">statusline</span><span class="o">+=</span>%#warningmsg#
-:set <span class="nv">statusline</span><span class="o">+=</span>%<span class="o">{</span>SyntasticStatuslineFlag<span class="o">()}</span>
-:set <span class="nv">statusline</span><span class="o">+=</span>%*
+:set<span class="w"> </span><span class="nv">statusline</span><span class="o">+=</span>%#warningmsg#
+:set<span class="w"> </span><span class="nv">statusline</span><span class="o">+=</span>%<span class="o">{</span>SyntasticStatuslineFlag<span class="o">()}</span>
+:set<span class="w"> </span><span class="nv">statusline</span><span class="o">+=</span>%*
 
-:let g:syntastic_always_populate_loc_list <span class="o">=</span> <span class="m">1</span>
-:let g:syntastic_auto_loc_list <span class="o">=</span> <span class="m">1</span>
-:let g:syntastic_check_on_open <span class="o">=</span> <span class="m">1</span>
-:let g:syntastic_check_on_wq <span class="o">=</span> <span class="m">0</span>
+:let<span class="w"> </span>g:syntastic_always_populate_loc_list<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+:let<span class="w"> </span>g:syntastic_auto_loc_list<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+:let<span class="w"> </span>g:syntastic_check_on_open<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+:let<span class="w"> </span>g:syntastic_check_on_wq<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
 
-nnoremap &lt;C-f&gt; :NERDTreeFocus&lt;CR&gt;
-nnoremap &lt;C-n&gt; :NERDTree&lt;CR&gt;
-nnoremap &lt;C-t&gt; :NERDTreeToggle&lt;CR&gt;
+nnoremap<span class="w"> </span>&lt;C-f&gt;<span class="w"> </span>:NERDTreeFocus&lt;CR&gt;
+nnoremap<span class="w"> </span>&lt;C-n&gt;<span class="w"> </span>:NERDTree&lt;CR&gt;
+nnoremap<span class="w"> </span>&lt;C-t&gt;<span class="w"> </span>:NERDTreeToggle&lt;CR&gt;
 
-nmap &lt;C-r&gt; :TagbarToggle&lt;CR&gt;
-nmap &lt;C-p&gt; :CtrlP&lt;CR&gt;
+nmap<span class="w"> </span>&lt;C-r&gt;<span class="w"> </span>:TagbarToggle&lt;CR&gt;
+nmap<span class="w"> </span>&lt;C-p&gt;<span class="w"> </span>:CtrlP&lt;CR&gt;
 
-:colorscheme molokai
+:colorscheme<span class="w"> </span>molokai
 
-<span class="nb">let</span> g:NERDTreeDirArrowExpandable<span class="o">=</span><span class="s2">&quot;+&quot;</span>
-<span class="nb">let</span> g:NERDTreeDirArrowCollapsible<span class="o">=</span><span class="s2">&quot;~&quot;</span>
+<span class="nb">let</span><span class="w"> </span>g:NERDTreeDirArrowExpandable<span class="o">=</span><span class="s2">&quot;+&quot;</span>
+<span class="nb">let</span><span class="w"> </span>g:NERDTreeDirArrowCollapsible<span class="o">=</span><span class="s2">&quot;~&quot;</span>
 
 <span class="s2">&quot; air-line</span>
 <span class="s2">let g:airline_powerline_fonts = 1</span>
 
 
-<span class="s2">&quot;</span> :CocInstall coc-python
+<span class="s2">&quot;</span><span class="w"> </span>:CocInstall<span class="w"> </span>coc-python
 <span class="s2">&quot; :CocInstall coc-clangd</span>
-<span class="s2">&quot;</span> :CocInstall coc-java
+<span class="s2">&quot;</span><span class="w"> </span>:CocInstall<span class="w"> </span>coc-java
 </code></pre></div>
 
 <h3>8. Cmake + Doxygen</h3>
@@ -341,7 +341,7 @@ nmap &lt;C-p&gt; :CtrlP&lt;CR&gt;
 </ul>
 <p>Nos fichiers de configurations pour notre projet:</p>
 <p>spaceinvaders/CMakeLists.txt</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cmake_minimum_required</span> <span class="p">(</span><span class="w"> </span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.10</span><span class="w"> </span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nb">cmake_minimum_required</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.10</span><span class="w"> </span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_BUILD_TYPE</span><span class="w"> </span><span class="s">Release</span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD</span><span class="w"> </span><span class="s">17</span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD_REQUIRED</span><span class="w"> </span><span class="s">ON</span><span class="p">)</span>
@@ -351,94 +351,94 @@ nmap &lt;C-p&gt; :CtrlP&lt;CR&gt;
 </code></pre></div>
 
 <p>spaceinvaders/src/CMakeLists.txt</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Dependance de librairie externe</span><span class="w"></span>
-<span class="n">find_package</span><span class="p">(</span><span class="n">SFML</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="n">REQUIRED</span><span class="w"> </span><span class="n">network</span><span class="w"> </span><span class="n">audio</span><span class="w"> </span><span class="n">graphics</span><span class="w"> </span><span class="n">window</span><span class="w"> </span><span class="n">system</span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="nx">Dependance</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">librairie</span><span class="w"> </span><span class="nx">externe</span>
+<span class="nx">find_package</span><span class="p">(</span><span class="nx">SFML</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="nx">REQUIRED</span><span class="w"> </span><span class="nx">network</span><span class="w"> </span><span class="nx">audio</span><span class="w"> </span><span class="nx">graphics</span><span class="w"> </span><span class="nx">window</span><span class="w"> </span><span class="nx">system</span><span class="p">)</span>
 
-<span class="n">add_executable</span><span class="p">(</span><span class="n">mainDemo</span><span class="w"> </span><span class="n">main</span><span class="o">.</span><span class="n">cpp</span><span class="p">)</span><span class="w"></span>
-<span class="n">target_compile_options</span><span class="p">(</span><span class="n">mainDemo</span><span class="w"> </span><span class="n">PUBLIC</span><span class="w"> </span><span class="o">-</span><span class="n">Wall</span><span class="w"> </span><span class="o">-</span><span class="n">Wextra</span><span class="p">)</span><span class="w"></span>
+<span class="nx">add_executable</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">main</span><span class="p">.</span><span class="nx">cpp</span><span class="p">)</span>
+<span class="nx">target_compile_options</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">PUBLIC</span><span class="w"> </span><span class="o">-</span><span class="nx">Wall</span><span class="w"> </span><span class="o">-</span><span class="nx">Wextra</span><span class="p">)</span>
 
-<span class="c1"># On install le binaire</span><span class="w"></span>
-<span class="n">install</span><span class="p">(</span><span class="n">PROGRAMS</span><span class="w"> </span><span class="o">$</span><span class="p">{</span><span class="n">CMAKE_CURRENT_BINARY_DIR</span><span class="p">}</span><span class="o">/</span><span class="n">mainDemo</span><span class="w"></span>
-<span class="w">    </span><span class="n">DESTINATION</span><span class="w"> </span><span class="n">bin</span><span class="w"></span>
-<span class="w">    </span><span class="n">RENAME</span><span class="w"> </span><span class="o">$</span><span class="p">{</span><span class="n">CMAKE_PROJECT_NAME</span><span class="p">}</span><span class="o">-</span><span class="n">mainDemo</span><span class="p">)</span><span class="w"></span>
+<span class="err">#</span><span class="w"> </span><span class="nx">On</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">binaire</span>
+<span class="nx">install</span><span class="p">(</span><span class="nx">PROGRAMS</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">CMAKE_CURRENT_BINARY_DIR</span><span class="p">}</span><span class="o">/</span><span class="nx">mainDemo</span>
+<span class="w">    </span><span class="nx">DESTINATION</span><span class="w"> </span><span class="nx">bin</span>
+<span class="w">    </span><span class="nx">RENAME</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">CMAKE_PROJECT_NAME</span><span class="p">}</span><span class="o">-</span><span class="nx">mainDemo</span><span class="p">)</span>
 
-<span class="c1"># On construit le binaire avec SFML</span><span class="w"></span>
-<span class="n">target_include_directories</span><span class="p">(</span><span class="n">mainDemo</span><span class="w"> </span><span class="n">PUBLIC</span><span class="w"> </span><span class="o">$</span><span class="p">{</span><span class="n">SFML_INCLUDE_DIR</span><span class="p">})</span><span class="w"></span>
-<span class="n">target_link_librairies</span><span class="p">(</span><span class="n">mainDemo</span><span class="w"> </span><span class="n">PUBLIC</span><span class="w"> </span><span class="o">$</span><span class="p">{</span><span class="n">SFML_LIBRARIES</span><span class="p">}</span><span class="w"> </span><span class="o">$</span><span class="p">{</span><span class="n">SFML_DEPENDENCIES</span><span class="p">})</span><span class="w"></span>
+<span class="err">#</span><span class="w"> </span><span class="nx">On</span><span class="w"> </span><span class="nx">construit</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">binaire</span><span class="w"> </span><span class="nx">avec</span><span class="w"> </span><span class="nx">SFML</span>
+<span class="nx">target_include_directories</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">PUBLIC</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">SFML_INCLUDE_DIR</span><span class="p">})</span>
+<span class="nx">target_link_librairies</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">PUBLIC</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">SFML_LIBRARIES</span><span class="p">}</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">SFML_DEPENDENCIES</span><span class="p">})</span>
 
-<span class="c1"># Librairie dynamique headers</span><span class="w"></span>
+<span class="err">#</span><span class="w"> </span><span class="nx">Librairie</span><span class="w"> </span><span class="nx">dynamique</span><span class="w"> </span><span class="nx">headers</span>
 
-<span class="n">add_library</span><span class="p">(</span><span class="n">mainDemo</span><span class="w"></span>
-<span class="w">    </span><span class="n">SHARED</span><span class="w"></span>
-<span class="w">    </span><span class="n">main</span><span class="o">.</span><span class="n">cpp</span><span class="p">)</span><span class="w"></span>
+<span class="nx">add_library</span><span class="p">(</span><span class="nx">mainDemo</span>
+<span class="w">    </span><span class="nx">SHARED</span>
+<span class="w">    </span><span class="nx">main</span><span class="p">.</span><span class="nx">cpp</span><span class="p">)</span>
 
-<span class="n">install</span><span class="p">(</span><span class="n">TARGETS</span><span class="w"> </span><span class="n">mainDemo</span><span class="w"></span>
-<span class="w">    </span><span class="n">DESTINATION</span><span class="w"> </span><span class="n">lib</span><span class="p">)</span><span class="w"></span>
+<span class="nx">install</span><span class="p">(</span><span class="nx">TARGETS</span><span class="w"> </span><span class="nx">mainDemo</span>
+<span class="w">    </span><span class="nx">DESTINATION</span><span class="w"> </span><span class="nx">lib</span><span class="p">)</span>
 
-<span class="n">file</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">GLOB</span><span class="w"></span>
-<span class="w">    </span><span class="n">headers</span><span class="w"></span>
-<span class="w">    </span><span class="o">*.</span><span class="n">hpp</span><span class="w"></span>
-<span class="p">)</span><span class="w"></span>
+<span class="nx">file</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">GLOB</span>
+<span class="w">    </span><span class="nx">headers</span>
+<span class="w">    </span><span class="o">*</span><span class="p">.</span><span class="nx">hpp</span>
+<span class="p">)</span>
 </code></pre></div>
 
 <p><strong>Préparation de la documentation</strong></p>
 <p>On utilise le programme Doxygen pour générer le fichier de configuration dans le dossier <code>spaceinvaders/docs/</code>:</p>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ~/sources/spaceinvaders
-$ mkdir docs
-$ <span class="nb">cd</span> docs
-$ doxygen -g Doxyfile.in
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/sources/spaceinvaders
+$<span class="w"> </span>mkdir<span class="w"> </span>docs
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>docs
+$<span class="w"> </span>doxygen<span class="w"> </span>-g<span class="w"> </span>Doxyfile.in
 </code></pre></div>
 
 <p>On édite le fichier avec neovim pour le configurer avec cmake:</p>
-<div class="highlight"><pre><span></span><code>      PROJECT_NAME           = <span class="cp">${</span><span class="n">CMAKE_PROJECT_NAME</span><span class="cp">}</span>
-      OUTPUT_DIRECTORY       = <span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/
-      INPUT                  = <span class="cp">${</span><span class="n">CMAKE_SOURCE_DIR</span><span class="cp">}</span>/src
-      EXTRACT_ALL            = YES
+<div class="highlight"><pre><span></span><code><span class="w">      </span>PROJECT_NAME<span class="w">           </span>=<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_PROJECT_NAME</span><span class="cp">}</span>
+<span class="w">      </span>OUTPUT_DIRECTORY<span class="w">       </span>=<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/
+<span class="w">      </span>INPUT<span class="w">                  </span>=<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_SOURCE_DIR</span><span class="cp">}</span>/src
+<span class="w">      </span>EXTRACT_ALL<span class="w">            </span>=<span class="w"> </span>YES
 </code></pre></div>
 
 <p>spaceinvaders/docs/CMakeLists.txt</p>
 <div class="highlight"><pre><span></span><code>find_package(Doxygen)
-if(NOT DOXYGEN_FOUND)
-    message(&quot;Doxygen not found, I will not generate/install the documentation&quot;)
+if(NOT<span class="w"> </span>DOXYGEN_FOUND)
+<span class="w">    </span>message(&quot;Doxygen<span class="w"> </span>not<span class="w"> </span>found,<span class="w"> </span>I<span class="w"> </span>will<span class="w"> </span>not<span class="w"> </span>generate/install<span class="w"> </span>the<span class="w"> </span>documentation&quot;)
 else()
-   configure_file(Doxyfile.in Doxyfile)
+<span class="w">   </span>configure_file(Doxyfile.in<span class="w"> </span>Doxyfile)
 
-   set(DOXYGEN_INPUT <span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/Doxyfile.in)
-   set(DOXYGEN_OUTPUT <span class="cp">${</span><span class="n">APIDOC_DIR</span><span class="cp">}</span>/html/index.html)
+<span class="w">   </span>set(DOXYGEN_INPUT<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/Doxyfile.in)
+<span class="w">   </span>set(DOXYGEN_OUTPUT<span class="w"> </span><span class="cp">${</span><span class="n">APIDOC_DIR</span><span class="cp">}</span>/html/index.html)
 
-   add_custom_target(docs ALL
-     COMMAND <span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span> -E echo_append &quot;Building API Documentation...&quot;
-     COMMAND <span class="cp">${</span><span class="n">DOXYGEN_EXECUTABLE</span><span class="cp">}</span> <span class="cp">${</span><span class="n">DOXYGEN_INPUT</span><span class="cp">}</span> &gt; /dev/null
-     COMMAND <span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span> -E echo &quot;Done.&quot;
-     )
+<span class="w">   </span>add_custom_target(docs<span class="w"> </span>ALL
+<span class="w">     </span>COMMAND<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span><span class="w"> </span>-E<span class="w"> </span>echo_append<span class="w"> </span>&quot;Building<span class="w"> </span>API<span class="w"> </span>Documentation...&quot;
+<span class="w">     </span>COMMAND<span class="w"> </span><span class="cp">${</span><span class="n">DOXYGEN_EXECUTABLE</span><span class="cp">}</span><span class="w"> </span><span class="cp">${</span><span class="n">DOXYGEN_INPUT</span><span class="cp">}</span><span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+<span class="w">     </span>COMMAND<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span><span class="w"> </span>-E<span class="w"> </span>echo<span class="w"> </span>&quot;Done.&quot;
+<span class="w">     </span>)
 
-  install(DIRECTORY <span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/html 
-          DESTINATION share/doc/<span class="cp">${</span><span class="n">CMAKE_PROJECT_NAME</span><span class="cp">}</span>)
+<span class="w">  </span>install(DIRECTORY<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/html<span class="w"> </span>
+<span class="w">          </span>DESTINATION<span class="w"> </span>share/doc/<span class="cp">${</span><span class="n">CMAKE_PROJECT_NAME</span><span class="cp">}</span>)
 
 endif()
 </code></pre></div>
 
 <p>Pour la documentation, dans <code>docs</code> est généré un <code>index.html</code> avec les commentaires du code au format Doxygen depuis les fichiers sources. On peut ensuite envoyer sur un site online tels que <a href="https://codedocs.xyz/">https://codedocs.xyz/</a> à partir de repository Github. Enfin renseignez-vous sur l'utilisation de Sphinx/breathe pour générer de la documentation également.</p>
 <h3>9. Compilation et installation</h3>
-<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ~/sources/spaceinvaders
-$ mkdir build
-$ <span class="nb">cd</span> build
-$ cmake ..
-$ make
-$ ./src/mainDemo
-$ make install
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/sources/spaceinvaders
+$<span class="w"> </span>mkdir<span class="w"> </span>build
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+$<span class="w"> </span>cmake<span class="w"> </span>..
+$<span class="w"> </span>make
+$<span class="w"> </span>./src/mainDemo
+$<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
 
 <h3>10. Commiter votre code</h3>
 <p>Vous allez faire vos premiers commits de votre code. Il va falloir suivre des fichiers. Créer un <code>main.cpp</code> et <code>class.hpp</code> basics dans <code>src/</code> pour appeler une classe et faire un "hello world" pour tester si tout fonctionne.</p>
 <p><strong>Suivi et Commit du code</strong></p>
 <p>Dans votre dossier projet root <code>spaceinvaders</code> lancez les commandes:</p>
-<div class="highlight"><pre><span></span><code>$ git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;commit init&quot;</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;commit init&quot;</span>
 </code></pre></div>
 
 <p>Pusher votre code sur Github</p>
-<div class="highlight"><pre><span></span><code>$ git push origin main
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
 </code></pre></div>
 
 <h3>11. Pour aller plus loin</h3>
