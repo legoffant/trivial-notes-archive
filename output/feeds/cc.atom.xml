@@ -29,14 +29,14 @@
 &lt;li&gt;&lt;a href="https://hackingcpp.com/"&gt;Hackingcpp&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Ce que l'on va construire pour notre projet, un template avec une arborescence root "spaceinvaders":&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="na"&gt;.gitignore&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nf"&gt;build&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nf"&gt;docs&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="no"&gt;CMakeLists.txt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;Doxyfile.in&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nf"&gt;src&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="no"&gt;CmakeLists.txt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;*.&lt;/span&gt;&lt;span class="no"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;*.&lt;/span&gt;&lt;span class="no"&gt;hpp&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nf"&gt;CMakeLists.txt&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nf"&gt;README.md&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="nf"&gt;LICENCE&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.git&lt;/span&gt;
+&lt;span class="na"&gt;.gitignore&lt;/span&gt;
+&lt;span class="nf"&gt;build&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;
+&lt;span class="nf"&gt;docs&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="no"&gt;CMakeLists.txt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;Doxyfile.in&lt;/span&gt;
+&lt;span class="nf"&gt;src&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="no"&gt;CmakeLists.txt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;*.&lt;/span&gt;&lt;span class="no"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;*.&lt;/span&gt;&lt;span class="no"&gt;hpp&lt;/span&gt;
+&lt;span class="nf"&gt;CMakeLists.txt&lt;/span&gt;
+&lt;span class="nf"&gt;README.md&lt;/span&gt;
+&lt;span class="nf"&gt;LICENCE&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Paquets prérequis en particulier quelques librairies externes C++ utiles pour les développeurs et ingénieurs:&lt;/strong&gt;&lt;/p&gt;
@@ -60,33 +60,33 @@
 &lt;li&gt;sfml A simple, fast, cross-platform, objet-oriented multimedia API&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Créer votre dossier&lt;/strong&gt; &lt;code&gt;sources&lt;/code&gt; dans /home ou vous allez y mettre vos projets&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ mkdir ~/sources
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/sources
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;1. Configurer Git&lt;/h3&gt;
 &lt;p&gt;Nous allons d'abord configurer Git pour les nouveaux venus et apprendre le contrôle de version. Vous trouverez sur internet &lt;a href="https://www.youtube.com/watch?v=lhiSnzrvG48"&gt;des tutoriels&lt;/a&gt; pour gérer votre code.&lt;/p&gt;
 &lt;p&gt;Dans un terminal &amp;gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Votre identité&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git config --global user.name &lt;span class="s2"&gt;&amp;quot;Anthony Le Goff&amp;quot;&lt;/span&gt;
-$ git config --global user.mail triviality-lga@protonmail.com
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;user.name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Anthony Le Goff&amp;quot;&lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;user.mail&lt;span class="w"&gt; &lt;/span&gt;triviality-lga@protonmail.com
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Votre éditeur de texte&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git config --global core.editor nvim
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;core.editor&lt;span class="w"&gt; &lt;/span&gt;nvim
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Votre nom de branche par défaut&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git config --global init.defaultBranch main
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;init.defaultBranch&lt;span class="w"&gt; &lt;/span&gt;main
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Vérifier les paramètres&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git config --List
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--List
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;2. Générer des clés publiques SSH&lt;/h3&gt;
 &lt;p&gt;Si vous le savez pas encore, l'authentification sous Github utilise maintenant SSH par défaut, il faut donc générer une paire de clé et l'ajouter dans Github pour ce connecter au dépôt distant.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/.ssh
-$ ssh-keygen -o
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/.ssh
+$&lt;span class="w"&gt; &lt;/span&gt;ssh-keygen&lt;span class="w"&gt; &lt;/span&gt;-o
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Suivez la procédure et créer un mot de passe&lt;/p&gt;
@@ -106,7 +106,7 @@ $ ssh-keygen -o
 &lt;li&gt;Choose a licence: GNU General Public Licence v3.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Cliquez sur "Create repository" puis sur le bouton vert Code/ssh et copiez la ligne:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;monPseudo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;/&lt;/span&gt;&lt;span class="n"&gt;spaceinvaders&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;monPseudo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;/&lt;/span&gt;&lt;span class="n"&gt;spaceinvaders&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;5. Cloner votre repository en local&lt;/h3&gt;
@@ -115,7 +115,7 @@ $ ssh-keygen -o
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;puis cloner le repo git:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;monPseudo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;/&lt;/span&gt;&lt;span class="n"&gt;spaceinvaders&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;monPseudo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;/&lt;/span&gt;&lt;span class="n"&gt;spaceinvaders&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Vous avez maintenant un nouveau dossier "spaceinvaders" avec quelques fichiers copiez depuis le dépôt distant Github.&lt;/p&gt;
@@ -138,7 +138,7 @@ $ ssh-keygen -o
 &lt;p&gt;N'oubliez pas de créer votre config file dans &lt;code&gt;~/.config/nvim/init.vim&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Mon propre init.vim pour information:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="s2"&gt;&amp;quot; Neovim configuration file init.vim&lt;/span&gt;
-&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; author: Anthony J.R Le Goff 
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;author:&lt;span class="w"&gt; &lt;/span&gt;Anthony&lt;span class="w"&gt; &lt;/span&gt;J.R&lt;span class="w"&gt; &lt;/span&gt;Le&lt;span class="w"&gt; &lt;/span&gt;Goff&lt;span class="w"&gt; &lt;/span&gt;
 &lt;span class="s2"&gt;&amp;quot; date: 16th april 2022&lt;/span&gt;
 
 &lt;span class="s2"&gt;:set number&lt;/span&gt;
@@ -147,54 +147,54 @@ $ ssh-keygen -o
 &lt;span class="s2"&gt;:set shiftwidth=4&lt;/span&gt;
 &lt;span class="s2"&gt;:set smarttab&lt;/span&gt;
 &lt;span class="s2"&gt;:set softtabstop=4&lt;/span&gt;
-&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;:set &lt;span class="nv"&gt;mouse&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;a
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mouse&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;a
 
-call plug#begin&lt;span class="o"&gt;()&lt;/span&gt; 
+call&lt;span class="w"&gt; &lt;/span&gt;plug#begin&lt;span class="o"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
 
-Plug &lt;span class="s1"&gt;&amp;#39;tpope/vim-fugitive&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;tpope/vim-surround&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;scrooloose/nerdtree&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;scrooloose/syntastic&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;vim-airline/vim-airline&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;tomasr/molokai&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;raimondi/delimitmate&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;kien/ctrlp.vim&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;ryanoasis/vim-devicons&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;majutsushi/tagbar&amp;#39;&lt;/span&gt;
-Plug &lt;span class="s1"&gt;&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span&gt;, &lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;branch&amp;#39;&lt;/span&gt;: &lt;span class="s1"&gt;&amp;#39;release&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-fugitive&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-surround&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/nerdtree&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/syntastic&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vim-airline/vim-airline&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tomasr/molokai&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;raimondi/delimitmate&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;kien/ctrlp.vim&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ryanoasis/vim-devicons&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;majutsushi/tagbar&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span&gt;,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;branch&amp;#39;&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;release&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
 
-&lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;UTF-8
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;UTF-8
 
-call plug#end&lt;span class="o"&gt;()&lt;/span&gt;
+call&lt;span class="w"&gt; &lt;/span&gt;plug#end&lt;span class="o"&gt;()&lt;/span&gt;
 
-:set &lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%#warningmsg#
-:set &lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%&lt;span class="o"&gt;{&lt;/span&gt;SyntasticStatuslineFlag&lt;span class="o"&gt;()}&lt;/span&gt;
-:set &lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%*
+:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%#warningmsg#
+:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%&lt;span class="o"&gt;{&lt;/span&gt;SyntasticStatuslineFlag&lt;span class="o"&gt;()}&lt;/span&gt;
+:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%*
 
-:let g:syntastic_always_populate_loc_list &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
-:let g:syntastic_auto_loc_list &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
-:let g:syntastic_check_on_open &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
-:let g:syntastic_check_on_wq &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_always_populate_loc_list&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_auto_loc_list&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_check_on_open&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_check_on_wq&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
 
-nnoremap &amp;lt;C-f&amp;gt; :NERDTreeFocus&amp;lt;CR&amp;gt;
-nnoremap &amp;lt;C-n&amp;gt; :NERDTree&amp;lt;CR&amp;gt;
-nnoremap &amp;lt;C-t&amp;gt; :NERDTreeToggle&amp;lt;CR&amp;gt;
+nnoremap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-f&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:NERDTreeFocus&amp;lt;CR&amp;gt;
+nnoremap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-n&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:NERDTree&amp;lt;CR&amp;gt;
+nnoremap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-t&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:NERDTreeToggle&amp;lt;CR&amp;gt;
 
-nmap &amp;lt;C-r&amp;gt; :TagbarToggle&amp;lt;CR&amp;gt;
-nmap &amp;lt;C-p&amp;gt; :CtrlP&amp;lt;CR&amp;gt;
+nmap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-r&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:TagbarToggle&amp;lt;CR&amp;gt;
+nmap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-p&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:CtrlP&amp;lt;CR&amp;gt;
 
-:colorscheme molokai
+:colorscheme&lt;span class="w"&gt; &lt;/span&gt;molokai
 
-&lt;span class="nb"&gt;let&lt;/span&gt; g:NERDTreeDirArrowExpandable&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+&amp;quot;&lt;/span&gt;
-&lt;span class="nb"&gt;let&lt;/span&gt; g:NERDTreeDirArrowCollapsible&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;~&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;g:NERDTreeDirArrowExpandable&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;g:NERDTreeDirArrowCollapsible&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;~&amp;quot;&lt;/span&gt;
 
 &lt;span class="s2"&gt;&amp;quot; air-line&lt;/span&gt;
 &lt;span class="s2"&gt;let g:airline_powerline_fonts = 1&lt;/span&gt;
 
 
-&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; :CocInstall coc-python
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;:CocInstall&lt;span class="w"&gt; &lt;/span&gt;coc-python
 &lt;span class="s2"&gt;&amp;quot; :CocInstall coc-clangd&lt;/span&gt;
-&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; :CocInstall coc-java
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;:CocInstall&lt;span class="w"&gt; &lt;/span&gt;coc-java
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;8. Cmake + Doxygen&lt;/h3&gt;
@@ -205,7 +205,7 @@ nmap &amp;lt;C-p&amp;gt; :CtrlP&amp;lt;CR&amp;gt;
 &lt;/ul&gt;
 &lt;p&gt;Nos fichiers de configurations pour notre projet:&lt;/p&gt;
 &lt;p&gt;spaceinvaders/CMakeLists.txt&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cmake_minimum_required&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;VERSION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;3.10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cmake_minimum_required&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;VERSION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;3.10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_BUILD_TYPE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;Release&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_CXX_STANDARD&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;17&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_CXX_STANDARD_REQUIRED&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;ON&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -215,94 +215,94 @@ nmap &amp;lt;C-p&amp;gt; :CtrlP&amp;lt;CR&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;spaceinvaders/src/CMakeLists.txt&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Dependance de librairie externe&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;find_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;SFML&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;REQUIRED&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;audio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;graphics&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;window&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;Dependance&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;librairie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;externe&lt;/span&gt;
+&lt;span class="nx"&gt;find_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;SFML&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;REQUIRED&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;network&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;audio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;graphics&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;window&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;system&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="n"&gt;add_executable&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;target_compile_options&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Wall&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Wextra&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nx"&gt;add_executable&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;target_compile_options&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;Wall&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;Wextra&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="c1"&gt;# On install le binaire&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PROGRAMS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;CMAKE_CURRENT_BINARY_DIR&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;DESTINATION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;RENAME&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;On&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;binaire&lt;/span&gt;
+&lt;span class="nx"&gt;install&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;PROGRAMS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;CMAKE_CURRENT_BINARY_DIR&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;DESTINATION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;bin&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;RENAME&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="c1"&gt;# On construit le binaire avec SFML&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;target_include_directories&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;SFML_INCLUDE_DIR&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;target_link_librairies&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;SFML_LIBRARIES&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;SFML_DEPENDENCIES&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;On&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;construit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;binaire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;avec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;SFML&lt;/span&gt;
+&lt;span class="nx"&gt;target_include_directories&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;SFML_INCLUDE_DIR&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+&lt;span class="nx"&gt;target_link_librairies&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;SFML_LIBRARIES&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;SFML_DEPENDENCIES&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
 
-&lt;span class="c1"&gt;# Librairie dynamique headers&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;Librairie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;dynamique&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;headers&lt;/span&gt;
 
-&lt;span class="n"&gt;add_library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;SHARED&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nx"&gt;add_library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;SHARED&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;TARGETS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;DESTINATION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nx"&gt;install&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;TARGETS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;DESTINATION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;lib&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;GLOB&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;*.&lt;/span&gt;&lt;span class="n"&gt;hpp&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nx"&gt;file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;GLOB&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;headers&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;hpp&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Préparation de la documentation&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On utilise le programme Doxygen pour générer le fichier de configuration dans le dossier &lt;code&gt;spaceinvaders/docs/&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/sources/spaceinvaders
-$ mkdir docs
-$ &lt;span class="nb"&gt;cd&lt;/span&gt; docs
-$ doxygen -g Doxyfile.in
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/sources/spaceinvaders
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;docs
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;docs
+$&lt;span class="w"&gt; &lt;/span&gt;doxygen&lt;span class="w"&gt; &lt;/span&gt;-g&lt;span class="w"&gt; &lt;/span&gt;Doxyfile.in
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;On édite le fichier avec neovim pour le configurer avec cmake:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;      PROJECT_NAME           = &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
-      OUTPUT_DIRECTORY       = &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/
-      INPUT                  = &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_SOURCE_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/src
-      EXTRACT_ALL            = YES
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;      &lt;/span&gt;PROJECT_NAME&lt;span class="w"&gt;           &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;OUTPUT_DIRECTORY&lt;span class="w"&gt;       &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/
+&lt;span class="w"&gt;      &lt;/span&gt;INPUT&lt;span class="w"&gt;                  &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_SOURCE_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/src
+&lt;span class="w"&gt;      &lt;/span&gt;EXTRACT_ALL&lt;span class="w"&gt;            &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;YES
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;spaceinvaders/docs/CMakeLists.txt&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find_package(Doxygen)
-if(NOT DOXYGEN_FOUND)
-    message(&amp;quot;Doxygen not found, I will not generate/install the documentation&amp;quot;)
+if(NOT&lt;span class="w"&gt; &lt;/span&gt;DOXYGEN_FOUND)
+&lt;span class="w"&gt;    &lt;/span&gt;message(&amp;quot;Doxygen&lt;span class="w"&gt; &lt;/span&gt;not&lt;span class="w"&gt; &lt;/span&gt;found,&lt;span class="w"&gt; &lt;/span&gt;I&lt;span class="w"&gt; &lt;/span&gt;will&lt;span class="w"&gt; &lt;/span&gt;not&lt;span class="w"&gt; &lt;/span&gt;generate/install&lt;span class="w"&gt; &lt;/span&gt;the&lt;span class="w"&gt; &lt;/span&gt;documentation&amp;quot;)
 else()
-   configure_file(Doxyfile.in Doxyfile)
+&lt;span class="w"&gt;   &lt;/span&gt;configure_file(Doxyfile.in&lt;span class="w"&gt; &lt;/span&gt;Doxyfile)
 
-   set(DOXYGEN_INPUT &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/Doxyfile.in)
-   set(DOXYGEN_OUTPUT &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;APIDOC_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/html/index.html)
+&lt;span class="w"&gt;   &lt;/span&gt;set(DOXYGEN_INPUT&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/Doxyfile.in)
+&lt;span class="w"&gt;   &lt;/span&gt;set(DOXYGEN_OUTPUT&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;APIDOC_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/html/index.html)
 
-   add_custom_target(docs ALL
-     COMMAND &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; -E echo_append &amp;quot;Building API Documentation...&amp;quot;
-     COMMAND &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_EXECUTABLE&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_INPUT&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; &amp;gt; /dev/null
-     COMMAND &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt; -E echo &amp;quot;Done.&amp;quot;
-     )
+&lt;span class="w"&gt;   &lt;/span&gt;add_custom_target(docs&lt;span class="w"&gt; &lt;/span&gt;ALL
+&lt;span class="w"&gt;     &lt;/span&gt;COMMAND&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-E&lt;span class="w"&gt; &lt;/span&gt;echo_append&lt;span class="w"&gt; &lt;/span&gt;&amp;quot;Building&lt;span class="w"&gt; &lt;/span&gt;API&lt;span class="w"&gt; &lt;/span&gt;Documentation...&amp;quot;
+&lt;span class="w"&gt;     &lt;/span&gt;COMMAND&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_EXECUTABLE&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_INPUT&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;/dev/null
+&lt;span class="w"&gt;     &lt;/span&gt;COMMAND&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-E&lt;span class="w"&gt; &lt;/span&gt;echo&lt;span class="w"&gt; &lt;/span&gt;&amp;quot;Done.&amp;quot;
+&lt;span class="w"&gt;     &lt;/span&gt;)
 
-  install(DIRECTORY &lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/html 
-          DESTINATION share/doc/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;)
+&lt;span class="w"&gt;  &lt;/span&gt;install(DIRECTORY&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/html&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;DESTINATION&lt;span class="w"&gt; &lt;/span&gt;share/doc/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;)
 
 endif()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pour la documentation, dans &lt;code&gt;docs&lt;/code&gt; est généré un &lt;code&gt;index.html&lt;/code&gt; avec les commentaires du code au format Doxygen depuis les fichiers sources. On peut ensuite envoyer sur un site online tels que &lt;a href="https://codedocs.xyz/"&gt;https://codedocs.xyz/&lt;/a&gt; à partir de repository Github. Enfin renseignez-vous sur l'utilisation de Sphinx/breathe pour générer de la documentation également.&lt;/p&gt;
 &lt;h3&gt;9. Compilation et installation&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/sources/spaceinvaders
-$ mkdir build
-$ &lt;span class="nb"&gt;cd&lt;/span&gt; build
-$ cmake ..
-$ make
-$ ./src/mainDemo
-$ make install
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/sources/spaceinvaders
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;build
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;build
+$&lt;span class="w"&gt; &lt;/span&gt;cmake&lt;span class="w"&gt; &lt;/span&gt;..
+$&lt;span class="w"&gt; &lt;/span&gt;make
+$&lt;span class="w"&gt; &lt;/span&gt;./src/mainDemo
+$&lt;span class="w"&gt; &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;10. Commiter votre code&lt;/h3&gt;
 &lt;p&gt;Vous allez faire vos premiers commits de votre code. Il va falloir suivre des fichiers. Créer un &lt;code&gt;main.cpp&lt;/code&gt; et &lt;code&gt;class.hpp&lt;/code&gt; basics dans &lt;code&gt;src/&lt;/code&gt; pour appeler une classe et faire un "hello world" pour tester si tout fonctionne.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Suivi et Commit du code&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Dans votre dossier projet root &lt;code&gt;spaceinvaders&lt;/code&gt; lancez les commandes:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git add . &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git commit -m &lt;span class="s2"&gt;&amp;quot;commit init&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;commit init&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pusher votre code sur Github&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git push origin main
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;main
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;11. Pour aller plus loin&lt;/h3&gt;
@@ -934,32 +934,32 @@ Je vais vous présenter un métier très recherché depuis que les systèmes emb
 &lt;p&gt;Parmis les ressources que je propose je préviligie ce qui sont moins gourmande en mémoire ainsi que leur possibilité d'adapter au besoin de chaque utilisateur. J'utilise une machine GNU/Linux qui est plus pratique pour le métier de développeur.&lt;/p&gt;
 &lt;p&gt;Pour créer un programme en C il vous faut un éditeur de texte pour programmeur tel que Vim qui est en natif sur toutes machine GNU/Linux et un compilateur comme gcc.&lt;/p&gt;
 &lt;p&gt;On ouvre un terminal et dans l'inviter de commande, le prompt on tape:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc -v
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc&lt;span class="w"&gt; &lt;/span&gt;-v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Le terminal nous renvoi la version de gcc ici la version 10.2.0 s'il est installé sur l'ordinateur.&lt;/p&gt;
 &lt;p&gt;On change de répertoire vers celui de travail et on crée un dossier src:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir src
-&lt;span class="nb"&gt;cd&lt;/span&gt; src
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;src
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;src
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;On va créer un fichier en C avec Vim:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim hello.c
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim&lt;span class="w"&gt; &lt;/span&gt;hello.c
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Dans Vim on a le fichier hello.c et on va écrire un simple programme qui affiche "hello world" en C, il faut basculer en mode insertion en appuyant sur la touche &lt;code&gt;i&lt;/code&gt;puis écrire ce programme:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;
 
-&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
 
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello world&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello world&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pour sauvegarder et quitter Vim on tape &lt;code&gt;:wq!&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Enfin on va compiler le programme. Rappel: c'est l'étape ou le programme va être traduit en langage machine à base de 0 et de 1 compréhensible pour le micro-processeur:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc hello.c -o hello
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc&lt;span class="w"&gt; &lt;/span&gt;hello.c&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;hello
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;L'opération de compilation va créer un fichier binaire executable nommé "hello" visible en faisant un &lt;code&gt;ls&lt;/code&gt; dans le répertoire de travail.
@@ -968,7 +968,7 @@ Il reste plus qu'à lancer le programme généré par cette commande:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Qui affiche bien dans le terminal:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hello world
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hello&lt;span class="w"&gt; &lt;/span&gt;world
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;C'est tout ce que vous avez besoin pour commencer à coder en C. Retenez Vim + GCC et puis après quelques experiences Git et gdb pour approfondir le sujet.&lt;/p&gt;
