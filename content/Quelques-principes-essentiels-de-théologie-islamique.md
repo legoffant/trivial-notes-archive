@@ -1,5 +1,5 @@
 ﻿Title:Quelques principes essentiels de la théologie islamique
-Date: 2023-06-017 09:52
+Date: 2023-06-17 09:52
 Category:Inclassable
 Tags:Islam
 Authors: Anthony Le Goff
