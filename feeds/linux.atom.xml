@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-04-23T10:24:00+02:00</updated><entry><title>Proxmox HomeLab</title><link href="/proxmox-homelab.html" rel="alternate"></link><published>2023-04-23T10:24:00+02:00</published><updated>2023-04-23T10:24:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-04-23:/proxmox-homelab.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On va parler un peu de serveur. Notre monde fonctionne actuellement sous l'apartheid informatique dans le sens que les utilisateurs Windows et MacOS sous logiciels propriétaires ne connaissent rien en serveur, alors que les libristes, hackers et utilisateurs de Linux sont des experts, c'est dans leur seconde nature. Tout simplement car l'infrastructure d'internet fonctionne entièrement sous le logiciel libre et open source. Le Top 1 million des sites mondiaux fonctionnent sous un serveur web Linux à 96,3% mais également plus de 90% des infrastructures en cloud computing. &lt;a href="https://truelist.co/blog/linux-statistics/"&gt;Stats Linux&lt;/a&gt;.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-06-26T13:57:00+02:00</updated><entry><title>Propagande et stratégie de blog Pelican</title><link href="/propagande-et-strategie-de-blog-pelican.html" rel="alternate"></link><published>2023-06-26T13:57:00+02:00</published><updated>2023-06-26T13:57:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-26:/propagande-et-strategie-de-blog-pelican.html</id><summary type="html"></summary><content type="html">&lt;p&gt;A partir de 2013, j'ai lancé mon blog personnel, en sachant que parfois j'allais créé quelques polémiques, mais c'est également un outil pour la veille technologique et le partage d'information, l'intelligence collective.  &lt;/p&gt;
+&lt;p&gt;J'ai utilisé une Stack LEMP (Linux Nginx MariaDB PHP) pour pouvoir utiliser Wordpress sur un serveur VPS hébergé à Singapour et donc éviter la législation française. Pour déboulonner mon blog il faut couper les ressources pour payer le serveur ou le nom de domaine. Et donc faire passer sous de la loi anti-terroriste.  &lt;/p&gt;
+&lt;p&gt;C'était un peu overkill, pour juste de l'écriture. Wordpress est réellement utile pour faire de l'e-commerce avec des plugins et de la gestion de base de donnée.  &lt;/p&gt;
+&lt;p&gt;De plus je dois assurer moi-même la sécurité du serveur, et gérer les vulnérabilités, attaques DDOS.  &lt;/p&gt;
+&lt;p&gt;Donc je suis passé à une solution de compromis. Par de l'épuration de choses inutiles pour augmenter la sécurité du blog avec un site statique. Il me fallait un hébergeur, j'ai choisi Github Pages car c'est gratuit, il fournit un nom de domaine, et permet d'être relativement bien référencé sur les moteurs de recherches. De plus Github a une infrastructure colossal, pour faire tomber les serveurs, c'est généralement la panique car 70 millions de développeur utilise Github. Github surveille très peu le contenu qu'il héberge, il y a pas de modération. Fermer un compte Github est très rare, au risque de créer un effet Streisand. Cela fait généralement polémique. Les développeurs avec une IP en Iran sont bannis de Github.  &lt;/p&gt;
+&lt;p&gt;De plus le workflow du blog est plus moderne, c'est des blogs pour développeurs. J'ai une copie en local sur mon ordinateur, sur le repository Github qui peut-être forké et sur les pages de Github qui met en forme le code informatique pour cela soit lisible humainement.  &lt;/p&gt;
+&lt;p&gt;Les sites statiques les plus populaires:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Jekyll (Ruby)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Octopress (Ruby)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pelican (Python)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hugo (Golang)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gatsby (Javascript)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Il y a des alternatives à Github Pages: Vercel, Netlify, Heroku. Et quelques pure players.  &lt;/p&gt;
+&lt;p&gt;Quand j'écris un article pour mon blog j'utilise parfois Vim (ou un outil de mise en page et conversion) , en markdown sur mon ordinateur, puis simule les changements sur le blog en local puis "commit" et "push" sur le repo distant et enfin met à jour les pages Github.  &lt;/p&gt;
+&lt;p&gt;Les développeurs ont besoin comme "features" la cotation du code source et la coloration syntaxique pour améliorer la lecture du code sur un blog, tel que permet le markdown.  &lt;/p&gt;
+&lt;p&gt;Mon fichier de configuration, que je garde sur Zim pour créer un blog Pelican, cela veut dire que vous avez configuré Git:  &lt;/p&gt;
+&lt;p&gt;Créer sur le site de github le repo: &lt;code&gt;YOUR\_USERNAME.github.io&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Initialiser le git avec .gitignore pour python  &lt;/p&gt;
+&lt;p&gt;Now that the repository is ready, let's clone it to the folder you will be using to store the code in your machine on GNU/Linux systems, the command might go as:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;https://github.com/YOUR&lt;span class="se"&gt;\_&lt;/span&gt;USERNAME/YOUR&lt;span class="se"&gt;\_&lt;/span&gt;USERNAME.github.io.git&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And change to the new directory:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;YOUR&lt;span class="se"&gt;\_&lt;/span&gt;USERNAME.github.io&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Because of how Github Pages prefers to work, serving the files from the master branch, you have to put your source code in a new branch, preserving the "master" for the output of the static files generated by Pelican. To do that, you must create a new branch called "source":  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;checkout&lt;span class="w"&gt; &lt;/span&gt;-b&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Create the virtualenv with the Python3 version installed on your system:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;python3&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And activate it:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;venv/bin/activate
+
+&lt;span class="o"&gt;(&lt;/span&gt;sudo&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;pelican&lt;span class="w"&gt; &lt;/span&gt;markdown&lt;span class="w"&gt; &lt;/span&gt;ghp-import
+
+&lt;span class="o"&gt;(&lt;/span&gt;venv&lt;span class="o"&gt;)&lt;/span&gt;$&lt;span class="w"&gt; &lt;/span&gt;pelican-quickstart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;generate the static files and start the server &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(venv)$ make html &amp;amp;&amp;amp; make serve  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Envoi du code sur github:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;-A&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-a&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;first commit&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;--all&lt;span class="w"&gt;  &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;github&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Nota: n'oubliez pas de désactiver venv quand vous quittez votre espace de travail en local sur le blog Pelican. La commande:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;deactivate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;En ce qui concerne la maintenance, parfois après des mises à jours système, il est impossible de générer le blog Pelican, car les librairies et dépendances sont cassés. Il faut faire une install propre de venv, tout en gardant les données.&lt;/p&gt;
+&lt;p&gt;Pour changer les themes du blog et le fichier de configuration &lt;code&gt;pelicanconf.py&lt;/code&gt; il y beaucoup de documentation en anglais sur internet. Il faut avoir des notions en Python.&lt;/p&gt;</content><category term="Linux"></category><category term="Pelican"></category></entry><entry><title>Proxmox HomeLab</title><link href="/proxmox-homelab.html" rel="alternate"></link><published>2023-04-23T10:24:00+02:00</published><updated>2023-04-23T10:24:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-04-23:/proxmox-homelab.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On va parler un peu de serveur. Notre monde fonctionne actuellement sous l'apartheid informatique dans le sens que les utilisateurs Windows et MacOS sous logiciels propriétaires ne connaissent rien en serveur, alors que les libristes, hackers et utilisateurs de Linux sont des experts, c'est dans leur seconde nature. Tout simplement car l'infrastructure d'internet fonctionne entièrement sous le logiciel libre et open source. Le Top 1 million des sites mondiaux fonctionnent sous un serveur web Linux à 96,3% mais également plus de 90% des infrastructures en cloud computing. &lt;a href="https://truelist.co/blog/linux-statistics/"&gt;Stats Linux&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;Clairement Windows server est marginal, peu de service et vulnérable, et quand on se lance dans l'apprentissage des serveurs, c'est du pure suicide, certain sont des Microsoft fanboys en particulier pour de l'utilisation avec Azure. De nombreux serveurs ont une stack de base sous Debian LAMP (Linux Apache MySQL PHP), c'est old school mais toujours d'actualité chez les "tradis" pour le développement de services web.  &lt;/p&gt;
 &lt;p&gt;Débuter sur serveur ne demande pas un grand investissement, il est possible de commencer sur un &lt;a href="https://www.kubii.fr/pi-zero-w/1851-raspberry-pi-zero-w-3272496006997.html"&gt;Raspberry Pi Zero W à 18€&lt;/a&gt; fonctionne avec un Debian lite (RaspberryPi OS). Il y a beaucoup de documentation pour les apprenants. &lt;a href="https://raspberrytips.fr/projets-raspberry-pi-zero-2w/"&gt;Quelques idées de projets&lt;/a&gt;. Personnellement je préfère le modèle &lt;a href="https://fr.aliexpress.com/item/1005004157984532.html"&gt;MangoPi MQ Pro à 30€&lt;/a&gt; sur architecture RISC-V en processeur. Windows server ne fonctionne pas sur nano-ordinateur et système embarqué, vous êtes prévenu c'est de la daube, problème de compatibilité matériel, mais également d'utilisation des ressources sur des configurations minimalistes.  &lt;/p&gt;
 &lt;h3&gt;L'auto-hébergement&lt;/h3&gt;

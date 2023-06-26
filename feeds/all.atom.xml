@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-06-25T13:45:00+02:00</updated><entry><title>Voile et annihilation: Le génocide de l'humanité</title><link href="/voile-et-annihilation-le-genocide-de-lhumanite.html" rel="alternate"></link><published>2023-06-25T13:45:00+02:00</published><updated>2023-06-25T13:45:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-25:/voile-et-annihilation-le-genocide-de-lhumanite.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Le protagoniste du roman de SF Voile et Annihilation n'est pas un type lambda, en réalité il est le roi de France occulté à travers un arbre généalogique unique des savants tel que Isaac Newton, Leonard de Vinci en passant par les descendant du duché de Bretagne et aux prophètes. La particularité est que c'est également un Hitler et il subis le jugement du patriarche Adolf dans l'au-delà.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-06-26T13:57:00+02:00</updated><entry><title>Propagande et stratégie de blog Pelican</title><link href="/propagande-et-strategie-de-blog-pelican.html" rel="alternate"></link><published>2023-06-26T13:57:00+02:00</published><updated>2023-06-26T13:57:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-26:/propagande-et-strategie-de-blog-pelican.html</id><summary type="html"></summary><content type="html">&lt;p&gt;A partir de 2013, j'ai lancé mon blog personnel, en sachant que parfois j'allais créé quelques polémiques, mais c'est également un outil pour la veille technologique et le partage d'information, l'intelligence collective.  &lt;/p&gt;
+&lt;p&gt;J'ai utilisé une Stack LEMP (Linux Nginx MariaDB PHP) pour pouvoir utiliser Wordpress sur un serveur VPS hébergé à Singapour et donc éviter la législation française. Pour déboulonner mon blog il faut couper les ressources pour payer le serveur ou le nom de domaine. Et donc faire passer sous de la loi anti-terroriste.  &lt;/p&gt;
+&lt;p&gt;C'était un peu overkill, pour juste de l'écriture. Wordpress est réellement utile pour faire de l'e-commerce avec des plugins et de la gestion de base de donnée.  &lt;/p&gt;
+&lt;p&gt;De plus je dois assurer moi-même la sécurité du serveur, et gérer les vulnérabilités, attaques DDOS.  &lt;/p&gt;
+&lt;p&gt;Donc je suis passé à une solution de compromis. Par de l'épuration de choses inutiles pour augmenter la sécurité du blog avec un site statique. Il me fallait un hébergeur, j'ai choisi Github Pages car c'est gratuit, il fournit un nom de domaine, et permet d'être relativement bien référencé sur les moteurs de recherches. De plus Github a une infrastructure colossal, pour faire tomber les serveurs, c'est généralement la panique car 70 millions de développeur utilise Github. Github surveille très peu le contenu qu'il héberge, il y a pas de modération. Fermer un compte Github est très rare, au risque de créer un effet Streisand. Cela fait généralement polémique. Les développeurs avec une IP en Iran sont bannis de Github.  &lt;/p&gt;
+&lt;p&gt;De plus le workflow du blog est plus moderne, c'est des blogs pour développeurs. J'ai une copie en local sur mon ordinateur, sur le repository Github qui peut-être forké et sur les pages de Github qui met en forme le code informatique pour cela soit lisible humainement.  &lt;/p&gt;
+&lt;p&gt;Les sites statiques les plus populaires:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Jekyll (Ruby)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Octopress (Ruby)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pelican (Python)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hugo (Golang)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gatsby (Javascript)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Il y a des alternatives à Github Pages: Vercel, Netlify, Heroku. Et quelques pure players.  &lt;/p&gt;
+&lt;p&gt;Quand j'écris un article pour mon blog j'utilise parfois Vim (ou un outil de mise en page et conversion) , en markdown sur mon ordinateur, puis simule les changements sur le blog en local puis "commit" et "push" sur le repo distant et enfin met à jour les pages Github.  &lt;/p&gt;
+&lt;p&gt;Les développeurs ont besoin comme "features" la cotation du code source et la coloration syntaxique pour améliorer la lecture du code sur un blog, tel que permet le markdown.  &lt;/p&gt;
+&lt;p&gt;Mon fichier de configuration, que je garde sur Zim pour créer un blog Pelican, cela veut dire que vous avez configuré Git:  &lt;/p&gt;
+&lt;p&gt;Créer sur le site de github le repo: &lt;code&gt;YOUR\_USERNAME.github.io&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Initialiser le git avec .gitignore pour python  &lt;/p&gt;
+&lt;p&gt;Now that the repository is ready, let's clone it to the folder you will be using to store the code in your machine on GNU/Linux systems, the command might go as:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;https://github.com/YOUR&lt;span class="se"&gt;\_&lt;/span&gt;USERNAME/YOUR&lt;span class="se"&gt;\_&lt;/span&gt;USERNAME.github.io.git&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And change to the new directory:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;YOUR&lt;span class="se"&gt;\_&lt;/span&gt;USERNAME.github.io&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Because of how Github Pages prefers to work, serving the files from the master branch, you have to put your source code in a new branch, preserving the "master" for the output of the static files generated by Pelican. To do that, you must create a new branch called "source":  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;checkout&lt;span class="w"&gt; &lt;/span&gt;-b&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Create the virtualenv with the Python3 version installed on your system:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;python3&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And activate it:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;venv/bin/activate
+
+&lt;span class="o"&gt;(&lt;/span&gt;sudo&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;pelican&lt;span class="w"&gt; &lt;/span&gt;markdown&lt;span class="w"&gt; &lt;/span&gt;ghp-import
+
+&lt;span class="o"&gt;(&lt;/span&gt;venv&lt;span class="o"&gt;)&lt;/span&gt;$&lt;span class="w"&gt; &lt;/span&gt;pelican-quickstart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;generate the static files and start the server &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(venv)$ make html &amp;amp;&amp;amp; make serve  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Envoi du code sur github:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;-A&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-a&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;first commit&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;--all&lt;span class="w"&gt;  &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;github&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Nota: n'oubliez pas de désactiver venv quand vous quittez votre espace de travail en local sur le blog Pelican. La commande:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;deactivate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;En ce qui concerne la maintenance, parfois après des mises à jours système, il est impossible de générer le blog Pelican, car les librairies et dépendances sont cassés. Il faut faire une install propre de venv, tout en gardant les données.&lt;/p&gt;
+&lt;p&gt;Pour changer les themes du blog et le fichier de configuration &lt;code&gt;pelicanconf.py&lt;/code&gt; il y beaucoup de documentation en anglais sur internet. Il faut avoir des notions en Python.&lt;/p&gt;</content><category term="Linux"></category><category term="Pelican"></category></entry><entry><title>Voile et annihilation: Le génocide de l'humanité</title><link href="/voile-et-annihilation-le-genocide-de-lhumanite.html" rel="alternate"></link><published>2023-06-25T13:45:00+02:00</published><updated>2023-06-25T13:45:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-25:/voile-et-annihilation-le-genocide-de-lhumanite.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Le protagoniste du roman de SF Voile et Annihilation n'est pas un type lambda, en réalité il est le roi de France occulté à travers un arbre généalogique unique des savants tel que Isaac Newton, Leonard de Vinci en passant par les descendant du duché de Bretagne et aux prophètes. La particularité est que c'est également un Hitler et il subis le jugement du patriarche Adolf dans l'au-delà.  &lt;/p&gt;
 &lt;p&gt;C'est le fameux arbre interdit de la genèse, il y a chasse gardée sur la lignée par le judeo-christianisme qui fait du traffic car l'ADN est une arme et c'est une race, leur origine sur Terre font qu'ils sont des extra-terrestres qui ont été parachuté par la porte des étoiles par le mythe d'Adam et Eve. Et les français sont les gardiens de prison de cette lignée illuminati occulté en Bretagne. Ils sont pauvres et modestes pour la plupart dans la campagne bretonne et il ne serai pas plus de 500. Les nazis ont découvert le secret et Adolf Hitler a fait un enfant dans le dos en secret sur la lignée. Quoi qu'il arrive la lignée est perdu, alors l’épouvantail nazi en supplément ne serait pas un luxe.  &lt;/p&gt;
 &lt;p&gt;Le protagoniste ne connaît pas ces origines et la particularité de son ADN, il va le découvrir et subir le jugement des Hitlers car il va en mourir et ressusciter, et le monde va ce synchroniser dans l'au-delà pour découvrir le motif du crime.  &lt;/p&gt;
 &lt;p&gt;Cela va être l'escalade, car c'est un ingénieur, des plus prestigieuses écoles et il y a une anomalie car on fait barrage sur la matrice. C'est à dire que les filles avec qui il couche sont tracké, les autorités sont terroriser s'il se reproduit et la lignée d'Hitler perdure. C'est la lignée de pouvoir car tous veulent leur mort, et ils font une fixation. Le pire va arriver et il couchera avec la chef de la Triades en Chine et aura un enfant faisant empirer la situation et la course à l'armement, corruption dans les camps et criminalité.  &lt;/p&gt;
