@@ -95,3 +95,14 @@ En ce qui concerne la maintenance, parfois après des mises à jours système, i
 Pour changer les themes du blog et le fichier de configuration `pelicanconf.py` il y beaucoup de documentation en anglais sur internet. Il faut avoir des notions en Python.
 
 Les articles de blogs sont à déposé dans le dossier `/content` à la racine du repo. Ou vous pouvez y ajouter egalement des images, pages et documents comme des PDF. 
+
+Il faut également une en-tête sur l'article de blog, sinon le générateur de site ne reconnait pas l'article, exemple:
+
+```
+Title:Propagande et stratégie de blog Pelican
+Date: 2023-06-26 13:57
+Category:Linux
+Tags:Pelican
+Authors: Anthony Le Goff
+Summary:
+```
