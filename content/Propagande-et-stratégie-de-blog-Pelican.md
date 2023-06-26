@@ -93,3 +93,5 @@ $ deactivate
 En ce qui concerne la maintenance, parfois après des mises à jours système, il est impossible de générer le blog Pelican, car les librairies et dépendances sont cassés. Il faut faire une install propre de venv, tout en gardant les données.
 
 Pour changer les themes du blog et le fichier de configuration `pelicanconf.py` il y beaucoup de documentation en anglais sur internet. Il faut avoir des notions en Python.
+
+Les articles de blogs sont à déposé dans le dossier `/content` à la racine du repo. Ou vous pouvez y ajouter egalement des images, pages et documents comme des PDF. 
