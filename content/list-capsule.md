@@ -23,10 +23,10 @@ Le vice? Le camp du bien? Toussa.
 ----------------------------
     EQUIPEMENT DE BASE
 ----------------------------
-- Capsule temporelle acier inox 86mm x 185mm
-- Bouteille aluminium "pilulier" 9.7 x 3.1 x 3.1 cm
-- Capsule Bouteille en Aluminium "pilulier" 13 x 10 x 4 cm
-- Fiole en verre(borosilicate) à bouchon à vis hermétique 10ML
+- Capsule temporelle acier inox 86mm x 185mm - 42€
+- Bouteille aluminium "pilulier" 9.7 x 3.1 x 3.1 cm - 22€(pack de 3)
+- Capsule Bouteille en Aluminium "pilulier" 13 x 10 x 4 cm - 20€(pack de 3)
+- Fiole en verre(borosilicate) à bouchon à vis hermétique 10ML - 14€(pack de 10)
 
 ----------------------------
 : Bouteille 1 > Fiole à ADN - Batterie nucléaire
