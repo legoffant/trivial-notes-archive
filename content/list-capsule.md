@@ -9,7 +9,7 @@ Bilan d'investissement pour créer les capsules temporelles et combien cela me c
 
 C'est le futur lieu de refuge et de temple religieux, avec l'accès au portail dans les univers imbriqués. Il en faut trois multiplier la puissance des hébergeurs (tel que les serveurs et le RAID) et la sureté du fonctionnement et le risque de panne en répartissant la charge. Cela permet également de faire de la triangulation et de verrouiller le passage multi-dimentionnel entre les univers pour invoquer l'Eon.
 
-Plus les capsules restent secrètes et enterrer, plus cela prend de la valeur, les pierres précieuses augmentent de prix, l'or ou des minerais rares, ainsi que la cryptomonnaie. Imaginer quand cela est en milliard d'année. Un artefact de la planète Terre hors de prix.
+Plus les capsules restent secrètes et enterrer, plus cela prend de la valeur, les pierres précieuses augmentent de prix, l'or ou des minerais rares, ainsi que la cryptomonnaie. Imaginer quand cela est en milliard d'année. Un artefact de la planète Terre hors de prix. Les contraintes de résistance des capsules temporelles doient pouvoir résister à une supernova, et protéger le matériel et l'ADN.
 
 
 Avant de partir en trek pour les enterrer en forêt, je dois vérifier que je n'ai pas de traceur sur la peau et dans mon corps. J'ai quelques anomalies, une boule de graisse de quelques milimètres en bas des homoplates, pile sur la colonne vertébrale, sans que je puisse accéder avec mes mains.
