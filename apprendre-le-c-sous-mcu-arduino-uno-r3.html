@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Apprendre le C++ sous MCU Arduino UNO R3 | Trivial notes</title>
+    <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anthony Le Goff" />
+    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_position" content="top=60,right=60" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li ><a href="/pages/contact.html">Contact</a></li>
+                <li ><a href="/pages/ltcb.html">LTCB</a></li>
+                <li class="divider-vertical"></li>
+                <li class="active">
+                  <a href="/category/cc.html">
+						        <i class="icon-folder-open icon-large"></i>C/C++
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/entrepreneurship.html">
+						        <i class="icon-folder-open icon-large"></i>Entrepreneurship
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/inclassable.html">
+						        <i class="icon-folder-open icon-large"></i>Inclassable
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/linux.html">
+						        <i class="icon-folder-open icon-large"></i>Linux
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/transhumanisme.html">
+						        <i class="icon-folder-open icon-large"></i>Transhumanisme
+					         </a>
+                </li>
+              <ul class="nav pull-right">
+                    <li><a href="/"><i class="icon-th-list"></i>Archives</a></li>
+              </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8" id="content">
+<div class="row">
+    <div class="span2">
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2023-06-28T21:17:00+02:00">
+    <i class="icon-calendar"></i>&nbsp;mer. 28 juin 2023
+</abbr>
+<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+
+
+<br/>
+	&nbsp;&nbsp;<a href="/tag/arduino.html" class="label"><i class="icon-tag"></i>&nbsp;Arduino</a>
+</footer><!-- /.post-info -->        </div>
+    </div>
+    <div class="span6">
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Apprendre le C++ sous MCU Arduino UNO R3">
+                        Apprendre le C++ sous MCU Arduino UNO R3
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
+
+        <p>Arduino utilise un langage épuré à base de C. Il y a très peu de fonction et donc plus facile pour l'apprentissage. Durant un certain temps il fallait utiliser le logiciel Arduino IDE 1.0 qui était très limité pour programmer la carte de prototype électronique. Après  c'est simplifié, suffit d'installer le logiciel et tout marche, ainsi que le port série vers UNO. C'est la version pour les grands débutants et les newbies. Je rappel le lien utile pour apprendre Arduino UNO en libre accès <a href="https://eskimon.fr/extra/ebooks/arduino-premiers-pas-en-informatique-embarquee.pdf">Arduino : premiers pas en informatique embarquée [PDF]</a>  </p>
+<p>On va passer à la méthode professionnel chez les développeurs et ingénieurs en systèmes embarqués et microcontrôleurs MCU en utilisant le workflow:  </p>
+<ul>
+<li>
+<p><strong>PlatformIO</strong> is a cross-platform, cross-architecture, multiple framework, professional tool for embedded systems engineers and for software developers who write applications for embedded products.  </p>
+</li>
+<li>
+<p><strong>(Neo)Vim</strong> is a free and open-source, screen-based text editor program for use both from a command-line interface. Et donc d'utiliser des plugins tels que CoC (auto-completion), fugitive (integration de Git) etc.  </p>
+</li>
+<li>
+<p><strong>Picocom</strong> monitor the serial interface  </p>
+</li>
+</ul>
+<p>Ce qui permet une plus grande souplesse d'utilisation et de programmer en C++ avec des librairies customs via un éditeur de texte pour professionnel tel que Vim dans un terminal.  </p>
+<h3>Installer PlatformIO CLI sur un environnement GNU/Linux (Arch Linux) en utilisant virtualenv en Python:</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>python<span class="w"> </span>python-pip<span class="w">  </span>
+$<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>virtualenv
+</code></pre></div>
+
+<p>Puis installer le package platformio dans un dossier en activant l'environnement virtuel:  </p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/local
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/local<span class="w">   </span>
+$<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>platformio<span class="w">   </span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>platformio/bin/activate<span class="w">   </span>
+$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>platformio
+</code></pre></div>
+
+<p>NOTA: pour désactiver virtualenv: <code>$ deactivate</code></p>
+<p>Cela veut dire que les commandes de platformIO CLI sont disponible dans l'environnement virtuel dans le chemin PATH : <code>~/local/platformio/bin/pio</code></p>
+<h3>Rechercher le nom de la carte Arduino UNO R3:</h3>
+<div class="highlight"><pre><span></span><code>(platformio) $ platformio boards | grep uno
+        uno                   atmega328p     16Mhz     31Kb    2Kb    Arduino Uno
+</code></pre></div>
+
+<h3>Créer un projet</h3>
+<p>En l’occurrence on va appeler le projet 'blink' pour faire clignoter une LED sur Arduino pour vérifier que tout fonctionne.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>~/project/Blink
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/project/Blink
+$<span class="w"> </span>pio<span class="w"> </span>project<span class="w"> </span>init<span class="w"> </span>--board<span class="w"> </span>uno<span class="w"> </span>--ide<span class="w"> </span>vim
+</code></pre></div>
+
+<p>générera un sous-dossier vide et un fichier projet (<code>platformio.ini</code>). Le format de <code>platformio.ini</code> est <a href="https://en.wikipedia.org/wiki/INI_file">fichier INI</a>.  </p>
+<h3>Recherchez les noms des ports série:</h3>
+<p>L'Arduino doit communiquer via une interface. Le micrologiciel intégré est téléchargé via le port série. La valeur par défaut est <code>/dev/ttyUSB0</code>, donc si vous connectez Arduino, la mise à jour échouera si elle est laissée telle quelle car le nom du port est différent. Par conséquent, il est nécessaire de vérifier le nom du port série et de le spécifier dans <code>platformio.ini</code>  </p>
+<p>De plus il faut verifier les droits sur le port série, souvent on a pas les privilèges d'accès en écriture. Il faut ajouter l'utilisateur au groupe <code>uucp</code> sous Arch Linux(voir wiki Arduino):</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>uucp<span class="w"> </span>username
+</code></pre></div>
+
+<p>Lister les ports de série:  </p>
+<div class="highlight"><pre><span></span><code>(platformio)$ platformio serialports list
+        :   #réduction
+        /dev/ttyACM0
+        ----------
+        Hardware ID: USB VID:PID=1a86:7523
+        Description: QinHeng Electronics USB2.0-Serial
+</code></pre></div>
+
+<p>Dans cette exemple on utilise <code>/dev/ttyACM0</code> et donc il faut modifier <code>platformio.ini</code> avec Vim au paramêtre <a href="https://docs.platformio.org/en/latest/projectconf/sections/env/options/upload/upload_port.html">upload_port</a>`  </p>
+<h3>Ecrire la source</h3>
+<p>Le clignotement habituel de la LED et l'affichage en série. Mettez la source dans <code>./src</code>.  </p>
+<div class="highlight"><pre><span></span><code><span class="n">$</span><span class="w"> </span><span class="n">vim</span><span class="w"> </span><span class="n">src</span><span class="o">/</span><span class="n">blink</span><span class="p">.</span><span class="n">cpp</span><span class="w">  </span>
+
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="w"> </span><span class="n">LED</span><span class="err">\</span><span class="n">_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="w"> </span><span class="p">);</span><span class="w">  </span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w">  </span>
+<span class="p">}</span><span class="w">  </span>
+<span class="w">   </span>
+<span class="kt">void</span><span class="w"> </span><span class="n">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello Arduino&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="w"> </span><span class="n">LED</span><span class="err">\</span><span class="n">_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="w"> </span><span class="p">);</span><span class="w">    </span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">333</span><span class="p">);</span><span class="w">                        </span>
+<span class="w">   </span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="w"> </span><span class="n">LED</span><span class="err">\</span><span class="n">_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="w"> </span><span class="p">);</span><span class="w">    </span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">333</span><span class="p">);</span><span class="w">                        </span>
+<span class="p">}</span><span class="w">  </span>
+</code></pre></div>
+
+<p>Dans le programme, il faut utiliser le header <code>Arduino.h</code> pour utiliser les librairies et fonctions de la carte. En C++ on utilise le mot clé void. Egalement j'utilise un print pour avoir un retour d'affichage de fonctionnement sur le monitoring du port série.  </p>
+<h3>Essayer de compiler:</h3>
+<p>La commande va télécharger le programme et flasher la carte UNO:  </p>
+<div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">pio</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="o">--</span><span class="n">target</span><span class="o">=</span><span class="n">upload</span>
+</code></pre></div>
+
+<p>Normalement la LED built-in devrait clignoter si tout fonctionne.</p>
+<h3>Vim Quickfix Mode</h3>
+<p>Pour intégrer avec Vim's quickfix mode un simple makefile suffit:  </p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>.PHONY:<span class="w"> </span>all
+<span class="w">    </span>all:<span class="w"> </span>build
+
+
+<span class="w">    </span>.PHONY:<span class="w"> </span>build
+<span class="w">    </span>build:
+<span class="w">        </span>pio<span class="w"> </span>run
+
+<span class="w">    </span>.PHONY:<span class="w"> </span>upload
+<span class="w">    </span>upload:
+<span class="w">        </span>pio<span class="w"> </span>run<span class="w"> </span>--target<span class="o">=</span>upload
+</code></pre></div>
+
+<p>Ensuite vous pouvez automatiser la compilation en lançant la commande dans Vim <code>:make</code></p>
+<h3>Monitoring du port de série</h3>
+<p>On va installer picocom pour le monitoring: </p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>picocom<span class="w">  </span>
+</code></pre></div>
+
+<p>la commande pour monitorer  </p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>picocom<span class="w"> </span>--baud<span class="w"> </span><span class="m">9600</span><span class="w"> </span>--echo<span class="w"> </span>--noreset<span class="w"> </span>/dev/ttyUSB0
+</code></pre></div>
+
+<p>Qui devrait normalement retourner en affichage le print:</p>
+<div class="highlight"><pre><span></span><code>Hello Arduino
+</code></pre></div>
+
+<p>Plus d'information sur la doc officiel:` <a href="https://docs.platformio.org/en/latest/index.html">https://docs.platformio.org/en/latest/index.html</a></p>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+</div>
+</div>
+        </div><!--/span-->
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><div><i class="icon-external-link"></i><a href="https://getpelican.com/">Pelican</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.python.org/">Python.org</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://framabook.org/le-c-en-20-heures-2/">Apprendre le C en 20H</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://archlinux.org/">Arch Linux</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.blackarch.io/">Blackarch</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.kernel.org/">Kernel</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.arduino.cc/">Arduino</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://beagleboard.org/bone">BeagleBoard</a></div></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
