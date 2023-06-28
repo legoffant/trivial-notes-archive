@@ -198,17 +198,17 @@ $<span class="w"> </span>pio<span class="w"> </span>project<span class="w"> </sp
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="n">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
-<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="w"> </span><span class="n">LED</span><span class="err">\</span><span class="n">_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="w"> </span><span class="p">);</span><span class="w">  </span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="w"> </span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="w"> </span><span class="p">);</span><span class="w">  </span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w">  </span>
 <span class="p">}</span><span class="w">  </span>
 <span class="w">   </span>
 <span class="kt">void</span><span class="w"> </span><span class="n">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">  </span>
 <span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello Arduino&quot;</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="w"> </span><span class="n">LED</span><span class="err">\</span><span class="n">_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="w"> </span><span class="p">);</span><span class="w">    </span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="w"> </span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="w"> </span><span class="p">);</span><span class="w">    </span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">333</span><span class="p">);</span><span class="w">                        </span>
 <span class="w">   </span>
-<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="w"> </span><span class="n">LED</span><span class="err">\</span><span class="n">_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="w"> </span><span class="p">);</span><span class="w">    </span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="w"> </span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="w"> </span><span class="p">);</span><span class="w">    </span>
 <span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">333</span><span class="p">);</span><span class="w">                        </span>
 <span class="p">}</span><span class="w">  </span>
 </code></pre></div>
