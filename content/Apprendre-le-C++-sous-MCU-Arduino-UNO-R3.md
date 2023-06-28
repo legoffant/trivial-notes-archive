@@ -114,7 +114,7 @@ Dans le programme, il faut utiliser le header `Arduino.h` pour utiliser les libr
 La commande va télécharger le programme et flasher la carte UNO:  
 
 ```
-$ pio run --target=upload
+$ pio run --target upload
 ```
 
 Normalement la LED built-in devrait clignoter si tout fonctionne.
@@ -135,7 +135,7 @@ Pour intégrer avec Vim's quickfix mode un simple makefile suffit:
     
     .PHONY: upload
     upload:
-        pio run --target=upload
+        pio run --target upload
 ```
 
 Ensuite vous pouvez automatiser la compilation en lançant la commande dans Vim `:make`
