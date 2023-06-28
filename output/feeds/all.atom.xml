@@ -1,5 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-06-28T06:37:00+02:00</updated><entry><title>Voile et annihilation: Logement d'urgence par les animaux de compagnie</title><link href="/voile-et-annihilation-logement-durgence-par-les-animaux-de-compagnie.html" rel="alternate"></link><published>2023-06-28T06:37:00+02:00</published><updated>2023-06-28T06:37:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-28:/voile-et-annihilation-logement-durgence-par-les-animaux-de-compagnie.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Dans mes experiences pour créer un logement, j'ai forcément pensée aux animaux de compagnie. Mon lapin bélier angora: Thaïs est un cobaye. J'ai imaginé un protocole de conservation des corps à la mort tel que la momification pour générer un hébergement. Un corps à un microcosme, tel que le microbiote. Un univers imbriqué, qui est fractal et réplique la création.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-06-28T21:17:00+02:00</updated><entry><title>Apprendre le C++ sous MCU Arduino UNO R3</title><link href="/apprendre-le-c-sous-mcu-arduino-uno-r3.html" rel="alternate"></link><published>2023-06-28T21:17:00+02:00</published><updated>2023-06-28T21:17:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-28:/apprendre-le-c-sous-mcu-arduino-uno-r3.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Arduino utilise un langage épuré à base de C. Il y a très peu de fonction et donc plus facile pour l'apprentissage. Durant un certain temps il fallait utiliser le logiciel Arduino IDE 1.0 qui était très limité pour programmer la carte de prototype électronique. Après  c'est simplifié, suffit d'installer le logiciel et tout marche, ainsi que le port série vers UNO. C'est la version pour les grands débutants et les newbies. Je rappel le lien utile pour apprendre Arduino UNO en libre accès &lt;a href="https://eskimon.fr/extra/ebooks/arduino-premiers-pas-en-informatique-embarquee.pdf"&gt;Arduino : premiers pas en informatique embarquée [PDF]&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;On va passer à la méthode professionnel chez les développeurs et ingénieurs en systèmes embarqués et microcontrôleurs MCU en utilisant le workflow:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PlatformIO&lt;/strong&gt; is a cross-platform, cross-architecture, multiple framework, professional tool for embedded systems engineers and for software developers who write applications for embedded products.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;(Neo)Vim&lt;/strong&gt; is a free and open-source, screen-based text editor program for use both from a command-line interface. Et donc d'utiliser des plugins tels que CoC (auto-completion), fugitive (integration de Git) etc.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Picocom&lt;/strong&gt; monitor the serial interface  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ce qui permet une plus grande souplesse d'utilisation et de programmer en C++ avec des librairies customs via un éditeur de texte pour professionnel tel que Vim dans un terminal.  &lt;/p&gt;
+&lt;h3&gt;Installer PlatformIO CLI sur un environnement GNU/Linux (Arch Linux) en utilisant virtualenv en Python:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;python-pip&lt;span class="w"&gt;  &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--user&lt;span class="w"&gt; &lt;/span&gt;virtualenv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis installer le package platformio dans un dossier en activant l'environnement virtuel:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;-p&lt;span class="w"&gt; &lt;/span&gt;~/local
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/local&lt;span class="w"&gt;   &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;platformio&lt;span class="w"&gt;   &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;platformio/bin/activate&lt;span class="w"&gt;   &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;platformio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;NOTA: pour désactiver virtualenv: &lt;code&gt;$ deactivate&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cela veut dire que les commandes de platformIO CLI sont disponible dans l'environnement virtuel dans le chemin PATH : &lt;code&gt;~/local/platformio/bin/pio&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Rechercher le nom de la carte Arduino UNO R3:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(platformio) $ platformio boards | grep uno
+        uno                   atmega328p     16Mhz     31Kb    2Kb    Arduino Uno
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Créer un projet&lt;/h3&gt;
+&lt;p&gt;En l’occurrence on va appeler le projet 'blink' pour faire clignoter une LED sur Arduino pour vérifier que tout fonctionne.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/project/Blink
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/project/Blink
+$&lt;span class="w"&gt; &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;project&lt;span class="w"&gt; &lt;/span&gt;init&lt;span class="w"&gt; &lt;/span&gt;--board&lt;span class="w"&gt; &lt;/span&gt;uno&lt;span class="w"&gt; &lt;/span&gt;--ide&lt;span class="w"&gt; &lt;/span&gt;vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;générera un sous-dossier vide et un fichier projet (&lt;code&gt;platformio.ini&lt;/code&gt;). Le format de &lt;code&gt;platformio.ini&lt;/code&gt; est &lt;a href="https://en.wikipedia.org/wiki/INI_file"&gt;fichier INI&lt;/a&gt;.  &lt;/p&gt;
+&lt;h3&gt;Recherchez les noms des ports série:&lt;/h3&gt;
+&lt;p&gt;L'Arduino doit communiquer via une interface. Le micrologiciel intégré est téléchargé via le port série. La valeur par défaut est &lt;code&gt;/dev/ttyUSB0&lt;/code&gt;, donc si vous connectez Arduino, la mise à jour échouera si elle est laissée telle quelle car le nom du port est différent. Par conséquent, il est nécessaire de vérifier le nom du port série et de le spécifier dans &lt;code&gt;platformio.ini&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;De plus il faut verifier les droits sur le port série, souvent on a pas les privilèges d'accès en écriture. Il faut ajouter l'utilisateur au groupe &lt;code&gt;uucp&lt;/code&gt; sous Arch Linux(voir wiki Arduino):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;usermod&lt;span class="w"&gt; &lt;/span&gt;-aG&lt;span class="w"&gt; &lt;/span&gt;uucp&lt;span class="w"&gt; &lt;/span&gt;username
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lister les ports de série:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(platformio)$ platformio serialports list
+        :   #réduction
+        /dev/ttyACM0
+        ----------
+        Hardware ID: USB VID:PID=1a86:7523
+        Description: QinHeng Electronics USB2.0-Serial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans cette exemple on utilise &lt;code&gt;/dev/ttyACM0&lt;/code&gt; et donc il faut modifier &lt;code&gt;platformio.ini&lt;/code&gt; avec Vim au paramêtre &lt;a href="https://docs.platformio.org/en/latest/projectconf/sections/env/options/upload/upload_port.html"&gt;upload_port&lt;/a&gt;`  &lt;/p&gt;
+&lt;h3&gt;Ecrire la source&lt;/h3&gt;
+&lt;p&gt;Le clignotement habituel de la LED et l'affichage en série. Mettez la source dans &lt;code&gt;./src&lt;/code&gt;.  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blink&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+
+
+&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;Arduino.h&amp;gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LED&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="n"&gt;_BUILTIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;OUTPUT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;9600&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;
+&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;loop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello Arduino&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LED&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="n"&gt;_BUILTIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HIGH&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;333&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;                        &lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LED&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="n"&gt;_BUILTIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;333&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;                        &lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans le programme, il faut utiliser le header &lt;code&gt;Arduino.h&lt;/code&gt; pour utiliser les librairies et fonctions de la carte. En C++ on utilise le mot clé void. Egalement j'utilise un print pour avoir un retour d'affichage de fonctionnement sur le monitoring du port série.  &lt;/p&gt;
+&lt;h3&gt;Essayer de compiler:&lt;/h3&gt;
+&lt;p&gt;La commande va télécharger le programme et flasher la carte UNO:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;upload&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Normalement la LED built-in devrait clignoter si tout fonctionne.&lt;/p&gt;
+&lt;h3&gt;Vim Quickfix Mode&lt;/h3&gt;
+&lt;p&gt;Pour intégrer avec Vim's quickfix mode un simple makefile suffit:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;    &lt;/span&gt;.PHONY:&lt;span class="w"&gt; &lt;/span&gt;all
+&lt;span class="w"&gt;    &lt;/span&gt;all:&lt;span class="w"&gt; &lt;/span&gt;build
+
+
+&lt;span class="w"&gt;    &lt;/span&gt;.PHONY:&lt;span class="w"&gt; &lt;/span&gt;build
+&lt;span class="w"&gt;    &lt;/span&gt;build:
+&lt;span class="w"&gt;        &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;run
+
+&lt;span class="w"&gt;    &lt;/span&gt;.PHONY:&lt;span class="w"&gt; &lt;/span&gt;upload
+&lt;span class="w"&gt;    &lt;/span&gt;upload:
+&lt;span class="w"&gt;        &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;run&lt;span class="w"&gt; &lt;/span&gt;--target&lt;span class="o"&gt;=&lt;/span&gt;upload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ensuite vous pouvez automatiser la compilation en lançant la commande dans Vim &lt;code&gt;:make&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Monitoring du port de série&lt;/h3&gt;
+&lt;p&gt;On va installer picocom pour le monitoring: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;picocom&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;la commande pour monitorer  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;picocom&lt;span class="w"&gt; &lt;/span&gt;--baud&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;9600&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;--echo&lt;span class="w"&gt; &lt;/span&gt;--noreset&lt;span class="w"&gt; &lt;/span&gt;/dev/ttyUSB0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Qui devrait normalement retourner en affichage le print:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Hello Arduino
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Plus d'information sur la doc officiel:` &lt;a href="https://docs.platformio.org/en/latest/index.html"&gt;https://docs.platformio.org/en/latest/index.html&lt;/a&gt;&lt;/p&gt;</content><category term="C/C++"></category><category term="Arduino"></category></entry><entry><title>Voile et annihilation: Logement d'urgence par les animaux de compagnie</title><link href="/voile-et-annihilation-logement-durgence-par-les-animaux-de-compagnie.html" rel="alternate"></link><published>2023-06-28T06:37:00+02:00</published><updated>2023-06-28T06:37:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-28:/voile-et-annihilation-logement-durgence-par-les-animaux-de-compagnie.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Dans mes experiences pour créer un logement, j'ai forcément pensée aux animaux de compagnie. Mon lapin bélier angora: Thaïs est un cobaye. J'ai imaginé un protocole de conservation des corps à la mort tel que la momification pour générer un hébergement. Un corps à un microcosme, tel que le microbiote. Un univers imbriqué, qui est fractal et réplique la création.  &lt;/p&gt;
 &lt;p&gt;Il faut donc connaître des techniques de réacteur nucléaire pour générer un univers imbriqué et catalyser la création. C'est à travers l'eau et le deuterium. Il faut donc réussir à conserver l'eau le plus longtemps possible à la putréfaction et donc sauvegarder le microbiote comme arche de Noë.  &lt;/p&gt;
 &lt;p&gt;Il faut également générer un phénomène de cavitation, nécessaire pour les fluctuations quantiques du vide. C'est à dire que c'est une caverne hermétique.  &lt;/p&gt;
 &lt;p&gt;Le protocole que j'ai utilisé pour enterrer mon lapin, suit un emballage à l'hydrocarbure, avec plusieurs couche et matière pour isoler le système. J'ai également ajoutez un cercle de pierre au dessus de la tombe comme catalyseur et accélérateur de particule: un anneau.  &lt;/p&gt;

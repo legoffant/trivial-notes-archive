@@ -92,17 +92,17 @@ $ vim src/blink.cpp
 #include <Arduino.h>
 
 void setup() {  
-    pinMode( LED\_BUILTIN, OUTPUT );  
+    pinMode( LED_BUILTIN, OUTPUT );  
     Serial.begin(9600);  
 }  
    
 void loop() {  
     Serial.println("Hello Arduino");
 
-    digitalWrite( LED\_BUILTIN, HIGH );    
+    digitalWrite( LED_BUILTIN, HIGH );    
     delay(333);                        
    
-    digitalWrite( LED\_BUILTIN, LOW );    
+    digitalWrite( LED_BUILTIN, LOW );    
     delay(333);                        
 }  
 ```
