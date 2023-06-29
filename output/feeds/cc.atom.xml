@@ -83,7 +83,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;proj
 &lt;p&gt;Dans le programme, il faut utiliser le header &lt;code&gt;Arduino.h&lt;/code&gt; pour utiliser les librairies et fonctions de la carte. En C++ on utilise le mot clé void. Egalement j'utilise un print pour avoir un retour d'affichage de fonctionnement sur le monitoring du port série.  &lt;/p&gt;
 &lt;h3&gt;Essayer de compiler:&lt;/h3&gt;
 &lt;p&gt;La commande va télécharger le programme et flasher la carte UNO:  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;upload&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;upload&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Normalement la LED built-in devrait clignoter si tout fonctionne.&lt;/p&gt;
@@ -99,7 +99,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;proj
 
 &lt;span class="w"&gt;    &lt;/span&gt;.PHONY:&lt;span class="w"&gt; &lt;/span&gt;upload
 &lt;span class="w"&gt;    &lt;/span&gt;upload:
-&lt;span class="w"&gt;        &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;run&lt;span class="w"&gt; &lt;/span&gt;--target&lt;span class="o"&gt;=&lt;/span&gt;upload
+&lt;span class="w"&gt;        &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;run&lt;span class="w"&gt; &lt;/span&gt;--target&lt;span class="w"&gt; &lt;/span&gt;upload
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ensuite vous pouvez automatiser la compilation en lançant la commande dans Vim &lt;code&gt;:make&lt;/code&gt;&lt;/p&gt;

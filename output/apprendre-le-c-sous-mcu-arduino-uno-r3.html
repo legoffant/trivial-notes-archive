@@ -216,7 +216,7 @@ $<span class="w"> </span>pio<span class="w"> </span>project<span class="w"> </sp
 <p>Dans le programme, il faut utiliser le header <code>Arduino.h</code> pour utiliser les librairies et fonctions de la carte. En C++ on utilise le mot clé void. Egalement j'utilise un print pour avoir un retour d'affichage de fonctionnement sur le monitoring du port série.  </p>
 <h3>Essayer de compiler:</h3>
 <p>La commande va télécharger le programme et flasher la carte UNO:  </p>
-<div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">pio</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="o">--</span><span class="n">target</span><span class="o">=</span><span class="n">upload</span>
+<div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">pio</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="o">--</span><span class="n">target</span><span class="w"> </span><span class="n">upload</span>
 </code></pre></div>
 
 <p>Normalement la LED built-in devrait clignoter si tout fonctionne.</p>
@@ -232,7 +232,7 @@ $<span class="w"> </span>pio<span class="w"> </span>project<span class="w"> </sp
 
 <span class="w">    </span>.PHONY:<span class="w"> </span>upload
 <span class="w">    </span>upload:
-<span class="w">        </span>pio<span class="w"> </span>run<span class="w"> </span>--target<span class="o">=</span>upload
+<span class="w">        </span>pio<span class="w"> </span>run<span class="w"> </span>--target<span class="w"> </span>upload
 </code></pre></div>
 
 <p>Ensuite vous pouvez automatiser la compilation en lançant la commande dans Vim <code>:make</code></p>
