@@ -25,6 +25,7 @@ trace <1-5%:
 *   \- Protéine (Fromage blanc)
 *   \- Poudre de Colombo
 *   \- Safran Sargol d'Iran
+*   \- Vinaigrette Maille
 *   \- Salive ADN + Bactérie de la bouche
 *   \- Blob  
 *   \- ADN méduse Aurélia Aurita, gène de transdifférenciation de l'immortalité  
@@ -83,6 +84,8 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 *   Epices: poudre de Colombo Indien, Conquête des saveurs 75gr 1,79€ Ingrédients (Cumin, curcuma, coriandre, piment fort, fenugrec, fenouil, ail, sel, gingembre, cannelle, poivre)
 
 *   Epices: poudre de Safran Sargol D'Iran sur [Safranpur](https://www.safranpur.com/safran-poudre/36-safran-en-poudre-1-gr.html) à 4,5€/ 1gr
+
+*   Vinaigrette Maille Légère Huile d'Olive (12%) Pointe d'Olive Noire 36 cl (8,5€ / L). Fournisseur de la cour de Louis XV. Ingrédients : eau, vinaigre de vin blanc, huile de tournesol 18%, huile d’olive vierge extra 12%, vinaigre de vin rouge, Aceto Balsamico di Modena IGP (vinaigre de vin, moût de raisin concentré), sucre, sel, olive noire déshydratée 0,5%, épaississants : arôme naturel, sirop de sucre caramélisé. Peut contenir : moutarde, sésame.​
     
 *   Blob, pack complet : trois sclérotes de Physarum polycephalum japonais. Adoptez Mikado. sur [Adopte un Blob](https://adopteunblob.fr/boutique-de-physarum-polycephalum-acheter-un-blob/Pack-complet-trois-scl%C3%A9rotes-de-Physarum-polycephalum-japonais-p377949753). (€29.90)  
     
