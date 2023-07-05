@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Les principes des machines à leur programmation | Trivial notes</title>
+    <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anthony Le Goff" />
+    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_position" content="top=60,right=60" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li ><a href="/pages/contact.html">Contact</a></li>
+                <li ><a href="/pages/ltcb.html">LTCB</a></li>
+                <li class="divider-vertical"></li>
+                <li >
+                  <a href="/category/cc.html">
+						        <i class="icon-folder-open icon-large"></i>C/C++
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/entrepreneurship.html">
+						        <i class="icon-folder-open icon-large"></i>Entrepreneurship
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/inclassable.html">
+						        <i class="icon-folder-open icon-large"></i>Inclassable
+					         </a>
+                </li>
+                <li class="active">
+                  <a href="/category/linux.html">
+						        <i class="icon-folder-open icon-large"></i>Linux
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/transhumanisme.html">
+						        <i class="icon-folder-open icon-large"></i>Transhumanisme
+					         </a>
+                </li>
+              <ul class="nav pull-right">
+                    <li><a href="/"><i class="icon-th-list"></i>Archives</a></li>
+              </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8" id="content">
+<div class="row">
+    <div class="span2">
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2023-07-05T08:39:00+02:00">
+    <i class="icon-calendar"></i>&nbsp;mer. 05 juillet 2023
+</abbr>
+<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+
+
+<br/>
+	&nbsp;&nbsp;<a href="/tag/machine.html" class="label"><i class="icon-tag"></i>&nbsp;machine</a>
+	&nbsp;&nbsp;<a href="/tag/assembleur.html" class="label"><i class="icon-tag"></i>&nbsp;assembleur</a>
+	&nbsp;&nbsp;<a href="/tag/compilateur.html" class="label"><i class="icon-tag"></i>&nbsp;compilateur</a>
+</footer><!-- /.post-info -->        </div>
+    </div>
+    <div class="span6">
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Les principes des machines à leur programmation">
+                        Les principes des machines à leur programmation
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
+
+        <p>Pour une machine, tout commence par un signal électrique. Un courant qui est généré par des charges dans un conducteur avec des électrons. On a donc inventé les semi-conducteurs en particulier le transistor qui est la base des ordinateurs et c'est un commutateur.  </p>
+<h3>Le transistor</h3>
+<p>A la même époque vont naître les travaux sur les machines de Turing et les architectures de Von Neumann qui sont la base de la conception des ordinateurs moderne.  </p>
+<p>Le transistor a été inventé en <strong>1947</strong> par trois ingénieurs américains des laboratoires Bell : <strong>John Bardeen, Walter Brattain</strong> et <strong>William Schockley</strong>. L’invention de ce dispositif qui permet de détecter et d'amplifier les courants électriques leur a valu le <strong>prix Nobel de physique en 1956</strong>. John Bardeen va remporter un second Prix de Nobel de physique en 1972, il oriente ses recherches vers la compréhension des mécanismes de la <strong>supraconductivité</strong>. La formulation d'un modèle de couplage d'électrons et de leurs interactions avec les vibrations du réseau cristallin des solides sous le nom de théorie BCS, des initiales de Bardeen et de ses collègues <strong>Leon Neil Cooper</strong> et <strong>John Robert Schrieffer</strong>, permet d'expliquer les phénomènes de résistivité électrique nulle observés dans les supraconducteurs.  </p>
+<p>Sur le principe un transistor est un commutateur qui permet de commander un courant électrique. C'est un signal carré. Soit ouvert ou fermé que l'on défini par 0 ou 1. Les systèmes de traitement du calcul travail que sous forme binaire. Ce que l'on appel les bits. C'est le langage machine. Celui-ci admet des cycles de traitement de l'information à travers une fréquence en Hertz, ce qui permet d'avoir une horloge.  </p>
+<p>L'assemblage de plusieurs transistors permet de créer des circuits logiques utilisant l'algèbre de Boole. Ainsi on utilise des portes logiques (AND, NOT, OR, XOR, NAND) permettent de traiter des instructions du processeur sur la logique combinatoire basé sur des <a href="https://zestedesavoir.com/tutoriels/2256/de-la-logique-aux-processeurs/la-logique-des-propositions-et-des-predicats/">propositions et des prédicats</a>.  </p>
+<h3>La représentation de l'information</h3>
+<p>La base de la théorie de l'information de Shannon est le bit. Un regroupement de 8 bits correspond à l'octet qui prend la valeur de 0 à 255. Pourquoi 8 bits? C'est des puissances de 2 (8 = 2^3) qui permet d'accélérer le traitement du code informatique. Ainsi on converti le binaire en base 16 hexadécimal qui est un regroupement de 2 x 8 bits (Octets). Mais il y a d'autres base, en particulier pour améliorer la cryptographie tel que la base 36, 64, 128, 256 qui sont des puissances de 2, voir certaine des bases carrés. sqrt(16) = 4, sqrt(36) = 6, sqrt(64) = 8 . Un système de nombre en informatique pour optimiser le calcul utilise une base de puissance de 2 (binaire) avec une combinaison de base carré. En cryptographie le MD5 est un hash sur 128 bits sur la base 64. Il est donc nécessaire de faire des changements de base entre des systèmes numériques ce qui augmente le temps de calcul et donc de casser le code. Sha-256 est une des fonctions de hachage les plus efficaces actuellement en base 64. Une base 512 se forme sur 8x8x8 et donc plus de 512 caractères différents. 8 étant une puissance de 2 et représente un octet.  </p>
+<p>Pour représenter les caractères on a inventé une table nommé ASCII. Ce qui est suffisant pour l'anglais et l'alphabet codé sur 255 valeurs et donc un octet. Mais cela n'est pas suffisant pour le chinois et ces symboles, il faut de l'UTF-8. Ce qui augmente les temps de traitements pour calculer et déchiffrer du code qui est basé sur 214 radicaux. l'UTF-8 pouvait coder n'importe quel point de code entre U+0000 et U+7FFFFFFF (donc jusqu'à 31 bits).  </p>
+<p>Il y aurai également a traiter les nombres en particulier les flottants qui ont une représentation spécifique.  </p>
+<h3>CPU</h3>
+<p>Les composants du CPU des ordinateurs:  </p>
+<ul>
+<li>
+<p>Bus : nappes transportant l'info  </p>
+</li>
+<li>
+<p>Registres : emplacements de stockage à accès rapide  </p>
+</li>
+<li>
+<p>ALU :unité de calcul (entiers et booléens)</p>
+</li>
+<li>Unité de contrôle :interprète les instructions</li>
+<li>Horloge :cadence les instructions  </li>
+</ul>
+<p>Les architectures de processeur:  </p>
+<ul>
+<li>
+<p>x86-64 (Intel, AMD) : PC et compatibles  </p>
+</li>
+<li>
+<p>ARM : beaucoup de téléphone, Raspberry Pi</p>
+</li>
+<li>PowerPC (IBM) : Wii, PS3, XBox 360</li>
+<li>MIPS, RISC-V etc.  </li>
+</ul>
+<p>Les instructions machine:  </p>
+<p>Instruction Set Architecture (ISA): modèle qui définit comment le logiciel contrôle le hardware (code binaire)  </p>
+<p>chaque processeur possède son propre jeu d'instructions machine</p>
+<ul>
+<li>
+<p>ARM is RISC (Reduced Instruction Set Computing)  </p>
+</li>
+<li>
+<p>x86 is CISC (Complex Instruction Set Computing)</p>
+</li>
+<li>chaque instruction possède un identifiant numérique : opcode  </li>
+</ul>
+<p>La programmation directe du processeur avec les instructions machines est difficile, fastidieuse et quasi-impossible à comprendre. Le <strong>microcode</strong> est un programme composés de micro-instructions dont l'exécution au sein du processeur ou microprocesseur définit le jeu d'instructions de celui-ci.  </p>
+<p><strong>RISC-V</strong> (prononcé en anglais « RISC five » et signifiant « RISC cinq ») est une architecture de jeu d'instructions (instruction set architecture ou ISA) RISC ouverte et libre, disponible en versions 32, 64 et 128 bits. Ses spécifications sont ouvertes et peuvent être utilisées librement par l'enseignement, la recherche et l'industrie. Les specifications sont ratifiées de façon ouverte par la communauté internationale des développeurs.  </p>
+<h3>Le langage assembleur</h3>
+<p>C'est le langage le plus proche de la machine compréhensible par les humains. Il est variant en fonction de l'architecture du processeur défini par le constructeur. Les combinaisons de bits du langage machine sont représentées par des symboles dits « mnémoniques », c'est-à-dire faciles à retenir.  </p>
+<p>Certaines opérations fondamentales sont disponibles dans la plupart des jeux d'instructions.</p>
+<ul>
+<li>Déplacement dans la mémoire :<ul>
+<li>chargement d'une valeur dans un registre ;</li>
+<li>déplacement d'une valeur depuis un emplacement mémoire dans un registre, et inversement ;</li>
+</ul>
+</li>
+<li>
+<p>Calcul :</p>
+<ul>
+<li>
+<p>addition, ou soustraction des valeurs de deux registres et chargement du résultat dans un registre ;  </p>
+</li>
+<li>
+<p>combinaison de valeurs de deux registres suivant une opération booléenne (ou opération bit à bit) ;  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Modification du déroulement du programme :</p>
+<ul>
+<li>saut à un autre emplacement dans le programme (normalement, les instructions sont exécutées séquentiellement, les unes après les autres) ;</li>
+<li>saut à un autre emplacement, mais après avoir sauvegardé l'emplacement de l'instruction suivante afin de pouvoir y revenir (point de retour) ;</li>
+<li>retour au dernier point de retour ;</li>
+</ul>
+</li>
+<li>Comparaison :<ul>
+<li>comparer les valeurs de deux registres.</li>
+</ul>
+</li>
+</ul>
+<p>Et on trouve des instructions spécifiques avec une ou quelques instructions pour des opérations qui auraient dû en prendre beaucoup. Exemples :</p>
+<ul>
+<li>
+<p>déplacement de grands blocs de mémoire ;  </p>
+</li>
+<li>
+<p>multiplication, division ;  </p>
+</li>
+<li>
+<p>arithmétique lourde (sinus, cosinus, racine carrée, opérations sur des vecteurs) ;  </p>
+</li>
+<li>
+<p>application d'une opération simple (par exemple, une addition) à un ensemble de données par l'intermédiaire des extensions MMX ou SSE des nouveaux processeurs.  </p>
+</li>
+</ul>
+<p><img alt="convert asm" src="images/convert-asm.jpg"></p>
+<h3>Linux et la routine de démarrage du noyau</h3>
+<p>Pour démarrer le noyau Linux au bootloader on utilise le langage assembleur, si vous voulez créer et comprendre les systèmes d'exploitation il est nécessaire de lancer le noyau en assembleur avant le traitement en langage C. Quand la bzImage (pour une image destinée au i386) est appelée, vous commencez à <a href="https://elixir.bootlin.com/linux/latest/source/arch/x86/boot/header.S">./arch/x86/boot/header.S</a> dans la routine assembleur nommée start.  </p>
+<p><img alt="appel kernel" src="images/appel-kernel.jpg"></p>
+<h3>sysCall</h3>
+<p>Les process utilisent les sysCall pour communiquer avec le noyau comme API avec l'assembleur. Les sysCall sont listés <em>dans /usr/include/asm/unistd.h</em>  </p>
+<h3>Les compilateurs</h3>
+<p>Le principal compilateur en langage C, nommé <strong>GCC</strong> est écrit en assembleur + C. Il permet également de produire du code en assembleur, car le compilateur converti les programmes en langage machine. Pour écrire du code assembleur pure et le compiler sur Linux on utilise NASM sans passé par l'intermédiaire du langage C. Je crois que c'est le seul compilateur GCC qui permet de traduire en assembleur. Le langage C est l'anneau de pouvoir de l'informatique ou tous les autres langages dérives mais également les compilateurs et interpréteurs. Ainsi l'interpréteur en Python(CPython) est écrit en langage C. Il faut donc apprendre le langage C dans les premiers langages de programmation et ce familiariser avec spécificité tel que l'accès à la mémoire et les pointeurs.</p>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+</div>
+</div>
+        </div><!--/span-->
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><div><i class="icon-external-link"></i><a href="https://getpelican.com/">Pelican</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.python.org/">Python.org</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://framabook.org/le-c-en-20-heures-2/">Apprendre le C en 20H</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://archlinux.org/">Arch Linux</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.blackarch.io/">Blackarch</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.kernel.org/">Kernel</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.arduino.cc/">Arduino</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://beagleboard.org/bone">BeagleBoard</a></div></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
