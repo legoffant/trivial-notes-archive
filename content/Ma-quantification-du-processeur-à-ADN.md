@@ -80,7 +80,7 @@ L'éthanol j'utilise du parfum et leurs propriétés:
     
 *   Protéine et Calcium, un fromage blanc dans le commerce. (2.48 € / KG)  
     
-*   Epices: poudre de Colombo au détail au marché, ou dans les supermarchés. Chez Ducros les ingrédients: Curcuma, graine de coriandre (13%), fenugrec torréfié (13%), cumin et cumin torréfié (9%), riz torréfié, graine de moutarde, poivre blanc, persil, girofle.  (37.02 € / kg)  
+*   Epices: poudre de Colombo Indien, Conquête des saveurs 75gr 1,79€ Ingrédients (Cumin, curcuma, coriandre, piment fort, fenugrec, fenouil, ail, sel, gingembre, cannelle, poivre)
 
 *   Epices: poudre de Safran Sargol D'Iran sur [Safranpur](https://www.safranpur.com/safran-poudre/36-safran-en-poudre-1-gr.html) à 4,5€/ 1gr
     
