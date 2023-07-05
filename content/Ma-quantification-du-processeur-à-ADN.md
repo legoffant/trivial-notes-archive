@@ -20,14 +20,13 @@ C'est un rite, si vous copiez mes directives vous intégrer un cadre avec les m�
 trace <1-5%:
 
 *   \- Lithium  
-    
 *   \- Pénicillium
 *   \- glucose (gelée royale)
 *   \- Protéine (Fromage blanc)
 *   \- Poudre de Colombo
+*   \- Safran Sargol d'Iran
 *   \- Salive ADN + Bactérie de la bouche
 *   \- Blob  
-    
 *   \- ADN méduse Aurélia Aurita, gène de transdifférenciation de l'immortalité  
     
 
@@ -82,6 +81,8 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 *   Protéine et Calcium, un fromage blanc dans le commerce. (2.48 € / KG)  
     
 *   Epices: poudre de Colombo au détail au marché, ou dans les supermarchés. Chez Ducros les ingrédients: Curcuma, graine de coriandre (13%), fenugrec torréfié (13%), cumin et cumin torréfié (9%), riz torréfié, graine de moutarde, poivre blanc, persil, girofle.  (37.02 € / kg)  
+
+*   Epices: poudre de Safran Sargol D'Iran sur [Safranpur](https://www.safranpur.com/safran-poudre/36-safran-en-poudre-1-gr.html) à 4,5€/ 1gr
     
 *   Blob, pack complet : trois sclérotes de Physarum polycephalum japonais. Adoptez Mikado. sur [Adopte un Blob](https://adopteunblob.fr/boutique-de-physarum-polycephalum-acheter-un-blob/Pack-complet-trois-scl%C3%A9rotes-de-Physarum-polycephalum-japonais-p377949753). (€29.90)  
     
