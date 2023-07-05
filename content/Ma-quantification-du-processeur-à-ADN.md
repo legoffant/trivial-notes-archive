@@ -89,8 +89,8 @@ L'éthanol j'utilise du parfum et leurs propriétés:
     
 *   Blob, pack complet : trois sclérotes de Physarum polycephalum japonais. Adoptez Mikado. sur [Adopte un Blob](https://adopteunblob.fr/boutique-de-physarum-polycephalum-acheter-un-blob/Pack-complet-trois-scl%C3%A9rotes-de-Physarum-polycephalum-japonais-p377949753). (€29.90)  
     
-*   Votre propre ADN: Rincez-vous la bouche avec une brosse à dent pour récupérer des cellules et de la salive après quelques jours sans vous brossez les dents pour faire proliférer des bactéries.  
-    
+*   Votre propre ADN: Rincez-vous la bouche avec une brosse à dent pour récupérer des cellules et de la salive après quelques jours sans vous brossez les dents pour faire proliférer des bactéries. Si vous brosser assez fort vos gencives vous pouvez facilement récupérer un peu de sang composé à 44% de globules rouges, 1% de plaquettes et globules blancs et 55% de plasma. Les globules blancs ont des cellules à noyau avec ADN.
+
 *   Récupérer de l'ADN de Méduse Aurelia Aurita chez [Récif Art](https://www.recifart.com/fr/meduses/1310-meduse-aurelia-aurita-meduses-recifart.html). 80€ frais de port inclus pour les animaux vivants +50€.  
     
 
