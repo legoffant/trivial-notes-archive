@@ -28,7 +28,7 @@ Cloudflare chiffre ces données transitant sur ces DNS. support DNS-over-HTTPS, 
 ### Comment procéder  
 
 Procédure pour changer ces DNS sous GNU/Linux (Arch) est d'éditer le fichier `/etc/resolv.conf`.  
-```
+```text
 $ sudo nano /etc/resolv.conf  
 
 nameserver 1.0.0.1  
@@ -43,7 +43,7 @@ $ sudo chattr +i /etc/resolv.conf
 Il faut redémarrer le PC pour prendre en compte la configuration ou redémarrer le service réseau avec `systemctl` (si vous utilisez `NetworkManager.service`).  
 
 Pour vérifier les changements installer l'outil `dig`  
-```
+```text
 $ sudo pacman -S dnsutils  
 
 $ dig https://google.fr  
