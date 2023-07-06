@@ -31,7 +31,7 @@ trace <1-5%:
 *   \- ADN méduse Aurélia Aurita, gène de transdifférenciation de l'immortalité  
 *   \- Poudre de fougère, teneur en REE(Rare Earth Element)
 *   \- Graines de chia
-
+*   \- Levure Saccharomyces Cerevisiae
   
 
 **Composants**:  
@@ -97,6 +97,8 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 *   Poudre de Fougère, Polypode de Chêne 40 Gr (395€ / kg) , Polypodium Vulgare. Propriété de teneur en REE(Rare Earth Element) Fournisseur: [Les Jardins de Sainte Hildegarde](https://www.lesjardinsdesaintehildegarde.com/plantes-et-epices/plantes/polypode-poudre-bio-40g/)
 
 *   Graine de Chia, superaliment. 250gr Origine Bolivie. (13,56€/KG) Chez [Greenweez](https://www.greenweez.com/produit/graines-de-chia-bio-250g-1/2WEEZ0075/48817). Riche en fibre,protéine, calcium et Omega3, Omega6, anti-oxydants. A moudre dans un moulin à café pour en faire de la poudre.
+
+*   Levure Saccharomyces Cerevisiae - Classic Munich – Lallemand Danstar 11gr 4,25€ - [Le comptoir du brasseur](https://www.lecomptoirdubrasseur.fr/ingredients/levures/fermentation-haute/levure-munich-classic-11g-lallemand-danstar/)
 
 C'est la tradition des alchimistes et c'est alimentaire avec une évolution minérale et la matière par la physique nucléaire contemporaine. Il faut du deuterium pour produire un réacteur à eau pressurisé. Isotope naturel sous forme de trace dans l'eau, et plus concentré dans les océans. Certaines eaux minérales ont du tritium.  
 
