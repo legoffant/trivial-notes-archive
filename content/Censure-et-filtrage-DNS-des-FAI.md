@@ -5,7 +5,7 @@ Tags:dns
 Authors: Anthony Le Goff
 Summary:
 
-La censure d'internet, un vaste programme. Nos politiques n'arrête pas de peter des cables, entre les sites de terrorisme, de pédopornographie, d'activiste et de librairie pirate interdite en open access (Sci-Hub) : toujours la même méthode, le filtrage DNS des FAI. Car techniquement c'est très compliquer de censurer internet, pour le pecnot moyen changer ces DNS est déja trop complexe.  
+La censure d'internet, un vaste programme. Nos politiques n'arrêtent pas de peter des cables, entre les sites de terrorisme, de pédopornographie, d'activiste et de librairie pirate interdite en open access (Sci-Hub) : toujours la même méthode, le filtrage DNS des FAI. Car techniquement c'est très compliquer de censurer internet, pour le pecnot moyen changer ces DNS est déja trop complexe.  
 
 La dernière lubie des politiques est de censurer la pornographie en France en fixant une moyenne d'âge et de ficher la population qui regarde du porno. Et puis avec les émeutes ont veut couper les réseaux sociaux. Bah voyons.  
 
