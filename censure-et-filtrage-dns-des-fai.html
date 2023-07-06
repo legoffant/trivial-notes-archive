@@ -186,6 +186,11 @@ google.fr.        60    IN    SOA    ns1.google.com. dns-admin.go
 
 <p>L'indicateur <code>SERVER</code> présente le DNS 1.0.0.1 comme passerelle.</p>
 <p><strong>INCONVENIENT</strong>: Certaines Box Internet n'accepte que le DNS du FAI pour l'accès sur le réseau local.</p>
+<h3>Adresse IP</h3>
+<p>L'outil <code>dig</code> permet également de récupérer votre IPv4 public en particulier sous êtes derrière un VPN.</p>
+<div class="highlight"><pre><span></span><code>$ dig +short txt ch whoami.cloudflare @1.0.0.1
+&quot;176.180.233.XXX&quot;
+</code></pre></div>
         </div><!-- /.entry-content -->
     </article>
 </section>
