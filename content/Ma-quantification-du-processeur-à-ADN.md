@@ -29,6 +29,7 @@ trace <1-5%:
 *   \- Salive ADN + Bactérie de la bouche
 *   \- Blob  
 *   \- ADN méduse Aurélia Aurita, gène de transdifférenciation de l'immortalité  
+*   \- Poudre de fougère, teneur en REE(Rare Earth Element)
     
 
   
@@ -92,7 +93,8 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 *   Votre propre ADN: Rincez-vous la bouche avec une brosse à dent pour récupérer des cellules et de la salive après quelques jours sans vous brossez les dents pour faire proliférer des bactéries. Si vous brosser assez fort vos gencives vous pouvez facilement récupérer un peu de sang composé à 44% de globules rouges, 1% de plaquettes et globules blancs et 55% de plasma. Les globules blancs ont des cellules à noyau avec ADN.
 
 *   Récupérer de l'ADN de Méduse Aurelia Aurita chez [Récif Art](https://www.recifart.com/fr/meduses/1310-meduse-aurelia-aurita-meduses-recifart.html). 80€ frais de port inclus pour les animaux vivants +50€.  
-    
+
+* Poudre de Fougère, Polypode de Chêne 40 Gr (395€ / kg) , Polypodium Vulgare. Propriété de teneur en REE(Rare Earth Element) Fournisseur: [Les Jardins de Sainte Hildegarde](https://www.lesjardinsdesaintehildegarde.com/plantes-et-epices/plantes/polypode-poudre-bio-40g/)
 
 C'est la tradition des alchimistes et c'est alimentaire avec une évolution minérale et la matière par la physique nucléaire contemporaine. Il faut du deuterium pour produire un réacteur à eau pressurisé. Isotope naturel sous forme de trace dans l'eau, et plus concentré dans les océans. Certaines eaux minérales ont du tritium.  
 
