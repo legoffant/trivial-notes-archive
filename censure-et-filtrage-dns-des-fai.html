@@ -148,10 +148,10 @@
 <p>Cloudflare chiffre ces données transitant sur ces DNS. support DNS-over-HTTPS, DNS-over-TLS, DNSSEC, and DoS attack protection. Cloudflare logs l'adresse IP 25h sur ces serveurs.  </p>
 <h3>Comment procéder</h3>
 <p>Procédure pour changer ces DNS sous GNU/Linux (Arch) est d'éditer le fichier <code>/etc/resolv.conf</code>.  </p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/resolv.conf<span class="w">  </span>
+<div class="highlight"><pre><span></span><code>$ sudo nano /etc/resolv.conf  
 
-nameserver<span class="w"> </span><span class="m">1</span>.0.0.1<span class="w">  </span>
-nameserver<span class="w"> </span><span class="m">1</span>.1.1.1<span class="w">  </span>
+nameserver 1.0.0.1  
+nameserver 1.1.1.1  
 </code></pre></div>
 
 <p>Pour rendre permanent et éviter qu'un programme ré-écrit la configuration (Network Manager)  </p>
@@ -160,28 +160,28 @@ nameserver<span class="w"> </span><span class="m">1</span>.1.1.1<span class="w">
 
 <p>Il faut redémarrer le PC pour prendre en compte la configuration ou redémarrer le service réseau avec <code>systemctl</code> (si vous utilisez <code>NetworkManager.service</code>).  </p>
 <p>Pour vérifier les changements installer l'outil <code>dig</code>  </p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>dnsutils<span class="w">  </span>
+<div class="highlight"><pre><span></span><code>$ sudo pacman -S dnsutils  
 
-$<span class="w"> </span>dig<span class="w"> </span>https://google.fr<span class="w">  </span>
+$ dig https://google.fr  
 
-<span class="p">;</span><span class="w"> </span>&lt;&lt;&gt;&gt;<span class="w"> </span>DiG<span class="w"> </span><span class="m">9</span>.18.15<span class="w"> </span>&lt;&lt;&gt;&gt;<span class="w"> </span>https://www.google.fr<span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>global<span class="w"> </span>options:<span class="w"> </span>+cmd<span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>Got<span class="w"> </span>answer:<span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>-&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de:<span class="w"> </span>QUERY,<span class="w"> </span>status:<span class="w"> </span>NXDOMAIN,<span class="w"> </span>id:<span class="w"> </span><span class="m">57157</span><span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>flags:<span class="w"> </span>qr<span class="w"> </span>rd<span class="w"> </span>ra<span class="p">;</span><span class="w"> </span>QUERY:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>ANSWER:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span>AUTHORITY:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span>ADDITIONAL:<span class="w"> </span><span class="m">1</span>
+; &lt;&lt;&gt;&gt; DiG 9.18.15 &lt;&lt;&gt;&gt; https://www.google.fr  
+;; global options: +cmd  
+;; Got answer:  
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NXDOMAIN, id: 57157  
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
 
-<span class="p">;;</span><span class="w"> </span>OPT<span class="w"> </span>PSEUDOSECTION:<span class="w">  </span>
-<span class="p">;</span><span class="w"> </span>EDNS:<span class="w"> </span>version:<span class="w"> </span><span class="m">0</span>,<span class="w"> </span>flags:<span class="p">;</span><span class="w"> </span>udp:<span class="w"> </span><span class="m">1232</span><span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>QUESTION<span class="w"> </span>SECTION:<span class="w">  </span>
-<span class="p">;</span>https://www.google.fr.<span class="w">        </span>IN<span class="w">    </span>A
+;; OPT PSEUDOSECTION:  
+; EDNS: version: 0, flags:; udp: 1232  
+;; QUESTION SECTION:  
+;https://www.google.fr.        IN    A
 
-<span class="p">;;</span><span class="w"> </span>AUTHORITY<span class="w"> </span>SECTION:<span class="w">  </span>
-google.fr.<span class="w">        </span><span class="m">60</span><span class="w">    </span>IN<span class="w">    </span>SOA<span class="w">    </span>ns1.google.com.<span class="w"> </span>dns-admin.google.com.<span class="w"> </span><span class="m">545619271</span><span class="w"> </span><span class="m">900</span><span class="w"> </span><span class="m">900</span><span class="w"> </span><span class="m">1800</span><span class="w"> </span><span class="m">60</span>
+;; AUTHORITY SECTION:  
+google.fr.        60    IN    SOA    ns1.google.com. dns-admin.google.com. 545619271 900 900 1800 60
 
-<span class="p">;;</span><span class="w"> </span>Query<span class="w"> </span>time:<span class="w"> </span><span class="m">26</span><span class="w"> </span>msec<span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>SERVER:<span class="w"> </span><span class="m">1</span>.0.0.1#53<span class="o">(</span><span class="m">1</span>.0.0.1<span class="o">)</span><span class="w"> </span><span class="o">(</span>UDP<span class="o">)</span><span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>WHEN:<span class="w"> </span>Thu<span class="w"> </span>Jul<span class="w"> </span><span class="m">06</span><span class="w"> </span><span class="m">23</span>:47:21<span class="w"> </span>CEST<span class="w"> </span><span class="m">2023</span><span class="w">  </span>
-<span class="p">;;</span><span class="w"> </span>MSG<span class="w"> </span>SIZE<span class="w">  </span>rcvd:<span class="w"> </span><span class="m">110</span>
+;; Query time: 26 msec  
+;; SERVER: 1.0.0.1#53(1.0.0.1) (UDP)  
+;; WHEN: Thu Jul 06 23:47:21 CEST 2023  
+;; MSG SIZE  rcvd: 110
 </code></pre></div>
 
 <p>L'indicateur <code>SERVER</code> présente le DNS 1.0.0.1 comme passerelle.</p>
