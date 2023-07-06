@@ -74,7 +74,7 @@ L'indicateur `SERVER` présente le DNS 1.0.0.1 comme passerelle.
 
 ### Adresse IP
 
-L'outil `dig` permet également de récupérer votre IPv4 public en particulier sous êtes derrière un VPN.
+L'outil `dig` permet également de récupérer votre IPv4 public en particulier si vous êtes derrière un VPN.
 
 ```text
 $ dig +short txt ch whoami.cloudflare @1.0.0.1
