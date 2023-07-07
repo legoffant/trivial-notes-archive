@@ -1,5 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-07T00:12:00+02:00</updated><entry><title>Censure et filtrage DNS des FAI</title><link href="/censure-et-filtrage-dns-des-fai.html" rel="alternate"></link><published>2023-07-07T00:12:00+02:00</published><updated>2023-07-07T00:12:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-07:/censure-et-filtrage-dns-des-fai.html</id><summary type="html"></summary><content type="html">&lt;p&gt;La censure d'internet, un vaste programme. Nos politiques n'arrêtent pas de peter des cables, entre les sites de terrorisme, de pédopornographie, d'activiste et de librairie pirate interdite en open access (Sci-Hub) : toujours la même méthode, le filtrage DNS des FAI. Car techniquement c'est très compliquer de censurer internet, pour le pecnot moyen changer ces DNS est déja trop complexe.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-07T18:54:00+02:00</updated><entry><title>Note clean install Proxmox VE 8</title><link href="/note-clean-install-proxmox-ve-8.html" rel="alternate"></link><published>2023-07-07T18:54:00+02:00</published><updated>2023-07-07T18:54:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-07:/note-clean-install-proxmox-ve-8.html</id><summary type="html"></summary><content type="html">&lt;p&gt;J'ai relancer l'installation de mon serveur Proxmox pour une clean install et configurer la nouvelle carte graphique. Voila ma prise de note, et configuration de base post-installation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: 
+- The Debian Administrator's Handbook &lt;a href="https://debian-handbook.info/browse/stable/"&gt;https://debian-handbook.info/browse/stable/&lt;/a&gt;
+-  Proxmox VE Documentation Index  &lt;a href="https://pve.proxmox.com/pve-docs-7/"&gt;https://pve.proxmox.com/pve-docs-7/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Créer une clé USB bootable de Proxmox 8 VE. 
+sous linux en CLI:&lt;/p&gt;
+&lt;h3&gt;INSTALL&lt;/h3&gt;
+&lt;p&gt;check la partition clé USB&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;fdisk&lt;span class="w"&gt; &lt;/span&gt;-l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Formatage de la clé USB avec l'iso&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;dd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;proxmox-ve_8.0-2.iso&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/sdb&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;4M&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;status&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;progress&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;sync
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;BIOS AsRock Configuration:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Advanced -&amp;gt; CPU Configuration -&amp;gt; SVM Mode: enabled&lt;/em&gt;
+&lt;em&gt;Advanced -&amp;gt; AMD CBS -&amp;gt; NBIO Common Options -&amp;gt; IOMMU enabled&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Activer  GPU Passthrough sur  Proxmox 8
+&lt;a href="https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/"&gt;https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;MISE A JOUR&lt;/h3&gt;
+&lt;p&gt;Desactivation dans mise à jour du depot entreprise et ceph&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;nano&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;/etc/apt/sources.list.d/pve-no-enterprise.list&lt;/span&gt;
+
+&lt;span class="c"&gt;# not for production use&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://download.proxmox.com/debian/pve&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bookworm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;pve-no-subscription&lt;/span&gt;
+
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;apt-get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;update&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;apt-get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;dist-upgrade&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;reboot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;now&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;CREER UN UTILISATEUR&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;useradd&lt;span class="w"&gt; &lt;/span&gt;-g&lt;span class="w"&gt; &lt;/span&gt;users&lt;span class="w"&gt; &lt;/span&gt;-d&lt;span class="w"&gt; &lt;/span&gt;/home/toto&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;/bin/bash&lt;span class="w"&gt; &lt;/span&gt;toto
+$&lt;span class="w"&gt; &lt;/span&gt;passwd&lt;span class="w"&gt; &lt;/span&gt;toto
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Droit sudo&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;apt-get&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;sudo
+$&lt;span class="w"&gt; &lt;/span&gt;usermod&lt;span class="w"&gt; &lt;/span&gt;-aG&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;toto
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;SECURITY&lt;/h3&gt;
+&lt;p&gt;Les ports ouverts par défauts sont 22(SSH), 111(rpcbind), 3128(squid-http)&lt;/p&gt;
+&lt;p&gt;Sécuriser SSH&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt;  &lt;/span&gt;nano&lt;span class="w"&gt;  &lt;/span&gt;/etc/ssh/sshd_config
+
+Port&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2222&lt;/span&gt;&lt;span class="w"&gt;                  &lt;/span&gt;&lt;span class="c1"&gt;# Changer le port par défaut (à retenir!)&lt;/span&gt;
+PermitRootLogin&lt;span class="w"&gt; &lt;/span&gt;no&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="c1"&gt;# Ne pas permettre de login en root&lt;/span&gt;
+AllowUsers&lt;span class="w"&gt; &lt;/span&gt;toto&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="c1"&gt;# N&amp;#39;autoriser qu&amp;#39;un utilisateur précis&lt;/span&gt;
+
+$&lt;span class="w"&gt;  &lt;/span&gt;/etc/init.d/ssh&lt;span class="w"&gt; &lt;/span&gt;restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de fail2ban, protection contre les brutes-forces&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;apt&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;fail2ban
+$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;systemctl&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;fail2ban
+$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;nano&lt;span class="w"&gt; &lt;/span&gt;/etc/fail2ban/jail.local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Change the variables bantime (the number of seconds the attacker will be blocked for) and maxretry (the number of attempts to enter the login / password) for each individual service.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;mta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mail&lt;/span&gt;
+&lt;span class="n"&gt;destemail&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="nv"&gt;@gmail&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;
+&lt;span class="n"&gt;sender&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fail2ban&lt;/span&gt;&lt;span class="nv"&gt;@srv01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;
+&lt;span class="n"&gt;ignoreip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sshd&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;enabled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;true&lt;/span&gt;
+&lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sftp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2222&lt;/span&gt;
+&lt;span class="k"&gt;filter&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sshd&lt;/span&gt;
+&lt;span class="n"&gt;logpath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;auth&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;
+&lt;span class="n"&gt;maxretry&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="n"&gt;findtime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;300&lt;/span&gt;
+&lt;span class="n"&gt;bantime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3600&lt;/span&gt;
+
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;proxmox&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;enabled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;true&lt;/span&gt;
+&lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8006&lt;/span&gt;
+&lt;span class="k"&gt;filter&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;proxmox&lt;/span&gt;
+&lt;span class="n"&gt;logpath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;daemon&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;
+&lt;span class="n"&gt;maxretry&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="n"&gt;bantime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3600&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer le fichier /etc/fail2ban/filter.d/proxmox.conf :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[Definition]&lt;/span&gt;
+&lt;span class="na"&gt;failregex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;pvedaemon\[.*authentication failure&lt;/span&gt;&lt;span class="c1"&gt;; rhost=&amp;lt;HOST&amp;gt; user=.* msg=.*&lt;/span&gt;
+&lt;span class="na"&gt;ignoreregex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;systemctl&lt;span class="w"&gt; &lt;/span&gt;restart&lt;span class="w"&gt; &lt;/span&gt;fail2ban
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;check status&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;fail2ban-client&lt;span class="w"&gt; &lt;/span&gt;-v&lt;span class="w"&gt; &lt;/span&gt;status&lt;span class="w"&gt; &lt;/span&gt;sshd
+$&lt;span class="w"&gt; &lt;/span&gt;fail2ban-client&lt;span class="w"&gt; &lt;/span&gt;-v&lt;span class="w"&gt; &lt;/span&gt;status&lt;span class="w"&gt; &lt;/span&gt;proxmox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Portsentry, une solution pour se protéger des scans de ports: &lt;a href="https://www.geeek.org/portsentry-linux-securite/"&gt;https://www.geeek.org/portsentry-linux-securite/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rkhunter&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;apt-get&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;rkhunter
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Indiquer l'adresse de notification et l'execution journaliere&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt;  &lt;/span&gt;nano&lt;span class="w"&gt; &lt;/span&gt;/etc/default/rkhunter
+
+&lt;span class="nv"&gt;REPORT_EMAIL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;monitoring@test.com&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;CRON_DAILY_RUN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;En cas de fausses détections positives sur des répertoires ou fichiers existants et sains, éditez /etc/rkhunter.conf pour les ajouter à la liste des éléments autorisés.
+Ex:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ALLOWHIDDENDIR&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;udev&lt;/span&gt;
+&lt;span class="n"&gt;ALLOWHIDDENDIR&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;static&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installer automatiquement les mises à jour de sécurité de Debian
+&lt;a href="https://www.noobunbox.net/serveur/securite/installer-automatiquement-les-mises-jour-de-securite-sous-debian"&gt;https://www.noobunbox.net/serveur/securite/installer-automatiquement-les-mises-jour-de-securite-sous-debian&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Debsecan – Trouvez les paquets vulnérables CVE de votre distribution Linux&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;apt&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;debsecan
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Scan et list en detail&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;debsecan&lt;span class="w"&gt; &lt;/span&gt;--suite&lt;span class="w"&gt; &lt;/span&gt;bookworm&lt;span class="w"&gt; &lt;/span&gt;--format&lt;span class="w"&gt; &lt;/span&gt;detail
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Mettre à jour le système avec les derniers paquets corrigés. Pour cela, commencez par lister les paquets concernés avec le paramètre « –format packages »&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;debsecan&lt;span class="w"&gt; &lt;/span&gt;--suite&lt;span class="w"&gt; &lt;/span&gt;bookworm&lt;span class="w"&gt; &lt;/span&gt;--only-fixed&lt;span class="w"&gt; &lt;/span&gt;--format&lt;span class="w"&gt; &lt;/span&gt;packages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis installation avec apt&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;apt&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;debsecan&lt;span class="w"&gt; &lt;/span&gt;--suite&lt;span class="w"&gt; &lt;/span&gt;buster&lt;span class="w"&gt; &lt;/span&gt;--only-fixed&lt;span class="w"&gt; &lt;/span&gt;--format&lt;span class="w"&gt; &lt;/span&gt;packages&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;FIREWALL&lt;/h3&gt;
+&lt;p&gt;Activer le par-feu intégré à Proxmox VE
+&lt;a href="https://artheodoc.files.wordpress.com/2023/03/le_pare-feu_integre_de_proxmox.pdf"&gt;https://artheodoc.files.wordpress.com/2023/03/le_pare-feu_integre_de_proxmox.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;BACKUP&lt;/h3&gt;
+&lt;p&gt;Configurer Rclone vzbackup
+&lt;a href="https://github.com/TheRealAlexV/proxmox-vzbackup-rclone"&gt;https://github.com/TheRealAlexV/proxmox-vzbackup-rclone&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tarification AWS S3 200GO  0,023 USD par Go 4,6$/month
+Tarification GDrive 200GO 2,99 €/month&lt;/p&gt;
+&lt;p&gt;Object Storage Price Comparison &lt;a href="https://www.qualeed.com/en/qbackup/cloud-storage-comparison/"&gt;https://www.qualeed.com/en/qbackup/cloud-storage-comparison/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RAPPEL&lt;/strong&gt;: Il faut 3 copies de sauvegarde&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sur le serveur, snapshot LOCAL&lt;/li&gt;
+&lt;li&gt;Sur un HDD Externe, NAS sur le routeur en USB LOCAL&lt;/li&gt;
+&lt;li&gt;Dans le Cloud, DISTANT&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;INSTALL ISO IMAGE&lt;/h3&gt;
+&lt;p&gt;Comment télécharger des images ISO pour créer les VM
+&lt;a href="https://unixcop.com/upload-iso-image-proxmox-server/"&gt;https://unixcop.com/upload-iso-image-proxmox-server/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Liste ISO:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian netinstall &lt;a href="https://www.debian.org/CD/netinst/"&gt;https://www.debian.org/CD/netinst/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu server &lt;a href="https://ubuntu.com/download/server"&gt;https://ubuntu.com/download/server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Arch Linux &lt;a href="https://archlinux.org/download/"&gt;https://archlinux.org/download/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gentoo minimal Install &lt;a href="https://www.gentoo.org/downloads/"&gt;https://www.gentoo.org/downloads/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fedora server &lt;a href="https://fedoraproject.org/server/download/"&gt;https://fedoraproject.org/server/download/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Windows 10 22H2 pro (torrent) &lt;a href="https://1337x.to/search/Windows+10+22H2/1/"&gt;https://1337x.to/search/Windows+10+22H2/1/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kali net installer &lt;a href="https://www.kali.org/get-kali/#kali-installer-images"&gt;https://www.kali.org/get-kali/#kali-installer-images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;openBSD (high sec server) &lt;a href="https://www.openbsd.org/faq/faq4.html#Download"&gt;https://www.openbsd.org/faq/faq4.html#Download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;TrueNAS CORE &lt;a href="https://www.truenas.com/download-truenas-core/"&gt;https://www.truenas.com/download-truenas-core/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;CONFIGURER DOCKER&lt;/h3&gt;
+&lt;p&gt;How to Install Docker With Portainer Inside an LXC Container On Proxmox 
+&lt;a href="https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/"&gt;https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;PROVIONNING&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;VM Cloud Gaming 6 coeurs - RAM 16GO - HDD 64GO&lt;/li&gt;
+&lt;li&gt;VM server VPS 4 coeurs - RAM 4GO - HDD 32GO à 128GO&lt;/li&gt;
+&lt;li&gt;Container - 2 coeurs - RAM 2GO - HDD 32GO&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Linux"></category><category term="proxmox"></category></entry><entry><title>Censure et filtrage DNS des FAI</title><link href="/censure-et-filtrage-dns-des-fai.html" rel="alternate"></link><published>2023-07-07T00:12:00+02:00</published><updated>2023-07-07T00:12:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-07:/censure-et-filtrage-dns-des-fai.html</id><summary type="html"></summary><content type="html">&lt;p&gt;La censure d'internet, un vaste programme. Nos politiques n'arrêtent pas de peter des cables, entre les sites de terrorisme, de pédopornographie, d'activiste et de librairie pirate interdite en open access (Sci-Hub) : toujours la même méthode, le filtrage DNS des FAI. Car techniquement c'est très compliquer de censurer internet, pour le pecnot moyen changer ces DNS est déja trop complexe.  &lt;/p&gt;
 &lt;p&gt;La dernière lubie des politiques est de censurer la pornographie en France en fixant une moyenne d'âge et de ficher la population qui regarde du porno. Et puis avec les émeutes ont veut couper les réseaux sociaux. Bah voyons.  &lt;/p&gt;
 &lt;p&gt;Il y a plusieurs méthodes pour contourner la censure d'internet:  &lt;/p&gt;
 &lt;ul&gt;
