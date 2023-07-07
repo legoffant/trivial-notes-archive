@@ -8,8 +8,9 @@ Summary:
 J'ai relancer l'installation de mon serveur Proxmox pour une clean install et configurer la nouvelle carte graphique. Voila ma prise de note, et configuration de base post-installation.
 
 **Documentation**: 
-- The Debian Administrator's Handbook [https://debian-handbook.info/browse/stable/](https://debian-handbook.info/browse/stable/)
--  Proxmox VE Documentation Index  [https://pve.proxmox.com/pve-docs-7/](https://pve.proxmox.com/pve-docs-7/)
+
+* The Debian Administrator's Handbook [https://debian-handbook.info/browse/stable/](https://debian-handbook.info/browse/stable/)
+*  Proxmox VE Documentation Index  [https://pve.proxmox.com/pve-docs-7/](https://pve.proxmox.com/pve-docs-7/)
 
 Créer une clé USB bootable de Proxmox 8 VE. 
 sous linux en CLI:
@@ -28,8 +29,8 @@ $ sudo dd if=proxmox-ve_8.0-2.iso of=/dev/sdb bs=4M status=progress && sync
 
 BIOS AsRock Configuration:
 
-*Advanced -> CPU Configuration -> SVM Mode: enabled*
-*Advanced -> AMD CBS -> NBIO Common Options -> IOMMU enabled*
+* *Advanced -> CPU Configuration -> SVM Mode: enabled*
+* *Advanced -> AMD CBS -> NBIO Common Options -> IOMMU enabled*
 
 Activer  GPU Passthrough sur  Proxmox 8
 [https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/](https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/)
@@ -37,7 +38,7 @@ Activer  GPU Passthrough sur  Proxmox 8
 ### MISE A JOUR
 
 Desactivation dans mise à jour du depot entreprise et ceph
-```
+```text
 $ nano /etc/apt/sources.list.d/pve-no-enterprise.list
 
 # not for production use
@@ -63,7 +64,7 @@ $ usermod -aG sudo toto
 Les ports ouverts par défauts sont 22(SSH), 111(rpcbind), 3128(squid-http)
 
 Sécuriser SSH
-```
+```text
 $  nano  /etc/ssh/sshd_config
 
 Port 2222                  # Changer le port par défaut (à retenir!)
@@ -74,13 +75,13 @@ $  /etc/init.d/ssh restart
 ```
 
 Installation de fail2ban, protection contre les brutes-forces
-```
+```text
 $ apt install fail2ban
 $ sudo systemctl enable fail2ban
 $ sudo nano /etc/fail2ban/jail.local
 ```
 Change the variables bantime (the number of seconds the attacker will be blocked for) and maxretry (the number of attempts to enter the login / password) for each individual service.
-```
+```text
 mta = mail
 destemail = test@gmail.com
 sender = fail2ban@srv01.com
@@ -104,7 +105,7 @@ maxretry = 5
 bantime = 3600
 ```
 Créer le fichier /etc/fail2ban/filter.d/proxmox.conf :
-```
+```text
 [Definition]
 failregex = pvedaemon\[.*authentication failure; rhost=<HOST> user=.* msg=.*
 ignoreregex =
@@ -128,7 +129,7 @@ $ apt-get install rkhunter
 ```
 
 Indiquer l'adresse de notification et l'execution journaliere
-```
+```text
 $  nano /etc/default/rkhunter
 
 REPORT_EMAIL="monitoring@test.com"
@@ -173,8 +174,8 @@ Activer le par-feu intégré à Proxmox VE
 Configurer Rclone vzbackup
 [https://github.com/TheRealAlexV/proxmox-vzbackup-rclone](https://github.com/TheRealAlexV/proxmox-vzbackup-rclone)
 
-Tarification AWS S3 200GO  0,023 USD par Go 4,6$/month
-Tarification GDrive 200GO 2,99 €/month
+* Tarification AWS S3 200GO  0,023 USD par Go 4,6$/month
+* Tarification GDrive 200GO 2,99 €/month
 
 Object Storage Price Comparison [https://www.qualeed.com/en/qbackup/cloud-storage-comparison/](https://www.qualeed.com/en/qbackup/cloud-storage-comparison/)
 

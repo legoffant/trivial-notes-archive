@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Note clean install Proxmox VE 8 | Trivial notes</title>
+    <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anthony Le Goff" />
+    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_position" content="top=60,right=60" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li ><a href="/pages/contact.html">Contact</a></li>
+                <li ><a href="/pages/ltcb.html">LTCB</a></li>
+                <li class="divider-vertical"></li>
+                <li >
+                  <a href="/category/cc.html">
+						        <i class="icon-folder-open icon-large"></i>C/C++
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/entrepreneurship.html">
+						        <i class="icon-folder-open icon-large"></i>Entrepreneurship
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/inclassable.html">
+						        <i class="icon-folder-open icon-large"></i>Inclassable
+					         </a>
+                </li>
+                <li class="active">
+                  <a href="/category/linux.html">
+						        <i class="icon-folder-open icon-large"></i>Linux
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/transhumanisme.html">
+						        <i class="icon-folder-open icon-large"></i>Transhumanisme
+					         </a>
+                </li>
+              <ul class="nav pull-right">
+                    <li><a href="/"><i class="icon-th-list"></i>Archives</a></li>
+              </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8" id="content">
+<div class="row">
+    <div class="span2">
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2023-07-07T18:54:00+02:00">
+    <i class="icon-calendar"></i>&nbsp;ven. 07 juillet 2023
+</abbr>
+<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+
+
+<br/>
+	&nbsp;&nbsp;<a href="/tag/proxmox.html" class="label"><i class="icon-tag"></i>&nbsp;proxmox</a>
+</footer><!-- /.post-info -->        </div>
+    </div>
+    <div class="span6">
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Note clean install Proxmox VE 8">
+                        Note clean install Proxmox VE 8
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
+
+        <p>J'ai relancer l'installation de mon serveur Proxmox pour une clean install et configurer la nouvelle carte graphique. Voila ma prise de note, et configuration de base post-installation.</p>
+<p><strong>Documentation</strong>: 
+- The Debian Administrator's Handbook <a href="https://debian-handbook.info/browse/stable/">https://debian-handbook.info/browse/stable/</a>
+-  Proxmox VE Documentation Index  <a href="https://pve.proxmox.com/pve-docs-7/">https://pve.proxmox.com/pve-docs-7/</a></p>
+<p>Créer une clé USB bootable de Proxmox 8 VE. 
+sous linux en CLI:</p>
+<h3>INSTALL</h3>
+<p>check la partition clé USB</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>fdisk<span class="w"> </span>-l
+</code></pre></div>
+
+<p>Formatage de la clé USB avec l'iso</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>proxmox-ve_8.0-2.iso<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/dev/sdb<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>4M<span class="w"> </span><span class="nv">status</span><span class="o">=</span>progress<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sync
+</code></pre></div>
+
+<p>BIOS AsRock Configuration:</p>
+<p><em>Advanced -&gt; CPU Configuration -&gt; SVM Mode: enabled</em>
+<em>Advanced -&gt; AMD CBS -&gt; NBIO Common Options -&gt; IOMMU enabled</em></p>
+<p>Activer  GPU Passthrough sur  Proxmox 8
+<a href="https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/">https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/</a></p>
+<h3>MISE A JOUR</h3>
+<p>Desactivation dans mise à jour du depot entreprise et ceph</p>
+<div class="highlight"><pre><span></span><code><span class="err">$</span><span class="w"> </span><span class="err">nano</span><span class="w"> </span><span class="err">/etc/apt/sources.list.d/pve-no-enterprise.list</span>
+
+<span class="c"># not for production use</span>
+<span class="k">deb</span><span class="w"> </span><span class="s">http://download.proxmox.com/debian/pve</span><span class="w"> </span><span class="kp">bookworm</span><span class="w"> </span><span class="kp">pve-no-subscription</span>
+
+<span class="err">$</span><span class="w"> </span><span class="err">apt-get</span><span class="w"> </span><span class="err">update</span><span class="w"> </span><span class="err">&amp;&amp;</span><span class="w"> </span><span class="err">apt-get</span><span class="w"> </span><span class="err">dist-upgrade</span>
+<span class="err">$</span><span class="w"> </span><span class="err">reboot</span><span class="w"> </span><span class="err">now</span>
+</code></pre></div>
+
+<h3>CREER UN UTILISATEUR</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>useradd<span class="w"> </span>-g<span class="w"> </span>users<span class="w"> </span>-d<span class="w"> </span>/home/toto<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/bash<span class="w"> </span>toto
+$<span class="w"> </span>passwd<span class="w"> </span>toto
+</code></pre></div>
+
+<p>Droit sudo</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>sudo
+$<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>toto
+</code></pre></div>
+
+<h3>SECURITY</h3>
+<p>Les ports ouverts par défauts sont 22(SSH), 111(rpcbind), 3128(squid-http)</p>
+<p>Sécuriser SSH</p>
+<div class="highlight"><pre><span></span><code>$<span class="w">  </span>nano<span class="w">  </span>/etc/ssh/sshd_config
+
+Port<span class="w"> </span><span class="m">2222</span><span class="w">                  </span><span class="c1"># Changer le port par défaut (à retenir!)</span>
+PermitRootLogin<span class="w"> </span>no<span class="w">         </span><span class="c1"># Ne pas permettre de login en root</span>
+AllowUsers<span class="w"> </span>toto<span class="w">            </span><span class="c1"># N&#39;autoriser qu&#39;un utilisateur précis</span>
+
+$<span class="w">  </span>/etc/init.d/ssh<span class="w"> </span>restart
+</code></pre></div>
+
+<p>Installation de fail2ban, protection contre les brutes-forces</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>fail2ban
+$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>fail2ban
+$<span class="w"> </span>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/fail2ban/jail.local
+</code></pre></div>
+
+<p>Change the variables bantime (the number of seconds the attacker will be blocked for) and maxretry (the number of attempts to enter the login / password) for each individual service.</p>
+<div class="highlight"><pre><span></span><code><span class="n">mta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mail</span>
+<span class="n">destemail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">test</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
+<span class="n">sender</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fail2ban</span><span class="nv">@srv01</span><span class="p">.</span><span class="n">com</span>
+<span class="n">ignoreip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">127.0.0.1</span><span class="o">/</span><span class="mi">8</span><span class="w"> </span><span class="o">::</span><span class="mi">1</span>
+
+<span class="o">[</span><span class="n">sshd</span><span class="o">]</span>
+<span class="n">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span>
+<span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ssh</span><span class="p">,</span><span class="w"> </span><span class="n">sftp</span><span class="p">,</span><span class="mi">2222</span>
+<span class="k">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sshd</span>
+<span class="n">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">/</span><span class="nf">var</span><span class="o">/</span><span class="nf">log</span><span class="o">/</span><span class="n">auth</span><span class="p">.</span><span class="nf">log</span>
+<span class="n">maxretry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<span class="n">findtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">300</span>
+<span class="n">bantime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3600</span>
+
+<span class="o">[</span><span class="n">proxmox</span><span class="o">]</span>
+<span class="n">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span>
+<span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">https</span><span class="p">,</span><span class="n">http</span><span class="p">,</span><span class="mi">8006</span>
+<span class="k">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">proxmox</span>
+<span class="n">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">/</span><span class="nf">var</span><span class="o">/</span><span class="nf">log</span><span class="o">/</span><span class="n">daemon</span><span class="p">.</span><span class="nf">log</span>
+<span class="n">maxretry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span>
+<span class="n">bantime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3600</span>
+</code></pre></div>
+
+<p>Créer le fichier /etc/fail2ban/filter.d/proxmox.conf :</p>
+<div class="highlight"><pre><span></span><code><span class="k">[Definition]</span>
+<span class="na">failregex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pvedaemon\[.*authentication failure</span><span class="c1">; rhost=&lt;HOST&gt; user=.* msg=.*</span>
+<span class="na">ignoreregex</span><span class="w"> </span><span class="o">=</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>fail2ban
+</code></pre></div>
+
+<p>check status</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>fail2ban-client<span class="w"> </span>-v<span class="w"> </span>status<span class="w"> </span>sshd
+$<span class="w"> </span>fail2ban-client<span class="w"> </span>-v<span class="w"> </span>status<span class="w"> </span>proxmox
+</code></pre></div>
+
+<p>Portsentry, une solution pour se protéger des scans de ports: <a href="https://www.geeek.org/portsentry-linux-securite/">https://www.geeek.org/portsentry-linux-securite/</a></p>
+<p>Rkhunter</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>rkhunter
+</code></pre></div>
+
+<p>Indiquer l'adresse de notification et l'execution journaliere</p>
+<div class="highlight"><pre><span></span><code>$<span class="w">  </span>nano<span class="w"> </span>/etc/default/rkhunter
+
+<span class="nv">REPORT_EMAIL</span><span class="o">=</span><span class="s2">&quot;monitoring@test.com&quot;</span>
+<span class="nv">CRON_DAILY_RUN</span><span class="o">=</span><span class="s2">&quot;yes&quot;</span>
+</code></pre></div>
+
+<p>En cas de fausses détections positives sur des répertoires ou fichiers existants et sains, éditez /etc/rkhunter.conf pour les ajouter à la liste des éléments autorisés.
+Ex:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ALLOWHIDDENDIR</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="p">.</span><span class="n">udev</span>
+<span class="n">ALLOWHIDDENDIR</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="p">.</span><span class="n">static</span>
+</code></pre></div>
+
+<p>Installer automatiquement les mises à jour de sécurité de Debian
+<a href="https://www.noobunbox.net/serveur/securite/installer-automatiquement-les-mises-jour-de-securite-sous-debian">https://www.noobunbox.net/serveur/securite/installer-automatiquement-les-mises-jour-de-securite-sous-debian</a></p>
+<p>Debsecan – Trouvez les paquets vulnérables CVE de votre distribution Linux</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>debsecan
+</code></pre></div>
+
+<p>Scan et list en detail</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>debsecan<span class="w"> </span>--suite<span class="w"> </span>bookworm<span class="w"> </span>--format<span class="w"> </span>detail
+</code></pre></div>
+
+<p>Mettre à jour le système avec les derniers paquets corrigés. Pour cela, commencez par lister les paquets concernés avec le paramètre « –format packages »</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>debsecan<span class="w"> </span>--suite<span class="w"> </span>bookworm<span class="w"> </span>--only-fixed<span class="w"> </span>--format<span class="w"> </span>packages
+</code></pre></div>
+
+<p>Puis installation avec apt</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span><span class="k">$(</span>debsecan<span class="w"> </span>--suite<span class="w"> </span>buster<span class="w"> </span>--only-fixed<span class="w"> </span>--format<span class="w"> </span>packages<span class="k">)</span>
+</code></pre></div>
+
+<h3>FIREWALL</h3>
+<p>Activer le par-feu intégré à Proxmox VE
+<a href="https://artheodoc.files.wordpress.com/2023/03/le_pare-feu_integre_de_proxmox.pdf">https://artheodoc.files.wordpress.com/2023/03/le_pare-feu_integre_de_proxmox.pdf</a></p>
+<h3>BACKUP</h3>
+<p>Configurer Rclone vzbackup
+<a href="https://github.com/TheRealAlexV/proxmox-vzbackup-rclone">https://github.com/TheRealAlexV/proxmox-vzbackup-rclone</a></p>
+<p>Tarification AWS S3 200GO  0,023 USD par Go 4,6$/month
+Tarification GDrive 200GO 2,99 €/month</p>
+<p>Object Storage Price Comparison <a href="https://www.qualeed.com/en/qbackup/cloud-storage-comparison/">https://www.qualeed.com/en/qbackup/cloud-storage-comparison/</a></p>
+<p><strong>RAPPEL</strong>: Il faut 3 copies de sauvegarde</p>
+<ol>
+<li>Sur le serveur, snapshot LOCAL</li>
+<li>Sur un HDD Externe, NAS sur le routeur en USB LOCAL</li>
+<li>Dans le Cloud, DISTANT</li>
+</ol>
+<h3>INSTALL ISO IMAGE</h3>
+<p>Comment télécharger des images ISO pour créer les VM
+<a href="https://unixcop.com/upload-iso-image-proxmox-server/">https://unixcop.com/upload-iso-image-proxmox-server/</a></p>
+<p>Liste ISO:</p>
+<ul>
+<li>Debian netinstall <a href="https://www.debian.org/CD/netinst/">https://www.debian.org/CD/netinst/</a></li>
+<li>Ubuntu server <a href="https://ubuntu.com/download/server">https://ubuntu.com/download/server</a></li>
+<li>Arch Linux <a href="https://archlinux.org/download/">https://archlinux.org/download/</a></li>
+<li>Gentoo minimal Install <a href="https://www.gentoo.org/downloads/">https://www.gentoo.org/downloads/</a></li>
+<li>Fedora server <a href="https://fedoraproject.org/server/download/">https://fedoraproject.org/server/download/</a></li>
+<li>Windows 10 22H2 pro (torrent) <a href="https://1337x.to/search/Windows+10+22H2/1/">https://1337x.to/search/Windows+10+22H2/1/</a></li>
+<li>Kali net installer <a href="https://www.kali.org/get-kali/#kali-installer-images">https://www.kali.org/get-kali/#kali-installer-images</a></li>
+<li>openBSD (high sec server) <a href="https://www.openbsd.org/faq/faq4.html#Download">https://www.openbsd.org/faq/faq4.html#Download</a></li>
+<li>TrueNAS CORE <a href="https://www.truenas.com/download-truenas-core/">https://www.truenas.com/download-truenas-core/</a></li>
+</ul>
+<h3>CONFIGURER DOCKER</h3>
+<p>How to Install Docker With Portainer Inside an LXC Container On Proxmox 
+<a href="https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/">https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/</a></p>
+<h3>PROVIONNING</h3>
+<ul>
+<li>VM Cloud Gaming 6 coeurs - RAM 16GO - HDD 64GO</li>
+<li>VM server VPS 4 coeurs - RAM 4GO - HDD 32GO à 128GO</li>
+<li>Container - 2 coeurs - RAM 2GO - HDD 32GO</li>
+</ul>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+</div>
+</div>
+        </div><!--/span-->
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><div><i class="icon-external-link"></i><a href="https://getpelican.com/">Pelican</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.python.org/">Python.org</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://framabook.org/le-c-en-20-heures-2/">Apprendre le C en 20H</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://archlinux.org/">Arch Linux</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.blackarch.io/">Blackarch</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.kernel.org/">Kernel</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.arduino.cc/">Arduino</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://beagleboard.org/bone">BeagleBoard</a></div></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
