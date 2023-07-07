@@ -207,7 +207,7 @@ Liste ISO:
 How to Install Docker With Portainer Inside an LXC Container On Proxmox 
 [https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/](https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/)
 
-### PROVIONNING
+### PROVISIONNING
 
 * VM Cloud Gaming 6 coeurs - RAM 16GO - HDD 64GO
 * VM server VPS 4 coeurs - RAM 4GO - HDD 32GO à 128GO

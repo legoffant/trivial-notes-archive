@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-07-07T18:54:00+02:00</updated><entry><title>Note clean install Proxmox VE 8</title><link href="/note-clean-install-proxmox-ve-8.html" rel="alternate"></link><published>2023-07-07T18:54:00+02:00</published><updated>2023-07-07T18:54:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-07:/note-clean-install-proxmox-ve-8.html</id><summary type="html"></summary><content type="html">&lt;p&gt;J'ai relancer l'installation de mon serveur Proxmox pour une clean install et configurer la nouvelle carte graphique. Voila ma prise de note, et configuration de base post-installation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: 
-- The Debian Administrator's Handbook &lt;a href="https://debian-handbook.info/browse/stable/"&gt;https://debian-handbook.info/browse/stable/&lt;/a&gt;
--  Proxmox VE Documentation Index  &lt;a href="https://pve.proxmox.com/pve-docs-7/"&gt;https://pve.proxmox.com/pve-docs-7/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Debian Administrator's Handbook &lt;a href="https://debian-handbook.info/browse/stable/"&gt;https://debian-handbook.info/browse/stable/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Proxmox VE Documentation Index  &lt;a href="https://pve.proxmox.com/pve-docs-7/"&gt;https://pve.proxmox.com/pve-docs-7/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Créer une clé USB bootable de Proxmox 8 VE. 
 sous linux en CLI:&lt;/p&gt;
 &lt;h3&gt;INSTALL&lt;/h3&gt;
@@ -15,19 +17,21 @@ sous linux en CLI:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;BIOS AsRock Configuration:&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Advanced -&amp;gt; CPU Configuration -&amp;gt; SVM Mode: enabled&lt;/em&gt;
-&lt;em&gt;Advanced -&amp;gt; AMD CBS -&amp;gt; NBIO Common Options -&amp;gt; IOMMU enabled&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Advanced -&amp;gt; CPU Configuration -&amp;gt; SVM Mode: enabled&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Advanced -&amp;gt; AMD CBS -&amp;gt; NBIO Common Options -&amp;gt; IOMMU enabled&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Activer  GPU Passthrough sur  Proxmox 8
 &lt;a href="https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/"&gt;https://asded.gitlab.io/post/2023-07-01-pci-passthrough-proxmox-04/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;MISE A JOUR&lt;/h3&gt;
 &lt;p&gt;Desactivation dans mise à jour du depot entreprise et ceph&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;nano&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;/etc/apt/sources.list.d/pve-no-enterprise.list&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ nano /etc/apt/sources.list.d/pve-no-enterprise.list
 
-&lt;span class="c"&gt;# not for production use&lt;/span&gt;
-&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://download.proxmox.com/debian/pve&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bookworm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;pve-no-subscription&lt;/span&gt;
+# not for production use
+deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
 
-&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;apt-get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;update&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;apt-get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;dist-upgrade&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;reboot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;now&lt;/span&gt;
+$ apt-get update &amp;amp;&amp;amp; apt-get dist-upgrade
+$ reboot now
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;CREER UN UTILISATEUR&lt;/h3&gt;
@@ -43,49 +47,49 @@ $&lt;span class="w"&gt; &lt;/span&gt;usermod&lt;span class="w"&gt; &lt;/span&gt;
 &lt;h3&gt;SECURITY&lt;/h3&gt;
 &lt;p&gt;Les ports ouverts par défauts sont 22(SSH), 111(rpcbind), 3128(squid-http)&lt;/p&gt;
 &lt;p&gt;Sécuriser SSH&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt;  &lt;/span&gt;nano&lt;span class="w"&gt;  &lt;/span&gt;/etc/ssh/sshd_config
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$  nano  /etc/ssh/sshd_config
 
-Port&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2222&lt;/span&gt;&lt;span class="w"&gt;                  &lt;/span&gt;&lt;span class="c1"&gt;# Changer le port par défaut (à retenir!)&lt;/span&gt;
-PermitRootLogin&lt;span class="w"&gt; &lt;/span&gt;no&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="c1"&gt;# Ne pas permettre de login en root&lt;/span&gt;
-AllowUsers&lt;span class="w"&gt; &lt;/span&gt;toto&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="c1"&gt;# N&amp;#39;autoriser qu&amp;#39;un utilisateur précis&lt;/span&gt;
+Port 2222                  # Changer le port par défaut (à retenir!)
+PermitRootLogin no         # Ne pas permettre de login en root
+AllowUsers toto            # N&amp;#39;autoriser qu&amp;#39;un utilisateur précis
 
-$&lt;span class="w"&gt;  &lt;/span&gt;/etc/init.d/ssh&lt;span class="w"&gt; &lt;/span&gt;restart
+$  /etc/init.d/ssh restart
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Installation de fail2ban, protection contre les brutes-forces&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;apt&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;fail2ban
-$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;systemctl&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;fail2ban
-$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;nano&lt;span class="w"&gt; &lt;/span&gt;/etc/fail2ban/jail.local
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ apt install fail2ban
+$ sudo systemctl enable fail2ban
+$ sudo nano /etc/fail2ban/jail.local
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Change the variables bantime (the number of seconds the attacker will be blocked for) and maxretry (the number of attempts to enter the login / password) for each individual service.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;mta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mail&lt;/span&gt;
-&lt;span class="n"&gt;destemail&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;test&lt;/span&gt;&lt;span class="nv"&gt;@gmail&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;
-&lt;span class="n"&gt;sender&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fail2ban&lt;/span&gt;&lt;span class="nv"&gt;@srv01&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;
-&lt;span class="n"&gt;ignoreip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mta = mail
+destemail = test@gmail.com
+sender = fail2ban@srv01.com
+ignoreip = 127.0.0.1/8 ::1
 
-&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sshd&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;enabled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;true&lt;/span&gt;
-&lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sftp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2222&lt;/span&gt;
-&lt;span class="k"&gt;filter&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sshd&lt;/span&gt;
-&lt;span class="n"&gt;logpath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;auth&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;
-&lt;span class="n"&gt;maxretry&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="n"&gt;findtime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;300&lt;/span&gt;
-&lt;span class="n"&gt;bantime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3600&lt;/span&gt;
+[sshd]
+enabled = true
+port = ssh, sftp,2222
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 5
+findtime = 300
+bantime = 3600
 
-&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;proxmox&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;enabled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;true&lt;/span&gt;
-&lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8006&lt;/span&gt;
-&lt;span class="k"&gt;filter&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;proxmox&lt;/span&gt;
-&lt;span class="n"&gt;logpath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;daemon&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;
-&lt;span class="n"&gt;maxretry&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="n"&gt;bantime&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;3600&lt;/span&gt;
+[proxmox]
+enabled = true
+port = https,http,8006
+filter = proxmox
+logpath = /var/log/daemon.log
+maxretry = 5
+bantime = 3600
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Créer le fichier /etc/fail2ban/filter.d/proxmox.conf :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[Definition]&lt;/span&gt;
-&lt;span class="na"&gt;failregex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;pvedaemon\[.*authentication failure&lt;/span&gt;&lt;span class="c1"&gt;; rhost=&amp;lt;HOST&amp;gt; user=.* msg=.*&lt;/span&gt;
-&lt;span class="na"&gt;ignoreregex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[Definition]
+failregex = pvedaemon\[.*authentication failure; rhost=&amp;lt;HOST&amp;gt; user=.* msg=.*
+ignoreregex =
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;systemctl&lt;span class="w"&gt; &lt;/span&gt;restart&lt;span class="w"&gt; &lt;/span&gt;fail2ban
@@ -102,10 +106,10 @@ $&lt;span class="w"&gt; &lt;/span&gt;fail2ban-client&lt;span class="w"&gt; &lt;/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Indiquer l'adresse de notification et l'execution journaliere&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt;  &lt;/span&gt;nano&lt;span class="w"&gt; &lt;/span&gt;/etc/default/rkhunter
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$  nano /etc/default/rkhunter
 
-&lt;span class="nv"&gt;REPORT_EMAIL&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;monitoring@test.com&amp;quot;&lt;/span&gt;
-&lt;span class="nv"&gt;CRON_DAILY_RUN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;
+REPORT_EMAIL=&amp;quot;monitoring@test.com&amp;quot;
+CRON_DAILY_RUN=&amp;quot;yes&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;En cas de fausses détections positives sur des répertoires ou fichiers existants et sains, éditez /etc/rkhunter.conf pour les ajouter à la liste des éléments autorisés.
@@ -138,8 +142,10 @@ Ex:&lt;/p&gt;
 &lt;h3&gt;BACKUP&lt;/h3&gt;
 &lt;p&gt;Configurer Rclone vzbackup
 &lt;a href="https://github.com/TheRealAlexV/proxmox-vzbackup-rclone"&gt;https://github.com/TheRealAlexV/proxmox-vzbackup-rclone&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Tarification AWS S3 200GO  0,023 USD par Go 4,6$/month
-Tarification GDrive 200GO 2,99 €/month&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tarification AWS S3 200GO  0,023 USD par Go 4,6$/month&lt;/li&gt;
+&lt;li&gt;Tarification GDrive 200GO 2,99 €/month&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Object Storage Price Comparison &lt;a href="https://www.qualeed.com/en/qbackup/cloud-storage-comparison/"&gt;https://www.qualeed.com/en/qbackup/cloud-storage-comparison/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;RAPPEL&lt;/strong&gt;: Il faut 3 copies de sauvegarde&lt;/p&gt;
 &lt;ol&gt;
