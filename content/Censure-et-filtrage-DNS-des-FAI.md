@@ -76,7 +76,7 @@ L'indicateur `SERVER` présente le DNS 1.0.0.1 comme passerelle.
 
 Vous pouvez vérifier que vous utilisez les DNS de Cloudflare sur le site [https://www.dnsleaktest.com](https://www.dnsleaktest.com)
 
-Si vous voulez gérer au mieux le DNS en local il faut ajouter un routeur comme répétiteur derrière la Box internet qui va paramêtrer le DNS.
+Si vous voulez gérer au mieux le DNS en local il faut ajouter un routeur comme AP derrière la Box internet qui va paramêtrer le DNS. Cela fonctionne généralement en mode DMZ (Zone démilitarisée).
 
 ### Adresse IP
 
