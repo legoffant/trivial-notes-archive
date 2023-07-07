@@ -171,7 +171,7 @@ Ex:&lt;/p&gt;
 &lt;h3&gt;CONFIGURER DOCKER&lt;/h3&gt;
 &lt;p&gt;How to Install Docker With Portainer Inside an LXC Container On Proxmox 
 &lt;a href="https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/"&gt;https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;PROVIONNING&lt;/h3&gt;
+&lt;h3&gt;PROVISIONNING&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;VM Cloud Gaming 6 coeurs - RAM 16GO - HDD 64GO&lt;/li&gt;
 &lt;li&gt;VM server VPS 4 coeurs - RAM 4GO - HDD 32GO à 128GO&lt;/li&gt;

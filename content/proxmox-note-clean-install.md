@@ -201,6 +201,16 @@ Liste ISO:
 * Kali net installer [https://www.kali.org/get-kali/#kali-installer-images](https://www.kali.org/get-kali/#kali-installer-images)
 * openBSD (high sec server) [https://www.openbsd.org/faq/faq4.html#Download](https://www.openbsd.org/faq/faq4.html#Download)
 * TrueNAS CORE [https://www.truenas.com/download-truenas-core/](https://www.truenas.com/download-truenas-core/)
+* YunoHost [https://yunohost.org/fr/install/hardware:regular](https://yunohost.org/fr/install/hardware:regular)
+* Freedom Box [https://freedombox.org/download/amd64/](https://freedombox.org/download/amd64/)
+
+### WEB SERVER ALL-IN-ONE
+
+sandstorm.io
+```
+$ curl https://install.sandstorm.io | bash
+```
+
 
 ### CONFIGURER DOCKER
 
