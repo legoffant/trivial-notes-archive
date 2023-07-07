@@ -76,7 +76,7 @@ L'indicateur `SERVER` présente le DNS 1.0.0.1 comme passerelle.
 
 Vous pouvez vérifier que vous utilisez les DNS de Cloudflare sur le site [https://www.dnsleaktest.com](https://www.dnsleaktest.com)
 
-Si vous voulez gérer au mieux le DNS en local il faut ajouter un routeur comme AP utilisant l'agrégation de réseau étendu (WAN) et de réseau local (LAN). derrière la Box internet qui va paramêtrer le DNS. Cela fonctionne généralement en mode DMZ (Zone démilitarisée).
+Si vous voulez gérer au mieux le DNS en local il faut ajouter un routeur comme AP utilisant l'agrégation de réseau étendu (WAN) et de réseau local (LAN). derrière la Box internet qui va paramêtrer le DNS. Cela fonctionne généralement en mode DMZ (Zone démilitarisée). Ex de routeur compatible [NETGEAR Routeur WiFi 6 AX12Nighthawk à 206€](https://www.amazon.fr/NETGEAR-Nighthawk-Routeur-intelligentes-surfaces/dp/B07NCS58BK?th=1). [Change DNS on a NetGear NightHawk Router](https://cleanbrowsing.org/help/docs/change-dns-on-a-netgear-nighthawk-router/)
 
 ### Adresse IP
 
