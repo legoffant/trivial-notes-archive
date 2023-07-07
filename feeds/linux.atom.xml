@@ -52,7 +52,10 @@ google.fr.        60    IN    SOA    ns1.google.com. dns-admin.go
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;L'indicateur &lt;code&gt;SERVER&lt;/code&gt; présente le DNS 1.0.0.1 comme passerelle.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;INCONVENIENT&lt;/strong&gt;: Certaines Box Internet n'accepte que le DNS du FAI pour l'accès sur le réseau local.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;INCONVENIENT&lt;/strong&gt;: Certaines Box Internet n'accepte que le DNS du FAI pour l'accès sur le réseau local. Ce qui complique la configuration du réseau local et son accès (box, serveur, imprimante).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SOLUTION&lt;/strong&gt; Utiliser la fonction &lt;a href="Configurer les niveaux de la protection par DNS via HTTPS dans Firefox"&gt;protection par DNS via HTTPS&lt;/a&gt; en utilisant Cloudflare dans le navigateur tel que Firefox au lieu d'éditer &lt;code&gt;/etc/resolv.conf&lt;/code&gt; pour aller sur internet, et donc permet de garder l'accès au réseau local.&lt;/p&gt;
+&lt;p&gt;Vous pouvez vérifier que vous utilisez les DNS de Cloudflare sur le site &lt;a href="https://www.dnsleaktest.com"&gt;https://www.dnsleaktest.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Si vous voulez gérer au mieux le DNS en local il faut ajouter un routeur comme répétiteur derrière la Box internet qui va paramêtrer le DNS.&lt;/p&gt;
 &lt;h3&gt;Adresse IP&lt;/h3&gt;
 &lt;p&gt;L'outil &lt;code&gt;dig&lt;/code&gt; permet également de récupérer votre IPv4 public en particulier si vous êtes derrière un VPN.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ dig +short txt ch whoami.cloudflare @1.0.0.1
