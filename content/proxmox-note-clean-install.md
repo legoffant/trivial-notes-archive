@@ -198,11 +198,19 @@ Liste ISO:
 * Gentoo minimal Install [https://www.gentoo.org/downloads/](https://www.gentoo.org/downloads/)
 * Fedora server [https://fedoraproject.org/server/download/](https://fedoraproject.org/server/download/)
 * Windows 10 22H2 pro (torrent) [https://1337x.to/search/Windows+10+22H2/1/](https://1337x.to/search/Windows+10+22H2/1/)
+* Windows 11 [https://www.microsoft.com/en-us/software-download/windows11?9d47a9e1-e53b-49a1-92ca-a647d62dc410=True](https://www.microsoft.com/en-us/software-download/windows11?9d47a9e1-e53b-49a1-92ca-a647d62dc410=True)
+* WinLSD 3.5 (french) [https://archive.org/details/winlsd.3.5](https://archive.org/details/winlsd.3.5)
+* Win 7 AIO SP1 [https://gofile.io/d/bXFzYx](https://gofile.io/d/bXFzYx)
+* Windows NT 4.0 Server [https://isoriver.com/windows-nt-4-0-iso-download/](https://isoriver.com/windows-nt-4-0-iso-download/)
 * Kali net installer [https://www.kali.org/get-kali/#kali-installer-images](https://www.kali.org/get-kali/#kali-installer-images)
 * openBSD (high sec server) [https://www.openbsd.org/faq/faq4.html#Download](https://www.openbsd.org/faq/faq4.html#Download)
 * TrueNAS CORE [https://www.truenas.com/download-truenas-core/](https://www.truenas.com/download-truenas-core/)
 * YunoHost [https://yunohost.org/fr/install/hardware:regular](https://yunohost.org/fr/install/hardware:regular)
 * Freedom Box [https://freedombox.org/download/amd64/](https://freedombox.org/download/amd64/)
+* FreeBSD 13.1 bootonly [https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.1/](https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/13.1/)
+* macOS collection (torrent) [https://archive.org/download/macos-collection](https://archive.org/download/macos-collection)
+* Ubuntu 8.04LTS [https://old-releases.ubuntu.com/releases/8.04.0/](https://old-releases.ubuntu.com/releases/8.04.0/)
+
 
 ### WEB SERVER ALL-IN-ONE
 

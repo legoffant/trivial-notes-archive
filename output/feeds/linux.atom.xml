@@ -167,7 +167,14 @@ Ex:&lt;/p&gt;
 &lt;li&gt;Kali net installer &lt;a href="https://www.kali.org/get-kali/#kali-installer-images"&gt;https://www.kali.org/get-kali/#kali-installer-images&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;openBSD (high sec server) &lt;a href="https://www.openbsd.org/faq/faq4.html#Download"&gt;https://www.openbsd.org/faq/faq4.html#Download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;TrueNAS CORE &lt;a href="https://www.truenas.com/download-truenas-core/"&gt;https://www.truenas.com/download-truenas-core/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;YunoHost &lt;a href="https://yunohost.org/fr/install/hardware:regular"&gt;https://yunohost.org/fr/install/hardware:regular&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Freedom Box &lt;a href="https://freedombox.org/download/amd64/"&gt;https://freedombox.org/download/amd64/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;WEB SERVER ALL-IN-ONE&lt;/h3&gt;
+&lt;p&gt;sandstorm.io&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;curl&lt;span class="w"&gt; &lt;/span&gt;https://install.sandstorm.io&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h3&gt;CONFIGURER DOCKER&lt;/h3&gt;
 &lt;p&gt;How to Install Docker With Portainer Inside an LXC Container On Proxmox 
 &lt;a href="https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/"&gt;https://apacheiot.org/docker/how-to-install-docker-portainer-lxc-container-proxmox/&lt;/a&gt;&lt;/p&gt;
