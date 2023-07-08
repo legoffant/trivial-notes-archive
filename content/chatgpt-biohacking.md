@@ -65,6 +65,8 @@ chatgpt
 8. Li, Z., & Yin, P. (2013). DNA Computing and Biohacking. IEEE Transactions on Nanobioscience, 12(3), 164-169.
 
 9. Rassweiler, A. (2011). Biohacking: The Next Frontier in Personalized Medicine. Scientific American.
+
+10. Regalado, A. (2011). Synthetic Biology: Biohacking the Cellular Code. MIT Technology Review.
 ```
 
 Enter a prompt:
@@ -95,7 +97,7 @@ Et bien fait tes recherches sur les transmutations biologiques en particulier da
 ```
 
 chatgpt 
-```
+```text
 Les transmutations biologiques sont des processus qui impliquent des réactions nucléaires catalysées par des enzymes. Ces réactions permettent aux organismes vivants de transformer un élément chimique en un autre élément. Les transmutations biologiques sont étudiées depuis le milieu du XXe siècle et ont été largement étudiées par Corentin Kervran, un biologiste français. Kervran a démontré que les transmutations biologiques sont possibles, bien que la plupart des scientifiques n'aient pas accepté ses conclusions.
 
 Les transmutations biologiques peuvent être utilisées dans l'agriculture pour produire des cultures plus riches en nutriments et plus résistantes aux maladies. Ces réactions peuvent également être utilisées pour produire des produits pharmaceutiques plus efficaces et plus sûrs. De plus, les enzymes jouent un rôle important dans la catalyse nucléaire et peuvent être utilisées pour produire des isotopes radioactifs et des combustibles nucléaires plus sûrs.
