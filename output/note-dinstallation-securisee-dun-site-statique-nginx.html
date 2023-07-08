@@ -266,25 +266,25 @@ PasswordAuthentication no
 <ul>
 <li><a href="https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw">https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw</a></li>
 </ul>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw
+<div class="highlight"><pre><span></span><code>$ sudo apt install ufw
 
-$<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span>default<span class="w"> </span>deny<span class="w"> </span>incoming
-$<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span>default<span class="w"> </span>allow<span class="w"> </span>outgoing
+$ sudo ufw default deny incoming
+$ sudo ufw default allow outgoing
 
-$<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">2380</span>
-$<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>http
-$<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span>https
+$ sudo ufw allow 2380
+$ sudo ufw allow http
+$ sudo ufw allow https
 
-$<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span><span class="nb">enable</span>
-$<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span>status
+$ sudo ufw enable
+$ sudo ufw status
 </code></pre></div>
 
 <p>Configurer fail2ban:</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>fail2ban
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>cp<span class="w"> </span>/etc/fail2ban/fail2ban.conf<span class="w"> </span>/etc/fail2ban/fail2ban.local
-$<span class="w"> </span>sudo<span class="w"> </span>cp<span class="w"> </span>/etc/fail2ban/jail.conf<span class="w"> </span>/etc/fail2ban/jail.local
+<div class="highlight"><pre><span></span><code>$ sudo cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
+$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>$ sudo nano /etc/fail2ban/jail.local
@@ -346,16 +346,16 @@ WEB_CMD=&quot;/bin/false&quot; ---&gt; WEB_CMD=&quot;&quot;
 </code></pre></div>
 
 <p>Configure logwatch:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>logwatch
-$<span class="w"> </span>nano<span class="w"> </span>/usr/share/logwatch/default.conf/logwatch.conf
-<span class="nv">MailTo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>test@gmail.com
+<div class="highlight"><pre><span></span><code>$ sudo apt install logwatch
+$ nano /usr/share/logwatch/default.conf/logwatch.conf
+MailTo = test@gmail.com
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>logwatch<span class="w"> </span>status
 </code></pre></div>
 
 <p>test manuellement:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>logwatch<span class="w"> </span>--detail<span class="w"> </span>Low<span class="w"> </span>--mailto<span class="w"> </span>email@address<span class="w"> </span>--service<span class="w"> </span>http<span class="w"> </span>--range<span class="w"> </span>today
+<div class="highlight"><pre><span></span><code>$ sudo logwatch --detail Low --mailto email@address --service http --range today
 </code></pre></div>
 
 <p>Configurer les mises à jours de sécurité automatique:</p>
@@ -393,7 +393,7 @@ $<span class="w"> </span>mkdir<span class="w"> </span>/var/www/qasari.net
 </code></pre></div>
 
 <p>Ne pas oublier de changer le détenteur du groupe:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="nv">$USER</span>:<span class="nv">$USER</span><span class="w"> </span>/var/www
+<div class="highlight"><pre><span></span><code>$ sudo chown -R $USER:$USER /var/www
 </code></pre></div>
 
 <p>Configure Nginx to serve the website</p>
@@ -413,7 +413,7 @@ server {
 </code></pre></div>
 
 <p>Link site enable:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/nginx/sites-available/qasari.net<span class="w"> </span>/etc/nginx/sites-enabled/qasari.net
+<div class="highlight"><pre><span></span><code>$ ln -s /etc/nginx/sites-available/qasari.net /etc/nginx/sites-enabled/qasari.net
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx

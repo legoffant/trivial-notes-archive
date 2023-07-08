@@ -125,7 +125,7 @@ $ sudo deluser debian
 
 **IMPORTANT NOTE DE SECURITY**
 
-Utiliser un clé SSH sur pour l'authentification sur le serveur: [https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11)
+Utiliser une clé SSH sur pour l'authentification sur le serveur: [https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11)
 
 Generate paire de clé RSA 4046
 ```
@@ -166,7 +166,7 @@ $ sudo apt install ufw
 $ sudo ufw default deny incoming
 $ sudo ufw default allow outgoing
 
-$ sudo ufw allow 2380
+$ sudo ufw allow 2382
 $ sudo ufw allow http
 $ sudo ufw allow https
 
