@@ -73,7 +73,7 @@ Peut-on catalyser des processeur à ADN en fabriquant un réacteur nucléaire?
 ```
 
 chatgpt 
-```
+```text
 Non, il n'est pas possible de catalyser des processeurs à ADN en fabriquant un réacteur nucléaire. Les processeurs à ADN sont généralement construits à partir de matériaux biologiques, tels que l'ADN, l'ARN et les protéines, qui ne peuvent pas être directement manipulés par un réacteur nucléaire.
 ```
 
