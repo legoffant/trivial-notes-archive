@@ -19,23 +19,29 @@ Configuration:
 
 
 Create a static website on Nginx:
+
 * [https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940](https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940)
 
 Proteger son serveur VPS:
+
 * [https://www.remipoignon.fr/securiser-son-serveur-linux/](https://www.remipoignon.fr/securiser-son-serveur-linux/)
 
 Static site template:
+
 * Simple.css [https://github.com/kevquirk/simple.css](https://github.com/kevquirk/simple.css)
 
 Liste pour utiliser un générateur de site statique (blog, docs, etc...):
+
 * [https://jamstack.org/generators/](https://jamstack.org/generators/)
 
 Partage de fichier à la racine (index) du web server comme repository:
+
 * Apaxy: [https://oupala.github.io/apaxy/](https://oupala.github.io/apaxy/)
 * h5ai: [https://larsjung.de/h5ai/](https://larsjung.de/h5ai/)
 * Directory Lister: [https://www.directorylister.com/](https://www.directorylister.com/)
 
 NOTA: Hacker web design style Brutalist:
+
 * What Is Brutalism in Web Design? [https://elementor.com/blog/brutalism-in-web-design/](https://elementor.com/blog/brutalism-in-web-design/)
 
 --------------------
@@ -47,7 +53,7 @@ $ apt install sudo nano vim bash-completion
 ```
 
 Configure the hostname:
-```
+```text
 $ nano /etc/hosts
 
 127.0.0.1       localhost.qasari.net   localhost
@@ -79,7 +85,7 @@ $ hostname -f
 ```
 
 Update debian installation:
-```
+```text
 $ nano /etc/apt/sources.list 
 
 # enable contrib non-free
@@ -126,7 +132,7 @@ Generate paire de clé RSA 4046
 $ ssh-keygen -b 4096
 ```
 copy la clé public sur le serveur distant
-```
+```text
 $ ssh-copy-id trivial@37.187.181.111
 ```
 
@@ -144,13 +150,14 @@ $ reboot now
 ```
 
 On ce reconnecte via la clé SSH
-```
+```text
 $ ssh -p 2382 trivial@37.187.181.111
 ```
 
 Configurer le firewall:
 
-setup ufw
+setup ufw:
+
 * [https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw](https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw)
 
 ```
@@ -299,7 +306,7 @@ $ mkdir /var/www/qasari.net
 ```
 
 Transférer vos fichiers local vers le serveur:
-```
+```text
 $  scp -P 2382 -r ~/qasari.net/* trivial@37.187.181.111:/var/www/qasari.net
 ```
 
