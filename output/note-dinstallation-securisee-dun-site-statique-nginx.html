@@ -143,20 +143,32 @@
 <li>SSL Enable avec Let's Encrypt auto-renew</li>
 <li>Template: Simple.css</li>
 </ul>
-<p>Create a static website on Nginx:
-* <a href="https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940">https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940</a></p>
-<p>Proteger son serveur VPS:
-* <a href="https://www.remipoignon.fr/securiser-son-serveur-linux/">https://www.remipoignon.fr/securiser-son-serveur-linux/</a></p>
-<p>Static site template:
-* Simple.css <a href="https://github.com/kevquirk/simple.css">https://github.com/kevquirk/simple.css</a></p>
-<p>Liste pour utiliser un générateur de site statique (blog, docs, etc...):
-* <a href="https://jamstack.org/generators/">https://jamstack.org/generators/</a></p>
-<p>Partage de fichier à la racine (index) du web server comme repository:
-* Apaxy: <a href="https://oupala.github.io/apaxy/">https://oupala.github.io/apaxy/</a>
-* h5ai: <a href="https://larsjung.de/h5ai/">https://larsjung.de/h5ai/</a>
-* Directory Lister: <a href="https://www.directorylister.com/">https://www.directorylister.com/</a></p>
-<p>NOTA: Hacker web design style Brutalist:
-* What Is Brutalism in Web Design? <a href="https://elementor.com/blog/brutalism-in-web-design/">https://elementor.com/blog/brutalism-in-web-design/</a></p>
+<p>Create a static website on Nginx:</p>
+<ul>
+<li><a href="https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940">https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940</a></li>
+</ul>
+<p>Proteger son serveur VPS:</p>
+<ul>
+<li><a href="https://www.remipoignon.fr/securiser-son-serveur-linux/">https://www.remipoignon.fr/securiser-son-serveur-linux/</a></li>
+</ul>
+<p>Static site template:</p>
+<ul>
+<li>Simple.css <a href="https://github.com/kevquirk/simple.css">https://github.com/kevquirk/simple.css</a></li>
+</ul>
+<p>Liste pour utiliser un générateur de site statique (blog, docs, etc...):</p>
+<ul>
+<li><a href="https://jamstack.org/generators/">https://jamstack.org/generators/</a></li>
+</ul>
+<p>Partage de fichier à la racine (index) du web server comme repository:</p>
+<ul>
+<li>Apaxy: <a href="https://oupala.github.io/apaxy/">https://oupala.github.io/apaxy/</a></li>
+<li>h5ai: <a href="https://larsjung.de/h5ai/">https://larsjung.de/h5ai/</a></li>
+<li>Directory Lister: <a href="https://www.directorylister.com/">https://www.directorylister.com/</a></li>
+</ul>
+<p>NOTA: Hacker web design style Brutalist:</p>
+<ul>
+<li>What Is Brutalism in Web Design? <a href="https://elementor.com/blog/brutalism-in-web-design/">https://elementor.com/blog/brutalism-in-web-design/</a></li>
+</ul>
 <hr>
 <p><strong>LIST COMMAND ON SERVER</strong> </p>
 <p>Install editor text &amp; bash completion:</p>
@@ -164,10 +176,10 @@
 </code></pre></div>
 
 <p>Configure the hostname:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nano<span class="w"> </span>/etc/hosts
+<div class="highlight"><pre><span></span><code>$ nano /etc/hosts
 
-<span class="m">127</span>.0.0.1<span class="w">       </span>localhost.qasari.net<span class="w">   </span>localhost
-<span class="m">37</span>.187.181.111<span class="w">  </span>qasari.net<span class="w">     </span>qasari
+127.0.0.1       localhost.qasari.net   localhost
+37.187.181.111  qasari.net     qasari
 </code></pre></div>
 
 <p>The following lines are desirable for IPv6 capable hosts</p>
@@ -191,18 +203,18 @@ $<span class="w"> </span>hostname<span class="w"> </span>-f
 </code></pre></div>
 
 <p>Update debian installation:</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span><span class="w"> </span><span class="err">nano</span><span class="w"> </span><span class="err">/etc/apt/sources.list</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code>$ nano /etc/apt/sources.list 
 
-<span class="c"># enable contrib non-free</span>
+# enable contrib non-free
 
-<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
-<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb-src http://deb.debian.org/debian bullseye main contrib non-free
 
-<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian-security</span><span class="w"> </span><span class="kp">bullseye/updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
-<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian-security</span><span class="w"> </span><span class="kp">bullseye/updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
+deb http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security bullseye/updates main contrib non-free
 
-<span class="k">deb</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye-updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
-<span class="k">deb-src</span><span class="w"> </span><span class="s">http://deb.debian.org/debian</span><span class="w"> </span><span class="kp">bullseye-updates</span><span class="w"> </span><span class="kp">main</span><span class="w"> </span><span class="kp">contrib</span><span class="w"> </span><span class="kp">non-free</span>
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt-get<span class="w"> </span>upgrade
@@ -231,7 +243,7 @@ $<span class="w"> </span>passwd
 </code></pre></div>
 
 <p>copy la clé public sur le serveur distant</p>
-<div class="highlight"><pre><span></span><code><span class="n">$</span><span class="w"> </span><span class="n">ssh</span><span class="o">-</span><span class="k">copy</span><span class="o">-</span><span class="kt">id</span><span class="w"> </span><span class="n">trivial</span><span class="mf">@37.187.181.111</span>
+<div class="highlight"><pre><span></span><code>$ ssh-copy-id trivial@37.187.181.111
 </code></pre></div>
 
 <p>Configuration de SSH:</p>
@@ -246,12 +258,14 @@ PasswordAuthentication no
 </code></pre></div>
 
 <p>On ce reconnecte via la clé SSH</p>
-<div class="highlight"><pre><span></span><code><span class="n">$</span><span class="w"> </span><span class="n">ssh</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="mi">2382</span><span class="w"> </span><span class="n">trivial</span><span class="mf">@37.187.181.111</span>
+<div class="highlight"><pre><span></span><code>$ ssh -p 2382 trivial@37.187.181.111
 </code></pre></div>
 
 <p>Configurer le firewall:</p>
-<p>setup ufw
-* <a href="https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw">https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw</a></p>
+<p>setup ufw:</p>
+<ul>
+<li><a href="https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw">https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw</a></li>
+</ul>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw
 
 $<span class="w"> </span>sudo<span class="w"> </span>ufw<span class="w"> </span>default<span class="w"> </span>deny<span class="w"> </span>incoming
@@ -375,7 +389,7 @@ $<span class="w"> </span>mkdir<span class="w"> </span>/var/www/qasari.net
 </code></pre></div>
 
 <p>Transférer vos fichiers local vers le serveur:</p>
-<div class="highlight"><pre><span></span><code><span class="n">$</span><span class="w">  </span><span class="n">scp</span><span class="w"> </span><span class="o">-</span><span class="n">P</span><span class="w"> </span><span class="mi">2382</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span><span class="o">~/</span><span class="n">qasari</span><span class="p">.</span><span class="n">net</span><span class="cm">/* trivial@37.187.181.111:/var/www/qasari.net</span>
+<div class="highlight"><pre><span></span><code>$  scp -P 2382 -r ~/qasari.net/* trivial@37.187.181.111:/var/www/qasari.net
 </code></pre></div>
 
 <p>Ne pas oublier de changer le détenteur du groupe:</p>

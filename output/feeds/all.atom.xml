@@ -10,20 +10,32 @@
 &lt;li&gt;SSL Enable avec Let's Encrypt auto-renew&lt;/li&gt;
 &lt;li&gt;Template: Simple.css&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Create a static website on Nginx:
-* &lt;a href="https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940"&gt;https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Proteger son serveur VPS:
-* &lt;a href="https://www.remipoignon.fr/securiser-son-serveur-linux/"&gt;https://www.remipoignon.fr/securiser-son-serveur-linux/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Static site template:
-* Simple.css &lt;a href="https://github.com/kevquirk/simple.css"&gt;https://github.com/kevquirk/simple.css&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Liste pour utiliser un générateur de site statique (blog, docs, etc...):
-* &lt;a href="https://jamstack.org/generators/"&gt;https://jamstack.org/generators/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Partage de fichier à la racine (index) du web server comme repository:
-* Apaxy: &lt;a href="https://oupala.github.io/apaxy/"&gt;https://oupala.github.io/apaxy/&lt;/a&gt;
-* h5ai: &lt;a href="https://larsjung.de/h5ai/"&gt;https://larsjung.de/h5ai/&lt;/a&gt;
-* Directory Lister: &lt;a href="https://www.directorylister.com/"&gt;https://www.directorylister.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;NOTA: Hacker web design style Brutalist:
-* What Is Brutalism in Web Design? &lt;a href="https://elementor.com/blog/brutalism-in-web-design/"&gt;https://elementor.com/blog/brutalism-in-web-design/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Create a static website on Nginx:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940"&gt;https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Proteger son serveur VPS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.remipoignon.fr/securiser-son-serveur-linux/"&gt;https://www.remipoignon.fr/securiser-son-serveur-linux/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Static site template:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Simple.css &lt;a href="https://github.com/kevquirk/simple.css"&gt;https://github.com/kevquirk/simple.css&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Liste pour utiliser un générateur de site statique (blog, docs, etc...):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://jamstack.org/generators/"&gt;https://jamstack.org/generators/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Partage de fichier à la racine (index) du web server comme repository:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apaxy: &lt;a href="https://oupala.github.io/apaxy/"&gt;https://oupala.github.io/apaxy/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;h5ai: &lt;a href="https://larsjung.de/h5ai/"&gt;https://larsjung.de/h5ai/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Directory Lister: &lt;a href="https://www.directorylister.com/"&gt;https://www.directorylister.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NOTA: Hacker web design style Brutalist:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What Is Brutalism in Web Design? &lt;a href="https://elementor.com/blog/brutalism-in-web-design/"&gt;https://elementor.com/blog/brutalism-in-web-design/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;LIST COMMAND ON SERVER&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;Install editor text &amp;amp; bash completion:&lt;/p&gt;
@@ -31,10 +43,10 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Configure the hostname:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;nano&lt;span class="w"&gt; &lt;/span&gt;/etc/hosts
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ nano /etc/hosts
 
-&lt;span class="m"&gt;127&lt;/span&gt;.0.0.1&lt;span class="w"&gt;       &lt;/span&gt;localhost.qasari.net&lt;span class="w"&gt;   &lt;/span&gt;localhost
-&lt;span class="m"&gt;37&lt;/span&gt;.187.181.111&lt;span class="w"&gt;  &lt;/span&gt;qasari.net&lt;span class="w"&gt;     &lt;/span&gt;qasari
+127.0.0.1       localhost.qasari.net   localhost
+37.187.181.111  qasari.net     qasari
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The following lines are desirable for IPv6 capable hosts&lt;/p&gt;
@@ -58,18 +70,18 @@ $&lt;span class="w"&gt; &lt;/span&gt;hostname&lt;span class="w"&gt; &lt;/span&gt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Update debian installation:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;nano&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;/etc/apt/sources.list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ nano /etc/apt/sources.list 
 
-&lt;span class="c"&gt;# enable contrib non-free&lt;/span&gt;
+# enable contrib non-free
 
-&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;
-&lt;span class="k"&gt;deb-src&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb-src http://deb.debian.org/debian bullseye main contrib non-free
 
-&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian-security&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye/updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;
-&lt;span class="k"&gt;deb-src&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian-security&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye/updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;
+deb http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security bullseye/updates main contrib non-free
 
-&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye-updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;
-&lt;span class="k"&gt;deb-src&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://deb.debian.org/debian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;bullseye-updates&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;contrib&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;non-free&lt;/span&gt;
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;apt-get&lt;span class="w"&gt; &lt;/span&gt;update&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;apt-get&lt;span class="w"&gt; &lt;/span&gt;upgrade
@@ -98,7 +110,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;passwd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;copy la clé public sur le serveur distant&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;copy&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;trivial&lt;/span&gt;&lt;span class="mf"&gt;@37.187.181.111&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ssh-copy-id trivial@37.187.181.111
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Configuration de SSH:&lt;/p&gt;
@@ -113,12 +125,14 @@ PasswordAuthentication no
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;On ce reconnecte via la clé SSH&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2382&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;trivial&lt;/span&gt;&lt;span class="mf"&gt;@37.187.181.111&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ssh -p 2382 trivial@37.187.181.111
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Configurer le firewall:&lt;/p&gt;
-&lt;p&gt;setup ufw
-* &lt;a href="https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw"&gt;https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;setup ufw:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw"&gt;https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;apt&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;ufw
 
 $&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;ufw&lt;span class="w"&gt; &lt;/span&gt;default&lt;span class="w"&gt; &lt;/span&gt;deny&lt;span class="w"&gt; &lt;/span&gt;incoming
@@ -242,7 +256,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;/v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Transférer vos fichiers local vers le serveur:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;scp&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;P&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2382&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;qasari&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="cm"&gt;/* trivial@37.187.181.111:/var/www/qasari.net&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$  scp -P 2382 -r ~/qasari.net/* trivial@37.187.181.111:/var/www/qasari.net
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ne pas oublier de changer le détenteur du groupe:&lt;/p&gt;

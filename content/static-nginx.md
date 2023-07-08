@@ -133,7 +133,7 @@ $ ssh-keygen -b 4096
 ```
 copy la clé public sur le serveur distant
 ```text
-$ ssh-copy-id trivial@37.187.181.111
+$ ssh-copy-id toto@37.187.181.111
 ```
 
 Configuration de SSH:
@@ -151,7 +151,7 @@ $ reboot now
 
 On ce reconnecte via la clé SSH
 ```text
-$ ssh -p 2382 trivial@37.187.181.111
+$ ssh -p 2382 toto@37.187.181.111
 ```
 
 Configurer le firewall:
@@ -307,7 +307,7 @@ $ mkdir /var/www/qasari.net
 
 Transférer vos fichiers local vers le serveur:
 ```text
-$  scp -P 2382 -r ~/qasari.net/* trivial@37.187.181.111:/var/www/qasari.net
+$  scp -P 2382 -r ~/qasari.net/* toto@37.187.181.111:/var/www/qasari.net
 ```
 
 Ne pas oublier de changer le détenteur du groupe:
