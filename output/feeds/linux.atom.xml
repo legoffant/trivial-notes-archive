@@ -104,7 +104,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;passwd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;IMPORTANT NOTE DE SECURITY&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Utiliser un clé SSH sur pour l'authentification sur le serveur: &lt;a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11"&gt;https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Utiliser une clé SSH sur pour l'authentification sur le serveur: &lt;a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11"&gt;https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Generate paire de clé RSA 4046&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;ssh-keygen&lt;span class="w"&gt; &lt;/span&gt;-b&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;4096&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -138,7 +138,7 @@ PasswordAuthentication no
 $ sudo ufw default deny incoming
 $ sudo ufw default allow outgoing
 
-$ sudo ufw allow 2380
+$ sudo ufw allow 2382
 $ sudo ufw allow http
 $ sudo ufw allow https
 
