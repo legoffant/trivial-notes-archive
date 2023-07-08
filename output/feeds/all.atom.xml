@@ -110,7 +110,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;passwd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;copy la clé public sur le serveur distant&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ssh-copy-id trivial@37.187.181.111
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ssh-copy-id toto@37.187.181.111
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Configuration de SSH:&lt;/p&gt;
@@ -125,7 +125,7 @@ PasswordAuthentication no
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;On ce reconnecte via la clé SSH&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ssh -p 2382 trivial@37.187.181.111
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ ssh -p 2382 toto@37.187.181.111
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Configurer le firewall:&lt;/p&gt;
@@ -256,7 +256,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;/v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Transférer vos fichiers local vers le serveur:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$  scp -P 2382 -r ~/qasari.net/* trivial@37.187.181.111:/var/www/qasari.net
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$  scp -P 2382 -r ~/qasari.net/* toto@37.187.181.111:/var/www/qasari.net
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ne pas oublier de changer le détenteur du groupe:&lt;/p&gt;

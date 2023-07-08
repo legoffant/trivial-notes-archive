@@ -160,7 +160,7 @@ setup ufw:
 
 * [https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw](https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw)
 
-```
+```text
 $ sudo apt install ufw
 
 $ sudo ufw default deny incoming
@@ -179,7 +179,7 @@ Configurer fail2ban:
 $ sudo apt install fail2ban
 ```
 
-```
+```text
 $ sudo cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
 $ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 ```
@@ -201,7 +201,7 @@ destemail = test@gmail.com
 
 
 Depuis une dernière version de fail2ban, pour recevoir les mails de notification, il faut indiquer votre mail dans les fichiers :
-```
+```text
 	/etc/fail2ban/action.d/sendmail-common.conf
 	/etc/fail2ban/action.d/mail.conf
 	/etc/fail2ban/action.d/mail-whois.conf
@@ -253,7 +253,7 @@ $ sudo rkhunter --check
 ```
 
 Configure logwatch:
-```
+```text
 $ sudo apt install logwatch
 $ nano /usr/share/logwatch/default.conf/logwatch.conf
 MailTo = test@gmail.com
@@ -264,7 +264,7 @@ $ sudo logwatch status
 ```
 
 test manuellement:
-```
+```text
 $ sudo logwatch --detail Low --mailto email@address --service http --range today
 ```
 
@@ -311,7 +311,7 @@ $  scp -P 2382 -r ~/qasari.net/* toto@37.187.181.111:/var/www/qasari.net
 ```
 
 Ne pas oublier de changer le détenteur du groupe:
-```
+```text
 $ sudo chown -R $USER:$USER /var/www
 ```
 
@@ -335,7 +335,7 @@ server {
 
 ```
 Link site enable:
-```
+```text
 $ ln -s /etc/nginx/sites-available/qasari.net /etc/nginx/sites-enabled/qasari.net
 ```
 
