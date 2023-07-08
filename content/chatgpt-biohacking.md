@@ -41,6 +41,8 @@ Voici quelques sources et références sur le biohacking et les processeurs à A
 -Goncalves, M. et al. «Biohacking et processeurs à ADN: promesses et défis». Journal of Molecular Engineering, vol. 1, no. 1, 2021, pp. 1–9.
 ```
 
+NOTA: *Ces sources et références sont fausses, il invente....*
+
 Enter a prompt:
 ```
 Donc je reformule ma demande: Liste les 10 meilleurs sources et références sur le sujet du biohacking et des processeurs à ADN.
