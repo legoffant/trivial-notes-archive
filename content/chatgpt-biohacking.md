@@ -108,7 +108,3 @@ Les transmutations biologiques sont un domaine de recherche très prometteur et 
 
 ```
 
-
-
-
-10. Regalado, A. (2011). Synthetic Biology: Biohacking the Cellular Code. MIT Technology Review.
