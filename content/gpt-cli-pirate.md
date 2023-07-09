@@ -249,7 +249,7 @@ En résumé, l'extraction et la conservation de l'ADN sont des procédures de la
 marine ayant une forme caractéristique en cloche.
 ```
 
-> Tu n'as jamais entendu parler de "méduse d'ADN"? Source: https://www.assistancescolaire.com/enseignant/college/ressources/base-documentaire-en-sciences/meduse-d-adn-15107
+> Tu n'as jamais entendu parler de "méduse d'ADN"? Source: [https://www.assistancescolaire.com/enseignant/college/ressources/base-documentaire-en-sciences/meduse-d-adn-15107](https://www.assistancescolaire.com/enseignant/college/ressources/base-documentaire-en-sciences/meduse-d-adn-15107)
 ```text
 Je m'excuse pour la confusion précédente. Vous avez raison, il existe effectivement une technique d'extraction d'ADN qui est parfois appelée "méduse d'ADN". Cette terminologie peut être utilisée pour décrire une méthode spécifique        
 d'extraction d'ADN qui utilise une solution de savon à base de glycérine et un fluide de conservation à base d'éthanol, donnant une apparence ressemblant à une structure de méduse ou à des filaments d'ADN flottant dans la solution.       
