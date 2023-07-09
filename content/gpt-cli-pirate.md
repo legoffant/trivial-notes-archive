@@ -278,7 +278,7 @@ l'immortalité par transdifférenciation est une notion spéculative encore en c
 ```
 
 > Un ordinateur à base de processeur à ADN est-il quantique?
-```
+```text
 Non, un ordinateur à base de processeur à ADN n'est généralement pas considéré comme un ordinateur quantique. Les processeurs à ADN se réfèrent à des dispositifs qui utilisent l'ADN (acide désoxyribonucléique) comme support d'information 
 et de calcul, exploitant les interactions spécifiques entre les brins d'ADN pour effectuer diverses opérations.                                                                                                                               
 
@@ -292,7 +292,7 @@ Ainsi, bien que les processeurs à ADN et les ordinateurs quantiques soient tous
 ```
                             
 > Si j'utilise un effet tunnel dans mon ordinateur quantique pour communiquer et faire du calcul parallèle cela augmente les performances?
-```
+```text
 L'utilisation de l'effet tunnel dans les ordinateurs quantiques peut potentiellement améliorer leurs performances, en particulier pour certaines opérations spécifiques.                                                                      
 
 L'effet tunnel est un phénomène quantique dans lequel une particule peut traverser une barrière de potentiel sans avoir assez d'énergie pour le faire classiquement. Dans un ordinateur quantique, cela peut être exploité pour permettre à un
