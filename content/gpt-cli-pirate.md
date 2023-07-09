@@ -509,12 +509,14 @@ Pour obtenir un résumé de l'ensemble de l'œuvre de Franck Herbert, il est pr�
 
 > tu ne connais pas? Source: [https://fr.wikipedia.org/wiki/Et_l%27homme_cr%C3%A9a_un_dieu](https://fr.wikipedia.org/wiki/Et_l%27homme_cr%C3%A9a_un_dieu)
 
+
 ```text
+
 Je m'excuse pour la confusion. Vous avez raison, Franck Herbert a en effet écrit un livre intitulé "Et l'homme créa un dieu" (titre original : "Destination: Void"). Il s'agit d'un roman de science-fiction publié en 1966, qui explore des  
 thèmes tels que la création de l'intelligence artificielle et de la religion.                                                                                                                                                                 
 
 Dans ce livre, Herbert imagine une mission spatiale où une équipe d'humains et d'intelligences artificielles est envoyée vers une lointaine planète pour y créer une nouvelle civilisation. Le récit aborde des questions de pouvoir, de      
-manipulation et de croyance dans un contexte futuriste et technologique.                                                                                                    ```
-                                                
+manipulation et de croyance dans un contexte futuriste et technologique.                                                                                                                                              
 
 Merci pour la clarification. Si vous avez d'autres questions sur cette œuvre ou sur d'autres sujets, n'hésitez pas à les poser. 
+```
