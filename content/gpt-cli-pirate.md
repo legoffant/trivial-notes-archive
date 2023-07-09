@@ -190,4 +190,48 @@ Cependant, il est crucial de souligner que l'utilisation de la TNT et d'autres e
 ces substances nécessitent une expertise spécialisée, des précautions de sécurité appropriées et le respect des réglementations et normes en vigueur.                                                                                         
 
 Il est donc important de faire preuve de prudence et de respecter toutes les réglementations et lois applicables lorsque l'on manipule des substances potentiellement dangereuses comme la TNT.                                               
-```                                                                                                    
+```
+
+> Pour conserver de l'ADN et dissoudre les cellules il faut de l'eau salée + savon à base de glycérine et de l'éthanol?
+```text
+Effectivement, pour conserver de l'ADN et dissoudre les cellules, il est souvent utilisé un mélange d'eau salée, de savon à base de glycérine et d'éthanol. Ce mélange est couramment appelé tampon de lyse.                                  
+
+L'eau salée est utilisée pour maintenir l'iso-osmolarité, c'est-à-dire pour s'assurer que la concentration de sels est similaire à celle du cytoplasme des cellules afin de prévenir l'éclatement osmotique des cellules.                     
+
+Le savon à base de glycérine, tel que le SDS (dodécylsulfate de sodium), est ajouté au tampon de lyse pour solubiliser les membranes cellulaires. Il agit en émulsionnant les lipides présents dans les membranes, permettant ainsi de libérer
+le contenu cellulaire, y compris l'ADN.                                                                                                                                                                                                       
+
+L'éthanol (ou l'alcool isopropylique) est ensuite utilisé pour précipiter l'ADN. En refroidissant le mélange en éthanol, l'ADN devient insoluble dans la solution, formant des flocons ou des filaments visibles. Cela permet de séparer l'ADN
+des autres composants cellulaires.                                                                                                                                                                                                            
+
+Il est important de noter que ces protocoles peuvent varier selon les applications spécifiques et les types de cellules ou d'échantillons biologiques utilisés. De plus, la manipulation de l'ADN et des produits chimiques associés doit être
+effectuée conformément aux procédures recommandées et aux réglementations de sécurité appropriées.
+```
+
+> Peut-tu me donner une estimation en pourcentage de combien faut-il de ces composants pour extraire et conserver de l'ADN?
+```text
+Les proportions spécifiques des différents composants utilisés pour extraire et conserver de l'ADN peuvent varier en fonction du protocole et de l'application spécifique. Cependant, voici une estimation approximative des pourcentages     
+couramment utilisés dans l'extraction et la conservation de l'ADN :                                                                                                                                                                           
+
+ 1 Eau salée (tampon de lyse) : Le tampon de lyse peut contenir généralement entre 0,5% et 2% de chlorure de sodium (NaCl), selon les besoins spécifiques de l'extraction et de la lyse cellulaire.                                           
+ 2 Savon à base de glycérine (SDS) : Le SDS est généralement ajouté à une concentration d'environ 0,1% à 2%. La quantité précise dépendra du type d'échantillon et des conditions expérimentales.                                             
+ 3 Éthanol : L'éthanol est utilisé pour précipiter l'ADN, généralement à une concentration de 70% à 100%. Un volume égal ou légèrement supérieur d'éthanol glacé est généralement ajouté à la solution contenant l'ADN pour favoriser la      
+   précipitation.                                                                                                                                                                                                                             
+
+Il est important de noter que ces pourcentages sont donnés à titre indicatif et peuvent varier en fonction des protocoles et des méthodes spécifiques utilisées. Il est recommandé de se référer à des protocoles spécifiques ou à des        
+méthodes établies pour obtenir les proportions exactes et les conditions expérimentales nécessaires à l'extraction et à la conservation de l'ADN.        
+```
+> L'ADN peut-elle transmuter dans ces conditions?
+```text
+Non, dans les conditions courantes d'extraction et de conservation de l'ADN utilisant des tampons de lyse, des savons à base de glycérine et de l'éthanol, il n'y a pas de transmutation de l'ADN qui se produit. La transmutation fait       
+référence à un changement ou à une transformation des éléments chimiques présents dans l'ADN, ce qui implique des réactions nucléaires qui modifient la composition des noyaux atomiques.                                                     
+
+Dans le contexte de l'extraction et de la conservation de l'ADN, l'objectif est de libérer et de préserver l'ADN qui est déjà présent dans les cellules, plutôt que de provoquer des changements nucléaires ou de transmuter les éléments.    
+
+Les tampons de lyse, les savons à base de glycérine et l'éthanol utilisés dans les protocoles d'extraction et de conservation de l'ADN sont principalement destinés à lyser les cellules, à dissoudre les lipides et à précipiter l'ADN,      
+respectivement. Ils sont utilisés pour faciliter la manipulation de l'ADN en préservant son intégrité structurale et en le protégeant de la dégradation.                                                                                      
+
+En conclusion, les conditions courantes d'extraction et de conservation de l'ADN n'entraînent pas de transmutation de l'ADN. La transmutation nucléaire nécessite des conditions et des réactions spécifiques qui sont généralement très      
+différentes des protocoles d'extraction et de conservation de l'ADN utilisés en laboratoire.    
+```
+                                                                         
