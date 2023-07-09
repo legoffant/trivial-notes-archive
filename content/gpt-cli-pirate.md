@@ -405,7 +405,7 @@ Le Penicillium est connu pour sa capacité à produire des antibiotiques, y comp
 Penicillium et d'autres champignons apparentés.  
 ```
 
- Il y a t-il une différence entre un fromage bleu ou un cammembert dans la production de moisissure et de penicillium?
+> Il y a t-il une différence entre un fromage bleu ou un cammembert dans la production de moisissure et de penicillium?
 ```text
 Oui, il y a une différence dans la production de moisissure entre un fromage bleu et un camembert, notamment en ce qui concerne l'utilisation de Penicillium.                                                                                 
 
