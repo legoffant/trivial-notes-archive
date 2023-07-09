@@ -85,11 +85,7 @@
 Les transmutations biologiques peuvent être utilisées dans l&amp;#39;agriculture pour produire des cultures plus riches en nutriments et plus résistantes aux maladies. Ces réactions peuvent également être utilisées pour produire des produits pharmaceutiques plus efficaces et plus sûrs. De plus, les enzymes jouent un rôle important dans la catalyse nucléaire et peuvent être utilisées pour produire des isotopes radioactifs et des combustibles nucléaires plus sûrs.
 
 Les transmutations biologiques sont un domaine de recherche très prometteur et promettent de révolutionner l&amp;#39;agriculture, la santé, l&amp;#39;énergie et bien d&amp;#39;autres domaines.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Regalado, A. (2011). Synthetic Biology: Biohacking the Cellular Code. MIT Technology Review.&lt;/li&gt;
-&lt;/ol&gt;</content><category term="Inclassable"></category><category term="adn"></category><category term="biohacking"></category></entry><entry><title>Note d'installation sécurisée d'un site statique Nginx</title><link href="/note-dinstallation-securisee-dun-site-statique-nginx.html" rel="alternate"></link><published>2023-07-08T11:23:00+02:00</published><updated>2023-07-08T11:23:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-08:/note-dinstallation-securisee-dun-site-statique-nginx.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Ma propre configuration pour déployer un site statique tel que &lt;a href="https://qasari.net"&gt;https://qasari.net&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Inclassable"></category><category term="adn"></category><category term="biohacking"></category></entry><entry><title>Note d'installation sécurisée d'un site statique Nginx</title><link href="/note-dinstallation-securisee-dun-site-statique-nginx.html" rel="alternate"></link><published>2023-07-08T11:23:00+02:00</published><updated>2023-07-08T11:23:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-08:/note-dinstallation-securisee-dun-site-statique-nginx.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Ma propre configuration pour déployer un site statique tel que &lt;a href="https://qasari.net"&gt;https://qasari.net&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Configuration:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;OS: Debian 11&lt;/li&gt;
