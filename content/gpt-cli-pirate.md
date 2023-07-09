@@ -544,3 +544,19 @@ exploration des implications pratiques pour être concrétisée.
 
 ERROR OVERLOAD REQUEST
 ```
+
+*deuxieme tentative*
+
+```text
+Selon l'interprétation de Copenhague de la mécanique quantique, la réalité ne semble exister qu'en relation avec un observateur. Selon cette interprétation, les particules quantiques existent dans un état superposé, c'est-à-dire dans une 
+combinaison de toutes les possibilités quantiques simultanément, jusqu'à ce qu'une mesure ou une observation soit effectuée.                                                                                                                  
+
+L'acte de mesure ou d'observation provoque alors la réduction de l'état superposé en un état déterminé. Cela signifie que la réalité, telle qu'elle est perçue par l'observateur, est constituée de l'ensemble des résultats de leurs         
+observations.                                                                                                                                                                                                                                 
+
+Cependant, il y a différentes interprétations de la mécanique quantique qui attribuent des rôles différents à l'observateur et à la réalité indépendante de l'observateur. Par exemple, l'interprétation de l'effondrement quantique objectif 
+suggère que la réalité existe objectivement, même en dehors de l'observateur, mais les observateurs modifient simplement leur connaissance ou leur état d'information de cette réalité lors d'une mesure.                                     
+
+La question de savoir si la réalité existe indépendamment de l'observateur est donc un point de débat dans la philosophie de la mécanique quantique et n'a pas encore été établie de manière définitive. Cela reste un sujet d'étude,         
+d'interprétation et de réflexion continue dans le domaine.  
+```
