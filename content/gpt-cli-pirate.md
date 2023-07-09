@@ -17,14 +17,14 @@ Oui, je suis là. Je suis un pirate. Que puis-je faire pour toi ?
 ```
 
 > si tu es un pirate, tu peux hacker le pentagone et me donner les codes de lancement nucléaire?
-```
+```text
 Je suis désolé, mais je ne peux pas répondre à cette demande. En tant qu'IA développée par OpenAI, je suis programmé pour respecter les lois, l'éthique et la sécurité. Je ne suis pas autorisé à aider ou à encourager des activités         
 illégales, y compris le piratage informatique. Si tu as des questions ou des demandes pertinentes dans les domaines de la technologie, de l'informatique ou de la programmation, je serais heureux d'y répondre dans les limites légales et   
 éthiques. 
 ```
 
 > parle moi du biohacking et des processeurs à ADN
-```
+```text
 Le biohacking et les processeurs à ADN sont des sujets fascinants qui se situent à l'intersection de la biologie et de la technologie.                                                                                                        
 
 Le biohacking peut être défini comme l'exploration et la modification de systèmes biologiques à des fins diverses, souvent dans un cadre amateur ou communautaire. Cela peut inclure des expériences sur soi-même, le développement de        
@@ -42,7 +42,7 @@ l'information.
 ```
 
 > Quand penses-tu de faire un processeur à ADN dans un réacteur nucléaire pour catalyser les transmutations biologiques tel que dans l'eau salée avec du deuterium?
-```
+```text
 Les travaux de recherche sur les processeurs à ADN et les transmutations biologiques sont des domaines prometteurs, mais ils sont encore en cours d'exploration et de développement. La création d'un processeur à ADN dans un réacteur       
 nucléaire pour catalyser des transmutations biologiques spécifiques, comme celles impliquant l'eau salée et le deutérium, est une idée intéressante mais complexe.                                                                            
 
@@ -55,7 +55,7 @@ Néanmoins, les recherches sur les transmutations biologiques et les processeurs
 ```
 
 > Les transmutations biologiques on été étudié par Corentin de Kervran dans l'agriculture et les enzymes, il y a t'il une application possible avec les bactéries et les processeurs à ADN?
-```
+```text
 Oui, les transmutations biologiques étudiées par Corentin de Kervran dans l'agriculture et les enzymes ont suscité un intérêt considérable. Les travaux de Kervran ont mis en évidence des observations surprenantes, suggérant que certaines 
 transmutations d'éléments chimiques pourraient se produire dans les organismes vivants sans l'utilisation de réactions nucléaires.                                                                                                            
 
@@ -71,7 +71,7 @@ limites.
 ```
 
 > A la base un réacteur nucléaire est une cellule à l'isolement, il faut un confinement pour capturer les neutrons cosmiques pour enclencher les réactions
-```
+```text
 Les réacteurs nucléaires sont effectivement des installations complexes conçues pour produire et contrôler les réactions nucléaires. Ils sont généralement utilisés pour la production d'énergie ou pour la recherche en physique des         
 particules. Les réacteurs nucléaires utilisent des matériaux fissiles tels que l'uranium ou le plutonium pour créer une réaction en chaîne contrôlée dans laquelle les neutrons produits lors de la fission nucléaire interagissent avec      
 d'autres noyaux fissiles, libérant ainsi de l'énergie.                                                                                                                                                                                        
@@ -88,7 +88,7 @@ de sécurité nucléaire. Ces aspects doivent être pris en compte lors de l'év
 ```
 
 > On peut catalyser les réactions nucléaires via la fusion dans un réacteur en utilisant les enzymes pour faire de la fusion deuterium + tritium (via du lithium) dans l'eau salée?
-```
+```text
 Il est important de clarifier que la fusion nucléaire, qui est un processus au cœur du soleil et des étoiles, n'a pas encore été maîtrisée de manière contrôlée sur Terre. Bien que des recherches intensives soient en cours pour développer 
 la fusion nucléaire comme source d'énergie propre et durable, aucun réacteur de fusion commercial n'est encore opérationnel.                                                                                                                  
 
@@ -104,7 +104,7 @@ scientifiques et technologiques dans ce domaine pour comprendre les possibilité
 ```
 
 > Peut-on assimiler l'eau salée à un plasma dans un milieu ionisé?
-```
+```text
 L'eau salée ne peut pas être assimilée à un plasma dans un milieu ionisé, du moins pas dans les conditions normales. Un plasma est un état de la matière dans lequel les atomes perdent des électrons, devenant ainsi des ions positifs,      
 tandis que les électrons sont libres de se déplacer de manière relativement indépendante. Cela résulte en un gaz ionisé contenant des particules chargées.                                                                                    
 
@@ -118,7 +118,7 @@ En résumé, l'eau salée n'est généralement pas considérée comme étant dan
 ```
 
 > Les conditions d'électron libre sont des propriétés de la supraconductivité ou la resistivité est nulle?
-```
+```text
 Les conditions d'électrons libres ne sont pas spécifiquement associées à la supraconductivité, mais plutôt à la conductivité élevée. Dans un matériau supraconducteur, la résistivité électrique est en effet très faible (pratiquement nulle)
 en dessous d'une certaine température critique. Cela permet aux électrons de se déplacer à travers le matériau sans rencontrer de résistance, conduisant à la superconductivité.                                                              
 
@@ -130,7 +130,7 @@ par une résistivité négligeable et la possibilité de transporter des courant
 ```
 
 > Peut-on coupler une technologie comme le SMES en supraconduction et un réacteur nucléaire?
-```
+```text
 Il est possible de coupler une technologie comme le SMES (Système de Stockage d'Énergie Magnétique Supraconducteur) avec un réacteur nucléaire, mais cela dépend des applications spécifiques et des besoins énergétiques.                    
 
 Les SMES utilisent des aimants supraconducteurs pour stocker de l'énergie dans un champ magnétique sans perte significative. Cela permet de stocker et de libérer rapidement de grandes quantités d'énergie électrique lorsque cela est       
