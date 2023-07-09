@@ -538,3 +538,9 @@ que d'une réalité scientifique tangible.
 En résumé, l'idée de fusionner les interfaces homme-machine à travers le concept de dualité corpusculaire est intéressante d'un point de vue philosophique et conceptuel, mais elle nécessiterait une réflexion plus approfondie et une       
 exploration des implications pratiques pour être concrétisée. 
 ```
+
+> Selon le prisme de la mécanique quantique et de la mesure. La réalité existe-elle sans l'observateur?
+```text
+
+ERROR OVERLOAD REQUEST
+```
