@@ -147,3 +147,21 @@ matière de sûreté nucléaire.
 
 En résumé, le couplage d'un SMES avec un réacteur nucléaire est théoriquement possible, mais cela nécessite une conception soignée et des évaluations approfondies pour en assurer la faisabilité technologique et la sécurité.
 ```
+
+> Le tokamak n'est pas la seule manière de confinement d'un réacteur à fusion nucléaire, on peut utiliser le confinement inertiel?
+```text
+Effectivement, le tokamak n'est pas la seule méthode de confinement utilisée dans les réacteurs à fusion nucléaire. Le confinement inertiel est une autre approche de la fusion nucléaire qui repose sur un principe différent du confinement 
+magnétique utilisé dans les tokamaks.                                                                                                                                                                                                         
+
+Le confinement inertiel utilise des lasers ou des faisceaux de particules pour chauffer et comprimer une petite quantité de combustible (comme du deutérium et du tritium) jusqu'à des conditions extrêmement chaudes et denses. Sous ces     
+conditions, le noyau du combustible peut atteindre des températures et des pressions si élevées qu'il déclenche une réaction de fusion.                                                                                                       
+
+Dans un réacteur à confinement inertiel, des impulsions de laser ou des faisceaux de particules sont focalisées sur une cible contenant le combustible. L'énergie et la pression générées par les impulsions compriment et chauffent la cible,
+créant ainsi des conditions propices à la fusion.                                                                                                                                                                                             
+
+Le confinement inertiel a ses propres défis techniques et d'ingénierie, notamment en ce qui concerne la compression et l'uniformité de la cible, ainsi que la fourniture d'une puissance laser ou de faisceaux de particules suffisamment     
+importante.                                                                                                                                                                                                                                   
+
+Il convient de noter que tant les tokamaks que les concepts de confinement inertiel sont en cours de développement et de recherche approfondie pour parvenir à un fonctionnement stable et efficace de la fusion nucléaire. De nombreux défis 
+technologiques et scientifiques doivent encore être relevés avant de pouvoir réaliser un réacteur de fusion commercial viable.  
+```
