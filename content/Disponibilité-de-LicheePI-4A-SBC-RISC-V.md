@@ -20,7 +20,7 @@ Elle est vendu en [plusieurs modèle sur AliExpress](https://fr.aliexpress.com/i
 
   
 
-J'étais intéressé par la version 16GB RAM. Mais clairement 90€ de frais de livraison, ils sont en plein délire, personne n’achètera. C'est de l'électronique, pas un animal vivant.... De plus il n'y a pas en vente d'adaptateur secteur pour l'Europe. Seulement US. Encore une erreur marketing, c'est chiant de chercher des composants et acheter à part dans d'autres boutiques. Les bundle.... C'est pas fait pour les chiens. La version 8GB + 32GB eMMC est trop légère pour du stockage en production. 32GB eMMC est suffisant pour l'OS. Mais il faut un stockage en extension pour les documents. Il y a un TF slot sur la carte (microSD) d'ou on peut rajouter une carte de 512GB pour 45€.
+J'étais intéressé par la version 16GB RAM. Mais clairement 90€ de frais de livraison, ils sont en plein délire, personne n’achètera. C'est de l'électronique, pas un animal vivant.... De plus il n'y a pas en vente d'adaptateur secteur pour l'Europe. Seulement US. Encore une erreur marketing, c'est chiant de chercher des composants et acheter à part dans d'autres boutiques. Les bundle.... C'est pas fait pour les chiens. La version 8GB + 32GB eMMC est trop légère pour du stockage en production. 32GB eMMC est suffisant pour l'OS, généralement il faut 25GB pour la partition /root. Mais il faut un stockage en extension pour les documents partition /home. Il y a un TF slot sur la carte (microSD) d'ou on peut rajouter une carte de 512GB pour 45€.
 
 De plus le support en système d'exploitation sous Linux est limité à:  
 
