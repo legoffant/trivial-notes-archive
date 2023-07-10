@@ -13,14 +13,14 @@ De ce fait la carte de Sipeed LicheePI 4A est une très bonne candidate sur le p
 
 Elle est vendu en [plusieurs modèle sur AliExpress](https://fr.aliexpress.com/item/1005005532736080.html?aff_fcid=74f1cc167ecc4249a5ffefeb997a0eb1-1688960372367-09310-_DEFc0c9&tt=CPS_NORMAL&aff_fsk=_DEFc0c9&aff_platform=shareComponent-detail&sk=_DEFc0c9&aff_trace_key=74f1cc167ecc4249a5ffefeb997a0eb1-1688960372367-09310-_DEFc0c9&terminal_id=084e0e86dabf447d917ef70399d0e0bc&afSmartRedirect=y):  
 
-*   8GB RAM + 64GB eMMC 154,76€+ 9€ frais de livraison  
+*   8GB RAM + 32GB eMMC 154,76€+ 9€ frais de livraison  
     
 *   16GB RAM + 128GB eMMC 205,20€+ 90€ frais de livraison  
     
 
   
 
-J'étais intéressé par la version 16GB RAM. Mais clairement 90€ de frais de livraison, ils sont en plein délire, personne n’achètera. C'est de l'électronique, pas un animal vivant.... De plus il n'y a pas en vente d'adaptateur secteur pour l'Europe. Seulement US. Encore une erreur marketing, c'est chiant de chercher des composants et acheter à part dans d'autres boutiques. Les bundle.... C'est pas fait pour les chiens.  
+J'étais intéressé par la version 16GB RAM. Mais clairement 90€ de frais de livraison, ils sont en plein délire, personne n’achètera. C'est de l'électronique, pas un animal vivant.... De plus il n'y a pas en vente d'adaptateur secteur pour l'Europe. Seulement US. Encore une erreur marketing, c'est chiant de chercher des composants et acheter à part dans d'autres boutiques. Les bundle.... C'est pas fait pour les chiens. La version 8GB + 32GB eMMC est trop légère pour du stockage en production. 32GB eMMC est suffisant pour l'OS. Mais il faut un stockage en extension pour les documents. Il y a un TF slot sur la carte (microSD) d'ou on peut rajouter une carte de 512GB pour 45€.
 
 De plus le support en système d'exploitation sous Linux est limité à:  
 
