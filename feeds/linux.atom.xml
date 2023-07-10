@@ -31,7 +31,7 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;wget&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;ftp://exemple.com/repertoire&lt;span class="w"&gt;  &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h3&gt;Installer une interface sophistiquer de Repository avec h5ai&lt;/h3&gt;
+&lt;h3&gt;Installer une interface sophistiquée de Repository avec h5ai&lt;/h3&gt;
 &lt;p&gt;La racine Index of d'un web serveur n'est pas très glamour, c'est un peu du brute de décoffrage.  &lt;/p&gt;
 &lt;p&gt;&lt;img alt="index of" src="images/indexOf.png"&gt;&lt;/p&gt;
 &lt;p&gt;On va donc l'améliorer et la personnaliser avec un template sous php h5ai : &lt;a href="https://larsjung.de/h5ai/"&gt;https://larsjung.de/h5ai/&lt;/a&gt;  &lt;/p&gt;
