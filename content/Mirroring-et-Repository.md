@@ -26,7 +26,7 @@ Sous Linux, la mise à jour du système fonctionne par des sites miroir qui sont
 
 Exemple, sur l'adresse de Gandi.net en France, le repo des iso d'Arch Linux du mois de juillet 2023:  
 
-[https://mirrors.gandi.net/archlinux/iso/2023.07.01/](https://mirrors.gandi.net/archlinux/iso/2023.07.01/)  
+* [https://mirrors.gandi.net/archlinux/iso/2023.07.01/](https://mirrors.gandi.net/archlinux/iso/2023.07.01/)  
 
 Les sites miroirs sont nombreux, l'intérêt est de répliquer des données, certains sont lents, d'autres ne sont pas protéger en HTTPS. Quand vous faites une mise à jour cela de l'importance. Sous Arch Linux c'est l'outil reflector et l'édition du fichier /etc/pacman.d/mirrorlist  
 
@@ -36,8 +36,8 @@ L'autre cas est un simple dépôt de document, PDF etc.... Tel qu'une librairie 
 
 Les deux exemples que je connais sont:  
 
-[https://doc.lagout.org/](https://doc.lagout.org/)  
-[https://repo.zenk-security.com/](https://repo.zenk-security.com/) (français + 1700 livres en sécurité informatique)  
+* [https://doc.lagout.org/](https://doc.lagout.org/)  
+* [https://repo.zenk-security.com/](https://repo.zenk-security.com/) (français + 1700 livres en sécurité informatique)  
 
 Mais il y en a d'autres dans le web obscure qui ne sont pas indexé. Il est possible de télécharger l'ensemble des fichiers sur un ordinateur en utilisant la commande wget.  
 
