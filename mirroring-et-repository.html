@@ -149,13 +149,17 @@
 <h3>Mirroring</h3>
 <p>Sous Linux, la mise à jour du système fonctionne par des sites miroir qui sont des sources officielles de dépôts logiciels (package) mais également des .iso. Vous pouvez créer en auto-hébergement votre propre site miroir, mais faut avoir une bande passante importante.  </p>
 <p>Exemple, sur l'adresse de Gandi.net en France, le repo des iso d'Arch Linux du mois de juillet 2023:  </p>
-<p><a href="https://mirrors.gandi.net/archlinux/iso/2023.07.01/">https://mirrors.gandi.net/archlinux/iso/2023.07.01/</a>  </p>
+<ul>
+<li><a href="https://mirrors.gandi.net/archlinux/iso/2023.07.01/">https://mirrors.gandi.net/archlinux/iso/2023.07.01/</a>  </li>
+</ul>
 <p>Les sites miroirs sont nombreux, l'intérêt est de répliquer des données, certains sont lents, d'autres ne sont pas protéger en HTTPS. Quand vous faites une mise à jour cela de l'importance. Sous Arch Linux c'est l'outil reflector et l'édition du fichier /etc/pacman.d/mirrorlist  </p>
 <h3>Repository</h3>
 <p>L'autre cas est un simple dépôt de document, PDF etc.... Tel qu'une librairie pirate, avec un peu de violation de droit d'auteur. Après tout dépend de la loi du pays, des ayants-droits et de l'hébergement.  </p>
 <p>Les deux exemples que je connais sont:  </p>
-<p><a href="https://doc.lagout.org/">https://doc.lagout.org/</a><br>
-<a href="https://repo.zenk-security.com/">https://repo.zenk-security.com/</a> (français + 1700 livres en sécurité informatique)  </p>
+<ul>
+<li><a href="https://doc.lagout.org/">https://doc.lagout.org/</a>  </li>
+<li><a href="https://repo.zenk-security.com/">https://repo.zenk-security.com/</a> (français + 1700 livres en sécurité informatique)  </li>
+</ul>
 <p>Mais il y en a d'autres dans le web obscure qui ne sont pas indexé. Il est possible de télécharger l'ensemble des fichiers sur un ordinateur en utilisant la commande wget.  </p>
 <p>L'aspect important est sa capacité de <strong>téléchargements récursifs</strong>, avec lesquels il créé un miroir des sites Web. Il transfère des parties d’un site Web en suivant les liens et la structure des répertoires, créant ainsi des versions locales des pages Web.  </p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>-r<span class="w"> </span>ftp://exemple.com/repertoire<span class="w">  </span>
