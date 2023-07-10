@@ -1,5 +1,5 @@
 ﻿Title:Disponibilité de LicheePI 4A SBC RISC-V
-Date: 2023-07-010 06:01
+Date: 2023-07-10 06:01
 Category:Linux
 Tags:riscv, sbc
 Authors: Anthony Le Goff
