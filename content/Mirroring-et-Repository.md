@@ -47,7 +47,7 @@ L'aspect important est sa capacité de **téléchargements récursifs**, avec le
 $ wget -r ftp://exemple.com/repertoire  
 ```
 
-### Installer une interface sophistiquer de Repository avec h5ai  
+### Installer une interface sophistiquée de Repository avec h5ai  
 
 La racine Index of d'un web serveur n'est pas très glamour, c'est un peu du brute de décoffrage.  
 
