@@ -11,7 +11,7 @@ Les grands noms commerciaux de marque sous GNU/Linux avec hardware compatible so
 
 *   Lenovo series Thinkpad  
     
-*   Dell XP 13 (developer edition)  
+*   Dell XPS 13 (developer edition)  
     
 *   Purism Librem  
     
