@@ -19,6 +19,9 @@ Les grands noms commerciaux de marque sous GNU/Linux avec hardware compatible so
     
 *   StarLabs StarBook 14  
     
+Autres:
+
+*   NovaCustom
 
 Ils ne sont pas toujours compatible clavier AZERTY malheureusement.  
 
