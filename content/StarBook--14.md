@@ -18,6 +18,8 @@ Les grands noms commerciaux de marque sous GNU/Linux avec hardware compatible so
 *   System76 Oryx  
     
 *   StarLabs StarBook 14  
+
+*   TuxEdo Computers
     
 Autres:
 
