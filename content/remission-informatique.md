@@ -13,7 +13,7 @@ Ma psychiatre à Bohars m'a répondu? Un ordinateur? Tu vas encore foutre le bor
 
 La plupart des gens en HP ont des requêtes à la con, pour leur confort de vie. Des clopes, de la nourriture, etc... Ce faire livrer une Pizza domino. Ma présence à l'HP c'était la zone. L'HP c'est le lieu ou tu peux exprimer ta créativité avec des séances d'ergothérapie et fabriquer des colliers de nouille.  
 
-Après négociation, même si le préfet le Brest, ce rageux a fait durer le plaisir. Il était pas chaud pour que je sorte de l'HP. J'ai enfin eu des droits de sortie, avec horaires aménagés, retrouver une banque et m'acheter un ordinateur. De plus mon passage en UMD m'a fait basculer automatiquement avec les allocations et l'AAH. La fin de la précarité. Mais voila l'AAH est bridé quand tu es en HP. Seulement 291,41 €/mois.  
+Après négociation, même si le préfet de Brest, ce rageux a fait durer le plaisir. Il était pas chaud pour que je sorte de l'HP. J'ai enfin eu des droits de sortie, avec horaires aménagés, retrouver une banque et m'acheter un ordinateur. De plus mon passage en UMD m'a fait basculer automatiquement avec les allocations et l'AAH. La fin de la précarité. Mais voila l'AAH est bridé quand tu es en HP. Seulement 291,41 €/mois.  
 
 Aujourd'hui j'ai 4 ordinateurs portables et 2 serveurs:  
 
