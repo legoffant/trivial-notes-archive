@@ -5,7 +5,7 @@ Tags:ordinateur
 Authors: Anthony Le Goff
 Summary:
 
-Depuis 2014, quand je me suis fais voler mon laptop un Sony VAIO Z sous Arch Linux à Piccadilly Circus, Londres. Je n'ai plus vraiment toucher à l'informatique. Je n'avais pas les moyens pour racheter un ordinateur, j'ai gratté à mon grand-père un Chromebook à 300€. C'est le royaume enchanté de la dèche. Bah bravo, un pauvre qui a fait l'école des Mines et l'IHEDN à l'école militaire sans un rond et sans travail.  
+Depuis 2014, quand je me suis fais voler mon laptop un Sony VAIO Z sous Arch Linux à Piccadilly Circus, Londres. Je n'ai plus vraiment touché à l'informatique. Je n'avais pas les moyens pour racheter un ordinateur, j'ai gratté à mon grand-père un Chromebook à 300€. C'est le royaume enchanté de la dèche. Bah bravo, un pauvre qui a fait l'école des Mines et l'IHEDN à l'école militaire sans un rond et sans travail.  
 
 Après quelques péripétie de Oui-Oui à l'est de l'Europe(une envie d'aller à Bran en Roumanie, en SDF) et en Suisse. Me voila en prison, puis en UMD. En mode Adbullah Geronimo Islamique! c'était en 2017. Ils m'ont gardé quelques temps en Hôpital Psychiatrique. J'ai tenté de négocier pour avoir un ordinateur. Mon smartphone, un Nexus 5 était HS et ma tablette, une Nexus 7 ayant rendu l'âme aussi. Ma banque, BNP, m'avait jeté, donc je n'avais plus d'abonnement téléphonique.  
 
