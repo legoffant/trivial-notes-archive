@@ -19,7 +19,7 @@ Les grands noms commerciaux de marque sous GNU/Linux avec hardware compatible so
     
 *   StarLabs StarBook 14  
 
-*   TuxEdo Computers
+*   TuxEdo Computers InfinityBook 14
     
 Autres:
 
