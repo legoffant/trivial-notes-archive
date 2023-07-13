@@ -58,8 +58,6 @@ Ma montre actuel qui a 4 ans. Elle est déjà très abimé, et peu résistante a
     
 
 Fonctions:  
-
-*   Water resistant  
     
 *   retro-eclairage LED  
     
