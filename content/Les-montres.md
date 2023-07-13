@@ -12,6 +12,8 @@ Les premières montres bracelet sont inventé par Peter Henlein en 1510. Que l'o
 
 On dirait pas, mais la montre est un outil essentiel du développement de l'industrie. Sans montre pas de pointage sur les lignes de production et de roulement des équipes. Ce n'est pas avec un cadran solaire que l'industrie serait apparu. Alors on peut ce poser la question comment faisait les premiers musulmans sans montre pour avoir de la précision sur la prière et le Salat. Une interface augmentée, de la réalité virtuelle, inclus dans leur vision? Affichage tête haute.
 
+Certain diront cela suffisait pour les non-converti privé de logement avec un Cadran Solaire et l'appel à la prière au Minaret. Cela est très limité....
+
 Je n'aime pas le luxe et les Rolex, donc je vais forcément rater ma vie. Je trouve totalement abhérent la complexité chez les horlogers pour augmenter le prix alors qu'une simple montre à quartz digital est plus précise. Je suis très pragmatique, et les matériaux de qualité à part peut-être du Saphir pour empecher les rayures sur le verre. Peu d'intérêt.  
 
 Les montres sont le domaine ou il y a le plus d'arnaque, et les Suisses sont des experts pour faire augmenter les prix sur les modèles de luxe. Les Suisses sont des prétentieux, sachez-le en horlogerie.  
