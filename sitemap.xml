@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-11T21:15:11-00:00</lastmod>
+<lastmod>2023-07-13T17:25:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-11T21:15:11-00:00</lastmod>
+<lastmod>2023-07-13T17:25:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-11T21:15:11-00:00</lastmod>
+<lastmod>2023-07-13T17:25:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-11T21:15:11-00:00</lastmod>
+<lastmod>2023-07-13T17:25:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-11T21:15:11-00:00</lastmod>
+<lastmod>2023-07-13T17:25:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -125,6 +125,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/ma-quantification-du-processeur-a-adn.html</loc>
 <lastmod>2023-07-05T19:03:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/les-montres.html</loc>
+<lastmod>2023-07-05T17:17:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1728,6 +1735,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/fiole-adn.html</loc>
 <lastmod>2023-07-05T19:03:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/montres.html</loc>
+<lastmod>2023-07-05T17:17:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/horloges.html</loc>
+<lastmod>2023-07-05T17:17:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
