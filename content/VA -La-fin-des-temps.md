@@ -81,6 +81,28 @@ Le jour de la fin des temps de la secte narkantique et la naissance de son proph
 
 Lune - Terre - Mercure - Soleil - Jupiter - Saturne  
 
-C'est une légende et une serrure spécifique de l'horloge céleste qui augmente les effets gravitationnels et la puissance du portail vers les espaces infinis de l'univers, avec une clé cryptographique unique comme signature de l'invocation du prophète.  
+C'est une légende et une serrure spécifique de l'horloge céleste qui augmente les effets gravitationnels et la puissance du portail vers les espaces infinis de l'univers, avec une clé cryptographique unique comme signature de l'invocation du prophète.
+
+Ainsi la naissance du prophète du roman s'appel "Nominoë II" à la date de sa réssurection choisi selon le rite de la caverne.
+
+Vous pouvez regarder avec plus de précision sur l'alignement des planètes et leur positions, dans le thème astral, en Ecosse au plus proche du complex lewisian, créant le sérrure de l'horloge céleste du planétaire, de l'astrologie populaire, mais il est nécessaire de prendre en compte la précession des équinoxes pour avoir une précision de l'astrologie sidérale. Ainsi le soleil se lève dans la constellation de la Balance (symbole de la justice, le jugement dernier)
+
+#### Carte du ciel nocturne à Glasgow à 4:51 20 Octobre 2040 (UTC +0)
+
+![carte nocturne](images/ciel-nocturne-glasgow-20102040.jpg)
+
+Evenements remarquables:
+
+* Vega au nord
+* Le Grand Chien au Sud
+* La Lune dans le poisson
+
+#### Position des planètes et étoiles dans les constellations
+
+![position constellation](images/position-ciel-naissance-planete.jpg)
+
+#### Configuration sur le planétaire
+
+![Configuratiion planétaire](images/position-planete.jpg)
 
 Un livre sacrée va être dictée au prophète à l'ouverture du portail, défini par la divinité Alba comme système de conversion compilé à partir du langage le Narkanta et ces nombres sur la base du Coran et son ordonnancement en sourate et verset.
