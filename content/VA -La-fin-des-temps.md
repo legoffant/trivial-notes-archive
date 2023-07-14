@@ -103,6 +103,6 @@ Evenements remarquables:
 
 #### Configuration sur le planétaire
 
-![Configuratiion planétaire](images/position-planete.jpg)
+![Configuratiion planétaire](images/position-planetev02.jpg)
 
 Un livre sacrée va être dictée au prophète à l'ouverture du portail, défini par la divinité Alba comme système de conversion compilé à partir du langage le Narkanta et ces nombres sur la base du Coran et son ordonnancement en sourate et verset.
