@@ -27,3 +27,7 @@ Un très bon produit pour faire tourner sous GNU/Linux. J'ai ma préférence à 
 
 
 Pour les utilisateurs les plus avancés, généralement ils utilisent des bureaux de type "Tiling Windows Manager" tel que i3, hyprland.
+
+Il est possible d'utiliser comme serveur, et même faire de la virtualisation avec cette configuration. Vous n'aurez pas beaucoup de VM (Virtual Machine), mais c'est très bien pour débuter:
+
+* [Proxmox VE](https://www.proxmox.com/en/proxmox-ve/get-started)
