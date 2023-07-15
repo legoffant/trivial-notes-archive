@@ -1,4 +1,4 @@
-Title: Materiel -> mini-PC Mele Quieter2C
+Title: Materiel -> mini-PC Mele Quieter2Q
 Date: 2023-07-15 14:22
 Category:Inclassable
 Tags:mini-pc
@@ -7,7 +7,7 @@ Summary:
 
 Voila un produit intéressant mais un peu plus cher que les cartes de développement électronique comme nano-PC à petit prix. Rappel que le Raspberry Pi a une vocation d'éducation à la base des enfants à l'informatique et à l'électronique.
 
-Pour ce qui ont un petit budget en informatique, et veulent remplacer le célèbre Intel NUC comme serveur ou PC de bureau car la série est terminé. Voila le Mele Quieter2C au prix de 240€ sur Amazon, [lien vers l'achat](https://www.amazon.fr/Quieter2-Ventilateur-Processeur-Affichage-Ordinateur/dp/B08ZXS11KW/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1C244O6S4WZQ1&keywords=mele%2Boverclock3c&qid=1689423495&s=computers&sprefix=mele%2Boverclock3c%2Ccomputers%2C107&sr=1-2&th=1).
+Pour ce qui ont un petit budget en informatique, et veulent remplacer le célèbre Intel NUC comme serveur ou PC de bureau car la série est terminé. Voila le Mele Quieter2Q au prix de 240€ sur Amazon, [lien vers l'achat](https://www.amazon.fr/Quieter2-Ventilateur-Processeur-Affichage-Ordinateur/dp/B08ZXS11KW/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1C244O6S4WZQ1&keywords=mele%2Boverclock3c&qid=1689423495&s=computers&sprefix=mele%2Boverclock3c%2Ccomputers%2C107&sr=1-2&th=1).
 
 Caractéristique du produit:
 
