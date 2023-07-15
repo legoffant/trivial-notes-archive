@@ -14,31 +14,44 @@ Je raconte une dystopie complexe qui va mettre en scène le retour de l'Empire s
 
 Je reprends le titre d'un livre de cosmologie alternative que j'ai écris, que l'on peut considérer comme un prélude. L'original de ce livre a été détruit, il ne reste plus qu'une copie qui a été envoyé à l'ambassade de Chine à Bern, Suisse.
 
-Le titre: *Voile & Annihilation, Tome I: Obsolescence narkantique*
+MAJ: 15/07/2023
+
+Le titre: *Voile & Annihilation : l'Obsolescence narkantique*
+
+Details des premières pages du livre: Voile et Annhiliation [lien PDF](https://mega.nz/file/5o5RUB4Q#2wzGngFTMwyNG7meKdKk_F0qbSM-LDSN82bOHjanjRE)
 
 Liste des chapitres (non exhaustif):
-```
-1. Le cri draconien
-2. Les sentinelles
-3. Mythe en terre du milieu
-4. A l'aube de l'immortalité
-5. Le vecteur islamique
-6. L’obscurcissement nazi
-7. La lignée interdite Illuminati
-8. Les appartements d'Amina
-9. Le voyage d'hiver
-10. Au gouffre de la folie
-11. La capsule temporelle
-12. Construction narkantique
-13. Prototype Meduza
-14. La caverne écossaise
-15. Le soulèvement des machines
-16. L'empire contre-attaque
-17. La citadelle Avalon
-18. Annihilation planétaire
-19. La graine
-20. Archive au voyageur intersidéral
-21. La nébuleuse obscure
 
-APPENDICE: Le langage Narkanta
+```text
+Prologue
+Livre I: Préquelle au jugement dernier
+	Chapitre 0: Carte de la problématique
+	Chapitre 1: Le cri draconien
+	Chapitre 2: Les sentinelles
+	Chapitre 3: Mythe en terre du milieu
+	Chapitre 4: A l'aube de l'immortalité
+	Chapitre 5: Le vecteur islamique
+	Chapitre 6: L'obscurcissement nazi
+	Chapitre 7: La lignée interdite Illuminati
+	Chapitre 8: Les appartements d'Amina
+	Chapitre 9: Le voyage d'hiver
+	Chapitre 10: Au gouffre de la folie
+	Chapitre 11: La capsule temporelle
+	Chapitre 12: Construction narkantique
+	Chapitre 13: Prototype Meduza
+	Chapitre 14: La caverne Ecossaise
+Livre II: La cité cybernétique
+	Chapitre 1: Le soulèvement des machines
+	Chapitre 2: L'Empire contre-attaque
+	Chapitre 3: La citadelle d'Avalon
+	Chapitre 4: Repli sur Titan
+	Chapitre 5: Annihiliation planétaire
+	Chapitre 6 La graine de Jehovah
+	Chapitre 7: Archive plutonique au voyageur interstellaire
+Livre III: La dernière frontière
+	Chapitre 1: La nébuleuse obscure
+	Chapitre 2: le portail galactique
+	Chapitre 3: Le siège de Venezia
+	Chapitre 4: La destruction du Saint-Graal
+Epilogue
 ```
