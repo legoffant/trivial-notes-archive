@@ -16,7 +16,7 @@ Je reprends le titre d'un livre de cosmologie alternative que j'ai écris, que l
 
 MAJ: 15/07/2023
 
-Le titre: *Voile & Annihilation : l'Obsolescence narkantique*
+Le titre: *Voile & Annihilation : l'obsolescence Narkantique*
 
 Details des premières pages du livre: Voile et Annhiliation [lien PDF](https://mega.nz/file/5o5RUB4Q#2wzGngFTMwyNG7meKdKk_F0qbSM-LDSN82bOHjanjRE)
 
@@ -46,7 +46,7 @@ Livre II: La cité cybernétique
 	Chapitre 3: La citadelle d'Avalon
 	Chapitre 4: Repli sur Titan
 	Chapitre 5: Annihiliation planétaire
-	Chapitre 6 La graine de Jehovah
+	Chapitre 6: La graine de Jehovah
 	Chapitre 7: Archive plutonique au voyageur interstellaire
 Livre III: La dernière frontière
 	Chapitre 1: La nébuleuse obscure
