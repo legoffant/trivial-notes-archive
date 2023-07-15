@@ -30,4 +30,11 @@ Pour aller plus loin dans la construction du roman, pour scénariser l'intrigue,
 
 Je préconise également de s'initier au storytelling comme outil complémentaire de l'écrivain pour comprendre les rouages de la communication. Un roman est un échange avec le lecteur, vous êtes un conteur et passeur d'idée à travers une histoire. Savoir raconter cela s'apprend, découvrez des astuces dans le livre: [L'art du storytelling; G. Lamarre](https://www.amazon.fr/dp/2350174263/ref=cm_sw_r_tw_dp_PSWCE6ZBNTQS74G7QGMF).
 
+Egalement pensez-y à vous initier à la dramaturgie. Lire les concepts.
+
+* La dramaturgie:l’ art du récit - Yves Lavandier [lien PDF](https://excerpts.numilog.com/books/9782874496585.pdf)
+
+
+
+
 Un écrivain ça écrit tout les jours un petit peu, prenez le temps de mettre en place une routine, il faut un mois pour ancrée une nouvelle routine. Si vous écrivez une page par jours soit 250 mots il faut 360 jours pour écrire un roman de 90 000 mots. Il faut être consistent et avoir de bons outils fluidifie le workflow de l'écrivain.
