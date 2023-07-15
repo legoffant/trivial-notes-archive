@@ -8,6 +8,23 @@ Summary:
 
 C'est un choix de société numérique que de s'initier à l'informatique libre, garantir l'accès aux outils à travers des communs. La notion de commun numérique a prit une part grandissante dans la politique publique. Le gouvernement français a un site dédié dans la [promotion](https://communs.societenumerique.gouv.fr/). Cela parait évident pour nous que ces communs sont devenus des outils essentiels tels que le navigateur web Firefox, l'encyclopédie Wikipedia, le lecteur VLC ou encore le projet GNU et ainsi que le noyau Linux.  
 
+Les principaux organismes sont:
+
+International:
+
+* Free Software Foundation
+* Linux Foundation
+* CERN Open Hardware | OpenScience
+* EFF - Electronic Frontiere Foundation
+
+Francophone:
+
+* AFUL
+* April
+* Quadrature du Net
+* Framasoft
+
+
 Les logiciels privateurs sont en parti un frein pour les libertés dans le sens que vous êtes plus des consommateurs basé sur un plan économique pour de la rentabilité. L'industrie en pleine perte de vitesse considère que vous devez payer pour utiliser des outils de production intellectuelle. Ainsi Microsoft à travers Windows espèrent que vous garder le système d'exploitation en adhérent au modèle économique, si vous voulez monter en gamme il faudra payer des services ou du matériel. Encore plus aggressif chez Apple.  
 
 L'informatique libre s'appuie sur l'adoption au numérique le plus inclusif possible en apportant des communs qui permettent le fonctionnement de la société en réduisant le coût d'accès au matériel par une politique de l'optimisation des ressources que vous soyez précaire ou non. Je n'irai pas parler de sobriété numérique pour autant. Si vous voulez faire du calcul intensif et avoir un supercalculateur à moindre prix il est possible de le faire avec un cluster de Raspberry Pi en montant en gamme. Le coût d'accès à la ressource a été réduit en quelques années par les initiatives en informatique libre.   
