@@ -711,8 +711,19 @@ let g:airline_powerline_fonts = 1
 
 &lt;h4&gt;Outils de Hacking, pentesting, bug bounty, CTF&lt;/h4&gt;
 &lt;p&gt;Installation de dépot BlackArch &amp;gt;&amp;gt; &lt;a href="https://blackarch.org/"&gt;https://blackarch.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ajout [blackarch] repo dans &lt;code&gt;/etc/pacman.conf&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;[blackarch]
+#SigLevel = Optional TrustAll
+Server=https://blackarch.unixpeople.org/blackarch/os/$arch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;MAJ&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-Syu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;curl&lt;span class="w"&gt; &lt;/span&gt;-O&lt;span class="w"&gt; &lt;/span&gt;https://blackarch.org/strap.sh
-$&lt;span class="w"&gt; &lt;/span&gt;sha1sum&lt;span class="w"&gt; &lt;/span&gt;strap.sh&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c&lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;curl&lt;span class="w"&gt; &lt;/span&gt;https://blackarch.org/checksums/strap
+$&lt;span class="w"&gt; &lt;/span&gt;sha1sum&lt;span class="w"&gt; &lt;/span&gt;strap.sh&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;# doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c (valeur du fichier strap)&lt;/span&gt;
 $&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;chmod&lt;span class="w"&gt; &lt;/span&gt;+x&lt;span class="w"&gt; &lt;/span&gt;strap.sh
 $&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;./strap.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
