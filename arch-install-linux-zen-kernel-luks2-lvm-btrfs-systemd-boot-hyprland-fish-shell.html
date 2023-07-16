@@ -886,16 +886,20 @@ $<span class="w"> </span>wget<span class="w"> </span>-q<span class="w"> </span>h
 </code></pre></div>
 
 <h3>Sauvegarde</h3>
-<p>Installation du client SAMBA</p>
+<h4>Installation du client SAMBA</h4>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>smbclient<span class="w"> </span>gvfs-smb
 </code></pre></div>
 
 <p>Redémarrer le PC pour prendre en compte la découverte du réseau local.</p>
-<p>Ensuite rechercher votre serveur dans thunar en tapant:</p>
+<p>GUI: Ensuite rechercher votre serveur dans thunar en tapant:</p>
 <div class="highlight"><pre><span></span><code>smb://192.168.X.X
 </code></pre></div>
 
-<p>Pour cela modifier en fonction d'IP de votre serveur.</p>
+<p>Terminal: Monter le serveur SMB:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w">  </span>mount<span class="w"> </span>-t<span class="w"> </span>smbfs<span class="w"> </span>-W<span class="w"> </span>workgroup<span class="w"> </span>//user@IPSERVER/folder<span class="w"> </span>./mntpoint<span class="w">  </span><span class="o">(</span>possible<span class="w"> </span>de<span class="w"> </span>choisir<span class="w"> </span>dossier<span class="w"> </span>de<span class="w"> </span>montage<span class="o">)</span>
+</code></pre></div>
+
+<p>Autres méthodes <a href="https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/">8 ways to mount smbfs samba file system in linux</a></p>
 <p>Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>deja-dup
 </code></pre></div>
