@@ -908,6 +908,10 @@ $<span class="w"> </span>wget<span class="w"> </span>-q<span class="w"> </span>h
 <div class="highlight"><pre><span></span><code>$<span class="w">  </span>mount<span class="w"> </span>-t<span class="w"> </span>smbfs<span class="w"> </span>-W<span class="w"> </span>workgroup<span class="w"> </span>//user:password@IPSERVER/shares<span class="w"> </span>/media/NAS
 </code></pre></div>
 
+<p>OU</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>gio<span class="w"> </span>mount<span class="w"> </span>smb://&lt;server&gt;/&lt;share&gt;
+</code></pre></div>
+
 <p>Autres méthodes <a href="https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/">8 ways to mount smbfs samba file system in linux</a></p>
 <p>Penser à éditer `fstab' pour ajouter le serveur SMB en permanence. Ex:</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>vim<span class="w"> </span>/etc/fstab
