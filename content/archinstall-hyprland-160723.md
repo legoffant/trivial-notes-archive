@@ -927,6 +927,12 @@ Commande de montage
 $  mount -t smbfs -W workgroup //user:password@IPSERVER/shares /media/NAS
 ```
 
+OU
+
+```bash
+$ gio mount smb://<server>/<share>
+```
+
 Autres méthodes [8 ways to mount smbfs samba file system in linux](https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/)
 
 Penser à éditer `fstab' pour ajouter le serveur SMB en permanence. Ex:
