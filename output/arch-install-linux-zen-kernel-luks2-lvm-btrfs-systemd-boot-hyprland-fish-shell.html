@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Arch Install Linux Zen Kernel + LUKS2 + LVM + BTRFS + systemd-boot + hyprland + Fish shell | Trivial notes</title>
+    <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Anthony Le Goff" />
+    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_position" content="top=60,right=60" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li ><a href="/pages/contact.html">Contact</a></li>
+                <li ><a href="/pages/ltcb.html">LTCB</a></li>
+                <li class="divider-vertical"></li>
+                <li >
+                  <a href="/category/cc.html">
+						        <i class="icon-folder-open icon-large"></i>C/C++
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/entrepreneurship.html">
+						        <i class="icon-folder-open icon-large"></i>Entrepreneurship
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/inclassable.html">
+						        <i class="icon-folder-open icon-large"></i>Inclassable
+					         </a>
+                </li>
+                <li class="active">
+                  <a href="/category/linux.html">
+						        <i class="icon-folder-open icon-large"></i>Linux
+					         </a>
+                </li>
+                <li >
+                  <a href="/category/transhumanisme.html">
+						        <i class="icon-folder-open icon-large"></i>Transhumanisme
+					         </a>
+                </li>
+              <ul class="nav pull-right">
+                    <li><a href="/"><i class="icon-th-list"></i>Archives</a></li>
+              </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span8" id="content">
+<div class="row">
+    <div class="span2">
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2023-07-16T10:36:00+02:00">
+    <i class="icon-calendar"></i>&nbsp;dim. 16 juillet 2023
+</abbr>
+<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+
+
+<br/>
+	&nbsp;&nbsp;<a href="/tag/arch-install.html" class="label"><i class="icon-tag"></i>&nbsp;arch install</a>
+</footer><!-- /.post-info -->        </div>
+    </div>
+    <div class="span6">
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Arch Install Linux Zen Kernel + LUKS2 + LVM + BTRFS + systemd-boot + hyprland + Fish shell">
+                        Arch Install Linux Zen Kernel + LUKS2 + LVM + BTRFS + systemd-boot + hyprland + Fish shell
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
+
+        <p>Mise à jours en 07/2023 de mon installation d'Arch Linux avec quelques nouveautés en particulier la prise en charge de snapshot avec BTRFS, modification container luks2, ajout kernel linux-zen, bureau hyprland.</p>
+<p>Voila sur quoi je travail sur ma nouvelle installation d'Arch Linux en mode dev dans une VM sous Proxmox, avant de déployer sur mon thinkpad Helix. Tout fonctionne pour l'instant jusqu'à l'installation du bureau hyprland.</p>
+<p>Ce qui est une grosse mise à jour de ma machine de production actuel &gt; <a href="https://gist.github.com/legoffant/8a7503430d2663549f982ea7f97622f3">code l'ancienne config sous LUKS + LVM + EXT4 + GRUB + XFCE + Zsh</a></p>
+<p>Inclus:</p>
+<ul>
+<li>Editeur de texte Neovim avec l'autocompletion,ctags du code en C/C++ et Python</li>
+<li>Shell Fish</li>
+<li>Synchro Cloud MEGA</li>
+<li>VPN Proton</li>
+<li>L'aide à l'écriture Manuskript</li>
+<li>Second cerveau Obsidian</li>
+<li>VScodium</li>
+<li>Calcul numérique avec les notebook Jupyter en Python</li>
+<li>Calcul Formel Sagemath</li>
+<li>Recherche en vulnérabilité et le repo Blackarch</li>
+<li>Interpréteur Ruby Pry via RVM</li>
+<li>Launcher fzf</li>
+<li>Machine virtuelle KVM et Virt-manager</li>
+<li>Gestion du par-feu ufw</li>
+<li>Navigateur Firefox</li>
+<li>Gestion de bibliothèque ebook avec calibre et bibliographie avec Zotero</li>
+<li>Editeur LaTex texmaker</li>
+<li>Editeur markdown Ghostwriter</li>
+</ul>
+<p><strong>Pour qui c'est destiné?</strong></p>
+<ul>
+<li>Les hackers</li>
+<li>Ingénieurs et dévéloppeurs informatique</li>
+<li>Chercheurs</li>
+<li>Ecrivains</li>
+</ul>
+<p><strong>Peut-on faire du jeu-video?</strong></p>
+<p>Installer Steam est possible, ou Minecraft, vous serez limité en ressource graphique.</p>
+<div class="highlight"><pre><span></span><code>yay -S minecraft-launcher
+</code></pre></div>
+
+<p><strong>Stack:</strong></p>
+<ul>
+<li>OS: <a href="https://archlinux.org/">Arch Linux</a></li>
+<li>Chiffrement: <a href="https://fr.wikipedia.org/wiki/Dm-crypt">dmcrypt-LUKS</a></li>
+<li>Bootloader: <a href="https://systemd.network/systemd-boot.html">systemd-boot</a></li>
+<li>Système de fichier: <a href="https://fr.wikipedia.org/wiki/Btrfs">BTRFS</a></li>
+<li>Shell: <a href="https://fishshell.com/">Fish</a></li>
+<li>Windows Manager: <a href="https://hyprland.org/">hyprland</a></li>
+<li>Terminal: <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a></li>
+<li>Prompt: <a href="https://starship.rs/">Starship.rs</a></li>
+<li>File Manager: <a href="https://dystroy.org/broot/">Broot</a> (term)</li>
+<li>Launcher: <a href="https://archlinux.org/packages/community/x86_64/synapse/">fzf</a> (term)</li>
+<li>Navigation rapide directory: <a href="https://github.com/rupa/z">z</a> (term) </li>
+<li>Historique intelligent: <a href="https://github.com/cantino/mcfly">mcFly</a> (term)</li>
+<li>Corriger et fixer des erreurs, typos de la commande précédente: <a href="https://github.com/nvbn/thefuck">thefuck</a> (term)</li>
+<li>Moderne replacement pour ls: <a href="https://github.com/ogham/exa">exa</a> (term)</li>
+<li>cat clone avec coloration syntaxique et git integration : <a href="https://github.com/sharkdp/bat">bat</a> (term)</li>
+<li>Disque monitoring: <a href="https://github.com/muesli/duf">duf</a> (term)</li>
+<li>Outil de téléchargement supportant HTTP/HTTPS, FTP, SFTP, BitTorrent, Metalink: <a href="https://aria2.github.io/">aria2</a> (term)</li>
+<li>Recherche récursive dans le directory à base de pattern de regex: <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> (term)</li>
+<li>grep-like optimisé pour la recherche dans le code source: <a href="https://github.com/beyondgrep/ack3">ack3</a> (term)</li>
+<li>Interactive monitoring des ressources, gestion des processus: <a href="https://htop.dev/">htop</a> (term)</li>
+<li>Rapide et facile, outil de partage de fichier: <a href="https://transfer.sh/">transfer.sh</a> (term)</li>
+<li>Virtualisation: <a href="https://virt-manager.org/">Virt-Manager QEMU/KVM</a></li>
+<li>Lecteur audio: <a href="https://cmus.github.io/">CMUS</a> (term)</li>
+<li>Lecteur video: <a href="https://www.videolan.org/vlc/">Vlc</a></li>
+<li>Spotify TUI client: <a href="https://github.com/Rigellute/spotify-tui">spotify-tui</a> (term) </li>
+<li>Recherche et regarder des vidéos sur Youtube: <a href="https://github.com/pystardust/ytfzf">ytfzf</a> (term)</li>
+<li>Télécharger de l'audio et des vidéos sur Youtube + d'autres sites: <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> (term)</li>
+<li>Simple iptv player avec fuzzy finder: <a href="https://github.com/shahin8r/iptv">IPTV</a> (term)</li>
+<li>Utilitaire pour rechercher et télécharger des liens torrents: <a href="https://github.com/X0R0X/cli-torrent-dl">tordl</a> (term)</li>
+<li>IRC: <a href="https://weechat.org/">Weechat</a> (term)</li>
+<li>Editeur de texte: <a href="http://neovim.io/">Neovim</a> (term)</li>
+<li>Contrôle de version: <a href="https://git-scm.com/">Git</a> (term)</li>
+<li>Commande Git TUI: <a href="https://github.com/jesseduffield/lazygit">lazygit</a> (term)</li>
+<li>Extension ligne de commande Git intégrant Github: <a href="https://hub.github.com/">hub</a> (term)</li>
+<li>Interface de monitoring de container Docker: <a href="https://github.com/bcicen/ctop">ctop</a> (term) </li>
+<li>Management des containers Dockers et services: <a href="https://github.com/lirantal/dockly">dockly</a> (term) </li>
+<li>HTTP Client pour les API: <a href="https://github.com/httpie/httpie">HTTPie</a> (term) </li>
+<li>Rapide prise de note: <a href="https://vhp.github.io/terminal_velocity/">terminal velocity</a> (term)</li>
+<li>SSH + VPN connexion: <a href="https://github.com/ivanilves/xiringuito">xiringuito</a> (term)</li>
+<li>User-friendly détails et statistiques de sockets TUI: <a href="https://github.com/PabloLec/neoss">neoss</a> (term)</li>
+<li>Analyseur de packet réseau: <a href="https://archlinux.org/packages/?name=wireshark-cli">wireshark-cli</a> (term)</li>
+<li>Force TCP connection avec un proxy utilisant TOR, SOCK, HTTP: <a href="https://github.com/haad/proxychains">proxychains</a> (term)</li>
+<li>Outil de diagnostique réseau: <a href="https://github.com/traviscross/mtr">mtr</a> (term)</li>
+<li>TUI Client pour Network Manager pour configurer le réseau: <a href="https://wiki.archlinux.org/title/NetworkManager">nmtui</a> (term)</li>
+<li>Notepad: <a href="https://archlinux.org/packages/extra/x86_64/mousepad/">Mousepad</a></li>
+<li>Calculatrice: <a href="https://archlinux.org/packages/community/x86_64/galculator/">Galculator</a></li>
+<li>P2P Torrent: <a href="https://deluge-torrent.org/">Deluge</a></li>
+<li>Navigateur internet: <a href="https://www.mozilla.org/fr/firefox/new/">Firefox</a></li>
+<li>Documentation langage: <a href="https://zealdocs.org/">Zeal</a></li>
+<li>Gestionnaire de mot de passe: <a href="https://keepass.info/">Keepass</a></li>
+<li>Client Serveur FTP: <a href="https://filezilla-project.org/">Filezilla</a></li>
+<li>Carte Mentale: <a href="https://freemind.fr.softonic.com/">Freemind</a></li>
+<li>Editeur d'image: <a href="https://www.gimp.org/">Gimp</a></li>
+<li>EDI Java: <a href="https://www.eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers">Eclipse</a></li>
+<li>Compilateur: <a href="https://gcc.gnu.org/">GCC</a></li>
+<li>Interpréteur Ruby: <a href="https://github.com/ruby/irb">IRB</a></li>
+<li>Notebook Python: <a href="https://jupyter.org/">Jupyter</a></li>
+<li>Container chiffré: <a href="https://www.veracrypt.fr/code/VeraCrypt/">Veracrypt</a></li>
+<li>Outil d'écrivain: <a href="https://www.theologeek.ch/manuskript/">Manuskript</a></li>
+<li>Calcul formel: <a href="https://www.sagemath.org/fr/">SageMath</a></li>
+<li>Par-feu: <a href="http://gufw.org/">Gufw</a></li>
+<li>Sauvegarde: <a href="https://apps.gnome.org/fr/app/org.gnome.DejaDup/">Deja-dup</a></li>
+<li>Cloud: <a href="https://mega.nz/">MEGA</a></li>
+<li>VPN: <a href="https://protonvpn.com/">Proton</a></li>
+<li>Gestion bibliographique: <a href="https://www.zotero.org/">Zotéro</a></li>
+<li>Base de connaissance: <a href="https://obsidian.md/">Obsidian</a></li>
+<li>Wiki local: <a href="https://www.zim-wiki.org/index.html">Zim</a></li>
+<li>Editeur LaTex: <a href="https://www.xm1math.net/texmaker/">Texmaker</a></li>
+<li>Office: <a href="https://cryptpad.fr/">Cryptpad</a></li>
+<li>Flowchart &amp; Diagram: <a href="https://www.draw.io/index.html">draw.io</a></li>
+<li>Documentation langage en ligne: <a href="https://devdocs.io/">https://devdocs.io/</a></li>
+<li>Social Bookmarking: <a href="https://www.pearltrees.com/">Pearltrees</a></li>
+<li>Explication détaillée d'une ligne de commande: <a href="https://www.explainshell.com/">explainshell</a> </li>
+<li>Construit, test et debug des expressions régulières: <a href="https://regex101.com/">Regex101</a> </li>
+<li>Gestion communautaire de man pages: <a href="https://tldr.sh/">tldr</a> (term)</li>
+<li>Réponse instantannée à propos du code: <a href="https://github.com/gleitz/howdoi">howdoi</a> (term) </li>
+<li>Construction communautaire de docs et cheatsheet, tous langages et frameworks: <a href="https://github.com/dthree/wat">wat</a> </li>
+<li>Outil interactif cheatsheet <a href="https://github.com/denisidoro/navi">navi</a> </li>
+<li>Recherche dans stack overflow quand une erreur ou une exception est levé dans le code à la compilation: <a href="https://github.com/shobrook/rebound">rebound</a></li>
+<li>Utiliser chatGPT via l'API d'OpenAI: <a href="https://github.com/0xacx/chatGPT-shell-cli">chatGPT-cli</a> &amp; <a href="https://github.com/kharvd/gpt-cli">gpt-cli</a> (term)</li>
+<li>Surveiller le marché des cryptomonnaies: <a href="https://github.com/cointop-sh/cointop">cointop</a> (term) </li>
+<li>Maths calculateur, calcul symbolique, matrice, équation: <a href="https://github.com/Qalculate/libqalculate">Qalculate</a> (term)</li>
+<li>Sauvegarde chiffrée à distance (cloud service, NAS, etc): <a href="https://rclone.org/">rclone</a> (term)</li>
+<li>Enregistrement de session terminal: <a href="https://asciinema.org/">asciinema</a> (term) </li>
+<li>Un terminal façon Matrix: <a href="https://github.com/matriex/cmatrix">cmatrix</a> (term)</li>
+<li>Generateur de bannière ASCII Art: <a href="http://www.figlet.org/">figlet</a> (term) </li>
+<li>Information sur le système: <a href="https://github.com/dylanaraps/neofetch">neofetch</a> (term)</li>
+<li>Recherche les informations de l'architecture du CPU: <a href="https://github.com/Dr-Noob/cpufetch">cpufetch</a> (term)</li>
+<li>Partage de terminal: <a href="https://duckly.com/">duckly</a></li>
+<li>Encodage de gifs: <a href="https://gif.ski/">gifski</a></li>
+</ul>
+<p>Listes d'applications spécifique à la recherche de vulnérabilité:</p>
+<ul>
+<li>Exploration réseau et audit de sécurité: <a href="https://nmap.org/">nmap</a></li>
+<li>Collection de classe Python pour travailler avec les protocoles réseaux: <a href="https://www.secureauth.com/labs/open-source-tools/impacket/">impacket</a></li>
+<li>Outil d'analyse de protocoles réseaux: <a href="https://www.wireshark.org/">wireshark</a></li>
+<li>Capturer et analyser les packets sur le réseau: <a href="https://www.tcpdump.org/">tcpdump</a></li>
+<li>Outil de récupération de mot de passe: <a href="https://hashcat.net/hashcat/">hashcat</a></li>
+<li>Sécurité audit de mot de passe: <a href="https://www.openwall.com/john/">john</a></li>
+<li>Surfer anonymement via TOR ou un serveur proxy: <a href="https://proxychains.sourceforge.net/">proxychains-ng</a></li>
+<li>Base de donnée d'exploits <a href="https://www.exploit-db.com/">exploitdb</a></li>
+<li>Client HTTP CLI <a href="https://httpie.io/">httpie</a></li>
+<li>Framework d'audit de sécurité, développement d'exploits: <a href="https://www.metasploit.com/">metasploit</a></li>
+<li>Front-end GUI pour metasploit, aide à l'utilisation <a href="https://www.offensive-security.com/metasploit-unleashed/armitage/">armitage</a></li>
+<li>Bind outil d'administration DNS: <a href="">bind-tools</a></li>
+<li>Framework de retro-ingénierie et analyse de fichier binaire r2: <a href="https://rada.re/n/radare2.html">radare2</a></li>
+<li>Automatisation détection et exploitation injection SQL: <a href="https://sqlmap.org/">sqlmap</a></li>
+<li>Wordpress security scanner: <a href="https://wpscan.com/">wpscan</a></li>
+<li>Outil de copy/coller clipboard en CLI: <a href="">xclip</a></li>
+<li>Navigateur exploitation framework: <a href="https://beefproject.com/">beef</a></li>
+<li>Outils d'ingénierie sociale: <a href="https://github.com/trustedsec/social-engineer-toolkit">set</a></li>
+<li>DDoS service outils: <a href="https://ufonet.03c8.net/">ufonet</a></li>
+<li>Traffic capture implementation d'attaque de type man-in-the-middle: <a href="https://www.ettercap-project.org/index.html">ettercap</a></li>
+<li>Web Application Attack and Audit Framework: <a href="http://w3af.org/">w3af</a></li>
+<li>Vulnerability Assessment Scanner: <a href="https://www.openvas.org/">openvas</a></li>
+<li>Command and control server et agent post-exploitation HTTP/2 <a href="https://github.com/Ne0nd0g/merlin">Merlin</a></li>
+</ul>
+<hr>
+<p>nota:  désactiver dans le bios le secure boot pour booter en USB.
+Vérifier le démarrage UEFI.</p>
+<h3>pre-check configuration</h3>
+<p>Charger le clavier français en tapant "loqdkeys fr"</p>
+<div class="highlight"><pre><span></span><code><span class="n">loadkeys</span><span class="w"> </span><span class="n">fr</span>
+</code></pre></div>
+
+<p>Verifier boot mode</p>
+<div class="highlight"><pre><span></span><code><span class="n">ls</span><span class="w"> </span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">firmware</span><span class="o">/</span><span class="n">efi</span><span class="o">/</span><span class="n">efivars</span><span class="w">    </span><span class="p">(</span><span class="n">Si</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">répertoire</span><span class="w"> </span><span class="n">existe</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;ordinateur supporte l&#39;</span><span class="n">efi</span><span class="p">)</span>
+</code></pre></div>
+
+<h3>Connexion au réseau</h3>
+<p>Vérifier le nom du reseau et si celui-ci est up</p>
+<div class="highlight"><pre><span></span><code><span class="nx">ip</span><span class="w"> </span><span class="kd">addr</span><span class="w"> </span><span class="nx">show</span>
+</code></pre></div>
+
+<p>vérifier la connexion internet</p>
+<div class="highlight"><pre><span></span><code>ping -c 2 google.com
+</code></pre></div>
+
+<p>Connexion au wifi</p>
+<div class="highlight"><pre><span></span><code>iwctl
+</code></pre></div>
+
+<p>affichage du prompt [IWD]#</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">list</span>
+<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="n">scan</span>
+<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="k">get</span><span class="o">-</span><span class="n">networks</span>
+<span class="o">[</span><span class="n">iwd</span><span class="o">]</span><span class="err">#</span><span class="w"> </span><span class="n">station</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="k">connect</span><span class="w"> </span><span class="n">SSID</span>
+</code></pre></div>
+
+<p>MAJ</p>
+<div class="highlight"><pre><span></span><code>sudo mount -o rw,remount /
+reflector --verbose --country &#39;France&#39; -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Syu
+</code></pre></div>
+
+<h3>Check les disques</h3>
+<p>Vérifier le nom de votre disque dur ou SSD (ie sda ou NVME)</p>
+<div class="highlight"><pre><span></span><code>lsblk
+</code></pre></div>
+
+<h3>Partitionnement</h3>
+<p>Destruction des données sécurisées du disque</p>
+<div class="highlight"><pre><span></span><code>shred -v -n 1 /dev/sda
+</code></pre></div>
+
+<p>Utilitaire de partitionnement</p>
+<div class="highlight"><pre><span></span><code>gdisk /dev/sda
+</code></pre></div>
+
+<p>Commande gdisk:</p>
+<ol>
+<li>o (écrire table de partition GPT)</li>
+<li>n (nouvelle partition), default, 512MB, ef00</li>
+<li>n (nouvelle partition), default, default, 8300</li>
+<li>w (écrire et quitter)</li>
+</ol>
+<p>Mise en place de la table de partition:</p>
+<div class="highlight"><pre><span></span><code>/dev/sda1 EFI ef00 512MB
+/dev/sda2 Linux 8300
+</code></pre></div>
+
+<p>Formatage de la partition EFI</p>
+<div class="highlight"><pre><span></span><code>mkfs.vfat -F32 -n BOOT /dev/sda1
+</code></pre></div>
+
+<h3>Chiffrement</h3>
+<div class="highlight"><pre><span></span><code><span class="nx">cryptsetup</span><span class="w"> </span><span class="o">--</span><span class="k">type</span><span class="w"> </span><span class="nx">luks2</span><span class="w"> </span><span class="o">--</span><span class="nx">cipher</span><span class="w"> </span><span class="nx">aes</span><span class="o">-</span><span class="nx">xts</span><span class="o">-</span><span class="nx">plain64</span><span class="w"> </span><span class="o">--</span><span class="nx">key</span><span class="o">-</span><span class="nx">size</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="o">--</span><span class="nx">pbkdf</span><span class="w"> </span><span class="nx">argon2id</span><span class="w"> </span><span class="o">--</span><span class="nx">use</span><span class="o">-</span><span class="nx">random</span><span class="w"> </span><span class="o">--</span><span class="nx">verify</span><span class="o">-</span><span class="nx">passphrase</span><span class="w"> </span><span class="nx">luksFormat</span><span class="w"> </span><span class="o">/</span><span class="nx">dev</span><span class="o">/</span><span class="nx">sda2</span>
+</code></pre></div>
+
+<p>Ouverture du container chiffré:</p>
+<div class="highlight"><pre><span></span><code>cryptsetup luksOpen /dev/sda2 cryptlvm
+</code></pre></div>
+
+<h3>Systèmes de fichiers</h3>
+<div class="highlight"><pre><span></span><code># Initialize un groupe physique de volume LVM
+pvcreate --dataalignment 4M /dev/mapper/cryptlvm
+
+# Initialise un groupe virtuel attaché au groupe physique
+vgcreate vg /dev/mapper/cryptlvm
+
+# Initialise une partition nommée &#39;arch&#39; dans le volume group &#39;vg&#39;
+$ lvcreate -l +100%FREE vg -n arch
+
+# Affiche les volumes logiques créés
+$ lvdisplay
+</code></pre></div>
+
+<p>Formater la partition root</p>
+<div class="highlight"><pre><span></span><code>mkfs.btrfs -KL ARCH /dev/mapper/vg-arch
+</code></pre></div>
+
+<p>Monter les partitions:</p>
+<div class="highlight"><pre><span></span><code>mount /dev/mapper/vg-arch /mnt
+</code></pre></div>
+
+<p>Créer les subvolumes</p>
+<div class="highlight"><pre><span></span><code><span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="err">@</span>
+<span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="nv">@home</span>
+<span class="n">btrfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="nv">@_snapshot</span>
+<span class="n">brtfs</span><span class="w"> </span><span class="n">subvolume</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span>
+</code></pre></div>
+
+<p>Démonter la partition</p>
+<div class="highlight"><pre><span></span><code>cd /
+umount /mnt
+</code></pre></div>
+
+<p>Remonter le subvolume @</p>
+<div class="highlight"><pre><span></span><code>mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@ /dev/mapper/vg-arch /mnt
+</code></pre></div>
+
+<p>Créer les dossiers boot et home</p>
+<div class="highlight"><pre><span></span><code>mkdir -p /mnt/{home,_snapshot}
+lsblk -l
+</code></pre></div>
+
+<p>Monter le subvolume @home</p>
+<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@home</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">home</span>
+</code></pre></div>
+
+<p>Monter le subvolume @_snapshot</p>
+<div class="highlight"><pre><span></span><code><span class="n">mount</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">noatime</span><span class="p">,</span><span class="n">space_cache</span><span class="o">=</span><span class="n">v2</span><span class="p">,</span><span class="nf">compress</span><span class="o">=</span><span class="n">zstd</span><span class="p">,</span><span class="n">ssd</span><span class="p">,</span><span class="n">subvol</span><span class="o">=</span><span class="nv">@_snapshot</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">_snapshot</span>
+</code></pre></div>
+
+<p>Créer et Monter la partition EFI</p>
+<div class="highlight"><pre><span></span><code>mkdir -p /mnt/boot
+mount /dev/sda1 /mnt/boot
+</code></pre></div>
+
+<h3>Système de base</h3>
+<div class="highlight"><pre><span></span><code><span class="n">pacstrap</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="n">base</span><span class="o">-</span><span class="n">devel</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">zen</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">firmware</span><span class="w"> </span><span class="n">btrfs</span><span class="o">-</span><span class="n">progs</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">linux</span><span class="o">-</span><span class="n">tools</span><span class="w"> </span><span class="n">lvm2</span><span class="w"> </span><span class="n">cryptsetup</span><span class="w"> </span><span class="n">vim</span><span class="w"> </span><span class="n">intel</span><span class="o">-</span><span class="n">ucode</span><span class="w"> </span><span class="n">fwupd</span>
+</code></pre></div>
+
+<p>Générer fstab</p>
+<div class="highlight"><pre><span></span><code>genfstab -L -p /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre></div>
+
+<p>Chrooter l'environnement</p>
+<div class="highlight"><pre><span></span><code>arch-chroot /mnt
+</code></pre></div>
+
+<p>Nom de la machine</p>
+<div class="highlight"><pre><span></span><code>echo archbox &gt; /etc/hostname
+</code></pre></div>
+
+<p>Edit <code>/etc/hosts</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="mf">127.0.0.1</span><span class="w">       </span><span class="n">localhost</span>
+<span class="p">::</span><span class="mf">1</span><span class="w">                 </span><span class="n">localhost</span>
+<span class="mf">127.0.1.1</span><span class="w">       </span><span class="n">archbox</span><span class="mf">.</span><span class="n">localdomain</span><span class="w"> </span><span class="n">archbox</span>
+</code></pre></div>
+
+<p>Configuration de local paramétrage des langues</p>
+<div class="highlight"><pre><span></span><code>vim /etc/locale.gen
+en_US.UTF-8 UTF-8
+fr_FR.UTF-8 UTF-8
+</code></pre></div>
+
+<p>Génération du fichier</p>
+<div class="highlight"><pre><span></span><code>locale-gen
+</code></pre></div>
+
+<p>Configuration des langues par defaut</p>
+<div class="highlight"><pre><span></span><code>vim /etc/locale.conf
+LANG=&quot;fr_FR.UTF-8&quot;
+LC_COLLATE=&quot;fr_FR.UTF-8&quot;
+</code></pre></div>
+
+<p>Exporter le langage actuel pour création dans initramfs</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">LANG</span><span class="o">=</span><span class="n">fr_FR</span><span class="o">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+</code></pre></div>
+
+<p>Console, fonts, clavier azerty</p>
+<div class="highlight"><pre><span></span><code>vim /etc/vconsole.conf
+KEYMAP=fr-pc
+FONT=
+FONT_MAP=
+</code></pre></div>
+
+<p>Assigne le fuseau horaire</p>
+<div class="highlight"><pre><span></span><code>ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>hwclock --systohc
+</code></pre></div>
+
+<p>Editer mkinitcpio</p>
+<div class="highlight"><pre><span></span><code>vim /etc/mkinitcpio.conf
+
+    HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 btrfs filesystems)
+    Si VM virtIO MODULES=(virtio virtio_blk virtio_pci virtio_net)
+</code></pre></div>
+
+<p>Générer initramfs</p>
+<div class="highlight"><pre><span></span><code>mkinitcpio -p linux-zen
+</code></pre></div>
+
+<p>Mot de passe super-administrateur root</p>
+<div class="highlight"><pre><span></span><code>passwd
+</code></pre></div>
+
+<p>Installation de paquets supplémentaires:</p>
+<div class="highlight"><pre><span></span><code>pacman - S networkmanager network-manager-applet dialog wpa_supplicant reflector linux-zen-headers avahi xdg-user-dirs xdg-utils gvfs nfs-utils inetutils dnsutils cups hplip bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng ntp 
+</code></pre></div>
+
+<p>Configuration de NTP:</p>
+<div class="highlight"><pre><span></span><code>vim /etc/ntp.conf
+
+server 0.fr.pool.ntp.org iburst
+server 1.fr.pool.ntp.org iburst
+server 2.fr.pool.ntp.org iburst
+server 3.fr.pool.ntp.org iburst
+</code></pre></div>
+
+<p>Driver carte graphique, openGL, touchpad</p>
+<div class="highlight"><pre><span></span><code>pacman -S xf86-video-intel xf86-input-libinput mesa
+</code></pre></div>
+
+<p>Installation de QEMU/KVM pour la virtualisation</p>
+<div class="highlight"><pre><span></span><code>pacman -S virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
+</code></pre></div>
+
+<h3>Configuration de systemd-boot</h3>
+<div class="highlight"><pre><span></span><code>bootctl --esp=/boot install
+</code></pre></div>
+
+<p>Configuration générale du chargeur</p>
+<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">loader</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">default</span><span class="w"> </span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">editor</span><span class="w"> </span><span class="n">no</span>
+<span class="n">timeout</span><span class="w"> </span><span class="mi">4</span>
+<span class="n">console</span><span class="o">-</span><span class="n">mode</span><span class="w"> </span><span class="nb">max</span>
+</code></pre></div>
+
+<p>Récupérez le champs UUID= de la partition LUKS</p>
+<div class="highlight"><pre><span></span><code>blkid | grep /dev/sda2
+</code></pre></div>
+
+<p>Configuration d’une entrée du menu de démarrage.</p>
+<div class="highlight"><pre><span></span><code><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">boot</span><span class="o">/</span><span class="n">loader</span><span class="o">/</span><span class="n">entries</span><span class="o">/</span><span class="n">arch</span><span class="o">.</span><span class="n">conf</span>
+
+<span class="n">title</span><span class="w"> </span><span class="n">Arch</span><span class="w"> </span><span class="n">Linux</span>
+<span class="n">linux</span><span class="w"> </span><span class="o">/</span><span class="n">vmlinuz</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">zen</span>
+<span class="n">initrd</span><span class="w"> </span><span class="o">&lt;</span><span class="n">cpu</span><span class="o">&gt;-</span><span class="n">ucode</span><span class="o">.</span><span class="n">img</span>
+<span class="n">initrd</span><span class="w"> </span><span class="o">/</span><span class="n">initramfs</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">zen</span><span class="o">.</span><span class="n">img</span>
+<span class="n">options</span><span class="w"> </span><span class="n">rd</span><span class="o">.</span><span class="n">luks</span><span class="o">.</span><span class="n">uuid</span><span class="o">=&lt;</span><span class="n">UUID</span><span class="o">&gt;</span><span class="w"> </span><span class="n">root</span><span class="o">=/</span><span class="n">dev</span><span class="o">/</span><span class="n">mapper</span><span class="o">/</span><span class="n">vg</span><span class="o">-</span><span class="n">arch</span><span class="w"> </span><span class="n">rootflags</span><span class="o">=</span><span class="n">subvol</span><span class="o">=</span><span class="err">@</span><span class="w"> </span><span class="n">rw</span>
+</code></pre></div>
+
+<h3>Activer les services systemD</h3>
+<div class="highlight"><pre><span></span><code><span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">NetworkManager</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">cups</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">sshd</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">avahi</span><span class="o">-</span><span class="n">daemon</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">tlp</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">reflector</span><span class="p">.</span><span class="n">timer</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">libvirtd</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">acpid</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">ufw</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">syslog</span><span class="o">-</span><span class="n">ng</span><span class="nv">@default</span>
+<span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">ntpd</span>
+</code></pre></div>
+
+<h3>Créer un utilisateur</h3>
+<div class="highlight"><pre><span></span><code>useradd -mG storage,wheel,power -s /bin/bash trivial
+passwd trivial
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>usermod -aG libvirt trivial
+</code></pre></div>
+
+<p>Ajout dans sudoers de l'utilisateur</p>
+<div class="highlight"><pre><span></span><code>echo &quot;trivial ALL=(ALL) ALL&quot; &gt;&gt; /etc/sudoers.d/trivial
+</code></pre></div>
+
+<p>Démonter et reboot</p>
+<div class="highlight"><pre><span></span><code><span class="k">exit</span>
+<span class="nv">umount</span><span class="w"> </span><span class="o">-</span><span class="nv">R</span><span class="w"> </span><span class="o">/</span><span class="nv">mnt</span>
+<span class="nv">reboot</span>
+</code></pre></div>
+
+<h3>Post-installation</h3>
+<p>Check ip adresse</p>
+<div class="highlight"><pre><span></span><code>ip a
+</code></pre></div>
+
+<p>Connexion au wifi/ethernet via Networkmanager TUI</p>
+<div class="highlight"><pre><span></span><code>nmtui
+</code></pre></div>
+
+<p>Synchronisation repository MAJ + reflector</p>
+<p>Activer multilib:</p>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">vim</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">pacman</span><span class="p">.</span><span class="n">conf</span>
+
+<span class="o">[</span><span class="n">multilib</span><span class="o">]</span>
+<span class="k">Include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">pacman</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">mirrorlist</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>sudo reflector --verbose --country &#39;France&#39; -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
+
+sudo pacman -Syu
+</code></pre></div>
+
+<p>Installation AUR Helper</p>
+<div class="highlight"><pre><span></span><code>mkdir sources 
+cd sources 
+git clone https://aur.archlinux.org/yay.git 
+cd yay 
+makepkg -si 
+</code></pre></div>
+
+<p>Installation de timeshift et zramd</p>
+<div class="highlight"><pre><span></span><code>yay -S timeshift-bin zramd
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>sudo systemctl enable zramd.service
+sudo systemctl start zramd.service
+</code></pre></div>
+
+<p>Vérification que la swap est active:</p>
+<div class="highlight"><pre><span></span><code>lsblk -l
+</code></pre></div>
+
+<h3>Configuration de hyprland</h3>
+<p>Post-installation:</p>
+<p>Prérequis avoir <code>base-devel</code>, <code>git</code> et <code>wget</code></p>
+<p>Listing des packages et dépendances:</p>
+<div class="highlight"><pre><span></span><code><span class="n">yay</span><span class="w"> </span><span class="o">-</span><span class="n">S</span><span class="w"> </span><span class="n">hyprland</span><span class="w"> </span><span class="n">waybar</span><span class="o">-</span><span class="n">hyprland</span><span class="w"> </span><span class="n">eww</span><span class="o">-</span><span class="n">wayland</span><span class="w"> </span><span class="n">mako</span><span class="w"> </span><span class="n">swaybg</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">kitty</span><span class="w"> </span><span class="n">fish</span><span class="w"> </span><span class="n">starship</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="n">fzf</span><span class="w"> </span><span class="n">mclfy</span><span class="w"> </span><span class="n">neovim</span><span class="w"> </span><span class="n">broot</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">pipewire</span><span class="w"> </span><span class="n">wireplumber</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">cliphist</span><span class="w"> </span><span class="n">grimblast</span><span class="o">-</span><span class="n">git</span><span class="w"> </span><span class="n">ffmpeg</span><span class="w"> </span><span class="n">wf</span><span class="o">-</span><span class="n">recorder</span><span class="w"> </span><span class="n">viewnior</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">polkit</span><span class="o">-</span><span class="n">kde</span><span class="o">-</span><span class="n">agent</span><span class="w"> </span><span class="n">xdg</span><span class="o">-</span><span class="n">desktop</span><span class="o">-</span><span class="n">portal</span><span class="o">-</span><span class="n">hyprland</span><span class="o">-</span><span class="n">git</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">qt5</span><span class="o">-</span><span class="n">wayland</span><span class="w"> </span><span class="n">qt6</span><span class="o">-</span><span class="n">wayland</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">wlogout</span><span class="w"> </span><span class="n">swaylock</span><span class="o">-</span><span class="n">effects</span><span class="w"> </span><span class="n">ly</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">webcord</span><span class="w"> </span><span class="n">weechat</span><span class="w"> </span><span class="n">fractal</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">cmus</span><span class="w"> </span><span class="n">spotify</span><span class="o">-</span><span class="n">tui</span><span class="w"> </span><span class="n">vlc</span><span class="w"> </span><span class="n">ytfzf</span><span class="o">-</span><span class="n">git</span><span class="w"> </span><span class="n">mpv</span><span class="w"> </span><span class="n">haxor</span><span class="o">-</span><span class="n">news</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">cmatrix</span><span class="w"> </span><span class="n">neofetch</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">ripgrep</span><span class="w"> </span><span class="n">exa</span><span class="w"> </span><span class="n">bat</span><span class="w"> </span><span class="n">duf</span><span class="w"> </span><span class="n">thefuck</span><span class="w"> </span><span class="n">aria2</span><span class="w"> </span><span class="n">ack</span><span class="w"> </span><span class="n">transfer</span><span class="p">.</span><span class="n">sh</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">lazygit</span><span class="w"> </span><span class="n">hub</span><span class="w"> </span><span class="n">ctop</span><span class="w"> </span><span class="n">dockly</span><span class="w"> </span><span class="n">httpie</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">xiringuito</span><span class="w"> </span><span class="n">neoss</span><span class="w"> </span><span class="n">mtr</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">howdoi</span><span class="w"> </span><span class="n">tldr</span><span class="w"> </span><span class="n">navi</span><span class="w"> </span><span class="n">rebound</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">python</span><span class="w"> </span><span class="n">python</span><span class="o">-</span><span class="n">pip</span><span class="w"> </span><span class="n">python</span><span class="o">-</span><span class="n">virtualenv</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">firefox</span><span class="w"> </span><span class="n">obsidian</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">adobe</span><span class="o">-</span><span class="n">source</span><span class="o">-</span><span class="n">han</span><span class="o">-</span><span class="n">sans</span><span class="o">-</span><span class="n">otc</span><span class="o">-</span><span class="n">fonts</span><span class="w"> </span><span class="n">ttf</span><span class="o">-</span><span class="n">droid</span><span class="w"> </span><span class="n">ttf</span><span class="o">-</span><span class="n">dejavu</span><span class="w"> </span><span class="n">noto</span><span class="o">-</span><span class="n">fonts</span><span class="w"> </span><span class="n">noto</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">emoji</span><span class="w"> </span><span class="n">nerd</span><span class="o">-</span><span class="n">fonts</span><span class="o">-</span><span class="n">meta</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">gtk</span><span class="o">-</span><span class="n">cyberpunk</span><span class="o">-</span><span class="n">neon</span><span class="o">-</span><span class="n">theme</span><span class="o">-</span><span class="n">git</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">fcitx</span><span class="o">-</span><span class="n">im</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">udiskie</span><span class="w"> </span><span class="se">\</span>
+<span class="w">       </span><span class="n">cointop</span><span class="w"> </span><span class="n">libqalculate</span><span class="w"> </span><span class="n">rclone</span><span class="w"> </span><span class="n">asciinema</span><span class="w"> </span><span class="n">figlet</span><span class="w"> </span><span class="n">cpufetch</span><span class="w"> </span><span class="n">gifski</span><span class="w"> </span><span class="se">\</span>
+</code></pre></div>
+
+<p>Installation de youtube-dl:</p>
+<div class="highlight"><pre><span></span><code>pip install yt-dlp
+</code></pre></div>
+
+<p>Installation de terminal velocity</p>
+<div class="highlight"><pre><span></span><code>pip install terminal_velocity
+</code></pre></div>
+
+<p>Installation IPTV:</p>
+<div class="highlight"><pre><span></span><code>sudo wget https://raw.githubusercontent.com/shahin8r/iptv/master/iptv -qO /usr/local/bin/iptv &amp;&amp; sudo chmod +x /usr/local/bin/iptv
+
+### Run playlist:
+
+iptv https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+</code></pre></div>
+
+<p>Configurer Tordl:</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/X0R0X/cli-torrent-dl.git
+cd ~/cli-torrent-dl
+./setup.sh
+
+# configurer client torrent (deluge)
+nano ~/.config/torrentdl/config.json
+</code></pre></div>
+
+<p>Autostart authentification agent:</p>
+<div class="highlight"><pre><span></span><code><span class="k">exec</span><span class="o">-</span><span class="nv">once</span><span class="o">=/</span><span class="nv">usr</span><span class="o">/</span><span class="nv">lib</span><span class="o">/</span><span class="nv">polkit</span><span class="o">-</span><span class="nv">kde</span><span class="o">-</span><span class="nv">authentication</span><span class="o">-</span><span class="nv">agent</span><span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+
+<p>Activer le service au démarrage ly:</p>
+<div class="highlight"><pre><span></span><code>sudo systemctl enable ly.service
+</code></pre></div>
+
+<p>Configurer fish comme shell par défault:</p>
+<div class="highlight"><pre><span></span><code>echo /bin/fish | sudo tee -a /etc/shells
+chsh -s /bin/fish
+</code></pre></div>
+
+<p>Editer fichier de configuration:</p>
+<div class="highlight"><pre><span></span><code>nvim ~/.config/hypr/hyprland.conf
+</code></pre></div>
+
+<p>Lancer automatiquement le montage USB, etc:</p>
+<div class="highlight"><pre><span></span><code><span class="k">exec</span><span class="o">-</span><span class="nv">once</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">udiskie</span><span class="w"> </span><span class="o">&amp;</span>
+</code></pre></div>
+
+<p>Clavier configuration ajouter:</p>
+<div class="highlight"><pre><span></span><code><span class="n">device</span><span class="o">:</span><span class="n">nom</span><span class="o">-</span><span class="n">clavier</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="n">kb_layout</span><span class="o">=</span><span class="n">fr</span><span class="o">,</span><span class="n">us</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>Commande pour switcher entre les claviers:</p>
+<div class="highlight"><pre><span></span><code>hyprctl switchxkblayout nom-clavier fr
+</code></pre></div>
+
+<p>NOTA: Pour activer la prise en charge Pinyin, utiliser fcitx.</p>
+<p><strong>Codec Multimédia</strong></p>
+<p>Nous allons installer l’ensemble des greffons gstreamer qui est le framework utilisé par de nombreux environnements de bureau pour gérer le multimedia.</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S gst-plugins-{base,good,bad,ugly} gst-libav
+</code></pre></div>
+
+<p>Installation de navigateurs web</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S firefox
+</code></pre></div>
+
+<p>Extension essentiel sur Firefox:</p>
+<ul>
+<li>DuckDuckGo Privacy Essentials</li>
+<li>Smart HTTPS</li>
+<li>Disconnect</li>
+<li>U-Block Origin</li>
+<li>Privacy Badger</li>
+</ul>
+<div class="highlight"><pre><span></span><code>reboot
+</code></pre></div>
+
+<h3>Configuration des applications</h3>
+<h4>Application pour développeur et designer</h4>
+<div class="highlight"><pre><span></span><code>sudo pacman -S keepass gimp vlc filezilla inkscape deluge deluge-gtk weechat cmus galculator discord veracrypt kazam yt-dlp calibre obsidian neofetch mousepad
+</code></pre></div>
+
+<p>Embedded (microcontroller, AVR, etc...) - Pour utiliser Arduino et PlatformIO, installer et configurer:</p>
+<ul>
+<li>arduino-cli</li>
+<li>arduino-ide-bin (AUR)</li>
+<li>platformio (AUR)</li>
+</ul>
+<p>Documentation des langages</p>
+<div class="highlight"><pre><span></span><code>yay -S zeal
+</code></pre></div>
+
+<p>NOTA: Problème de lenteur de compilation de qt5-webkit</p>
+<p>Installation des outils de développeurs C/C++, Clang, Ruby</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S llvm clang nodejs npm ctags
+
+### RVM Ruby
+
+sudo gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby --gems=pry
+
+### Verifier l&#39;installation dans le terminal 
+source /etc/profile.d/rvm.sh
+
+### Install Gems
+gem install
+
+### Integration avec fish
+
+curl -L --create-dirs -o ~/.config/fish/functions/rvm.fish https://raw.github.com/lunks/fish-nuggets/master/functions/rvm.fish
+
+echo &quot;rvm default&quot; &gt;&gt; ~/.config/fish/config.fish
+</code></pre></div>
+
+<p>Install Wat, outil communautaire documentation:</p>
+<div class="highlight"><pre><span></span><code>npm install -g wat
+</code></pre></div>
+
+<p>Installation de Jedi autocompletion pour python</p>
+<div class="highlight"><pre><span></span><code>pip install jedi
+</code></pre></div>
+
+<p>Editeur de texte VSCodium</p>
+<div class="highlight"><pre><span></span><code>yay - S vscodium-bin
+</code></pre></div>
+
+<p>Installation de Java Eclipse</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S jdk-openjdk
+yay -S eclipse-java
+</code></pre></div>
+
+<p>Outil de mind mapping (java)</p>
+<div class="highlight"><pre><span></span><code>yay -S freemind
+</code></pre></div>
+
+<p><strong>Configuration de Neovim</strong></p>
+<p>Installation du gestionnaire de plugin "vim-plug" cf: <a href="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a></p>
+<div class="highlight"><pre><span></span><code><span class="s s-Atom">sh</span> <span class="o">-</span><span class="s s-Atom">c</span> <span class="s s-Atom">&#39;curl -fLo &quot;${XDG_DATA_HOME:-$HOME/.local/share}&quot;/nvim/site/autoload/plug.vim --create-dirs \</span>
+<span class="s s-Atom">       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&#39;</span>
+</code></pre></div>
+
+<p>init.vim</p>
+<div class="highlight"><pre><span></span><code><span class="ss">&quot; Neovim configuration file init.vim</span>
+<span class="ss">&quot;</span><span class="w"> </span><span class="nl">author</span><span class="p">:</span><span class="w"> </span><span class="n">Anthony</span><span class="w"> </span><span class="n">J</span><span class="p">.</span><span class="n">R</span><span class="w"> </span><span class="n">Le</span><span class="w"> </span><span class="n">Goff</span><span class="w"> </span><span class="n">legoff</span><span class="p">.</span><span class="n">ant</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
+<span class="ss">&quot; date: 16th april 2022</span>
+
+<span class="ss">:set number</span>
+<span class="ss">:set autoindent</span>
+<span class="ss">:set tabstop=4</span>
+<span class="ss">:set shiftwidth=4</span>
+<span class="ss">:set smarttab</span>
+<span class="ss">:set softtabstop=4</span>
+<span class="ss">&quot;</span><span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">mouse</span><span class="o">=</span><span class="n">a</span>
+
+<span class="k">call</span><span class="w"> </span><span class="n">plug#begin</span><span class="p">()</span><span class="w"> </span>
+
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-fugitive&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-surround&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/nerdtree&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/syntastic&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;vim-airline/vim-airline&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tomasr/molokai&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;raimondi/delimitmate&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;kien/ctrlp.vim&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;ryanoasis/vim-devicons&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;majutsushi/tagbar&#39;</span>
+<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;neoclide/coc.nvim&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">{</span><span class="s1">&#39;branch&#39;</span><span class="err">:</span><span class="w"> </span><span class="s1">&#39;release&#39;</span><span class="err">}</span>
+
+<span class="k">set</span><span class="w"> </span><span class="n">encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+
+<span class="k">call</span><span class="w"> </span><span class="n">plug#end</span><span class="p">()</span>
+
+<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="n">#warningmsg</span><span class="err">#</span>
+<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="err">{</span><span class="n">SyntasticStatuslineFlag</span><span class="p">()</span><span class="err">}</span>
+<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%*</span>
+
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_always_populate_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_auto_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_open</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_wq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+
+<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">f</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeFocus</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">n</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTree</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">t</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+
+<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">r</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">TagbarToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">p</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">CtrlP</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+
+<span class="err">:</span><span class="n">colorscheme</span><span class="w"> </span><span class="n">molokai</span>
+
+<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowExpandable</span><span class="o">=</span><span class="ss">&quot;+&quot;</span>
+<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowCollapsible</span><span class="o">=</span><span class="ss">&quot;~&quot;</span>
+
+<span class="ss">&quot; air-line</span>
+<span class="ss">let g:airline_powerline_fonts = 1</span>
+
+
+<span class="ss">&quot;</span><span class="w"> </span><span class="err">:</span><span class="n">CocInstall</span><span class="w"> </span><span class="n">coc</span><span class="o">-</span><span class="n">python</span>
+<span class="err">&quot;</span><span class="w"> </span><span class="err">:</span><span class="n">CocInstall</span><span class="w"> </span><span class="n">coc</span><span class="o">-</span><span class="n">clangd</span>
+</code></pre></div>
+
+<h4>Outils de Hacking, pentesting, bug bounty, CTF</h4>
+<p>Installation de dépot BlackArch &gt;&gt; <a href="https://blackarch.org/">https://blackarch.org/</a></p>
+<div class="highlight"><pre><span></span><code>curl -O https://blackarch.org/strap.sh
+sha1sum strap.sh # doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c
+sudo chmod +x strap.sh
+sudo ./strap.sh
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>sudo pacman -S blackman
+</code></pre></div>
+
+<p>Vous pouvez installer tous les outils Blackarch via cette commande (recommandé):</p>
+<div class="highlight"><pre><span></span><code>sudo blackman -a
+</code></pre></div>
+
+<p>SINON Installer les outils un par un:</p>
+<p>Installation des outils basics</p>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="n">S</span><span class="w"> </span><span class="n">nmap</span><span class="w"> </span><span class="n">impacket</span><span class="w"> </span><span class="n">wireshark</span><span class="o">-</span><span class="n">qt</span><span class="w"> </span><span class="n">tcpdump</span><span class="w"> </span><span class="n">hashcat</span><span class="w"> </span><span class="n">john</span><span class="w"> </span><span class="n">proxychains</span><span class="o">-</span><span class="n">ng</span><span class="w"> </span><span class="n">exploitdb</span><span class="w"> </span><span class="n">httpie</span><span class="w"> </span><span class="n">metasploit</span><span class="w"> </span><span class="n">armitage</span><span class="w"> </span><span class="n">bind</span><span class="o">-</span><span class="n">tools</span><span class="w"> </span><span class="n">radare2</span><span class="w"> </span><span class="n">sqlmap</span><span class="w"> </span><span class="n">wpscan</span><span class="w"> </span><span class="n">xclip</span><span class="w"> </span><span class="n">beef</span><span class="w"> </span><span class="n">set</span><span class="w"> </span><span class="n">ufonet</span><span class="w"> </span><span class="n">ettercap</span><span class="w"> </span><span class="n">w3af</span><span class="w"> </span><span class="n">merlin</span><span class="o">-</span><span class="n">server</span>
+</code></pre></div>
+
+<p>L'installation d'OpenVAS est un peu plus complexe, voir la page: <a href="https://wiki.archlinux.org/title/OpenVAS">https://wiki.archlinux.org/title/OpenVAS</a></p>
+<p>Configuration WordLists</p>
+<div class="highlight"><pre><span></span><code>mkdir -p /usr/share/wordlists
+wget -q https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz -O /usr/share/wordlists/rockyou.txt.tar.gz
+wget -q https://github.com/danielmiessler/SecLists/raw/master/Discovery/Web-Content/common.txt -O /usr/share/wordlists/common.txt
+</code></pre></div>
+
+<h4>Outils pour écrivain et chercheur</h4>
+<div class="highlight"><pre><span></span><code>sudo pacman -S ghostwriter pdfjs pandoc texmaker manuskript libreoffice-still libreoffice-still-fr hunspell hunspell-fr
+</code></pre></div>
+
+<p>Extension Grammalecte et gestion de bibliographie</p>
+<div class="highlight"><pre><span></span><code>yay -S zotero libreoffice-extension-grammalecte-fr
+</code></pre></div>
+
+<h4>Calcul numérique et scientifique (remplace Matlab)</h4>
+<div class="highlight"><pre><span></span><code>python -m pip install jupyter scipy numpy matplotlib pandas ipython
+</code></pre></div>
+
+<p>Calcul Formel</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S sagemath
+</code></pre></div>
+
+<h3>Sauvegarde</h3>
+<p>Installation du client SAMBA</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S smbclient gvfs-smb
+</code></pre></div>
+
+<p>Redémarrer le PC pour prendre en compte la découverte du réseau local.</p>
+<p>Ensuite rechercher votre serveur dans thunar en tapant:</p>
+<div class="highlight"><pre><span></span><code>smb://192.168.X.X
+</code></pre></div>
+
+<p>Pour cela modifier en fonction d'IP de votre serveur.</p>
+<p>Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S deja-dup
+</code></pre></div>
+
+<h3>Par-feu ufw</h3>
+<p>Activation des logs (très utile pour la suite) :</p>
+<div class="highlight"><pre><span></span><code>sudo ufw logging on
+</code></pre></div>
+
+<p>Rejet par défaut des connexions entrantes :</p>
+<div class="highlight"><pre><span></span><code>sudo ufw default deny incoming
+</code></pre></div>
+
+<p>Autorisation des connexions sortantes :</p>
+<div class="highlight"><pre><span></span><code>sudo ufw default allow outgoing
+</code></pre></div>
+
+<p>Recherchement des règles du pare-feu pour finir :</p>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">ufw</span><span class="w"> </span><span class="n">reload</span>
+</code></pre></div>
+
+<h3>Services Cloud</h3>
+<p>Vous trouverez plusieurs services de cloud gratuit tels que qcloud, Google drive, Dropbox. Nous allons installer MEGA qui est plus sécurisé ques les autres offres de cloud, le service de l'entrepreneur Kim Dotcom a évolué sur les principes d'anonymat et de vie privée sur les données qui sont stocké sur son serveur depuis l'affaire de megaupload.</p>
+<p>Aller sur le site <a href="https://mega.io/desktop">https://mega.io/desktop</a></p>
+<p>Sélectionner Arch Linux et télécharger l'application.</p>
+<p>Pour installer sélectionner le package via:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">sudo</span><span class="w"> </span><span class="nx">pacman</span><span class="w"> </span><span class="o">-</span><span class="nx">U</span><span class="w"> </span><span class="kn">package</span>
+</code></pre></div>
+
+<h3>Service VPN Proton</h3>
+<p>Configurer un VPN. Installer le metapackage sur AUR:</p>
+<div class="highlight"><pre><span></span><code>yay -S protonvpn
+</code></pre></div>
+
+<p>CLI (Command Line Interface)</p>
+<p>Login:</p>
+<div class="highlight"><pre><span></span><code>protonvpn-cli login &lt;your_protonmail&gt;
+</code></pre></div>
+
+<p>Connect to the VPN:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">protonvpn</span><span class="o">-</span><span class="nv">cli</span><span class="w"> </span><span class="k">connect</span>
+</code></pre></div>
+
+<p>Pour créer un compte protonVPN: <a href="https://protonvpn.com/free-vpn/linux/">https://protonvpn.com/free-vpn/linux/</a></p>
+<p>Pour voir le status de la connexion:</p>
+<div class="highlight"><pre><span></span><code>protonvpn-cli status
+</code></pre></div>
+
+<p>Vérifier que votre adresse IP pointe sur le VPN: <a href="https://www.whatismyip.com/fr/">https://www.whatismyip.com/fr/</a></p>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+</div>
+</div>
+        </div><!--/span-->
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><div><i class="icon-external-link"></i><a href="https://getpelican.com/">Pelican</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.python.org/">Python.org</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://framabook.org/le-c-en-20-heures-2/">Apprendre le C en 20H</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://archlinux.org/">Arch Linux</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.blackarch.io/">Blackarch</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.kernel.org/">Kernel</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://www.arduino.cc/">Arduino</a></div></li>
+    <li><div><i class="icon-external-link"></i><a href="https://beagleboard.org/bone">BeagleBoard</a></div></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+    </div><!--/.fluid-container-->
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

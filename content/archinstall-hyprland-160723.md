@@ -177,33 +177,33 @@ Vérifier le démarrage UEFI.
 ### pre-check configuration 
 
 Charger le clavier français en tapant "loqdkeys fr"
-```
-loadkeys fr
+```bash
+$ loadkeys fr
 ```
 
 Verifier boot mode
-```
-ls /sys/firmware/efi/efivars    (Si le répertoire existe, l'ordinateur supporte l'efi)
+```bash
+$ ls /sys/firmware/efi/efivars    (Si le répertoire existe, l'ordinateur supporte l'efi)
 ```
 
 ### Connexion au réseau
 
 Vérifier le nom du reseau et si celui-ci est up
-```
-ip addr show
+```bash
+$ ip addr show
 ```
 
 vérifier la connexion internet
-```
-ping -c 2 google.com
+```bash
+$ ping -c 2 google.com
 ```
 
 Connexion au wifi
-```
-iwctl
+```bash
+$ iwctl
 ```
 affichage du prompt [IWD]#
-```
+```text
 [iwd]# device list
 [iwd]# station device scan
 [iwd]# station device get-networks
@@ -211,29 +211,29 @@ affichage du prompt [IWD]#
 ```
 
 MAJ
-```
-sudo mount -o rw,remount /
-reflector --verbose --country 'France' -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
-pacman -Syu
+```bash
+$ sudo mount -o rw,remount /
+$ reflector --verbose --country 'France' -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
+$ pacman -Syu
 ```
 
 ### Check les disques
 
 Vérifier le nom de votre disque dur ou SSD (ie sda ou NVME)
-```
+```bash
 lsblk
 ```
 
 ### Partitionnement
 
 Destruction des données sécurisées du disque
-```
-shred -v -n 1 /dev/sda
+```bash
+$ shred -v -n 1 /dev/sda
 ```
 
 Utilitaire de partitionnement
-```
-gdisk /dev/sda
+```bash
+$ gdisk /dev/sda
 ```
 
 Commande gdisk:
@@ -244,34 +244,34 @@ Commande gdisk:
 4. w (écrire et quitter)
 
 Mise en place de la table de partition:
-```
+```text
 /dev/sda1 EFI ef00 512MB
 /dev/sda2 Linux 8300
 ```
 
 Formatage de la partition EFI
-```
-mkfs.vfat -F32 -n BOOT /dev/sda1
+```bash
+$ mkfs.vfat -F32 -n BOOT /dev/sda1
 ```
 
 ### Chiffrement 
-```
-cryptsetup --type luks2 --cipher aes-xts-plain64 --key-size 512 --pbkdf argon2id --use-random --verify-passphrase luksFormat /dev/sda2
+```bash
+$ cryptsetup --type luks2 --cipher aes-xts-plain64 --key-size 512 --pbkdf argon2id --use-random --verify-passphrase luksFormat /dev/sda2
 ```
 
 Ouverture du container chiffré:
-```
-cryptsetup luksOpen /dev/sda2 cryptlvm
+```bash
+$ cryptsetup luksOpen /dev/sda2 cryptlvm
 ```
 
 ### Systèmes de fichiers
 
-```
+```bash
 # Initialize un groupe physique de volume LVM
-pvcreate --dataalignment 4M /dev/mapper/cryptlvm
+$ pvcreate --dataalignment 4M /dev/mapper/cryptlvm
 
 # Initialise un groupe virtuel attaché au groupe physique
-vgcreate vg /dev/mapper/cryptlvm
+$ vgcreate vg /dev/mapper/cryptlvm
 
 # Initialise une partition nommée 'arch' dans le volume group 'vg'
 $ lvcreate -l +100%FREE vg -n arch
@@ -281,80 +281,80 @@ $ lvdisplay
 ```
 
 Formater la partition root
-```
-mkfs.btrfs -KL ARCH /dev/mapper/vg-arch
+```bash
+$ mkfs.btrfs -KL ARCH /dev/mapper/vg-arch
 ```
 
 Monter les partitions:
-```
-mount /dev/mapper/vg-arch /mnt
+```bash
+$ mount /dev/mapper/vg-arch /mnt
 ```
 
 Créer les subvolumes
-```
-btrfs subvolume create /mnt/@
-btrfs subvolume create /mnt/@home
-btrfs subvolume create /mnt/@_snapshot
-brtfs subvolume list /mnt
+```bash
+$ btrfs subvolume create /mnt/@
+$ btrfs subvolume create /mnt/@home
+$ btrfs subvolume create /mnt/@_snapshot
+$ brtfs subvolume list /mnt
 ```
 
 Démonter la partition
-```
-cd /
-umount /mnt
+```bash
+$ cd /
+$ umount /mnt
 ```
 
 Remonter le subvolume @
-```
-mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@ /dev/mapper/vg-arch /mnt
+```bash
+$ mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@ /dev/mapper/vg-arch /mnt
 ```
 
 Créer les dossiers boot et home
-```
-mkdir -p /mnt/{home,_snapshot}
-lsblk -l
+```bash
+$ mkdir -p /mnt/{home,_snapshot}
+$ lsblk -l
 ```
 
 Monter le subvolume @home
-```
-mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@home /dev/mapper/vg-arch /mnt/home
+```bash
+$ mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@home /dev/mapper/vg-arch /mnt/home
 ```
 
 Monter le subvolume @_snapshot
-```
-mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@_snapshot /dev/mapper/vg-arch /mnt/_snapshot
+```bash
+$ mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@_snapshot /dev/mapper/vg-arch /mnt/_snapshot
 ```
 
 Créer et Monter la partition EFI
-```
-mkdir -p /mnt/boot
-mount /dev/sda1 /mnt/boot
+```bash
+$ mkdir -p /mnt/boot
+$ mount /dev/sda1 /mnt/boot
 ```
 
 
 ### Système de base
-```
-pacstrap /mnt base base-devel linux-zen linux-firmware btrfs-progs sudo git linux-tools lvm2 cryptsetup vim intel-ucode fwupd
+```bash
+$ pacstrap /mnt base base-devel linux-zen linux-firmware btrfs-progs sudo git linux-tools lvm2 cryptsetup vim intel-ucode fwupd
 ```
 
 Générer fstab
-```
-genfstab -L -p /mnt >> /mnt/etc/fstab
+```bash
+$ genfstab -L -p /mnt >> /mnt/etc/fstab
 ```
 
 Chrooter l'environnement
-```
-arch-chroot /mnt
+```bash
+$ arch-chroot /mnt
 ```
 
 Nom de la machine
-```
-echo archbox > /etc/hostname
+```bash
+$ echo archbox > /etc/hostname
 ```
 
 Edit `/etc/hosts`:
 
-```
+```text
 127.0.0.1		localhost
 ::1					localhost
 127.0.1.1		archbox.localdomain	archbox
@@ -362,70 +362,74 @@ Edit `/etc/hosts`:
 
 
 Configuration de local paramétrage des langues
-```
-vim /etc/locale.gen
+```bash
+$ vim /etc/locale.gen
 en_US.UTF-8 UTF-8
 fr_FR.UTF-8 UTF-8
 ```
 Génération du fichier
-```
-locale-gen
+```bash
+$ locale-gen
 ```
 Configuration des langues par defaut
-```
-vim /etc/locale.conf
+```bash
+$ vim /etc/locale.conf
 LANG="fr_FR.UTF-8"
 LC_COLLATE="fr_FR.UTF-8"
 ```
 Exporter le langage actuel pour création dans initramfs
-```
-export LANG=fr_FR.UTF-8
+```bash
+$ export LANG=fr_FR.UTF-8
 ```
 Console, fonts, clavier azerty
-```
-vim /etc/vconsole.conf
+```bash
+$ vim /etc/vconsole.conf
 KEYMAP=fr-pc
 FONT=
 FONT_MAP=
 ```
 
 Assigne le fuseau horaire
-```
-ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
+```bash
+$ ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
 ```
 
 
-```
-hwclock --systohc
+```bash
+$ hwclock --systohc
 ```
 
 Editer mkinitcpio
+```bash
+$ vim /etc/mkinitcpio.conf
 ```
-vim /etc/mkinitcpio.conf
-	
+
+```text	
 	HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 btrfs filesystems)
 	Si VM virtIO MODULES=(virtio virtio_blk virtio_pci virtio_net)
 ```
 
 Générer initramfs
-```
-mkinitcpio -p linux-zen
+```bash
+$ mkinitcpio -p linux-zen
 ```
 
 Mot de passe super-administrateur root
-```
-passwd
+```bash
+$ passwd
 ```
 
 Installation de paquets supplémentaires:
-```
-pacman - S networkmanager network-manager-applet dialog wpa_supplicant reflector linux-zen-headers avahi xdg-user-dirs xdg-utils gvfs nfs-utils inetutils dnsutils cups hplip bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng ntp 
+```bash
+$ pacman - S networkmanager network-manager-applet dialog wpa_supplicant reflector linux-zen-headers avahi xdg-user-dirs xdg-utils gvfs nfs-utils inetutils dnsutils cups hplip bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng ntp 
 ```
 
 Configuration de NTP:
+```bash
+$ vim /etc/ntp.conf
 ```
-vim /etc/ntp.conf
 
+```text
 server 0.fr.pool.ntp.org iburst
 server 1.fr.pool.ntp.org iburst
 server 2.fr.pool.ntp.org iburst
@@ -433,25 +437,28 @@ server 3.fr.pool.ntp.org iburst
 ```
 
 Driver carte graphique, openGL, touchpad
-```
-pacman -S xf86-video-intel xf86-input-libinput mesa
+```bash
+$ pacman -S xf86-video-intel xf86-input-libinput mesa
 ```
 
 Installation de QEMU/KVM pour la virtualisation
-```
-pacman -S virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
+```bash
+$ pacman -S virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
 ```
 
 ### Configuration de systemd-boot
 
-```
-bootctl --esp=/boot install
+```bash
+$ bootctl --esp=/boot install
 ```
 
 Configuration générale du chargeur
 
+```bash
+$ vim /boot/loader/loader.conf
 ```
-vim /boot/loader/loader.conf
+
+```text
 default arch.conf
 editor no
 timeout 4
@@ -460,15 +467,17 @@ console-mode max
 
 Récupérez le champs UUID= de la partition LUKS
 
-```
-blkid | grep /dev/sda2
+```bash
+$ blkid | grep /dev/sda2
 ```
 
 Configuration d’une entrée du menu de démarrage.
 
+```bash
+$ vim /boot/loader/entries/arch.conf
 ```
-vim /boot/loader/entries/arch.conf
 
+```text
 title Arch Linux
 linux /vmlinuz-linux-zen
 initrd <cpu>-ucode.img
@@ -478,93 +487,95 @@ options rd.luks.uuid=<UUID> root=/dev/mapper/vg-arch rootflags=subvol=@ rw
 
 ### Activer les services systemD
 
-```
-systemctl enable NetworkManager
-systemctl enable cups
-systemctl enable sshd
-systemctl enable avahi-daemon
-systemctl enable tlp
-systemctl enable reflector.timer
-systemctl enable libvirtd
-systemctl enable acpid
-systemctl enable ufw
-systemctl enable syslog-ng@default
-systemctl enable ntpd
+```bash
+$ systemctl enable NetworkManager
+$ systemctl enable cups
+$ systemctl enable sshd
+$ systemctl enable avahi-daemon
+$ systemctl enable tlp
+$ systemctl enable reflector.timer
+$ systemctl enable libvirtd
+$ systemctl enable acpid
+$ systemctl enable ufw
+$ systemctl enable syslog-ng@default
+$ systemctl enable ntpd
 ```
 
 ### Créer un utilisateur
 
-```
-useradd -mG storage,wheel,power -s /bin/bash trivial
-passwd trivial
+```bash
+$ useradd -mG storage,wheel,power -s /bin/bash trivial
+$ passwd trivial
 ```
 
-```
-usermod -aG libvirt trivial
+```bash
+$ usermod -aG libvirt trivial
 ```
 
 Ajout dans sudoers de l'utilisateur
-```
-echo "trivial ALL=(ALL) ALL" >> /etc/sudoers.d/trivial
+```bash
+$ echo "trivial ALL=(ALL) ALL" >> /etc/sudoers.d/trivial
 ```
 
 Démonter et reboot
-```
-exit
-umount -R /mnt
-reboot
+```bash
+$ exit
+$ umount -R /mnt
+$ reboot
 ```
 
 ### Post-installation
 
 Check ip adresse
-```
-ip a
+```bash
+$ ip a
 ```
 
 Connexion au wifi/ethernet via Networkmanager TUI
-```
-nmtui
+```bash
+$ nmtui
 ```
 
 Synchronisation repository MAJ + reflector
 
 Activer multilib:
+```bash
+$ sudo vim /etc/pacman.conf
 ```
-sudo vim /etc/pacman.conf
 
+```text
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
 
-```
-sudo reflector --verbose --country 'France' -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
+```bash
+$ sudo reflector --verbose --country 'France' -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
 
-sudo pacman -Syu
+$ sudo pacman -Syu
 ```
 
 Installation AUR Helper
-```
-mkdir sources 
-cd sources 
-git clone https://aur.archlinux.org/yay.git 
-cd yay 
-makepkg -si 
+```bash
+$ mkdir sources 
+$ cd sources 
+$ git clone https://aur.archlinux.org/yay.git 
+$ cd yay 
+$ makepkg -si 
 ```
 
 Installation de timeshift et zramd
-```
-yay -S timeshift-bin zramd
+```bash
+$ yay -S timeshift-bin zramd
 ```
 
-```
-sudo systemctl enable zramd.service
-sudo systemctl start zramd.service
+```bash
+$ sudo systemctl enable zramd.service
+$ sudo systemctl start zramd.service
 ```
 
 Vérification que la swap est active:
-```
-lsblk -l
+```bash
+$ lsblk -l
 ```
 
 
@@ -575,95 +586,95 @@ Post-installation:
 Prérequis avoir `base-devel`, `git` et `wget`
 
 Listing des packages et dépendances:
-```
-yay -S hyprland waybar-hyprland eww-wayland mako swaybg \
-       kitty fish starship z fzf mclfy neovim broot \
-       pipewire wireplumber \
-       cliphist grimblast-git ffmpeg wf-recorder viewnior \
-       polkit-kde-agent xdg-desktop-portal-hyprland-git \
-       qt5-wayland qt6-wayland \
-       wlogout swaylock-effects ly \
-       webcord weechat fractal \
-       cmus spotify-tui vlc ytfzf-git mpv haxor-news \
-       cmatrix neofetch \
-       ripgrep exa bat duf thefuck aria2 ack transfer.sh \
-       lazygit hub ctop dockly httpie \
-       xiringuito neoss mtr \
-       howdoi tldr navi rebound \
-       python python-pip python-virtualenv \
-       firefox obsidian \
-       adobe-source-han-sans-otc-fonts ttf-droid ttf-dejavu noto-fonts noto-fonts-emoji nerd-fonts-meta \
-       gtk-cyberpunk-neon-theme-git \
-       fcitx-im \
-       udiskie \
-       cointop libqalculate rclone asciinema figlet cpufetch gifski \
+```bash
+$ yay -S hyprland waybar-hyprland eww-wayland mako swaybg \
+         kitty fish starship z fzf mclfy neovim broot \
+         pipewire wireplumber \
+         cliphist grimblast-git ffmpeg wf-recorder viewnior \
+         polkit-kde-agent xdg-desktop-portal-hyprland-git \
+         qt5-wayland qt6-wayland \
+         wlogout swaylock-effects ly \
+         webcord weechat fractal \
+         cmus spotify-tui vlc ytfzf-git mpv haxor-news \
+         cmatrix neofetch \
+         ripgrep exa bat duf thefuck aria2 ack transfer.sh \
+         lazygit hub ctop dockly httpie \
+         xiringuito neoss mtr \
+         howdoi tldr navi rebound \
+         python python-pip python-virtualenv \
+         firefox obsidian mousepad \
+         adobe-source-han-sans-otc-fonts ttf-droid ttf-dejavu noto-fonts noto-fonts-emoji nerd-fonts-meta \
+         gtk-cyberpunk-neon-theme-git \
+         fcitx-im \
+         udiskie \
+         cointop libqalculate rclone asciinema figlet cpufetch gifski \
 ```
 
 Installation de youtube-dl:
-```
-pip install yt-dlp
+```bash
+$ pip install yt-dlp
 ```
 
 Installation de terminal velocity
-```
-pip install terminal_velocity
+```bash
+$ pip install terminal_velocity
 
 ```
 
 Installation IPTV:
-```
-sudo wget https://raw.githubusercontent.com/shahin8r/iptv/master/iptv -qO /usr/local/bin/iptv && sudo chmod +x /usr/local/bin/iptv
+```bash
+$ sudo wget https://raw.githubusercontent.com/shahin8r/iptv/master/iptv -qO /usr/local/bin/iptv && sudo chmod +x /usr/local/bin/iptv
 
 ### Run playlist:
 
-iptv https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+$ iptv https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
 ```
 
 Configurer Tordl:
-```
-git clone https://github.com/X0R0X/cli-torrent-dl.git
-cd ~/cli-torrent-dl
-./setup.sh
+```bash
+$ git clone https://github.com/X0R0X/cli-torrent-dl.git
+$ cd ~/cli-torrent-dl
+$ ./setup.sh
 
 # configurer client torrent (deluge)
-nano ~/.config/torrentdl/config.json
+$ nano ~/.config/torrentdl/config.json
 
 ```
 Autostart authentification agent:
-```
-exec-once=/usr/lib/polkit-kde-authentication-agent-1
+```bash
+$ exec-once=/usr/lib/polkit-kde-authentication-agent-1
 ```
 
 Activer le service au démarrage ly:
-```
-sudo systemctl enable ly.service
+```bash
+$ sudo systemctl enable ly.service
 ```
 
 Configurer fish comme shell par défault:
-```
-echo /bin/fish | sudo tee -a /etc/shells
-chsh -s /bin/fish
+```bash
+$ echo /bin/fish | sudo tee -a /etc/shells
+$ chsh -s /bin/fish
 ```
 
 Editer fichier de configuration:
-```
-nvim ~/.config/hypr/hyprland.conf
+```bash
+$ nvim ~/.config/hypr/hyprland.conf
 ```
 
 Lancer automatiquement le montage USB, etc:
-```
+```text
 exec-once = udiskie &
 ```
 Clavier configuration ajouter:
-```
+```text
 device:nom-clavier {
     kb_layout=fr,us
 }
 ```
 
 Commande pour switcher entre les claviers:
-```
-hyprctl switchxkblayout nom-clavier fr
+```bash
+$ hyprctl switchxkblayout nom-clavier fr
 ```
 
 
@@ -672,13 +683,8 @@ NOTA: Pour activer la prise en charge Pinyin, utiliser fcitx.
 **Codec Multimédia**
 
 Nous allons installer l’ensemble des greffons gstreamer qui est le framework utilisé par de nombreux environnements de bureau pour gérer le multimedia.
-```
-sudo pacman -S gst-plugins-{base,good,bad,ugly} gst-libav
-```
-
-Installation de navigateurs web
-```
-sudo pacman -S firefox
+```bash
+$ sudo pacman -S gst-plugins-{base,good,bad,ugly} gst-libav
 ```
 
 Extension essentiel sur Firefox:
@@ -690,15 +696,15 @@ Extension essentiel sur Firefox:
 * Privacy Badger
 
 ```
-reboot
+$ reboot
 ```
 
 ### Configuration des applications
 
 #### Application pour développeur et designer
 
-```
-sudo pacman -S keepass gimp vlc filezilla inkscape deluge deluge-gtk weechat cmus galculator discord veracrypt kazam yt-dlp calibre obsidian neofetch mousepad
+```bash
+$ sudo pacman -S keepass gimp vlc filezilla inkscape deluge deluge-gtk galculator veracrypt kazam calibre
 ```
 
 Embedded (microcontroller, AVR, etc...) - Pour utiliser Arduino et PlatformIO, installer et configurer:
@@ -709,73 +715,73 @@ Embedded (microcontroller, AVR, etc...) - Pour utiliser Arduino et PlatformIO, i
 
 
 Documentation des langages
-```
-yay -S zeal
+```bash
+$ yay -S zeal
 ```
 NOTA: Problème de lenteur de compilation de qt5-webkit
 
 Installation des outils de développeurs C/C++, Clang, Ruby
+```bash
+$ sudo pacman -S llvm clang nodejs npm ctags
 ```
-sudo pacman -S llvm clang nodejs npm ctags
+RVM Ruby
+```bash
+$ sudo gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
-### RVM Ruby
-
-sudo gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-
-\curl -sSL https://get.rvm.io | bash -s stable --ruby --gems=pry
+$ \curl -sSL https://get.rvm.io | bash -s stable --ruby --gems=pry
 
 ### Verifier l'installation dans le terminal 
-source /etc/profile.d/rvm.sh
+$ source /etc/profile.d/rvm.sh
 
 ### Install Gems
-gem install
+$ gem install <gems>
 
 ### Integration avec fish
 
-curl -L --create-dirs -o ~/.config/fish/functions/rvm.fish https://raw.github.com/lunks/fish-nuggets/master/functions/rvm.fish
+$ curl -L --create-dirs -o ~/.config/fish/functions/rvm.fish https://raw.github.com/lunks/fish-nuggets/master/functions/rvm.fish
 
-echo "rvm default" >> ~/.config/fish/config.fish
+$ echo "rvm default" >> ~/.config/fish/config.fish
 
 ```
 
 Install Wat, outil communautaire documentation:
-```
-npm install -g wat
+```bash
+$ npm install -g wat
 ```
 
 
 Installation de Jedi autocompletion pour python
-```
-pip install jedi
+```bash
+$ pip install jedi
 ```
 
 Editeur de texte VSCodium
-```
-yay - S vscodium-bin
+```bash
+$ yay - S vscodium-bin
 ```
 
 Installation de Java Eclipse
-```
-sudo pacman -S jdk-openjdk
-yay -S eclipse-java
+```bash
+$ sudo pacman -S jdk-openjdk
+$ yay -S eclipse-java
 ```
 
 Outil de mind mapping (java)
-```
-yay -S freemind
+```bash
+$ yay -S freemind
 ```
 
 **Configuration de Neovim**
 
 Installation du gestionnaire de plugin "vim-plug" cf: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
-```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+```bash
+$ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
 
 init.vim
-```
+```text
 " Neovim configuration file init.vim
 " author: Anthony J.R Le Goff legoff.ant@gmail.com
 " date: 16th april 2022
@@ -838,97 +844,97 @@ let g:airline_powerline_fonts = 1
 #### Outils de Hacking, pentesting, bug bounty, CTF
 
 Installation de dépot BlackArch >> [https://blackarch.org/](https://blackarch.org/)
-```
-curl -O https://blackarch.org/strap.sh
-sha1sum strap.sh # doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c
-sudo chmod +x strap.sh
-sudo ./strap.sh
+```bash
+$ curl -O https://blackarch.org/strap.sh
+$ sha1sum strap.sh # doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c
+$ sudo chmod +x strap.sh
+$ sudo ./strap.sh
 ```
 
-```
-sudo pacman -S blackman
+```bash
+$ sudo pacman -S blackman
 ```
 Vous pouvez installer tous les outils Blackarch via cette commande (recommandé):
-```
-sudo blackman -a
+```bash
+$ sudo blackman -a
 ```
 SINON Installer les outils un par un:
 
 Installation des outils basics
-```
-sudo pacman -S nmap impacket wireshark-qt tcpdump hashcat john proxychains-ng exploitdb httpie metasploit armitage bind-tools radare2 sqlmap wpscan xclip beef set ufonet ettercap w3af merlin-server
+```bash
+$ sudo pacman -S nmap impacket wireshark-qt tcpdump hashcat john proxychains-ng exploitdb httpie metasploit armitage bind-tools radare2 sqlmap wpscan xclip beef set ufonet ettercap w3af merlin-server
 
 ```
 L'installation d'OpenVAS est un peu plus complexe, voir la page: [https://wiki.archlinux.org/title/OpenVAS](https://wiki.archlinux.org/title/OpenVAS)
 
 Configuration WordLists
-```
-mkdir -p /usr/share/wordlists
-wget -q https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz -O /usr/share/wordlists/rockyou.txt.tar.gz
-wget -q https://github.com/danielmiessler/SecLists/raw/master/Discovery/Web-Content/common.txt -O /usr/share/wordlists/common.txt
+```bash
+$ mkdir -p /usr/share/wordlists
+$ wget -q https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz -O /usr/share/wordlists/rockyou.txt.tar.gz
+$ wget -q https://github.com/danielmiessler/SecLists/raw/master/Discovery/Web-Content/common.txt -O /usr/share/wordlists/common.txt
 ```
 
 #### Outils pour écrivain et chercheur
-```
-sudo pacman -S ghostwriter pdfjs pandoc texmaker manuskript libreoffice-still libreoffice-still-fr hunspell hunspell-fr
+```bash
+$ sudo pacman -S ghostwriter pdfjs pandoc texmaker manuskript libreoffice-still libreoffice-still-fr hunspell hunspell-fr
 ```
 
 Extension Grammalecte et gestion de bibliographie
-```
-yay -S zotero libreoffice-extension-grammalecte-fr
+```bash
+$ yay -S zotero libreoffice-extension-grammalecte-fr
 ```
 
 #### Calcul numérique et scientifique (remplace Matlab)
 
-```
-python -m pip install jupyter scipy numpy matplotlib pandas ipython
+```bash
+$ python -m pip install jupyter scipy numpy matplotlib pandas ipython
 ```
 
 Calcul Formel
-```
-sudo pacman -S sagemath
+```bash
+$ sudo pacman -S sagemath
 ```
 
 ### Sauvegarde
 
 Installation du client SAMBA
-```
-sudo pacman -S smbclient gvfs-smb
+```bash
+$ sudo pacman -S smbclient gvfs-smb
 ```
 Redémarrer le PC pour prendre en compte la découverte du réseau local.
 
 Ensuite rechercher votre serveur dans thunar en tapant:
-```
+```text
 smb://192.168.X.X
 ```
 
 Pour cela modifier en fonction d'IP de votre serveur.
 
 Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.
-```
-sudo pacman -S deja-dup
+```bash
+$ sudo pacman -S deja-dup
 ```
 
 ### Par-feu ufw
 
 Activation des logs (très utile pour la suite) :
-```
-sudo ufw logging on
+```bash
+$ sudo ufw logging on
 ```
 
 Rejet par défaut des connexions entrantes :
-```
-sudo ufw default deny incoming
+```bash
+$ sudo ufw default deny incoming
 ```
 
 Autorisation des connexions sortantes :
-```
-sudo ufw default allow outgoing
+```bash
+$ sudo ufw default allow outgoing
 ```
 
 Recherchement des règles du pare-feu pour finir :
-```
-sudo ufw reload
+```bash
+$ sudo ufw reload
 ```
 
 ### Services Cloud
@@ -940,34 +946,34 @@ Aller sur le site [https://mega.io/desktop](https://mega.io/desktop)
 Sélectionner Arch Linux et télécharger l'application.
 
 Pour installer sélectionner le package via:
-```
-sudo pacman -U package
+```bash
+$ sudo pacman -U <package>
 ```
 
 ### Service VPN Proton
 
 Configurer un VPN. Installer le metapackage sur AUR:
-```
-yay -S protonvpn
+```bash
+$ yay -S protonvpn
 ```
 
 CLI (Command Line Interface)
 
 Login:
-```
-protonvpn-cli login <your_protonmail>
+```bash
+$ protonvpn-cli login <your_protonmail>
 ```
 
 Connect to the VPN:
-```
-protonvpn-cli connect
+```bash
+$ protonvpn-cli connect
 ```
 
 Pour créer un compte protonVPN: [https://protonvpn.com/free-vpn/linux/](https://protonvpn.com/free-vpn/linux/)
 
 Pour voir le status de la connexion:
-```
-protonvpn-cli status
+```bash
+$ protonvpn-cli status
 ```
 
 Vérifier que votre adresse IP pointe sur le VPN: [https://www.whatismyip.com/fr/](https://www.whatismyip.com/fr/)
