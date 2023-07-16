@@ -763,10 +763,15 @@ $&lt;span class="w"&gt; &lt;/span&gt;wget&lt;span class="w"&gt; &lt;/span&gt;-q&
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Terminal: Monter le serveur SMB:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt;  &lt;/span&gt;mount&lt;span class="w"&gt; &lt;/span&gt;-t&lt;span class="w"&gt; &lt;/span&gt;smbfs&lt;span class="w"&gt; &lt;/span&gt;-W&lt;span class="w"&gt; &lt;/span&gt;workgroup&lt;span class="w"&gt; &lt;/span&gt;//user@IPSERVER/folder&lt;span class="w"&gt; &lt;/span&gt;./mntpoint&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;possible&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;choisir&lt;span class="w"&gt; &lt;/span&gt;dossier&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;montage&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt;  &lt;/span&gt;mount&lt;span class="w"&gt; &lt;/span&gt;-t&lt;span class="w"&gt; &lt;/span&gt;smbfs&lt;span class="w"&gt; &lt;/span&gt;-W&lt;span class="w"&gt; &lt;/span&gt;workgroup&lt;span class="w"&gt; &lt;/span&gt;//user:password@IPSERVER/folder&lt;span class="w"&gt; &lt;/span&gt;./mntpoint&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;possible&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;choisir&lt;span class="w"&gt; &lt;/span&gt;dossier&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;montage&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Autres méthodes &lt;a href="https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/"&gt;8 ways to mount smbfs samba file system in linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Penser à éditer `fstab' pour ajouter le serveur SMB en permanence. Ex:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;vim&lt;span class="w"&gt; &lt;/span&gt;/etc/fstab
+//192.168.0.1/share1&lt;span class="w"&gt; &lt;/span&gt;/mnt&lt;span class="w"&gt; &lt;/span&gt;smbfs&lt;span class="w"&gt; &lt;/span&gt;rw,user,username&lt;span class="o"&gt;=&lt;/span&gt;trivial,password&lt;span class="o"&gt;=&lt;/span&gt;xylBJRS8&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;deja-dup
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
