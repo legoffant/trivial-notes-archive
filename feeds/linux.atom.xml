@@ -1,5 +1,815 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-07-11T19:54:00+02:00</updated><entry><title>StarBook 14</title><link href="/starbook-14.html" rel="alternate"></link><published>2023-07-11T19:54:00+02:00</published><updated>2023-07-11T19:54:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-11:/starbook-14.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Il y a très peu de marque de laptop qui livre en natif sous GNU/Linux. Et en France c'est encore pire car les grands constructeurs comme Lenovo et Dell qui font des promesses, en réalité ce n'est que du vent alors que la boutique US généralement ont des alternatives open source en système d'exploitation.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-07-16T10:36:00+02:00</updated><entry><title>Arch Install Linux Zen Kernel + LUKS2 + LVM + BTRFS + systemd-boot + hyprland + Fish shell</title><link href="/arch-install-linux-zen-kernel-luks2-lvm-btrfs-systemd-boot-hyprland-fish-shell.html" rel="alternate"></link><published>2023-07-16T10:36:00+02:00</published><updated>2023-07-16T10:36:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-16:/arch-install-linux-zen-kernel-luks2-lvm-btrfs-systemd-boot-hyprland-fish-shell.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Mise à jours en 07/2023 de mon installation d'Arch Linux avec quelques nouveautés en particulier la prise en charge de snapshot avec BTRFS, modification container luks2, ajout kernel linux-zen, bureau hyprland.&lt;/p&gt;
+&lt;p&gt;Voila sur quoi je travail sur ma nouvelle installation d'Arch Linux en mode dev dans une VM sous Proxmox, avant de déployer sur mon thinkpad Helix. Tout fonctionne pour l'instant jusqu'à l'installation du bureau hyprland.&lt;/p&gt;
+&lt;p&gt;Ce qui est une grosse mise à jour de ma machine de production actuel &amp;gt; &lt;a href="https://gist.github.com/legoffant/8a7503430d2663549f982ea7f97622f3"&gt;code l'ancienne config sous LUKS + LVM + EXT4 + GRUB + XFCE + Zsh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Inclus:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Editeur de texte Neovim avec l'autocompletion,ctags du code en C/C++ et Python&lt;/li&gt;
+&lt;li&gt;Shell Fish&lt;/li&gt;
+&lt;li&gt;Synchro Cloud MEGA&lt;/li&gt;
+&lt;li&gt;VPN Proton&lt;/li&gt;
+&lt;li&gt;L'aide à l'écriture Manuskript&lt;/li&gt;
+&lt;li&gt;Second cerveau Obsidian&lt;/li&gt;
+&lt;li&gt;VScodium&lt;/li&gt;
+&lt;li&gt;Calcul numérique avec les notebook Jupyter en Python&lt;/li&gt;
+&lt;li&gt;Calcul Formel Sagemath&lt;/li&gt;
+&lt;li&gt;Recherche en vulnérabilité et le repo Blackarch&lt;/li&gt;
+&lt;li&gt;Interpréteur Ruby Pry via RVM&lt;/li&gt;
+&lt;li&gt;Launcher fzf&lt;/li&gt;
+&lt;li&gt;Machine virtuelle KVM et Virt-manager&lt;/li&gt;
+&lt;li&gt;Gestion du par-feu ufw&lt;/li&gt;
+&lt;li&gt;Navigateur Firefox&lt;/li&gt;
+&lt;li&gt;Gestion de bibliothèque ebook avec calibre et bibliographie avec Zotero&lt;/li&gt;
+&lt;li&gt;Editeur LaTex texmaker&lt;/li&gt;
+&lt;li&gt;Editeur markdown Ghostwriter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Pour qui c'est destiné?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les hackers&lt;/li&gt;
+&lt;li&gt;Ingénieurs et dévéloppeurs informatique&lt;/li&gt;
+&lt;li&gt;Chercheurs&lt;/li&gt;
+&lt;li&gt;Ecrivains&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Peut-on faire du jeu-video?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Installer Steam est possible, ou Minecraft, vous serez limité en ressource graphique.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S minecraft-launcher
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Stack:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS: &lt;a href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chiffrement: &lt;a href="https://fr.wikipedia.org/wiki/Dm-crypt"&gt;dmcrypt-LUKS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bootloader: &lt;a href="https://systemd.network/systemd-boot.html"&gt;systemd-boot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Système de fichier: &lt;a href="https://fr.wikipedia.org/wiki/Btrfs"&gt;BTRFS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Shell: &lt;a href="https://fishshell.com/"&gt;Fish&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Windows Manager: &lt;a href="https://hyprland.org/"&gt;hyprland&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Terminal: &lt;a href="https://sw.kovidgoyal.net/kitty/"&gt;Kitty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Prompt: &lt;a href="https://starship.rs/"&gt;Starship.rs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;File Manager: &lt;a href="https://dystroy.org/broot/"&gt;Broot&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Launcher: &lt;a href="https://archlinux.org/packages/community/x86_64/synapse/"&gt;fzf&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Navigation rapide directory: &lt;a href="https://github.com/rupa/z"&gt;z&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Historique intelligent: &lt;a href="https://github.com/cantino/mcfly"&gt;mcFly&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Corriger et fixer des erreurs, typos de la commande précédente: &lt;a href="https://github.com/nvbn/thefuck"&gt;thefuck&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Moderne replacement pour ls: &lt;a href="https://github.com/ogham/exa"&gt;exa&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;cat clone avec coloration syntaxique et git integration : &lt;a href="https://github.com/sharkdp/bat"&gt;bat&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Disque monitoring: &lt;a href="https://github.com/muesli/duf"&gt;duf&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Outil de téléchargement supportant HTTP/HTTPS, FTP, SFTP, BitTorrent, Metalink: &lt;a href="https://aria2.github.io/"&gt;aria2&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Recherche récursive dans le directory à base de pattern de regex: &lt;a href="https://github.com/BurntSushi/ripgrep"&gt;ripgrep&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;grep-like optimisé pour la recherche dans le code source: &lt;a href="https://github.com/beyondgrep/ack3"&gt;ack3&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Interactive monitoring des ressources, gestion des processus: &lt;a href="https://htop.dev/"&gt;htop&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Rapide et facile, outil de partage de fichier: &lt;a href="https://transfer.sh/"&gt;transfer.sh&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Virtualisation: &lt;a href="https://virt-manager.org/"&gt;Virt-Manager QEMU/KVM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lecteur audio: &lt;a href="https://cmus.github.io/"&gt;CMUS&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Lecteur video: &lt;a href="https://www.videolan.org/vlc/"&gt;Vlc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spotify TUI client: &lt;a href="https://github.com/Rigellute/spotify-tui"&gt;spotify-tui&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Recherche et regarder des vidéos sur Youtube: &lt;a href="https://github.com/pystardust/ytfzf"&gt;ytfzf&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Télécharger de l'audio et des vidéos sur Youtube + d'autres sites: &lt;a href="https://github.com/yt-dlp/yt-dlp"&gt;yt-dlp&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Simple iptv player avec fuzzy finder: &lt;a href="https://github.com/shahin8r/iptv"&gt;IPTV&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Utilitaire pour rechercher et télécharger des liens torrents: &lt;a href="https://github.com/X0R0X/cli-torrent-dl"&gt;tordl&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;IRC: &lt;a href="https://weechat.org/"&gt;Weechat&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Editeur de texte: &lt;a href="http://neovim.io/"&gt;Neovim&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Contrôle de version: &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Commande Git TUI: &lt;a href="https://github.com/jesseduffield/lazygit"&gt;lazygit&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Extension ligne de commande Git intégrant Github: &lt;a href="https://hub.github.com/"&gt;hub&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Interface de monitoring de container Docker: &lt;a href="https://github.com/bcicen/ctop"&gt;ctop&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Management des containers Dockers et services: &lt;a href="https://github.com/lirantal/dockly"&gt;dockly&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;HTTP Client pour les API: &lt;a href="https://github.com/httpie/httpie"&gt;HTTPie&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Rapide prise de note: &lt;a href="https://vhp.github.io/terminal_velocity/"&gt;terminal velocity&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;SSH + VPN connexion: &lt;a href="https://github.com/ivanilves/xiringuito"&gt;xiringuito&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;User-friendly détails et statistiques de sockets TUI: &lt;a href="https://github.com/PabloLec/neoss"&gt;neoss&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Analyseur de packet réseau: &lt;a href="https://archlinux.org/packages/?name=wireshark-cli"&gt;wireshark-cli&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Force TCP connection avec un proxy utilisant TOR, SOCK, HTTP: &lt;a href="https://github.com/haad/proxychains"&gt;proxychains&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Outil de diagnostique réseau: &lt;a href="https://github.com/traviscross/mtr"&gt;mtr&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;TUI Client pour Network Manager pour configurer le réseau: &lt;a href="https://wiki.archlinux.org/title/NetworkManager"&gt;nmtui&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Notepad: &lt;a href="https://archlinux.org/packages/extra/x86_64/mousepad/"&gt;Mousepad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Calculatrice: &lt;a href="https://archlinux.org/packages/community/x86_64/galculator/"&gt;Galculator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;P2P Torrent: &lt;a href="https://deluge-torrent.org/"&gt;Deluge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Navigateur internet: &lt;a href="https://www.mozilla.org/fr/firefox/new/"&gt;Firefox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Documentation langage: &lt;a href="https://zealdocs.org/"&gt;Zeal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gestionnaire de mot de passe: &lt;a href="https://keepass.info/"&gt;Keepass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Client Serveur FTP: &lt;a href="https://filezilla-project.org/"&gt;Filezilla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Carte Mentale: &lt;a href="https://freemind.fr.softonic.com/"&gt;Freemind&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Editeur d'image: &lt;a href="https://www.gimp.org/"&gt;Gimp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;EDI Java: &lt;a href="https://www.eclipse.org/downloads/packages/release/kepler/sr1/eclipse-ide-java-developers"&gt;Eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Compilateur: &lt;a href="https://gcc.gnu.org/"&gt;GCC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Interpréteur Ruby: &lt;a href="https://github.com/ruby/irb"&gt;IRB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Notebook Python: &lt;a href="https://jupyter.org/"&gt;Jupyter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Container chiffré: &lt;a href="https://www.veracrypt.fr/code/VeraCrypt/"&gt;Veracrypt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Outil d'écrivain: &lt;a href="https://www.theologeek.ch/manuskript/"&gt;Manuskript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Calcul formel: &lt;a href="https://www.sagemath.org/fr/"&gt;SageMath&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Par-feu: &lt;a href="http://gufw.org/"&gt;Gufw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sauvegarde: &lt;a href="https://apps.gnome.org/fr/app/org.gnome.DejaDup/"&gt;Deja-dup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cloud: &lt;a href="https://mega.nz/"&gt;MEGA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;VPN: &lt;a href="https://protonvpn.com/"&gt;Proton&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gestion bibliographique: &lt;a href="https://www.zotero.org/"&gt;Zotéro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Base de connaissance: &lt;a href="https://obsidian.md/"&gt;Obsidian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wiki local: &lt;a href="https://www.zim-wiki.org/index.html"&gt;Zim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Editeur LaTex: &lt;a href="https://www.xm1math.net/texmaker/"&gt;Texmaker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Office: &lt;a href="https://cryptpad.fr/"&gt;Cryptpad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Flowchart &amp;amp; Diagram: &lt;a href="https://www.draw.io/index.html"&gt;draw.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Documentation langage en ligne: &lt;a href="https://devdocs.io/"&gt;https://devdocs.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Social Bookmarking: &lt;a href="https://www.pearltrees.com/"&gt;Pearltrees&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Explication détaillée d'une ligne de commande: &lt;a href="https://www.explainshell.com/"&gt;explainshell&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Construit, test et debug des expressions régulières: &lt;a href="https://regex101.com/"&gt;Regex101&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Gestion communautaire de man pages: &lt;a href="https://tldr.sh/"&gt;tldr&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Réponse instantannée à propos du code: &lt;a href="https://github.com/gleitz/howdoi"&gt;howdoi&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Construction communautaire de docs et cheatsheet, tous langages et frameworks: &lt;a href="https://github.com/dthree/wat"&gt;wat&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Outil interactif cheatsheet &lt;a href="https://github.com/denisidoro/navi"&gt;navi&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Recherche dans stack overflow quand une erreur ou une exception est levé dans le code à la compilation: &lt;a href="https://github.com/shobrook/rebound"&gt;rebound&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Utiliser chatGPT via l'API d'OpenAI: &lt;a href="https://github.com/0xacx/chatGPT-shell-cli"&gt;chatGPT-cli&lt;/a&gt; &amp;amp; &lt;a href="https://github.com/kharvd/gpt-cli"&gt;gpt-cli&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Surveiller le marché des cryptomonnaies: &lt;a href="https://github.com/cointop-sh/cointop"&gt;cointop&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Maths calculateur, calcul symbolique, matrice, équation: &lt;a href="https://github.com/Qalculate/libqalculate"&gt;Qalculate&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Sauvegarde chiffrée à distance (cloud service, NAS, etc): &lt;a href="https://rclone.org/"&gt;rclone&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Enregistrement de session terminal: &lt;a href="https://asciinema.org/"&gt;asciinema&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Un terminal façon Matrix: &lt;a href="https://github.com/matriex/cmatrix"&gt;cmatrix&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Generateur de bannière ASCII Art: &lt;a href="http://www.figlet.org/"&gt;figlet&lt;/a&gt; (term) &lt;/li&gt;
+&lt;li&gt;Information sur le système: &lt;a href="https://github.com/dylanaraps/neofetch"&gt;neofetch&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Recherche les informations de l'architecture du CPU: &lt;a href="https://github.com/Dr-Noob/cpufetch"&gt;cpufetch&lt;/a&gt; (term)&lt;/li&gt;
+&lt;li&gt;Partage de terminal: &lt;a href="https://duckly.com/"&gt;duckly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Encodage de gifs: &lt;a href="https://gif.ski/"&gt;gifski&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Listes d'applications spécifique à la recherche de vulnérabilité:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Exploration réseau et audit de sécurité: &lt;a href="https://nmap.org/"&gt;nmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Collection de classe Python pour travailler avec les protocoles réseaux: &lt;a href="https://www.secureauth.com/labs/open-source-tools/impacket/"&gt;impacket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Outil d'analyse de protocoles réseaux: &lt;a href="https://www.wireshark.org/"&gt;wireshark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Capturer et analyser les packets sur le réseau: &lt;a href="https://www.tcpdump.org/"&gt;tcpdump&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Outil de récupération de mot de passe: &lt;a href="https://hashcat.net/hashcat/"&gt;hashcat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sécurité audit de mot de passe: &lt;a href="https://www.openwall.com/john/"&gt;john&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Surfer anonymement via TOR ou un serveur proxy: &lt;a href="https://proxychains.sourceforge.net/"&gt;proxychains-ng&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Base de donnée d'exploits &lt;a href="https://www.exploit-db.com/"&gt;exploitdb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Client HTTP CLI &lt;a href="https://httpie.io/"&gt;httpie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Framework d'audit de sécurité, développement d'exploits: &lt;a href="https://www.metasploit.com/"&gt;metasploit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Front-end GUI pour metasploit, aide à l'utilisation &lt;a href="https://www.offensive-security.com/metasploit-unleashed/armitage/"&gt;armitage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bind outil d'administration DNS: &lt;a href=""&gt;bind-tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Framework de retro-ingénierie et analyse de fichier binaire r2: &lt;a href="https://rada.re/n/radare2.html"&gt;radare2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automatisation détection et exploitation injection SQL: &lt;a href="https://sqlmap.org/"&gt;sqlmap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wordpress security scanner: &lt;a href="https://wpscan.com/"&gt;wpscan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Outil de copy/coller clipboard en CLI: &lt;a href=""&gt;xclip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Navigateur exploitation framework: &lt;a href="https://beefproject.com/"&gt;beef&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Outils d'ingénierie sociale: &lt;a href="https://github.com/trustedsec/social-engineer-toolkit"&gt;set&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DDoS service outils: &lt;a href="https://ufonet.03c8.net/"&gt;ufonet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Traffic capture implementation d'attaque de type man-in-the-middle: &lt;a href="https://www.ettercap-project.org/index.html"&gt;ettercap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Web Application Attack and Audit Framework: &lt;a href="http://w3af.org/"&gt;w3af&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Vulnerability Assessment Scanner: &lt;a href="https://www.openvas.org/"&gt;openvas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Command and control server et agent post-exploitation HTTP/2 &lt;a href="https://github.com/Ne0nd0g/merlin"&gt;Merlin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;nota:  désactiver dans le bios le secure boot pour booter en USB.
+Vérifier le démarrage UEFI.&lt;/p&gt;
+&lt;h3&gt;pre-check configuration&lt;/h3&gt;
+&lt;p&gt;Charger le clavier français en tapant "loqdkeys fr"&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;loadkeys&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fr&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Verifier boot mode&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ls&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;firmware&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;efi&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;efivars&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Si&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;répertoire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;existe&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ordinateur supporte l&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;efi&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Connexion au réseau&lt;/h3&gt;
+&lt;p&gt;Vérifier le nom du reseau et si celui-ci est up&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nx"&gt;ip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;addr&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;show&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;vérifier la connexion internet&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ping -c 2 google.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Connexion au wifi&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;iwctl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;affichage du prompt [IWD]#&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;iwd&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;iwd&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;station&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;scan&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;iwd&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;station&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;get&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;networks&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;iwd&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;station&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;connect&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;SSID&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;MAJ&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo mount -o rw,remount /
+reflector --verbose --country &amp;#39;France&amp;#39; -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Syu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Check les disques&lt;/h3&gt;
+&lt;p&gt;Vérifier le nom de votre disque dur ou SSD (ie sda ou NVME)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;lsblk
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Partitionnement&lt;/h3&gt;
+&lt;p&gt;Destruction des données sécurisées du disque&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;shred -v -n 1 /dev/sda
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Utilitaire de partitionnement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gdisk /dev/sda
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Commande gdisk:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;o (écrire table de partition GPT)&lt;/li&gt;
+&lt;li&gt;n (nouvelle partition), default, 512MB, ef00&lt;/li&gt;
+&lt;li&gt;n (nouvelle partition), default, default, 8300&lt;/li&gt;
+&lt;li&gt;w (écrire et quitter)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mise en place de la table de partition:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;/dev/sda1 EFI ef00 512MB
+/dev/sda2 Linux 8300
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Formatage de la partition EFI&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkfs.vfat -F32 -n BOOT /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Chiffrement&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nx"&gt;cryptsetup&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;type&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;luks2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nx"&gt;cipher&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;aes&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;xts&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;plain64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;size&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;512&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nx"&gt;pbkdf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;argon2id&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nx"&gt;use&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;random&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nx"&gt;verify&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;passphrase&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;luksFormat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;sda2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ouverture du container chiffré:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cryptsetup luksOpen /dev/sda2 cryptlvm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Systèmes de fichiers&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;# Initialize un groupe physique de volume LVM
+pvcreate --dataalignment 4M /dev/mapper/cryptlvm
+
+# Initialise un groupe virtuel attaché au groupe physique
+vgcreate vg /dev/mapper/cryptlvm
+
+# Initialise une partition nommée &amp;#39;arch&amp;#39; dans le volume group &amp;#39;vg&amp;#39;
+$ lvcreate -l +100%FREE vg -n arch
+
+# Affiche les volumes logiques créés
+$ lvdisplay
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Formater la partition root&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkfs.btrfs -KL ARCH /dev/mapper/vg-arch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Monter les partitions:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mount /dev/mapper/vg-arch /mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer les subvolumes&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;btrfs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;subvolume&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;create&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;
+&lt;span class="n"&gt;btrfs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;subvolume&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;create&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;@home&lt;/span&gt;
+&lt;span class="n"&gt;btrfs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;subvolume&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;create&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;@_snapshot&lt;/span&gt;
+&lt;span class="n"&gt;brtfs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;subvolume&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mnt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Démonter la partition&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd /
+umount /mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Remonter le subvolume @&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mount -o noatime,space_cache=v2,compress=zstd,ssd,subvol=@ /dev/mapper/vg-arch /mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer les dossiers boot et home&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir -p /mnt/{home,_snapshot}
+lsblk -l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Monter le subvolume @home&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;mount&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;noatime&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;space_cache&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;v2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nf"&gt;compress&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;zstd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;ssd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;subvol&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;@home&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mapper&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;vg&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Monter le subvolume @_snapshot&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;mount&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;noatime&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;space_cache&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;v2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nf"&gt;compress&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;zstd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;ssd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;subvol&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;@_snapshot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mapper&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;vg&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;_snapshot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer et Monter la partition EFI&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir -p /mnt/boot
+mount /dev/sda1 /mnt/boot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Système de base&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;pacstrap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mnt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;devel&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;zen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;firmware&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;btrfs&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;progs&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tools&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;lvm2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cryptsetup&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;intel&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ucode&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fwupd&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Générer fstab&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;genfstab -L -p /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Chrooter l'environnement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;arch-chroot /mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Nom de la machine&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;echo archbox &amp;gt; /etc/hostname
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Edit &lt;code&gt;/etc/hosts&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;
+&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mf"&gt;1&lt;/span&gt;&lt;span class="w"&gt;                 &lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;
+&lt;span class="mf"&gt;127.0.1.1&lt;/span&gt;&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;archbox&lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="n"&gt;localdomain&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;archbox&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configuration de local paramétrage des langues&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim /etc/locale.gen
+en_US.UTF-8 UTF-8
+fr_FR.UTF-8 UTF-8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Génération du fichier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;locale-gen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configuration des langues par defaut&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim /etc/locale.conf
+LANG=&amp;quot;fr_FR.UTF-8&amp;quot;
+LC_COLLATE=&amp;quot;fr_FR.UTF-8&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Exporter le langage actuel pour création dans initramfs&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;fr_FR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;UTF&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Console, fonts, clavier azerty&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim /etc/vconsole.conf
+KEYMAP=fr-pc
+FONT=
+FONT_MAP=
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Assigne le fuseau horaire&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hwclock --systohc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Editer mkinitcpio&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim /etc/mkinitcpio.conf
+
+    HOOKS=(base systemd autodetect keyboard sd-vconsole modconf block sd-encrypt sd-lvm2 btrfs filesystems)
+    Si VM virtIO MODULES=(virtio virtio_blk virtio_pci virtio_net)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Générer initramfs&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkinitcpio -p linux-zen
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Mot de passe super-administrateur root&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de paquets supplémentaires:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pacman - S networkmanager network-manager-applet dialog wpa_supplicant reflector linux-zen-headers avahi xdg-user-dirs xdg-utils gvfs nfs-utils inetutils dnsutils cups hplip bash-completion openssh rsync acpi acpi_call tlp ipset ufw sof-firmware nss-mdns acpid ntfs-3g terminus-font nano man-db man-pages zip p7zip unzip tar htop tmux wget pciutils lshw syslog-ng ntp 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configuration de NTP:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim /etc/ntp.conf
+
+server 0.fr.pool.ntp.org iburst
+server 1.fr.pool.ntp.org iburst
+server 2.fr.pool.ntp.org iburst
+server 3.fr.pool.ntp.org iburst
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Driver carte graphique, openGL, touchpad&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pacman -S xf86-video-intel xf86-input-libinput mesa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de QEMU/KVM pour la virtualisation&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pacman -S virt-manager qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Configuration de systemd-boot&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;bootctl --esp=/boot install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configuration générale du chargeur&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;loader&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;loader&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+&lt;span class="n"&gt;default&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;arch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+&lt;span class="n"&gt;editor&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;no&lt;/span&gt;
+&lt;span class="n"&gt;timeout&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;
+&lt;span class="n"&gt;console&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;max&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Récupérez le champs UUID= de la partition LUKS&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;blkid | grep /dev/sda2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configuration d’une entrée du menu de démarrage.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;loader&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;entries&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;arch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+
+&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Linux&lt;/span&gt;
+&lt;span class="n"&gt;linux&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;vmlinuz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;zen&lt;/span&gt;
+&lt;span class="n"&gt;initrd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;cpu&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;-&lt;/span&gt;&lt;span class="n"&gt;ucode&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;img&lt;/span&gt;
+&lt;span class="n"&gt;initrd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;initramfs&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;zen&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;img&lt;/span&gt;
+&lt;span class="n"&gt;options&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;luks&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;uuid&lt;/span&gt;&lt;span class="o"&gt;=&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;UUID&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mapper&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;vg&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;arch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rootflags&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;subvol&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rw&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Activer les services systemD&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;NetworkManager&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cups&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sshd&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;avahi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;daemon&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tlp&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;reflector&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;timer&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libvirtd&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;acpid&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ufw&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;syslog&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ng&lt;/span&gt;&lt;span class="nv"&gt;@default&lt;/span&gt;
+&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ntpd&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Créer un utilisateur&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;useradd -mG storage,wheel,power -s /bin/bash trivial
+passwd trivial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;usermod -aG libvirt trivial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ajout dans sudoers de l'utilisateur&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;echo &amp;quot;trivial ALL=(ALL) ALL&amp;quot; &amp;gt;&amp;gt; /etc/sudoers.d/trivial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Démonter et reboot&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;exit&lt;/span&gt;
+&lt;span class="nv"&gt;umount&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;mnt&lt;/span&gt;
+&lt;span class="nv"&gt;reboot&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Post-installation&lt;/h3&gt;
+&lt;p&gt;Check ip adresse&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ip a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Connexion au wifi/ethernet via Networkmanager TUI&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;nmtui
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Synchronisation repository MAJ + reflector&lt;/p&gt;
+&lt;p&gt;Activer multilib:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;pacman&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;conf&lt;/span&gt;
+
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;multilib&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="k"&gt;Include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;pacman&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mirrorlist&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo reflector --verbose --country &amp;#39;France&amp;#39; -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist
+
+sudo pacman -Syu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation AUR Helper&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir sources 
+cd sources 
+git clone https://aur.archlinux.org/yay.git 
+cd yay 
+makepkg -si 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de timeshift et zramd&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S timeshift-bin zramd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo systemctl enable zramd.service
+sudo systemctl start zramd.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vérification que la swap est active:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;lsblk -l
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Configuration de hyprland&lt;/h3&gt;
+&lt;p&gt;Post-installation:&lt;/p&gt;
+&lt;p&gt;Prérequis avoir &lt;code&gt;base-devel&lt;/code&gt;, &lt;code&gt;git&lt;/code&gt; et &lt;code&gt;wget&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Listing des packages et dépendances:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;yay&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hyprland&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;waybar&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hyprland&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;eww&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;wayland&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mako&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;swaybg&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;kitty&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fish&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;starship&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fzf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mclfy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;neovim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;broot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;pipewire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wireplumber&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;cliphist&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;grimblast&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ffmpeg&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wf&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;recorder&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;viewnior&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;polkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;kde&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;agent&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;xdg&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;desktop&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;portal&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hyprland&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;qt5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;wayland&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;qt6&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;wayland&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;wlogout&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;swaylock&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;effects&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ly&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;webcord&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;weechat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fractal&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;cmus&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;spotify&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tui&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vlc&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ytfzf&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mpv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;haxor&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;news&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;cmatrix&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;neofetch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;ripgrep&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;exa&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;duf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;thefuck&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;aria2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ack&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;transfer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;lazygit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hub&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ctop&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;dockly&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;httpie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;xiringuito&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;neoss&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mtr&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;howdoi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tldr&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;navi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rebound&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;virtualenv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;firefox&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;obsidian&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;adobe&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;han&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sans&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;otc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fonts&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ttf&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;droid&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ttf&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dejavu&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;noto&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fonts&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;noto&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fonts&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;emoji&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;nerd&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fonts&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;meta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;gtk&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;cyberpunk&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;neon&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;theme&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;fcitx&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;im&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;udiskie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="n"&gt;cointop&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libqalculate&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rclone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;asciinema&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;figlet&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cpufetch&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;gifski&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de youtube-dl:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install yt-dlp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de terminal velocity&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install terminal_velocity
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation IPTV:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo wget https://raw.githubusercontent.com/shahin8r/iptv/master/iptv -qO /usr/local/bin/iptv &amp;amp;&amp;amp; sudo chmod +x /usr/local/bin/iptv
+
+### Run playlist:
+
+iptv https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configurer Tordl:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone https://github.com/X0R0X/cli-torrent-dl.git
+cd ~/cli-torrent-dl
+./setup.sh
+
+# configurer client torrent (deluge)
+nano ~/.config/torrentdl/config.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Autostart authentification agent:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;once&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;polkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;kde&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;authentication&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;agent&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Activer le service au démarrage ly:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo systemctl enable ly.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configurer fish comme shell par défault:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;echo /bin/fish | sudo tee -a /etc/shells
+chsh -s /bin/fish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Editer fichier de configuration:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;nvim ~/.config/hypr/hyprland.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lancer automatiquement le montage USB, etc:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;once&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;udiskie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Clavier configuration ajouter:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;nom&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;clavier&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;kb_layout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;fr&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;us&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Commande pour switcher entre les claviers:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hyprctl switchxkblayout nom-clavier fr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;NOTA: Pour activer la prise en charge Pinyin, utiliser fcitx.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Codec Multimédia&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Nous allons installer l’ensemble des greffons gstreamer qui est le framework utilisé par de nombreux environnements de bureau pour gérer le multimedia.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S gst-plugins-{base,good,bad,ugly} gst-libav
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de navigateurs web&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S firefox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Extension essentiel sur Firefox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DuckDuckGo Privacy Essentials&lt;/li&gt;
+&lt;li&gt;Smart HTTPS&lt;/li&gt;
+&lt;li&gt;Disconnect&lt;/li&gt;
+&lt;li&gt;U-Block Origin&lt;/li&gt;
+&lt;li&gt;Privacy Badger&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Configuration des applications&lt;/h3&gt;
+&lt;h4&gt;Application pour développeur et designer&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S keepass gimp vlc filezilla inkscape deluge deluge-gtk weechat cmus galculator discord veracrypt kazam yt-dlp calibre obsidian neofetch mousepad
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Embedded (microcontroller, AVR, etc...) - Pour utiliser Arduino et PlatformIO, installer et configurer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;arduino-cli&lt;/li&gt;
+&lt;li&gt;arduino-ide-bin (AUR)&lt;/li&gt;
+&lt;li&gt;platformio (AUR)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Documentation des langages&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S zeal
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;NOTA: Problème de lenteur de compilation de qt5-webkit&lt;/p&gt;
+&lt;p&gt;Installation des outils de développeurs C/C++, Clang, Ruby&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S llvm clang nodejs npm ctags
+
+### RVM Ruby
+
+sudo gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby --gems=pry
+
+### Verifier l&amp;#39;installation dans le terminal 
+source /etc/profile.d/rvm.sh
+
+### Install Gems
+gem install
+
+### Integration avec fish
+
+curl -L --create-dirs -o ~/.config/fish/functions/rvm.fish https://raw.github.com/lunks/fish-nuggets/master/functions/rvm.fish
+
+echo &amp;quot;rvm default&amp;quot; &amp;gt;&amp;gt; ~/.config/fish/config.fish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Install Wat, outil communautaire documentation:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;npm install -g wat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de Jedi autocompletion pour python&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install jedi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Editeur de texte VSCodium&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay - S vscodium-bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de Java Eclipse&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S jdk-openjdk
+yay -S eclipse-java
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Outil de mind mapping (java)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S freemind
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Configuration de Neovim&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Installation du gestionnaire de plugin "vim-plug" cf: &lt;a href="https://github.com/junegunn/vim-plug"&gt;https://github.com/junegunn/vim-plug&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="s s-Atom"&gt;sh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s s-Atom"&gt;c&lt;/span&gt; &lt;span class="s s-Atom"&gt;&amp;#39;curl -fLo &amp;quot;${XDG_DATA_HOME:-$HOME/.local/share}&amp;quot;/nvim/site/autoload/plug.vim --create-dirs \&lt;/span&gt;
+&lt;span class="s s-Atom"&gt;       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;init.vim&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ss"&gt;&amp;quot; Neovim configuration file init.vim&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Anthony&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Goff&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;legoff&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ant&lt;/span&gt;&lt;span class="nv"&gt;@gmail&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot; date: 16th april 2022&lt;/span&gt;
+
+&lt;span class="ss"&gt;:set number&lt;/span&gt;
+&lt;span class="ss"&gt;:set autoindent&lt;/span&gt;
+&lt;span class="ss"&gt;:set tabstop=4&lt;/span&gt;
+&lt;span class="ss"&gt;:set shiftwidth=4&lt;/span&gt;
+&lt;span class="ss"&gt;:set smarttab&lt;/span&gt;
+&lt;span class="ss"&gt;:set softtabstop=4&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mouse&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+
+&lt;span class="k"&gt;call&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;plug#begin&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-fugitive&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-surround&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/nerdtree&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/syntastic&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vim-airline/vim-airline&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tomasr/molokai&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;raimondi/delimitmate&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;kien/ctrlp.vim&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ryanoasis/vim-devicons&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;majutsushi/tagbar&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;branch&amp;#39;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;release&amp;#39;&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;UTF&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;
+
+&lt;span class="k"&gt;call&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;plug#end&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=%&lt;/span&gt;&lt;span class="n"&gt;#warningmsg&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=%&lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="n"&gt;SyntasticStatuslineFlag&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=%*&lt;/span&gt;
+
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_always_populate_loc_list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_auto_loc_list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_check_on_open&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_check_on_wq&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+
+&lt;span class="n"&gt;nnoremap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeFocus&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="n"&gt;nnoremap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTree&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="n"&gt;nnoremap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeToggle&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;nmap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;TagbarToggle&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="n"&gt;nmap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;CtrlP&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;colorscheme&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;molokai&lt;/span&gt;
+
+&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeDirArrowExpandable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;+&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeDirArrowCollapsible&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;~&amp;quot;&lt;/span&gt;
+
+&lt;span class="ss"&gt;&amp;quot; air-line&lt;/span&gt;
+&lt;span class="ss"&gt;let g:airline_powerline_fonts = 1&lt;/span&gt;
+
+
+&lt;span class="ss"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;CocInstall&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;coc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+&lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;CocInstall&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;coc&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;clangd&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Outils de Hacking, pentesting, bug bounty, CTF&lt;/h4&gt;
+&lt;p&gt;Installation de dépot BlackArch &amp;gt;&amp;gt; &lt;a href="https://blackarch.org/"&gt;https://blackarch.org/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -O https://blackarch.org/strap.sh
+sha1sum strap.sh # doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c
+sudo chmod +x strap.sh
+sudo ./strap.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S blackman
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vous pouvez installer tous les outils Blackarch via cette commande (recommandé):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo blackman -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;SINON Installer les outils un par un:&lt;/p&gt;
+&lt;p&gt;Installation des outils basics&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pacman&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;nmap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;impacket&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wireshark&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;qt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tcpdump&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hashcat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;john&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;proxychains&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ng&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;exploitdb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;httpie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;metasploit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;armitage&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bind&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tools&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;radare2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sqlmap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wpscan&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;xclip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;beef&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ufonet&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ettercap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;w3af&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;merlin&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;server&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;L'installation d'OpenVAS est un peu plus complexe, voir la page: &lt;a href="https://wiki.archlinux.org/title/OpenVAS"&gt;https://wiki.archlinux.org/title/OpenVAS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Configuration WordLists&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir -p /usr/share/wordlists
+wget -q https://github.com/danielmiessler/SecLists/raw/master/Passwords/Leaked-Databases/rockyou.txt.tar.gz -O /usr/share/wordlists/rockyou.txt.tar.gz
+wget -q https://github.com/danielmiessler/SecLists/raw/master/Discovery/Web-Content/common.txt -O /usr/share/wordlists/common.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Outils pour écrivain et chercheur&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S ghostwriter pdfjs pandoc texmaker manuskript libreoffice-still libreoffice-still-fr hunspell hunspell-fr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Extension Grammalecte et gestion de bibliographie&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S zotero libreoffice-extension-grammalecte-fr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;Calcul numérique et scientifique (remplace Matlab)&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python -m pip install jupyter scipy numpy matplotlib pandas ipython
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Calcul Formel&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S sagemath
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Sauvegarde&lt;/h3&gt;
+&lt;p&gt;Installation du client SAMBA&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S smbclient gvfs-smb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Redémarrer le PC pour prendre en compte la découverte du réseau local.&lt;/p&gt;
+&lt;p&gt;Ensuite rechercher votre serveur dans thunar en tapant:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;smb://192.168.X.X
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour cela modifier en fonction d'IP de votre serveur.&lt;/p&gt;
+&lt;p&gt;Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S deja-dup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Par-feu ufw&lt;/h3&gt;
+&lt;p&gt;Activation des logs (très utile pour la suite) :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo ufw logging on
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Rejet par défaut des connexions entrantes :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo ufw default deny incoming
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Autorisation des connexions sortantes :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo ufw default allow outgoing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Recherchement des règles du pare-feu pour finir :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ufw&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;reload&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Services Cloud&lt;/h3&gt;
+&lt;p&gt;Vous trouverez plusieurs services de cloud gratuit tels que qcloud, Google drive, Dropbox. Nous allons installer MEGA qui est plus sécurisé ques les autres offres de cloud, le service de l'entrepreneur Kim Dotcom a évolué sur les principes d'anonymat et de vie privée sur les données qui sont stocké sur son serveur depuis l'affaire de megaupload.&lt;/p&gt;
+&lt;p&gt;Aller sur le site &lt;a href="https://mega.io/desktop"&gt;https://mega.io/desktop&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sélectionner Arch Linux et télécharger l'application.&lt;/p&gt;
+&lt;p&gt;Pour installer sélectionner le package via:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nx"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;pacman&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;U&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;package&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Service VPN Proton&lt;/h3&gt;
+&lt;p&gt;Configurer un VPN. Installer le metapackage sur AUR:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;yay -S protonvpn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;CLI (Command Line Interface)&lt;/p&gt;
+&lt;p&gt;Login:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;protonvpn-cli login &amp;lt;your_protonmail&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Connect to the VPN:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;protonvpn&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;cli&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;connect&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour créer un compte protonVPN: &lt;a href="https://protonvpn.com/free-vpn/linux/"&gt;https://protonvpn.com/free-vpn/linux/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pour voir le status de la connexion:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;protonvpn-cli status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vérifier que votre adresse IP pointe sur le VPN: &lt;a href="https://www.whatismyip.com/fr/"&gt;https://www.whatismyip.com/fr/&lt;/a&gt;&lt;/p&gt;</content><category term="Linux"></category><category term="arch install"></category></entry><entry><title>StarBook 14</title><link href="/starbook-14.html" rel="alternate"></link><published>2023-07-11T19:54:00+02:00</published><updated>2023-07-11T19:54:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-11:/starbook-14.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Il y a très peu de marque de laptop qui livre en natif sous GNU/Linux. Et en France c'est encore pire car les grands constructeurs comme Lenovo et Dell qui font des promesses, en réalité ce n'est que du vent alors que la boutique US généralement ont des alternatives open source en système d'exploitation.  &lt;/p&gt;
 &lt;p&gt;Les grands noms commerciaux de marque sous GNU/Linux avec hardware compatible sont:  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
