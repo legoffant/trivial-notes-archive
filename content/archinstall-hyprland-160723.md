@@ -897,18 +897,25 @@ $ sudo pacman -S sagemath
 
 ### Sauvegarde
 
-Installation du client SAMBA
+#### Installation du client SAMBA
+
 ```bash
 $ sudo pacman -S smbclient gvfs-smb
 ```
 Redémarrer le PC pour prendre en compte la découverte du réseau local.
 
-Ensuite rechercher votre serveur dans thunar en tapant:
+GUI: Ensuite rechercher votre serveur dans thunar en tapant:
 ```text
 smb://192.168.X.X
 ```
 
-Pour cela modifier en fonction d'IP de votre serveur.
+Terminal: Monter le serveur SMB:
+```bash
+$  mount -t smbfs -W workgroup //user@IPSERVER/folder ./mntpoint  (possible de choisir dossier de montage)
+```
+
+Autres méthodes [8 ways to mount smbfs samba file system in linux](https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/)
+
 
 Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.
 ```bash
