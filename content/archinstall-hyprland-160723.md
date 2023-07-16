@@ -844,9 +844,23 @@ let g:airline_powerline_fonts = 1
 #### Outils de Hacking, pentesting, bug bounty, CTF
 
 Installation de dépot BlackArch >> [https://blackarch.org/](https://blackarch.org/)
+
+Ajout [blackarch] repo dans `/etc/pacman.conf`
+```text
+[blackarch]
+#SigLevel = Optional TrustAll
+Server=https://blackarch.unixpeople.org/blackarch/os/$arch
+```
+
+MAJ
+```
+$ sudo pacman -Syu
+```
+
 ```bash
 $ curl -O https://blackarch.org/strap.sh
-$ sha1sum strap.sh # doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c
+$ curl https://blackarch.org/checksums/strap
+$ sha1sum strap.sh # doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c (valeur du fichier strap)
 $ sudo chmod +x strap.sh
 $ sudo ./strap.sh
 ```
