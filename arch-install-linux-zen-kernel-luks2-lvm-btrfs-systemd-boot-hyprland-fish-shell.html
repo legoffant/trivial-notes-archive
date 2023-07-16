@@ -896,10 +896,15 @@ $<span class="w"> </span>wget<span class="w"> </span>-q<span class="w"> </span>h
 </code></pre></div>
 
 <p>Terminal: Monter le serveur SMB:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w">  </span>mount<span class="w"> </span>-t<span class="w"> </span>smbfs<span class="w"> </span>-W<span class="w"> </span>workgroup<span class="w"> </span>//user@IPSERVER/folder<span class="w"> </span>./mntpoint<span class="w">  </span><span class="o">(</span>possible<span class="w"> </span>de<span class="w"> </span>choisir<span class="w"> </span>dossier<span class="w"> </span>de<span class="w"> </span>montage<span class="o">)</span>
+<div class="highlight"><pre><span></span><code>$<span class="w">  </span>mount<span class="w"> </span>-t<span class="w"> </span>smbfs<span class="w"> </span>-W<span class="w"> </span>workgroup<span class="w"> </span>//user:password@IPSERVER/folder<span class="w"> </span>./mntpoint<span class="w">  </span><span class="o">(</span>possible<span class="w"> </span>de<span class="w"> </span>choisir<span class="w"> </span>dossier<span class="w"> </span>de<span class="w"> </span>montage<span class="o">)</span>
 </code></pre></div>
 
 <p>Autres méthodes <a href="https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/">8 ways to mount smbfs samba file system in linux</a></p>
+<p>Penser à éditer `fstab' pour ajouter le serveur SMB en permanence. Ex:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>vim<span class="w"> </span>/etc/fstab
+//192.168.0.1/share1<span class="w"> </span>/mnt<span class="w"> </span>smbfs<span class="w"> </span>rw,user,username<span class="o">=</span>trivial,password<span class="o">=</span>xylBJRS8<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+</code></pre></div>
+
 <p>Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>deja-dup
 </code></pre></div>
