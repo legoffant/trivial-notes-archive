@@ -538,12 +538,15 @@ $ nmtui
 
 Synchronisation repository MAJ + reflector
 
-Activer multilib:
+Activer multilib et communauty:
 ```bash
 $ sudo vim /etc/pacman.conf
 ```
 
 ```text
+[community]
+Include = /etc/pacman.d/mirrorlist
+
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
@@ -845,18 +848,6 @@ let g:airline_powerline_fonts = 1
 
 Installation de dépot BlackArch >> [https://blackarch.org/](https://blackarch.org/)
 
-Ajout [blackarch] repo dans `/etc/pacman.conf`
-```text
-[blackarch]
-#SigLevel = Optional TrustAll
-Server=https://blackarch.unixpeople.org/blackarch/os/$arch
-```
-
-MAJ
-```
-$ sudo pacman -Syu
-```
-
 ```bash
 $ curl -O https://blackarch.org/strap.sh
 $ curl https://blackarch.org/checksums/strap
@@ -865,12 +856,14 @@ $ sudo chmod +x strap.sh
 $ sudo ./strap.sh
 ```
 
+Mise à jour des paquets:
 ```bash
-$ sudo pacman -S blackman
+sudo pacman -Syyu
 ```
+
 Vous pouvez installer tous les outils Blackarch via cette commande (recommandé):
 ```bash
-$ sudo blackman -a
+$ sudo pacman -S blackarch
 ```
 SINON Installer les outils un par un:
 

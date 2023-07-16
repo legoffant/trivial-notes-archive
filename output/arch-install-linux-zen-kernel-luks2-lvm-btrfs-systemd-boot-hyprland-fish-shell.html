@@ -844,8 +844,19 @@ let g:airline_powerline_fonts = 1
 
 <h4>Outils de Hacking, pentesting, bug bounty, CTF</h4>
 <p>Installation de dépot BlackArch &gt;&gt; <a href="https://blackarch.org/">https://blackarch.org/</a></p>
+<p>Ajout [blackarch] repo dans <code>/etc/pacman.conf</code></p>
+<div class="highlight"><pre><span></span><code>[blackarch]
+#SigLevel = Optional TrustAll
+Server=https://blackarch.unixpeople.org/blackarch/os/$arch
+</code></pre></div>
+
+<p>MAJ</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-Syu
+</code></pre></div>
+
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>curl<span class="w"> </span>-O<span class="w"> </span>https://blackarch.org/strap.sh
-$<span class="w"> </span>sha1sum<span class="w"> </span>strap.sh<span class="w"> </span><span class="c1"># doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c</span>
+$<span class="w"> </span>curl<span class="w"> </span>https://blackarch.org/checksums/strap
+$<span class="w"> </span>sha1sum<span class="w"> </span>strap.sh<span class="w"> </span><span class="c1"># doit etre egal a 5ea40d49ecd14c2e024deecf90605426db97ea0c (valeur du fichier strap)</span>
 $<span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>strap.sh
 $<span class="w"> </span>sudo<span class="w"> </span>./strap.sh
 </code></pre></div>
