@@ -753,16 +753,20 @@ $&lt;span class="w"&gt; &lt;/span&gt;wget&lt;span class="w"&gt; &lt;/span&gt;-q&
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Sauvegarde&lt;/h3&gt;
-&lt;p&gt;Installation du client SAMBA&lt;/p&gt;
+&lt;h4&gt;Installation du client SAMBA&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;smbclient&lt;span class="w"&gt; &lt;/span&gt;gvfs-smb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Redémarrer le PC pour prendre en compte la découverte du réseau local.&lt;/p&gt;
-&lt;p&gt;Ensuite rechercher votre serveur dans thunar en tapant:&lt;/p&gt;
+&lt;p&gt;GUI: Ensuite rechercher votre serveur dans thunar en tapant:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;smb://192.168.X.X
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Pour cela modifier en fonction d'IP de votre serveur.&lt;/p&gt;
+&lt;p&gt;Terminal: Monter le serveur SMB:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt;  &lt;/span&gt;mount&lt;span class="w"&gt; &lt;/span&gt;-t&lt;span class="w"&gt; &lt;/span&gt;smbfs&lt;span class="w"&gt; &lt;/span&gt;-W&lt;span class="w"&gt; &lt;/span&gt;workgroup&lt;span class="w"&gt; &lt;/span&gt;//user@IPSERVER/folder&lt;span class="w"&gt; &lt;/span&gt;./mntpoint&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;possible&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;choisir&lt;span class="w"&gt; &lt;/span&gt;dossier&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;montage&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Autres méthodes &lt;a href="https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/"&gt;8 ways to mount smbfs samba file system in linux&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;deja-dup
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;

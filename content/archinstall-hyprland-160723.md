@@ -911,11 +911,16 @@ smb://192.168.X.X
 
 Terminal: Monter le serveur SMB:
 ```bash
-$  mount -t smbfs -W workgroup //user@IPSERVER/folder ./mntpoint  (possible de choisir dossier de montage)
+$  mount -t smbfs -W workgroup //user:password@IPSERVER/folder ./mntpoint  (possible de choisir dossier de montage)
 ```
 
 Autres méthodes [8 ways to mount smbfs samba file system in linux](https://www.linuxnix.com/8-ways-to-mount-smbfs-samba-file-system-in-linux/)
 
+Penser à éditer `fstab' pour ajouter le serveur SMB en permanence. Ex:
+```bash
+$ vim /etc/fstab
+//192.168.0.1/share1 /mnt smbfs rw,user,username=trivial,password=xylBJRS8 0 0
+```
 
 Pour mettre en place les sauvegardes, le plus simple est d'utiliser deja-dup qui est une interface graphique de duplicity. La sauvegarde est chiffré et incrémental sur une période d'une semaine. Il existe d'autre méthode de sauvegarde tel que avec Borg-backup ou bien rync.
 ```bash
