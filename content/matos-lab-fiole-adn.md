@@ -21,7 +21,7 @@ Ils doivent être dimensionné pour faciliter l'insertion de la fiole à ADN en 
 
 ### II. Système de broyage  
 
-Il est nécessaire de broyer des aliments, tels que des graines, des plantes ou des animaux comme des méduses pour récupérer et faciliter la récupération de l'ADN. Il faut de la poudre.  
+Il est nécessaire de broyer des aliments, tels que des graines, des plantes ou des animaux comme des méduses et faciliter la récupération de l'ADN. Il faut de la poudre.  
 
 *   [Groenenberg Moulin à café manuel (réglable) inox, broyeur en Céramique](https://www.amazon.fr/gp/product/B073YB7PYD/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1) - 28€  
     
