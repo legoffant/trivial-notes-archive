@@ -45,18 +45,18 @@ On manipule de petite quantité, donc pour récupérer sous formes de traces des
 
 On utilise du matériel de laboratoire pour la préparation, tel que mélanger de l'eau avec du sel, et un peu d'huile. Mais également pour faire évoluer l'expérience, la maintenance des fioles. La boite de Pétri permet de mettre en culture les réactions en particulier l'étude du Blob.  
 
-[Erlenmeyer en verre 100ml](https://www.amazon.fr/gp/product/B078JMHR82/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&th=1) \- 4€  
+*   [Erlenmeyer en verre 100ml](https://www.amazon.fr/gp/product/B078JMHR82/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&th=1)  - 4€  
 
-[5x Béchers Verre Borosilicate, 5/10/25/50/100ml](https://www.amazon.fr/gp/product/B07TZ48M13/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - 15€  
+*   [5x Béchers Verre Borosilicate, 5/10/25/50/100ml](https://www.amazon.fr/gp/product/B07TZ48M13/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - 15€  
 
-[Tube à essai 6 pièces,Porte-éprouvettes](https://www.amazon.fr/gp/product/B095PM69B9/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - 15€  
+*   [Tube à essai 6 pièces,Porte-éprouvettes](https://www.amazon.fr/gp/product/B095PM69B9/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - 15€  
 
-[5x Boîtes de Petri, 100 mm x 15 mm](https://www.amazon.fr/gp/product/B01AW6REAA/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - [](https://www.amazon.fr/gp/product/B01AW6REAA/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)11€  
+*   [5x Boîtes de Petri, 100 mm x 15 mm](https://www.amazon.fr/gp/product/B01AW6REAA/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - [](https://www.amazon.fr/gp/product/B01AW6REAA/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)11€  
 
 ### V. Autres  
 
 Pour manipuler des animaux tels que des méduses de petite taille 2-5cm  
 
-[Épuisette d'aquarium maille fine 8cm](https://www.amazon.fr/gp/product/B00GS271D8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) - 6€  
+*   [Épuisette d'aquarium maille fine 8cm](https://www.amazon.fr/gp/product/B00GS271D8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) - 6€  
 
 Coût total du laboratoire: **199€**
