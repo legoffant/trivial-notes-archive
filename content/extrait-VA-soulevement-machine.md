@@ -15,4 +15,4 @@ Le peuple est né dans les abysses d'une planète océanique, et ne sont pas ada
 
 Les Atlantes ont entendu l'appel de Nominoë II via son ADN comme support de l'information. Et vont envoyer du renfort sur la planète face à l'encerclement et le siège et les balises de détresse. Ainsi dans une cavité aquatique va prendre naissance, une hérésie, ce n'est pas par l'espace que l'envahisseur va apparaître, mais dans le Lac Léman au plus proche de Genève, un vaisseau d'environ 20km de long va profiter du routage de la porte islamique et narkantique durant l'invocation de l'Eon pour immerger sur Terre.
 
-Un certain Amiral Toba. Grand annéantisseur terrestre. L'age des ténèbres, et en colère de l'irrespect sur le prophète des humains car islamique. [...]
+Un certain Amiral Toba sur le Destroyer: *le Chimaera*. Grand annéantisseur terrestre. L'age des ténèbres, et en colère de l'irrespect sur le prophète des humains car islamique. [...]
