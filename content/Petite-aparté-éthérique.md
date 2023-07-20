@@ -23,4 +23,4 @@ La caverne (cavité et invocation de la matrice originel) + Une horloge naturel 
 
 La science islamique pave la voie (charia)
 
-C'est la crypte.... Un SAS entre des univers et la purfication à l'eau, et la construction de la porte, tel le chat de Schrodinger dans la boite, il y a un probleme d'observation et une intrication quantique dans état mort et vivant. Généralement lieu Saint, car c'est funéraire.
+C'est la crypte.... Un SAS entre des univers et la purfication à l'eau, et la construction de la porte, tel le chat de Schrodinger dans la boite, il y a un probleme d'observation et une intrication quantique dans un état mort et vivant. Généralement lieu Saint, car c'est funéraire.
