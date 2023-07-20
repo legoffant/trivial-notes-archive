@@ -22,3 +22,5 @@ Ce qui est le principe de la méthode, traditionnel des prophètes, en particuli
 La caverne (cavité et invocation de la matrice originel) + Une horloge naturel ( Le coeur humain) + Une transmutation et compression du réacteur nucléaire (jeune à l'eau sur 30 jours (cycle lunaire))  
 
 La science islamique pave la voie (charia)
+
+C'est la crypte.... Un SAS entre des univers et la purfication à l'eau, et la construction de la porte. Généralement lieu Saint, car c'est funéraire.
