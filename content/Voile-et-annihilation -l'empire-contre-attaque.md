@@ -19,7 +19,7 @@ Celle-ci protège Nominoë II et la gardienne du génome, même si celui-ci a pe
 
 L'ombre appel automatiquement telle une boussole l'individu. Car elle veut ce réaliser. Ainsi en quittant la prison à ciel ouvert de la campagne bretonne d'ou je suis natif. Je voulais partir à Cairns, dans le Queensland, en Australie. Là ou vive la méduse boite. Mais j'ai été empeché par mon amie de voyage Julie, et changer d'avis pour aller à Perth. Avec une certaine appréhension de me confronter à ces méduses. C'est une épreuve.  
 
-Elle est omniprésente, et c'est de nouveau manifester en école d'ingénieur à Mines. Telle une partie de cache-cache à travers Hélia ma binome (l'Aurélia Aurita) puis ma chérie en Chine (pays du Dragon), une Ouighour musulmane, Amina (mère du prophète de l'Islam, et symbole de l'Ombre, L'Anima). Des gens vont s'interposer et harceler le fusion avec l'ombre, par symbolisme du retour dans la matrice originelle.  
+Elle est omniprésente, et c'est de nouveau manifester en école d'ingénieur à Mines. Telle une partie de cache-cache à travers Hélia ma binome (l'Aurélia Aurita) puis ma chérie en Chine (pays du Dragon), une Ouighour musulmane, Amina (mère du prophète de l'Islam, et symbole de l'Ombre, L'Anima). Des gens vont s'interposer et harceler la fusion avec l'ombre, par symbolisme du retour dans la matrice originelle.  
 
 Jusqu'à que je trouve une solution et face un sacrifice dans un "Athanor" pour conserver et transmuter mon ADN avec une méduse dans la pure tradition alchimiste depuis Thot en Égypte.  
 
