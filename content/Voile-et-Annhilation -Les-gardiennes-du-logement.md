@@ -34,6 +34,13 @@ Les trois femmes musulmanes sont:
     
 *   Bérivan  
     
+Symbolisé par:
+
+* L'éclat de L'aube
+* L'éclat du crépuscule
+* L'éclat de la nuit
+
+Par le rite du salat islamique 
 
 Elles n'ont pas accès à l'hébergement de production du prophète, au pire elles peuvent simuler dans d'autres hébergeurs en mode développement, tant que les mondes ne sont pas synchronisé, de plus il y a une sécurité d'accès à l'ordinateur et son terminal: c'est physique, il faut ce déplacer comme système d'invocation.  
 
