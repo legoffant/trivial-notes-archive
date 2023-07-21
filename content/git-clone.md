@@ -11,7 +11,7 @@ Vous trouverez tous les détails de son utilisation et la documentation françai
 
 Il existe des plateformes d'hébergement du code tel que Github (qui a été racheté par Microsoft) avec 70 millions d'utilisateurs dans le monde. On trouve également Gitlab, BitBucket, mais encore Gitee en Chine. 
 
-Vous trouverez [un guide complet sur Github sur ce lien](https://www.pierre-giraud.com/git-github-apprendre-cours/)
+Vous trouverez [un guide complet sur Github sur ce lien](https://www.pierre-giraud.com/git-github-apprendre-cours/) et démarrage rapide [doc Github](https://docs.github.com/fr/get-started/quickstart)
 
 Aucun ingénieur ou développeur un peu sérieux n'utilise pas l'open source et Git, c'est un standard. Cela permet de travailler en local sur le code sur le repository et de mettre à jour sur le dépôt distant sur un serveur partagé les changements.
 
