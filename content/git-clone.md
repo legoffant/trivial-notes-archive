@@ -17,7 +17,7 @@ Aucun ingénieur ou développeur un peu sérieux n'utilise pas l'open source et 
 
 Ainsi mon blog utilise Git car c'est un site statique sous Pelican (python) dans le workflow et est déployé gratuitement sur [github pages](https://pages.github.com/). Donc on peut normalement modifier et collaborer sur mon blog, cela m'est arrivé une fois qu'un type, un indien demande une modification sur un article.
 
-L'avantage c'est que je travail sur une copie locale sur mon ordinateur avant de modifier sur l'hébergeur distant et "commit" le code. J'écris en markdown généralement avec [Mousepad](https://doc.ubuntu-fr.org/mousepad) ou [Neovim](https://github.com/neovim/neovim/wiki).
+L'avantage c'est que je travail sur une copie locale sur mon ordinateur avant de modifier sur l'hébergeur distant et "commit" le code. J'écris en markdown généralement avec [Mousepad](https://doc.ubuntu-fr.org/mousepad) ou [Neovim](https://github.com/neovim/neovim/wiki). Pour visualiser et écrire des documents formater en markdown: [Ghowtwriter](https://ghostwriter.kde.org/fr/)
 
 ### Installation de Git
 
