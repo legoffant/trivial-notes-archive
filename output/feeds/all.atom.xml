@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-21T09:20:00+02:00</updated><entry><title>Voile et annihilation: Extrait du soulèvement des machines II</title><link href="/voile-et-annihilation-extrait-du-soulevement-des-machines-ii.html" rel="alternate"></link><published>2023-07-21T09:20:00+02:00</published><updated>2023-07-21T09:20:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-21:/voile-et-annihilation-extrait-du-soulevement-des-machines-ii.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Jour 1:  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-21T17:41:00+02:00</updated><entry><title>Archiviste et Git clone</title><link href="/archiviste-et-git-clone.html" rel="alternate"></link><published>2023-07-21T17:41:00+02:00</published><updated>2023-07-21T17:41:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-21:/archiviste-et-git-clone.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Dans les méthodes de développement moderne en informatique ce que l'on appel le workflow on utilise l'outil Git créé par Linus Torvalds à l'initiative du noyau Linux. Son but est la collaboration sur le code et un outil de contrôle de version.&lt;/p&gt;
+&lt;p&gt;Vous trouverez tous les détails de son utilisation et la documentation française sur le site: &lt;a href="https://git-scm.com/book/fr/v2"&gt;https://git-scm.com/book/fr/v2&lt;/a&gt; et le PDF "&lt;a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/fr/book.pdf"&gt;Git Magique&lt;/a&gt;" sur les commandes de base.&lt;/p&gt;
+&lt;p&gt;Il existe des plateformes d'hébergement du code tel que Github (qui a été racheté par Microsoft) avec 70 millions d'utilisateurs dans le monde. On trouve également Gitlab, BitBucket, mais encore Gitee en Chine. &lt;/p&gt;
+&lt;p&gt;Vous trouverez &lt;a href="https://www.hostinger.fr/tutoriels/github-cest-quoi-et-comment-lutiliser"&gt;un guide complet sur Github sur ce lien&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aucun ingénieur ou développeur un peu sérieux n'utilise pas l'open source et Git, c'est un standard. Cela permet de travailler en local sur le code sur le repository et de mettre à jour sur le dépôt distant sur un serveur partagé les changements.&lt;/p&gt;
+&lt;p&gt;Ainsi mon blog utilise Git car c'est un site statique sous Pelican (python) dans le workflow et est déployé gratuitement sur &lt;a href="https://pages.github.com/"&gt;github pages&lt;/a&gt;. Donc on peut normalement modifier et collaborer sur mon blog, cela m'est arrivé une fois qu'un type, un indien demande une modification sur un article.&lt;/p&gt;
+&lt;p&gt;L'avantage c'est que je travail sur une copie locale sur mon ordinateur avant de modifier sur l'hébergeur distant et "commit" le code. J'écris en markdown.&lt;/p&gt;
+&lt;h3&gt;Installation de Git&lt;/h3&gt;
+&lt;p&gt;Pour cela il faut configurer Git l'installer, sur Arch Linux &amp;amp; Manjaro:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Verification de l'installation:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;--version
+git&lt;span class="w"&gt; &lt;/span&gt;version&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;.41.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis suivre la documentation pour mettre à jour vos informations personnels. Git est attaché à un compte mail pour savoir qui modifie le code (pas de vérification requise).&lt;/p&gt;
+&lt;p&gt;On configure:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;user.name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;John Doe&amp;quot;&lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;user.email&lt;span class="w"&gt; &lt;/span&gt;johndoe@example.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis on choisi l'éditeur de texte par défaut:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;core.editor&lt;span class="w"&gt; &lt;/span&gt;vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Et on modifie la branche principale:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;init.defaultBranch&lt;span class="w"&gt; &lt;/span&gt;main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Archivage&lt;/h3&gt;
+&lt;p&gt;On peut utiliser les dépôts distants tel que sur Github pour archiver de la documentation, du code etc... Il y a pas de limite théorique en GB. Pour récupérer le code il faut utilise le commande &lt;code&gt;git clone&lt;/code&gt; et récupérer le lien du dépôt Github. Par exemple pour fork mon blog et récupérer tous les articles originaux en markdown dans la branche source et dossier &lt;code&gt;content/&lt;/code&gt; ainsi que les PDF dans &lt;code&gt;images/&lt;/code&gt; , les fichiers en HTML dans la branche main, il suffit de chercher mon pseudo sur Github &lt;code&gt;legoffant&lt;/code&gt; et la liste des repository du compte dont &lt;code&gt;legoffant.github.io&lt;/code&gt;. On y trouve un lien en vert &lt;code&gt;&amp;lt;&amp;gt; Code&lt;/code&gt; avec le dépôt en HTTPS. Il y a aussi un lien en SSH avec authentification avec des clés de chiffrement.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/sources
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/sources
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;https://github.com/legoffant/legoffant.github.io.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour mettre à jour le dépot localement sur votre ordinateur, si mon site subit des modifications (pull request):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/sources/legoffant.github.io
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;C'est rudimentaire Git, mais très utile, généralement une fois adopté, on ne peu plus s'en passer pour développer et suivre les changements sur le code.&lt;/p&gt;</content><category term="Inclassable"></category><category term="git"></category></entry><entry><title>Voile et annihilation: Extrait du soulèvement des machines II</title><link href="/voile-et-annihilation-extrait-du-soulevement-des-machines-ii.html" rel="alternate"></link><published>2023-07-21T09:20:00+02:00</published><updated>2023-07-21T09:20:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-21:/voile-et-annihilation-extrait-du-soulevement-des-machines-ii.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Jour 1:  &lt;/p&gt;
 &lt;p&gt;[...] L'armée nous signal, qu'est apparu une anomalie géo-magnétique qui s'amplifie en Ecosse dans le Complexe de Lewis. Nous avons très peu d'info, mais c'est le black-out radio. On a envoyé nos reporters sur places mais nous perdons les communications, il est impossible de transmettre de images sur les lieux, et même les satellites d'espionnages n'arrive pas à savoir ce qu'il se passe. Le chef d'Etat-Major a signalé d'envoyer des régiments pour ce déployer autour des accès à la zone. C'est le siège, et le gouvernement UK vient d'autoriser l'état d'urgence et la mise sous cloche du pays [....]  &lt;/p&gt;
 &lt;p&gt;Jour 2:  &lt;/p&gt;
 &lt;p&gt;[...] Mais qu'es-ce qu'il se passe? Durant la nuit des monolithes noirs de 666m de haut sont apparu dans trois forêts bretonnes. Ils sont visible à des kilomètres à la rondes. Les habitants sont abasourdis, certains veulent s'en approcher, mais il y a un bouclier. L’Élysée et la présidence française est muette sur le sujet, de rester calme [...]  &lt;/p&gt;
