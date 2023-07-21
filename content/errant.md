@@ -17,7 +17,7 @@ Je savais que mon email ferait du bruit, car ils vont le remonter à la sécurit
 
 Janvier 2012 toujours à Zhuhai, mon colocataire (Sylvain) m'invite dans un night club en soirée. Je vais y aller, je n'ai aucun souvenir de ma soirée entre 23h et 6h du matin c'est le trou noir. Je me rappel d'être allez au toilette, d'avoir laissé ma bière sans surveillance et c'est tout. Je suis surement tombé dans un traquenard. Mes souvenirs je me rappel d'avoir parler à une table avec une chinoise et un caucasien, un français je crois, dans la quarantaine. Après j'ai des flashs ou je suis perdu, je ne sais plus ou je suis, au bord de la route. Loin de la ville, il n'y a plus d'immeuble.
 
-MAJ: J'ai un souvenir d'avoir été tabassé et jeter au bord de la route pour mort. Puis je me suis retrouver sur un autre monde. Une sorte d'univers miroir, hanté par des ombres. Je voyais flou, tout était désertique. il y avait juste les sihouelettes des Pyramides de Giza: l'hebergeur. je sais pas combien de temps je suis rester dans l'*ANTEVERSE*: Le monde des ombres.
+MAJ: J'ai un souvenir d'avoir été tabassé et jeter au bord de la route pour mort. Puis je me suis retrouver sur un autre monde. Une sorte d'univers miroir, hanté par des ombres. Je voyais flou, tout était désertique. il y avait juste les silhouettes des Pyramides de Giza: l'hebergeur. je sais pas combien de temps je suis rester dans l'*ANTEVERSE*: Le monde des ombres.
 
 Je fais une fixation, je me rappel que je me passais en boucle dans la tête, retrouver le logement. J'étais complètement désorienté. La sensation était différente que la simple cuite. 
 
