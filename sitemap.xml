@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-21T02:48:11-00:00</lastmod>
+<lastmod>2023-07-21T09:22:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-21T02:48:11-00:00</lastmod>
+<lastmod>2023-07-21T09:22:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-21T02:48:11-00:00</lastmod>
+<lastmod>2023-07-21T09:22:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-21T02:48:11-00:00</lastmod>
+<lastmod>2023-07-21T09:22:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-21T02:48:11-00:00</lastmod>
+<lastmod>2023-07-21T09:22:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/voile-et-annihilation-extrait-du-soulevement-des-machines-ii.html</loc>
+<lastmod>2023-07-21T09:20:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1692,7 +1699,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/inclassable.html</loc>
-<lastmod>2023-07-21T02:24:00+00:09</lastmod>
+<lastmod>2023-07-21T09:20:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1712,6 +1719,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/tag/va.html</loc>
+<lastmod>2023-07-21T09:20:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/7-jours.html</loc>
+<lastmod>2023-07-21T09:20:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/tag/cosmologie.html</loc>
 <lastmod>2023-07-21T02:24:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -1721,13 +1742,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/ether.html</loc>
 <lastmod>2023-07-21T00:24:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/va.html</loc>
-<lastmod>2023-07-20T08:30:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3582,7 +3596,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-07-21T02:24:00+00:09</lastmod>
+<lastmod>2023-07-21T09:20:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
