@@ -39,5 +39,5 @@ Dans mon cas cela m'a ouvert les yeux que nous pouvons prendre des risques et fa
 
 "30 : 19 - Il produit le vivant du mort, et produit le mort du vivant, et Il fait revivre la terre après qu’elle soit morte ; vous serez pareillement ressuscités." Le Coran
 
-NOTA: Certain diront, tu es le Christ? Mon colocataire est une symétrie et un sosie de Jesus de Nazareth. Le lieu de la crucifixion du Christ à l'Eglise Saint-Sépulcre, de Jerusalem. La carte est codé "SILWAN" = Sylvain. Mon colocataire c'est moqué le lendemain de ma ressurection car j'étais totalement H.S et un zombie après avoir été drogué ou une grosse cuite. J'ai mangé une pomme durant la journée et but un thé. J'avais pas faim.
+NOTA: Certain diront, tu es le Christ? Mon colocataire est une symétrie et un sosie de Jesus de Nazareth. Le lieu de la crucifixion du Christ à l'Eglise Saint-Sépulcre, de Jerusalem. La carte est codé "SILWAN" = Sylvain, il est également parodié avec Sylvain Duriff. Mon colocataire c'est moqué le lendemain de ma ressurection car j'étais totalement H.S et un zombie après avoir été drogué ou une grosse cuite. J'ai mangé une pomme durant la journée et but un thé. J'avais pas faim.
  
