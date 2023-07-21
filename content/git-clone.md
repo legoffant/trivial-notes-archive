@@ -52,7 +52,7 @@ $ git config --global init.defaultBranch main
 
 ### Archivage
 
-On peut utiliser les dépôts distants tel que sur Github pour archiver de la documentation, du code etc... Il y a pas de limite théorique en GB. Pour récupérer le code il faut utilise le commande `git clone` et récupérer le lien du dépôt Github. Par exemple pour fork mon blog et récupérer tous les articles originaux en markdown dans la branche source et dossier `content/` ainsi que les PDF dans `images/` , les fichiers en HTML dans la branche main, il suffit de chercher mon pseudo sur Github `legoffant` et la liste des repository du compte dont `legoffant.github.io`. On y trouve un lien en vert `<> Code` avec le dépôt en HTTPS. Il y a aussi un lien en SSH avec authentification avec des clés de chiffrement.
+On peut utiliser les dépôts distants tel que sur Github pour archiver de la documentation, du code etc... Il y a pas de limite théorique en GB. Pour récupérer le code il faut utiliser la commande `git clone` et récupérer le lien du dépôt Github. Par exemple pour fork mon blog et récupérer tous les articles originaux en markdown dans la branche source et dossier `content/` ainsi que les PDF dans `images/` , les fichiers en HTML dans la branche main, il suffit de chercher mon pseudo sur Github `legoffant` et la liste des repository du compte dont `legoffant.github.io`. On y trouve un lien en vert `<> Code` avec le dépôt en HTTPS. Il y a aussi un lien en SSH avec authentification avec des clés de chiffrement.
 
 ```bash
 $ mkdir ~/sources
