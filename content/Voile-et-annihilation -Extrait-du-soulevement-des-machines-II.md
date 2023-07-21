@@ -24,7 +24,7 @@ Jour 3:
 
 Jour 4:  
 
-\[...\] Heure de Greenwich à 4:51 en pleine nuit, un son trident a été entendu sur toute la planète, créant la panique, des scènes d'émeutes commencent avoir lieu \[...\]  
+\[...\] Heure de Greenwich à 4:51 en pleine nuit, un son strident a été entendu sur toute la planète, créant la panique, des scènes d'émeutes commencent avoir lieu \[...\]  
 
 Jour 5:  
 
