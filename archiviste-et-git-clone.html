@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Trivial notes - Inclassable | Trivial notes</title>
+    <title>Archiviste et Git clone | Trivial notes</title>
     <meta name="google-site-verification" content="JcJZKibD3r33MuyAhypM_Rtcw51x0x7x_SwDKkuy4KE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
@@ -106,73 +106,79 @@
         <div class="span8" id="content">
 <div class="row">
     <div class="span2">
-        <div class="well small"><footer class="post-info">
-<abbr class="published" title="2021-06-02T00:00:00+02:00">
-    <i class="icon-calendar"></i>&nbsp;mer. 02 juin 2021
+        <div class="well">
+<footer class="post-info">
+<abbr class="published" title="2023-07-21T17:41:00+02:00">
+    <i class="icon-calendar"></i>&nbsp;ven. 21 juillet 2023
 </abbr>
 <br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
 
 
 <br/>
-	&nbsp;&nbsp;<a href="/tag/futurisme.html" class="label"><i class="icon-tag"></i>&nbsp;futurisme</a>
-</footer><!-- /.post-info --></div>
+	&nbsp;&nbsp;<a href="/tag/git.html" class="label"><i class="icon-tag"></i>&nbsp;git</a>
+</footer><!-- /.post-info -->        </div>
     </div>
     <div class="span6">
-        <div class="article well">
-            <h1><a href="/odyssee.html">Odyssée</a></h1>
-            <div class="summary">
-                <a class="btn btn-small" href="/odyssee.html">more ...</a>
-            </div>
-        </div>
-    </div>
-    <div class="span8">
-        <hr />
-    </div>
-    <div class="span2">
-        <div class="well small"><footer class="post-info">
-<abbr class="published" title="2021-03-23T11:59:00+01:00">
-    <i class="icon-calendar"></i>&nbsp;mar. 23 mars 2021
-</abbr>
-<br/><a href="/author/anthony-le-goff.html"><i class="icon-user"></i>&nbsp;Anthony Le Goff</a>
+<section id="content" class="well">
+    <article>
+        <header>
+            <h1>
+                <a href=""
+                        rel="bookmark"
+                        title="Permalink to Archiviste et Git clone">
+                        Archiviste et Git clone
+                </a>
+            </h1>
+        </header>
+        <div class="entry-content">
 
+        <p>Dans les méthodes de développement moderne en informatique ce que l'on appel le workflow on utilise l'outil Git créé par Linus Torvalds à l'initiative du noyau Linux. Son but est la collaboration sur le code et un outil de contrôle de version.</p>
+<p>Vous trouverez tous les détails de son utilisation et la documentation française sur le site: <a href="https://git-scm.com/book/fr/v2">https://git-scm.com/book/fr/v2</a> et le PDF "<a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/fr/book.pdf">Git Magique</a>" sur les commandes de base.</p>
+<p>Il existe des plateformes d'hébergement du code tel que Github (qui a été racheté par Microsoft) avec 70 millions d'utilisateurs dans le monde. On trouve également Gitlab, BitBucket, mais encore Gitee en Chine. </p>
+<p>Vous trouverez <a href="https://www.hostinger.fr/tutoriels/github-cest-quoi-et-comment-lutiliser">un guide complet sur Github sur ce lien</a></p>
+<p>Aucun ingénieur ou développeur un peu sérieux n'utilise pas l'open source et Git, c'est un standard. Cela permet de travailler en local sur le code sur le repository et de mettre à jour sur le dépôt distant sur un serveur partagé les changements.</p>
+<p>Ainsi mon blog utilise Git car c'est un site statique sous Pelican (python) dans le workflow et est déployé gratuitement sur <a href="https://pages.github.com/">github pages</a>. Donc on peut normalement modifier et collaborer sur mon blog, cela m'est arrivé une fois qu'un type, un indien demande une modification sur un article.</p>
+<p>L'avantage c'est que je travail sur une copie locale sur mon ordinateur avant de modifier sur l'hébergeur distant et "commit" le code. J'écris en markdown.</p>
+<h3>Installation de Git</h3>
+<p>Pour cela il faut configurer Git l'installer, sur Arch Linux &amp; Manjaro:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>git
+</code></pre></div>
 
-<br/>
-	&nbsp;&nbsp;<a href="/tag/premier.html" class="label"><i class="icon-tag"></i>&nbsp;Premier</a>
-	&nbsp;&nbsp;<a href="/tag/inclassable.html" class="label"><i class="icon-tag"></i>&nbsp;Inclassable</a>
-</footer><!-- /.post-info --></div>
-    </div>
-    <div class="span6">
-        <div class="article well">
-            <h1><a href="/hello-world.html">Hello World</a></h1>
-            <div class="summary"><p>Premier post, ou je trace le projet de ce blog dans la continuité de mon apprentissage continu en informatique.</p>
-                <a class="btn btn-small" href="/hello-world.html">more ...</a>
-            </div>
-        </div>
-    </div>
-    <div class="span8">
-        <hr />
-    </div>
+<p>Verification de l'installation:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>--version
+git<span class="w"> </span>version<span class="w"> </span><span class="m">2</span>.41.0
+</code></pre></div>
 
-<div class="span6">
-<div class="pagination">
-<ul>
-        <li class="prev"><a href="/category/inclassable12.html">&larr; Previous</a></li>
-        <li class=""><a href="/category/inclassable.html">1</a></li>
-        <li class=""><a href="/category/inclassable2.html">2</a></li>
-        <li class=""><a href="/category/inclassable3.html">3</a></li>
-        <li class=""><a href="/category/inclassable4.html">4</a></li>
-        <li class=""><a href="/category/inclassable5.html">5</a></li>
-        <li class=""><a href="/category/inclassable6.html">6</a></li>
-        <li class=""><a href="/category/inclassable7.html">7</a></li>
-        <li class=""><a href="/category/inclassable8.html">8</a></li>
-        <li class=""><a href="/category/inclassable9.html">9</a></li>
-        <li class=""><a href="/category/inclassable10.html">10</a></li>
-        <li class=""><a href="/category/inclassable11.html">11</a></li>
-        <li class=""><a href="/category/inclassable12.html">12</a></li>
-        <li class="active"><a href="/category/inclassable13.html">13</a></li>
-        <li class="next disabled"><a href="#">&rarr; Next</a></li>
-</ul>
-</div>
+<p>Puis suivre la documentation pour mettre à jour vos informations personnels. Git est attaché à un compte mail pour savoir qui modifie le code (pas de vérification requise).</p>
+<p>On configure:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;John Doe&quot;</span>
+$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>johndoe@example.com
+</code></pre></div>
+
+<p>Puis on choisi l'éditeur de texte par défaut:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>vim
+</code></pre></div>
+
+<p>Et on modifie la branche principale:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span>main
+</code></pre></div>
+
+<h3>Archivage</h3>
+<p>On peut utiliser les dépôts distants tel que sur Github pour archiver de la documentation, du code etc... Il y a pas de limite théorique en GB. Pour récupérer le code il faut utilise le commande <code>git clone</code> et récupérer le lien du dépôt Github. Par exemple pour fork mon blog et récupérer tous les articles originaux en markdown dans la branche source et dossier <code>content/</code> ainsi que les PDF dans <code>images/</code> , les fichiers en HTML dans la branche main, il suffit de chercher mon pseudo sur Github <code>legoffant</code> et la liste des repository du compte dont <code>legoffant.github.io</code>. On y trouve un lien en vert <code>&lt;&gt; Code</code> avec le dépôt en HTTPS. Il y a aussi un lien en SSH avec authentification avec des clés de chiffrement.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>~/sources
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/sources
+$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/legoffant/legoffant.github.io.git
+</code></pre></div>
+
+<p>Pour mettre à jour le dépot localement sur votre ordinateur, si mon site subit des modifications (pull request):</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/sources/legoffant.github.io
+$<span class="w"> </span>git<span class="w"> </span>pull
+</code></pre></div>
+
+<p>C'est rudimentaire Git, mais très utile, généralement une fois adopté, on ne peu plus s'en passer pour développer et suivre les changements sur le code.</p>
+        </div><!-- /.entry-content -->
+    </article>
+</section>
 </div>
 </div>
         </div><!--/span-->
