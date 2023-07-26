@@ -1,5 +1,5 @@
-Title: Don à une organisation religieuse narkantique
-Date: 2022-11-08 13:14
+Title: Don à une organisation religieuse narkantique MAJ 260723
+Date: 2022-07-26 9:22
 Category:Entrepreneurship
 Tags:don, religion
 Authors: Anthony Le Goff
@@ -24,15 +24,20 @@ Dispositif de sécurité du terminal d'accès:
 
 * Système d'exploitation: Arch Linux
 * Chiffrement disque: dm-crypt/LUKS aes-xts-plain64 -key-size 512 
-* Audit: Lynis & rkhunter
+* Audit: Lynis & rkhunter & yara
+* Fichier sécurisé dans un container Veracrypt
 * Sauvegarde: Duplicity > NAS Synology(local) > Hyperbackup C2 storage(distant)
 
 C'est à dire en cas de vol d'ordinateur, ou de mon NAS. J'ai toujours une sauvegarde chiffré dans le cloud. Le porte-feuille est partagé sur trois sites: Local puis à distance et enfin dans la capsule.
 
-L'adresse de don:
+MAJ Après la cyberattaque du 22/07/2022, changement d'adresse:
 
-```
-14rBfNjVNivzSUePZxfs18uhFgN6zaGUmB
-```
+Fond initial en octobre 2022: 700€
 
-Vous pouvez consulter à tous moment la valeur du fond d'investissement sur [https://www.blockchain.com](https://www.blockchain.com) en entrant l'adresse du porte-feuille.
+L'adresse de don BTC et son évolution de fond et transaction: [1AQ7Fa54w5tVVgQaimSmkEEubWCe7S9dgH](https://blockchair.com/bitcoin/address/1AQ7Fa54w5tVVgQaimSmkEEubWCe7S9dgH)
+
+
+
+PS: je vais vous faire payer et je réclame une compensation à mon investissement sur ce blog, de mon temps, de ma science. Je suis bénévole, mais pas pigeon.
+
+
