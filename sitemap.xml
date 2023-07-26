@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-26T08:50:12-00:00</lastmod>
+<lastmod>2023-07-26T09:23:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-26T08:50:12-00:00</lastmod>
+<lastmod>2023-07-26T09:23:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-26T08:50:12-00:00</lastmod>
+<lastmod>2023-07-26T09:23:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-26T08:50:12-00:00</lastmod>
+<lastmod>2023-07-26T09:23:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-26T08:50:12-00:00</lastmod>
+<lastmod>2023-07-26T09:23:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1040,13 +1040,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/don-a-une-organisation-religieuse-narkantique.html</loc>
-<lastmod>2022-11-08T13:14:00+01:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/un-peu-dhygiene-informatique.html</loc>
 <lastmod>2022-11-08T10:24:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -1287,6 +1280,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/inclusion-et-secret-defense.html</loc>
 <lastmod>2022-07-29T15:47:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/don-a-une-organisation-religieuse-narkantique-maj-260723.html</loc>
+<lastmod>2022-07-26T09:22:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2944,13 +2944,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/don.html</loc>
-<lastmod>2022-11-08T13:14:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/chiffrement.html</loc>
 <lastmod>2022-11-08T10:24:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -3226,6 +3219,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/secret.html</loc>
 <lastmod>2022-07-29T15:47:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/don.html</loc>
+<lastmod>2022-07-26T09:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
