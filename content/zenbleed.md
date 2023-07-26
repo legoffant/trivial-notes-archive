@@ -11,7 +11,7 @@ C'est un grand évènement qui est occulté sur un petit évenement local: symé
 
 Et je suis à l'initiative, j'ai envoyé mardi un courrier suivi à Amédée Le May, frère de mon grand père Raymond sur le résultat de mes recherches scientifiques comme archive et sauvegarde. Avant de connaitre la vulnérabilité AMD. Et mon papier de recherche scientifique parle des processeurs à ADN.
 
-Vulnérabilité Zenbleed AMD processor CVE-2023-20593 : https://lock.cmpxchg8b.com/zenbleed.html
+Vulnérabilité Zenbleed AMD processor CVE-2023-20593 : [https://lock.cmpxchg8b.com/zenbleed.html](https://lock.cmpxchg8b.com/zenbleed.html)
 
 Pattern "AMD"
 
