@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-22T04:37:00+02:00</updated><entry><title>APAN: Arduino Privacy Automatic Navigator</title><link href="/apan-arduino-privacy-automatic-navigator.html" rel="alternate"></link><published>2023-07-22T04:37:00+02:00</published><updated>2023-07-22T04:37:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-22:/apan-arduino-privacy-automatic-navigator.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je suis retomber sur un article que j'avais sauvegarder sur mon ordinateur que j'avais en projet de mettre en place en bidouillant avec un &lt;a href="https://www.gotronic.fr/art-arduino-nano-33-iot-abx00032-33808.htm"&gt;Arduino BLE 33 IoT à 32€&lt;/a&gt; et un &lt;a href="https://fr.aliexpress.com/item/32798439084.html?spm=a2g0o.productlist.main.1.7ccc38c3Yhq97Y&amp;amp;algo_pvid=e3aa5195-379f-494d-9cf7-c4fd4e70dca1&amp;amp;algo_exp_id=e3aa5195-379f-494d-9cf7-c4fd4e70dca1-0&amp;amp;pdp_npi=3%40dis%21EUR%211.31%211.21%21%21%211.43%21%21%40210218bf16899940914706868d077b%2165611003507%21sea%21FR%213106627944&amp;amp;curPageLogUid=oqVpvnmIstn3"&gt;écran OLED 128x32 à 1,21€&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-26T06:44:00+02:00</updated><entry><title>Bilan cyberattaque 22/07/2023</title><link href="/bilan-cyberattaque-22072023.html" rel="alternate"></link><published>2023-07-26T06:44:00+02:00</published><updated>2023-07-26T06:44:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-26:/bilan-cyberattaque-22072023.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je viens de subir une cyberattaque sur mon Laptop Thinkpad. Ce qui a donné la destruction de 150GB de data. L'attaque est relativement sophistiqué car je suis sous Arch Linux (mon Laptop c'est un tank) et que mon réseau local n'a pas de port ouvert sur l'extérieur normalement.... Seulement UPNP actif pour la redirection de port.&lt;/p&gt;
+&lt;p&gt;Je suis allez signaler sur le forum Arch Linux, dont les utilisateurs étaient sceptique, car c'est très rare qu'un utilisateur d'Arch Linux en individuel sur un réseau local domestique soit attaqué. &lt;em&gt;J'ai gagné un trophée....&lt;/em&gt; En gros t'es qui toi pour être une cible?&lt;/p&gt;
+&lt;p&gt;La procédure quand j'ai vu la cyberattaque est la mise en quarantaine de mon serveur NAS et sauvegarde, isoler du réseau local. Puis monitoring et analyses de logs. Et j'ai donc trouver des squatteurs qui ont ouvert des ports. &lt;/p&gt;
+&lt;p&gt;J'ai signalé au FAI Bouygues Telecom sur la hotline, qui n'a rien vu d'anormal. Pourtant j'ai une explosion de traffic sur la session... Des billes, et ils s'en foutent des cyberattaques sur des individus sur le réseau domestique. Je l'ai ai incendié par courrier recommandé.&lt;/p&gt;
+&lt;p&gt;Toutes les infos sur la cyberattaque et les logs sont sur le forum Bouygues: &lt;a href="https://www.assistance.bouyguestelecom.fr/s/forum/question/0D5670000Ftx2VtCQI/cyberattaque-en-cours-sur-mon-r%C3%A9seau-local-home-linux-supprim%C3%A9-anomalie"&gt;Cyberattaque en cours sur mon réseau local /home (linux) supprimé [ANOMALIE]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;J'ai donc désactiver la redirection de port UPNP sur le routeur du FAI (qui est de la daube) puis après avoir logger la cyberattaque, nétoyer mon système avec une clean install d'Arch Linux.&lt;/p&gt;
+&lt;p&gt;Nouvelle config Arch: &lt;strong&gt;systemd-boot + LUKS2 + LVM + BTRFS + Kernel-zen + XFCE + Kitty + Zsh&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;J'ai lancer des procédures de détection de malware, audit et rootkit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rkhunter clean&lt;/li&gt;
+&lt;li&gt;yara&lt;/li&gt;
+&lt;li&gt;lynis clean&lt;/li&gt;
+&lt;li&gt;arch-audit clean&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En cas de compromission et leak de data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;J'ai également changer mes mots de passe root, chiffrement et site web (en cours)&lt;/li&gt;
+&lt;li&gt;Générer de nouvelle clé SSH&lt;/li&gt;
+&lt;li&gt;Générer un nouveau porte-feuille de BTC (bitcoin) la clé privée exposé dans /home (l'argent n'a pas bougé)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Renforcer la sécurité en ajoutant un container Veracrypt pour les données sensibles et secrêtes.&lt;/p&gt;
+&lt;p&gt;Je viens donc de remettre en marche mon blog, procédure:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Quick start recovery:
+
+# Générer une nouvelle pair de clé SSH et transférer sur Github
+
+1. git clone ssh repo/blog
+2. changer de branch origin/source
+3. supprimer l&amp;#39;ancien venv et sauvegarde pelicanconf.py
+
+Install Pelican:
+
+2. virtualenv .venv
+3. source .venv/bin/activate
+4. pip install pelican markdown ghp-import
+5. pelican-quickstart
+6. Copie des themes et plugins
+
+Workflow:
+
+$ git add . &amp;amp;&amp;amp; git commit -m &amp;quot;Ajout article blog&amp;quot;
+$ make html
+$ make devserver
+$ git push --all
+$ make github
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Il me reste à faire le tri des datas et analyser malware et rootkit de /home sur mon NAS de la sauvegarde. Pour cela je vais configurer une machine virtuelle sur Proxmox et transférer les datas en cas d'infection et compromission.&lt;/p&gt;</content><category term="Inclassable"></category><category term="cyberattaque"></category></entry><entry><title>APAN: Arduino Privacy Automatic Navigator</title><link href="/apan-arduino-privacy-automatic-navigator.html" rel="alternate"></link><published>2023-07-22T04:37:00+02:00</published><updated>2023-07-22T04:37:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-22:/apan-arduino-privacy-automatic-navigator.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je suis retomber sur un article que j'avais sauvegarder sur mon ordinateur que j'avais en projet de mettre en place en bidouillant avec un &lt;a href="https://www.gotronic.fr/art-arduino-nano-33-iot-abx00032-33808.htm"&gt;Arduino BLE 33 IoT à 32€&lt;/a&gt; et un &lt;a href="https://fr.aliexpress.com/item/32798439084.html?spm=a2g0o.productlist.main.1.7ccc38c3Yhq97Y&amp;amp;algo_pvid=e3aa5195-379f-494d-9cf7-c4fd4e70dca1&amp;amp;algo_exp_id=e3aa5195-379f-494d-9cf7-c4fd4e70dca1-0&amp;amp;pdp_npi=3%40dis%21EUR%211.31%211.21%21%21%211.43%21%21%40210218bf16899940914706868d077b%2165611003507%21sea%21FR%213106627944&amp;amp;curPageLogUid=oqVpvnmIstn3"&gt;écran OLED 128x32 à 1,21€&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Il y a plusieurs méthodes pour surfer sur internet de manière furtive, tel que les VPN, TOR, Proxy. Et les changements de DNS chiffrés. C'est en particulier pour lutter contre les services de renseignement des gouvernements et le tracking des publicitaires, même votre FAI fait du marchandage de vos données de navigation.&lt;/p&gt;
 &lt;p&gt;La méthode utilise le principe du leurre. Il faut créer un système de brouillage, à travers du bruit. Chez les militaires et la guerre électronique on appel ça des contres-mesures. En gros générer des données de navigation aléatoire, noyer votre propre navigation internet dans une masse de donnée. Et ça coût pas cher de mettre en place un petit serveur sur votre réseau local via un Arduino qui va générer ces données.&lt;/p&gt;
 &lt;p&gt;J'ai retrouvé le tuto, j'avais sauvegardé sur mon PC. Car depuis Google censure un peu le mot clé &lt;strong&gt;APAN&lt;/strong&gt; et donne aucun résultat.&lt;/p&gt;
