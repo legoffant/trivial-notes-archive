@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-26T09:23:26-00:00</lastmod>
+<lastmod>2023-07-26T09:25:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-26T09:23:26-00:00</lastmod>
+<lastmod>2023-07-26T09:25:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-26T09:23:26-00:00</lastmod>
+<lastmod>2023-07-26T09:25:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-26T09:23:26-00:00</lastmod>
+<lastmod>2023-07-26T09:25:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-26T09:23:26-00:00</lastmod>
+<lastmod>2023-07-26T09:25:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/don-a-une-organisation-religieuse-narkantique-maj-260723.html</loc>
+<lastmod>2023-07-26T09:22:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1285,13 +1292,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/don-a-une-organisation-religieuse-narkantique-maj-260723.html</loc>
-<lastmod>2022-07-26T09:22:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/pourquoi-microsoft-va-perir.html</loc>
 <lastmod>2022-07-25T13:10:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -1720,7 +1720,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/entrepreneurship.html</loc>
-<lastmod>2023-03-14T17:08:00+00:09</lastmod>
+<lastmod>2023-07-26T09:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1742,6 +1742,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/category/transhumanisme.html</loc>
 <lastmod>2023-04-04T08:03:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/don.html</loc>
+<lastmod>2023-07-26T09:22:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/religion.html</loc>
+<lastmod>2023-07-26T09:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1874,13 +1888,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/tag/prophete.html</loc>
-<lastmod>2023-07-14T13:53:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/religion.html</loc>
 <lastmod>2023-07-14T13:53:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -3224,13 +3231,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/don.html</loc>
-<lastmod>2022-07-26T09:22:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/logiciel-libre.html</loc>
 <lastmod>2022-07-25T13:10:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -3645,7 +3645,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-07-26T08:38:00+00:09</lastmod>
+<lastmod>2023-07-26T09:22:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
