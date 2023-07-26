@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Open Box environnement minimaliste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/ltcb.html">LTCB</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Open Box environnement minimaliste">
+                                        Open Box environnement minimaliste
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2022-09-18T14:26:00+02:00">
+        <i class="icon-calendar"></i>dim. 18 septembre 2022
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/openbox.html"><i class="icon-tag"></i>Openbox</a>
+	<a href="/tag/linux.html"><i class="icon-tag"></i>Linux</a>
+</footer><!-- /.post-info -->                </div>
+                <p>J'explore toujours les environnements minimalistes et customisables sous Arch Linux. Voici une configuration sous Open Box qui n'utilise que 500MB de RAM.</p>
+<p>Pour installer changer à partir "installation du bureau XFCE4" de mon précedent poste <a href="https://gist.github.com/legoffant/0a90e1067e3130711bf3f728a8a4a356">https://gist.github.com/legoffant/0a90e1067e3130711bf3f728a8a4a356</a></p>
+<p>Garder la configuration:</p>
+<ul>
+<li>Chiffrement LUKS</li>
+<li>Partionnement BTRFS</li>
+<li>Systemd-boot</li>
+<li>
+<p>zramd</p>
+</li>
+<li>
+<p>Enlever guake terminal remplacer par alacritty.</p>
+</li>
+<li>Ne pas oublier la configuration du clavier sous Xorg en français</li>
+</ul>
+<h3>Installation du serveur X</h3>
+<div class="highlight"><pre><span></span><code>sudo pacman -S xorg-server xorg-xinit xorg-fonts-misc
+</code></pre></div>
+
+<h3>Installation des composants</h3>
+<ul>
+<li>Openbox Windows Manager</li>
+<li>Thunar File Manager</li>
+<li>Alacritty Terminal</li>
+<li>Compton Compositor</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo pacman -S openbox thunar alacritty compton
+</code></pre></div>
+
+<h3>Configurer Openbox</h3>
+<div class="highlight"><pre><span></span><code>mkdir -p ~/.config/openbox
+cp -a /etc/xdg/openbox/ ~/.config/
+</code></pre></div>
+
+<p>This will copy 4 files into the ~/.config/openbox directory</p>
+<div class="highlight"><pre><span></span><code><span class="n">rc.xml</span>
+<span class="n">menu.xml</span>
+<span class="n">autostart</span>
+<span class="n">environment</span>
+</code></pre></div>
+
+<h3>Plugins pour Openbox</h3>
+<ul>
+<li>obconf - The Openbox Configuration Manager, can be used for general configuration.</li>
+<li>lxappearance-obconf - The lxde Openbox Configuration Manager can be used to configure themes and other general customizations</li>
+<li>lxinput - Can be used to configure mouse and keyboard, allows mouse speed and acceleration to be adjusted.</li>
+<li>tint2 - custom taskbar</li>
+<li>MenuMaker - is a powerful tool that creates XML-based menus</li>
+<li>Nitrogen - Fast and lightweight wallpaper browser /setter for X</li>
+<li>Slim - Startup Manager</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">pacman</span><span class="w"> </span><span class="o">-</span><span class="n">S</span><span class="w"> </span><span class="n">obconf</span><span class="w"> </span><span class="n">menumaker</span><span class="w"> </span><span class="n">tint2</span><span class="w"> </span><span class="n">lxinput</span><span class="w"> </span><span class="n">lxappearance</span><span class="w"> </span><span class="n">nitrogen</span><span class="w"> </span><span class="n">slim</span>
+</code></pre></div>
+
+<p>Configurer autostart pour que démarre au démarrage:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">vim</span><span class="w"> </span><span class="o">~/</span>.<span class="nv">config</span><span class="o">/</span><span class="nv">openbox</span><span class="o">/</span><span class="nv">autostart</span>
+
+<span class="nv">tint2</span><span class="w"> </span><span class="o">&amp;</span>
+<span class="nv">nitrogen</span><span class="w"> </span><span class="o">--</span><span class="nv">restaure</span><span class="w"> </span><span class="o">&amp;</span>
+<span class="nv">compton</span><span class="w"> </span><span class="o">-</span><span class="nv">b</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="o">&amp;</span>
+<span class="k">exec</span><span class="w"> </span><span class="nv">alacritty</span>
+<span class="nv">nm</span><span class="o">-</span><span class="nv">applet</span>
+</code></pre></div>
+
+<p>Dans ce fichier on démarre la taskbar, le fond d'écran, le compositeur et un terminal</p>
+<h3>Générer un menu démarrer</h3>
+<div class="highlight"><pre><span></span><code>mmaker -v -f OpenBox3
+</code></pre></div>
+
+<h3>Activer le login manager</h3>
+<p>Créer un script par defaut xinitrc:</p>
+<div class="highlight"><pre><span></span><code>cp /etc/X11/xinit/xinitrc ~/.xinitrc
+</code></pre></div>
+
+<p>Editer-le et ajouter:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">vim</span><span class="w"> </span><span class="o">~/</span>.<span class="nv">xinitrc</span>
+
+<span class="k">exec</span><span class="w"> </span><span class="nv">openbox</span><span class="o">-</span><span class="nv">session</span>
+</code></pre></div>
+
+<p>Activer Slim:</p>
+<div class="highlight"><pre><span></span><code>sudo systemctl enable slim.service
+</code></pre></div>
+
+<p>Enfin:</p>
+<div class="highlight"><pre><span></span><code>reboot
+</code></pre></div>
+
+<h3>En complément: Trash &amp; drive Management</h3>
+<ul>
+<li>gvfs - volumes and have trash control</li>
+<li>udisks2 - Automatic mounting</li>
+<li>udiskie - Removable disk automounter using udisks</li>
+</ul>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://beagleboard.org/bone"><i class="icon-external-link"></i>BeagleBoard</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

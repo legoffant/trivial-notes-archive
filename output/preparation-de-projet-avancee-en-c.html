@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Préparation de projet avancée en C++</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/ltcb.html">LTCB</a></li>
+                          <li class="divider-vertical"></li>
+                  <li class="active">
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Préparation de projet avancée en C++">
+                                        Préparation de projet avancée en C++
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2022-11-04T03:30:00+01:00">
+        <i class="icon-calendar"></i>ven. 04 novembre 2022
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/cc.html"><i class="icon-folder-open"></i>C/C++</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/projet.html"><i class="icon-tag"></i>projet</a>
+	<a href="/tag/doxygen.html"><i class="icon-tag"></i>doxygen</a>
+	<a href="/tag/cmake.html"><i class="icon-tag"></i>cmake</a>
+	<a href="/tag/spaceinvaders.html"><i class="icon-tag"></i>spaceinvaders</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Ceci est un How-to pour créer un projet C++ et le faire dans les règles de l'art. On va utiliser les outils standards de la communauté FLOSS (Free Libre Open Source Software). Car j'éduque dans ce sens à l'ingénierie logicielle tout en apprenant des méthodes pour moi même. J'apprends et je partage les meilleurs pratiques dans mes recherches sur internet.</p>
+<p><strong>Consigne du challenge:</strong></p>
+<ul>
+<li>Créer un jeu-video de 1978: SPACE INVADERS avec SFML en programmation orienté-objet.</li>
+<li>Adapter ce jeu avec l'OpenGL.</li>
+</ul>
+<p>Vous allez me dire qu'es-ce que <a href="https://www.sfml-dev.org/index-fr.php">SFML</a>, c'est une librairie multimédias pour interfacer avec les composants du PC pour avoir de l’interactivité pour créer des applications de jeux-videos entre autre. La partie <a href="https://www.opengl.org/">OpenGL</a> est le standard que l'on utilise pour de la haute performance graphique.</p>
+<p>on aurait très bien pus s'arrêter là, mais on va développer notre projet avec des standards de l'ingénierie logicielle en gestion de projet pour prendre des bonnes habitudes. Je veux que vous soyez opérationnel en C++, alors on reprend les bases:</p>
+<p><strong>Les outils</strong></p>
+<ul>
+<li>Editeur de texte: <a href="http://neovim.io/">Neovim</a></li>
+<li>Compilateur: <a href="https://gcc.gnu.org/">g++</a></li>
+<li>Documentation: <a href="https://www.doxygen.nl/">Doxygen</a></li>
+<li>Gérer la compilation du projet: <a href="https://cmake.org/">cmake</a></li>
+<li>Contrôle de version: <a href="https://git-scm.com/">Git</a></li>
+<li>Système d'exploitation: <a href="https://archlinux.org/">Arch Linux</a></li>
+</ul>
+<p>Pour apprendre à coder en C++ on peut s'appuyer sur ces livres:</p>
+<ul>
+<li>Introduction to programming with C++ for Engineers</li>
+<li>Modern C++ for absolute beginners</li>
+<li>C++ Primer</li>
+</ul>
+<p>Des sites références pour nous aider dans notre apprentissage:</p>
+<ul>
+<li><a href="https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/">Zeste du Savoir - Moderne C++</a></li>
+<li><a href="https://www.learncpp.com/">Learncpp</a></li>
+<li><a href="https://hackingcpp.com/">Hackingcpp</a></li>
+</ul>
+<p>Ce que l'on va construire pour notre projet, un template avec une arborescence root "spaceinvaders":</p>
+<div class="highlight"><pre><span></span><code><span class="na">.git</span>
+<span class="na">.gitignore</span>
+<span class="nf">build</span><span class="err">/</span>
+<span class="nf">docs</span><span class="err">/</span><span class="no">CMakeLists.txt</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="no">Doxyfile.in</span>
+<span class="nf">src</span><span class="err">/</span><span class="no">CmakeLists.txt</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="p">*.</span><span class="no">cpp</span><span class="p">,</span><span class="w"> </span><span class="p">*.</span><span class="no">hpp</span>
+<span class="nf">CMakeLists.txt</span>
+<span class="nf">README.md</span>
+<span class="nf">LICENCE</span>
+</code></pre></div>
+
+<p><strong>Paquets prérequis en particulier quelques librairies externes C++ utiles pour les développeurs et ingénieurs:</strong></p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen qt6-base sfml sdl2
+</code></pre></div>
+
+<ul>
+<li>base-devel pour les outils de compilation GCC</li>
+<li>neovim votre éditeur de texte</li>
+<li><a href="https://llvm.org/">llvm</a> compilateur infrastructure</li>
+<li>clang C language family Frontend for LLVM</li>
+<li>git controle de version</li>
+<li>mesa open-source implementation of OpenGL</li>
+<li><a href="https://www.glfw.org/">glfw-x11</a> Free open source openGL portable framework</li>
+<li><a href="https://www.boost.org/">boost</a> Free portable C++ source library (dev headers)</li>
+<li>cmake cross-platform open-source make system</li>
+<li>doxygen Documentation system for C++</li>
+<li><a href="https://eigen.tuxfamily.org/index.php?title=Main_Page">eigen</a> C++ template lib for vector, matrix, linear algebra</li>
+<li><a href="https://www.libsdl.org/">sdl2</a> A library low-level access to a video framebuffer, audio output, mouse, keyboard</li>
+<li><a href="https://www.qt.io/product/qt6">qt6-base</a> A cross-platform application and UI Framework</li>
+<li>sfml A simple, fast, cross-platform, objet-oriented multimedia API</li>
+</ul>
+<p><strong>Créer votre dossier</strong> <code>sources</code> dans /home ou vous allez y mettre vos projets</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>~/sources
+</code></pre></div>
+
+<h3>1. Configurer Git</h3>
+<p>Nous allons d'abord configurer Git pour les nouveaux venus et apprendre le contrôle de version. Vous trouverez sur internet <a href="https://www.youtube.com/watch?v=lhiSnzrvG48">des tutoriels</a> pour gérer votre code.</p>
+<p>Dans un terminal &gt;</p>
+<p><strong>Votre identité</strong></p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Anthony Le Goff&quot;</span>
+$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.mail<span class="w"> </span>triviality-lga@protonmail.com
+</code></pre></div>
+
+<p><strong>Votre éditeur de texte</strong></p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>nvim
+</code></pre></div>
+
+<p><strong>Votre nom de branche par défaut</strong></p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span>main
+</code></pre></div>
+
+<p><strong>Vérifier les paramètres</strong></p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--List
+</code></pre></div>
+
+<h3>2. Générer des clés publiques SSH</h3>
+<p>Si vous le savez pas encore, l'authentification sous Github utilise maintenant SSH par défaut, il faut donc générer une paire de clé et l'ajouter dans Github pour ce connecter au dépôt distant.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/.ssh
+$<span class="w"> </span>ssh-keygen<span class="w"> </span>-o
+</code></pre></div>
+
+<p>Suivez la procédure et créer un mot de passe</p>
+<p>Enfin pour récupérer la valeur de la clé publique généré à copiez sur Github:</p>
+<div class="highlight"><pre><span></span><code>cat ~/.ssh/id_rsa.pub
+</code></pre></div>
+
+<p>Copiez la clé sur un notepad en attendant.</p>
+<h3>3. Copiez la clé publique sur son compte Github</h3>
+<p>Créer un compte Github, si ce n'est déjà fait. Allez dans <code>settings/ssh and GPG keys/new SSH Key</code>. Collez la clé publique et valider.</p>
+<h3>4. Créer un repository</h3>
+<ul>
+<li>Cliquez sur + en haut à droite puis "new repository".</li>
+<li>Dans repository name tapez: <code>spaceinvaders</code>. </li>
+<li>Cochez: Add a README File</li>
+<li>Choisir add .gitignore template C++</li>
+<li>Choose a licence: GNU General Public Licence v3.0</li>
+</ul>
+<p>Cliquez sur "Create repository" puis sur le bouton vert Code/ssh et copiez la ligne:</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">monPseudo</span><span class="o">&gt;/</span><span class="n">spaceinvaders</span><span class="p">.</span><span class="n">git</span>
+</code></pre></div>
+
+<h3>5. Cloner votre repository en local</h3>
+<p>Dans un terminal, allez dans votre dossier de travail projet <code>sources</code>:</p>
+<div class="highlight"><pre><span></span><code>cd ~/sources
+</code></pre></div>
+
+<p>puis cloner le repo git:</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@github</span><span class="p">.</span><span class="nl">com</span><span class="p">:</span><span class="o">&lt;</span><span class="n">monPseudo</span><span class="o">&gt;/</span><span class="n">spaceinvaders</span><span class="p">.</span><span class="n">git</span>
+</code></pre></div>
+
+<p>Vous avez maintenant un nouveau dossier "spaceinvaders" avec quelques fichiers copiez depuis le dépôt distant Github.</p>
+<h3>6. Ignorer le dossier build sur le repo distant</h3>
+<p>Editer dans votre projet <code>spaceinvaders</code>:</p>
+<div class="highlight"><pre><span></span><code>nvim .gitignore
+</code></pre></div>
+
+<ul>
+<li>Ajoutez au début <code>**/build/</code></li>
+<li>Sauvegarder et quittez neovim</li>
+</ul>
+<h3>7. Configurer (Neo)Vim pour C++</h3>
+<p>Petit rappel pour les débutants. Pour ce familiariser avec Vim, lancer la commande dans un terminal <code>vimtutor</code>. Vous pouvez également apprendre à configurer Vim qui est un peu différent de Neovim avec le livre: <a href="https://vimebook.com/fr">Vim pour les humains</a> en libre accès.</p>
+<p>Une fois que vous êtes prêt avec Vim, apprenez de ces deux vidéos pour la suite:</p>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=ViHgyApE9zM">Setting up (Neo)vim for C++: A IDE like experience with coc!</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y_UubM5eYAM">Setting up (Neo)vim for C++: IDE like Files, CMake and GTest integrations!</a></li>
+</ol>
+<p>N'oubliez pas de créer votre config file dans <code>~/.config/nvim/init.vim</code></p>
+<p>Mon propre init.vim pour information:</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot; Neovim configuration file init.vim</span>
+<span class="s2">&quot;</span><span class="w"> </span>author:<span class="w"> </span>Anthony<span class="w"> </span>J.R<span class="w"> </span>Le<span class="w"> </span>Goff<span class="w"> </span>
+<span class="s2">&quot; date: 16th april 2022</span>
+
+<span class="s2">:set number</span>
+<span class="s2">:set autoindent</span>
+<span class="s2">:set tabstop=4</span>
+<span class="s2">:set shiftwidth=4</span>
+<span class="s2">:set smarttab</span>
+<span class="s2">:set softtabstop=4</span>
+<span class="s2">&quot;</span>:set<span class="w"> </span><span class="nv">mouse</span><span class="o">=</span>a
+
+call<span class="w"> </span>plug#begin<span class="o">()</span><span class="w"> </span>
+
+Plug<span class="w"> </span><span class="s1">&#39;tpope/vim-fugitive&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;tpope/vim-surround&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;scrooloose/nerdtree&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;scrooloose/syntastic&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;vim-airline/vim-airline&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;tomasr/molokai&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;raimondi/delimitmate&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;kien/ctrlp.vim&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;ryanoasis/vim-devicons&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;majutsushi/tagbar&#39;</span>
+Plug<span class="w"> </span><span class="s1">&#39;neoclide/coc.nvim&#39;</span>,<span class="w"> </span><span class="o">{</span><span class="s1">&#39;branch&#39;</span>:<span class="w"> </span><span class="s1">&#39;release&#39;</span><span class="o">}</span>
+
+<span class="nb">set</span><span class="w"> </span><span class="nv">encoding</span><span class="o">=</span>UTF-8
+
+call<span class="w"> </span>plug#end<span class="o">()</span>
+
+:set<span class="w"> </span><span class="nv">statusline</span><span class="o">+=</span>%#warningmsg#
+:set<span class="w"> </span><span class="nv">statusline</span><span class="o">+=</span>%<span class="o">{</span>SyntasticStatuslineFlag<span class="o">()}</span>
+:set<span class="w"> </span><span class="nv">statusline</span><span class="o">+=</span>%*
+
+:let<span class="w"> </span>g:syntastic_always_populate_loc_list<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+:let<span class="w"> </span>g:syntastic_auto_loc_list<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+:let<span class="w"> </span>g:syntastic_check_on_open<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+:let<span class="w"> </span>g:syntastic_check_on_wq<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+
+nnoremap<span class="w"> </span>&lt;C-f&gt;<span class="w"> </span>:NERDTreeFocus&lt;CR&gt;
+nnoremap<span class="w"> </span>&lt;C-n&gt;<span class="w"> </span>:NERDTree&lt;CR&gt;
+nnoremap<span class="w"> </span>&lt;C-t&gt;<span class="w"> </span>:NERDTreeToggle&lt;CR&gt;
+
+nmap<span class="w"> </span>&lt;C-r&gt;<span class="w"> </span>:TagbarToggle&lt;CR&gt;
+nmap<span class="w"> </span>&lt;C-p&gt;<span class="w"> </span>:CtrlP&lt;CR&gt;
+
+:colorscheme<span class="w"> </span>molokai
+
+<span class="nb">let</span><span class="w"> </span>g:NERDTreeDirArrowExpandable<span class="o">=</span><span class="s2">&quot;+&quot;</span>
+<span class="nb">let</span><span class="w"> </span>g:NERDTreeDirArrowCollapsible<span class="o">=</span><span class="s2">&quot;~&quot;</span>
+
+<span class="s2">&quot; air-line</span>
+<span class="s2">let g:airline_powerline_fonts = 1</span>
+
+
+<span class="s2">&quot;</span><span class="w"> </span>:CocInstall<span class="w"> </span>coc-python
+<span class="s2">&quot; :CocInstall coc-clangd</span>
+<span class="s2">&quot;</span><span class="w"> </span>:CocInstall<span class="w"> </span>coc-java
+</code></pre></div>
+
+<h3>8. Cmake + Doxygen</h3>
+<p>Pour vous familiarisez avec Cmake quelques ressources disponibles pour mieux comprendre les fichiers de configurations:</p>
+<ul>
+<li>(Video) <a href="https://www.youtube.com/watch?v=mKZ-i-UfGgQ&amp;t=25s">Simplified Cmake Tutorial</a></li>
+<li><a href="http://sirien.metz.supelec.fr/depot/SIR/TutorielCMake/index.html">Cours de Supelec sur Cmake</a></li>
+</ul>
+<p>Nos fichiers de configurations pour notre projet:</p>
+<p>spaceinvaders/CMakeLists.txt</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cmake_minimum_required</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.10</span><span class="w"> </span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_BUILD_TYPE</span><span class="w"> </span><span class="s">Release</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD</span><span class="w"> </span><span class="s">17</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD_REQUIRED</span><span class="w"> </span><span class="s">ON</span><span class="p">)</span>
+<span class="nb">project</span><span class="p">(</span><span class="s">spaceinvaders</span><span class="w"> </span><span class="s">version</span><span class="w"> </span><span class="s">1.0</span><span class="p">)</span>
+<span class="nb">add_subdirectory</span><span class="p">(</span><span class="s">src</span><span class="p">)</span>
+<span class="nb">add_subdirectory</span><span class="p">(</span><span class="s">docs</span><span class="p">)</span>
+</code></pre></div>
+
+<p>spaceinvaders/src/CMakeLists.txt</p>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="nx">Dependance</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">librairie</span><span class="w"> </span><span class="nx">externe</span>
+<span class="nx">find_package</span><span class="p">(</span><span class="nx">SFML</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="nx">REQUIRED</span><span class="w"> </span><span class="nx">network</span><span class="w"> </span><span class="nx">audio</span><span class="w"> </span><span class="nx">graphics</span><span class="w"> </span><span class="nx">window</span><span class="w"> </span><span class="nx">system</span><span class="p">)</span>
+
+<span class="nx">add_executable</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">main</span><span class="p">.</span><span class="nx">cpp</span><span class="p">)</span>
+<span class="nx">target_compile_options</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">PUBLIC</span><span class="w"> </span><span class="o">-</span><span class="nx">Wall</span><span class="w"> </span><span class="o">-</span><span class="nx">Wextra</span><span class="p">)</span>
+
+<span class="err">#</span><span class="w"> </span><span class="nx">On</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">binaire</span>
+<span class="nx">install</span><span class="p">(</span><span class="nx">PROGRAMS</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">CMAKE_CURRENT_BINARY_DIR</span><span class="p">}</span><span class="o">/</span><span class="nx">mainDemo</span>
+<span class="w">    </span><span class="nx">DESTINATION</span><span class="w"> </span><span class="nx">bin</span>
+<span class="w">    </span><span class="nx">RENAME</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">CMAKE_PROJECT_NAME</span><span class="p">}</span><span class="o">-</span><span class="nx">mainDemo</span><span class="p">)</span>
+
+<span class="err">#</span><span class="w"> </span><span class="nx">On</span><span class="w"> </span><span class="nx">construit</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">binaire</span><span class="w"> </span><span class="nx">avec</span><span class="w"> </span><span class="nx">SFML</span>
+<span class="nx">target_include_directories</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">PUBLIC</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">SFML_INCLUDE_DIR</span><span class="p">})</span>
+<span class="nx">target_link_librairies</span><span class="p">(</span><span class="nx">mainDemo</span><span class="w"> </span><span class="nx">PUBLIC</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">SFML_LIBRARIES</span><span class="p">}</span><span class="w"> </span><span class="err">$</span><span class="p">{</span><span class="nx">SFML_DEPENDENCIES</span><span class="p">})</span>
+
+<span class="err">#</span><span class="w"> </span><span class="nx">Librairie</span><span class="w"> </span><span class="nx">dynamique</span><span class="w"> </span><span class="nx">headers</span>
+
+<span class="nx">add_library</span><span class="p">(</span><span class="nx">mainDemo</span>
+<span class="w">    </span><span class="nx">SHARED</span>
+<span class="w">    </span><span class="nx">main</span><span class="p">.</span><span class="nx">cpp</span><span class="p">)</span>
+
+<span class="nx">install</span><span class="p">(</span><span class="nx">TARGETS</span><span class="w"> </span><span class="nx">mainDemo</span>
+<span class="w">    </span><span class="nx">DESTINATION</span><span class="w"> </span><span class="nx">lib</span><span class="p">)</span>
+
+<span class="nx">file</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">GLOB</span>
+<span class="w">    </span><span class="nx">headers</span>
+<span class="w">    </span><span class="o">*</span><span class="p">.</span><span class="nx">hpp</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Préparation de la documentation</strong></p>
+<p>On utilise le programme Doxygen pour générer le fichier de configuration dans le dossier <code>spaceinvaders/docs/</code>:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/sources/spaceinvaders
+$<span class="w"> </span>mkdir<span class="w"> </span>docs
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>docs
+$<span class="w"> </span>doxygen<span class="w"> </span>-g<span class="w"> </span>Doxyfile.in
+</code></pre></div>
+
+<p>On édite le fichier avec neovim pour le configurer avec cmake:</p>
+<div class="highlight"><pre><span></span><code><span class="w">      </span>PROJECT_NAME<span class="w">           </span>=<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_PROJECT_NAME</span><span class="cp">}</span>
+<span class="w">      </span>OUTPUT_DIRECTORY<span class="w">       </span>=<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/
+<span class="w">      </span>INPUT<span class="w">                  </span>=<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_SOURCE_DIR</span><span class="cp">}</span>/src
+<span class="w">      </span>EXTRACT_ALL<span class="w">            </span>=<span class="w"> </span>YES
+</code></pre></div>
+
+<p>spaceinvaders/docs/CMakeLists.txt</p>
+<div class="highlight"><pre><span></span><code>find_package(Doxygen)
+if(NOT<span class="w"> </span>DOXYGEN_FOUND)
+<span class="w">    </span>message(&quot;Doxygen<span class="w"> </span>not<span class="w"> </span>found,<span class="w"> </span>I<span class="w"> </span>will<span class="w"> </span>not<span class="w"> </span>generate/install<span class="w"> </span>the<span class="w"> </span>documentation&quot;)
+else()
+<span class="w">   </span>configure_file(Doxyfile.in<span class="w"> </span>Doxyfile)
+
+<span class="w">   </span>set(DOXYGEN_INPUT<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/Doxyfile.in)
+<span class="w">   </span>set(DOXYGEN_OUTPUT<span class="w"> </span><span class="cp">${</span><span class="n">APIDOC_DIR</span><span class="cp">}</span>/html/index.html)
+
+<span class="w">   </span>add_custom_target(docs<span class="w"> </span>ALL
+<span class="w">     </span>COMMAND<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span><span class="w"> </span>-E<span class="w"> </span>echo_append<span class="w"> </span>&quot;Building<span class="w"> </span>API<span class="w"> </span>Documentation...&quot;
+<span class="w">     </span>COMMAND<span class="w"> </span><span class="cp">${</span><span class="n">DOXYGEN_EXECUTABLE</span><span class="cp">}</span><span class="w"> </span><span class="cp">${</span><span class="n">DOXYGEN_INPUT</span><span class="cp">}</span><span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+<span class="w">     </span>COMMAND<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_COMMAND</span><span class="cp">}</span><span class="w"> </span>-E<span class="w"> </span>echo<span class="w"> </span>&quot;Done.&quot;
+<span class="w">     </span>)
+
+<span class="w">  </span>install(DIRECTORY<span class="w"> </span><span class="cp">${</span><span class="n">CMAKE_BINARY_DIR</span><span class="cp">}</span>/docs/html<span class="w"> </span>
+<span class="w">          </span>DESTINATION<span class="w"> </span>share/doc/<span class="cp">${</span><span class="n">CMAKE_PROJECT_NAME</span><span class="cp">}</span>)
+
+endif()
+</code></pre></div>
+
+<p>Pour la documentation, dans <code>docs</code> est généré un <code>index.html</code> avec les commentaires du code au format Doxygen depuis les fichiers sources. On peut ensuite envoyer sur un site online tels que <a href="https://codedocs.xyz/">https://codedocs.xyz/</a> à partir de repository Github. Enfin renseignez-vous sur l'utilisation de Sphinx/breathe pour générer de la documentation également.</p>
+<h3>9. Compilation et installation</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/sources/spaceinvaders
+$<span class="w"> </span>mkdir<span class="w"> </span>build
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+$<span class="w"> </span>cmake<span class="w"> </span>..
+$<span class="w"> </span>make
+$<span class="w"> </span>./src/mainDemo
+$<span class="w"> </span>make<span class="w"> </span>install
+</code></pre></div>
+
+<h3>10. Commiter votre code</h3>
+<p>Vous allez faire vos premiers commits de votre code. Il va falloir suivre des fichiers. Créer un <code>main.cpp</code> et <code>class.hpp</code> basics dans <code>src/</code> pour appeler une classe et faire un "hello world" pour tester si tout fonctionne.</p>
+<p><strong>Suivi et Commit du code</strong></p>
+<p>Dans votre dossier projet root <code>spaceinvaders</code> lancez les commandes:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;commit init&quot;</span>
+</code></pre></div>
+
+<p>Pusher votre code sur Github</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+
+<h3>11. Pour aller plus loin</h3>
+<ul>
+<li>Test unitaire avec <a href="https://google.github.io/googletest/primer.html">GTest</a></li>
+<li>Créer une archive <code>tar.gz</code></li>
+<li>utilisez CPack/PkgBuild comme générateur de paquet pour Arch Linux</li>
+</ul>
+<h3>Conclusion</h3>
+<p>Voila vous savez presque tout pour bien démarrer un projet avancée en C++ en développant un Space Invaders grâce à la librairie SFML en utilisant tous les outils nécessaire à une bonne organisation du projet. N'oubliez pas de commenter votre code! Après un mois on oublie souvent pourquoi on a créé une fonction, un algorithme ou une classe, donc soyez prévoyant en particulier sur des longs projets ou quand plusieurs personnes ce joint à vous pour du social coding. </p>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://beagleboard.org/bone"><i class="icon-external-link"></i>BeagleBoard</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

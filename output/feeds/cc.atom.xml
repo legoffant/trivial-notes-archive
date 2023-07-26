@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - C/C++</title><link href="/" rel="alternate"></link><link href="/feeds/cc.atom.xml" rel="self"></link><id>/</id><updated>2023-06-28T21:17:00+02:00</updated><entry><title>Apprendre le C++ sous MCU Arduino UNO R3</title><link href="/apprendre-le-c-sous-mcu-arduino-uno-r3.html" rel="alternate"></link><published>2023-06-28T21:17:00+02:00</published><updated>2023-06-28T21:17:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-06-28:/apprendre-le-c-sous-mcu-arduino-uno-r3.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Arduino utilise un langage épuré à base de C. Il y a très peu de fonction et donc plus facile pour l'apprentissage. Durant un certain temps il fallait utiliser le logiciel Arduino IDE 1.0 qui était très limité pour programmer la carte de prototype électronique. Après  c'est simplifié, suffit d'installer le logiciel et tout marche, ainsi que le port série vers UNO. C'est la version pour les grands débutants et les newbies. Je rappel le lien utile pour apprendre Arduino UNO en libre accès &lt;a href="https://eskimon.fr/extra/ebooks/arduino-premiers-pas-en-informatique-embarquee.pdf"&gt;Arduino : premiers pas en informatique embarquée [PDF]&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;On va passer à la méthode professionnel chez les développeurs et ingénieurs en systèmes embarqués et microcontrôleurs MCU en utilisant le workflow:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PlatformIO&lt;/strong&gt; is a cross-platform, cross-architecture, multiple framework, professional tool for embedded systems engineers and for software developers who write applications for embedded products.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;(Neo)Vim&lt;/strong&gt; is a free and open-source, screen-based text editor program for use both from a command-line interface. Et donc d'utiliser des plugins tels que CoC (auto-completion), fugitive (integration de Git) etc.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Picocom&lt;/strong&gt; monitor the serial interface  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ce qui permet une plus grande souplesse d'utilisation et de programmer en C++ avec des librairies customs via un éditeur de texte pour professionnel tel que Vim dans un terminal.  &lt;/p&gt;
+&lt;h3&gt;Installer PlatformIO CLI sur un environnement GNU/Linux (Arch Linux) en utilisant virtualenv en Python:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;python-pip&lt;span class="w"&gt;  &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--user&lt;span class="w"&gt; &lt;/span&gt;virtualenv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis installer le package platformio dans un dossier en activant l'environnement virtuel:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;-p&lt;span class="w"&gt; &lt;/span&gt;~/local
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/local&lt;span class="w"&gt;   &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;platformio&lt;span class="w"&gt;   &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;platformio/bin/activate&lt;span class="w"&gt;   &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;platformio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;NOTA: pour désactiver virtualenv: &lt;code&gt;$ deactivate&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Cela veut dire que les commandes de platformIO CLI sont disponible dans l'environnement virtuel dans le chemin PATH : &lt;code&gt;~/local/platformio/bin/pio&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Rechercher le nom de la carte Arduino UNO R3:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(platformio) $ platformio boards | grep uno
+        uno                   atmega328p     16Mhz     31Kb    2Kb    Arduino Uno
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Créer un projet&lt;/h3&gt;
+&lt;p&gt;En l’occurrence on va appeler le projet 'blink' pour faire clignoter une LED sur Arduino pour vérifier que tout fonctionne.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/project/Blink
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/project/Blink
+$&lt;span class="w"&gt; &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;project&lt;span class="w"&gt; &lt;/span&gt;init&lt;span class="w"&gt; &lt;/span&gt;--board&lt;span class="w"&gt; &lt;/span&gt;uno&lt;span class="w"&gt; &lt;/span&gt;--ide&lt;span class="w"&gt; &lt;/span&gt;vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;générera un sous-dossier vide et un fichier projet (&lt;code&gt;platformio.ini&lt;/code&gt;). Le format de &lt;code&gt;platformio.ini&lt;/code&gt; est &lt;a href="https://en.wikipedia.org/wiki/INI_file"&gt;fichier INI&lt;/a&gt;.  &lt;/p&gt;
+&lt;h3&gt;Recherchez les noms des ports série:&lt;/h3&gt;
+&lt;p&gt;L'Arduino doit communiquer via une interface. Le micrologiciel intégré est téléchargé via le port série. La valeur par défaut est &lt;code&gt;/dev/ttyUSB0&lt;/code&gt;, donc si vous connectez Arduino, la mise à jour échouera si elle est laissée telle quelle car le nom du port est différent. Par conséquent, il est nécessaire de vérifier le nom du port série et de le spécifier dans &lt;code&gt;platformio.ini&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;De plus il faut verifier les droits sur le port série, souvent on a pas les privilèges d'accès en écriture. Il faut ajouter l'utilisateur au groupe &lt;code&gt;uucp&lt;/code&gt; sous Arch Linux(voir wiki Arduino):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;usermod&lt;span class="w"&gt; &lt;/span&gt;-aG&lt;span class="w"&gt; &lt;/span&gt;uucp&lt;span class="w"&gt; &lt;/span&gt;username
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lister les ports de série:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(platformio)$ platformio serialports list
+        :   #réduction
+        /dev/ttyACM0
+        ----------
+        Hardware ID: USB VID:PID=1a86:7523
+        Description: QinHeng Electronics USB2.0-Serial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans cette exemple on utilise &lt;code&gt;/dev/ttyACM0&lt;/code&gt; et donc il faut modifier &lt;code&gt;platformio.ini&lt;/code&gt; avec Vim au paramêtre &lt;a href="https://docs.platformio.org/en/latest/projectconf/sections/env/options/upload/upload_port.html"&gt;upload_port&lt;/a&gt;`  &lt;/p&gt;
+&lt;h3&gt;Ecrire la source&lt;/h3&gt;
+&lt;p&gt;Le clignotement habituel de la LED et l'affichage en série. Mettez la source dans &lt;code&gt;./src&lt;/code&gt;.  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;blink&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+
+
+&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;Arduino.h&amp;gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LED_BUILTIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;OUTPUT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;9600&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;
+&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;loop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello Arduino&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LED_BUILTIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HIGH&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;333&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;                        &lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LED_BUILTIN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;333&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;                        &lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans le programme, il faut utiliser le header &lt;code&gt;Arduino.h&lt;/code&gt; pour utiliser les librairies et fonctions de la carte. En C++ on utilise le mot clé void. Egalement j'utilise un print pour avoir un retour d'affichage de fonctionnement sur le monitoring du port série.  &lt;/p&gt;
+&lt;h3&gt;Essayer de compiler:&lt;/h3&gt;
+&lt;p&gt;La commande va télécharger le programme et flasher la carte UNO:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;upload&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Normalement la LED built-in devrait clignoter si tout fonctionne.&lt;/p&gt;
+&lt;h3&gt;Vim Quickfix Mode&lt;/h3&gt;
+&lt;p&gt;Pour intégrer avec Vim's quickfix mode un simple makefile suffit:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;    &lt;/span&gt;.PHONY:&lt;span class="w"&gt; &lt;/span&gt;all
+&lt;span class="w"&gt;    &lt;/span&gt;all:&lt;span class="w"&gt; &lt;/span&gt;build
+
+
+&lt;span class="w"&gt;    &lt;/span&gt;.PHONY:&lt;span class="w"&gt; &lt;/span&gt;build
+&lt;span class="w"&gt;    &lt;/span&gt;build:
+&lt;span class="w"&gt;        &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;run
+
+&lt;span class="w"&gt;    &lt;/span&gt;.PHONY:&lt;span class="w"&gt; &lt;/span&gt;upload
+&lt;span class="w"&gt;    &lt;/span&gt;upload:
+&lt;span class="w"&gt;        &lt;/span&gt;pio&lt;span class="w"&gt; &lt;/span&gt;run&lt;span class="w"&gt; &lt;/span&gt;--target&lt;span class="w"&gt; &lt;/span&gt;upload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ensuite vous pouvez automatiser la compilation en lançant la commande dans Vim &lt;code&gt;:make&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Monitoring du port de série&lt;/h3&gt;
+&lt;p&gt;On va installer picocom pour le monitoring: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;picocom&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;la commande pour monitorer  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;picocom&lt;span class="w"&gt; &lt;/span&gt;--baud&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;9600&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;--echo&lt;span class="w"&gt; &lt;/span&gt;--noreset&lt;span class="w"&gt; &lt;/span&gt;/dev/ttyUSB0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Qui devrait normalement retourner en affichage le print:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Hello Arduino
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Plus d'information sur la doc officiel:` &lt;a href="https://docs.platformio.org/en/latest/index.html"&gt;https://docs.platformio.org/en/latest/index.html&lt;/a&gt;&lt;/p&gt;</content><category term="C/C++"></category><category term="Arduino"></category></entry><entry><title>Préparation de projet avancée en C++</title><link href="/preparation-de-projet-avancee-en-c.html" rel="alternate"></link><published>2022-11-04T03:30:00+01:00</published><updated>2022-11-04T03:30:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-11-04:/preparation-de-projet-avancee-en-c.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Ceci est un How-to pour créer un projet C++ et le faire dans les règles de l'art. On va utiliser les outils standards de la communauté FLOSS (Free Libre Open Source Software). Car j'éduque dans ce sens à l'ingénierie logicielle tout en apprenant des méthodes pour moi même. J'apprends et je partage les meilleurs pratiques dans mes recherches sur internet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Consigne du challenge:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Créer un jeu-video de 1978: SPACE INVADERS avec SFML en programmation orienté-objet.&lt;/li&gt;
+&lt;li&gt;Adapter ce jeu avec l'OpenGL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vous allez me dire qu'es-ce que &lt;a href="https://www.sfml-dev.org/index-fr.php"&gt;SFML&lt;/a&gt;, c'est une librairie multimédias pour interfacer avec les composants du PC pour avoir de l’interactivité pour créer des applications de jeux-videos entre autre. La partie &lt;a href="https://www.opengl.org/"&gt;OpenGL&lt;/a&gt; est le standard que l'on utilise pour de la haute performance graphique.&lt;/p&gt;
+&lt;p&gt;on aurait très bien pus s'arrêter là, mais on va développer notre projet avec des standards de l'ingénierie logicielle en gestion de projet pour prendre des bonnes habitudes. Je veux que vous soyez opérationnel en C++, alors on reprend les bases:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Les outils&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Editeur de texte: &lt;a href="http://neovim.io/"&gt;Neovim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Compilateur: &lt;a href="https://gcc.gnu.org/"&gt;g++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Documentation: &lt;a href="https://www.doxygen.nl/"&gt;Doxygen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gérer la compilation du projet: &lt;a href="https://cmake.org/"&gt;cmake&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Contrôle de version: &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Système d'exploitation: &lt;a href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour apprendre à coder en C++ on peut s'appuyer sur ces livres:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to programming with C++ for Engineers&lt;/li&gt;
+&lt;li&gt;Modern C++ for absolute beginners&lt;/li&gt;
+&lt;li&gt;C++ Primer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Des sites références pour nous aider dans notre apprentissage:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/"&gt;Zeste du Savoir - Moderne C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.learncpp.com/"&gt;Learncpp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hackingcpp.com/"&gt;Hackingcpp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ce que l'on va construire pour notre projet, un template avec une arborescence root "spaceinvaders":&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="na"&gt;.git&lt;/span&gt;
+&lt;span class="na"&gt;.gitignore&lt;/span&gt;
+&lt;span class="nf"&gt;build&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;
+&lt;span class="nf"&gt;docs&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="no"&gt;CMakeLists.txt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;Doxyfile.in&lt;/span&gt;
+&lt;span class="nf"&gt;src&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="no"&gt;CmakeLists.txt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;*.&lt;/span&gt;&lt;span class="no"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;*.&lt;/span&gt;&lt;span class="no"&gt;hpp&lt;/span&gt;
+&lt;span class="nf"&gt;CMakeLists.txt&lt;/span&gt;
+&lt;span class="nf"&gt;README.md&lt;/span&gt;
+&lt;span class="nf"&gt;LICENCE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Paquets prérequis en particulier quelques librairies externes C++ utiles pour les développeurs et ingénieurs:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo pacman -S base-devel neovim llvm clang git mesa glfw-x11 boost cmake doxygen eigen qt6-base sfml sdl2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;base-devel pour les outils de compilation GCC&lt;/li&gt;
+&lt;li&gt;neovim votre éditeur de texte&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://llvm.org/"&gt;llvm&lt;/a&gt; compilateur infrastructure&lt;/li&gt;
+&lt;li&gt;clang C language family Frontend for LLVM&lt;/li&gt;
+&lt;li&gt;git controle de version&lt;/li&gt;
+&lt;li&gt;mesa open-source implementation of OpenGL&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.glfw.org/"&gt;glfw-x11&lt;/a&gt; Free open source openGL portable framework&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.boost.org/"&gt;boost&lt;/a&gt; Free portable C++ source library (dev headers)&lt;/li&gt;
+&lt;li&gt;cmake cross-platform open-source make system&lt;/li&gt;
+&lt;li&gt;doxygen Documentation system for C++&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://eigen.tuxfamily.org/index.php?title=Main_Page"&gt;eigen&lt;/a&gt; C++ template lib for vector, matrix, linear algebra&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.libsdl.org/"&gt;sdl2&lt;/a&gt; A library low-level access to a video framebuffer, audio output, mouse, keyboard&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.qt.io/product/qt6"&gt;qt6-base&lt;/a&gt; A cross-platform application and UI Framework&lt;/li&gt;
+&lt;li&gt;sfml A simple, fast, cross-platform, objet-oriented multimedia API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Créer votre dossier&lt;/strong&gt; &lt;code&gt;sources&lt;/code&gt; dans /home ou vous allez y mettre vos projets&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/sources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;1. Configurer Git&lt;/h3&gt;
+&lt;p&gt;Nous allons d'abord configurer Git pour les nouveaux venus et apprendre le contrôle de version. Vous trouverez sur internet &lt;a href="https://www.youtube.com/watch?v=lhiSnzrvG48"&gt;des tutoriels&lt;/a&gt; pour gérer votre code.&lt;/p&gt;
+&lt;p&gt;Dans un terminal &amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Votre identité&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;user.name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Anthony Le Goff&amp;quot;&lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;user.mail&lt;span class="w"&gt; &lt;/span&gt;triviality-lga@protonmail.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Votre éditeur de texte&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;core.editor&lt;span class="w"&gt; &lt;/span&gt;nvim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Votre nom de branche par défaut&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--global&lt;span class="w"&gt; &lt;/span&gt;init.defaultBranch&lt;span class="w"&gt; &lt;/span&gt;main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Vérifier les paramètres&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--List
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;2. Générer des clés publiques SSH&lt;/h3&gt;
+&lt;p&gt;Si vous le savez pas encore, l'authentification sous Github utilise maintenant SSH par défaut, il faut donc générer une paire de clé et l'ajouter dans Github pour ce connecter au dépôt distant.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/.ssh
+$&lt;span class="w"&gt; &lt;/span&gt;ssh-keygen&lt;span class="w"&gt; &lt;/span&gt;-o
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Suivez la procédure et créer un mot de passe&lt;/p&gt;
+&lt;p&gt;Enfin pour récupérer la valeur de la clé publique généré à copiez sur Github:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cat ~/.ssh/id_rsa.pub
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Copiez la clé sur un notepad en attendant.&lt;/p&gt;
+&lt;h3&gt;3. Copiez la clé publique sur son compte Github&lt;/h3&gt;
+&lt;p&gt;Créer un compte Github, si ce n'est déjà fait. Allez dans &lt;code&gt;settings/ssh and GPG keys/new SSH Key&lt;/code&gt;. Collez la clé publique et valider.&lt;/p&gt;
+&lt;h3&gt;4. Créer un repository&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Cliquez sur + en haut à droite puis "new repository".&lt;/li&gt;
+&lt;li&gt;Dans repository name tapez: &lt;code&gt;spaceinvaders&lt;/code&gt;. &lt;/li&gt;
+&lt;li&gt;Cochez: Add a README File&lt;/li&gt;
+&lt;li&gt;Choisir add .gitignore template C++&lt;/li&gt;
+&lt;li&gt;Choose a licence: GNU General Public Licence v3.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cliquez sur "Create repository" puis sur le bouton vert Code/ssh et copiez la ligne:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;monPseudo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;/&lt;/span&gt;&lt;span class="n"&gt;spaceinvaders&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;5. Cloner votre repository en local&lt;/h3&gt;
+&lt;p&gt;Dans un terminal, allez dans votre dossier de travail projet &lt;code&gt;sources&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd ~/sources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;puis cloner le repo git:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;monPseudo&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;/&lt;/span&gt;&lt;span class="n"&gt;spaceinvaders&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vous avez maintenant un nouveau dossier "spaceinvaders" avec quelques fichiers copiez depuis le dépôt distant Github.&lt;/p&gt;
+&lt;h3&gt;6. Ignorer le dossier build sur le repo distant&lt;/h3&gt;
+&lt;p&gt;Editer dans votre projet &lt;code&gt;spaceinvaders&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;nvim .gitignore
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ajoutez au début &lt;code&gt;**/build/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Sauvegarder et quittez neovim&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;7. Configurer (Neo)Vim pour C++&lt;/h3&gt;
+&lt;p&gt;Petit rappel pour les débutants. Pour ce familiariser avec Vim, lancer la commande dans un terminal &lt;code&gt;vimtutor&lt;/code&gt;. Vous pouvez également apprendre à configurer Vim qui est un peu différent de Neovim avec le livre: &lt;a href="https://vimebook.com/fr"&gt;Vim pour les humains&lt;/a&gt; en libre accès.&lt;/p&gt;
+&lt;p&gt;Une fois que vous êtes prêt avec Vim, apprenez de ces deux vidéos pour la suite:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=ViHgyApE9zM"&gt;Setting up (Neo)vim for C++: A IDE like experience with coc!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Y_UubM5eYAM"&gt;Setting up (Neo)vim for C++: IDE like Files, CMake and GTest integrations!&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;N'oubliez pas de créer votre config file dans &lt;code&gt;~/.config/nvim/init.vim&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Mon propre init.vim pour information:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="s2"&gt;&amp;quot; Neovim configuration file init.vim&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;author:&lt;span class="w"&gt; &lt;/span&gt;Anthony&lt;span class="w"&gt; &lt;/span&gt;J.R&lt;span class="w"&gt; &lt;/span&gt;Le&lt;span class="w"&gt; &lt;/span&gt;Goff&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot; date: 16th april 2022&lt;/span&gt;
+
+&lt;span class="s2"&gt;:set number&lt;/span&gt;
+&lt;span class="s2"&gt;:set autoindent&lt;/span&gt;
+&lt;span class="s2"&gt;:set tabstop=4&lt;/span&gt;
+&lt;span class="s2"&gt;:set shiftwidth=4&lt;/span&gt;
+&lt;span class="s2"&gt;:set smarttab&lt;/span&gt;
+&lt;span class="s2"&gt;:set softtabstop=4&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mouse&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;a
+
+call&lt;span class="w"&gt; &lt;/span&gt;plug#begin&lt;span class="o"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-fugitive&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-surround&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/nerdtree&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/syntastic&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vim-airline/vim-airline&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tomasr/molokai&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;raimondi/delimitmate&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;kien/ctrlp.vim&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ryanoasis/vim-devicons&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;majutsushi/tagbar&amp;#39;&lt;/span&gt;
+Plug&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span&gt;,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;branch&amp;#39;&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;release&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;UTF-8
+
+call&lt;span class="w"&gt; &lt;/span&gt;plug#end&lt;span class="o"&gt;()&lt;/span&gt;
+
+:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%#warningmsg#
+:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%&lt;span class="o"&gt;{&lt;/span&gt;SyntasticStatuslineFlag&lt;span class="o"&gt;()}&lt;/span&gt;
+:set&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;%*
+
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_always_populate_loc_list&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_auto_loc_list&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_check_on_open&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+:let&lt;span class="w"&gt; &lt;/span&gt;g:syntastic_check_on_wq&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+
+nnoremap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-f&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:NERDTreeFocus&amp;lt;CR&amp;gt;
+nnoremap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-n&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:NERDTree&amp;lt;CR&amp;gt;
+nnoremap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-t&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:NERDTreeToggle&amp;lt;CR&amp;gt;
+
+nmap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-r&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:TagbarToggle&amp;lt;CR&amp;gt;
+nmap&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;C-p&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;:CtrlP&amp;lt;CR&amp;gt;
+
+:colorscheme&lt;span class="w"&gt; &lt;/span&gt;molokai
+
+&lt;span class="nb"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;g:NERDTreeDirArrowExpandable&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;g:NERDTreeDirArrowCollapsible&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;~&amp;quot;&lt;/span&gt;
+
+&lt;span class="s2"&gt;&amp;quot; air-line&lt;/span&gt;
+&lt;span class="s2"&gt;let g:airline_powerline_fonts = 1&lt;/span&gt;
+
+
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;:CocInstall&lt;span class="w"&gt; &lt;/span&gt;coc-python
+&lt;span class="s2"&gt;&amp;quot; :CocInstall coc-clangd&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;:CocInstall&lt;span class="w"&gt; &lt;/span&gt;coc-java
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;8. Cmake + Doxygen&lt;/h3&gt;
+&lt;p&gt;Pour vous familiarisez avec Cmake quelques ressources disponibles pour mieux comprendre les fichiers de configurations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(Video) &lt;a href="https://www.youtube.com/watch?v=mKZ-i-UfGgQ&amp;amp;t=25s"&gt;Simplified Cmake Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://sirien.metz.supelec.fr/depot/SIR/TutorielCMake/index.html"&gt;Cours de Supelec sur Cmake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nos fichiers de configurations pour notre projet:&lt;/p&gt;
+&lt;p&gt;spaceinvaders/CMakeLists.txt&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cmake_minimum_required&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;VERSION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;3.10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_BUILD_TYPE&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;Release&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_CXX_STANDARD&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;17&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;CMAKE_CXX_STANDARD_REQUIRED&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;ON&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;project&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;spaceinvaders&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;version&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;add_subdirectory&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;src&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;add_subdirectory&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;docs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;spaceinvaders/src/CMakeLists.txt&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;Dependance&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;de&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;librairie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;externe&lt;/span&gt;
+&lt;span class="nx"&gt;find_package&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;SFML&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;REQUIRED&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;network&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;audio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;graphics&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;window&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;system&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nx"&gt;add_executable&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;target_compile_options&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;Wall&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;Wextra&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;On&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;binaire&lt;/span&gt;
+&lt;span class="nx"&gt;install&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;PROGRAMS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;CMAKE_CURRENT_BINARY_DIR&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;DESTINATION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;bin&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;RENAME&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;On&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;construit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;binaire&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;avec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;SFML&lt;/span&gt;
+&lt;span class="nx"&gt;target_include_directories&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;SFML_INCLUDE_DIR&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+&lt;span class="nx"&gt;target_link_librairies&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;PUBLIC&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;SFML_LIBRARIES&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;SFML_DEPENDENCIES&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;Librairie&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;dynamique&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;headers&lt;/span&gt;
+
+&lt;span class="nx"&gt;add_library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;SHARED&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nx"&gt;install&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;TARGETS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;mainDemo&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;DESTINATION&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;lib&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nx"&gt;file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;GLOB&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nx"&gt;headers&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;hpp&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Préparation de la documentation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On utilise le programme Doxygen pour générer le fichier de configuration dans le dossier &lt;code&gt;spaceinvaders/docs/&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/sources/spaceinvaders
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;docs
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;docs
+$&lt;span class="w"&gt; &lt;/span&gt;doxygen&lt;span class="w"&gt; &lt;/span&gt;-g&lt;span class="w"&gt; &lt;/span&gt;Doxyfile.in
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On édite le fichier avec neovim pour le configurer avec cmake:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;      &lt;/span&gt;PROJECT_NAME&lt;span class="w"&gt;           &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;OUTPUT_DIRECTORY&lt;span class="w"&gt;       &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/
+&lt;span class="w"&gt;      &lt;/span&gt;INPUT&lt;span class="w"&gt;                  &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_SOURCE_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/src
+&lt;span class="w"&gt;      &lt;/span&gt;EXTRACT_ALL&lt;span class="w"&gt;            &lt;/span&gt;=&lt;span class="w"&gt; &lt;/span&gt;YES
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;spaceinvaders/docs/CMakeLists.txt&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find_package(Doxygen)
+if(NOT&lt;span class="w"&gt; &lt;/span&gt;DOXYGEN_FOUND)
+&lt;span class="w"&gt;    &lt;/span&gt;message(&amp;quot;Doxygen&lt;span class="w"&gt; &lt;/span&gt;not&lt;span class="w"&gt; &lt;/span&gt;found,&lt;span class="w"&gt; &lt;/span&gt;I&lt;span class="w"&gt; &lt;/span&gt;will&lt;span class="w"&gt; &lt;/span&gt;not&lt;span class="w"&gt; &lt;/span&gt;generate/install&lt;span class="w"&gt; &lt;/span&gt;the&lt;span class="w"&gt; &lt;/span&gt;documentation&amp;quot;)
+else()
+&lt;span class="w"&gt;   &lt;/span&gt;configure_file(Doxyfile.in&lt;span class="w"&gt; &lt;/span&gt;Doxyfile)
+
+&lt;span class="w"&gt;   &lt;/span&gt;set(DOXYGEN_INPUT&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/Doxyfile.in)
+&lt;span class="w"&gt;   &lt;/span&gt;set(DOXYGEN_OUTPUT&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;APIDOC_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/html/index.html)
+
+&lt;span class="w"&gt;   &lt;/span&gt;add_custom_target(docs&lt;span class="w"&gt; &lt;/span&gt;ALL
+&lt;span class="w"&gt;     &lt;/span&gt;COMMAND&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-E&lt;span class="w"&gt; &lt;/span&gt;echo_append&lt;span class="w"&gt; &lt;/span&gt;&amp;quot;Building&lt;span class="w"&gt; &lt;/span&gt;API&lt;span class="w"&gt; &lt;/span&gt;Documentation...&amp;quot;
+&lt;span class="w"&gt;     &lt;/span&gt;COMMAND&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_EXECUTABLE&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;DOXYGEN_INPUT&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;/dev/null
+&lt;span class="w"&gt;     &lt;/span&gt;COMMAND&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_COMMAND&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-E&lt;span class="w"&gt; &lt;/span&gt;echo&lt;span class="w"&gt; &lt;/span&gt;&amp;quot;Done.&amp;quot;
+&lt;span class="w"&gt;     &lt;/span&gt;)
+
+&lt;span class="w"&gt;  &lt;/span&gt;install(DIRECTORY&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_BINARY_DIR&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;/docs/html&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="w"&gt;          &lt;/span&gt;DESTINATION&lt;span class="w"&gt; &lt;/span&gt;share/doc/&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CMAKE_PROJECT_NAME&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;)
+
+endif()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour la documentation, dans &lt;code&gt;docs&lt;/code&gt; est généré un &lt;code&gt;index.html&lt;/code&gt; avec les commentaires du code au format Doxygen depuis les fichiers sources. On peut ensuite envoyer sur un site online tels que &lt;a href="https://codedocs.xyz/"&gt;https://codedocs.xyz/&lt;/a&gt; à partir de repository Github. Enfin renseignez-vous sur l'utilisation de Sphinx/breathe pour générer de la documentation également.&lt;/p&gt;
+&lt;h3&gt;9. Compilation et installation&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/sources/spaceinvaders
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;build
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;build
+$&lt;span class="w"&gt; &lt;/span&gt;cmake&lt;span class="w"&gt; &lt;/span&gt;..
+$&lt;span class="w"&gt; &lt;/span&gt;make
+$&lt;span class="w"&gt; &lt;/span&gt;./src/mainDemo
+$&lt;span class="w"&gt; &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;10. Commiter votre code&lt;/h3&gt;
+&lt;p&gt;Vous allez faire vos premiers commits de votre code. Il va falloir suivre des fichiers. Créer un &lt;code&gt;main.cpp&lt;/code&gt; et &lt;code&gt;class.hpp&lt;/code&gt; basics dans &lt;code&gt;src/&lt;/code&gt; pour appeler une classe et faire un "hello world" pour tester si tout fonctionne.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Suivi et Commit du code&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dans votre dossier projet root &lt;code&gt;spaceinvaders&lt;/code&gt; lancez les commandes:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;commit init&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pusher votre code sur Github&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;11. Pour aller plus loin&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Test unitaire avec &lt;a href="https://google.github.io/googletest/primer.html"&gt;GTest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Créer une archive &lt;code&gt;tar.gz&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;utilisez CPack/PkgBuild comme générateur de paquet pour Arch Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Voila vous savez presque tout pour bien démarrer un projet avancée en C++ en développant un Space Invaders grâce à la librairie SFML en utilisant tous les outils nécessaire à une bonne organisation du projet. N'oubliez pas de commenter votre code! Après un mois on oublie souvent pourquoi on a créé une fonction, un algorithme ou une classe, donc soyez prévoyant en particulier sur des longs projets ou quand plusieurs personnes ce joint à vous pour du social coding. &lt;/p&gt;</content><category term="C/C++"></category><category term="projet"></category><category term="doxygen"></category><category term="cmake"></category><category term="spaceinvaders"></category></entry><entry><title>Jalon apprentissage C++</title><link href="/jalon-apprentissage-c.html" rel="alternate"></link><published>2022-04-13T15:49:00+02:00</published><updated>2022-04-13T15:49:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-04-13:/jalon-apprentissage-c.html</id><summary type="html"></summary><content type="html">&lt;p&gt;﻿J'avance par étape dans mon perfectionnement de l'ingénierie logiciel dans mon parcours d'ingénieur système, la maitrise de GNU/Linux est essentiel dans une logique de connaissance des systèmes embarqués moderne et serveur. A mon sens l'ingénierie système est la voie d'excellence en robotique. Il n'y a pas beaucoup de formation d'ingénieur système en France, j'ai eu l'occasion de m'initier à l'université de Lorraine à la fac de sciences après Mines Nancy dans la formation ISC Ingénierie de Système Complexe. J'étais un peu perdu en programmation, je ne maitrisais pas du tout le C++ pour la robotique. Enfin l'environnement utilisé préconisait à l'université d'utiliser Visual Studio. Les techniques étaient un peu old school, la base de donnée etait Microsoft server. Mais j'ai appréciés la formation pour le peu que j'ai fréquenté couplé à mes projets d'entreprises qui me prenaient du temps.  &lt;/p&gt;
+&lt;p&gt;Comment donc rattraper mon retard en programmation informatique, en école d'ingénieur nous avons été initié par du VBA(sic encore plus old school, so Microsoft) quand on est libriste on a vite envie de vomir.  &lt;/p&gt;
+&lt;p&gt;Dans le cadre de mes projets d'entreprises j'ai lancé une veille technologique pour connaitre les standards de l'industrie et ne pas toujours croire se que l'on nous raconte à l'école. Des professeurs sont parfaitement à jours, mais parfois on tombe sur des dinosaures en voie d'extinction. Bref la formation peut nous habituer à de mauvaises habitudes.  &lt;/p&gt;
+&lt;h3&gt;JALON 1: Mettre en place l'environnement de travail&lt;/h3&gt;
+&lt;p&gt;J'ai rapidement vérifié quels sont les pratiques de l'éco-système C++. On peut trouver des statistiques sur JetBrain: &lt;a href="https://www.jetbrains.com/lp/devecosystem-2019/cpp/"&gt;https://www.jetbrains.com/lp/devecosystem-2019/cpp/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;Ainsi on découvre la part de marché chez les dev des compileurs:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;GCC 66%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Clang 32%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MSVC(Microsoft) 30%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Egalement quels sont les éditeurs de texte utilisés:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Visual Studio 27%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CLion 22%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VSCode 18%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vi/Vim 7%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Les systèmes de Builds:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;CMake 42%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visual studio project 37%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Makefile 33%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On peut coupler ces statistiques à l'étude des pratiques des développeurs de StackOverFlow et obtenir en complément: &lt;a href="https://insights.stackoverflow.com/survey/"&gt;https://insights.stackoverflow.com/survey/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;Le système d'exploitation des développeurs:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Microsoft Windows 45,33%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Linux Based 25,32%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MacOS 25,19%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Que Neovim est l'éditeur de texte le plus aimé&lt;/em&gt;  &lt;/p&gt;
+&lt;p&gt;Que les développeurs veulent travailler avec les bases de données:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;PostGreSQL 17,99%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MongoDB 17,86%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Redis 12,58%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Elasticsearch 10,52%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MySQL 9,76%  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On arrive vite à la conclusion que pour optimiser l'outil de travail sur les pratiques d'ingénierie logiciel il faut ce tourner vers:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Linux  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GCC  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Neovim  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cmake  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PostGreSQL &amp;amp; MongoDB  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Complémentaire aux besoins:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Git pour le contrôle de version  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PlatformIO CLI pour la gestion de carte électronique embarquée  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Donc pour être confortable pour travailler en C/C++ vous devez adopter des pratiques et mettre en place l'environnement. Pour le choix de la distribution sous GNU/Linux j'ai ma préférence d'Arch Linux pour la documentation abondante du wiki de la communauté, la personnalisation, le côté administrateur de système et enfin AUR(Arch Linux User Repository). De plus comme argument Greg K-H mainteneur du noyau Linux a migré son équipe sous Arch Linux. C'est une tendance de bonnes pratiques des professionnels.   &lt;/p&gt;
+&lt;p&gt;Je recommande donc à mes collaborateurs sur mes projets d'entreprise de s'alligner sur ces pratiques comme requête de recrutement pour harmoniser l'outil de travail. Je recommande un Thinkpad comme PC.  &lt;/p&gt;
+&lt;h3&gt;JALON 2: Apprendre à programmer en C/C++&lt;/h3&gt;
+&lt;p&gt;Dans cette partie il faudra tout d'abord atteindre 300h de pratique pour commencer à assimiler soit 8h pendant 6jours/semaines = 192h/mois. Je suis un défenseur que vous n'avez pas à payer 8000€ pour apprendre la programmation. Que les ressources sont en libre accès sur internet.  &lt;/p&gt;
+&lt;p&gt;Pour débuter initier vous à la programmation par ces cours en libre accès en français:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://archives.framabook.org/le-c-en-20-heures-2/index.html"&gt;Le C en 20h&lt;/a&gt;, Framabook. Vous allez utiliser les outils sous un système GNU/Linux tels que Vim, GCC. Une introduction à la programmation avant d'entamer le C++.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.coursera.org/learn/initiation-programmation-cpp"&gt;Initiation à la programmation en C++&lt;/a&gt;, EPFL Mooc Coursera.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/"&gt;La programmation en C++ moderne&lt;/a&gt;, Zeste du Savoir.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;JALON 3: Algorithmique, structures de donnée&lt;/h3&gt;
+&lt;p&gt;Vous trouverez des cours de spécialisation en algorithmique et structure de donnée en C++ sur Udemy, mais egalement des ressources sur internet dans la littérature anglaise et plus particulièrement:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Data Structures and Algorithm Analysis in C++ (4th) Mark Allen Weiss (Dispo sur Github)  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h1&gt;&lt;a href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md#c-data-structures-and-algorithms-cheat-sheet"&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md"&gt;C++ Data Structures and Algorithms Cheat Sheet&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.programiz.com/dsa"&gt;Learn DSA&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;JALON 4: Design Pattern&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://refactoring.guru/fr/design-patterns/cpp"&gt;Les patrons de conception en C++&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.programmer-books.com/wp-content/uploads/2019/03/Design-Patterns-in-Modern-C.pdf"&gt;Design Pattern in Modern C++ [Livre PDF]&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;JALON 5: Projet Qasari&lt;/h3&gt;
+&lt;p&gt;Appliquer la programmation pour évoluer dans le &lt;a href="https://github.com/legoffant/qasari"&gt;projet Qasari sur Github&lt;/a&gt;. Récupérer les données sur les noyaux de modelisation géométrique. Il y a également des livres sur la création de jeux-vidéos et l'architecture des moteurs de jeux. La c'est les choses sérieuses créer des outils d'environnement virtuel en logiciel libre. L'apprentissage par la création de jeux-vidéos est à privilegier pour acquérir de la pratique et du fun.  &lt;/p&gt;
+&lt;p&gt;Pourquoi cette approche?  &lt;/p&gt;
+&lt;p&gt;Besoin de virtualiser la conception, flux d'échanges, maintenance de machines dans un environnement simuler du système solaire pour intégrer l'exploration du système solaire. Il faut voir grand, et préparer le terrain à créer une métropole autour d'un ascenceur spatial pour permettre la gestion d'un spatioport pour l'envoi de sonde et de robot pour le minage, fret de marchandise automatisé.  &lt;/p&gt;
+&lt;p&gt;C'est un chantier industriel entièrement automatisé à créer, et il faut le logiciel de modélisation pour plannifier la gestion des ressources et sa transformation en produit et service en privilegiant les circuits courts. Un approche modulaire est nécessaire tout en développant un esprit communautaire, associé au logiciel libre.  &lt;/p&gt;
+&lt;p&gt;Le projet s'inscrit dans l'eco-système de l'industrie minière. Mettre en place un spatioport dans le futur basé sur un ascenceur spatial demande de créer des fondations de 16km de profondeurs. On va devoir optimiser la ressource, l'extraire, la transformer, rendre habitable les soutterains. Cela ce plannifie bien en amont dans le projet, que de valider le choix de la zone d'implémentation riche en ressource minière. Ce genre de projet se plannifie sur 5000 ans de la conception à l'abandon de la structure et son recyclage. Pour avoir une maturité technologique et d'exploitation minière. La première étape est l'environnement simulé et créer les briques facilicitant l'émergence.&lt;/p&gt;</content><category term="C/C++"></category><category term="C"></category><category term="C++"></category><category term="programmation"></category></entry><entry><title>﻿De l'informatique embarquée avec Arduino</title><link href="/de-linformatique-embarquee-avec-arduino.html" rel="alternate"></link><published>2022-04-01T15:29:00+02:00</published><updated>2022-04-01T15:29:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-04-01:/de-linformatique-embarquee-avec-arduino.html</id><summary type="html"></summary><content type="html">&lt;p&gt;﻿&lt;/p&gt;
+&lt;p&gt;C'est le premier article que je fais véritablement sur Arduino. Et je me devais d'en parler pour son apport dans l'éducation à l'électronique aux détournements par des hackers aux ingénieurs. Arduino est un outil qui transforme notre regard sur la technologie et l'usage que nous en faisons.&lt;/p&gt;
+&lt;p&gt;C'est une excellente plate-forme qui réduit les coûts d'entrée en électronique et programmation, il permet à des personnes qui n'ont pas trop la fibre scolaire de ce plonger dans des domaines qui les intéressent. &lt;/p&gt;
+&lt;p&gt;Arduino UNO, la carte de prototypage électronique standard de la gamme est sortie en 2010. Ce qui a permis une petite révolution dans le milieu de l'ingénierie par son introduction pour de l'informatique embarquée mais également en robotique. Son rapport qualité/coût pour prototyper vite en fond un outil qui dépasse le cadre seul de l'éducation. Il fait parti de la mode DIY (Do it Yourself) introduite par des composants tel que la RepRap, une imprimante 3D, né en 2005 qui deviendra l'emblème des hackerspaces. Les « &lt;strong&gt;hackerspaces&lt;/strong&gt; » sont des lieux de rencontre et d'expérimentation collective qui rassemblent des personnes qui partagent un intérêt commun (notamment pour l'informatique, la technologie, les sciences et la créativité). qui débute le plus souvent dans un garage on retrouve le trio matériel RepRap, Arduino, Raspeberry Pi. En Bretagne il existe sur Rennes un hackerspace &lt;a href="https://breizh-entropy.org/"&gt;Breizh-Entropy&lt;/a&gt; . Le plus connu est C-Base à Berlin. On appel des makers les utilisateurs des hackerspaces et fablabs. Des lieux qui donnent accès à des outils de prototypage rapide et fabrication numérique pour l'invention, &lt;a href="http://fab.cba.mit.edu/about/charter/"&gt;la charte&lt;/a&gt; a été édité en 2012 au MIT. Arduino faisant donc parti des composants de prototypage électronique. Alors on va me dire, mais Anthony en 2010 j'étais en école d'ingénieur specialisé dans le prototypage rapide industriel,  la pointe en France dans le domaine, as tu entendu parler de tout ça? NON J'ai découvert plus tard par la communauté des hackers et libristes. Mon directeur d'école snobait l'impression 3D et son éco-système en considérant que cela n'avait pas d'avenir dans l'industrie, en gros bon pour les amateurs(SIC) gros plantage dans la vision d'avenir. Il faut dire qu'il etait très porté sur les brevets et la propriété intellectuelle de ces propres solutions de prototypage rapide qui expiraient et tombaient dans le domaine public.&lt;/p&gt;
+&lt;p&gt;Arduino introduit la notion de matériel libre (OSHW – &lt;em&gt;OpenSource Hardware&lt;/em&gt;) par l'utilisation de la license GNU GPL. C'est à dire que les plans de la carte électronique sont ouvert. On peut donc redistribuer les plans pour fabriquer soit même une carte électronique. C'est une extension du logiciel libre au matériel.&lt;/p&gt;
+&lt;p&gt;Dans ce sens il existe des cartes dérivées d'Arduino UNO sur le marché. Parlons donc affaires, théma la taille du rat, que je suis et tout ça cela coût combien? On peut s'en sortir en achetant chinois pour 10€ la carte "clone" d'Arduino UNO dans les prix les plus bas. Je ne conseil pas forcement, mais si vous avez peur de griller la carte, ou pour faire des achats de groupe cela peut-être intéressant. En réalité les makers sont fidèles à la marque Arduino pour sa qualité, tels que les soudures etc. Petit listing des prix croissant:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://fr.aliexpress.com/item/32831857482.html?spm=a2g0o.detail.1000014.6.5fec43a5mtbkAz&amp;amp;gps-id=pcDetailBottomMoreOtherSeller&amp;amp;scm=1007.40050.274735.0&amp;amp;scm_id=1007.40050.274735.0&amp;amp;scm-url=1007.40050.274735.0&amp;amp;pvid=cefbbf12-c165-40e8-8b65-ad754c54af9a&amp;amp;_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40050.274735.0,pvid:cefbbf12-c165-40e8-8b65-ad754c54af9a,tpp_buckets:668%232846%238114%231999&amp;amp;pdp_ext_f=%257B%2522sku_id%2522%253A%252265339139953%2522%252C%2522sceneId%2522%253A%252230050%2522%257D&amp;amp;pdp_pi=-1%253B7.55%253B-1%253B-1%2540salePrice%253BEUR%253Brecommend-recommend"&gt;Carte UNO R3 chinois Feiyang 10,22€&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gotronic.fr/art-carte-go-tronic-gt016-26125.htm"&gt;Gotronic GT016 UNO R3 10,90€&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gotronic.fr/art-carte-dfrduino-dfr0216-20306.htm"&gt;Carte DFRduino DFR0216 12,90€&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fr.aliexpress.com/item/4000873964058.html?gatewayAdapt=glo2fra&amp;amp;spm=a2g0o.store_pc_promotion.promoteRecommendProducts_undefined.14"&gt;Keyestudio UNOR3 14,61€&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gotronic.fr/art-carte-joy-it-r3dip-25413.htm"&gt;Carte Joy-It R3DIP 16,90€&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.fr/Elegoo-ATmega328P-ATMEGA16U2-Controller-Microcontr%C3%B4leur/dp/B01N91PVIS/ref=asc_df_B01N91PVIS/?tag=googshopfr-21&amp;amp;linkCode=df0&amp;amp;hvadid=106800305641&amp;amp;hvpos=&amp;amp;hvnetw=g&amp;amp;hvrand=1358551832062616299&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9055186&amp;amp;hvtargid=pla-329356109727&amp;amp;psc=1"&gt;ELEGOO UNO R3 18,99€&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gotronic.fr/art-carte-arduino-uno-12420.htm"&gt;Arduino UNO R3 officiel 19,50€&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si vous ne savez pas quoi prendre, prenez la carte officielle, sachez que d'autres modèles clones existent, c'est à titre indicatif, pour montrer l'éco-système autour de la carte. Maintenant que vous avez une vague idée à quoi ressemble la carte de prototypage électronique parlons-en.&lt;/p&gt;
+&lt;h3&gt;Caractéristique de l'Arduino UNO&lt;/h3&gt;
+&lt;p&gt;La carte Arduino est un circuit imprimé conçu pour héberger un microcontrôleur et données accès à des entrées / sorties. Elle comprend aussi quelques autres composants électroniques qui permettent de faire fonctionner le microcontrôleur ou d'étendre les fonctionalités.&lt;/p&gt;
+&lt;p&gt;Un microcontrôleur est un petit ordinateur, le cerveau du circuit intégré en électronique. C'est une puce en l'occurrence le modèle 8bits ATMEGA328 fabriqué par Atmel. C'est également cela que l'on appel des semi-conducteurs dans l'industrie. Grâce à la puce nous allons pouvoir contrôler nos entrées / sorties et donc les programmer.  &lt;/p&gt;
+&lt;p&gt;L'Arduino seul ne sert pas à grand chose, il a besoin de sentir des objets du monde réel grâce à une série de capteur et d'agir dessus (actionneur). Il faut penser communication et intéraction avec l'extérieur permettant l'envoi de signaux. Quand on apprend l'exercice de base est de faire clignoter une LED (diode electroluminescente) pour vérifier que tout fonctionne bien. Il faut choisir de positionner la LED sur une sortie de la carte et de programmer un délai pour faire clignoter. C'est la version "Hello World" en électronique.&lt;/p&gt;
+&lt;h3&gt;Interface de programmation&lt;/h3&gt;
+&lt;p&gt;Arduino est un superbe outil pour apprendre la programmation en langage C qui est le standard quand il s'agit de système embarqué. Il fournit un logiciel pour écrire du code, un &lt;a href="https://www.arduino.cc/en/software"&gt;Arduino IDE&lt;/a&gt; et permet de téléverser dans le microcontrôleur et la mémoire flash de 32Kb. On est en environnement contraint avec peu de ressource mémoire, il est impossible de compiler un système d'exploitation avec seulement 32kb ou simplement d'avoir un compilateur sur la carte. Arduino IDE va simplifier la tâche de cross-compilation et traduire en langage machine le code en le téléversant dans le microcontrôleur. On peut également &lt;a href="https://www.youtube.com/watch?v=_el8cUKFpJo&amp;amp;ab_channel=EricPeronnin"&gt;programmer en C++&lt;/a&gt; pour ce faire il faut changer d'éditeur de texte pour utiliser des outils comme VScode et plateformIO qui sont plus adapté.&lt;/p&gt;
+&lt;h3&gt;IoT: Internet des objets&lt;/h3&gt;
+&lt;p&gt;Arduino peut faire office d'objet connecté à internet. Pour ce faire il faut ajouter des fonctions grâces à des shields tels que le wifi ou &lt;a href="https://www.gotronic.fr/art-ethernet-shield-2-a000024-23299.htm"&gt;ethernet&lt;/a&gt;. Là cela devient intéressant car on va pouvoir intéragir avec un site web et serveur mais egalement analyser des DATAs que l'on va enregistrer et monitorer comme pour faire de la domotique.&lt;/p&gt;
+&lt;h3&gt;Robotique&lt;/h3&gt;
+&lt;p&gt;Arduino est un objet de choix pour initier à la robotique et apprendre à contrôler la machine. Il vous faudra des capteurs et actionneurs tel qu'un servo-moteur. Cela peut-être très tentant pour les enfants de jouer avec des robots mais également aux ingénieurs, les possibilités sont illimités. C'est tout un univers et vous pourrez trouver des projets Arduino sur internet traitant du sujet de la robotique. Vous n'êtes pas seul d'autres on eu l'idée à travers le monde. OpenClassRoom le site dédié à l'apprentissage de l'informatique aborde le sujet de l'&lt;a href="https://openclassrooms.com/fr/courses/4076871-sinitier-a-la-robotique/4083254-fabriquez-votre-propre-robot-arduino"&gt;initiation à la robotique avec Arduino&lt;/a&gt;. Pour aller plus loin je recommande des sujets DIY sur les &lt;a href="https://create.arduino.cc/projecthub/akarsh98/diy-arduino-based-quadcopter-drone-948153"&gt;drônes et Quadcopter&lt;/a&gt; avec Arduino ou vous pouvez construire certaines pièces en impression 3D.&lt;/p&gt;
+&lt;h3&gt;Kit de démarrage&lt;/h3&gt;
+&lt;p&gt;Commencer à utiliser une carte Arduino sans composant électronique sert à rien. Il va falloir intéragir avec l'environnement et maitriser les bases de l'électronique tels que l'utilisation de résistance, condensateur et transistor etc... A cela ajoutez des capteurs et actionneurs, il faut compter 50€ + Arduino UNO 20€ pour atteindre environ 70€ d'investissement initial dans un kit de démarrage (starter kit). Il y a plusieurs façon de faire. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gotronic.fr/art-starter-kit-arduino-k020007-en-francais-22949.htm"&gt;Starter kit officiel Arduino UNO 95€&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.robotshop.com/eu/fr/kit-apprentissage-avance-pour-arduino-uno-uctronics.html?gclid=CjwKCAjwxZqSBhAHEiwASr9n9OIfVeO9onT3ZQ9V0WAmLilpcwj8HiXzcse9poOyQtLEAUrAhhf_SBoCkswQAvD_BwE"&gt;Kit d'Apprentissage pour Arduino UNO UCTRONICS 40€&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.fr/Elegoo-D%C3%A9marrage-dUtilisation-D%C3%A9butants-Professionnels/dp/B01JD2Z5XW/ref=asc_df_B01JD2Z5XW/?tag=googshopfr-21&amp;amp;linkCode=df0&amp;amp;hvadid=51048574806&amp;amp;hvpos=&amp;amp;hvnetw=g&amp;amp;hvrand=5674023775678939394&amp;amp;hvpone=&amp;amp;hvptwo=&amp;amp;hvqmt=&amp;amp;hvdev=c&amp;amp;hvdvcmdl=&amp;amp;hvlocint=&amp;amp;hvlocphy=9055186&amp;amp;hvtargid=pla-273870859096&amp;amp;psc=1"&gt;ELEGOO Carte Starter Kit de Démarrage 44€&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Il est possible d'acheter les composants électroniques séparement tels que chez Gotronic si vous savez la liste et la référence des produits. Pour cela vous pouvez suivre les recommendations du site Zeste du Savoir qui a édité un livre en libre accès sur l'apprentissage d'Arduino à &lt;a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/"&gt;cette adresse&lt;/a&gt;. Vous trouverez une &lt;a href="https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/742_decouverte-de-larduino/3414_presentation-darduino/#4-10777_liste-dachat"&gt;liste d'achat&lt;/a&gt;. Pour plus de détail utilisez mon document personnel de devis chez Gotronic avec quantité et référence produit sur &lt;a href="https://docs.google.com/document/d/11zg9CfiQlGsX_OBRPir9_GQxPYS-UZBbgPNnxE33DXI/edit?usp=sharing"&gt;ce lien&lt;/a&gt; totalisant 76€ Arduino UNO inclus pour des composants de qualité et une boite de rangement.&lt;/p&gt;
+&lt;h3&gt;Suivre un livre&lt;/h3&gt;
+&lt;p&gt;Je vous est recommandé le livre en libre accès pour apprendre Arduino du site zeste du savoir. Il suffit largement pour ce lancer dans l'aventure, si pour autant vous cherchez d'autres références, quelques livres traitant d'Arduino sont disponible sur &lt;a href="https://www.axiseo.com/meilleurs-livre-arduino/"&gt;ce lien&lt;/a&gt;.&lt;/p&gt;</content><category term="C/C++"></category><category term="Arduino"></category><category term="programmation"></category><category term="langage C"></category></entry><entry><title>C++ eco-système</title><link href="/c-eco-systeme.html" rel="alternate"></link><published>2022-02-15T08:59:00+01:00</published><updated>2022-02-15T08:59:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-02-15:/c-eco-systeme.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Ce sujet traite de l'éco-système C++ en allant aux outils à la communauté pour être plus productif dans le travail et devenir un développeur averti.&lt;/p&gt;
+&lt;h3&gt;Compileurs&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="GCC Logo" src="images/gccegg-65.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GCC g++&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;De facto le standard sous GNU/Linux:   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://gcc.gnu.org/"&gt;https://gcc.gnu.org/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sur Windows WinLibs: &lt;a href="https://winlibs.com/"&gt;https://winlibs.com/&lt;/a&gt; et &lt;a href="https://docs.microsoft.com/fr-fr/windows/wsl/about"&gt;WSL&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="LLVM Logo" src="images/LLVM-Logo-Derivative-3.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LLVM clang++&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Un compileur concurrent de GCC qui offre de meilleur performance  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://llvm.org/"&gt;https://llvm.org/&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Visual C++ Logo" src="images/visual-logo.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Microsoft visual C++&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;Pour utiliser le C++ moderne il faut installer la dernière version du logiciel&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/fr-fr/cpp/?view=msvc-170"&gt;Documentation sur Microsoft C++, C, Assembleur&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://visualstudio.microsoft.com/fr/free-developer-offers/"&gt;https://visualstudio.microsoft.com/fr/free-developer-offers/&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Compileurs online&lt;/h3&gt;
+&lt;p&gt;Il est possible d'accéder sur internet à des compileurs en ligne&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://godbolt.org/"&gt;https://godbolt.org/&lt;/a&gt;  gcc, permet d'avoir une sortie en assembleur  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://coliru.stacked-crooked.com/"&gt;https://coliru.stacked-crooked.com/&lt;/a&gt; gcc  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://wandbox.org/"&gt;https://wandbox.org/&lt;/a&gt; inclus Boost, clang++, gcc  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Debugging&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;gdb&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.sourceware.org/gdb/"&gt;https://www.sourceware.org/gdb/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://hackingcpp.com/cpp/tools/gdb_intro.html"&gt;Intro to gdb&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;frontend DDD: &lt;a href="https://www.gnu.org/software/ddd/"&gt;https://www.gnu.org/software/ddd/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;WinDBG&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools"&gt;Microsoft documentation&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;x64dbg&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://x64dbg.com/"&gt;https://x64dbg.com/&lt;/a&gt; Pour Windows, .DLL, .EXE etc...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Code Analyseur&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;ASAN(Adress SANITIZER)&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://clang.llvm.org/docs/AddressSanitizer.html"&gt;https://clang.llvm.org/docs/AddressSanitizer.html&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://hackingcpp.com/cpp/tools/asan.html"&gt;Intro, détection de corruption mémoire&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Stand-alone outils d'analyse&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Valgrind&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;Valgrind est un outil de programmation libre pour déboguer, effectuer du profilage de code et mettre en évidence des fuites mémoires.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://valgrind.org/"&gt;https://valgrind.org/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://hackingcpp.com/cpp/tools/valgrind.html"&gt;Intro&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://valgrind.org/docs/manual/quick-start.html"&gt;Quick Start&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Profiling &amp;amp; Benchmarking&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;GNU gprof&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;Gprof est un logiciel GNU Binary Utilities qui permet d'effectuer du profilage de code. Cela permet de détecter dans le code le temps d'éxécution qui demanderait à être ré-écrit.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://sourceware.org/binutils/docs/gprof/"&gt;https://sourceware.org/binutils/docs/gprof/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.thegeekstuff.com/2012/08/gprof-tutorial/"&gt;Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Valgrind&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cachegrind, callgrind&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://valgrind.org/info/tools.html"&gt;https://valgrind.org/info/tools.html&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Perf&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;perf: Linux profiling with performance counters  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://perf.wiki.kernel.org/index.php/Main_Page"&gt;https://perf.wiki.kernel.org/index.php/Main_Page&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://perf.wiki.kernel.org/index.php/Tutorial"&gt;Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Documentation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Doxygen&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;Outil d'annotation et de création de documentation C++  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.doxygen.nl/index.html"&gt;https://www.doxygen.nl/index.html&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/etre-un-developpeur/mais-ou-est-la-doc/#3-documenter-son-code-avec-doxygen"&gt;Documenter son code avec Doxygen&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Benchmarking librairies / framework&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;gperftools&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;Implementation du multi-threading pour malloc() haute performance  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/gperftools/gperftools/wiki"&gt;https://github.com/gperftools/gperftools/wiki&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HEAP checker, CPU profiler&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Build Systems&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;GNU Make&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Make&lt;/strong&gt; est un logiciel qui construit automatiquement des fichiers, souvent exécutables, ou des bibliothèques à partir d'éléments de base tels que du code source. Il utilise des fichiers appelés &lt;strong&gt;makefile&lt;/strong&gt; qui spécifient comment construire les fichiers cibles  &lt;/p&gt;
+&lt;p&gt;S'utilise pour de petit projet, tous les développeurs devraient savoir faire un makefile.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.gnu.org/software/make/"&gt;https://www.gnu.org/software/make/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://devhints.io/makefile"&gt;Cheatsheet&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/make/manual/make.html"&gt;Manuel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;CMake&lt;/strong&gt;   &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;CMake&lt;/em&gt; est un outil permettant d'automatiser le processus de compilation et d'installation d'un logiciel.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://cmake.org/"&gt;https://cmake.org/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Standard en C++&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cliutils.gitlab.io/modern-cmake/"&gt;A introduction to modern CMake&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cpp-best-practices/cpp_starter_project"&gt;A template CMake project to get you started with C++ and tooling&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Test Unitaire&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Doctest&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/doctest/doctest"&gt;https://github.com/doctest/doctest&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md"&gt;Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Package management&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Conan&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://conan.io/"&gt;https://conan.io/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fonctionne avec CMake, MSbuild&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Source code management&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le standard dans l'industrie&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/"&gt;https://git-scm.com/&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Autres liens&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/fffaraz/awesome-cpp"&gt;A curated list of awesome C++ (or C) frameworks, libraries, resources&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.toolchains.net/"&gt;Toolchain ressource&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Langage reference&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;cppreference&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.cppreference.com/w/"&gt;https://en.cppreference.com/w/&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Best practices / Core guidelines&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/cpp-best-practices/cppbestpractices/blob/master/00-Table_of_Contents.md"&gt;https://github.com/cpp-best-practices/cppbestpractices/blob/master/00-Table_of_Contents.md&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md"&gt;https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Social Media&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Reddit&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;C++ Communauté &lt;a href="https://www.reddit.com/r/cpp/"&gt;https://www.reddit.com/r/cpp/&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;#include ＜C++＞&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discord server &lt;a href="https://www.includecpp.org/discord/"&gt;https://www.includecpp.org/discord/&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Developpez.net&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Forum &lt;a href="https://www.developpez.net/forums/f19/c-cpp/cpp/"&gt;https://www.developpez.net/forums/f19/c-cpp/cpp/&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Groupe d'utilisateur&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;C++ francophone CPP-FRUG&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/fr-FR/User-Group-Cpp-Francophone/"&gt;https://www.meetup.com/fr-FR/User-Group-Cpp-Francophone/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://cppfrug.org/"&gt;http://cppfrug.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="C/C++"></category><category term="outils"></category><category term="communauté"></category><category term="c++"></category></entry><entry><title>Ressources pour apprendre C/C++</title><link href="/ressources-pour-apprendre-cc.html" rel="alternate"></link><published>2022-01-15T03:38:00+01:00</published><updated>2022-01-10T03:38:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-01-15:/ressources-pour-apprendre-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;strong&gt;MAJ JANVIER 2022&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ici je vais rassembler, des ressources pour les futurs développeurs C/C++. Je défend la formation tout au long de la vie et je pense que l'on peut devenir un très bon programmeur informatique en tant qu' autodidacte. Il y a des ressources en anglais si vous recherché "self-taught programmer". Lire des livres techniques en anglais est un bon moyen de travailler la langue sachant qu'en informatique la documentation de référence est en anglais. Donc je vais proposer des livres en anglais, des cours et MOOC. Le problème est de trouver de la ressource à jour avec les nouvelles normes pour ne pas prendre de mauvaise habitude de programmation. Autant en langage C n'a que très peu évolué avec la norme C99 et C11, le C++ au contraire a été entièrement repensé dans le C++ Moderne.&lt;/p&gt;
+&lt;p&gt;Je rappel que le langage C a l'origine a été inventé par Dennis Ritchie pour écrire le système d'exploitation UNIX. On le retrouve pour le noyau Linux, les drivers, l'écriture de compileur en PHP, Ruby, Python. C++ inventé par Bjarne Stroustrup est orienté-objet, plus utilisé dans la conception logiciel, le calcul scientifique, l'intelligence artificielle et les jeux vidéos. Le C/C++ est un passage obligé pour toutes personnes décidées à s'initier aux systèmes embarqués et la robotique. On utilise de nos jours principalement les compileurs en logiciel libre GCC et G++ ainsi que Clang LLVM qui a de meilleur performance de compilation. Les éditeurs de texte standard avec auto-complétion du code sont Vim et VS Code.&lt;/p&gt;
+&lt;p&gt;Egalement l'école 42, l'intégration par la piscine est un examen en C/C++.&lt;/p&gt;
+&lt;h3&gt;SECTION DEBUTANT&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://framabook.org/docs/c20h/C20H_integrale_creative-commons-by-sa.pdf"&gt;Le C en 20 Heures&lt;/a&gt;; Framabook; D.Schang, E.Berthomier&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.d-booker.fr/cppmoderne/656-le-guide-du-c-moderne-de-debutant-a-developpeur.html"&gt;Le guide du C++ Moderne&lt;/a&gt; - de débutant à développeur; B.Vittupier et M.Benharrats&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0"&gt;CS50: Introduction to Computer Science&lt;/a&gt;; Harvard University&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A ce stade vous aller être en mesure de développer vos premiers projets, d'utiliser un outil de version contrôle pour gérer votre code avec Git, recherchez des projets open source sur Github. Garder dans l'optique de démarrer des petits projets, lancez-vous pour créer un Space Invaders, Pong, Jeu de la Vie de Conway(le planeur est le symbole des hackers). Il y a bien d'autres possibilités, mais cela reste des classiques.&lt;/p&gt;
+&lt;h3&gt;APPROFONDIR LIVRE REFERENCE DANS VOTRE BIBLIOTHEQUE&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;C&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.eyrolles.com/Informatique/Livre/le-guide-complet-du-langage-c-9782212679229/"&gt;Le guide complet du langage C&lt;/a&gt;; Claude Delannoy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.decitre.fr/livres/le-langage-c-9782100051168.html"&gt;Le langage C - 2e éd - Norme ANSI&lt;/a&gt;; D.Ritchie, Kernighan&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/c-in-a/0596006977/"&gt;C in a Nutshell&lt;/a&gt;; O'Reilly; P.Prinz, T.Crawford&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learncodethehardway.org/c/"&gt;Learn C, The Hard Way&lt;/a&gt;; Zed A.Shaw&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;C++&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://livre.fnac.com/a4704930/Stanley-B-Lippman-C-primer"&gt;C++ Primer, Fifth Edition&lt;/a&gt;; Stanley B. Lippman   &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.amazon.fr/dp/1491903996?tag=hackr06-21&amp;amp;geniuslink=true"&gt;Effective Modern C++&lt;/a&gt;; O'Reilly; Scott Meyers&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/c-pocket-reference/9780596801762/"&gt;C++ Pocket Reference&lt;/a&gt;; O'Reilly; Kyle Loudon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;COURS EN LIGNE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/the-complete-c-developer-course-build-7-exciting-projects/?utm_source=adwords&amp;amp;utm_medium=udemyads&amp;amp;utm_campaign=LongTail_la.EN_cc.ROW&amp;amp;utm_content=deal4584&amp;amp;utm_term=_._ag_77879424134_._ad_535397245863_._kw__._de_c_._dm__._pl__._ti_dsa-1007766171312_._li_9055186_._pd__._&amp;amp;matchtype=&amp;amp;gclid=CjwKCAiA24SPBhB0EiwAjBgkhpY1srynWwHhTgzwI1p0MtnEAMsnAbvu3Sx12ctLwvY_UitVs7WGXxoCKAUQAvD_BwE"&gt;The Complete C Developer Course&lt;/a&gt; - Build 7 Exciting Projects! Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/learn/initiation-programmation-cpp"&gt;Initiation à la programmation (C++)&lt;/a&gt; EPFL; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/the-complete-cpp-developer-course/"&gt;The complete C++ developer course&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/datastructurescncpp/"&gt;Mastering Data Structures &amp;amp; Algorithms using C and C++&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/video-course-c-from-beginner-to-expert/"&gt;C++: From Beginner to Expert&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.udemy.com/course/learn-intermediate-modern-c/"&gt;Learn Advanced modern C++&lt;/a&gt;; Udemy&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/specializations/coding-for-everyone"&gt;Spécialisation Coding for Everyone: C and C++&lt;/a&gt;; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/specializations/hands-on-cpp"&gt;Spécialisation Programming in C++: A Hands-on Introduction&lt;/a&gt;; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/learn/cs-fundamentals-1"&gt;Object-Oriented Data Structures in C++&lt;/a&gt;; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.coursera.org/learn/c-plus-plus-a"&gt;C++ For C Programmers, Part A;&lt;/a&gt; Coursera&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.edx.org/course/c-programming-language-foundations"&gt;C Programming: Language Foundations&lt;/a&gt;; EdX&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.edx.org/professional-certificate/dartmouth-imtx-c-programming-with-linux"&gt;C Programming with Linux&lt;/a&gt;; EdX    &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.edx.org/course/advanced-programming-in-c"&gt;Advanced Programming in C++&lt;/a&gt;; EdX&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/learning/c-plus-plus-essential-training"&gt;C++ Essential Training&lt;/a&gt;; Linkedin learning&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/learning/paths/advance-your-skills-in-c-plus-plus"&gt;Advance your skills in C++&lt;/a&gt;: Linkedin learning&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/learning/c-plus-plus-best-practices-for-developers"&gt;C++ Best Practices for Developers&lt;/a&gt;; Linkedin learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ce topic manque de ressource pour la programmation avancée des algorithmes et structures de données en C/C++ ainsi que le design pattern. J'ai des livres références en ebook disponible sur mon repository Github.&lt;/p&gt;</content><category term="C/C++"></category><category term="langage C"></category><category term="Cpp"></category><category term="livres"></category><category term="mooc"></category><category term="cours"></category></entry><entry><title>Configurer un environnement C/C++</title><link href="/configurer-un-environnement-cc.html" rel="alternate"></link><published>2022-01-03T22:57:00+01:00</published><updated>2022-01-03T22:57:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-01-03:/configurer-un-environnement-cc.html</id><summary type="html"></summary><content type="html">&lt;h3&gt;Quelques informations&lt;/h3&gt;
+&lt;p&gt;Ce topic est pour les grands débutants en informatique. Mon but est de rendre accessible à tous les outils pour la programmation des logiciels libres [1]. L'esprit hacker est très lié au mouvement. Ayant des projets d'entreprises j'ai des intérêts à vulgariser l'informatique pour former du personnel de tout horizons. Ce qui m'importe est la motivation et la capacité à apprendre continuellement. De l'importance de savoir coder dans notre société pour ne pas être seulement consommateur et subir la technologie. Programmer c'est fun, on peut créer des jeux, des sites web, faire bouger des robots, créer des logiciels. Ce que vous avez besoin est d'un ordinateur et une connexion à internet. Connaitre les bonnes sources d'information. Ce que apporte la programmation:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;La tenacité, l'esprit critique, la logique, le défi intellectuel  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les salaires les plus rémunéré  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'apprentissage en permanence  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les compétences essentielles aux entrepreneurs  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La porte d'entrée à l'ingénierie et la robotique.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je vais travailler sur les idées reçus. Pour commencer la plupart des outils de développement sont sous Linux à travers l'expansion des logiciels libres. Utiliser Windows pour du développement informatique, c'est ce mettre une balle dans le pieds car trop limité. Si vous aspiré à devenir un virtuose de l'informatique le passage vers Linux est une obligation. Secondement le langage python n'est pas le plus conseillé aux débutants. Personnellement j'utilise trois langages qui sont nécessaire aux systèmes embarqués et donc la programmation de micro-controlleur.  &lt;/p&gt;
+&lt;p&gt;COMPILER:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;C, pour la programmation système, noyau et Arduino  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;C++, pour le paradigme orienté-objet  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SCRIPTING:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(Bash, langage du shell Linux)&lt;/li&gt;
+&lt;li&gt;Python, standard chez les hackers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le C/C++ est considéré comme le langage le plus performant utilisé entre autres pour créer des compilateurs, des jeux vidéos, application en robotique et temps réels. On dit que le C++ est une extension du langage C avec classe dans le paradigme orienté-objet. Ainsi Le Rover Curiosity sur Mars fonctionne avec 2,5 millions de lignes de code en C. Parlons également de l'avion de chasse furtif le F-35 qui utilise plus de 8 millions de lignes de code en C/C++. Pourquoi ce succès? C/C++ a une gestion de la mémoire manuel, l'utilisation des pointeurs ou de l'allocation dynamique permet de contrôler au mieux les ressources processeurs et mémoires. Etre à la pointe de la technologie se traduit par l'apprentissage du C/C++ héritage de Denis Ritchie et d'UNIX. Troisième idée reçu, il n'est pas nécessaire de commencer la programmation avec un IDE(integrated development environnement) et ce n'est pas conseillé car cela n'apprend pas les bases pour compiler. Ce que vous avez besoin pour débuter:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Compilateur libre GCC  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make[13]  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git, outil de version contrôle  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim , éditeur de texte dans un terminal&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Une dose de café ou de thé, voir des cocktails à base de redbull&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;WSL (Windows Subsystem for Linux)&lt;/h3&gt;
+&lt;p&gt;Vous débuter en informatique et maintenant vous savez qu'il faut utiliser des logiciels libres, comment je fais cela depuis Windows? Nous allons installer WSL [5]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Le Sous-système Windows pour Linux (WSL, Windows System for Linux) permet aux développeurs d’exécuter un environnement GNU/Linux (et notamment la plupart des utilitaires, applications et outils en ligne de commande) directement sur Windows, sans modification et tout en évitant la surcharge d’une machine virtuelle traditionnelle ou d’une configuration à double démarrage.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;L'installation s'éffectue par cette ligne de commande depuis PowerShell qui va configurer le noyau linux et par défaut choisir la distribution Ubuntu, le redémarrage de l'ordinateur est nécessaire après l'installation de WSL:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;wsl --install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ensuite nous allons configurer le nom d'utilisateur et le mot de passe sous Ubuntu. Pour cela aller dans le menu démarrer, chercher et lancer l'application "ubuntu". Vous serez inviter à faire les modifications. Quitter l'environnement PowerShell en tapant:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;exit&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Mettre à jour la distribution ubuntu&lt;/h3&gt;
+&lt;p&gt;Relancer WSL en recherchant "ubuntu" dans le menu démarrer et lancer votre première ligne de commande[5] pour mettre à jour la distribution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Installer Windows Terminal&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Windows Terminal pouvez exécuter n’importe quelle application avec une interface de ligne de commande. Ses principales fonctionnalités comprennent un affichage multi-onglet, des volets, une prise en charge des caractères Unicode et UTF-8, un moteur de rendu de texte accéléré par GPU, ainsi que la possibilité de créer vos propres thèmes et de personnaliser le texte, les couleurs, les arrière-plans et les touches de raccourci.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Pour installer Windows Terminal[7] puis choisir le profile avec WSL&lt;/p&gt;
+&lt;h3&gt;Installer l'environnement de développement&lt;/h3&gt;
+&lt;p&gt;Lancer un terminal, nous allons installer les composants nécessaire dans WSL pour notre environnement[9] dont le meta-package "build-essential" qui inclus GNU Compiler Collection[2], GNU Debugger, Make pour le langage C/C++ ainsi que Git et Vim.  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install build-essential git vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Hello World&lt;/h3&gt;
+&lt;p&gt;L'écriture de votre premier programme passe par le traditionnel "Hello World". Nous avons besoin d'un éditeur de texte tel que Vim pour écrire le code source. Ne vous affoler pas pour l'apprentissage de Vim, il y a un ebook disponible à cette adresse[14] pour le reste suivez cette procédure[15] et plus généralement l'utilisation de GCC[3] en ligne de commande, pour compiler votre premier programme en langage C. La compilation d'un programme C++ on change de compilateur en utilisant g++, mais le principe est le même car c'est les mêmes outils.&lt;/p&gt;
+&lt;h3&gt;Apprendre à coder&lt;/h3&gt;
+&lt;p&gt;Maintenant vous avez tous les outils pour apprendre à coder. Je vous conseil de commencer par le langage C puis connaitre le paradigme orienté-objet à travers le C++. Sachez que le C++ a évolué et il est difficile de trouver de la documentation en français sur ce que l'on appel le C++ moderne. Pour bien commencer à coder, procurer vous les livres pour grand débutant en informatique:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le C en 20 heures - Berthomier, Schang - 2010&lt;/li&gt;
+&lt;li&gt;Le guide du C++ moderne – De débutant à développeur - Benharrats, Vittupier - 2021&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Pour aller plus loin&lt;/h3&gt;
+&lt;p&gt;Pour participer sur des projets open source et savoir gérer son code on utilise Git et Github[4]. Cette étape d'apprentissage est nécessaire à tous développeur sans exception. Dans votre apprentissage n'oublié pas de lire la documentation du langage[8]. Vous allez utiliser des librairies pour le C[12] et C++[10] tel que Boost[11] qui ajoute des fonctions au langage comme les pointeurs intelligents comme pratique de programmation avancée et moderne.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sources bibliographiques:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[1] Introduction aux logiciels libres &lt;a href="https://www.april.org/files/documents/html/intro.html?q=groupes/gnufr/intro.html"&gt;https://www.april.org/files/documents/html/intro.html?q=groupes/gnufr/intro.html&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[2] GNU Compiler Collection &lt;a href="https://fr.wikipedia.org/wiki/GNU_Compiler_Collection"&gt;https://fr.wikipedia.org/wiki/GNU_Compiler_Collection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[3] Première compilation avec GCC &lt;a href="http://perso.univ-lyon1.fr/jean-claude.iehl/Public/educ/gcc.html"&gt;http://perso.univ-lyon1.fr/jean-claude.iehl/Public/educ/gcc.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[4] Gérer du code avec Git &amp;amp; Github &lt;a href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github"&gt;https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[5] Console: Ligne de commande &lt;a href="https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande"&gt;https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[6] Documentation pour le sous-système Linux sous Windows &lt;a href="https://docs.microsoft.com/fr-fr/windows/wsl/"&gt;https://docs.microsoft.com/fr-fr/windows/wsl/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[7] Windows Terminal &lt;a href="https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&amp;amp;activetab=pivot:overviewtab#"&gt;https://www.microsoft.com/fr-fr/p/windows-terminal/9n0dx20hk701?rtc=1&amp;amp;activetab=pivot:overviewtab#&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[8] C/C++ référence documentation &lt;a href="https://en.cppreference.com/w/"&gt;https://en.cppreference.com/w/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[9] Hacking cpp, development setup &lt;a href="https://hackingcpp.com/cpp/tools/beginner_dev_setup.html"&gt;https://hackingcpp.com/cpp/tools/beginner_dev_setup.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[10] bibliothèques en vue pour la programmation C++ &lt;a href="https://www.lemondeinformatique.fr/actualites/lire-9-bibliotheques-en-vue-pour-la-programmation-en-c-82199.html"&gt;https://www.lemondeinformatique.fr/actualites/lire-9-bibliotheques-en-vue-pour-la-programmation-en-c-82199.html&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/"&gt;&lt;/a&gt;[11] Quels sont les avantages de l'utilisation des bibliothèques C ++ Boost?​​​​​​​ &lt;a href="https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/"&gt;https://www.it-swarm-fr.com/fr/c%2B%2B/quels-sont-les-avantages-de-lutilisation-des-bibliotheques-c-boost/958398176/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[12] List of open source C librairy &lt;a href="https://en.cppreference.com/w/c/links/libs"&gt;https://en.cppreference.com/w/c/links/libs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[13] Makefile &lt;a href="https://gl.developpez.com/tutoriel/outil/makefile/"&gt;https://gl.developpez.com/tutoriel/outil/makefile/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;[14] Vim pour les humains &lt;a href="https://vimebook.com/fr"&gt;https://vimebook.com/fr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[15] Apprendre à programmer en C/C++ &lt;a href="https://legoffant.github.io/apprendre-a-programmer-en-langage-cc.html"&gt;https://legoffant.github.io/apprendre-a-programmer-en-langage-cc.html&lt;/a&gt;&lt;/p&gt;</content><category term="C/C++"></category><category term="C"></category><category term="C++"></category></entry><entry><title>[MASTER PLAN] Devenir un kernel hacker</title><link href="/master-plan-devenir-un-kernel-hacker.html" rel="alternate"></link><published>2022-01-02T21:25:00+01:00</published><updated>2022-01-02T21:25:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2022-01-02:/master-plan-devenir-un-kernel-hacker.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Dans la série &lt;em&gt;from scratch&lt;/em&gt; comment contribuer à la communauté du logiciel libre en ce formant à moindre frais en autodidacte par internet et quelques bouquins.
+Je vais vous présenter un métier très recherché depuis que les systèmes embarqués sous Linux ont fait leur apparition en particulier tel que Android. C'est une expertise demandé par les plus grandes entreprises dont Google, IBM, Intel. Je parle du kernel hacker. Il n'y a aucune formation en France à ce que je sache pour en devenir. La meilleure voie est encore de choisir des métiers de l'ingénierie des systèmes embarqués. Sachez que c'est l'élite du domaine car le noyau est le coeur du système d'exploitation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Cela consiste en quoi?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A terme c'est d'être un ingénieur capable de maintenir le code source du noyau linux et de trouver et corriger des vulnérabilités tels que des failles 0days.&lt;/p&gt;
+&lt;p&gt;Le noyau consiste à une interface entre le matériel de l'ordinateur et ces processus, on retrouve en particulier la gestion:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;de la mémoire : suivi des contenus stockés, de leur emplacement et de l'espace mémoire utilisé&lt;/li&gt;
+&lt;li&gt;des processus : identification des processus susceptibles de solliciter le processeur, à quel moment et pour quelle durée&lt;/li&gt;
+&lt;li&gt;Pilote des périphériques : médiateur/interprète entre le matériel et les processus&lt;/li&gt;
+&lt;li&gt;Gestionnaire des appels système et de la sécurité : réception des demandes de service envoyées par les processus&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si votre intention est de devenir en autodidacte un kernel hacker il va falloir des bases en compétence qui sont tout à fait possible d'acquérir en dehors des institutions. Cela reste un métier de passionné, de contributeur à la communauté du logiciel libre ou l'on apprend tous les jours un peu plus. Connaitre le noyau permet également de créer son propre système d'exploitation d'ordinateur.&lt;/p&gt;
+&lt;h2&gt;[COEUR DE LA PROGRAMMATION SYSTEME]&lt;/h2&gt;
+&lt;p&gt;En premier, il est nécessaire d'apprendre le langage C. Celui-ci est le langage principal du noyau et des systèmes d'exploitations en particulier basé sur Linux. Le langage de bas-niveau proche de la machine est majoritairement défini par le C et l'assembleur en petite proportion. Il vous faudra choisir un compileur et c'est l'occasion d'utiliser GCC "GNU compiler collection" sous Linux pour produire du logiciel libre avec un éditeur de texte tels que VS Code ou Vim. Plus tard il sera possible d'apprendre à utiliser Make pour automatiser la tâche de compilation du code pour des projets volumineux.&lt;/p&gt;
+&lt;p&gt;Une fois que les bases du langage C sont acquises, éssayer de développer des jeux tels que Space Invaders, Pong ou encore s'initier aux automates cellulaires avec le jeu de la vie de Conway. Il sera possible d'apprendre en même temps Git pour le contrôle de version en créant un repository sur Github du projet. Git est une compétence essentiel pour tout travail de collaboration sur du code open source dont le noyau inventé par Linus Torvalds.&lt;/p&gt;
+&lt;p&gt;Quelques livres pour démarrer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le C en 20 heures, Schang &amp;amp; Berthomier&lt;/li&gt;
+&lt;li&gt;Programmer en C pour les Nuls, grand format, 3e éd, Gookin&lt;/li&gt;
+&lt;li&gt;Le langage C - 2e éd - Norme ANSI, Kernighan &amp;amp; Ritchie&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pour aller plus loin, il est possible d'explorer d'autres langages de programmation système tels que Rust, Nim et Zig.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;[ALGORITHME ET STRUCTURE DE DONNEE]&lt;/h2&gt;
+&lt;p&gt;Il faudra maitriser l'algorithmique pour résoudre des problèmes et savoir organiser les données grâce aux structures de données. Connaitre ces principes est un gain de temps et de mémoire pour résoudre des problèmes.&lt;/p&gt;
+&lt;p&gt;Il est possible de trouver des ressources sur le web pour ce former tels que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Algorithmique pour l'apprenti programmeur - Zeste de Savoir [PDF]&lt;/li&gt;
+&lt;li&gt;Algorithmes Et Structures De Donnees - Cours Et Exercices Corrigés En Langage C - Divay&lt;/li&gt;
+&lt;li&gt;Langage C : Structure de Données et d' Algorithmes en C, Udemy&lt;/li&gt;
+&lt;li&gt;Algorithmique, Structures de données et langage C, Enjalbert [PDF]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[RESEAUX]&lt;/h2&gt;
+&lt;p&gt;Un ordinateur n'a pas de sens à fonctionner seul, les protocoles réseaux ont été développé en même temps que les ordinateurs et c'est directement implémenté dans le noyau. La plupart des hackers ont des solides compétences en protocole et réseau que cela soit pour maitriser internet tel que le TCP/IP. Et cela se développe de plus en plus avec l'internet des objets.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Réseaux informatiques - Notions fondamentales (8e édition) - (Protocoles, Architectures, Réseaux sans fil, Virtualisation, Sécurité, IPv6...), Dordoigne&lt;/li&gt;
+&lt;li&gt;Les réseaux informatiques par la pratique, Launay&lt;/li&gt;
+&lt;li&gt;Tout sur les réseaux et Internet - 5e éd, Lemainque &amp;amp; Pillou&lt;/li&gt;
+&lt;li&gt;Linux - 4e éd - Programmation système et réseau - Cours et exercices corrigés: Programmation système et réseau, Delacroix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[SYSTEME D'EXPLOITATION]&lt;/h2&gt;
+&lt;p&gt;Une fois que l'on a de bonne base de programmation système, on doit apprendre les concepts des systèmes d'exploitation sous Linux. Apprendre à utiliser une distribution comme Arch Linux ou l'on construit soit même son propre système d'exploitation permet d'acquérir des compétences vitales dans le domaine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction aux systèmes d'exploitation - Cours et exercices en GNU/Linux, Boucheneb &amp;amp; Torres-Moreno&lt;/li&gt;
+&lt;li&gt;LINUX - Maîtrisez l'administration du système (6e édition), Rohaut&lt;/li&gt;
+&lt;li&gt;UNIX, pour aller plus loin dans la ligne de commande, Lozano [PDF]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[LINUX KERNEL]&lt;/h2&gt;
+&lt;p&gt;Pour la littérature sur le noyau Linux, tout est en anglais. Il n'y a pas d'article de référence en français. Il est important de développer à ce stade ces compétences pour pouvoir maitriser et entrée de la communauté du logiciel libre à l'internationnal. Le projet du noyau Linux inclus des développeurs du monde entier dont le langage de référence, celui d'internet est l'anglais. On retrouve sur internet toute la documentation du noyau à l'adresse "The Linux Kernel documentation". &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux Kernel Development, third edition - R.Love&lt;/li&gt;
+&lt;li&gt;Linux Device Drivers, J.Corbet&lt;/li&gt;
+&lt;li&gt;A Beginner’s Guide to Linux Kernel Development (LFD103), The Linux Foundation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;[CHALLENGE DE PROGRAMMATION]&lt;/h2&gt;
+&lt;p&gt;Il ne faut pas négliger l'entrainement à la résolution de problème. En tant que Kernel Hacker chaques jours sont lot de problème à résoudre avec le moins d'effort. Il faut développer des automatismes et entrainer le cerveau à travers des exemples et cas pratique. Les challenges de programmation permettent de progresser en algorithme et structure de donnée. Quelques sites de références:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Codewars&lt;/li&gt;
+&lt;li&gt;CodinGame&lt;/li&gt;
+&lt;/ul&gt;</content><category term="C/C++"></category><category term="C"></category><category term="kernel"></category></entry><entry><title>Apprendre à programmer en langage C/C++</title><link href="/apprendre-a-programmer-en-langage-cc.html" rel="alternate"></link><published>2021-03-24T21:07:00+01:00</published><updated>2021-03-24T21:08:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2021-03-24:/apprendre-a-programmer-en-langage-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Vous n'avez pas les bases comme dirait Orelsan. Alors on reprend depuis le début. Tout le monde n'a pas la possibilité de faire une école d'ingénieur ou des écoles plus specialisé tels que Epitech ou 42. Je crois que le passionné en informatique soit capable de ce former seul grâce aux ressources sur le web et une bonne librairie. &lt;/p&gt;
+&lt;p&gt;En vérité la majorité des hackers et informaticiens sont autodidacte et continu à apprendre tout les jours. L'une des compétences les plus prisés de ce siècle se fait par formation sur le web. Encore faut-il trouver du contenu pertinent. Car on peut tomber sur de la mauvaise qualité ou encore des problèmes de mise à jours de la norme.&lt;/p&gt;
+&lt;p&gt;Le rendez-vous de tout les passionnés d'informatique passe par l'ancien site du Zéro renommé &lt;a href="https://openclassrooms.com/fr/"&gt;openclassrooms&lt;/a&gt; qui a longtemps servi de référence sur ces cours d'informatique. Si je ne savais pas par ou commencer j'y jeterai un oeil comme ressource crédible francophone. Il ne faut pas occulter le site &lt;a href="https://www.developpez.net/"&gt;developpez.net&lt;/a&gt; ou l'on trouve bien de l'aide pour la formation. Son forum était l'ancien stackoverflow français.&lt;/p&gt;
+&lt;p&gt;On se demande quand on commence la programmation par quel langage que je devrais commencer. Il faut savoir qu'un développeur maitrise plusieurs langage mais il faut bien commencer par en choisir un. &lt;/p&gt;
+&lt;p&gt;Ma stratégie conciste à apprendre le maitre langage, celui dont tous dérive pour connaitre les bases. En même temps je recherche à créer des logiciels libres et l'outil indispensable pour le faire est gcc sous un environnement GNU/Linux. Donc mon choix se porte en tout premier lieu sur le language C. Celui-ci est à la base de système d'exploitation de type UNIX. On le retrouve egalement sur Arduino le microcontrolleur. En réalité dans les systèmes embarqués bien souvent on retrouve du Linux avec du C/C++. Si vous choisissez d'apprendre la programmation sur Arduino en premier lieu on ne vous en voudra pas. On peut rapidement acquérir des bases solides sur des concepts tels que les variables, fonctions, conditions et boucles. Des concepts plus avancées de programmation seront plutôt développé en C tels que les pointeurs ou structures. Enfin on peut aborder la programmation orienté-objet sous C++.&lt;/p&gt;
+&lt;p&gt;La gestion de la mémoire en langage C apporte quelques difficultés face à des concurrents tel que Python qui utilise le ramasse-miette pour la gérée. On doit ce préocuper de celle-ci en langage C/C++ permettant d'avoir de meilleurs performances. Malgré tout le langage C est relativement facile à apprendre tel que le prouve son utilisation sous Arduino. &lt;/p&gt;
+&lt;p&gt;Parmis les ressources que je propose je préviligie ce qui sont moins gourmande en mémoire ainsi que leur possibilité d'adapter au besoin de chaque utilisateur. J'utilise une machine GNU/Linux qui est plus pratique pour le métier de développeur.&lt;/p&gt;
+&lt;p&gt;Pour créer un programme en C il vous faut un éditeur de texte pour programmeur tel que Vim qui est en natif sur toutes machine GNU/Linux et un compilateur comme gcc.&lt;/p&gt;
+&lt;p&gt;On ouvre un terminal et dans l'inviter de commande, le prompt on tape:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc&lt;span class="w"&gt; &lt;/span&gt;-v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Le terminal nous renvoi la version de gcc ici la version 10.2.0 s'il est installé sur l'ordinateur.&lt;/p&gt;
+&lt;p&gt;On change de répertoire vers celui de travail et on crée un dossier src:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;src
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On va créer un fichier en C avec Vim:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;vim&lt;span class="w"&gt; &lt;/span&gt;hello.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans Vim on a le fichier hello.c et on va écrire un simple programme qui affiche "hello world" en C, il faut basculer en mode insertion en appuyant sur la touche &lt;code&gt;i&lt;/code&gt;puis écrire ce programme:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello world&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour sauvegarder et quitter Vim on tape &lt;code&gt;:wq!&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Enfin on va compiler le programme. Rappel: c'est l'étape ou le programme va être traduit en langage machine à base de 0 et de 1 compréhensible pour le micro-processeur:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcc&lt;span class="w"&gt; &lt;/span&gt;hello.c&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;L'opération de compilation va créer un fichier binaire executable nommé "hello" visible en faisant un &lt;code&gt;ls&lt;/code&gt; dans le répertoire de travail.
+Il reste plus qu'à lancer le programme généré par cette commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Qui affiche bien dans le terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hello&lt;span class="w"&gt; &lt;/span&gt;world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;C'est tout ce que vous avez besoin pour commencer à coder en C. Retenez Vim + GCC et puis après quelques experiences Git et gdb pour approfondir le sujet.&lt;/p&gt;
+&lt;p&gt;Je vous recommande les meilleurs lectures sur le sujet pour apprendre librement la programmation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://framabook.org/le-c-en-20-heures-2/"&gt;Le C en 20 heures; Berthomier, Schang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rocq.inria.fr/secret/Anne.Canteaut/COURS_C/cours.pdf"&gt;Programmation en langage C, Inria projet codes; Canteaut&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://zestedesavoir.com/tutoriels/755/le-langage-c-1/"&gt;Langage C, Zeste du savoir&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="C/C++"></category><category term="C"></category><category term="C++"></category><category term="programmation"></category><category term="livres"></category></entry></feed>

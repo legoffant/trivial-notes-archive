@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>C++ eco-système</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/ltcb.html">LTCB</a></li>
+                          <li class="divider-vertical"></li>
+                  <li class="active">
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to C++ eco-système">
+                                        C++ eco-système
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2022-02-15T08:59:00+01:00">
+        <i class="icon-calendar"></i>mar. 15 février 2022
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/cc.html"><i class="icon-folder-open"></i>C/C++</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/outils.html"><i class="icon-tag"></i>outils</a>
+	<a href="/tag/communaute.html"><i class="icon-tag"></i>communauté</a>
+	<a href="/tag/c.html"><i class="icon-tag"></i>c++</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Ce sujet traite de l'éco-système C++ en allant aux outils à la communauté pour être plus productif dans le travail et devenir un développeur averti.</p>
+<h3>Compileurs</h3>
+<p><img alt="GCC Logo" src="images/gccegg-65.png"></p>
+<p><strong>GCC g++</strong>  </p>
+<p>De facto le standard sous GNU/Linux:   </p>
+<ul>
+<li>
+<p><a href="https://gcc.gnu.org/">https://gcc.gnu.org/</a>  </p>
+</li>
+<li>
+<p>sur Windows WinLibs: <a href="https://winlibs.com/">https://winlibs.com/</a> et <a href="https://docs.microsoft.com/fr-fr/windows/wsl/about">WSL</a></p>
+</li>
+</ul>
+<p><img alt="LLVM Logo" src="images/LLVM-Logo-Derivative-3.png"></p>
+<p><strong>LLVM clang++</strong></p>
+<p>Un compileur concurrent de GCC qui offre de meilleur performance  </p>
+<ul>
+<li><a href="https://llvm.org/">https://llvm.org/</a>  </li>
+</ul>
+<p><img alt="Visual C++ Logo" src="images/visual-logo.png"></p>
+<p><strong>Microsoft visual C++</strong>  </p>
+<p>Pour utiliser le C++ moderne il faut installer la dernière version du logiciel</p>
+<ul>
+<li><a href="https://docs.microsoft.com/fr-fr/cpp/?view=msvc-170">Documentation sur Microsoft C++, C, Assembleur</a></li>
+<li><a href="https://visualstudio.microsoft.com/fr/free-developer-offers/">https://visualstudio.microsoft.com/fr/free-developer-offers/</a>  </li>
+</ul>
+<h3>Compileurs online</h3>
+<p>Il est possible d'accéder sur internet à des compileurs en ligne</p>
+<ul>
+<li>
+<p><a href="https://godbolt.org/">https://godbolt.org/</a>  gcc, permet d'avoir une sortie en assembleur  </p>
+</li>
+<li>
+<p><a href="https://coliru.stacked-crooked.com/">https://coliru.stacked-crooked.com/</a> gcc  </p>
+</li>
+<li>
+<p><a href="https://wandbox.org/">https://wandbox.org/</a> inclus Boost, clang++, gcc  </p>
+</li>
+</ul>
+<h3>Debugging</h3>
+<p><strong>gdb</strong>  </p>
+<ul>
+<li>
+<p><a href="https://www.sourceware.org/gdb/">https://www.sourceware.org/gdb/</a>  </p>
+</li>
+<li>
+<p><a href="https://hackingcpp.com/cpp/tools/gdb_intro.html">Intro to gdb</a></p>
+</li>
+<li>frontend DDD: <a href="https://www.gnu.org/software/ddd/">https://www.gnu.org/software/ddd/</a></li>
+</ul>
+<p><strong>WinDBG</strong>  </p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools">Microsoft documentation</a>  </li>
+</ul>
+<p><strong>x64dbg</strong></p>
+<ul>
+<li><a href="https://x64dbg.com/">https://x64dbg.com/</a> Pour Windows, .DLL, .EXE etc...</li>
+</ul>
+<h3>Code Analyseur</h3>
+<p><strong>ASAN(Adress SANITIZER)</strong>  </p>
+<ul>
+<li>
+<p><a href="https://clang.llvm.org/docs/AddressSanitizer.html">https://clang.llvm.org/docs/AddressSanitizer.html</a>  </p>
+</li>
+<li>
+<p><a href="https://hackingcpp.com/cpp/tools/asan.html">Intro, détection de corruption mémoire</a></p>
+</li>
+</ul>
+<h3>Stand-alone outils d'analyse</h3>
+<p><strong>Valgrind</strong>  </p>
+<p>Valgrind est un outil de programmation libre pour déboguer, effectuer du profilage de code et mettre en évidence des fuites mémoires.  </p>
+<ul>
+<li>
+<p><a href="https://valgrind.org/">https://valgrind.org/</a>  </p>
+</li>
+<li>
+<p><a href="https://hackingcpp.com/cpp/tools/valgrind.html">Intro</a></p>
+</li>
+<li><a href="https://valgrind.org/docs/manual/quick-start.html">Quick Start</a></li>
+</ul>
+<h3>Profiling &amp; Benchmarking</h3>
+<p><strong>GNU gprof</strong>  </p>
+<p>Gprof est un logiciel GNU Binary Utilities qui permet d'effectuer du profilage de code. Cela permet de détecter dans le code le temps d'éxécution qui demanderait à être ré-écrit.  </p>
+<ul>
+<li>
+<p><a href="https://sourceware.org/binutils/docs/gprof/">https://sourceware.org/binutils/docs/gprof/</a>  </p>
+</li>
+<li>
+<p><a href="https://www.thegeekstuff.com/2012/08/gprof-tutorial/">Tutorial</a></p>
+</li>
+</ul>
+<p><strong>Valgrind</strong>  </p>
+<ul>
+<li>cachegrind, callgrind</li>
+<li><a href="https://valgrind.org/info/tools.html">https://valgrind.org/info/tools.html</a>  </li>
+</ul>
+<p><strong>Perf</strong>  </p>
+<p>perf: Linux profiling with performance counters  </p>
+<ul>
+<li>
+<p><a href="https://perf.wiki.kernel.org/index.php/Main_Page">https://perf.wiki.kernel.org/index.php/Main_Page</a>  </p>
+</li>
+<li>
+<p><a href="https://perf.wiki.kernel.org/index.php/Tutorial">Tutorial</a></p>
+</li>
+</ul>
+<h3>Documentation</h3>
+<p><strong>Doxygen</strong>  </p>
+<p>Outil d'annotation et de création de documentation C++  </p>
+<ul>
+<li>
+<p><a href="https://www.doxygen.nl/index.html">https://www.doxygen.nl/index.html</a>  </p>
+</li>
+<li>
+<p><a href="https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/etre-un-developpeur/mais-ou-est-la-doc/#3-documenter-son-code-avec-doxygen">Documenter son code avec Doxygen</a></p>
+</li>
+</ul>
+<h3>Benchmarking librairies / framework</h3>
+<p><strong>gperftools</strong>  </p>
+<p>Implementation du multi-threading pour malloc() haute performance  </p>
+<ul>
+<li>
+<p><a href="https://github.com/gperftools/gperftools/wiki">https://github.com/gperftools/gperftools/wiki</a>  </p>
+</li>
+<li>
+<p>HEAP checker, CPU profiler</p>
+</li>
+</ul>
+<h3>Build Systems</h3>
+<p><strong>GNU Make</strong>  </p>
+<p><strong>Make</strong> est un logiciel qui construit automatiquement des fichiers, souvent exécutables, ou des bibliothèques à partir d'éléments de base tels que du code source. Il utilise des fichiers appelés <strong>makefile</strong> qui spécifient comment construire les fichiers cibles  </p>
+<p>S'utilise pour de petit projet, tous les développeurs devraient savoir faire un makefile.</p>
+<ul>
+<li>
+<p><a href="https://www.gnu.org/software/make/">https://www.gnu.org/software/make/</a>  </p>
+</li>
+<li>
+<p><a href="https://devhints.io/makefile">Cheatsheet</a></p>
+</li>
+<li><a href="https://www.gnu.org/software/make/manual/make.html">Manuel</a></li>
+</ul>
+<p><strong>CMake</strong>   </p>
+<p><em>CMake</em> est un outil permettant d'automatiser le processus de compilation et d'installation d'un logiciel.  </p>
+<ul>
+<li>
+<p><a href="https://cmake.org/">https://cmake.org/</a>  </p>
+</li>
+<li>
+<p>Standard en C++</p>
+</li>
+<li><a href="https://cliutils.gitlab.io/modern-cmake/">A introduction to modern CMake</a></li>
+<li><a href="https://github.com/cpp-best-practices/cpp_starter_project">A template CMake project to get you started with C++ and tooling</a>  </li>
+</ul>
+<h3>Test Unitaire</h3>
+<p><strong>Doctest</strong>  </p>
+<ul>
+<li>
+<p><a href="https://github.com/doctest/doctest">https://github.com/doctest/doctest</a>  </p>
+</li>
+<li>
+<p><a href="https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md">Tutorial</a></p>
+</li>
+</ul>
+<h3>Package management</h3>
+<p><strong>Conan</strong>  </p>
+<ul>
+<li>
+<p><a href="https://conan.io/">https://conan.io/</a>  </p>
+</li>
+<li>
+<p>Fonctionne avec CMake, MSbuild</p>
+</li>
+</ul>
+<h3>Source code management</h3>
+<p><strong>Git</strong>  </p>
+<ul>
+<li>Le standard dans l'industrie</li>
+<li><a href="https://git-scm.com/">https://git-scm.com/</a>  </li>
+</ul>
+<h3>Autres liens</h3>
+<ul>
+<li>
+<p><a href="https://github.com/fffaraz/awesome-cpp">A curated list of awesome C++ (or C) frameworks, libraries, resources</a>  </p>
+</li>
+<li>
+<p><a href="https://www.toolchains.net/">Toolchain ressource</a></p>
+</li>
+</ul>
+<h3>Langage reference</h3>
+<p><strong>cppreference</strong></p>
+<ul>
+<li><a href="https://en.cppreference.com/w/">https://en.cppreference.com/w/</a>  </li>
+</ul>
+<h3>Best practices / Core guidelines</h3>
+<ul>
+<li>
+<p><a href="https://github.com/cpp-best-practices/cppbestpractices/blob/master/00-Table_of_Contents.md">https://github.com/cpp-best-practices/cppbestpractices/blob/master/00-Table_of_Contents.md</a>  </p>
+</li>
+<li>
+<p><a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md">https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md</a>  </p>
+</li>
+</ul>
+<h3>Social Media</h3>
+<p><strong>Reddit</strong>  </p>
+<ul>
+<li>C++ Communauté <a href="https://www.reddit.com/r/cpp/">https://www.reddit.com/r/cpp/</a>  </li>
+</ul>
+<p><strong>#include ＜C++＞</strong></p>
+<ul>
+<li>Discord server <a href="https://www.includecpp.org/discord/">https://www.includecpp.org/discord/</a>  </li>
+</ul>
+<p><strong>Developpez.net</strong>  </p>
+<ul>
+<li>Forum <a href="https://www.developpez.net/forums/f19/c-cpp/cpp/">https://www.developpez.net/forums/f19/c-cpp/cpp/</a>  </li>
+</ul>
+<h3>Groupe d'utilisateur</h3>
+<p><strong>C++ francophone CPP-FRUG</strong>  </p>
+<ul>
+<li>
+<p><a href="https://www.meetup.com/fr-FR/User-Group-Cpp-Francophone/">https://www.meetup.com/fr-FR/User-Group-Cpp-Francophone/</a>  </p>
+</li>
+<li>
+<p><a href="http://cppfrug.org/">http://cppfrug.org/</a></p>
+</li>
+</ul>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://beagleboard.org/bone"><i class="icon-external-link"></i>BeagleBoard</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

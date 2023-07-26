@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Note d'installation sécurisée d'un site statique Nginx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/ltcb.html">LTCB</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Note d'installation sécurisée d'un site statique Nginx">
+                                        Note d'installation sécurisée d'un site statique Nginx
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2023-07-08T11:23:00+02:00">
+        <i class="icon-calendar"></i>sam. 08 juillet 2023
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/nginx.html"><i class="icon-tag"></i>nginx</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Ma propre configuration pour déployer un site statique tel que <a href="https://qasari.net">https://qasari.net</a></p>
+<p>Configuration:</p>
+<ul>
+<li>OS: Debian 11</li>
+<li>Auto-update security</li>
+<li>Web server: Nginx</li>
+<li>par-feu: ufw</li>
+<li>securité: fail2ban, rkhunter, clé RSA SSH Only-Login, logwatch</li>
+<li>SSL Enable avec Let's Encrypt auto-renew</li>
+<li>Template: Simple.css</li>
+</ul>
+<p>Create a static website on Nginx:</p>
+<ul>
+<li><a href="https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940">https://jgefroh.medium.com/a-guide-to-using-nginx-for-static-websites-d96a9d034940</a></li>
+</ul>
+<p>Proteger son serveur VPS:</p>
+<ul>
+<li><a href="https://www.remipoignon.fr/securiser-son-serveur-linux/">https://www.remipoignon.fr/securiser-son-serveur-linux/</a></li>
+</ul>
+<p>Static site template:</p>
+<ul>
+<li>Simple.css <a href="https://github.com/kevquirk/simple.css">https://github.com/kevquirk/simple.css</a></li>
+</ul>
+<p>Liste pour utiliser un générateur de site statique (blog, docs, etc...):</p>
+<ul>
+<li><a href="https://jamstack.org/generators/">https://jamstack.org/generators/</a></li>
+</ul>
+<p>Partage de fichier à la racine (index) du web server comme repository:</p>
+<ul>
+<li>Apaxy: <a href="https://oupala.github.io/apaxy/">https://oupala.github.io/apaxy/</a></li>
+<li>h5ai: <a href="https://larsjung.de/h5ai/">https://larsjung.de/h5ai/</a></li>
+<li>Directory Lister: <a href="https://www.directorylister.com/">https://www.directorylister.com/</a></li>
+</ul>
+<p>NOTA: Hacker web design style Brutalist:</p>
+<ul>
+<li>What Is Brutalism in Web Design? <a href="https://elementor.com/blog/brutalism-in-web-design/">https://elementor.com/blog/brutalism-in-web-design/</a></li>
+</ul>
+<hr>
+<p><strong>LIST COMMAND ON SERVER</strong> </p>
+<p>Install editor text &amp; bash completion:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>sudo<span class="w"> </span>nano<span class="w"> </span>vim<span class="w"> </span>bash-completion
+</code></pre></div>
+
+<p>Configure the hostname:</p>
+<div class="highlight"><pre><span></span><code>$ nano /etc/hosts
+
+127.0.0.1       localhost.qasari.net   localhost
+37.187.181.111  qasari.net     qasari
+</code></pre></div>
+
+<p>The following lines are desirable for IPv6 capable hosts</p>
+<div class="highlight"><pre><span></span><code>::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+</code></pre></div>
+
+<p>Edit hostname:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nano<span class="w"> </span>/etc/hostname
+
+qasari
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>reboot<span class="w"> </span>now
+</code></pre></div>
+
+<p>Check if hostname is correct:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>hostname
+$<span class="w"> </span>hostname<span class="w"> </span>-f
+</code></pre></div>
+
+<p>Update debian installation:</p>
+<div class="highlight"><pre><span></span><code>$ nano /etc/apt/sources.list 
+
+# enable contrib non-free
+
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb-src http://deb.debian.org/debian bullseye main contrib non-free
+
+deb http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt-get<span class="w"> </span>upgrade
+</code></pre></div>
+
+<p>Synchro the system clock:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ntp
+$<span class="w"> </span>timedatectl<span class="w"> </span>set-ntp<span class="w"> </span><span class="nb">true</span>
+</code></pre></div>
+
+<p>Ajout d'une utilisateur:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>adduser<span class="w"> </span>toto
+$<span class="w"> </span>sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>sudo<span class="w"> </span>toto
+$<span class="w"> </span>su<span class="w"> </span>toto
+$<span class="w"> </span>passwd
+</code></pre></div>
+
+<p>Enlever un utilisateur:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>deluser<span class="w"> </span>debian
+</code></pre></div>
+
+<p><strong>IMPORTANT NOTE DE SECURITY</strong></p>
+<p>Utiliser une clé SSH sur pour l'authentification sur le serveur: <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11">https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11</a></p>
+<p>Generate paire de clé RSA 4046</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>ssh-keygen<span class="w"> </span>-b<span class="w"> </span><span class="m">4096</span>
+</code></pre></div>
+
+<p>copy la clé public sur le serveur distant</p>
+<div class="highlight"><pre><span></span><code>$ ssh-copy-id toto@37.187.181.111
+</code></pre></div>
+
+<p>Configuration de SSH:</p>
+<div class="highlight"><pre><span></span><code>$ nano /etc/ssh/sshd_config
+
+port 2382
+PermitRootLogin no
+PasswordAuthentication no
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>reboot<span class="w"> </span>now
+</code></pre></div>
+
+<p>On ce reconnecte via la clé SSH</p>
+<div class="highlight"><pre><span></span><code>$ ssh -p 2382 toto@37.187.181.111
+</code></pre></div>
+
+<p>Configurer le firewall:</p>
+<p>setup ufw:</p>
+<ul>
+<li><a href="https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw">https://linuxconfig.org/ubuntu-20-04-open-http-port-80-and-https-port-443-with-ufw</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>$ sudo apt install ufw
+
+$ sudo ufw default deny incoming
+$ sudo ufw default allow outgoing
+
+$ sudo ufw allow 2382
+$ sudo ufw allow http
+$ sudo ufw allow https
+
+$ sudo ufw enable
+$ sudo ufw status
+</code></pre></div>
+
+<p>Configurer fail2ban:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>fail2ban
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$ sudo cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
+$ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$ sudo nano /etc/fail2ban/jail.local
+
+[sshd]
+enabled = true
+port = 2382
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 3
+findtime = 300
+bantime = 3600
+ignoreip = 127.0.0.1
+destemail = test@gmail.com
+</code></pre></div>
+
+<p>Depuis une dernière version de fail2ban, pour recevoir les mails de notification, il faut indiquer votre mail dans les fichiers :</p>
+<div class="highlight"><pre><span></span><code>    /etc/fail2ban/action.d/sendmail-common.conf
+    /etc/fail2ban/action.d/mail.conf
+    /etc/fail2ban/action.d/mail-whois.conf
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>fail2ban
+$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>fail2ban
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>fail2ban-client<span class="w"> </span>status
+</code></pre></div>
+
+<p>Configure Rkhunter:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>rkhunter
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$ sudo nano /etc/default/rkhunter
+
+# Pour effectuer une vérification chaque jour
+CRON_DAILY_RUN=&quot;yes&quot;
+REPORT_EMAIL=&quot;test@gmail.com&quot;
+</code></pre></div>
+
+<p>Open /etc/rkhunter.conf. Uncomment (remove the # to the left) and change the following three variables:</p>
+<div class="highlight"><pre><span></span><code>MIRRORS_MODE=1 ---&gt; MIRRORS_MODE=0
+
+UPDATE_MIRRORS=0 ---&gt; UPDATE_MIRRORS=1
+
+WEB_CMD=&quot;/bin/false&quot; ---&gt; WEB_CMD=&quot;&quot;
+</code></pre></div>
+
+<p>Confirm config file:</p>
+<div class="highlight"><pre><span></span><code>sudo rkhunter -C
+</code></pre></div>
+
+<p>Update database:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>rkhunter<span class="w"> </span>--update
+</code></pre></div>
+
+<p>Check the local system:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>rkhunter<span class="w"> </span>--check
+</code></pre></div>
+
+<p>Configure logwatch:</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt install logwatch
+$ nano /usr/share/logwatch/default.conf/logwatch.conf
+MailTo = test@gmail.com
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>logwatch<span class="w"> </span>status
+</code></pre></div>
+
+<p>test manuellement:</p>
+<div class="highlight"><pre><span></span><code>$ sudo logwatch --detail Low --mailto email@address --service http --range today
+</code></pre></div>
+
+<p>Configurer les mises à jours de sécurité automatique:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>unattended-upgrades
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>unattended-upgrades
+$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>unattended-upgrades
+</code></pre></div>
+
+<p>Configuration file:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apt/apt.conf.d/50unattended-upgrades
+</code></pre></div>
+
+<p>In our example, remove // from the “security” line if it’s there, "origin=Debian,codename=${distro_codename},label=Debian-Security";</p>
+<p>Enabling automatic upgrades:</p>
+<div class="highlight"><pre><span></span><code>$ sudo nano /etc/apt/apt.conf.d/20auto-upgrades
+
+APT::Periodic::Update-Package-Lists &quot;1&quot;;
+APT::Periodic::Unattended-Upgrade &quot;1&quot;;
+APT::Periodic::AutocleanInterval &quot;7&quot;;
+</code></pre></div>
+
+<p>Testing the configuration:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>unattended-upgrades<span class="w"> </span>--dry-run<span class="w"> </span>--debug
+</code></pre></div>
+
+<p>Installer Nginx:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nginx
+$<span class="w"> </span>mkdir<span class="w"> </span>/var/www/qasari.net
+</code></pre></div>
+
+<p>Transférer vos fichiers local vers le serveur:</p>
+<div class="highlight"><pre><span></span><code>$  scp -P 2382 -r ~/qasari.net/* toto@37.187.181.111:/var/www/qasari.net
+</code></pre></div>
+
+<p>Ne pas oublier de changer le détenteur du groupe:</p>
+<div class="highlight"><pre><span></span><code>$ sudo chown -R $USER:$USER /var/www
+</code></pre></div>
+
+<p>Configure Nginx to serve the website</p>
+<div class="highlight"><pre><span></span><code>$ sudo nano /etc/nginx/sites-available/qasari.net
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;  
+
+    root /var/www/qasari.net;  
+    index index.html;  
+
+    server_name qasari.net www.qasari.net;  
+    location / {
+        try_files $uri $uri/ =404;
+        }
+}
+</code></pre></div>
+
+<p>Link site enable:</p>
+<div class="highlight"><pre><span></span><code>$ ln -s /etc/nginx/sites-available/qasari.net /etc/nginx/sites-enabled/qasari.net
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx
+</code></pre></div>
+
+<p>Configuration SSL avec let's encrypt:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>software-properties-common
+$<span class="w"> </span>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:certbot/certbot
+$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-certbot-nginx
+$<span class="w"> </span>sudo<span class="w"> </span>certbot<span class="w"> </span>--nginx<span class="w"> </span>certonly
+</code></pre></div>
+
+<p>Enable auto-renewal for certificates:</p>
+<div class="highlight"><pre><span></span><code>$ sudo crontab -e
+
+17 7 * * * certbot renew --post-hook &quot;systemctl reload nginx&quot;
+</code></pre></div>
+
+<p>Tell Nginx use SSL for website inside server conf file:</p>
+<div class="highlight"><pre><span></span><code>server {
+   listen 443 default_server;
+   listen [::]:443 default_server;
+   #... all other content
+
+
+   # ...previous content here
+   ssl on;
+   ssl_certificate /etc/letsencrypt/live/qasari.net/fullchain.pem;
+   ssl_certificate_key /etc/letsencrypt/live/qasari.net/privkey.pem;
+}
+</code></pre></div>
+
+<p>Restart web server et reboot:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nginx
+$<span class="w"> </span>reboot<span class="w"> </span>now
+</code></pre></div>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://beagleboard.org/bone"><i class="icon-external-link"></i>BeagleBoard</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

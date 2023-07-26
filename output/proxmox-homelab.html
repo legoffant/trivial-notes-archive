@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Proxmox HomeLab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/ltcb.html">LTCB</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Proxmox HomeLab">
+                                        Proxmox HomeLab
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2023-04-23T10:24:00+02:00">
+        <i class="icon-calendar"></i>dim. 23 avril 2023
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/homelab.html"><i class="icon-tag"></i>homelab</a>
+</footer><!-- /.post-info -->                </div>
+                <p>On va parler un peu de serveur. Notre monde fonctionne actuellement sous l'apartheid informatique dans le sens que les utilisateurs Windows et MacOS sous logiciels propriétaires ne connaissent rien en serveur, alors que les libristes, hackers et utilisateurs de Linux sont des experts, c'est dans leur seconde nature. Tout simplement car l'infrastructure d'internet fonctionne entièrement sous le logiciel libre et open source. Le Top 1 million des sites mondiaux fonctionnent sous un serveur web Linux à 96,3% mais également plus de 90% des infrastructures en cloud computing. <a href="https://truelist.co/blog/linux-statistics/">Stats Linux</a>.  </p>
+<p>Clairement Windows server est marginal, peu de service et vulnérable, et quand on se lance dans l'apprentissage des serveurs, c'est du pure suicide, certain sont des Microsoft fanboys en particulier pour de l'utilisation avec Azure. De nombreux serveurs ont une stack de base sous Debian LAMP (Linux Apache MySQL PHP), c'est old school mais toujours d'actualité chez les "tradis" pour le développement de services web.  </p>
+<p>Débuter sur serveur ne demande pas un grand investissement, il est possible de commencer sur un <a href="https://www.kubii.fr/pi-zero-w/1851-raspberry-pi-zero-w-3272496006997.html">Raspberry Pi Zero W à 18€</a> fonctionne avec un Debian lite (RaspberryPi OS). Il y a beaucoup de documentation pour les apprenants. <a href="https://raspberrytips.fr/projets-raspberry-pi-zero-2w/">Quelques idées de projets</a>. Personnellement je préfère le modèle <a href="https://fr.aliexpress.com/item/1005004157984532.html">MangoPi MQ Pro à 30€</a> sur architecture RISC-V en processeur. Windows server ne fonctionne pas sur nano-ordinateur et système embarqué, vous êtes prévenu c'est de la daube, problème de compatibilité matériel, mais également d'utilisation des ressources sur des configurations minimalistes.  </p>
+<h3>L'auto-hébergement</h3>
+<p>Si vous voulez monter en compétence chez soi sur serveur, vous faites de l'auto-hébergement en particulier dans le cadre pour contrôler vos données que cela soit personnel ou entreprise et déployer des services. Cela demande quelques compétences en réseau informatique et administration système et tester des technologies localement. Un web entrepreneur a raison de monter en compétence sur serveur pour préparer des services d'entreprises et gérer les données localement, en réalité l'entrepreneur est garant des données et donc du patrimoine informationnel de son entreprise et de la gestion du système d'information (SI). Il faut planifier en amont des sauvegardes et possibilités de migration des données et services quand l'entreprise monte en puissance, ce que l'on appel du <a href="https://www.leslivresblancs.fr/dossier/tout-comprendre-de-la-scalabilite-du-scaling-et-de-la-scale">scaling</a>. D'ou que l'on utilise la technologie de virtualisation sur serveur.  </p>
+<h3>Proxmox</h3>
+<p>L'un des produits open source largement plébiscité est <a href="https://www.proxmox.com/en/">Proxmox VE</a> pour de la virtualisation sur serveur avec comme hyperviseur KVM et des containers LXC. C'est un standard actuellement dans la construction de Homelab mais également pour des TPE ou associations. L'interface d'administration des machines virtuelles (VM) est intuitive, mais également pour utiliser des technologies comme les snapshots ou le RAID avec le système de fichier ZFS. Proxmox est une distro Linux Debian avec une surcouche de management de VM et d'interface d'administration.  </p>
+<p>Le matériel nécessaire est en fonction de ces propres besoins. Vous pouvez commencer sur du pré-construit comme un Intel NUC et seulement 4GB de ram à 150€, voir des Lenovo Thinkcentre en mini-PC. Une VM fait généralement à minima 512Mo de RAM pour un serveur.  </p>
+<p>Pour un Homelab performant, il est nécessaire de monter soi-même sa configuration et mettre entre 1000 à 2000€, avec du matériel dédié pour serveur tel qu'un processeur Xeon ou des disques durs pour NAS comme la série Iron Wolf. J'ai ma préférence pour l'utilisation du format mini-ITX en carte-mère et un boitier adapté avec 4 à 6 emplacement de disques durs comme le "<a href="https://www.fractal-design.com/products/cases/node/node-304/black/">fractal design node 304</a>" qui permet de réduire l'encombrement. Vous trouverez sur <a href="https://forums.serverbuilds.net/t/guide-nas-killer-4-0-fast-quiet-power-efficient-and-flexible-starting-at-125/667">ce guide pour NAS</a>, des configurations matériels détaillées d'Homelab.  </p>
+<p>Proxmox permet d'utiliser la technologie PCI Passthrough pour utiliser une carte graphique et déployer une machine virtuelle dédiée à de l'utilisation de GPU intensive comme du Cloud Gaming. Il est possible de ce connecter à distance depuis votre PC sur votre réseau local à une VM de Cloud Gaming avec une environnement isolé et pré-configuré, c'est pratique si votre PC ne permet pas d'utiliser une carte graphique ou installer des produits, jeux. Seulement faudra une configuration matériel puissante que cela soit en processeur, ram et alimentation. Cela me permet d'invoquer une session à distance sous Arch Linux via Remmina en me connectant au serveur.  </p>
+<p>La configuration de mon propre serveur Proxmox à titre indicatif:  </p>
+<div class="highlight"><pre><span></span><code>###########################################################
+Config Server mini-ITX CPU Ryzen 5  64GO RAM 4x2TO HDD RAID
+###########################################################
+Par ldlc.com
+
+- Carte mère: ASRock A520M-ITX/ac 119€95
+- CPU: AMD Ryzen 5 5500 Wraith Stealth 6 cores (3.6 GHz / 4.2 GHz) 157€96
+- Boitier: Fractal Design Node 304 Noir 119€95
+- RAM: Corsair Vengeance LPX Series Low Profile 64 Go (2x 32 Go) DDR4 3200 MHz CL16 256€95
+- HDD: 4 x Seagate IronWolf 2 To 395€80
+- Alimentation: be quiet! Straight Power 11 450W 80PLUS Gold  107€95
+- Ventirad: Noctua NH-L9a-AM4 59€
+- Cable: 2 x Corsair Câbles SATA Gainés Droits/Coudés 30 cm (coloris bleu) 29€90
+- Clavier: Advance GTA 230 (AZERTY Français) 19€94
+- GPU: Zotac NVIDIA GTX 1650 OC 4GB 180€ 
+
+total: 1440€
+</code></pre></div>
+
+<h3>Configuration</h3>
+<p>Quand vous devez configurer la première fois le serveur, il faut mettre en place un OS "bare metal" en installant l'iso de Proxmox via USB. Il faut un écran, clavier et souris. On doit choisir les volumes, mettre en place le RAID, les paramètres d'administration et réseau. Qui ne serve qu'une fois, ou en cas de maintenance critique et d'accès réseau à distance coupé. Une fois le serveur configuré, on ce connecte à distance sur le réseau local depuis son PC de travail. <a href="https://www.it-connect.fr/comment-installer-proxmox-ve-7-0-et-creer-sa-premiere-vm/">Installer Proxmox et lancer sa première VM</a>.  </p>
+<h3>Services Homelab</h3>
+<p>Il est possible de déployer énormément de services ou de les créer. Il y a une pléthore de programme et apps open source pour de l'auto-hébergement. Vous trouverez une <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">liste Awesome "self-hosted"</a>. Dans l'exemple d'une association, il est possible de déployer un ERP pour la comptabilité: Dolibarr + outils de collaboration et de gestion de document: Nextcloud + un site statique (Jekyll en Ruby) + service de mailing list (Sympa) pour la communication.  </p>
+<p>Après dans les outils plébiscités on retrouve:  </p>
+<ul>
+<li>
+<p>Prometheus  </p>
+</li>
+<li>
+<p>Terraform  </p>
+</li>
+<li>
+<p>Kubernetes  </p>
+</li>
+<li>
+<p>Docker  </p>
+</li>
+<li>
+<p>Portainer  </p>
+</li>
+<li>
+<p>Plex  </p>
+</li>
+<li>
+<p>Ansible  </p>
+</li>
+<li>
+<p>Pi-Hole  </p>
+</li>
+<li>
+<p>Webmin  </p>
+</li>
+</ul>
+<p>Le mieux est de se renseigner sur internet, il y a des articles de blogs et vidéos Youtube sur le type d'utilisation d'un HomeLab avec retour d'expérience. <a href="https://www.youtube.com/watch?v=IE5y2_S8S8U">HomeLab Services Tour Late 2021 - What am I Self-Hosting in my HomeLab?</a>  </p>
+<p>Cela reste très chronophage que d'apprendre avec un HomeLab, et de monter en compétence en <a href="https://legoffant.github.io/ressources-pour-sysadmin-linux.html">sysAdmin</a>. On peut déployer des VMs pour beaucoup de choses, même pour hacker et apprendre sur son propre réseau avec des vulnérabilités.</p>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://beagleboard.org/bone"><i class="icon-external-link"></i>BeagleBoard</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

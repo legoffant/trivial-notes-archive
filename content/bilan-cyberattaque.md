@@ -49,7 +49,7 @@ Install Pelican:
 
 2. virtualenv .venv
 3. source .venv/bin/activate
-4. pip install pelican markdown
+4. pip install pelican markdown ghp-import
 5. pelican-quickstart
 6. Copie des themes et plugins
 

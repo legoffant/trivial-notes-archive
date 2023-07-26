@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Le monde enchanté de la customisation (ricing) sous Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/ltcb.html">LTCB</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Le monde enchanté de la customisation (ricing) sous Linux">
+                                        Le monde enchanté de la customisation (ricing) sous Linux
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2023-04-02T06:32:00+02:00">
+        <i class="icon-calendar"></i>dim. 02 avril 2023
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/custom.html"><i class="icon-tag"></i>custom</a>
+	<a href="/tag/arch.html"><i class="icon-tag"></i>arch</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Je suis un partisan que l'outil informatique doit être un espace pour les créatifs qui veulent faire de l'art numérique ou coder leur propre outils. Des systèmes d'exploitations comme Windows ou MacOS ne sont pas customisable, par leur nature fermé de prendre l'utilisateur pour des arriérés et voler leur travail, l'environnement est prédéfini par les ingénieurs et ne laisse aucune possibilité d'accès au code source par leur nature propriétaire. Ce qui fait que le pecnot moyen n'a pas son mot à dire s'il trouve une fonction débile et voudrait l'améliorer.  </p>
+<p>De ce fait on aurait besoin d'accès aux fichiers de configuration de l'environnement utilisateur, ce que l'on appel .dotfiles et l'utilisateur pourrait les modifier en trackant les changements via du control de version avec Git et les partager avec la communauté.  </p>
+<p>Il faut donc un contrôle sur sa machine et comprendre comment est assembler les différents composants du système d'exploitation, que cela soit dans des buts de customisation tels qu'en cyberdefense et blue team, optimisation de la productivité et art numérique.  </p>
+<p>Par sa nature GNU/Linux est le choix principal mais une distribution sort du lot pour fabriquer un système sur mesure: Arch Linux. La communauté à largement dépasser Gentoo dans les distributions minimal et simpliste.  </p>
+<p>Le temple de la customisation auparavant dans les années 2000-10 était le site de <a href="https://www.deviantart.com/">deviant-art</a>. Puis est arrivé Reddit et <a href="https://www.reddit.com/r/unixporn/">r/unixporn</a> qui permet de suivre l'état de l'art des "ricing" ou +50% des utilisateurs sont sous Arch Linux.  </p>
+<p>Généralement la communauté est des programmeurs et codeurs en optimisant leur utilisation du terminal pour la productivité, réduire l'utilisation de la souris et utiliser des raccourcis clavier pour gérer leur environnement avec des <a href="https://fr.wikipedia.org/wiki/Gestionnaire_de_fen%C3%AAtres_par_pavage">Tiling Windows Manager</a>. Ils finissent à poster egalement des memes sur <a href="https://www.reddit.com/r/linuxmasterrace/wiki/index/">r/linuxmasterrace</a> et crier sur les toits "I Use Arch BTW".  </p>
+<p>Dans cette optique je vais vous présenter ma configuration nommé "broutage de chaton" pour p0wn à tout les coups et humilier votre entourage par votre maîtrise de l'informatique en invoquant "Pedobear" en mode fanatique.  </p>
+<p><img alt="mineur" src="images/mineur.jpg"></p>
+<h3>Prérequis</h3>
+<p>Il faudra faire l'installation d'Arch Linux en manuel sans l'utilisation du script archinstall en intégrant:  </p>
+<ul>
+<li>
+<p>Chiffrement: dm-crypt / LUKS  </p>
+</li>
+<li>
+<p>Système de fichier pour les snapshots du système: BTRFS  </p>
+</li>
+<li>
+<p>UEFI Secure Boot (signé)  </p>
+</li>
+<li>
+<p>swap zram  </p>
+</li>
+</ul>
+<p>Je conseil l'utilisation du combo <a href="https://github.com/maximbaz/arch-secure-boot">arch-secure-boot</a> + <a href="https://github.com/wesbarnett/snap-pac">snap-pac</a> dans les bonnes pratiques de sécurité du système et de restauration. Si vous n'utilisez pas le secure boot, autant utiliser un bootloader léger tel que systemd-boot.  </p>
+<h3>Affichage Server</h3>
+<p>il est nécessaire pour démarrer une interface utilisateur graphique GUI. L'ancien se nomme X.org et commence à être dépasser dans l'optique nous allons utiliser son successeur: Wayland qui se veut plus facile à développer et extensif avec une facilité à maintenir et plus sur.  </p>
+<h3>Affichage Driver</h3>
+<p>Normalement vous n'aurez pas besoin d'intégrer des drivers spécifiques avec Intel et AMD car ceci est pris en charge par <a href="https://wiki.archlinux.org/title/Kernel_mode_setting">Kernel Mode Setting KMS</a>. Seulement NVIDIA qui reste propriétaire nécessite la configuration en manuel. NVIDIA et Linux toujours un peu en guerre.</p>
+<p><img alt="nvidia" src="images/nvidia-linus.jpg"></p>
+<h3>Compositor</h3>
+<p>Le compositor est un élément essentiel qui permet l'affichage de fenêtre mais également la transparence et les animations, pour Wayland nous utilisons un Tiling Windows Manager: <a href="https://hyprland.org/">hyprland</a>. Il faudra utiliser une barre d'état tel que Waybar et ces extensions comme Eww pour les Widgets.  </p>
+<h3>Gestionnaire d'affichage</h3>
+<p>Nous allons utiliser une configuration minimaliste qui gère Wayland. Pour cela on utilise un TUI (Terminal UI) en utilisant <a href="https://github.com/fairyglade/ly">Ly</a>. Celui-ci gère votre authentification sur le système et lancement de l'environnement. Vous pouvez également utiliser <a href="https://github.com/coastalwhite/lemurs">Lemurs</a>.  </p>
+<h3>Terminal Emulateur</h3>
+<p>La tendance est à l'utilisation de <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a> qui est léger et rapide propulsé par le GPU. Il intègre en natif un gestionnaire de fenêtre ou l'on peut créer des tabs et splitter le terminal ce qui fait que l'on peut ce passer de tmux comme multiplexer. Vous pouvez le customiser avec le gestionnaire de plugins <a href="https://sw.kovidgoyal.net/kitty/kittens_intro/#kittens">Kittens</a>.  </p>
+<p>&gt; Shell  </p>
+<p>L'utilisation du shell <a href="https://fishshell.com/">fish</a> est conseillé car il intègre en natif des fonctions tels que  </p>
+<ul>
+<li>autosuggestions en ligne basées sur l'historique ;</li>
+<li>
+<p>complément de tabulation utilisant les données des pages de manuel ;  </p>
+</li>
+<li>
+<p>mise en évidence de la syntaxe ;</p>
+</li>
+<li>support intuitif des caractères génériques ;</li>
+<li>configuration basée sur le Web ;</li>
+<li>
+<p>une saine écriture de scripts.  </p>
+</li>
+<li>
+<p>Un gestionnaire de plugins: <a href="https://github.com/jorgebucaran/fisher">fisher</a>  </p>
+</li>
+</ul>
+<p>&gt; Prompt  </p>
+<p>L'invité de commande du shell peut-être customisé pour intégrer des informations tels que les branches sur Git, version logiciel, runtime, icones et symboles, etc. Nous allons utiliser <a href="https://starship.rs/">starship.rs</a> et vous pouvez explorer les <a href="https://starship.rs/presets/">presets</a>.  </p>
+<p>&gt; Autres outils en ligne de commande  </p>
+<ul>
+<li>
+<p><a href="https://github.com/muesli/duf">duf</a> Free disque usage  </p>
+</li>
+<li>
+<p><a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> Recherche récursive de pattern de Regex dans un dossier  </p>
+</li>
+<li>
+<p><a href="https://github.com/sharkdp/bat">bat</a> cat clone avec coloration syntaxique et Git intégration  </p>
+</li>
+<li>
+<p><a href="https://tldr.sh">tldr</a> Terminal companion améliorant les man pages avec example de ligne de commande  </p>
+</li>
+<li>
+<p><a href="https://github.com/cmus/cmus">cmus</a> CLI audio player  </p>
+</li>
+<li>
+<p><a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> Outil de téléchargement de video sur Youtube, etc.  </p>
+</li>
+<li>
+<p><a href="https://github.com/0xacx/chatGPT-shell-cli">chatGPT-shell-cli</a> Utiliser chatGPT via l'API d'OpenAi  </p>
+</li>
+<li>
+<p><a href="https://wiki.archlinux.org/title/Uncomplicated_Firewall">ufw</a> Uncomplicated Firewall</p>
+</li>
+<li>
+<p><a href="https://wiki.archlinux.org/title/Secure_Shell">ssh</a> Secure Shell est un protocole réseau chiffré pour ce connecter à distance sur un serveur. Voir scp et sftp</p>
+</li>
+</ul>
+<p>NOTA: pour partager un fichier / Pastebin utilisez la commande:  </p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>FILE<span class="w"> </span><span class="p">|</span><span class="w"> </span>curl<span class="w"> </span>-F<span class="w"> </span><span class="s1">&#39;sprunge=&lt;-&#39;</span><span class="w"> </span>http://sprunge.us<span class="sb">`</span>
+</code></pre></div>
+
+<h3>Apps Launcher</h3>
+<p>Nous faisons tout dans un terminal sans utiliser un menu pour lancer des applications. Pour cela nous allons utiliser un outil de recherche de fichier et de binaire "fuzzy finder" tel que <a href="https://github.com/junegunn/fzf">fzf</a> comme extension du shell.  </p>
+<h3>Information système</h3>
+<p>Pour gérer les processus et visualiser l'utilisation des ressources <a href="https://htop.dev/">htop</a> reste un outil simple en CLI. Pour visualiser la configuration de l'environnement: <a href="https://github.com/dylanaraps/neofetch">neofetch</a>  </p>
+<h3>Gestionnaire de fichier</h3>
+<p>Pour gérer ces fichiers et dossiers en CLI on utilise une extension de l'outil tree qui ce nomme <a href="https://dystroy.org/broot/">broot</a>.  </p>
+<h3>Editeur de fichier</h3>
+<p>On optimise l'utilisation du terminal pour éditer du texte et du code en particulier pour du travail à distance sur un serveur en administrateur mais également en utilisant peu de ressource système sur la charge CPU / RAM. La tendance est l'utilisation du successeur de Vim nommé <a href="https://neovim.io/">Neovim</a> parmi les développeurs. On peut transformer <a href="https://neovim.io/">Neovim</a> en EDI en intégrant des plugins tels que:  </p>
+<ul>
+<li>
+<p>CoC  </p>
+</li>
+<li>
+<p>Telescope  </p>
+</li>
+<li>
+<p>Barbar  </p>
+</li>
+<li>
+<p>Vim-fugitive  </p>
+</li>
+<li>
+<p>NerdTree  </p>
+</li>
+<li>
+<p>Vim-surround  </p>
+</li>
+<li>
+<p>Tagbar  </p>
+</li>
+<li>
+<p>Delimitmate  </p>
+</li>
+<li>
+<p>Vim-airline  </p>
+</li>
+<li>
+<p>Vim-devicons  </p>
+</li>
+<li>
+<p>Vim-ai  </p>
+</li>
+</ul>
+<h3>Fonts</h3>
+<p>On note l'utilisation de:  </p>
+<ul>
+<li>
+<p>adobe-source-han-sans-otc-fonts (sinogramme asiatique et l'utilisation de <a href="https://github.com/fcitx/fcitx">fcitx</a>)  </p>
+</li>
+<li>
+<p>noto-fonts  </p>
+</li>
+<li>
+<p>noto-fonts-emoji  </p>
+</li>
+<li>
+<p>Nerd-fonts  </p>
+</li>
+</ul>
+<h3>IRC</h3>
+<p>Client IRC pour tchater en CLI: <a href="https://weechat.org/">weechat</a>. D'autres se tournerons vers Matrix et Discord considéré comme plus moderne même si la communauté FOSS et les hackers sont toujours sur IRC.  </p>
+<h3>Themes et Icones</h3>
+<p>Il existe des classiques tels que Catppuccin, Gruvbox ou encore Neon aux effets cyberpunk. Un repo de la communauté sur hyprland est disponible sur Github: <a href="https://github.com/hyprland-community/theme-repo">theme-repo</a>  </p>
+<h3>AUR Helper</h3>
+<p>Pour l'utilisation de AUR, les paquets logiciels de la communauté, j'ai ma préférence pour <a href="https://github.com/Jguer/yay">yay</a> qui a remplacé le projet obsolète de yaourt en complément de pacman.  </p>
+<h3>Cloud distant et sauvegarde</h3>
+<p>Vous pouvez utiliser l'outil <a href="https://rclone.org/">rclone</a> en CLI qui permet d'accéder à un cloud distant (AWS S3, GDrive, NAS, etc) et de faire des sauvegardes chiffrés. Même si vous faites des snapshots du système, ayez une sauvegarde locale et à distance en particulier vos documents /home. D'autres options sont possible tel que le traditionnel Rsync mais aussi Borg ou Duplicity.  </p>
+<p>References:  </p>
+<ul>
+<li>
+<p>dotfiles <a href="https://wiki.archlinux.org/title/Dotfiles">https://wiki.archlinux.org/title/Dotfiles</a>  </p>
+</li>
+<li>
+<p>Configuration for Arch Linux, Hyprland, kitty, kakoune, zsh and more + scripted installation guide <a href="https://github.com/maximbaz/dotfiles">https://github.com/maximbaz/dotfiles</a>  </p>
+</li>
+<li>
+<p>My journey of ricing Arch Linux <a href="https://peterpf.dev/posts/ricing-arch-linux/">https://peterpf.dev/posts/ricing-arch-linux/</a>  </p>
+</li>
+<li>
+<p>Awesome hyprland <a href="https://github.com/hyprland-community/awesome-hyprland">https://github.com/hyprland-community/awesome-hyprland</a>  </p>
+</li>
+<li>
+<p>Curation d'outils fish <a href="https://github.com/jorgebucaran/awsm.fish">awsm.fish</a></p>
+</li>
+</ul>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://beagleboard.org/bone"><i class="icon-external-link"></i>BeagleBoard</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
