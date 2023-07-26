@@ -5,7 +5,7 @@ Tags:vulnerabilite
 Authors: Anthony Le Goff
 Summary:
 
-Information qui n'est pas passer par l'oreille d'un sourd, la nouvelle vulnérabilité sur les processeurs AMD Ryzen et EPYC majeur qui fait la une du monde de la sécurité informatique en ce moment.
+Information qui n'est pas passé par l'oreille d'un sourd, la nouvelle vulnérabilité sur les processeurs AMD Ryzen et EPYC majeur qui fait la une du monde de la sécurité informatique en ce moment.
 
 C'est un grand évènement qui est occulté sur un petit évenement local: symétrie.
 
