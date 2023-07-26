@@ -30,7 +30,7 @@ Dispositif de sécurité du terminal d'accès:
 
 C'est à dire en cas de vol d'ordinateur, ou de mon NAS. J'ai toujours une sauvegarde chiffré dans le cloud. Le porte-feuille est partagé sur trois sites: Local puis à distance et enfin dans la capsule.
 
-MAJ Après la cyberattaque du 22/07/2022, changement d'adresse:
+MAJ Après la cyberattaque du 22/07/2023, changement d'adresse:
 
 Fond initial en octobre 2022: 700€
 
