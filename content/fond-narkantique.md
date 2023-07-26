@@ -27,6 +27,7 @@ Dispositif de sécurité du terminal d'accès:
 * Audit: Lynis & rkhunter & yara
 * Fichier sécurisé dans un container Veracrypt
 * Sauvegarde: Duplicity > NAS Synology(local) > Hyperbackup C2 storage(distant)
+* Logiciel: Electrum protégé avec mot de passe pour l'accès au fond
 
 C'est à dire en cas de vol d'ordinateur, ou de mon NAS. J'ai toujours une sauvegarde chiffré dans le cloud. Le porte-feuille est partagé sur trois sites: Local puis à distance et enfin dans la capsule.
 
