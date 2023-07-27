@@ -18,12 +18,19 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
+         ('Kernel', 'https://www.kernel.org/'),
+	 ('Proxmox VE', 'https://www.proxmox.com/en/proxmox-virtual-environment/overview'),
+	 ('KVM', 'https://www.linux-kvm.org/page/Main_Page',),
          ('Apprendre le C en 20H', 'https://framabook.org/le-c-en-20-heures-2/'),
+	 ('Red Language', 'https://www.red-lang.org/'),
+         ('Python.org', 'https://www.python.org/'),
+         ('Ruby', 'https://www.ruby-lang.org/en/'),
          ('Arch Linux', 'https://archlinux.org/'),
          ('Blackarch', 'https://www.blackarch.io/'),
-         ('Kernel', 'https://www.kernel.org/'),
+	 ('Veracrypt', 'https://www.veracrypt.fr/en/Home.html'),
          ('Arduino', 'https://www.arduino.cc/'),
+	 ('MangoPi', 'https://mangopi.org/'),
+	 ('Sipeed 资料站', 'https://sipeed.com/'),
          ('BeagleBoard', 'https://beagleboard.org/bone'),)
 
 # Social widget
