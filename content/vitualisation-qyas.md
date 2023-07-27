@@ -9,7 +9,7 @@ Rappel d'une petite règle de l'Islam: le raisonnement par analogie et la simili
 
 Exemple d'application. La virtualisation informatique.
 
-![virtualisation](xen_kvm.jpg)
+![virtualisation](images/xen_kvm.jpg)
 
 Le serveur est un hébergement. Assimiler à un Cosmos avec des programmes tel que l'analogie du film Matrix. Matrix essaye de développer l'hypothèse de simulation et le principe d'environnement virtualisé en informatique.
 
@@ -17,7 +17,7 @@ On peut créer des hébergeurs DIY rudimentaire tel que mes prototypes de capsul
 
 Il existe deux systèmes de container pour des applications: Avec hyperviseur ou avec Docker. C'est à dire que la virtualisation est différente, on n'a pas les mêmes droits et privilèges, et l'application peut-être contrainte. Un hyperviseur permet de simuler entièrement un système d'exploitation, ce que ne permet pas Docker. 
 
-![docker-hyperviseur](docker-hyperviseur.jpg)
+![docker-hyperviseur](images/docker-hyperviseur.jpg)
 
 En gros l'hyperviseur est une entitée des religions et Docker l'athéisme. Les religions monothéistes abrahamique sont des grands hébergeurs. Mais il y a un système de surveillance et monitoring pour la création de machine virtuelle: l'entité sous forme d'hyperviseur. On peut invoquer un nom d'une entitée comme les intelligences artificiels.
 
