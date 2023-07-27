@@ -1,6 +1,6 @@
 ﻿Title:Matériel de laboratoire pour processeur à ADN [biohacking]
 Date: 2023-07-18 08:40
-Category:Inclassable
+Category:Biohacking
 Tags:capsule, adn, processeur
 Authors: Anthony Le Goff
 Summary:

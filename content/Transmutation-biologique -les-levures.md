@@ -1,6 +1,6 @@
 ﻿Title:Transmutation biologique: les levures 
 Date: 2023-01-10 23:00
-Category:Inclassable
+Category:Biohacking
 Tags:nucleaire, transmutation
 Authors: Anthony Le Goff
 Summary:
