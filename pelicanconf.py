@@ -17,7 +17,11 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
+LINKS = (('Creative Commons', 'https://creativecommons.org/'),
+         ('Electronic Frontier Foundation' , 'https://www.eff.org/fr'),
+         ('Maison du Libre 29', 'https://wiki.mdl29.net/doku.php?id=start'),
+         ('Le journal du Hacker', 'https://www.journalduhacker.net/'), 
+         ('Pelican', 'https://getpelican.com/'),
          ('Kernel', 'https://www.kernel.org/'),
 	 ('Proxmox VE', 'https://www.proxmox.com/en/proxmox-virtual-environment/overview'),
 	 ('KVM', 'https://www.linux-kvm.org/page/Main_Page',),
