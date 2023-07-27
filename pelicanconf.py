@@ -72,5 +72,5 @@ TAG_CLOUD_SORTING = 'random'
 STATIC_PATHS = ['extra/robots.txt']
 
 EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'output/robots.txt'}
+    'extra/robots.txt': {'path': 'robots.txt'}
 }
