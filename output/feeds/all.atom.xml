@@ -5,6 +5,14 @@
 &lt;hr&gt;
 &lt;p&gt;&lt;img alt="red arch" src="images/Red_architecture_small.png"&gt;&lt;/p&gt;
 &lt;p&gt;C'est une manie chez les codeurs d'inventer un langage et de créer un compilateur. Un seul fichier (~1Mo) contient l'ensemble de la chaîne d'outils, la bibliothèque standard complète et la REPL (temporairement divisé en deux binaires). Très léger.&lt;/p&gt;
+&lt;p&gt;Les dialectes suivants sont intégrés :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red/System : un langage de programmation système de niveau C compilé en code natif ;&lt;/li&gt;
+&lt;li&gt;Parse : un puissant analyseur PEG ;&lt;/li&gt;
+&lt;li&gt;VID : un dialecte simple de création d'interfaces graphiques ;&lt;/li&gt;
+&lt;li&gt;Draw : un dialecte de dessin vectoriel en 2D ;&lt;/li&gt;
+&lt;li&gt;Rich-text : un dialecte de description de texte riche.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Il a la particularité d'être Interfacé entre langage bas niveau et haut niveau au niveau de l'abstraction. Cela ne rappel pas le Narkanta?&lt;/p&gt;
 &lt;p&gt;Parlons Narkanta. Je l'ai fini cette semaine. Officiel release. J'ai commencé à faire des copies papiers, il y a que 30 pages définissant la langue. Je suis en train de le filigrammer en ce moment: c'est à dire que je vais transmuter mon ADN pour dater et signer l'invention en faisant pénétrer dans la matrice du papier comme relique. Avec comme composant (Eau + Sel + Thé Da Hong Pao + Huile de sardine + cendre carbone). J'ai commencé à écrire en 2021 Le Narkanta. Même si j'ai débuter mes recherches en prison en 2016 via les nombres. Le Narkanta à une version papier et numérique, dans la microSD de la capsule temporelle secrète. Chasse à la relique! La version numérique en PDF fait 100Mo, je n'ai pas compressé les .JPG, c'est les originaux. La version numérique est sur mon ordinateur dans un container Veracrypt. A ce qu'il veule copier les règles et méthologie narkantique c'est un exercice difficile, car croyez moi, inventer 25 symboles d'alphabet c'est facile. Mais générer + 700 symboles différents et variés est un casse-tête créatif.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;La guerre, c'est le parler noir du Mordor que révèle l'anneau de pouvoir.&lt;/em&gt; RIP Tolkien et le Quenya. Le panthéon des linguistes.&lt;/p&gt;
