@@ -11,6 +11,13 @@ Doc: [https://www.red-lang.org/](https://www.red-lang.org/)
 
 ![red](images/red.png)
 
+Installation sous Arch Linux:
+```
+$ yay -S red
+```
+
+Instruction: [https://github.com/red/red](https://github.com/red/red)
+
 ---
 
 ![red arch](images/Red_architecture_small.png)
