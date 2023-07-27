@@ -43,7 +43,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['pelican-plugins/']
-PLUGINS = ['sitemap']
+PLUGINS = ['sitemap', 'tag_cloud']
 
 SITEMAP = {
     'format': 'xml',
@@ -58,3 +58,7 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+
+DISPLAY_TAGS_ON_SIDEBAR = True
+TAG_CLOUD_MAX_ITEMS = 44
+TAG_CLOUD_SORTING = 'random'
