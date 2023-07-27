@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-27T08:15:54-00:00</lastmod>
+<lastmod>2023-07-27T08:55:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-27T08:15:54-00:00</lastmod>
+<lastmod>2023-07-27T08:55:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-27T08:15:54-00:00</lastmod>
+<lastmod>2023-07-27T08:55:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-27T08:15:54-00:00</lastmod>
+<lastmod>2023-07-27T08:55:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-27T08:15:54-00:00</lastmod>
+<lastmod>2023-07-27T08:55:31-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/la-virtualisation-serveur.html</loc>
+<lastmod>2023-07-27T08:27:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1755,7 +1762,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/linux.html</loc>
-<lastmod>2023-07-16T10:36:00+00:09</lastmod>
+<lastmod>2023-07-27T08:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1763,6 +1770,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/category/transhumanisme.html</loc>
 <lastmod>2023-04-04T08:03:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/linux.html</loc>
+<lastmod>2023-07-27T08:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2414,13 +2428,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/apt.html</loc>
 <lastmod>2023-02-05T10:21:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/linux.html</loc>
-<lastmod>2023-02-01T19:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3687,7 +3694,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-07-27T07:33:00+00:09</lastmod>
+<lastmod>2023-07-27T08:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
