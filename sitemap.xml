@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-27T22:21:43-00:00</lastmod>
+<lastmod>2023-07-27T22:29:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-27T22:21:43-00:00</lastmod>
+<lastmod>2023-07-27T22:29:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-27T22:21:43-00:00</lastmod>
+<lastmod>2023-07-27T22:29:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-27T22:21:43-00:00</lastmod>
+<lastmod>2023-07-27T22:29:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-27T22:21:43-00:00</lastmod>
+<lastmod>2023-07-27T22:29:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1743,6 +1743,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>/hello-world.html</loc>
 <lastmod>2021-03-23T12:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/category/biohacking.html</loc>
+<lastmod>2023-07-18T08:40:00+00:09</lastmod>
+<changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
