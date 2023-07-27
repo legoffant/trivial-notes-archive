@@ -10,6 +10,8 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
 
 # Feed generation is usually not desired when developing
+FEED_ALL_RSS = 'feeds/all.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
@@ -66,3 +68,9 @@ SITEMAP = {
 DISPLAY_TAGS_ON_SIDEBAR = True
 TAG_CLOUD_MAX_ITEMS = 44
 TAG_CLOUD_SORTING = 'random'
+
+STATIC_PATHS = ['extra/robots.txt']
+
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': '/robots.txt'}
+}
