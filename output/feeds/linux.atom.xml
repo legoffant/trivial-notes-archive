@@ -9,7 +9,7 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;chmod&lt;span class="w"&gt; &lt;/span&gt;u+x&lt;span class="w"&gt; &lt;/span&gt;redc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Premier programme "hello World", Neovim ne reconnait pas l'extension, par de coloration syntaxique.&lt;/p&gt;
+&lt;p&gt;Premier programme "hello World", Neovim ne reconnait pas l'extension, par de coloration syntaxique. Il y a un plugin: &lt;a href="https://vimawesome.com/plugin/vim-red-who-speaks"&gt;vim-red&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;nvim&lt;span class="w"&gt; &lt;/span&gt;hello.red
 
 &lt;span class="w"&gt; &lt;/span&gt;Red&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;

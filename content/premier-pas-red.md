@@ -9,7 +9,7 @@ Voila que j'apprend un nouveau langage, et me suis dit pourquoi pas le Red. Donc
 
 Sous Arch:
 ```
-$ yay -S red lib32-gdk-pixbuf2 lib32-gtk3
+$ yay -S red lib32-gdk-pixbuf2 lib32-gtk3 lib32-curl
 ```
 en lançant la commande `red` on obtient un REPL (interpréteur)
 
