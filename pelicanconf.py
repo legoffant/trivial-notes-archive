@@ -69,7 +69,10 @@ DISPLAY_TAGS_ON_SIDEBAR = True
 TAG_CLOUD_MAX_ITEMS = 44
 TAG_CLOUD_SORTING = 'random'
 
-STATIC_PATHS = ['extra/robots.txt']
+STATIC_PATHS = [
+	'extra/robots.txt',
+	'images',
+	]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'}

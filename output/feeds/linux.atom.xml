@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-07-28T12:40:00+02:00</updated><entry><title>Les non-dits de la programmation informatique</title><link href="/les-non-dits-de-la-programmation-informatique.html" rel="alternate"></link><published>2023-07-28T12:40:00+02:00</published><updated>2023-07-28T12:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/les-non-dits-de-la-programmation-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;em&gt;NOTA: Post sur Quora que j'ai fais quelques modifs&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-07-28T13:08:00+02:00</updated><entry><title>Routeur NETGEAR Nighthawk RAX50</title><link href="/routeur-netgear-nighthawk-rax50.html" rel="alternate"></link><published>2023-07-28T13:08:00+02:00</published><updated>2023-07-28T13:08:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/routeur-netgear-nighthawk-rax50.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Suite à la cyberattaque pour renforcer mon réseau local chez moi, j'ai pris la décision d'acheter en urgence un routeur dernière génération avec des fonctions en sécurité réseau.&lt;/p&gt;
+&lt;p&gt;Mon choix va vers le NETGEAR Nighthawk RAX50 pour son rapport qualité / prix à 230€ sur le site officiel de NETGEAR.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="rax50" src="images/rax50.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Il va être derrière la BBox qui gère la fibre. Je vais désactiver la fonction WIFI de la Bbox et passer en DMZ le routeur NETGEAR, en particulier pour ouvrir les ports pour mon serveur Proxmox sur internet.&lt;/p&gt;
+&lt;p&gt;Entre autres il intègre en fonction de sécurité:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VPN, accès sécurisé&lt;/li&gt;
+&lt;li&gt;NETGEAR Armor service à 99€/an &lt;/li&gt;
+&lt;li&gt;WPA2/WPA3&lt;/li&gt;
+&lt;li&gt;Protection DoS &lt;/li&gt;
+&lt;li&gt;Double Firewall&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On peut paramêtrer les DNS, ce que ne permet pas la Bbox et outrepassé les DNS du FAI et donc la censure du web.&lt;/p&gt;
+&lt;p&gt;J'ai également besoin des fonctions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;WPS (pour facilement paramêtrer mon imprimante HP Laser)&lt;/li&gt;
+&lt;li&gt;USB 3.0 pour ajouter un support de stockage pour un backup local de mes VM: virtuals machines Proxmox.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fuyez les routeurs des FAI, ils sont backoorés. Malheureusement pas le choix d'en avoir un pour connecter la fibre. Les FAI et les gouvernements ne veulent pas que l'on est notre propre routeur perso. C'était possible avec l'ADSL mais depuis la fibre: c'est limité. Donc on rajoute un routeur en plus sur le réseau derrière le point de routage box de la fibre.&lt;/p&gt;
+&lt;p&gt;Le gouvernement français ne fait rien pour l'aide à l'auto-hébergement et les FAI indépendants tel que &lt;a href="https://www.fdn.fr/"&gt;FDN&lt;/a&gt;. C'est la guerre, et la neutralité du net une utopie.&lt;/p&gt;</content><category term="Linux"></category><category term="routeur"></category></entry><entry><title>Les non-dits de la programmation informatique</title><link href="/les-non-dits-de-la-programmation-informatique.html" rel="alternate"></link><published>2023-07-28T12:40:00+02:00</published><updated>2023-07-28T12:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/les-non-dits-de-la-programmation-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;em&gt;NOTA: Post sur Quora que j'ai fais quelques modifs&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;La programmation en informatique, bien qu'elle soit une discipline technique et précise, comporte également quelques non-dits. Voici certains d'entre eux :&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
