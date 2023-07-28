@@ -60,7 +60,10 @@ Gtk-Message: 03:02:41.049: Failed to load module "xapp-gtk3-module"
 Hello World!
 ```
 
-J'ai trouvé ce site sur l'apprentissage du langage: [Red Language Notebook](https://ungaretti.gitbooks.io/red-language-notebook/content/)
+Pour apprendre le langage, voici quelques ressources sélectionnés à télécharger [PDF]
+
+* [Learn Red - The Fundamentals of Red](images/Learn Red - Fundamentals of Red.zip)
+* [Helpin'Red](images/Helpin-Red.pdf)
 
 
 
