@@ -19,7 +19,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Creative Commons', 'https://creativecommons.org/'),
+LINKS = (('RSS', 'https://legoffant.github.io/feeds/all.atom.xml'),
+         ('Creative Commons', 'https://creativecommons.org/'),
          ('Electronic Frontier Foundation' , 'https://www.eff.org/fr'),
          ('Maison du Libre 29', 'https://wiki.mdl29.net/doku.php?id=start'),
          ('Le journal du Hacker', 'https://www.journalduhacker.net/'), 
