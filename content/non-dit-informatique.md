@@ -9,7 +9,7 @@ Summary:
 
 La programmation en informatique, bien qu'elle soit une discipline technique et précise, comporte également quelques non-dits. Voici certains d'entre eux :
 
-0. Il faut commencer l'apprentissage de l'informatique par la ligne de commande et l'open source par [l'apprentissage du langage C](https://legoffant.github.io/memento-dautodidacte-en-informatique.html) pour la programmation des systèmes d'ou dérive tous les compilateurs et autres langages.
+0. Il faut commencer l'apprentissage de l'informatique par la ligne de commande et l'open source par [l'apprentissage du langage C](https://legoffant.github.io/memento-dautodidacte-en-informatique.html) et sur [microcontroller Arduino](https://legoffant.github.io/apprendre-le-c-sous-mcu-arduino-uno-r3.html) pour la programmation des systèmes d'ou dérive tous les compilateurs et autres langages.
 
 1. Il n'y a pas qu'une seule bonne façon de programmer : Il existe de nombreuses approches différentes pour résoudre un problème de programmation. Chaque programmeur a sa propre façon de faire les choses, et tant que le résultat final est correct et efficace, il n'y a pas de méthode universelle.
 

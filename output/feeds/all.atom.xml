@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-28T03:05:00+02:00</updated><entry><title>Premier pas en langage Red</title><link href="/premier-pas-en-langage-red.html" rel="alternate"></link><published>2023-07-28T03:05:00+02:00</published><updated>2023-07-28T03:05:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/premier-pas-en-langage-red.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila que j'apprend un nouveau langage, et me suis dit pourquoi pas le Red. Donc j'ai installé les toochains et CLI tools. Cela a été laborieux.... Pas encore au point, problème avec des librairies partagées car cela fonctionne que en 32bits.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-28T12:40:00+02:00</updated><entry><title>Les non-dits de la programmation informatique</title><link href="/les-non-dits-de-la-programmation-informatique.html" rel="alternate"></link><published>2023-07-28T12:40:00+02:00</published><updated>2023-07-28T12:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/les-non-dits-de-la-programmation-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;em&gt;NOTA: Post sur Quora que j'ai fais quelques modifs&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;La programmation en informatique, bien qu'elle soit une discipline technique et précise, comporte également quelques non-dits. Voici certains d'entre eux :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Il faut commencer l'apprentissage de l'informatique par la ligne de commande et l'open source par &lt;a href="https://legoffant.github.io/memento-dautodidacte-en-informatique.html"&gt;l'apprentissage du langage C&lt;/a&gt; pour la programmation des systèmes d'ou dérive tous les compilateurs et autres langages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Il n'y a pas qu'une seule bonne façon de programmer : Il existe de nombreuses approches différentes pour résoudre un problème de programmation. Chaque programmeur a sa propre façon de faire les choses, et tant que le résultat final est correct et efficace, il n'y a pas de méthode universelle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'importance des compétences en communication : La programmation ne consiste pas seulement à écrire du code. La communication avec les membres de l'équipe, les clients et les utilisateurs est également essentielle. La capacité à expliquer clairement les idées, à écouter attentivement et à collaborer est souvent négligée, mais elle est cruciale pour le succès d'un projet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les projets prennent souvent plus de temps que prévu : L'estimation du temps nécessaire pour achever un projet de programmation peut être difficile. Les imprévus, les bugs, les problèmes de compatibilité et d'autres obstacles peuvent ralentir considérablement le processus de développement. Il est important de prévoir des délais réalistes et de faire preuve de flexibilité.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L'apprentissage continu est essentiel : La programmation évolue rapidement, de nouvelles technologies, langages et frameworks apparaissent constamment. Pour rester à jour et compétitif, les programmeurs doivent continuer à apprendre et à se former tout au long de leur carrière et faire de la veille technologique. Si vous croyez avoir tout vue à l'école et en formation: vous êtes dans le déni.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les bugs sont inévitables : Même les programmeurs expérimentés commettent des erreurs et introduisent des bugs dans leur code. La chasse aux bugs fait partie intégrante du processus de développement et peut prendre beaucoup de temps. Une bonne pratique consiste à effectuer des tests rigoureux et à utiliser des outils de débogage pour minimiser les bugs, mais ils ne peuvent jamais être complètement éliminés.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La documentation est souvent négligée : La documentation claire et complète est essentielle pour permettre à d'autres développeurs de comprendre et de travailler sur un code existant. Malheureusement, elle est souvent négligée ou considérée comme une tâche secondaire. Investir du temps dans la documentation peut faciliter la maintenance du code à long terme.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;La programmation est une discipline créative : Bien que la programmation soit souvent considérée comme une discipline technique, elle implique également une part de créativité. Les programmeurs doivent trouver des solutions innovantes aux problèmes, concevoir des interfaces utilisateur conviviales et élaborer des architectures logicielles élégantes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Gardez à l'esprit que ces non-dits peuvent varier selon les expériences et les perspectives individuelles, mais ils fournissent un aperçu des aspects souvent sous-estimés de la programmation en informatique.&lt;/p&gt;</content><category term="Linux"></category><category term="programmation"></category><category term="informatique"></category></entry><entry><title>Premier pas en langage Red</title><link href="/premier-pas-en-langage-red.html" rel="alternate"></link><published>2023-07-28T03:05:00+02:00</published><updated>2023-07-28T03:05:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/premier-pas-en-langage-red.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila que j'apprend un nouveau langage, et me suis dit pourquoi pas le Red. Donc j'ai installé les toochains et CLI tools. Cela a été laborieux.... Pas encore au point, problème avec des librairies partagées car cela fonctionne que en 32bits.&lt;/p&gt;
 &lt;p&gt;Sous Arch:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;yay&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;red&lt;span class="w"&gt; &lt;/span&gt;lib32-gdk-pixbuf2&lt;span class="w"&gt; &lt;/span&gt;lib32-gtk3&lt;span class="w"&gt; &lt;/span&gt;lib32-curl
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
