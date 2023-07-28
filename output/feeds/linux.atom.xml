@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-07-28T03:05:00+02:00</updated><entry><title>Premier pas en langage Red</title><link href="/premier-pas-en-langage-red.html" rel="alternate"></link><published>2023-07-28T03:05:00+02:00</published><updated>2023-07-28T03:05:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/premier-pas-en-langage-red.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila que j'apprend un nouveau langage, et me suis dit pourquoi pas le Red. Donc j'ai installé les toochains et CLI tools. Cela a été laborieux.... Pas encore au point, problème avec des librairies partagées car cela fonctionne que en 32bits.&lt;/p&gt;
 &lt;p&gt;Sous Arch:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;yay&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;red&lt;span class="w"&gt; &lt;/span&gt;lib32-gdk-pixbuf2&lt;span class="w"&gt; &lt;/span&gt;lib32-gtk3
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;yay&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;red&lt;span class="w"&gt; &lt;/span&gt;lib32-gdk-pixbuf2&lt;span class="w"&gt; &lt;/span&gt;lib32-gtk3&lt;span class="w"&gt; &lt;/span&gt;lib32-curl
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;en lançant la commande &lt;code&gt;red&lt;/code&gt; on obtient un REPL (interpréteur)&lt;/p&gt;
