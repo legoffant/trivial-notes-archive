@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Trivial notes - Humanité numérique</title>
+    <title>Premier pas en langage Red</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Anthony Le Goff">
@@ -86,7 +86,7 @@
 						<i class="icon-folder-open icon-large"></i>Inclassable
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="/category/linux.html">
 						<i class="icon-folder-open icon-large"></i>Linux
 					</a>
@@ -111,34 +111,83 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="/utopie-realiste-des-humanites-numeriques.html">Utopie réaliste des humanités numériques</a></h1>
-                <div class="well small"><footer class="post-info">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Premier pas en langage Red">
+                                        Premier pas en langage Red
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2022-09-18T20:06:00+02:00">
-        <i class="icon-calendar"></i>dim. 18 septembre 2022
+<abbr class="published" title="2023-07-28T03:05:00+02:00">
+        <i class="icon-calendar"></i>ven. 28 juillet 2023
 </abbr>
 <span class="label">By</span>
 <a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
 <span class="label">Category</span>
-<a href="/category/transhumanisme.html"><i class="icon-folder-open"></i>Transhumanisme</a>.
+<a href="/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
 
 
 <span class="label">Tags</span>
-	<a href="/tag/humanite-numerique.html"><i class="icon-tag"></i>Humanité numérique</a>
-	<a href="/tag/transhumanisme.html"><i class="icon-tag"></i>transhumanisme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/utopie-realiste-des-humanites-numeriques.html">more ...</a>
-                </div>
-        </div>
-        <hr />
+	<a href="/tag/red.html"><i class="icon-tag"></i>red</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Voila que j'apprend un nouveau langage, et me suis dit pourquoi pas le Red. Donc j'ai installé les toochains et CLI tools. Cela a été laborieux.... Pas encore au point, problème avec des librairies partagées car cela fonctionne que en 32bits.</p>
+<p>Sous Arch:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>yay<span class="w"> </span>-S<span class="w"> </span>red<span class="w"> </span>lib32-gdk-pixbuf2<span class="w"> </span>lib32-gtk3
+</code></pre></div>
 
-                <section id="content" class="body">
-                <h1>Pages</h1>
-                        <li><a href="/pages/contact.html">Contact</a></li>
-                        <li><a href="/pages/ltcb.html">LTCB</a></li>
-                </section>
+<p>en lançant la commande <code>red</code> on obtient un REPL (interpréteur)</p>
+<p>Récupérer le toolschain pour compiler des programmes: <a href="https://www.red-lang.org/p/download.html">Télécharger sur la page</a> puis renommer le fichier en <code>redc</code> et faite un chmod u+x pour le rendre executable:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>chmod<span class="w"> </span>u+x<span class="w"> </span>redc
+</code></pre></div>
+
+<p>Premier programme "hello World", Neovim ne reconnait pas l'extension, par de coloration syntaxique.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nvim<span class="w"> </span>hello.red
+
+<span class="w"> </span>Red<span class="w"> </span><span class="o">[</span>
+<span class="w">     </span>Title:<span class="w"> </span><span class="s2">&quot;Simple hello world script&quot;</span>
+<span class="w"> </span><span class="o">]</span>
+
+<span class="w"> </span>print<span class="w"> </span><span class="s2">&quot;Hello World!&quot;</span>
+</code></pre></div>
+
+<p>On compile:</p>
+<div class="highlight"><pre><span></span><code>./redc -c hello.red
+</code></pre></div>
+
+<p>Il va génerer plusieurs fichiers, et le temps de compilation est assez long....</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="nv">rwxr</span><span class="o">--</span><span class="nv">r</span><span class="o">--</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="nv">trivial</span><span class="w">   </span><span class="mi">85344</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="nv">juil</span>.<span class="w"> </span><span class="mi">02</span>:<span class="mi">56</span><span class="w"> </span><span class="nv">hello</span>
+<span class="o">-</span><span class="nv">rw</span><span class="o">-</span><span class="nv">r</span><span class="o">--</span><span class="nv">r</span><span class="o">--</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="nv">trivial</span><span class="w">      </span><span class="mi">73</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="nv">juil</span>.<span class="w"> </span><span class="mi">02</span>:<span class="mi">53</span><span class="w"> </span><span class="nv">hello</span>.<span class="nv">red</span>
+<span class="o">-</span><span class="nv">rw</span><span class="o">-</span><span class="nv">r</span><span class="o">--</span><span class="nv">r</span><span class="o">--</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="nv">trivial</span><span class="w">  </span><span class="mi">332088</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="nv">juil</span>.<span class="w"> </span><span class="mi">02</span>:<span class="mi">56</span><span class="w"> </span><span class="nv">libRedRT</span><span class="o">-</span><span class="nv">defs</span>.<span class="nv">r</span>
+<span class="o">-</span><span class="nv">rw</span><span class="o">-</span><span class="nv">r</span><span class="o">--</span><span class="nv">r</span><span class="o">--</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="nv">trivial</span><span class="w">     </span><span class="mi">414</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="nv">juil</span>.<span class="w"> </span><span class="mi">02</span>:<span class="mi">56</span><span class="w"> </span><span class="nv">libRedRT</span><span class="o">-</span><span class="nv">extras</span>.<span class="nv">r</span>
+<span class="o">-</span><span class="nv">rw</span><span class="o">-</span><span class="nv">r</span><span class="o">--</span><span class="nv">r</span><span class="o">--</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="nv">trivial</span><span class="w">   </span><span class="mi">69005</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="nv">juil</span>.<span class="w"> </span><span class="mi">02</span>:<span class="mi">56</span><span class="w"> </span><span class="nv">libRedRT</span><span class="o">-</span><span class="k">include</span>.<span class="nv">red</span>
+<span class="o">-</span><span class="nv">rwxr</span><span class="o">--</span><span class="nv">r</span><span class="o">--</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="mi">1300352</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="nv">juil</span>.<span class="w"> </span><span class="mi">02</span>:<span class="mi">56</span><span class="w"> </span><span class="nv">libRedRT</span>.<span class="nv">so</span>
+<span class="o">-</span><span class="nv">rwxr</span><span class="o">--</span><span class="nv">r</span><span class="o">--</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="nv">trivial</span><span class="w"> </span><span class="mi">1551836</span><span class="w"> </span><span class="mi">28</span><span class="w"> </span><span class="nv">juil</span>.<span class="w"> </span><span class="mi">02</span>:<span class="mi">54</span><span class="w"> </span><span class="nv">redc</span>
+</code></pre></div>
+
+<p>Le binaire fait 85k.</p>
+<p>En lance l'executable:</p>
+<div class="highlight"><pre><span></span><code>./hello
+</code></pre></div>
+
+<p>J'ai une erreur avec un module GTK, mais ça compile.</p>
+<div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="o">./</span><span class="n">hello</span>
+<span class="n">Gtk</span><span class="o">-</span><span class="n">Message</span><span class="p">:</span><span class="w"> </span><span class="mi">03</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mf">41.047</span><span class="p">:</span><span class="w"> </span><span class="n">Failed</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="nb">load</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="s2">&quot;xapp-gtk3-module&quot;</span>
+<span class="n">Gtk</span><span class="o">-</span><span class="n">Message</span><span class="p">:</span><span class="w"> </span><span class="mi">03</span><span class="p">:</span><span class="mi">02</span><span class="p">:</span><span class="mf">41.049</span><span class="p">:</span><span class="w"> </span><span class="n">Failed</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="nb">load</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="s2">&quot;xapp-gtk3-module&quot;</span>
+<span class="n">Hello</span><span class="w"> </span><span class="n">World</span><span class="o">!</span>
+</code></pre></div>
+
+<p>J'ai trouvé ce site sur l'apprentissage du langage: <a href="https://ungaretti.gitbooks.io/red-language-notebook/content/">Red Language Notebook</a></p>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
