@@ -92,7 +92,11 @@
 &lt;span class="n"&gt;Hello&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;World&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;J'ai trouvé ce site sur l'apprentissage du langage: &lt;a href="https://ungaretti.gitbooks.io/red-language-notebook/content/"&gt;Red Language Notebook&lt;/a&gt;&lt;/p&gt;</content><category term="Linux"></category><category term="red"></category></entry><entry><title>La virtualisation serveur</title><link href="/la-virtualisation-serveur.html" rel="alternate"></link><published>2023-07-27T08:27:00+02:00</published><updated>2023-07-27T08:27:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-27:/la-virtualisation-serveur.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Rappel d'une petite règle de l'Islam: le raisonnement par analogie et la similitude, nommé le Qiyâs utilisé par les juges musulmans et la jurisprudence.&lt;/p&gt;
+&lt;p&gt;Pour apprendre le langage, voici quelques ressources sélectionnés à télécharger [PDF]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="images/Learn Red - Fundamentals of Red.zip"&gt;Learn Red - The Fundamentals of Red&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="images/Helpin-Red.pdf"&gt;Helpin'Red&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Linux"></category><category term="red"></category></entry><entry><title>La virtualisation serveur</title><link href="/la-virtualisation-serveur.html" rel="alternate"></link><published>2023-07-27T08:27:00+02:00</published><updated>2023-07-27T08:27:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-27:/la-virtualisation-serveur.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Rappel d'une petite règle de l'Islam: le raisonnement par analogie et la similitude, nommé le Qiyâs utilisé par les juges musulmans et la jurisprudence.&lt;/p&gt;
 &lt;p&gt;Exemple d'application. La virtualisation informatique.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="virtualisation" src="images/xen_kvm.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Le serveur est un hébergement. Assimiler à un Cosmos avec des programmes tel que l'analogie du film Matrix. Matrix essaye de développer l'hypothèse de simulation et le principe d'environnement virtualisé en informatique.&lt;/p&gt;
