@@ -37,7 +37,7 @@ LINKS = (('Creative Commons', 'https://creativecommons.org/'),
          ('Arduino', 'https://www.arduino.cc/'),
 	 ('MangoPi', 'https://mangopi.org/'),
 	 ('Sipeed 资料站', 'https://sipeed.com/'),
-         ('BeagleBoard', 'https://beagleboard.org/bone'),
+         ('BeagleBoard', 'https://beagleboard.org/boards'),
          ('Espressif ESP32', 'https://www.espressif.com/en/products/socs/esp32'),)
 
 # Social widget
