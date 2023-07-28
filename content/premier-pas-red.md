@@ -18,7 +18,7 @@ Récupérer le toolschain pour compiler des programmes: [Télécharger sur la pa
 $ chmod u+x redc
 ```
 
-Premier programme "hello World", Neovim ne reconnait pas l'extension, par de coloration syntaxique.
+Premier programme "hello World", Neovim ne reconnait pas l'extension, par de coloration syntaxique. Il y a un plugin: [vim-red](https://vimawesome.com/plugin/vim-red-who-speaks)
 ```
 $ nvim hello.red
 
