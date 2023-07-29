@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-29T07:22:35-00:00</lastmod>
+<lastmod>2023-07-29T07:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-29T07:22:35-00:00</lastmod>
+<lastmod>2023-07-29T07:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-29T07:22:35-00:00</lastmod>
+<lastmod>2023-07-29T07:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-29T07:22:35-00:00</lastmod>
+<lastmod>2023-07-29T07:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-29T07:22:35-00:00</lastmod>
+<lastmod>2023-07-29T07:30:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -53,7 +53,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/automatiser-les-snasphots-btrfs-avec-un-script-shell-et-cron.html</loc>
+<loc>/automatiser-les-snapshots-btrfs-avec-un-script-shell-et-cron.html</loc>
 <lastmod>2023-07-29T06:57:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
