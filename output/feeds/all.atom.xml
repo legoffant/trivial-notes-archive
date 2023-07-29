@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-28T15:18:00+02:00</updated><entry><title>Tetz</title><link href="/tetz.html" rel="alternate"></link><published>2023-07-28T15:18:00+02:00</published><updated>2023-07-28T15:18:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/tetz.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Mon petit travail d'artiste illustrateur, j'ai une version plus récente de la page de garde sur le couverture de mon roman SF "Voile et Annihilation".&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-29T06:57:00+02:00</updated><entry><title>Automatiser les snasphots btrfs avec un script shell et cron</title><link href="/automatiser-les-snasphots-btrfs-avec-un-script-shell-et-cron.html" rel="alternate"></link><published>2023-07-29T06:57:00+02:00</published><updated>2023-07-29T06:57:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-29:/automatiser-les-snasphots-btrfs-avec-un-script-shell-et-cron.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Les sysAdmins automatisent toutes les tâches pour la maintenance des serveurs et ordinateurs. Généralement il faut savoir faire du scripting avec des paramêtres systèmes. Donc on code en &lt;a href="https://linux.goffinet.org/administration/scripts-shell/"&gt;Bash qui est scripting shell&lt;/a&gt; voir en Python grâce au &lt;a href="https://pythonforge.com/module-os-systeme-dexploitation/"&gt;module os&lt;/a&gt;. Les plus anciens et puristes utilisent Perl. Il existe parfois des programmes avec une interface graphique comme Timeshift. Mais malheureusement pour moi, celui-ci ne détecte pas mes partitions en btrfs surement car j'utilise une surcouche de volume logique LVM dans mon schéma de partitionnement disque.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://fr.wikipedia.org/wiki/Btrfs"&gt;btrfs&lt;/a&gt; c'est quoi? C'est un système de fichier. Sous Linux on utilise ext4 et Windows utilise ntfs. btrfs est la nouvelle génération avec la particularité de pouvoir faire des snaphots, c'est à dire des instantanés du système pour la sauvegarde, mais égalemement la somme de contrôle ou la compréssion des données en zstd. Mais il existe également ZFS en particularité sur les serveurs et NAS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On va donc automatiser nos sauvegardes de DATA tous les jours en utilisant un script shell et un plannificateur de tâche cron en cas de plantage du système.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;On commence par vérifier nos subvolumes btrfs&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;btrfs&lt;span class="w"&gt; &lt;/span&gt;subvolume&lt;span class="w"&gt; &lt;/span&gt;list&lt;span class="w"&gt; &lt;/span&gt;/
+
+ID&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;256&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;gen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;7527&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;top&lt;span class="w"&gt; &lt;/span&gt;level&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;path&lt;span class="w"&gt; &lt;/span&gt;@
+ID&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;257&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;gen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;7528&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;top&lt;span class="w"&gt; &lt;/span&gt;level&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;path&lt;span class="w"&gt; &lt;/span&gt;@home
+ID&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;258&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;gen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;top&lt;span class="w"&gt; &lt;/span&gt;level&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;path&lt;span class="w"&gt; &lt;/span&gt;@_snapshot
+ID&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;259&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;gen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;17&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;top&lt;span class="w"&gt; &lt;/span&gt;level&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;256&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;path&lt;span class="w"&gt; &lt;/span&gt;var/lib/portables
+ID&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;260&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;gen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;18&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;top&lt;span class="w"&gt; &lt;/span&gt;level&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;256&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;path&lt;span class="w"&gt; &lt;/span&gt;var/lib/machines
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;On va créer notre dossier de scripts utilisateurs et le script bash&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/scripts
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/scripts/logs
+$&lt;span class="w"&gt; &lt;/span&gt;touch&lt;span class="w"&gt; &lt;/span&gt;~/scripts/logs/snap-logs
+
+$&lt;span class="w"&gt; &lt;/span&gt;nvim&lt;span class="w"&gt; &lt;/span&gt;btrfs-snapshot-backup.sh
+
+&lt;span class="c1"&gt;#! /usr/bin/bash&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Dossier pour sauvegarder snapshot&lt;/span&gt;
+&lt;span class="nv"&gt;SNAPDIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/@_snapshot
+&lt;span class="nb"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;SNAPDIR
+
+&lt;span class="c1"&gt;# Supprimer toutes les snapshots présentent sur le disque&lt;/span&gt;
+sudo&lt;span class="w"&gt; &lt;/span&gt;btrfs&lt;span class="w"&gt; &lt;/span&gt;subvolume&lt;span class="w"&gt; &lt;/span&gt;delete&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNAPDIR&lt;/span&gt;/home_*
+
+&lt;span class="c1"&gt;# Prendre une snapshot&lt;/span&gt;
+sudo&lt;span class="w"&gt; &lt;/span&gt;btrfs&lt;span class="w"&gt; &lt;/span&gt;subvolume&lt;span class="w"&gt; &lt;/span&gt;snapshot&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;/@home&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$SNAPDIR&lt;/span&gt;/home_&lt;span class="k"&gt;$(&lt;/span&gt;date&lt;span class="w"&gt; &lt;/span&gt;+%Y%m%d&lt;span class="k"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Check si la snapshot a bien été créer, sinon exit et report&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$?&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-ne&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Erreur pour créer la snapshot home_&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date&lt;span class="w"&gt; &lt;/span&gt;+%Y%m%d&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;~/scripts/logs/snap-logs
+&lt;span class="nb"&gt;exit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Rendre executable le script bash&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;chmod&lt;span class="w"&gt; &lt;/span&gt;u+x&lt;span class="w"&gt; &lt;/span&gt;~/scripts/btrfs-snapshot-backup.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;On utilise un plannificateur de tâche "Cron" pour lancer le script tous les jours à 11:22&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;crontab&lt;span class="w"&gt; &lt;/span&gt;-e
+$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;nvim&lt;span class="w"&gt; &lt;/span&gt;/etc/crontab
+
+&lt;span class="m"&gt;22&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;11&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;/home/trivial/scripts/btrfs-snapshot-backup.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Ajoute les droits admins sur les scripts dans sudoers&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;EDITOR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;nvim&lt;span class="w"&gt; &lt;/span&gt;visudo
+
+trivial&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;ALL&lt;/span&gt;&lt;span class="o"&gt;=(&lt;/span&gt;ALL&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;NOPASSWD:&lt;span class="w"&gt;  &lt;/span&gt;/home/trivial/scripts/*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;activation du service daemon au démarrage du système&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;crond&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;
+&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;systemctl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;reload&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;crond&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;service&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;NOTA: améliorer le script, on peut définir une sauvegarde des snaphots et supprimer les plus anciennes de plus d'une semaine.&lt;/p&gt;</content><category term="Linux"></category><category term="programmation"></category><category term="informatique"></category></entry><entry><title>Tetz</title><link href="/tetz.html" rel="alternate"></link><published>2023-07-28T15:18:00+02:00</published><updated>2023-07-28T15:18:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/tetz.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Mon petit travail d'artiste illustrateur, j'ai une version plus récente de la page de garde sur le couverture de mon roman SF "Voile et Annihilation".&lt;/p&gt;
 &lt;p&gt;C'est le symbole de la clé glyphique en Narkanta pour le mot "Porte": &lt;strong&gt;Tetz&lt;/strong&gt; en translittération phonétique. Il y a quelques indices, le Narkanta est écrit verticalement. Et des blocks de codes horizontal et vertical. C'est une abstraction de la dualité onde-corspuscule. Mais également des inferfaces hommes-machines. L'âge de l'incertitude. On peut reconnaitre le symbole de l'Islam également et l'arche islamique en architecture: l'ogive. C'est une composition dont je suis assez fier.&lt;/p&gt;
 &lt;p&gt;J'ai généré cela en ASCII Art pour donner cet effet. Qui est une méthode chez les hackers de l'art numérique. En particulier les bannières de serveurs. J'ai mis un Easter Eggs sur mon blog: une page pour améliorer le web crawling des robots des moteurs de recherche pour indexer le site: &lt;a href="https://legoffant.github.io/robots.txt"&gt;https://legoffant.github.io/robots.txt&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="tetz" src="images/tetz-n1.png"&gt;&lt;/p&gt;</content><category term="Inclassable"></category><category term="tetz"></category><category term="narkanta"></category></entry><entry><title>Routeur NETGEAR Nighthawk RAX50</title><link href="/routeur-netgear-nighthawk-rax50.html" rel="alternate"></link><published>2023-07-28T13:08:00+02:00</published><updated>2023-07-28T13:08:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/routeur-netgear-nighthawk-rax50.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Suite à la cyberattaque pour renforcer mon réseau local chez moi, j'ai pris la décision d'acheter en urgence un routeur dernière génération avec des fonctions en sécurité réseau.&lt;/p&gt;
