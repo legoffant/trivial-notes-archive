@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Biohacking</title><link href="/" rel="alternate"></link><link href="/feeds/biohacking.atom.xml" rel="self"></link><id>/</id><updated>2023-07-18T08:40:00+02:00</updated><entry><title>Matériel de laboratoire pour processeur à ADN [biohacking]</title><link href="/materiel-de-laboratoire-pour-processeur-a-adn-biohacking.html" rel="alternate"></link><published>2023-07-18T08:40:00+02:00</published><updated>2023-07-18T08:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-18:/materiel-de-laboratoire-pour-processeur-a-adn-biohacking.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je reviens un peu sur le matériel pour manipuler et créer un processeur à ADN en biohacking (&lt;a href="https://legoffant.github.io/les-transmutations-biologiques-dans-le-biohacking.html"&gt;voir le document de recherche sur les transmutations nucléaires&lt;/a&gt;) que j'avais défini &lt;a href="https://legoffant.github.io/ma-quantification-du-processeur-a-adn.html"&gt;une recette avancée quantifiée&lt;/a&gt; après quelques phases de tests et prototypes. J'ai eu des ratés, j'avais commencé avec des fioles de 2ml et un bouchon en liège qui sous la pression c'est ouvert et avait condenser de l'eau dans la capsule. Pourtant cela doit rester hermétique, c'est essentiel.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Biohacking</title><link href="/" rel="alternate"></link><link href="/feeds/biohacking.atom.xml" rel="self"></link><id>/</id><updated>2023-07-28T12:40:00+02:00</updated><entry><title>Le royaume de la Kamelott, et systemd des serveurs nucléaires</title><link href="/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html" rel="alternate"></link><published>2023-07-28T12:40:00+02:00</published><updated>2023-07-28T12:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Pour certain c'est la Kamelott, mais pour ceux qui savent, la création depuis la tradition des alchimistes en héritage des physiciens nucléaires est un système d'invocation (doua) et c'est alimentaire et minérale. Des mineurs. Au délà de la grande bouffe. &lt;/p&gt;
+&lt;p&gt;Il y a vraiment des joueurs, en particulier les japonais de Square Enix et la saga Final Fantasy. &lt;/p&gt;
+&lt;p&gt;Extrait du sinopsis:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Final Fantasy 16" src="images/ff16.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Non mais A l'eau quoi!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Alors j'ai préparé une architecture de serveur nucléaire expérimental dans ma campsule temporelle, admirer l'oeuvre de l'artiste.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Serveur nucléaire" src="images/capsule-temporelle.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Il y a des variantes! On peut mettre plusieurs processeurs à ADN (multi-coeurs).&lt;/p&gt;
+&lt;p&gt;Perso mon serveur a comme capsule et fiole (encapsulsation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Batterie nucléaire et fiole à ADN (processeur)&lt;/li&gt;
+&lt;li&gt;Capsule de gemmes et poudres (le planétaire) dont le cristal de quartz récolté au bord de l'Isole à Scaër (mémoire)&lt;/li&gt;
+&lt;li&gt;Fiole de Fake plutonium 30ML (réserve en eau coloré jaune)&lt;/li&gt;
+&lt;li&gt;Fiole de pétrole brute 5ML&lt;/li&gt;
+&lt;li&gt;Capsule de graines et plantes (semence, agricole)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mais on trouve aussi:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Louis d'Or&lt;/li&gt;
+&lt;li&gt;Autunite (source radioactivité)&lt;/li&gt;
+&lt;li&gt;des composants d'électronique (Nano-Ordinateur RISC-V MangoPi MQ Pro) - reverse engineering de composant&lt;/li&gt;
+&lt;li&gt;Le Narkanta encapsulé version papier, protège par la cryptologie la citadelle&lt;/li&gt;
+&lt;li&gt;Une Shungite hypercube 30mmx30mm (filtre à eau, charbon): La Kaaba&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je viens de rebooter(centrifugeuse) mon processeur à ADN, il y a quelques jours, mise à jours. Mais j'ai également néttoyer mes cristaux de quartz avec de l'eau+sel cristalline Isabelle des montagnes noires à la source St-Goazec.&lt;/p&gt;
+&lt;p&gt;Le serveur, la capsule temporelle a un système de protection et avertissement (contre-mesure), mes petites blagues.
+- Panneau Biohazard
+- Panneau logo Radioactivité et ionization
+- Fiole fake plutonium
+- Tirage au sort: on sait pas qu'elle fiole contient le processeur à ADN (copies et clones)
+- Enrober dans du papier aluminium (indétectable au détecteur de métaux) et la marmotte?&lt;/p&gt;
+&lt;p&gt;En cas de découverte: le randonneur s'expose à un danger, cela va générer un buzz et appel d'équipe de déminage. C'est psychologique. Créant une anomalie dans l'univers.&lt;/p&gt;</content><category term="Biohacking"></category><category term="concept"></category><category term="architecture"></category><category term="nucléaire"></category></entry><entry><title>Matériel de laboratoire pour processeur à ADN [biohacking]</title><link href="/materiel-de-laboratoire-pour-processeur-a-adn-biohacking.html" rel="alternate"></link><published>2023-07-18T08:40:00+02:00</published><updated>2023-07-18T08:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-18:/materiel-de-laboratoire-pour-processeur-a-adn-biohacking.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je reviens un peu sur le matériel pour manipuler et créer un processeur à ADN en biohacking (&lt;a href="https://legoffant.github.io/les-transmutations-biologiques-dans-le-biohacking.html"&gt;voir le document de recherche sur les transmutations nucléaires&lt;/a&gt;) que j'avais défini &lt;a href="https://legoffant.github.io/ma-quantification-du-processeur-a-adn.html"&gt;une recette avancée quantifiée&lt;/a&gt; après quelques phases de tests et prototypes. J'ai eu des ratés, j'avais commencé avec des fioles de 2ml et un bouchon en liège qui sous la pression c'est ouvert et avait condenser de l'eau dans la capsule. Pourtant cela doit rester hermétique, c'est essentiel.  &lt;/p&gt;
 &lt;p&gt;Voici une liste complète avec matériel de laboratoire pour faciliter la préparation et les expériences avec le prix et fournisseur. Cela vous rendra service.  &lt;/p&gt;
 &lt;h3&gt;I. Les containers et réacteurs&lt;/h3&gt;
 &lt;p&gt;Ils doivent être dimensionné pour faciliter l'insertion de la fiole à ADN en cristal dans sa capsule en aluminium pour fabriquer la batterie nucléaire. La capsule en acier inox, permet l'isolation et l'ajout de plusieurs processeurs à ADN: 4 fioles.  &lt;/p&gt;
