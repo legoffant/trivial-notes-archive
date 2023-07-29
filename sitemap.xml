@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-07-29T10:26:02-00:00</lastmod>
+<lastmod>2023-07-29T10:26:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-07-29T10:26:02-00:00</lastmod>
+<lastmod>2023-07-29T10:26:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-07-29T10:26:02-00:00</lastmod>
+<lastmod>2023-07-29T10:26:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-07-29T10:26:02-00:00</lastmod>
+<lastmod>2023-07-29T10:26:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-07-29T10:26:02-00:00</lastmod>
+<lastmod>2023-07-29T10:26:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html</loc>
+<lastmod>2023-07-29T10:25:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -69,13 +76,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/routeur-netgear-nighthawk-rax50.html</loc>
 <lastmod>2023-07-28T13:08:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html</loc>
-<lastmod>2023-07-28T12:40:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1790,7 +1790,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/biohacking.html</loc>
-<lastmod>2023-07-28T12:40:00+00:09</lastmod>
+<lastmod>2023-07-29T10:25:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1831,6 +1831,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/tag/concept.html</loc>
+<lastmod>2023-07-29T10:25:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/architecture.html</loc>
+<lastmod>2023-07-29T10:25:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/nucleaire.html</loc>
+<lastmod>2023-07-29T10:25:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/tag/programmation.html</loc>
 <lastmod>2023-07-29T06:57:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -1861,27 +1882,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/routeur.html</loc>
 <lastmod>2023-07-28T13:08:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/concept.html</loc>
-<lastmod>2023-07-28T12:40:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/architecture.html</loc>
-<lastmod>2023-07-28T12:40:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/nucleaire.html</loc>
-<lastmod>2023-07-28T12:40:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3785,7 +3785,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-07-29T06:57:00+00:09</lastmod>
+<lastmod>2023-07-29T10:25:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
