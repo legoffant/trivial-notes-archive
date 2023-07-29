@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-29T06:57:00+02:00</updated><entry><title>Automatiser les snapshots btrfs avec un script shell et cron</title><link href="/automatiser-les-snapshots-btrfs-avec-un-script-shell-et-cron.html" rel="alternate"></link><published>2023-07-29T06:57:00+02:00</published><updated>2023-07-29T06:57:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-29:/automatiser-les-snapshots-btrfs-avec-un-script-shell-et-cron.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Les sysAdmins automatisent toutes les tâches pour la maintenance des serveurs et ordinateurs. Généralement il faut savoir faire du scripting avec des paramêtres systèmes. Donc on code en &lt;a href="https://linux.goffinet.org/administration/scripts-shell/"&gt;Bash qui est du scripting shell&lt;/a&gt; voir en Python grâce au &lt;a href="https://pythonforge.com/module-os-systeme-dexploitation/"&gt;module os&lt;/a&gt;. Les plus anciens et puristes utilisent Perl. Il existe parfois des programmes avec une interface graphique comme Timeshift. Mais malheureusement pour moi, celui-ci ne détecte pas mes partitions en btrfs surement car j'utilise une surcouche de volume logique LVM dans mon schéma de partitionnement disque.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-29T10:25:00+02:00</updated><entry><title>Le royaume de la Kamelott, et systemd des serveurs nucléaires</title><link href="/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html" rel="alternate"></link><published>2023-07-29T10:25:00+02:00</published><updated>2023-07-29T10:25:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-29:/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Pour certain c'est la Kamelott, mais pour ceux qui savent, la création depuis la tradition des alchimistes en héritage des physiciens nucléaires est un système d'invocation (doua) et c'est alimentaire et minérale. Des mineurs. Au délà de la grande bouffe. &lt;/p&gt;
+&lt;p&gt;Il y a vraiment des joueurs, en particulier les japonais de Square Enix et la saga Final Fantasy. &lt;/p&gt;
+&lt;p&gt;Extrait du sinopsis:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Final Fantasy 16" src="images/ff16.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Non mais A l'eau quoi!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Alors j'ai préparé une architecture de serveur nucléaire expérimental dans ma campsule temporelle, admirer l'oeuvre de l'artiste.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Serveur nucléaire" src="images/capsule-temporelle.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Il y a des variantes! On peut mettre plusieurs processeurs à ADN (multi-coeurs).&lt;/p&gt;
+&lt;p&gt;Perso mon serveur a comme capsule et fiole (encapsulsation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Batterie nucléaire et fiole à ADN (processeur)&lt;/li&gt;
+&lt;li&gt;Capsule de gemmes et poudres (le planétaire) dont le cristal de quartz récolté au bord de l'Isole à Scaër (mémoire)&lt;/li&gt;
+&lt;li&gt;Fiole de Fake plutonium 30ML (réserve en eau coloré jaune)&lt;/li&gt;
+&lt;li&gt;Fiole de pétrole brute 5ML&lt;/li&gt;
+&lt;li&gt;Capsule de graines et plantes (semence, agricole)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mais on trouve aussi:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Louis d'Or&lt;/li&gt;
+&lt;li&gt;Autunite (source radioactivité)&lt;/li&gt;
+&lt;li&gt;des composants d'électronique (Nano-Ordinateur RISC-V MangoPi MQ Pro) - reverse engineering de composant&lt;/li&gt;
+&lt;li&gt;Le Narkanta encapsulé version papier, protège par la cryptologie la citadelle&lt;/li&gt;
+&lt;li&gt;Une Shungite hypercube 30mmx30mm (filtre à eau, charbon): La Kaaba&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Je viens de rebooter(centrifugeuse) mon processeur à ADN, il y a quelques jours, mise à jours. Mais j'ai également néttoyer mes cristaux de quartz avec de l'eau+sel cristalline Isabelle des montagnes noires à la source St-Goazec.&lt;/p&gt;
+&lt;p&gt;Le serveur, la capsule temporelle a un système de protection et avertissement (contre-mesure), mes petites blagues.
+- Panneau Biohazard
+- Panneau logo Radioactivité et ionization
+- Fiole fake plutonium
+- Tirage au sort: on sait pas qu'elle fiole contient le processeur à ADN (copies et clones)
+- Enrober dans du papier aluminium (indétectable au détecteur de métaux) et la marmotte?&lt;/p&gt;
+&lt;p&gt;En cas de découverte: le randonneur s'expose à un danger, cela va générer un buzz et appel d'équipe de déminage. C'est psychologique. Créant une anomalie dans l'univers.&lt;/p&gt;</content><category term="Biohacking"></category><category term="concept"></category><category term="architecture"></category><category term="nucléaire"></category></entry><entry><title>Automatiser les snapshots btrfs avec un script shell et cron</title><link href="/automatiser-les-snapshots-btrfs-avec-un-script-shell-et-cron.html" rel="alternate"></link><published>2023-07-29T06:57:00+02:00</published><updated>2023-07-29T06:57:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-29:/automatiser-les-snapshots-btrfs-avec-un-script-shell-et-cron.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Les sysAdmins automatisent toutes les tâches pour la maintenance des serveurs et ordinateurs. Généralement il faut savoir faire du scripting avec des paramêtres systèmes. Donc on code en &lt;a href="https://linux.goffinet.org/administration/scripts-shell/"&gt;Bash qui est du scripting shell&lt;/a&gt; voir en Python grâce au &lt;a href="https://pythonforge.com/module-os-systeme-dexploitation/"&gt;module os&lt;/a&gt;. Les plus anciens et puristes utilisent Perl. Il existe parfois des programmes avec une interface graphique comme Timeshift. Mais malheureusement pour moi, celui-ci ne détecte pas mes partitions en btrfs surement car j'utilise une surcouche de volume logique LVM dans mon schéma de partitionnement disque.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://fr.wikipedia.org/wiki/Btrfs"&gt;btrfs&lt;/a&gt; c'est quoi? C'est un système de fichier. Sous Linux on utilise ext4 et Windows utilise ntfs. btrfs est la nouvelle génération avec la particularité de pouvoir faire des snapshots, c'est à dire des instantanés du système pour la sauvegarde, mais égalemement la somme de contrôle ou la compression des données en zstd. Mais il existe également ZFS en particularité sur les serveurs et NAS.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;On va donc automatiser nos sauvegardes de DATA tous les jours en utilisant un script shell et un plannificateur de tâche cron en cas de plantage du système.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3&gt;On commence par vérifier nos subvolumes btrfs&lt;/h3&gt;
@@ -83,38 +114,7 @@ trivial&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;ALL&lt;/span&g
 &lt;li&gt;USB 3.0 pour ajouter un support de stockage pour un backup local de mes VM: virtuals machines Proxmox.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Fuyez les routeurs des FAI, ils sont backoorés. Malheureusement pas le choix d'en avoir un pour connecter la fibre. Les FAI et les gouvernements ne veulent pas que l'on est notre propre routeur perso. C'était possible avec l'ADSL mais depuis la fibre: c'est limité. Donc on rajoute un routeur en plus sur le réseau derrière le point de routage box de la fibre.&lt;/p&gt;
-&lt;p&gt;Le gouvernement français ne fait rien pour l'aide à l'auto-hébergement et les FAI indépendants tel que &lt;a href="https://www.fdn.fr/"&gt;FDN&lt;/a&gt;. C'est la guerre, et la neutralité du net une utopie.&lt;/p&gt;</content><category term="Linux"></category><category term="routeur"></category></entry><entry><title>Le royaume de la Kamelott, et systemd des serveurs nucléaires</title><link href="/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html" rel="alternate"></link><published>2023-07-28T12:40:00+02:00</published><updated>2023-07-28T12:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Pour certain c'est la Kamelott, mais pour ceux qui savent, la création depuis la tradition des alchimistes en héritage des physiciens nucléaires est un système d'invocation (doua) et c'est alimentaire et minérale. Des mineurs. Au délà de la grande bouffe. &lt;/p&gt;
-&lt;p&gt;Il y a vraiment des joueurs, en particulier les japonais de Square Enix et la saga Final Fantasy. &lt;/p&gt;
-&lt;p&gt;Extrait du sinopsis:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Final Fantasy 16" src="images/ff16.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Non mais A l'eau quoi!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Alors j'ai préparé une architecture de serveur nucléaire expérimental dans ma campsule temporelle, admirer l'oeuvre de l'artiste.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Serveur nucléaire" src="images/capsule-temporelle.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;Il y a des variantes! On peut mettre plusieurs processeurs à ADN (multi-coeurs).&lt;/p&gt;
-&lt;p&gt;Perso mon serveur a comme capsule et fiole (encapsulsation)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Batterie nucléaire et fiole à ADN (processeur)&lt;/li&gt;
-&lt;li&gt;Capsule de gemmes et poudres (le planétaire) dont le cristal de quartz récolté au bord de l'Isole à Scaër (mémoire)&lt;/li&gt;
-&lt;li&gt;Fiole de Fake plutonium 30ML (réserve en eau coloré jaune)&lt;/li&gt;
-&lt;li&gt;Fiole de pétrole brute 5ML&lt;/li&gt;
-&lt;li&gt;Capsule de graines et plantes (semence, agricole)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Mais on trouve aussi:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Louis d'Or&lt;/li&gt;
-&lt;li&gt;Autunite (source radioactivité)&lt;/li&gt;
-&lt;li&gt;des composants d'électronique (Nano-Ordinateur RISC-V MangoPi MQ Pro) - reverse engineering de composant&lt;/li&gt;
-&lt;li&gt;Le Narkanta encapsulé version papier, protège par la cryptologie la citadelle&lt;/li&gt;
-&lt;li&gt;Une Shungite hypercube 30mmx30mm (filtre à eau, charbon): La Kaaba&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Je viens de rebooter(centrifugeuse) mon processeur à ADN, il y a quelques jours, mise à jours. Mais j'ai également néttoyer mes cristaux de quartz avec de l'eau+sel cristalline Isabelle des montagnes noires à la source St-Goazec.&lt;/p&gt;
-&lt;p&gt;Le serveur, la capsule temporelle a un système de protection et avertissement (contre-mesure), mes petites blagues.
-- Panneau Biohazard
-- Panneau logo Radioactivité et ionization
-- Fiole fake plutonium
-- Tirage au sort: on sait pas qu'elle fiole contient le processeur à ADN (copies et clones)
-- Enrober dans du papier aluminium (indétectable au détecteur de métaux) et la marmotte?&lt;/p&gt;
-&lt;p&gt;En cas de découverte: le randonneur s'expose à un danger, cela va générer un buzz et appel d'équipe de déminage. C'est psychologique. Créant une anomalie dans l'univers.&lt;/p&gt;</content><category term="Biohacking"></category><category term="concept"></category><category term="architecture"></category><category term="nucléaire"></category></entry><entry><title>Les non-dits de la programmation informatique</title><link href="/les-non-dits-de-la-programmation-informatique.html" rel="alternate"></link><published>2023-07-28T12:40:00+02:00</published><updated>2023-07-28T12:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/les-non-dits-de-la-programmation-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;em&gt;NOTA: Post sur Quora que j'ai fais quelques modifs&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Le gouvernement français ne fait rien pour l'aide à l'auto-hébergement et les FAI indépendants tel que &lt;a href="https://www.fdn.fr/"&gt;FDN&lt;/a&gt;. C'est la guerre, et la neutralité du net une utopie.&lt;/p&gt;</content><category term="Linux"></category><category term="routeur"></category></entry><entry><title>Les non-dits de la programmation informatique</title><link href="/les-non-dits-de-la-programmation-informatique.html" rel="alternate"></link><published>2023-07-28T12:40:00+02:00</published><updated>2023-07-28T12:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-28:/les-non-dits-de-la-programmation-informatique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;em&gt;NOTA: Post sur Quora que j'ai fais quelques modifs&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;La programmation en informatique, bien qu'elle soit une discipline technique et précise, comporte également quelques non-dits. Voici certains d'entre eux :&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
