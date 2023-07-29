@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Trivial notes</title>
+    <title>Automatiser les snasphots btrfs avec un script shell et cron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Anthony Le Goff">
@@ -86,7 +86,7 @@
 						<i class="icon-folder-open icon-large"></i>Inclassable
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="/category/linux.html">
 						<i class="icon-folder-open icon-large"></i>Linux
 					</a>
@@ -111,254 +111,100 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="/ctu-capsule-temporelle-universelle.html">CTU: Capsule temporelle universelle</a></h1>
-                <div class="well small"><footer class="post-info">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Automatiser les snasphots btrfs avec un script shell et cron">
+                                        Automatiser les snasphots btrfs avec un script shell et cron
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2022-10-16T07:50:00+02:00">
-        <i class="icon-calendar"></i>dim. 16 octobre 2022
+<abbr class="published" title="2023-07-29T06:57:00+02:00">
+        <i class="icon-calendar"></i>sam. 29 juillet 2023
 </abbr>
 <span class="label">By</span>
 <a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
 <span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<a href="/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
 
 
 <span class="label">Tags</span>
-	<a href="/tag/capsule.html"><i class="icon-tag"></i>capsule</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/ctu-capsule-temporelle-universelle.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/nuances-et-explications.html">Nuances et explications</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-10-08T23:01:00+02:00">
-        <i class="icon-calendar"></i>sam. 08 octobre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+	<a href="/tag/programmation.html"><i class="icon-tag"></i>programmation</a>
+	<a href="/tag/informatique.html"><i class="icon-tag"></i>informatique</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Les sysAdmins automatisent toutes les tâches pour la maintenance des serveurs et ordinateurs. Généralement il faut savoir faire du scripting avec des paramêtres systèmes. Donc on code en <a href="https://linux.goffinet.org/administration/scripts-shell/">Bash qui est scripting shell</a> voir en Python grâce au <a href="https://pythonforge.com/module-os-systeme-dexploitation/">module os</a>. Les plus anciens et puristes utilisent Perl. Il existe parfois des programmes avec une interface graphique comme Timeshift. Mais malheureusement pour moi, celui-ci ne détecte pas mes partitions en btrfs surement car j'utilise une surcouche de volume logique LVM dans mon schéma de partitionnement disque.</p>
+<p><a href="https://fr.wikipedia.org/wiki/Btrfs">btrfs</a> c'est quoi? C'est un système de fichier. Sous Linux on utilise ext4 et Windows utilise ntfs. btrfs est la nouvelle génération avec la particularité de pouvoir faire des snaphots, c'est à dire des instantanés du système pour la sauvegarde, mais égalemement la somme de contrôle ou la compréssion des données en zstd. Mais il existe également ZFS en particularité sur les serveurs et NAS.</p>
+<p><strong>On va donc automatiser nos sauvegardes de DATA tous les jours en utilisant un script shell et un plannificateur de tâche cron en cas de plantage du système.</strong></p>
+<h3>On commence par vérifier nos subvolumes btrfs</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>btrfs<span class="w"> </span>subvolume<span class="w"> </span>list<span class="w"> </span>/
 
+ID<span class="w"> </span><span class="m">256</span><span class="w"> </span>gen<span class="w"> </span><span class="m">7527</span><span class="w"> </span>top<span class="w"> </span>level<span class="w"> </span><span class="m">5</span><span class="w"> </span>path<span class="w"> </span>@
+ID<span class="w"> </span><span class="m">257</span><span class="w"> </span>gen<span class="w"> </span><span class="m">7528</span><span class="w"> </span>top<span class="w"> </span>level<span class="w"> </span><span class="m">5</span><span class="w"> </span>path<span class="w"> </span>@home
+ID<span class="w"> </span><span class="m">258</span><span class="w"> </span>gen<span class="w"> </span><span class="m">9</span><span class="w"> </span>top<span class="w"> </span>level<span class="w"> </span><span class="m">5</span><span class="w"> </span>path<span class="w"> </span>@_snapshot
+ID<span class="w"> </span><span class="m">259</span><span class="w"> </span>gen<span class="w"> </span><span class="m">17</span><span class="w"> </span>top<span class="w"> </span>level<span class="w"> </span><span class="m">256</span><span class="w"> </span>path<span class="w"> </span>var/lib/portables
+ID<span class="w"> </span><span class="m">260</span><span class="w"> </span>gen<span class="w"> </span><span class="m">18</span><span class="w"> </span>top<span class="w"> </span>level<span class="w"> </span><span class="m">256</span><span class="w"> </span>path<span class="w"> </span>var/lib/machines
+</code></pre></div>
 
-<span class="label">Tags</span>
-	<a href="/tag/rappel.html"><i class="icon-tag"></i>rappel</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/nuances-et-explications.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/transformation-industrielle.html">Transformation industrielle</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-10-07T17:01:00+02:00">
-        <i class="icon-calendar"></i>ven. 07 octobre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<h3>On va créer notre dossier de scripts utilisateurs et le script bash</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>~/scripts
+$<span class="w"> </span>mkdir<span class="w"> </span>~/scripts/logs
+$<span class="w"> </span>touch<span class="w"> </span>~/scripts/logs/snap-logs
 
+$<span class="w"> </span>nvim<span class="w"> </span>btrfs-snapshot-backup.sh
 
-<span class="label">Tags</span>
-	<a href="/tag/dynastie.html"><i class="icon-tag"></i>dynastie</a>
-	<a href="/tag/empire.html"><i class="icon-tag"></i>empire</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/transformation-industrielle.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/lidolatrie-interdite.html">L'idolatrie interdite</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-09-30T15:20:00+02:00">
-        <i class="icon-calendar"></i>ven. 30 septembre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<span class="c1">#! /usr/bin/bash</span>
 
+<span class="c1"># Dossier pour sauvegarder snapshot</span>
+<span class="nv">SNAPDIR</span><span class="o">=</span>/@_snapshot
+<span class="nb">export</span><span class="w"> </span>SNAPDIR
 
-<span class="label">Tags</span>
-	<a href="/tag/dynastie.html"><i class="icon-tag"></i>dynastie</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/lidolatrie-interdite.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/les-assoiffes-du-pouvoir.html">Les assoiffés du pouvoir</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-09-28T18:31:00+02:00">
-        <i class="icon-calendar"></i>mer. 28 septembre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/entrepreneurship.html"><i class="icon-folder-open"></i>Entrepreneurship</a>.
+<span class="c1"># Supprimer toutes les snapshots présentent sur le disque</span>
+sudo<span class="w"> </span>btrfs<span class="w"> </span>subvolume<span class="w"> </span>delete<span class="w"> </span><span class="nv">$SNAPDIR</span>/home_*
 
+<span class="c1"># Prendre une snapshot</span>
+sudo<span class="w"> </span>btrfs<span class="w"> </span>subvolume<span class="w"> </span>snapshot<span class="w"> </span>-r<span class="w"> </span>/@home<span class="w"> </span><span class="nv">$SNAPDIR</span>/home_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
 
-<span class="label">Tags</span>
-	<a href="/tag/innovation.html"><i class="icon-tag"></i>innovation</a>
-	<a href="/tag/entreprise.html"><i class="icon-tag"></i>entreprise</a>
-	<a href="/tag/reference.html"><i class="icon-tag"></i>reference</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/les-assoiffes-du-pouvoir.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/le-transformium.html">Le transformium</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-09-24T19:18:00+02:00">
-        <i class="icon-calendar"></i>sam. 24 septembre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<span class="c1"># Check si la snapshot a bien été créer, sinon exit et report</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span>
+<span class="k">then</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Erreur pour créer la snapshot home_</span><span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/scripts/logs/snap-logs
+<span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+</code></pre></div>
 
+<h3>Rendre executable le script bash</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>chmod<span class="w"> </span>u+x<span class="w"> </span>~/scripts/btrfs-snapshot-backup.sh
+</code></pre></div>
 
-<span class="label">Tags</span>
-	<a href="/tag/transformium.html"><i class="icon-tag"></i>transformium</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/le-transformium.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/le-petit-monde-des-incoherences-de-raisonnement.html">Le petit monde des incohérences de raisonnement</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-09-24T17:18:00+02:00">
-        <i class="icon-calendar"></i>sam. 24 septembre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<h3>On utilise un plannificateur de tâche "Cron" pour lancer le script tous les jours à 11:22</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>crontab<span class="w"> </span>-e
+$<span class="w"> </span>sudo<span class="w"> </span>nvim<span class="w"> </span>/etc/crontab
 
+<span class="m">22</span><span class="w"> </span><span class="m">11</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>trivial<span class="w"> </span>/home/trivial/scripts/btrfs-snapshot-backup.sh
+</code></pre></div>
 
-<span class="label">Tags</span>
-	<a href="/tag/physique-quantique.html"><i class="icon-tag"></i>physique quantique</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/le-petit-monde-des-incoherences-de-raisonnement.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/manuel-de-creation-dynastique.html">Manuel de création dynastique</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-09-22T17:55:00+02:00">
-        <i class="icon-calendar"></i>jeu. 22 septembre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<h3>Ajoute les droits admins sur les scripts dans sudoers</h3>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span><span class="nv">EDITOR</span><span class="o">=</span>nvim<span class="w"> </span>visudo
 
+trivial<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span><span class="w"> </span>NOPASSWD:<span class="w">  </span>/home/trivial/scripts/*
+</code></pre></div>
 
-<span class="label">Tags</span>
-	<a href="/tag/dynastie.html"><i class="icon-tag"></i>dynastie</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/manuel-de-creation-dynastique.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/les-soeurs-spiquel.html">Les soeurs Spiquel</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-09-20T19:55:00+02:00">
-        <i class="icon-calendar"></i>mar. 20 septembre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<h3>activation du service daemon au démarrage du système</h3>
+<div class="highlight"><pre><span></span><code><span class="o">$</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">systemctl</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">crond</span><span class="o">.</span><span class="n">service</span>
+<span class="o">$</span><span class="w"> </span><span class="n">sudo</span><span class="w"> </span><span class="n">systemctl</span><span class="w"> </span><span class="n">reload</span><span class="w"> </span><span class="n">crond</span><span class="o">.</span><span class="n">service</span>
+</code></pre></div>
 
-
-<span class="label">Tags</span>
-	<a href="/tag/ecole.html"><i class="icon-tag"></i>école</a>
-	<a href="/tag/anecdote.html"><i class="icon-tag"></i>anecdote</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/les-soeurs-spiquel.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-        <div class="article">
-                <h1><a href="/utopie-realiste-des-humanites-numeriques.html">Utopie réaliste des humanités numériques</a></h1>
-                <div class="well small"><footer class="post-info">
-<span class="label">Date</span>
-<abbr class="published" title="2022-09-18T20:06:00+02:00">
-        <i class="icon-calendar"></i>dim. 18 septembre 2022
-</abbr>
-<span class="label">By</span>
-<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
-<span class="label">Category</span>
-<a href="/category/transhumanisme.html"><i class="icon-folder-open"></i>Transhumanisme</a>.
-
-
-<span class="label">Tags</span>
-	<a href="/tag/humanite-numerique.html"><i class="icon-tag"></i>Humanité numérique</a>
-	<a href="/tag/transhumanisme.html"><i class="icon-tag"></i>transhumanisme</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/utopie-realiste-des-humanites-numeriques.html">more ...</a>
-                </div>
-        </div>
-        <hr />
-
-        <div class="pagination">
-        <ul>
-                        <li class="prev"><a href="/index16.html">&larr; Previous</a></li>
-                        <li class=""><a href="/index.html">1</a></li>
-                        <li class=""><a href="/index2.html">2</a></li>
-                        <li class=""><a href="/index3.html">3</a></li>
-                        <li class=""><a href="/index4.html">4</a></li>
-                        <li class=""><a href="/index5.html">5</a></li>
-                        <li class=""><a href="/index6.html">6</a></li>
-                        <li class=""><a href="/index7.html">7</a></li>
-                        <li class=""><a href="/index8.html">8</a></li>
-                        <li class=""><a href="/index9.html">9</a></li>
-                        <li class=""><a href="/index10.html">10</a></li>
-                        <li class=""><a href="/index11.html">11</a></li>
-                        <li class=""><a href="/index12.html">12</a></li>
-                        <li class=""><a href="/index13.html">13</a></li>
-                        <li class=""><a href="/index14.html">14</a></li>
-                        <li class=""><a href="/index15.html">15</a></li>
-                        <li class=""><a href="/index16.html">16</a></li>
-                        <li class="active"><a href="/index17.html">17</a></li>
-                        <li class=""><a href="/index18.html">18</a></li>
-                        <li class=""><a href="/index19.html">19</a></li>
-                        <li class=""><a href="/index20.html">20</a></li>
-                        <li class=""><a href="/index21.html">21</a></li>
-                        <li class=""><a href="/index22.html">22</a></li>
-                        <li class=""><a href="/index23.html">23</a></li>
-                        <li class=""><a href="/index24.html">24</a></li>
-                        <li class=""><a href="/index25.html">25</a></li>
-                        <li class="next"><a href="/index18.html">Next &rarr;</a></li>
-        </ul>
-        </div>
-
+<p>NOTA: améliorer le script, on peut définir une sauvegarde des snaphots et supprimer les plus anciennes de plus d'une semaine.</p>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
