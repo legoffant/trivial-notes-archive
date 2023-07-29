@@ -1,4 +1,4 @@
-Title:Automatiser les snasphots btrfs avec un script shell et cron
+Title:Automatiser les snapshots btrfs avec un script shell et cron
 Date: 2023-07-29 06:57
 Category:Linux
 Tags:programmation, informatique
