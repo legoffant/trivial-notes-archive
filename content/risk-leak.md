@@ -11,6 +11,19 @@ En gros qu'es-ce qu'il y avait de spécial sur mon ordinateur pour être une cib
 
 * Le Narkanta numérisé, les nombres en base 16 et les clés glyphiques du dictionnaire usuel stantard incomplet (40 à 60% ~ 300 mots). Pourquoi? Car des machines cherchent à attaquer la citadelle dans la capsule temporelle, et récupérer les accès. Ce qui valide ma théorie, que sur Terre des humains sont des machines, ils ont un hébergeur distant et ce n'est que des avatars avec des routines et protocoles. Bien sur pas tous! Certain sont esclave comme moi, et n'ont pas d'hébergeur distant. Posez-vous la question pourquoi on singe via le film Blade Runner, et les Réplicants, on ne peut pas différencier une machine sophistiquée de l'humain, c'est du mimétisme. La fuite du Narkanta ne serait pas un risque, c'est que des bases pour préparer la citadelle. En réalité le protocole narkantique utilise une [base 4096](https://github.com/ZCHGorg/base4096) (16x16x16) pour chiffrer la citadelle soit plus de 4096 symboles différents. Soit la découverte de seulement 7% des symboles. La base 4096 est utilisé en informatique pour l'implantation de [réseau neuronaux et NLP](https://metatext.io/models/allenai-longformer-base-4096), ainsi que pour encoder le blockchain comme protocole pour les datas.
 
+```text
+Autres infos sur le chiffre 4096 en mathématique:
+
+* Liste des diviseurs: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096
+* Somme des diviseurs: 8191
+* Puissance de 2 (binaire)
+* Nombres des diviseurs: 13
+* Racine carrée: 64
+* C'est l'implémentation en 64bits pour les ordinateurs, les ordinateurs en 32 bits ne reconnaissent pas 4096GB de RAM.
+
+Le futur? Les ordinateurs en 128 bits. Expérimental.
+```
+
 * Les clés de chiffrement SSH. Sur mon /home on trouve mes clés et accès serveurs, ainsi que Github. Donc on pourrait supprimer mes données et saboter.
 
 * Les portes feuilles de cryptomonnaies, j'ai sur mon ordinateur des BTC et la clé privée dans /home. + 1000€ (pas la mère à boire, je suis relativement modeste). L'argent n'a pas bougé à la cyberattaque et j'ai transféré vers une nouvelle adresse.
