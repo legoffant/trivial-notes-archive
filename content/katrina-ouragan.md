@@ -25,7 +25,7 @@ Parlons du Butin, sourate du Coran. Les abeilles et le butinage. Célèbre logo 
 
 ![goon](images/goon.jpg)
 
-Le Chauvet-Souris, ne sait pas trop ou il a mis les pieds avec Batman, et sa confrontation avec le Joker. Mais également par le pinguoin, et Linux, la marche de l'empereur.
+Le Chauvet-Souris, ne sait pas trop ou il a mis les pieds avec Batman, et sa confrontation avec le Joker. Mais également par le pingouin, et Linux, la marche de l'empereur.
 
 ![joker](images/joker.jpg)
 
