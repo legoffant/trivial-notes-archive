@@ -13,7 +13,7 @@
 * Racine carrée: 64
 * C&amp;#39;est l&amp;#39;implémentation en 64bits pour les ordinateurs, les ordinateurs en 32 bits ne reconnaissent pas 4096GB de RAM. Un ordinateur 64 bits peut générer en théorie 16 exaoctets (EB) de RAM.
 
-Le futur? Les ordinateurs en 128 bits. Expérimental.
+Le futur? Les ordinateurs en 128 bits. Expérimental. Il faudrait une base 16384 comme séquence de symbole. Que seul des machines peuvent implantés, au-délà de l&amp;#39;imaginaire humain, et des unités de mesures, cela n&amp;#39;est pas même pas défini: 3,40 x 10 ^38 emplacements mémoires possibles. Personne ne développe des ordinateurs 128 bits sur Terre, car il n&amp;#39;y a pas de réel implantation et nécessité d&amp;#39;un tel ordre de grandeur et de quantification.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
