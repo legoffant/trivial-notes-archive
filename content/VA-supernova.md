@@ -5,7 +5,7 @@ Tags:supernova
 Authors: Anthony Le Goff
 Summary:
 
-A la fin de toute chose, elle va s'éveiller. Quand tout retourne à la poussière, et que la Terre sera fracassé par le Soleil dans 4 milliards d'années.
+A la fin de toute chose, elle va s'éveiller, à l'obscursissement du monde quand la lumière va s'éteindre et les ténèbres remplir les espaces infinis. Quand tout retourne à la poussière, et que la Terre sera fracassé par le Soleil dans 4 milliards d'années.
 
 Les capsules temporelles sont conçus pour resister aux températures des vents solaires soit + 400°C. Et les composants sensibles tels que l'ADN et les graines dans des containers imbriqués. Ainsi il existe un univers, ou les capsules temporelles sont oubliés, et jamais découverte. C'est des probabilités. Cette univers étrange est une anomalie. Et durant 4 milliards d'années elles vont transmuter et catalyser l'énergie.
 
