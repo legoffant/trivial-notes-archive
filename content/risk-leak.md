@@ -25,7 +25,7 @@ Le futur? Les ordinateurs en 128 bits. Expérimental. Il faudrait une base 16384
 
 A quoi cela sert alors? Simuler des univers entiers et alloués un emplacement mémoire à chaques atomes de matières. Il y a 10 ^80 atomes dans l'univers. On s'approche du nombre de Gogol soit 10 ^100. Il suffirait de seulement trois ordinateurs 128 bits. Soit 10 ^114 d'emplacements mémoires possibles.
 
-Mais l'a encore, c'est biaisé, car en réalité l'univers n'a qu'une galaxie qui subit des transformations et compositions dans le temps par rotationel et symétrie dans un mirroir. C'est de la cristallographie.
+Mais l'a encore, c'est biaisé, car en réalité l'univers n'a qu'une galaxie qui subit des transformations et compositions dans le temps par rotationel et symétrie dans un mirroir. C'est de la cristallographie. C'est très facile de prouver que la galaxie d'Andromède est une symétrie temporelle de la Voie Lactée, il y a des similitudes.
 ```
 
 * Les clés de chiffrement SSH. Sur mon /home on trouve mes clés et accès serveurs, ainsi que Github. Donc on pourrait supprimer mes données et saboter.
