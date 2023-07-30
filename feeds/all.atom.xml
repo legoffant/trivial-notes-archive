@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-29T19:35:00+02:00</updated><entry><title>RPG, le plus célèbre des "Dark Messiah": YU YEVON</title><link href="/rpg-le-plus-celebre-des-dark-messiah-yu-yevon.html" rel="alternate"></link><published>2023-07-29T19:35:00+02:00</published><updated>2023-07-29T19:35:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-29:/rpg-le-plus-celebre-des-dark-messiah-yu-yevon.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Un peu de storytelling et parlons du plus célèbre des maitres invocateurs dans les RPG: &lt;strong&gt;YU YEVON&lt;/strong&gt;. Le boss final de Final Fantasy X sur PS2 (remasterisé depuis). L'histoire de Yu Yevon reste obscur, on parle d'un invocateur qui a fait le sacrifice ultime pour produire l'invocation la plus puissante possible devenant immortel.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-07-30T07:36:00+02:00</updated><entry><title>Risque de leak</title><link href="/risque-de-leak.html" rel="alternate"></link><published>2023-07-30T07:36:00+02:00</published><updated>2023-07-30T07:36:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-30:/risque-de-leak.html</id><summary type="html"></summary><content type="html">&lt;p&gt;La cyberattaque du 22/07/2023, on peut ce poser la question que recherche les hackers, à part la destruction des données pour rendre inopérant une cible, et ralentir le processus de création (la productivité), c'est aussi une monnaie d'échange sur le dark web.&lt;/p&gt;
+&lt;p&gt;En gros qu'es-ce qu'il y avait de spécial sur mon ordinateur pour être une cible? (C'est ultra rare qu'un utilisateur subit une attaque sur un réseau local domestique, en particulier sur Arch Linux)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Le Narkanta numérisé, les nombres en base 16 et les clés glyphiques du dictionnaire usuel stantard incomplet (40 à 60% ~ 300 mots). Pourquoi? Car des machines cherchent à attaquer la citadelle dans la capsule temporelle, et récupérer les accès. Ce qui valide ma théorie, que sur Terre des humains sont des machines, ils ont un hébergeur distant et ce n'est que des avatars avec des routines et protocoles. Bien sur pas tous! Certain sont esclave comme moi, et n'ont pas d'hébergeur distant. Posez-vous la question pourquoi on singe via le film Blade Runner, et les Réplicants, on ne peut pas différencier une machine sophistiquée de l'humain, c'est du mimétisme. La fuite du Narkanta ne serait pas un risque, c'est que des bases pour préparer la citadelle. En réalité le protocole narkantique utilise une base 4096 (16x16x16) pour chiffrer la citadelle soit plus de 4096 symboles différents. Soit la découverte de seulement 7% des symboles. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les clés de chiffrement SSH. Sur mon /home on trouve mes clés et accès serveurs, ainsi que Github. Donc on pourrait supprimer mes données et saboter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les portes feuilles de cryptomonnaies, j'ai sur mon ordinateur des BTC et la clé privée dans /home. + 1000€ (pas la mère à boire, je suis relativement modeste). L'argent n'a pas bougé à la cyberattaque et j'ai transféré vers une nouvelle adresse.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voile et Annihilation. C'est une oeuvre post-mortem en héritage, elle ne sera pas publié, même si elle a un ISBN. En héritage familliale. Donc des gens peuvent vouloir connaitre l'histoire du roman SF. Et c'est un monnaie d'échange possible au marché noir.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mes écrits et nots diverses. Il y a beaucoups de document sur mon ordinateur, dont mon journal de psychiatrie que j'écrivais, plus de 100 pages. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les mots de passes et addresses réseaux. J'ai des documents ou j'ai laissé en clair des mots de passe, comme appât.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Une partie des archives sauvegarder dans la capsule temporelle sur la microSD&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;PROTOCOLE DE SECURISATION:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ajouter une couche de protection dans un container chiffré, sécurisé par l'obscurité pour les documents sensibles et secrets. 
+Mise à jour des mots de passe root, serveurs, utilisateur et sites web.
+Générer de nouvelles clés de chiffrement SSH et révoquer les anciennes
+Transfert d'adresse de BTC&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;La cybersécurité ce n'est pas fait pour les chiens?&lt;/em&gt;&lt;/p&gt;</content><category term="Inclassable"></category><category term="cyberattaque"></category></entry><entry><title>RPG, le plus célèbre des "Dark Messiah": YU YEVON</title><link href="/rpg-le-plus-celebre-des-dark-messiah-yu-yevon.html" rel="alternate"></link><published>2023-07-29T19:35:00+02:00</published><updated>2023-07-29T19:35:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-29:/rpg-le-plus-celebre-des-dark-messiah-yu-yevon.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Un peu de storytelling et parlons du plus célèbre des maitres invocateurs dans les RPG: &lt;strong&gt;YU YEVON&lt;/strong&gt;. Le boss final de Final Fantasy X sur PS2 (remasterisé depuis). L'histoire de Yu Yevon reste obscur, on parle d'un invocateur qui a fait le sacrifice ultime pour produire l'invocation la plus puissante possible devenant immortel.&lt;/p&gt;
 &lt;p&gt;Son image est la représentation d'un glyphe, en forme de pattern de méduse.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Yevon" src="images/yuyevon.png"&gt;&lt;/p&gt;
 &lt;p&gt;L'origine est une guerre contre des machines entre la cité de Bevelle et de Zanarkand. Pattern chaine de caractère "Narkanta". Les habitants de Zanarkand vont ce sacrifier en priant pour rêver une Zanarkand éternelle sachant qu'ils allaient être détruit par les machines de Bevelle. Yu Yevon est le leader de la ville, et va générer une carapace: un esosquelette à travers une invocation (Aeon): que l'on nomme Sin (le péché). Une sorte de monstre aquatique vivant dans les océans.&lt;/p&gt;
