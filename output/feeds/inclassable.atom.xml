@@ -10,8 +10,10 @@
 * Somme des diviseurs: 8191
 * Puissance de 2 (binaire)
 * Nombres des diviseurs: 13
+* Carrée: 16777216
 * Racine carrée: 64
 * C&amp;#39;est l&amp;#39;implémentation en 64bits pour les ordinateurs, les ordinateurs en 32 bits ne reconnaissent pas 4096MB de RAM. Un ordinateur 64 bits peut générer en théorie 16 exaoctets (EB) de RAM.
+* C&amp;#39;est également initialement, le terme « 4K » fait référence à la définition minimale de 4 096 pixels pour la largeur de l&amp;#39;image.
 
 Le futur? Les ordinateurs en 128 bits. Expérimental. Il faudrait une base 16384 comme séquence de symbole. Que seul des machines peuvent implantés, au-délà de l&amp;#39;imaginaire humain, et des unités de mesures, cela n&amp;#39;est pas même pas défini: 3,40 x 10 ^38 emplacements mémoires possibles. Personne ne développe des ordinateurs 128 bits sur Terre, car il n&amp;#39;y a pas de réel implantation et nécessité d&amp;#39;un tel ordre de grandeur et de quantification.
 
