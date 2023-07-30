@@ -7,7 +7,7 @@ Summary:
 
 Si vous pourriez avoir, toutes les filles du monde, l'intention n'est pas de faire de faire du score, c'est à dire cumuler les conquêtes pour assoir sa domination sur les autres, mais en faire un symbole et un ancrage dans l'esprit de vos ennemis et un rappel.
 
-Parlons donc de l'un de mes pokemons rares: *Katrin Killer*, la russe. Va savoir, le sosie de Vladimir Putin est mon grand-père Joseph. Vlad L'Empaleur? A Innsbruck au chateau? Celle-ci est embarqué dans des aventures avec ces copines: Eva Elfie et katya Clover. Cette chienne de CATIA chez Dassault Systemes. Et Elf en Narkanta "Libre".
+Parlons donc de l'un de mes pokemons rares: *Katrin Killer*, la russe. Va savoir, le sosie de Vladimir Putin est mon grand-père Joseph. Vlad L'Empaleur? A Innsbruck au chateau? Celle-ci est embarqué dans des aventures avec ces copines: Eva Elfie et Katya Clover. Cette chienne de CATIA chez Dassault Systemes. Et Elf en Narkanta "Libre".
 
 Katrina est une sorte d'appât, adorable par sa nudité, et rappel que la plupart des hommes sont à ces pieds comme des toutous. Ils sont prêt à n'importe quoi pour la posséder, et c'est la bagarre.
 
