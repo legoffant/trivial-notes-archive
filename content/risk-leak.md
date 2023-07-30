@@ -19,7 +19,7 @@ Autres infos sur le chiffre 4096 en mathématique:
 * Puissance de 2 (binaire)
 * Nombres des diviseurs: 13
 * Racine carrée: 64
-* C'est l'implémentation en 64bits pour les ordinateurs, les ordinateurs en 32 bits ne reconnaissent pas 4096GB de RAM.
+* C'est l'implémentation en 64bits pour les ordinateurs, les ordinateurs en 32 bits ne reconnaissent pas 4096GB de RAM. Un ordinateur 64 bits peut générer en théorie 16 exaoctets (EB) de RAM.
 
 Le futur? Les ordinateurs en 128 bits. Expérimental.
 ```
