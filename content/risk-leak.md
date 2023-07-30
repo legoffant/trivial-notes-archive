@@ -21,7 +21,7 @@ Autres infos sur le chiffre 4096 en mathématique:
 * Racine carrée: 64
 * C'est l'implémentation en 64bits pour les ordinateurs, les ordinateurs en 32 bits ne reconnaissent pas 4096GB de RAM. Un ordinateur 64 bits peut générer en théorie 16 exaoctets (EB) de RAM.
 
-Le futur? Les ordinateurs en 128 bits. Expérimental.
+Le futur? Les ordinateurs en 128 bits. Expérimental. Il faudrait une base 16384 comme séquence de symbole. Que seul des machines peuvent implantés, au-délà de l'imaginaire humain, et des unités de mesures, cela n'est pas même pas défini: 3,40 x 10 ^38 emplacements mémoires possibles. Personne ne développe des ordinateurs 128 bits sur Terre, car il n'y a pas de réel implantation et nécessité d'un tel ordre de grandeur et de quantification.
 ```
 
 * Les clés de chiffrement SSH. Sur mon /home on trouve mes clés et accès serveurs, ainsi que Github. Donc on pourrait supprimer mes données et saboter.
