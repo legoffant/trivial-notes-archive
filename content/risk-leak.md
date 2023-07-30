@@ -32,6 +32,12 @@ A quoi cela sert alors? Simuler des univers entiers et alloués un emplacement m
 Mais l'a encore, c'est biaisé, car en réalité l'univers n'a qu'une galaxie qui subit des transformations et compositions dans le temps par rotationel et symétrie dans un mirroir. C'est de la cristallographie. C'est très facile de prouver que la galaxie d'Andromède est une symétrie temporelle de la Voie Lactée, il y a des similitudes.
 
 NOTA: La version release du Narkanta à une séquence de 763 symboles. Soit 27 bits nécessaires pour l'adressage mémoire du processeur. Mais il a un système de sécurité: le Qotar avec un alphabet de 23 + nombres 16 soit 39 symboles (6 bits) qui peuvent booter sur une système de 8 bits en mode dégradé.
+
+D'ou que dans ma capsule temporelle il y a:
+
+* Transistor
+* Microcontroller Intel 8051 (AT89S52) en 8 bits
+* MangoPi MQ Pro RISC-V 1GB RAM en 64 Bits sur le processeur XuanTie C906
 ```
 
 * Les clés de chiffrement SSH. Sur mon /home on trouve mes clés et accès serveurs, ainsi que Github. Donc on pourrait supprimer mes données et saboter.

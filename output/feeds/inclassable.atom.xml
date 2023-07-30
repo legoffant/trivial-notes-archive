@@ -21,6 +21,8 @@ Le futur? Les ordinateurs en 128 bits. Expérimental. Il faudrait une base 16384
 A quoi cela sert alors? Simuler des univers entiers et alloués un emplacement mémoire à chaques atomes de matières. Il y a 10 ^80 atomes dans l&amp;#39;univers. On s&amp;#39;approche du nombre de Gogol soit 10 ^100. Il suffirait de seulement trois ordinateurs 128 bits. Soit 10 ^114 d&amp;#39;emplacements mémoires possibles.
 
 Mais l&amp;#39;a encore, c&amp;#39;est biaisé, car en réalité l&amp;#39;univers n&amp;#39;a qu&amp;#39;une galaxie qui subit des transformations et compositions dans le temps par rotationel et symétrie dans un mirroir. C&amp;#39;est de la cristallographie. C&amp;#39;est très facile de prouver que la galaxie d&amp;#39;Andromède est une symétrie temporelle de la Voie Lactée, il y a des similitudes.
+
+NOTA: La version release du Narkanta à une séquence de 763 symboles. Soit 27 bits nécessaires pour l&amp;#39;adressage mémoire du processeur. Mais il a un système de sécurité: le Qotar avec un alphabet de 23 + nombres 16 soit 39 symboles (6 bits) qui peuvent booter sur une système de 8 bits en mode dégradé.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
