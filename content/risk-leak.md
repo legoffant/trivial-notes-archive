@@ -22,6 +22,10 @@ Autres infos sur le chiffre 4096 en mathématique:
 * C'est l'implémentation en 64bits pour les ordinateurs, les ordinateurs en 32 bits ne reconnaissent pas 4096MB de RAM. Un ordinateur 64 bits peut générer en théorie 16 exaoctets (EB) de RAM.
 
 Le futur? Les ordinateurs en 128 bits. Expérimental. Il faudrait une base 16384 comme séquence de symbole. Que seul des machines peuvent implantés, au-délà de l'imaginaire humain, et des unités de mesures, cela n'est pas même pas défini: 3,40 x 10 ^38 emplacements mémoires possibles. Personne ne développe des ordinateurs 128 bits sur Terre, car il n'y a pas de réel implantation et nécessité d'un tel ordre de grandeur et de quantification.
+
+A quoi cela sert alors? Simuler des univers entiers et alloués un emplacement mémoire à chaques atomes de matières. Il y a 10 ^80 atomes dans l'univers. On s'approche du nombre de Gogol soit 10 ^100. 
+
+Mais l'a encore, c'est biaisé, car en réalité l'univers n'a qu'une galaxie qui subit des transformations et compositions dans le temps par rotationel et symétrie dans un mirroir. C'est de la cristallographie.
 ```
 
 * Les clés de chiffrement SSH. Sur mon /home on trouve mes clés et accès serveurs, ainsi que Github. Donc on pourrait supprimer mes données et saboter.
