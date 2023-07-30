@@ -25,9 +25,9 @@ En gros qu'es-ce qu'il y avait de spécial sur mon ordinateur pour être une cib
 
 **PROTOCOLE DE SECURISATION:**
 
-Ajouter une couche de protection dans un container chiffré, sécurisé par l'obscurité pour les documents sensibles et secrets. 
-Mise à jour des mots de passe root, serveurs, utilisateur et sites web.
-Générer de nouvelles clés de chiffrement SSH et révoquer les anciennes
-Transfert d'adresse de BTC
+* Ajouter une couche de protection dans un container chiffré, sécurisé par l'obscurité pour les documents sensibles et secrets. 
+* Mise à jour des mots de passe root, serveurs, utilisateur et sites web.
+* Générer de nouvelles clés de chiffrement SSH et révoquer les anciennes.
+* Transfert d'adresse de BTC.
 
 *La cybersécurité ce n'est pas fait pour les chiens?*
