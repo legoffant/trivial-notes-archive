@@ -37,7 +37,7 @@ D'ou que dans ma capsule temporelle il y a:
 
 * Transistor
 * Microcontroller Intel 8051 (AT89S52) en 8 bits
-* MangoPi MQ Pro RISC-V 1GB RAM en 64 Bits sur le processeur XuanTie C906
+* MangoPi MQ Pro RISC-V 1GB RAM en 64 Bits sur le processeur XuanTie C906 (technologie chinoise développé par Alibaba)
 ```
 
 * Les clés de chiffrement SSH. Sur mon /home on trouve mes clés et accès serveurs, ainsi que Github. Donc on pourrait supprimer mes données et saboter.
