@@ -4,23 +4,23 @@
 &lt;p&gt;Je sus en train de tous ré-écrire mes articles de blog, il y en a plus de 200, soit 10 min par article: 33 heures de travail.&lt;/p&gt;
 &lt;h3&gt;Ressource pour le réseau Gemini&lt;/h3&gt;
 &lt;p&gt;GEMINI&lt;/p&gt;
-&lt;h2&gt;Liens free hosting&lt;/h2&gt;
+&lt;h4&gt;Liens free hosting&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://cdg.thegonz.net/infrastructure/hosting/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2&gt;Aggregator&lt;/h2&gt;
+&lt;h4&gt;Aggregator&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://gemini.circumlunar.space/capcom/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2&gt;Aggregator francophone&lt;/h2&gt;
+&lt;h4&gt;Aggregator francophone&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://geminifr.bacardi55.io/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2&gt;Search Directory&lt;/h2&gt;
+&lt;h4&gt;Search Directory&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://medusae.space/index.gmi
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2&gt;Cheatsheet&lt;/h2&gt;
+&lt;h4&gt;Cheatsheet&lt;/h4&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Amfora&lt;/span&gt;
 
 &lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vm"&gt;?&lt;/span&gt;
