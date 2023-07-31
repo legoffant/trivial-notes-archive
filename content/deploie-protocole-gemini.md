@@ -15,32 +15,32 @@ Je sus en train de tous ré-écrire mes articles de blog, il y en a plus de 200,
 
 GEMINI
 
-Liens free hosting
-------------------
+#### Liens free hosting
+
 ```
 gemini://cdg.thegonz.net/infrastructure/hosting/
 ```
 
-Aggregator
-----------
+#### Aggregator
+
 ```
 gemini://gemini.circumlunar.space/capcom/
 ```
 
-Aggregator francophone
-----------------------
+#### Aggregator francophone
+
 ```
 gemini://geminifr.bacardi55.io/
 ```
 
-Search Directory
--------------
+#### Search Directory
+
 ```
 gemini://medusae.space/index.gmi
 ```
 
-Cheatsheet
-----------
+#### Cheatsheet
+
 ```
 Amfora
 
