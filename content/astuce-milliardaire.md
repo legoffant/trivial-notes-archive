@@ -24,6 +24,8 @@ C'est une grâve erreur d'avoir modifier cela sur l'Etherum (ETH) et modifié la
 * Quel est le bon taux d'investissement en BTC (bitcoin)? Vous devez posseder 10% de vos économies en crypto-monnaie. Je n'avais pas plus de 7000€ d'économie quand j'ai acheté mes BTC dernièrement, soit 700€ d'investissement.
 * Ou acheter des BTC? Sur Coinbase, mais c'est devenu très restrictif, il faut prouver son identité, car ils essayent de réguler les marchés depuis la chute de Mt.Gox, et en ce moment FTX... Sinon il y a la plateforme Binance qui est très bien réputé.
 
-Toujours garder un porte-feuille de cryptomonnaie sous forme papier (hard wallet) avec sa clé privée caché hors de votre ordinateur. A vous de trouvez des moyens.
+Toujours garder un porte-feuille de cryptomonnaie sous forme papier (hard wallet) avec sa clé privée caché hors de votre ordinateur. A vous de trouvez des moyens. Pour générer un "hard wallet" papier: [https://www.bitaddress.org/](https://www.bitaddress.org/). Le site est sécurisé par HTTPS.
 
 Exemple: un petit container en aluminium "pillulier" sur Amazon, que vous enterrez dans un endroit secret. Vos économies sont innacessible aux banques. On peut y mettre des millions, alors que c'est difficile de planquer des billets...
+
+NOTA: Si on ne peut pas financer la religion narkantique sur mon propre porte-feuille et adresse BTC (car je suis une cible), on décentralise les fonds, et chacun dépose un container secret.
