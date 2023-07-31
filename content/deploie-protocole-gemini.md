@@ -83,7 +83,7 @@ A propos de Trivial:
 
 contact: triviality-lga[at]protonmail.com
 
-Nombres d'articles du blog: 305 (~ un article tous les 3 jours).
+Nombres d'articles du blog: 256 (~ un article tous les 3 jours).
 
 J'utilise => https://imgbox.com/ pour upload des images avec des liens de partage.
 

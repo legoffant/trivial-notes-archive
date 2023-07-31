@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-07-31T12:29:00+02:00</updated><entry><title>Astuce, devenir milliardaire avec 500€</title><link href="/astuce-devenir-milliardaire-avec-500eur.html" rel="alternate"></link><published>2023-07-31T12:29:00+02:00</published><updated>2023-07-31T12:29:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-31:/astuce-devenir-milliardaire-avec-500eur.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila mon astuce pour devenir milliardaire. Il faut investir dans la cryptmonnaie et l'or du Bitcoin (BTC) en gardant sur du long terme, plus de 10 ans, ce que l'on appel HODL.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-07-31T13:29:00+02:00</updated><entry><title>En cours de déploiement: protocole Gémini</title><link href="/en-cours-de-deploiement-protocole-gemini.html" rel="alternate"></link><published>2023-07-31T13:29:00+02:00</published><updated>2023-07-31T13:29:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-31:/en-cours-de-deploiement-protocole-gemini.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Le Blog "Trivial Notes" va exister en mirroring sur le réseau "low tech" sécurisé Gemini. Il y a de nombreux avantages. Vous n'êtes pas traqués sur la connexion au site, on ne sait pas qui visite et on ne peut pas logger l'IP. Il n'y a pas d'indexage par du web crawling via les moteurs de recherche. Cela fonctionne comme Tor ou il y a des Directory de site et blog. Comme le code est allégé, il est très difficile de trouver des failles de sécurité. C'est du Markdown "light" le gemtext.&lt;/p&gt;
+&lt;p&gt;Je suis en train de rechercher un hébergeur gratuit, on verra si j'ai des refus ou si l'hébergeur subit des pressions en intégrant mon blog dans le temps. L'hébergeur doit utiliser une clé SSH pour la connexion au site.&lt;/p&gt;
+&lt;p&gt;Je sus en train de tous ré-écrire mes articles de blog, il y en a plus de 200, soit 10 min par article: 33 heures de travail.&lt;/p&gt;
+&lt;h3&gt;Ressource pour le réseau Gemini&lt;/h3&gt;
+&lt;p&gt;GEMINI&lt;/p&gt;
+&lt;h2&gt;Liens free hosting&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://cdg.thegonz.net/infrastructure/hosting/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Aggregator&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://gemini.circumlunar.space/capcom/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Aggregator francophone&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://geminifr.bacardi55.io/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Search Directory&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gemini://medusae.space/index.gmi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Cheatsheet&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Amfora&lt;/span&gt;
+
+&lt;span class="n"&gt;help&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vm"&gt;?&lt;/span&gt;
+&lt;span class="k"&gt;Go&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;back&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;history&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nf"&gt;left&lt;/span&gt;
+&lt;span class="k"&gt;Go&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;forward&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ow"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;history&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;alt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nf"&gt;right&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="k"&gt;Open&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;link&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;search&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;term&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;Space&lt;/span&gt;
+&lt;span class="k"&gt;View&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bookmark&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;crtl&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;B&lt;/span&gt;
+&lt;span class="n"&gt;Home&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ctrl&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;H&lt;/span&gt;
+&lt;span class="k"&gt;Add&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;change&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;remove&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Bookmark&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;crtl&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;
+&lt;span class="k"&gt;Save&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;current&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ctrl&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;
+
+&lt;span class="n"&gt;Quit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Prototype de la page index.gmi du blog&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  _______   &lt;span class="ge"&gt;_       _&lt;/span&gt;       _ 
+ |__   __| (_)     (_)     | |
+    | |_ __ ___   ___  __ _| |
+    | | &amp;#39;__| \ \ / / |/ &lt;span class="ge"&gt;_` | |&lt;/span&gt;
+&lt;span class="ge"&gt;    | | |  | |\ V /| | (_&lt;/span&gt;| | |
+  &lt;span class="ge"&gt;_ |_&lt;/span&gt;|_|  |_|_\_/ |_|\__,_|_|
+ | \ | |     | |              
+ |  \| | ___ | |_ ___  ___    
+ | . ` |/ _ \| __/ _ \/ __|   
+ | |\  | (_) | ||  __/\__ \   
+ |_| \_|\___/ \__\___||___/   
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;CC-BY Anthony J.R Le Goff - 2021                              &lt;/p&gt;
+&lt;p&gt;Bienvenue sur la capsule de Trivial, des notes personnelles traitant de sujets variés.&lt;/p&gt;
+&lt;p&gt;A propos de Trivial:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Je suis un écrivain de Science-Fiction, ingénieur système et hacker dans une perspective transhumaniste et de biohacking qui s'interface à la théologie islamique.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;contact: triviality-lga[at]protonmail.com&lt;/p&gt;
+&lt;p&gt;Nombres d'articles du blog: 305 (~ un article tous les 3 jours).&lt;/p&gt;
+&lt;p&gt;J'utilise =&amp;gt; https://imgbox.com/ pour upload des images avec des liens de partage.&lt;/p&gt;
+&lt;p&gt;Pour télécharger un article de blog dans le client Amfora: ctrl-S&lt;/p&gt;
+&lt;h4&gt;Navigation par liste des topics du blog&lt;/h4&gt;
+&lt;p&gt;=&amp;gt; [1] Entrepreneuriat&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [2] Inclassable&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [3] Programmation&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [4] Linux&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [5] Transhumanisme&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [6] Biohacking&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [7] VA(Voile et Annihilation)&lt;/p&gt;
+&lt;h4&gt;Les 4 derniers articles du blog&lt;/h4&gt;
+&lt;p&gt;=&amp;gt; [8]&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [9]&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [10]&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [11]&lt;/p&gt;
+&lt;h4&gt;Social&lt;/h4&gt;
+&lt;p&gt;=&amp;gt; [12] Github&lt;/p&gt;
+&lt;p&gt;=&amp;gt; [13] Twitter&lt;/p&gt;
+&lt;h4&gt;Info Page&lt;/h4&gt;
+&lt;p&gt;=&amp;gt; [14] LTICBA - Loge transhumaniste islamique des corsaires bretons atlantiques&lt;/p&gt;
+&lt;h4&gt;Blogroll&lt;/h4&gt;
+&lt;p&gt;(liste)&lt;/p&gt;</content><category term="Inclassable"></category><category term="gemini"></category></entry><entry><title>Astuce, devenir milliardaire avec 500€</title><link href="/astuce-devenir-milliardaire-avec-500eur.html" rel="alternate"></link><published>2023-07-31T12:29:00+02:00</published><updated>2023-07-31T12:29:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-07-31:/astuce-devenir-milliardaire-avec-500eur.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila mon astuce pour devenir milliardaire. Il faut investir dans la cryptmonnaie et l'or du Bitcoin (BTC) en gardant sur du long terme, plus de 10 ans, ce que l'on appel HODL.&lt;/p&gt;
 &lt;p&gt;Disont que l'on investi 500€.&lt;/p&gt;
 &lt;p&gt;Puis vous exterminé l'humanité, disont qu'en 2100, il reste que 250 millions d'individus sur Terre, après avoir terraformé et recyclé la planète et les structures de la civilisation actuelle.&lt;/p&gt;
 &lt;p&gt;Ce qui fait que l'on créé de la rareté, les détenteurs de portes-feuilles de cryptomonnaie seront très rare, pour les survivants. Donc le prix va exploser, sur la valeur marchande.&lt;/p&gt;
