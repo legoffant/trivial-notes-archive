@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Ressources pour SysAdmin Linux</title>
+    <title>En cours de déploiement: protocole Gémini</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Anthony Le Goff">
@@ -81,12 +81,12 @@
 						<i class="icon-folder-open icon-large"></i>Entrepreneurship
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="/category/inclassable.html">
 						<i class="icon-folder-open icon-large"></i>Inclassable
 					</a>
                   </li>
-                  <li class="active">
+                  <li >
                     <a href="/category/linux.html">
 						<i class="icon-folder-open icon-large"></i>Linux
 					</a>
@@ -117,8 +117,8 @@
                         <h1>
                                 <a href=""
                                         rel="bookmark"
-                                        title="Permalink to Ressources pour SysAdmin Linux">
-                                        Ressources pour SysAdmin Linux
+                                        title="Permalink to En cours de déploiement: protocole Gémini">
+                                        En cours de déploiement: protocole Gémini
                                 </a>
                         </h1>
                 </header>
@@ -126,140 +126,98 @@
                 <div class="well">
 <footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2022-09-01T19:16:00+02:00">
-        <i class="icon-calendar"></i>jeu. 01 septembre 2022
+<abbr class="published" title="2023-07-31T13:29:00+02:00">
+        <i class="icon-calendar"></i>lun. 31 juillet 2023
 </abbr>
 <span class="label">By</span>
 <a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
 <span class="label">Category</span>
-<a href="/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
+<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
 
 
 <span class="label">Tags</span>
-	<a href="/tag/ressources.html"><i class="icon-tag"></i>Ressources</a>
-	<a href="/tag/linux.html"><i class="icon-tag"></i>Linux</a>
-	<a href="/tag/sysadmin.html"><i class="icon-tag"></i>SysAdmin</a>
+	<a href="/tag/gemini.html"><i class="icon-tag"></i>gemini</a>
 </footer><!-- /.post-info -->                </div>
-                <p>Dans cette article nous allons nous pencher sur le métier d'administrateur système (sysAdmin) sous Linux. Je vais utiliser ce topic pour noter les ressources sur le métier.</p>
-<p>Quelques livres pour introduire le sujet à lire et avoir dans sa bibliothèque:</p>
-<ul>
-<li>UNIX and Linux System Administration Handbook, 5th Edition, 2017</li>
-<li>Practice of System and Network Administration, The Volume 1</li>
-<li>The Linux Philosophy for SysAdmins</li>
-</ul>
-<h3>Intro SysAdmin</h3>
-<p>Une série de vidéo sur Youtube pour ce lancer dans l'administration système Linux, de niveau débutant à SysAdmin: The Linux Basics Course: <a href="https://www.youtube.com/watch?v=bju_FdCo42w&amp;list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK">Beginner to SysAdmin, Step by Step</a> suivi d'un très bon cours pour savoir configurer un serveur: <a href="https://www.youtube.com/watch?v=WMy3OzvBWc0">Linux Server Course - System Configuration and Opération</a>. </p>
-<h3>Avoir son propre serveur</h3>
-<p>Pour aller plus loin, déployer un <a href="https://fr.linuxteaching.com/article/how_to_build_a_server_at_home">serveur domestique DIY</a> chez vous, pour prototyper, apprendre des services, créer vos virtuals Labs pour tester des configurations. Ne dépensez pas plus de 1000€ pour un serveur en neuf, <a href="https://www.ldlc.com/configurateur-pc/">lien vers le configurateur PC</a>:</p>
-<div class="highlight"><pre><span></span><code><span class="err">########################################################</span>
-<span class="n">Config</span><span class="w"> </span><span class="n">Server</span><span class="w"> </span><span class="n">mini</span><span class="o">-</span><span class="n">ITX</span><span class="w"> </span><span class="n">Ryzen</span><span class="w"> </span><span class="n">CPU</span><span class="w"> </span><span class="mi">32</span><span class="k">GO</span><span class="w"> </span><span class="n">RAM</span><span class="w"> </span><span class="mi">4</span><span class="n">x2TO</span><span class="w"> </span><span class="n">HDD</span><span class="w"> </span><span class="n">RAID</span>
-<span class="err">########################################################</span>
-<span class="n">Par</span><span class="w"> </span><span class="n">ldlc</span><span class="p">.</span><span class="n">com</span>
-
-<span class="o">-</span><span class="w"> </span><span class="n">ASRock</span><span class="w"> </span><span class="n">A520M</span><span class="o">-</span><span class="n">ITX</span><span class="o">/</span><span class="n">ac</span><span class="w"> </span><span class="mi">119</span><span class="err">€</span><span class="mi">95</span>
-<span class="o">-</span><span class="w"> </span><span class="n">AMD</span><span class="w"> </span><span class="n">Ryzen</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">5500</span><span class="w"> </span><span class="n">Wraith</span><span class="w"> </span><span class="n">Stealth</span><span class="w"> </span><span class="p">(</span><span class="mf">3.6</span><span class="w"> </span><span class="n">GHz</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">4.2</span><span class="w"> </span><span class="n">GHz</span><span class="p">)</span><span class="w"> </span><span class="mi">157</span><span class="err">€</span><span class="mi">96</span>
-<span class="o">-</span><span class="w"> </span><span class="n">Fractal</span><span class="w"> </span><span class="n">Design</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="mi">304</span><span class="w"> </span><span class="n">Noir</span><span class="w"> </span><span class="mi">119</span><span class="err">€</span><span class="mi">95</span>
-<span class="o">-</span><span class="w"> </span><span class="n">Corsair</span><span class="w"> </span><span class="n">Vengeance</span><span class="w"> </span><span class="n">LPX</span><span class="w"> </span><span class="n">Series</span><span class="w"> </span><span class="n">Low</span><span class="w"> </span><span class="n">Profile</span><span class="w"> </span><span class="mi">32</span><span class="w"> </span><span class="k">Go</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="n">x</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="k">Go</span><span class="p">)</span><span class="w"> </span><span class="n">DDR4</span><span class="w"> </span><span class="mi">3200</span><span class="w"> </span><span class="n">MHz</span><span class="w"> </span><span class="n">CL16</span><span class="w"> </span><span class="mi">159</span><span class="err">€</span><span class="mi">95</span>
-<span class="o">-</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">Seagate</span><span class="w"> </span><span class="n">IronWolf</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="k">To</span><span class="w"> </span><span class="mi">395</span><span class="err">€</span><span class="mi">80</span>
-<span class="o">-</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">quiet</span><span class="err">!</span><span class="w"> </span><span class="n">Straight</span><span class="w"> </span><span class="nf">Power</span><span class="w"> </span><span class="mi">11</span><span class="w"> </span><span class="mi">450</span><span class="n">W</span><span class="w"> </span><span class="mi">80</span><span class="n">PLUS</span><span class="w"> </span><span class="n">Gold</span><span class="w">  </span><span class="mi">107</span><span class="err">€</span><span class="mi">95</span>
-<span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">Corsair</span><span class="w"> </span><span class="n">Câbles</span><span class="w"> </span><span class="n">SATA</span><span class="w"> </span><span class="n">Gainés</span><span class="w"> </span><span class="n">Droits</span><span class="o">/</span><span class="n">Coudés</span><span class="w"> </span><span class="mi">30</span><span class="w"> </span><span class="n">cm</span><span class="w"> </span><span class="p">(</span><span class="n">coloris</span><span class="w"> </span><span class="n">bleu</span><span class="p">)</span><span class="w"> </span><span class="mi">29</span><span class="err">€</span><span class="mi">90</span>
-<span class="o">-</span><span class="w"> </span><span class="n">Advance</span><span class="w"> </span><span class="n">GTA</span><span class="w"> </span><span class="mi">230</span><span class="w"> </span><span class="p">(</span><span class="n">AZERTY</span><span class="w"> </span><span class="n">Français</span><span class="p">)</span><span class="w"> </span><span class="mi">19</span><span class="err">€</span><span class="mi">94</span><span class="w"> </span>
-
-<span class="nl">total</span><span class="p">:</span><span class="w"> </span><span class="mi">1111</span><span class="err">€</span>
+                <p>Le Blog "Trivial Notes" va exister en mirroring sur le réseau "low tech" sécurisé Gemini. Il y a de nombreux avantages. Vous n'êtes pas traqués sur la connexion au site, on ne sait pas qui visite et on ne peut pas logger l'IP. Il n'y a pas d'indexage par du web crawling via les moteurs de recherche. Cela fonctionne comme Tor ou il y a des Directory de site et blog. Comme le code est allégé, il est très difficile de trouver des failles de sécurité. C'est du Markdown "light" le gemtext.</p>
+<p>Je suis en train de rechercher un hébergeur gratuit, on verra si j'ai des refus ou si l'hébergeur subit des pressions en intégrant mon blog dans le temps. L'hébergeur doit utiliser une clé SSH pour la connexion au site.</p>
+<p>Je sus en train de tous ré-écrire mes articles de blog, il y en a plus de 200, soit 10 min par article: 33 heures de travail.</p>
+<h3>Ressource pour le réseau Gemini</h3>
+<p>GEMINI</p>
+<h2>Liens free hosting</h2>
+<div class="highlight"><pre><span></span><code>gemini://cdg.thegonz.net/infrastructure/hosting/
 </code></pre></div>
 
-<h3>Certifications</h3>
-<p>Pour vous faire reconnaître sur le marché du travail, passez des certifications, elles permettent de juger de vos connaissances, quelques une des plus demandés:</p>
-<ul>
-<li>Linux Essentials </li>
-<li>RHCSA - Red Hat Certified System Administrator</li>
-<li>RHCE - Red Hat Certified Engineer</li>
-<li>LPIC 1 - Linux Administrator</li>
-<li>LPIC 2 - Linux Engineer</li>
-<li>LPIC 3 - Linux Enterprise Professional Certification</li>
-<li>LFCS - Linux Foundation Certified System Administrator</li>
-<li>compTIA Linux+</li>
-</ul>
-<p><a href="https://hackr.io/blog/best-linux-certifications">Plus d'information sur les certifications</a></p>
-<h3>Programmation</h3>
-<p>Pour automatiser les tâches d'administrations il faut savoir programmer en bash, python voir du perl. Pour du scripting. Livre recommandé:</p>
-<p>Bash &amp; scripting:</p>
-<ul>
-<li>The Linux Command Line, 2nd Edition</li>
-<li>Linux® Command Line and Shell Scripting Bible, Third Edition</li>
-</ul>
-<p>Python:</p>
-<ul>
-<li>Automate the Boring Stuff with Python</li>
-<li>Python for Unix and Linux System Administration 1st Edition </li>
-</ul>
-<h3>E-Learning</h3>
-<p>Quelques liens de cours d'administrateur système:</p>
-<ul>
-<li><a href="https://training.linuxfoundation.org/training/essentials-of-linux-system-administration/">Essentials of Linux System Administration (LFS201)</a></li>
-<li><a href="https://www.udemy.com/course/linux-administration-bootcamp/">Linux Administration Bootcamp: Go from Beginner to Advanced</a></li>
-</ul>
-<h3>Organisation</h3>
-<p>League of Professional System Administrators (LOPSA):</p>
-<p><a href="https://lopsa.org/">https://lopsa.org/</a></p>
-<h3>Sites références</h3>
-<p>En français, le site de François Goffinet sur l'administration Linux:</p>
-<ul>
-<li><a href="https://linux.goffinet.org/">https://linux.goffinet.org/</a></li>
-</ul>
-<p>Le wiki r/sysadmin de la communauté Reddit:</p>
-<ul>
-<li><a href="https://www.reddit.com/r/sysadmin/wiki/index/">https://www.reddit.com/r/sysadmin/wiki/index/</a></li>
-</ul>
-<p>La documentation Ubuntu pour serveur:</p>
-<ul>
-<li><a href="https://help.ubuntu.com/community/Servers">https://help.ubuntu.com/community/Servers</a></li>
-<li><a href="https://ubuntu.com/server/docs">https://ubuntu.com/server/docs</a></li>
-</ul>
-<p>L'administration sous Debian:</p>
-<ul>
-<li><a href="https://www.debian.org/doc/manuals/debian-reference/">Guide de référence Debian</a></li>
-<li><a href="https://debian-handbook.info/browse/stable/">The Debian Administrator's Handbook</a></li>
-<li><a href="https://www.debian.org/doc/manuals/securing-debian-manual/index.fr.html">Guide de sécurité du Debian 3.19</a></li>
-</ul>
-<p><a href="https://meta.serverfault.com/">Meta Serveur Fault</a> est un site de questions et réponses pour administrateur système et réseau.</p>
-<p><a href="https://tldp.org/index.html">TLDP The Linux Documentation Project</a></p>
-<h3>Outils</h3>
-<p>10 outils Linux à connaître en tant que Sysadmin</p>
-<ul>
-<li><a href="https://geekflare.com/fr/linux-tools-for-sysadmin/">https://geekflare.com/fr/linux-tools-for-sysadmin/</a></li>
-</ul>
-<p>10 Must Have Tools for Linux System Administrators</p>
-<ul>
-<li><a href="https://www.makeuseof.com/best-tools-for-linux-system-administrators/">https://www.makeuseof.com/best-tools-for-linux-system-administrators/</a></li>
-</ul>
-<p>What’s your favorite automation tool?</p>
-<ul>
-<li><a href="https://www.redhat.com/sysadmin/favorite-automation-tool">https://www.redhat.com/sysadmin/favorite-automation-tool</a></li>
-</ul>
-<p>30 Linux System Monitoring Tools Every SysAdmin Should Know</p>
-<ul>
-<li><a href="https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html">https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html</a></li>
-</ul>
-<p>Some useful tools for Linux sysAdmin</p>
-<ul>
-<li><a href="https://ostechnix.com/some-useful-tools-for-linux-system-admins/">https://ostechnix.com/some-useful-tools-for-linux-system-admins/</a></li>
-</ul>
-<h3>Roadmap</h3>
-<ul>
-<li><a href="https://roadmap.sh/devops">https://roadmap.sh/devops</a></li>
-<li><a href="https://github.com/infinite-education/linux-admin-roadmap">https://github.com/infinite-education/linux-admin-roadmap</a></li>
-<li><a href="http://www.nrstickley.com/system-admin-roadmap/">http://www.nrstickley.com/system-admin-roadmap/</a></li>
-</ul>
-<h3>List Awesome</h3>
-<p>sysadmin-reading-list</p>
-<ul>
-<li><a href="https://github.com/unixorn/sysadmin-reading-list#online-communities">https://github.com/unixorn/sysadmin-reading-list#online-communities</a></li>
-</ul>
-<p>Awesome SysAdmin</p>
-<ul>
-<li><a href="https://github.com/kahun/awesome-sysadmin">https://github.com/kahun/awesome-sysadmin</a></li>
-</ul>
+<h2>Aggregator</h2>
+<div class="highlight"><pre><span></span><code>gemini://gemini.circumlunar.space/capcom/
+</code></pre></div>
+
+<h2>Aggregator francophone</h2>
+<div class="highlight"><pre><span></span><code>gemini://geminifr.bacardi55.io/
+</code></pre></div>
+
+<h2>Search Directory</h2>
+<div class="highlight"><pre><span></span><code>gemini://medusae.space/index.gmi
+</code></pre></div>
+
+<h2>Cheatsheet</h2>
+<div class="highlight"><pre><span></span><code><span class="n">Amfora</span>
+
+<span class="n">help</span><span class="w"> </span><span class="vm">?</span>
+<span class="k">Go</span><span class="w"> </span><span class="n">back</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">history</span><span class="w"> </span><span class="n">alt</span><span class="o">-</span><span class="nf">left</span>
+<span class="k">Go</span><span class="w"> </span><span class="n">forward</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">history</span><span class="w"> </span><span class="n">alt</span><span class="o">-</span><span class="nf">right</span><span class="w"> </span>
+<span class="k">Open</span><span class="w"> </span><span class="n">bar</span><span class="p">,</span><span class="w"> </span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">link</span><span class="w"> </span><span class="n">number</span><span class="p">,</span><span class="w"> </span><span class="k">search</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="nf">Space</span>
+<span class="k">View</span><span class="w"> </span><span class="n">bookmark</span><span class="w"> </span><span class="n">crtl</span><span class="o">-</span><span class="n">B</span>
+<span class="n">Home</span><span class="w"> </span><span class="n">ctrl</span><span class="o">-</span><span class="n">H</span>
+<span class="k">Add</span><span class="p">,</span><span class="w"> </span><span class="n">change</span><span class="p">,</span><span class="w"> </span><span class="n">remove</span><span class="w"> </span><span class="n">Bookmark</span><span class="w"> </span><span class="n">crtl</span><span class="o">-</span><span class="n">D</span>
+<span class="k">Save</span><span class="w"> </span><span class="k">current</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="n">ctrl</span><span class="o">-</span><span class="n">S</span>
+
+<span class="n">Quit</span><span class="w"> </span><span class="n">q</span>
+</code></pre></div>
+
+<h3>Prototype de la page index.gmi du blog</h3>
+<div class="highlight"><pre><span></span><code>  _______   <span class="ge">_       _</span>       _ 
+ |__   __| (_)     (_)     | |
+    | |_ __ ___   ___  __ _| |
+    | | &#39;__| \ \ / / |/ <span class="ge">_` | |</span>
+<span class="ge">    | | |  | |\ V /| | (_</span>| | |
+  <span class="ge">_ |_</span>|_|  |_|_\_/ |_|\__,_|_|
+ | \ | |     | |              
+ |  \| | ___ | |_ ___  ___    
+ | . ` |/ _ \| __/ _ \/ __|   
+ | |\  | (_) | ||  __/\__ \   
+ |_| \_|\___/ \__\___||___/   
+</code></pre></div>
+
+<p>CC-BY Anthony J.R Le Goff - 2021                              </p>
+<p>Bienvenue sur la capsule de Trivial, des notes personnelles traitant de sujets variés.</p>
+<p>A propos de Trivial:</p>
+<blockquote>
+<p>Je suis un écrivain de Science-Fiction, ingénieur système et hacker dans une perspective transhumaniste et de biohacking qui s'interface à la théologie islamique.</p>
+</blockquote>
+<p>contact: triviality-lga[at]protonmail.com</p>
+<p>Nombres d'articles du blog: 305 (~ un article tous les 3 jours).</p>
+<p>J'utilise =&gt; https://imgbox.com/ pour upload des images avec des liens de partage.</p>
+<p>Pour télécharger un article de blog dans le client Amfora: ctrl-S</p>
+<h4>Navigation par liste des topics du blog</h4>
+<p>=&gt; [1] Entrepreneuriat</p>
+<p>=&gt; [2] Inclassable</p>
+<p>=&gt; [3] Programmation</p>
+<p>=&gt; [4] Linux</p>
+<p>=&gt; [5] Transhumanisme</p>
+<p>=&gt; [6] Biohacking</p>
+<p>=&gt; [7] VA(Voile et Annihilation)</p>
+<h4>Les 4 derniers articles du blog</h4>
+<p>=&gt; [8]</p>
+<p>=&gt; [9]</p>
+<p>=&gt; [10]</p>
+<p>=&gt; [11]</p>
+<h4>Social</h4>
+<p>=&gt; [12] Github</p>
+<p>=&gt; [13] Twitter</p>
+<h4>Info Page</h4>
+<p>=&gt; [14] LTICBA - Loge transhumaniste islamique des corsaires bretons atlantiques</p>
+<h4>Blogroll</h4>
+<p>(liste)</p>
                 </div><!-- /.entry-content -->
         </article>
 </section>
