@@ -7,6 +7,8 @@ Summary:
 
 *Qui utilise Linux parmis des célébrités et gens ayant de l'influence?*
 
+Petit rappel dans le monde l'informatique, Linux représente 2,68% de la part de marché des PC personnel soit 32 millions d'utilisateurs dans le monde.
+
 * Linus Torvalds, le créateur du kernel Linux et Git est sur [Fedora](https://fedoraproject.org/fr/)
 * Richard Stallman, le créateur du projet GNU utilise [Trisquel Linux](https://trisquel.info/fr) sur Thinkpad x200
 * Julian Assange, le fondateur de Wikileaks a utilisé [Debian](https://www.debian.org/index.fr.html)
