@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-08-01T17:46:00+02:00</updated><entry><title>Les célébrités et Linux</title><link href="/les-celebrites-et-linux.html" rel="alternate"></link><published>2023-08-01T17:46:00+02:00</published><updated>2023-08-01T17:46:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-01:/les-celebrites-et-linux.html</id><summary type="html"></summary><content type="html">&lt;p&gt;&lt;em&gt;Qui utilise Linux parmis des célébrités et gens ayant de l'influence?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Petit rappel dans le monde l'informatique, Linux représente 2,68% de la part de marché des PC personnel soit 32 millions d'utilisateurs dans le monde.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Linus Torvalds, le créateur du kernel Linux et Git est sur &lt;a href="https://fedoraproject.org/fr/"&gt;Fedora&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Richard Stallman, le créateur du projet GNU utilise &lt;a href="https://trisquel.info/fr"&gt;Trisquel Linux&lt;/a&gt; sur Thinkpad x200&lt;/li&gt;
