@@ -5,7 +5,7 @@ Tags:capsule, adn, processeur
 Authors: Anthony Le Goff
 Summary:
 
-Je reviens un peu sur le matériel pour manipuler et créer un processeur à ADN en biohacking ([voir le document de recherche sur les transmutations nucléaires](https://legoffant.github.io/les-transmutations-biologiques-dans-le-biohacking.html)) que j'avais défini [une recette avancée quantifiée](https://legoffant.github.io/ma-quantification-du-processeur-a-adn.html) après quelques phases de tests et prototypes. J'ai eu des ratés, j'avais commencé avec des fioles de 2ml et un bouchon en liège qui sous la pression c'est ouvert et avait condenser de l'eau dans la capsule. Pourtant cela doit rester hermétique, c'est essentiel.  
+Je reviens un peu sur le matériel pour manipuler et créer un processeur à ADN en biohacking ([voir le document de recherche sur les transmutations nucléaires](https://legoffant.github.io/les-transmutations-biologiques-dans-le-biohacking.html)) que j'avais défini [une recette avancée quantifiée](https://legoffant.github.io/ma-quantification-du-processeur-a-adn.html) après quelques phases de tests et prototypes. J'ai eu des ratés, j'avais commencé avec des fioles de 2ml et un bouchon en liège qui sous la pression c'est ouvert et avait condenser de l'eau dans la capsule. Pourtant cela doit rester hermétique, c'est essentiel. Vous trouverez une architecture avancée de [serveur expérimental nucléaire](https://legoffant.github.io/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html) comme hébergement et artefact à partir de la graine encapsulée.
 
 Voici une liste complète avec matériel de laboratoire pour faciliter la préparation et les expériences avec le prix et fournisseur. Cela vous rendra service.  
 
