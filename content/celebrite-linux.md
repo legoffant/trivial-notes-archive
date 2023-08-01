@@ -25,6 +25,6 @@ C'est pour ça que je recommande aux enfants et débutants sous Linux et en info
 
 Que faire du contrôle parental et la liberté informatique? Le porno et le dark web est un faux problème. Si vous filtré et bloqué internet aux enfants, ceux-ci vont le découvrir dans la cour de récrée et les smartphones. Des mesures inutiles...
 
-Les enfants veulent faire du jeux-vidéos, apprenez-leur à coder et limiter les capacités graphiques de l'ordinateur, juste de quoi faire tourner du Minecraft. S'ils veulent faire des jeux-vidéos: Qu'ils apprennent à le coder eux-même.
+Les enfants veulent faire du jeux-vidéos, apprenez-leur à coder et limiter les capacités graphiques de l'ordinateur, juste de quoi faire tourner du [Minecraft](https://www.minecraft.net/fr-fr/download). S'ils veulent faire des jeux-vidéos: Qu'ils apprennent à le coder eux-même.
 
 Après tout on dit que Kim Kardishian à contribué à Xorg Server. 
