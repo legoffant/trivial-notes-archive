@@ -40,3 +40,6 @@ Prenez note:
 ![fusion D+T](images/D+T.jpg)
 
 ![carnot](images/carnot.jpg)
+
+
+Evénement synchrone et une symétrie. Un grand évènement qui fait la une: *Oppenheimer*. Qui occulte un évènement locale.
