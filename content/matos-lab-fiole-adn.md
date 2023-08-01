@@ -16,7 +16,8 @@ Ils doivent être dimensionné pour faciliter l'insertion de la fiole à ADN en 
 *   [Capsule temporelle acier inox 86mm x 185mm](https://www.amazon.fr/gp/product/B07L94DM39/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - 42€  
     
 *   [3x Capsules bouteille aluminium "pilulier" 9.7 x 3.1 x 3.1 cm](https://www.amazon.fr/gp/product/B09BL2DGKG/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - 22€
-*   [10x Fioles en verre(borosilicate) à bouchon à vis hermétique 10ML](https://www.amazon.fr/Hyber-Cara-transparent-bouteilles-d%C3%A9chantillons/dp/B089RKCFGQ/ref=sr_1_7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3OAM1OU42QSOS&keywords=fiole+verre+10ML&qid=1689660422&sprefix=fiole+verre+10ml%2Caps%2C105&sr=8-7) - 14€  
+*   [3x Capsules Porte-pilules en Aluminium 10.3 x 2.5 x 2.5 cm](https://www.amazon.fr/Porte-cl%C3%A9s-Porte-pilules-Aluminium-Bouteille-Imperm%C3%A9able/dp/B09HBVL77G/ref=d_pd_vtp_sccl_1_3/258-6891583-0590645?pd_rd_w=tYyef&content-id=amzn1.sym.4b2a56cb-536d-416c-964d-97705db637be&pf_rd_p=4b2a56cb-536d-416c-964d-97705db637be&pf_rd_r=FFZBHCGJ74F5N5T9W3JJ&pd_rd_wg=X9lPF&pd_rd_r=d0cd7be4-d508-4345-bab3-9daa900b77e3&pd_rd_i=B09HBVL77G&psc=1) - 14€
+*   [10x Fioles en verre(borosilicate) à bouchon à vis hermétique 10ML 5.4 cm de hauteur x 2.0 cm ](https://www.amazon.fr/Hyber-Cara-transparent-bouteilles-d%C3%A9chantillons/dp/B089RKCFGQ/ref=sr_1_7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3OAM1OU42QSOS&keywords=fiole+verre+10ML&qid=1689660422&sprefix=fiole+verre+10ml%2Caps%2C105&sr=8-7) - 14€  
     
 
 ### II. Système de broyage  
@@ -59,4 +60,4 @@ Pour manipuler des animaux tels que des méduses de petite taille 2-5cm
 
 *   [Épuisette d'aquarium maille fine 8cm](https://www.amazon.fr/gp/product/B00GS271D8/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) - 6€  
 
-Coût total du laboratoire: **199€**
+Coût total du laboratoire: **213€**
