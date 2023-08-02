@@ -18,7 +18,7 @@ Autres réserves:
 
 * Charbon et filtre à eau (shungite cubique)
 * Fiole Pétrole brute 5ml (Fournisseur Benigat)
-* Fiole en eau colorée scéllée, fake plutonium (Fournisseur Etsy)
+* Fiole en eau colorée scéllée 30ml, fake plutonium (Fournisseur Etsy)
 
 Comment cela fonctionne?
 
