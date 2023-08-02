@@ -15,7 +15,7 @@ Alors la supraconduction inacessible pour le commun de mortel? FAUX
 
 Les propriétés de la supraconduction se retrouve dans la superfluiditée. Entre autres l'hélium. Mais pas que! L'eau est le seul élément car à base d'hydrogène à prendre tous les états de la matière visible: Solide, Gaz, Liquide, Plasma et quantique à travers le condensat de Bose-Einstein.
 
-On peut faire de la supraconductivité avec de l'eau. Pour cela un savon à base d'eau + sel + huile + glycérine et un peu de lait (coco, amande etc...). J'utilise "La Corvette". Un savon inerte n'est pas supraconducteur, il faut lui donnée une forme pour générer une anomalie qui va extraire de l'énergie du vide quantique à 0°K et créer un champ. L'anomalie est invisible (c'est un trou noir)
+On peut faire de la supraconductivité avec de l'eau. Pour cela un savon à base d'eau + sel + huile + glycérine et un peu de lait (coco, amande etc...). J'utilise "La Corvette". Un savon inerte n'est pas supraconducteur, il faut lui donnée une forme pour générer une anomalie qui va extraire de l'énergie du vide quantique à 0°K et créer un champ = un drain. L'anomalie est invisible (c'est un trou noir)
 
 En gros on va magnétiser du savon. Blague?
 
