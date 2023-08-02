@@ -15,7 +15,7 @@ Chez moi j'accumule à un taux faramineux des poussières dans mon studio, anorm
 
 Allons on va mettre en culture des moisissures. Pour cela il faut des boites de Pétri de notre laboratoire à Biohacking. [Comment faire pousser des moisissures](https://fr.wikihow.com/faire-pousser-des-moisissures) et [culture de moisissure](https://www.mnhn.fr/fr/culture-de-moisissures)
 
-On va sélectionner notre ingrédient de prédilection: la pomme de Newton et la gravitation. Invoque un trou de verre?
+On va sélectionner notre ingrédient de prédilection: la pomme de Newton et la gravitation. Invoque un trou de verre? Ici c'est Arrakis et les épices.
 
 Donc il faut:
 
