@@ -28,9 +28,10 @@ Bureaux légers:
 * [Lubuntu](https://lubuntu.me/) basée sur Lxqt
 * [Xubuntu](https://xubuntu.org/) basée sur XFCE
 
-Bureau lourd:
+Bureaux lourds:
 
 * [Ubuntu](https://ubuntu.com/download/desktop) basée sur Gnome Shell
+* [Kubuntu](https://kubuntu.org/) basée sur KDE Plasma
 
 Ancien bureau:
 
