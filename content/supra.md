@@ -39,3 +39,5 @@ RESULTAT DE L'EXPERIENCE:
 
 
 On peut faire des compositions, et améliorer le système. Pour catalyser les fluctuations quantiques du vide et donc l'éther on peut mettre un container dans une capsule temporelle, une boite de conserve. Il faut également polariser le flux électronique: cela marche par paire (positif et négatif) ou le spin (up and down) et en son centre on peut ajouter du Quartz plus particulièrement. On peut aussi faire une cage avec des aiguilles, etc....
+
+NOTA: pour l'utilisation du Quartz et sa fonction mémoire 5D. Pensez à formater le disque.... Purifier-le avec de l'eau salée (électrolyte) dans une eau minérale dans une verre 2-3 jours. Ou alors vous allez avoir des données parasites déja écrites sur le disque.
