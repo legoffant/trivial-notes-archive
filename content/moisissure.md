@@ -23,5 +23,6 @@ Donc il faut:
 * Un peu d'eau salée (électrolyte)
 * Un boite de Pétri fermée
 * Un peu de lumière, chaleur augmente le taux d'humidité, évaporation.
+* Créer un champ tournant dans la boite de Pétri: au moins trois morceaux de pommes.
 
 On fait de la bio et nano-technologie.
