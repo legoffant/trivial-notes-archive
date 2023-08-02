@@ -7,7 +7,7 @@ Summary:
 
 Petit rappel que les alchimistes et la création est une culture agricole. C'est important si vous êtes créateur (et donc destructeur) vous êtes un cultivateur en particulier à travers l'ADN. D'ou l'importance du terreau fertile (voir fissile) et les transmutations.
 
-Ma capsule temporelle a un design particulier. Elle n'a pas 4 processeurs à ADN. Même si je pourrais, car c'est un choix de conception et donc décisionnelle. De l'importance d'intégrer des greniers et réserves.
+Ma capsule temporelle a un design particulier. Elle n'a pas 4 processeurs à ADN. Même si je pourrais, car c'est un choix de conception et donc décisionnel. De l'importance d'intégrer des greniers et réserves.
 
 * Capsule 1: **Le planétaire** : du vide avec des gemmes et pierres précieuses dans la poudre et poussière.
 * Capsule 2: **le grenier** : Des réserves de graines sélectionnées + (avoines, agar-agar, du thé (un conservateur) )
