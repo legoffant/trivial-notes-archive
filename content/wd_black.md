@@ -15,9 +15,10 @@ Liste des jeux:
 * Death Stranding
 * Prey
 * Nier Automata
-* Titanfall 2
+* Titanfall 2 (en cours d'achat)
 * Shadow of the Collossus
 * Mass Effect: Andromeda
+* Cyberpunk 2077 (en cours d'achat)
 
 Ouaich je suis un gamer.
 
