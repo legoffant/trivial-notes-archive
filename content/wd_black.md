@@ -17,6 +17,7 @@ Liste des jeux:
 * Nier Automata
 * Titanfall 2
 * Shadow of the Collossus
+* Mass Effect: Andromeda
 
 Ouaich je suis un gamer.
 
