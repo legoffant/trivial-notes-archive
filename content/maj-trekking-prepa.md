@@ -27,6 +27,7 @@ Je me prépare à la lecture de carte, GPS et à l'utilisation de bousole à vis
 
 * [Apprendre à lire une carte en cinq étapes](https://www.ign.fr/reperes/apprendre-lire-une-carte-en-cinq-etapes)
 * [Comment utiliser une boussole](https://apprenti-randonneur.com/comment-utiliser-boussole/)
+* [Revue boussole Proster](https://grandespoches.net/revue-du-proster-boussole/)
 * [Choix de GPS de randonnée - Garmin Foretrex 601 pour les militaires](https://www.auvieuxcampeur.fr/guide-de-choix-gps-randonnee)
 
 
