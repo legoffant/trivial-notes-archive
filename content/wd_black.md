@@ -19,6 +19,7 @@ Liste des jeux:
 * Shadow of the Collossus
 * Mass Effect: Andromeda
 * Cyberpunk 2077 (en cours d'achat)
+* Minecraft (en cours d'achat)
 
 Ouaich je suis un gamer.
 
