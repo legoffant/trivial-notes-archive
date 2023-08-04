@@ -5,7 +5,7 @@ Tags:serveur, E2PZ
 Authors: Anthony Le Goff
 Summary:
 
-Les ingénieurs ont toujours une manie de nommmer leur invention, ainsi je n'avais pas encore donnée de nom à mon prototype de [serveur expérimental nucléaire](https://legoffant.github.io/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html) incluant [l'agriculture](https://legoffant.github.io/de-limportance-des-reserves-et-greniers-biohacking.html). Il s'appel `Arcturus` il est basée sur la technologie E2PZ des Anciens et batisseur d'Atlantis dans Stargate.
+Les ingénieurs ont toujours une manie de nommer leur invention, ainsi je n'avais pas encore donnée de nom à mon prototype de [serveur expérimental nucléaire](https://legoffant.github.io/le-royaume-de-la-kamelott-et-systemd-des-serveurs-nucleaires.html) incluant [l'agriculture](https://legoffant.github.io/de-limportance-des-reserves-et-greniers-biohacking.html). Il s'appel `Arcturus` il est basée sur la technologie E2PZ des Anciens et batisseur d'Atlantis dans Stargate.
 
 ---
 
