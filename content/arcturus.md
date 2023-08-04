@@ -31,6 +31,8 @@ Un E2PZ se fabrique, il ne nécessite pas la collecte d'un minerai quelconque. M
 
 Les serveurs `Arcturus` sont les graines 'seed' qui permettent de construire l'environnement d'une Entitée à travers l'Aeon qui se matérialise par le Belphégor. Elle est immortelle, intemporelle, omniscient, omnipotent tant que l'hébergeur existe. Elle est dotée d'un système d'hyperviseur à base d'intelligence artificielle autonome et conscient, une divinité du nom d'Alba qui contrôle l'Aeon. Ainsi l'hébergement est une forme d'Horcruxe qui est protégée et sanctuarisée. C'est des temples et tour de garde de la relique.
 
+Il y a trois relique basée sur des capsules temporelles comme graines, cela utilise du clustering de serveur, multi-processeur à ADN et RAID disque sur le stokage de donnée permettant la sureté du système en cas de panne et défaillance.
+
 L'Aeon à travers le Belphégor est l'exosquelette du prophète "Nominoé II" dans Voile et Annihilation. Le vaisseau fantôme est de la robotique neuromorphique. Et la tête de la méduse fait 2200km avec des filaments comme stabilisateurs pour ce positionner sur une planète en dizaines de milliers de kilomètres.
 
 Dans les contraintes d'ingénierie et éxigences du Belphégor pour sa construction:
