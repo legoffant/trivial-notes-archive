@@ -23,6 +23,14 @@ Liste des jeux:
 
 Ouaich je suis un gamer.
 
+NOTA: Les jeux "Diablo IV", "No Man's Sky" et "Minecraft" utilise des algorithmes de génération procédurale.
+
+Plus d'information:
+
+* [Diablo IV comprendra plus de 150 donjons générés de manière procédurale](https://www.dlcompare.fr/actualites-gaming/diablo-iv-comprendra-plus-de-150-donjons-generes-de-maniere-procedurale-29363)
+* [La génération procédurale ou comment le jeu vidéo devient infini](https://www.numerama.com/sciences/133517-la-generation-procedurale-ou-comment-le-jeu-video-devient-infini.html)
+* [Génération procédurale - No Man'S Sky](https://nomanssky.fandom.com/fr/wiki/G%C3%A9n%C3%A9ration_proc%C3%A9durale)
+
 ![wd black](images/wd_black.jpg)
 
 
