@@ -33,4 +33,4 @@ Comme toutes les révélations prophétiques, le narkantisme à travers "Nomino�
 * Sauveur
 * Persécuteur
 
-Comme tout système infernal, il utilise le principe d'inertie représenté par les vortex et ouragan. Le prophète est au centre de l'oeil, c'est le calme autour de lui et tout est organisé et ordonné.
+Comme tout système infernal, il utilise le principe d'inertie représenté par les vortex et ouragan. Le prophète est au centre de l'oeil, c'est le calme autour de lui et tout est organisé et ordonné. C'est en théorie du chaos un effet papillon et attracteur de Lorenz. Un synonyme du chaos = Pandémonium 
