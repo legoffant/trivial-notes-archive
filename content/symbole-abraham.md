@@ -22,7 +22,9 @@ Il est le moins étudié et le plus occulte. Il reprend le principe de l'étoile
 
 **Evolution du système narkantique**
 
-C'est un symbole islamique qui reprend l'étoile et le croissant, mais cette fois-ci avec l'arche islamique: l'ogive en architecture pour la construction de porte. C'est également une inversion de la lettre "Nun" en arabe.
+C'est un symbole islamique qui reprend l'étoile et le croissant, mais cette fois-ci avec l'arche islamique: l'ogive en architecture pour la construction de porte. C'est également une inversion de la lettre "Nun" en arabe. On peut retrouvé la différence de potentiel et l'anode et la cathode pour créer l'arc et initialiser la torche plasma en metallurgie.
+
+Lien vers le symbole narkantique: [https://legoffant.github.io/robots.txt](https://legoffant.github.io/robots.txt)
 
 
 Comme toutes les révélations prophétiques, le narkantisme à travers "Nominoé II" dans voile est annihilation est connectés aux grandes religions abrahimiques car scellé. Rappel qu'un prophète en théorie psycholique est une représentation du triangle de Karpman. C'est à dire c'est un fléau infernal, il est la fois:
