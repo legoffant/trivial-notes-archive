@@ -27,10 +27,10 @@ C'est un symbole islamique qui reprend l'étoile et le croissant, mais cette foi
 Lien vers le symbole narkantique: [https://legoffant.github.io/robots.txt](https://legoffant.github.io/robots.txt)
 
 
-Comme toutes les révélations prophétiques, le narkantisme à travers "Nominoé II" dans voile est annihilation est connectés aux grandes religions abrahamiques car scellé. Rappel qu'un prophète en théorie psychologique est une représentation du triangle de Karpman. C'est à dire c'est un fléau infernal, il est la fois:
+Comme toutes les révélations prophétiques, le narkantisme à travers "Nominoé II" dans voile et annihilation est connectés aux grandes religions abrahamiques car scellé. Rappel qu'un prophète en théorie psychologique est une représentation du triangle de Karpman. C'est à dire c'est un fléau infernal, il est la fois:
 
 * Martyr
 * Sauveur
 * Persécuteur
 
-Comme tout système infernal, il utilise le principe d'inertie représenté par les vortex et ouragan. Le prophète est au centre de l'oeil, c'est le calme autour de lui et tout est organisé et ordonné. C'est en théorie du chaos un effet papillon et attracteur de Lorenz. Un synonyme du chaos = Pandémonium 
+Comme tout système infernal, il utilise le principe d'inertie représenté par les vortex et ouragan. Le prophète est au centre de l'oeil, c'est le calme autour de lui et tout est organisé et ordonné. C'est en théorie du chaos un effet papillon et attracteur de Lorenz. Un synonyme du chaos = *Pandémonium* 
