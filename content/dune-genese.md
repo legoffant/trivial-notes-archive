@@ -7,7 +7,7 @@ Summary:
 
 Je partage mes lectures du moment, même si je prends un peu moins de temps pour lire durant mes activités, je fais du data mining. En gros je blog, fait un peu de science et de la lecture au calme au studio avec parfois des marches dans Brest.
 
-Un livre très intéressante et l'évasion des Atréides de la planète Terre sur le vaisseau "Le Voyageur de Rêve".
+Un livre très intéressant et l'évasion des Atréides de la planète Terre sur le vaisseau "Le Voyageur de Rêve".
 
 Synopsis:
 
