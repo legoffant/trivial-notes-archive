@@ -17,7 +17,7 @@ La croix représente un pointeur comme abstraction. Système de balisage comme p
 
 3. Étoile et croissant islamique
 
-Il est le moins étudié et le plus occulte. Il reprend le principe de l'étoile de David et le pointage par la localisation, et un symbole lunaire à travers le croissant. Qui peut également représenté une occultation et l'obscurssissement à travers l'ombre. C'est un système de dualité onde-corpuscule en théorie de la mécanique quantique. Et un ancrage sur le spectre, et le verset des morts-vivants dans le Coran. l'ombre est un symbole très important dans l'Islam par le voile des musulmanes. Qui est total via la Niqab au plus proche de la Kaaba, la mosquée Al-Haram (des interdits). 
+Il est le moins étudié et le plus occulte. Il reprend le principe de l'étoile de David et le pointage par la localisation, et un symbole lunaire à travers le croissant. Qui peut également représenté une occultation et l'obscurssissement à travers l'ombre. C'est un système de dualité onde-corpuscule en théorie de la mécanique quantique. Et un ancrage sur le spectre, et le verset des morts-vivants dans le Coran. l'ombre est un symbole très important dans l'Islam par le voile des musulmanes. Qui est total via la Niqab au plus proche de la Kaaba, la mosquée Al-Haram (des interdits) ou seul les yeux sont visibles (la vision)
 
 
 **Evolution du système narkantique**
@@ -27,7 +27,7 @@ C'est un symbole islamique qui reprend l'étoile et le croissant, mais cette foi
 Lien vers le symbole narkantique: [https://legoffant.github.io/robots.txt](https://legoffant.github.io/robots.txt)
 
 
-Comme toutes les révélations prophétiques, le narkantisme à travers "Nominoé II" dans voile est annihilation est connectés aux grandes religions abrahimiques car scellé. Rappel qu'un prophète en théorie psychologique est une représentation du triangle de Karpman. C'est à dire c'est un fléau infernal, il est la fois:
+Comme toutes les révélations prophétiques, le narkantisme à travers "Nominoé II" dans voile est annihilation est connectés aux grandes religions abrahamiques car scellé. Rappel qu'un prophète en théorie psychologique est une représentation du triangle de Karpman. C'est à dire c'est un fléau infernal, il est la fois:
 
 * Martyr
 * Sauveur
