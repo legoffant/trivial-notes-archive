@@ -15,3 +15,5 @@ Bande-annonce:
 
 
 Tout tourne autour de le Kaaba islamique. L'hypercube noire de la mosquée Al-Haram à Mecca. La shungite dans le gisement unique de Karelia en Russie. 
+
+![alita](images/alita.png)
