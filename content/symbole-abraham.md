@@ -17,7 +17,7 @@ La croix représente un pointeur comme abstraction. Système de balisage comme p
 
 3. Étoile et croissant islamique
 
-Il est le moins étudié et le plus occulte. Il reprend le principe de l'étoile de David et le pointage par la localisation, et un symbole lunaire à travers le croissant. Qui peut également représenté une occultation et l'obscurssissement à travers l'ombre. C'est un système de dualité onde-corpuscule en théorie de la mécanique quantique. Et un ancrage sur le spectre, et le verset des morts-vivants dans le Coran. l'ombre est un symbole très important dans l'Islam par le voile des musulmanes. Qui est total via la Niqab au plus proche de la Kaaba, la mosquée Al-Haram (des interdits) ou seul les yeux sont visibles (la vision)
+Il est le moins étudié et le plus occulte. Il reprend le principe de l'étoile de David et le pointage par la localisation, et un symbole lunaire à travers le croissant et la fertilité, symbole agricole. Qui peut également représenté une occultation et l'obscurssissement à travers l'ombre. C'est un système de dualité onde-corpuscule en théorie de la mécanique quantique. Et un ancrage sur le spectre, et le verset des morts-vivants dans le Coran. l'ombre est un symbole très important dans l'Islam par le voile des musulmanes. Qui est total via la Niqab au plus proche de la Kaaba, la mosquée Al-Haram (des interdits) ou seul les yeux sont visibles (la vision)
 
 
 **Evolution du système narkantique**
