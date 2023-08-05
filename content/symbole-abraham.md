@@ -33,4 +33,4 @@ Comme toutes les révélations prophétiques, le narkantisme à travers "Nomino�
 * Sauveur
 * Persécuteur
 
-Comme toute système infernal, il utilise le principe d'inertie représenté par les vortex et ouragan. Le prophète est au centre de l'oeil, c'est le calme autour de lui et tout est organisé et ordonné.
+Comme tout système infernal, il utilise le principe d'inertie représenté par les vortex et ouragan. Le prophète est au centre de l'oeil, c'est le calme autour de lui et tout est organisé et ordonné.
