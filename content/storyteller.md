@@ -24,3 +24,5 @@ L'oeuvre majeur que j'ai lu qui me permet de garder une trace du genre est "[Les
 Je m'inspire de l'ésostérisme religieux et ces codes pour fournir un effort de créer un livre qui serait une autodafé célèbre tel que "Fahrenheit 451". C'est à dire que "Voile et Annihilation" est une version moderne du [Necronomicon](https://fr.wikipedia.org/wiki/Necronomicon) dans des aspects du Space Opera incluant du transhumanisme. Un livre unique et OVNI du genre. Sa lecture fera de vous un mort et vous subirez le rappel de l'au-delà pour avoir faire preuve de pêché de la connaissance.
 
 C'est à dire que l'art de la rumeur et la polémique fait parti intégrante de la stratégie de diffusion de l'oeuvre.
+
+Bien sur l'horreur dans "Voile et Annhilation" est une tactique de camouflage et de contre-mesure pour protéger un royaume, aux richesses insoupçonnés contre le pillage ou le sabotage: celui d'Albani. Cela fait parti de l'épreuve pour l'accès à la porte du royaume et comme système de conversion et son imaginaire
