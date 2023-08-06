@@ -19,7 +19,7 @@ Les principes des grands écrivains est de tout créer un cadre "frame" pour imm
 
 Ma spécialité est la *science-fiction horrifique*. C'est à dire le développement de fléau et de calamité, dans la lignée de H.P Lovecraft, qui rappelons-le n'a jamais perçé de son vivant, c'est une oeuvre post-mortem. Que l'ermite de Providence.
 
-L'oeuvre majeur que j'ai lu qui me permet de garder une trace du genre est "Les Cantos D'Hypérion" de Dan Simmons
+L'oeuvre majeur que j'ai lu qui me permet de garder une trace du genre est "[Les Cantos D'Hypérion](https://www.babelio.com/livres/Simmons-Les-Cantos-dHyperion-tome-1--Hyperion-1/5603)" de Dan Simmons
 
 Je m'inspire de l'ésostérisme religieux et ces codes pour fournir un effort de créer un livre qui serait une autodafé célèbre tel que "Fahrenheit 451". C'est à dire que "Voile et Annihilation" est une version moderne du [Necronomicon](https://fr.wikipedia.org/wiki/Necronomicon) dans des aspects du Space Opera incluant du transhumanisme. Un livre unique et OVNI du genre. Sa lecture fera de vous un mort et vous subirez le rappel de l'au-delà pour avoir faire preuve de pêché de la connaissance.
 
