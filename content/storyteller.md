@@ -25,4 +25,6 @@ Je m'inspire de l'ésostérisme religieux et ces codes pour fournir un effort de
 
 C'est à dire que l'art de la rumeur et la polémique fait parti intégrante de la stratégie de diffusion de l'oeuvre.
 
-Bien sur l'horreur dans "Voile et Annhilation" est une tactique de camouflage et de contre-mesure pour protéger un royaume, aux richesses insoupçonnés contre le pillage ou le sabotage: celui d'Albani. Cela fait parti de l'épreuve pour l'accès à la porte du royaume et comme système de conversion et son imaginaire
+Bien sur l'horreur dans "Voile et Annhilation" est une tactique de camouflage et de contre-mesure pour protéger un royaume, aux richesses insoupçonnés contre le pillage ou le sabotage: celui d'Albani. Cela fait parti de l'épreuve pour l'accès à la porte du royaume et comme système de conversion et son imaginaire.
+
+L'oeuvre est né dans une forme de Pandémonium à l'origine la planète Terre.
