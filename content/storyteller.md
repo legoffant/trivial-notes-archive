@@ -31,4 +31,6 @@ Bien sur l'horreur dans "Voile et Annhilation" est une tactique de camouflage et
 
 L'oeuvre est né dans une forme de Pandémonium à l'origine la planète Terre.
 
-Le Codex et l'origine de "Voile et Annihilation" est V+A c'est à dire V pour Valar et A pour Atlante. Une guerre sans fin et cataclysmique ou les traitres et les corbeaux sont légions.
+Le Codex et l'origine de "Voile et Annihilation" est V+A c'est à dire V pour Valar et A pour Atlante. Une guerre sans fin et cataclysmique ou les traitres et les corbeaux sont légions. Cela est représenté par un point d'équilibre sur Terre à l'époque du début du roman ou il y a autant de chrétiens (les partisans du père Eru Illuvatar) que de musulmans (Les Atlantes Islamisés au Mt Atlas).
+
+Avant le carnage et la bataille, par la rupture de symétrie et l'apparition du haut-roi Atlante en personne: Nominoë II, le phoénix.
