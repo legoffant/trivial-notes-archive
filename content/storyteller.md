@@ -7,7 +7,7 @@ Summary:
 
 Tout d'abord quelques grille de lecture de "Voile et Annihilation", je pratique l'art du storytelling que j'ai appris dans le milieu de la séduction et des principes de programmation neuro-linguistique (PNL) en communication. Je suis devenu un expert pour raconter des histoires et captiver mon auditoire. 
 
-Je suis un rôle player, un peu fanatique et j'abord me mettre dans la peau de mes personnages. Et je suis une sorte de scénariste et de metteur en scène ou je plante le décor du récit de ma fiction, tout en y apportant des éléments de crédibilité ou la frontière entre la réalité et le mythe est flou en appliquant des principes de dramaturgie.
+Je suis un rôle player, un peu fanatique et j'adord (luxor!) me mettre dans la peau de mes personnages. Et je suis une sorte de scénariste et de metteur en scène ou je plante le décor du récit de ma fiction, tout en y apportant des éléments de crédibilité ou la frontière entre la réalité et le mythe est flou en appliquant des principes de dramaturgie.
 
 Les principes des grands écrivains est de tout créer un cadre "frame" pour immerger le lecteur:
 
