@@ -35,4 +35,4 @@ Le Codex et l'origine de "Voile et Annihilation" est V+A c'est à dire V pour Va
 
 Avant le carnage et la bataille, par la rupture de symétrie et l'apparition du haut-roi Atlante en personne: Nominoë II, le phoénix.
 
-Pour mettre dans l'ambiance: ["Fear et Wonder"](https://www.youtube.com/watch?v=7GfDX9u0puo) à l'écoute.
+Pour mettre dans l'ambiance: ["Fear and Wonder"](https://www.youtube.com/watch?v=7GfDX9u0puo) à l'écoute.
