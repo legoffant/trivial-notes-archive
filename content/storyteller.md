@@ -17,6 +17,8 @@ Les principes des grands écrivains est de tout créer un cadre "frame" pour imm
 * Langue
 * Science
 
+L'oeuvre créatrice est linguistique ou l'on nomme et invente des mots à travers une langue. L'invention n'est pas seulement une question de néologisme littéraire, mais également on y attache des découvertes par la pratique des explorateurs et ingénieurs aux savants. D'ou la nécessité du cadre islamique.
+
 Ma spécialité est la *science-fiction horrifique*. C'est à dire le développement de fléau et de calamité, dans la lignée de H.P Lovecraft, qui rappelons-le n'a jamais perçé de son vivant, c'est une oeuvre post-mortem. Que l'ermite de Providence.
 
 L'oeuvre majeur que j'ai lu qui me permet de garder une trace du genre est "[Les Cantos D'Hypérion](https://www.babelio.com/livres/Simmons-Les-Cantos-dHyperion-tome-1--Hyperion-1/5603)" de Dan Simmons
