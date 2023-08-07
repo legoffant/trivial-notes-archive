@@ -26,6 +26,8 @@ La méduse n'a pas de cerveau, elle a un réseau neuronal, environ entre 8700 et
 
 Pour produire un cycle azoté, il faut soit une eau riche en nitrate, soit des déchets organiques, tels que des algues. Il faut également filtrée l'eau, et la purifier tout en injectant de l'air qui est composé: d'azote (78,08 %), d'oxygène (20,95 %) et, pour moins de 1 %, de gaz rares. Dans de rares cas, il peut ce développer des blobs dans les aquariums.
 
+Cela reste de l'agriculture, et l'engrais est à base d'azote.
+
 ### Le courant
 
 Générer un courant est plus complexe, il faut une forme spécifique, circulaire. Ainsi les aquariums à méduse sont en forme d'anneau. De plus il faut généralement une lampe à ultraviolet pour l'observer.
