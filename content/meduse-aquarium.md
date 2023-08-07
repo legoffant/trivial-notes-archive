@@ -5,7 +5,7 @@ Tags:aquarium, meduse
 Authors: Anthony Le Goff
 Summary:
 
-J'ai eu le droit à une petite cure de rappel à ma libération d'hopital psychiatrique à Brest par la visite d'Océanopolis et l'atelier sur les planctons à Brest.
+J'ai eu le droit à une petite cure de rappel à ma libération d'hopital psychiatrique à Brest par la visite d'Océanopolis et l'atelier sur les planctons.
 
 Elever des méduses est très particulier. Il faut deux élements essentiels:
 
