@@ -3,8 +3,9 @@ Date: 2021-12-01 20:30
 Modified: 2021-12-01 20:30
 Slug: lticba
 
+------
 # Loge transhumaniste islamique des corsaires bretons atlantiques
-
+------
 
 Est un collectif de hackers sous la forme d'un think thank qui produit des études sur les thèmes suivants
 
