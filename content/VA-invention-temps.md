@@ -42,4 +42,4 @@ $ date +"%s"
 
 ### Raconter des histoires
 
-Ainsi le début de l'écriture de la nouvelle création dans "Voile et Annihilation: L'obsolescence narkantique" a commencé à l'an 51 UNIX. vers le moi d'Avril. le 4/51
+Ainsi le début de l'écriture de la nouvelle création dans "Voile et Annihilation: L'obsolescence narkantique" a commencé à l'an 51 UNIX. vers le mois d'Avril. le 4/51
