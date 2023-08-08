@@ -16,7 +16,13 @@
 &lt;p&gt;L'epoch (de l'anglais époque ou ère) représente la date initiale à partir de laquelle est mesuré le temps par les systèmes d'exploitation. Certains logiciels utilisent une epoch différente de leur système d'exploitation, ce qui peut conduire à des bugs.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4&gt;Début du temps&lt;/h4&gt;
-&lt;p&gt;L'origine de l'heure UNIX a été choisie comme étant le &lt;strong&gt;1er janvier 1970 00:00:00 UTC&lt;/strong&gt;. Qui dérive sur la création du langage C et l'écriture du système d'exploitation d'UNIX et ces outils tel que l'éditeur de texte en ligne de commande: Vi en 1976.&lt;/p&gt;
+&lt;p&gt;L'origine de l'heure UNIX a été choisie comme étant le &lt;strong&gt;1er janvier 1970 00:00:00 UTC&lt;/strong&gt;. Qui dérive sur la création du langage C et l'écriture du système d'exploitation d'UNIX et ces outils tel que l'éditeur de texte en ligne de commande: Vi en 1976. Egalement deux ans auparavant est sortie le film culte et roman de SF "2001: L'Odyssée de l'Espace" en 1968. l'année 1970 à plusieurs évenements majeurs en datascience et clustering de l'information tel que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La Chine lance son premier satellite, Dong Fang Hong 1.&lt;/li&gt;
+&lt;li&gt;La pièce de théâtre "L'Epidémie" d'Eugéne Ionesco est présentée au théâtre Montparnasse à Paris. Elle sera rebaptisée "Triomphe de la mort" avant de devenir "Jeux de massacre". &lt;/li&gt;
+&lt;li&gt;Parution du premier tome des ´Mémoires d´espoir´ du général de Gaulle.&lt;/li&gt;
+&lt;li&gt;L´avion supersonique Concorde OO1 atteint deux fois la vitesse du son.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Conversion du temps UNIX&lt;/h3&gt;
 &lt;p&gt;On peut récupérer sur n'importe laquelle des machines de type UNIX-Like le temps Epoch en seconde via la commande:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;date&lt;span class="w"&gt; &lt;/span&gt;+&lt;span class="s2"&gt;&amp;quot;%s&amp;quot;&lt;/span&gt;

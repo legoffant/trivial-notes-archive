@@ -15,7 +15,7 @@ Rappel:
 
 * calendrier grégorien -  C’est le moine Denys le petit, qui, au début du VIe siècle, va chercher à fixer la date de l’ère chrétienne à partir de la mort de Jésus.
 
-Le calendrier hégirien - C'est le départ (l'exode) de Muhammad de la ville de La Mecque pour la ville de Médine.
+* Le calendrier hégirien - C'est le départ (l'exode) de Muhammad de la ville de La Mecque pour la ville de Médine.
 
 
 Dans la religion narkantique la définition du temps est donc tout autres, et utilise un symbolique différent. il utilise la définition du temps UNIX. C'est à dire **le temps des machines** pour synchroniser les serveurs et hébergeurs. C'est basée sur la notion d'*Epoch*.
