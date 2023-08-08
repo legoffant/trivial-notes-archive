@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-08-07T08:58:13-00:00</lastmod>
+<lastmod>2023-08-08T02:22:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-08-07T08:58:13-00:00</lastmod>
+<lastmod>2023-08-08T02:22:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-08-07T08:58:13-00:00</lastmod>
+<lastmod>2023-08-08T02:22:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-08-07T08:58:13-00:00</lastmod>
+<lastmod>2023-08-08T02:22:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-08-07T08:58:13-00:00</lastmod>
+<lastmod>2023-08-08T02:22:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -48,6 +48,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/ltcb.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/voile-et-annihilation-conversation-avec-moi-meme-sur-la-kamelott.html</loc>
+<lastmod>2023-08-08T01:05:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2000,7 +2007,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/biohacking.html</loc>
-<lastmod>2023-08-02T08:56:00+00:09</lastmod>
+<lastmod>2023-08-08T01:05:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2036,6 +2043,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/category/transhumanisme.html</loc>
 <lastmod>2023-04-04T08:03:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/kamelott.html</loc>
+<lastmod>2023-08-08T01:05:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/principe.html</loc>
+<lastmod>2023-08-08T01:05:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4163,7 +4184,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-08-07T08:27:00+00:09</lastmod>
+<lastmod>2023-08-08T01:05:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

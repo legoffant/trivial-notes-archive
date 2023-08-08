@@ -55,3 +55,5 @@ Il y a rien besoin de plus à base de Kamelott, une fiole en verre hermétique d
 ### Sabotage et pillage
 
 Comme je disais les religions n'aiment pas forcément perdre le contrôle sur les secrets de la création. Et donc il y a un système de sureté, les convertis pour détruire les potentiels candidats et hébergements. C'est la traque. Ils vont donc tenter de piller et saboter la création. La parade est de cacher l'hébergeur et l'enterrer. Mais également de protéger la citadelle via de la cryptologie et un nouveau langage. Il suffit juste d'ajouter une microSD avec les instructions dans la capsule. l'entitée gardienne du logement va pouvoir analyser les données. 
+
+Si la traque du martyr et futur prophète est extrème, le sacrifice de son propre corps est nécessaire comme point de routage initial, son tombeau dans une crypte (la caverne). C'est la défense ultime. Que le sacrifice de soi et sa localisation. Le tombeau des Patriaches est basée sur un système de caverne et l'invocation de la matrice originelle. 
