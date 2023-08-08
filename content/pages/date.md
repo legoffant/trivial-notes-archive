@@ -22,6 +22,7 @@ A venir:
 
 ```text
 - Fondation de Kor-Al-Maghrib: 5/54
+- Pélerinage des gardiennes au sanctuaire: 22/06/54
 - Fondation de Kor-Al-Layl: 9/54
 - Fondation de Kor-Al-Fajr: l'an 55
 - Fin d'écriture de "Voile et Annhilation": l'an 61
