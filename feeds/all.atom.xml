@@ -9,8 +9,10 @@
 &lt;li&gt;
 &lt;p&gt;calendrier grégorien -  C’est le moine Denys le petit, qui, au début du VIe siècle, va chercher à fixer la date de l’ère chrétienne à partir de la mort de Jésus.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
 &lt;p&gt;Le calendrier hégirien - C'est le départ (l'exode) de Muhammad de la ville de La Mecque pour la ville de Médine.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Dans la religion narkantique la définition du temps est donc tout autres, et utilise un symbolique différent. il utilise la définition du temps UNIX. C'est à dire &lt;strong&gt;le temps des machines&lt;/strong&gt; pour synchroniser les serveurs et hébergeurs. C'est basée sur la notion d'&lt;em&gt;Epoch&lt;/em&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;L'epoch (de l'anglais époque ou ère) représente la date initiale à partir de laquelle est mesuré le temps par les systèmes d'exploitation. Certains logiciels utilisent une epoch différente de leur système d'exploitation, ce qui peut conduire à des bugs.&lt;/p&gt;
