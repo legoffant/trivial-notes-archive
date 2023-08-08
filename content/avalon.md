@@ -19,7 +19,7 @@ En 2100 il ne devrait rester sur Terre moins de 250 millions d'être humains, to
 
 Le siège du pouvoir de l'empereur-prophète "Nominoë II" protegé par le veilleur en orbite autour de la Terre, l'Eon par le Belphégor. Avalon est une mégalopole qui a été défini par le balisage des premiers temples de la religion narkantique en Bretagne comme fondation pour sa construction. Son cycle d'exploitation est défini sur 26 000 ans avant l'annihilation planétaire.
 
-Avalon a pour fonction de port spatial pour la colonisation, exploitation minière et la jihad du prophète. Elle ce développe comme une moisissure sur une pomme, tel un champignon qui consume de l'intérieur le fruit jusqu'à atteindre la graine.
+Avalon a pour fonction de port spatial pour la colonisation, exploitation minière et le jihad du prophète. Elle ce développe comme une moisissure sur une pomme, tel un champignon qui consume de l'intérieur le fruit jusqu'à atteindre la graine.
 
 Avalon interface l'espace et la terre via un ascenceur spatial. Elle a une tour de 180km de haut ou sont dispersé des grattes-ciels à environ 4km de hauteur en moyenne, mais les progrès de l'ingénierie civile et de la préssurisation des batiments permettent d'aller plus haut malgré le manque d'oxygène.
 
