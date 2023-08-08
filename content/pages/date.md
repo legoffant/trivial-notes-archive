@@ -28,13 +28,13 @@ A venir:
 
 ----
 
-- Fin des temps 20/10/70
-- Apparition du Belphégor l'an 74
+- Fin des temps: 20/10/70
+- Apparition du Belphégor: l'an 74
 
 ----
 
-- Début de l'Ere d'exploitation d'Avalon l'an 107
-- Fin de l'Ere d'exploitation d'Avalon l'an 26 015
+- Début de l'Ere d'exploitation d'Avalon :l'an 107
+- Fin de l'Ere d'exploitation d'Avalon: l'an 26 015
 
 ---
 ```
