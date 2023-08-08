@@ -5,7 +5,7 @@ Tags:kamelott, principe
 Authors: Anthony Le Goff
 Summary:
 
-Les gens prennent la tradition des alchimistes pour des cinglés. Qui remonte à Thot. Alors que généralement c'est eux qui ont les secrets de la création. Des principes simples des alchimistes sont l'athanor, l'oeuf philsoposphique ainsi que les transmutations. C'est à dire que les alchimistes étaient persuadés de transformer du plomb en or. Ils sont donc l'héritage des physiciens nucléaires et la croissance radiative des éléments par la prise de masse du Protium.
+Les gens prennent la tradition des alchimistes pour des cinglés. Qui remonte à Thot. Alors que généralement c'est eux qui ont les secrets de la création. Des principes simples des alchimistes sont l'athanor, l'oeuf philosophique ainsi que les transmutations. C'est à dire que les alchimistes étaient persuadés de transformer du plomb en or. Ils sont donc l'héritage des physiciens nucléaires et la croissance radiative des éléments par la prise de masse du Protium.
 
 Parmis les symboles alchimistes il y a un signe pour la création. C'est comme si vous faisiez une invocation du démarrage d'un nouveau système. On doit donc réflechir à la notion d'hote: l'univers principale. Et la notion d'invité: l'univers imbriqué que l'on essaye de créer. Comme des poupées russes, c'est des containers. 
 
