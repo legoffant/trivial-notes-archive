@@ -15,6 +15,7 @@ Slug: date
 - Légende du monolithe noir: l'an -2
 - Invention de l'outil des codeurs Vi: l'an 6
 - Naissance du prophète: l'an 19
+- Sortie de Yggdrasil Linux: l'an 22
 - Réssurection du prophète: 1/42
 - Emprisonnement du prophète: l'an 47
 - Début de l'écriture de "Voile et Annhilation": 4/51
