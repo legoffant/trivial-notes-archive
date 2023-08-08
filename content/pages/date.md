@@ -15,6 +15,7 @@ Slug: date
 - Emprisonnement du prophète: l'an 47
 - Début de l'écriture de "Voile et Annhilation": 4/51
 - Sacrifice de la méduse: 10/52
+- Invention du Narkanta 16/07/53
 - Premier temple Arcturus: 6/8/53
 ```
 
