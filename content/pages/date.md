@@ -9,6 +9,8 @@ Slug: date
 
 *Temps des machines UNIX*
 
+à Partir du 1 janvier 1970 UTC calendrier grégorien. Nous somme dans `l'an 53`
+
 ```text
 - Naissance du prophète: l'an 19
 - Réssurection du prophète: 1/42
