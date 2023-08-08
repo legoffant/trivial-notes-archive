@@ -21,9 +21,10 @@ Slug: date
 A venir:
 
 ```text
-- Fondation de Kor-Al-Maghrib 5/54
-- Fondation de Kor-Al-Layl 9/54
-- Fondation de Kor-Al-Fajr l'an 55
+- Fondation de Kor-Al-Maghrib: 5/54
+- Fondation de Kor-Al-Layl: 9/54
+- Fondation de Kor-Al-Fajr: l'an 55
+- Fin d'écriture de "Voile et Annhilation": l'an 61
 
 ----
 
