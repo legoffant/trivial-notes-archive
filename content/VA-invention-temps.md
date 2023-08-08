@@ -24,7 +24,12 @@ Dans la religion narkantique la définition du temps est donc tout autres, et ut
 
 #### Début du temps
 
-L'origine de l'heure UNIX a été choisie comme étant le **1er janvier 1970 00:00:00 UTC**. Qui dérive sur la création du langage C et l'écriture du système d'exploitation d'UNIX et ces outils tel que l'éditeur de texte en ligne de commande: Vi en 1976.
+L'origine de l'heure UNIX a été choisie comme étant le **1er janvier 1970 00:00:00 UTC**. Qui dérive sur la création du langage C et l'écriture du système d'exploitation d'UNIX et ces outils tel que l'éditeur de texte en ligne de commande: Vi en 1976. Egalement deux ans auparavant est sortie le film culte et roman de SF "2001: L'Odyssée de l'Espace" en 1968. l'année 1970 à plusieurs évenements majeurs en datascience et clustering de l'information tel que:
+
+* La Chine lance son premier satellite, Dong Fang Hong 1.
+* La pièce de théâtre "L'Epidémie" d'Eugéne Ionesco est présentée au théâtre Montparnasse à Paris. Elle sera rebaptisée "Triomphe de la mort" avant de devenir "Jeux de massacre". 
+* Parution du premier tome des ´Mémoires d´espoir´ du général de Gaulle.
+* L´avion supersonique Concorde OO1 atteint deux fois la vitesse du son.
 
 ### Conversion du temps UNIX
 
