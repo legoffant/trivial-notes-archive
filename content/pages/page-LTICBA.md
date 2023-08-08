@@ -1,9 +1,10 @@
-Title: LTCB
+Title: LTICBA
 Date: 2021-12-01 20:30
 Modified: 2021-12-01 20:30
-Slug: ltcb
+Slug: lticba
 
-# Loge transhumaniste des corsaires bretons
+# Loge transhumaniste islamique des corsaires bretons atlantiques
+
 
 Est un collectif de hackers sous la forme d'un think thank qui produit des études sur les thèmes suivants
 
@@ -28,7 +29,7 @@ Si vous êtes intéressé et d'origine bretonne, nous formons les hackers et che
 
 Nous avons un rite de passage comme toutes loges restreintes dans le recrutement pour adopter le temps UNIX, il sera nécessaire d'installer Arch Linux avec une partition chiffrée. Notre choix est symbolique: l'arche définissant une politique en intégrant les outils pour chercheur en cybersécurité blackarch.
 
-Ainsi vous adoptez nos valeurs. Pour nous rejoindre contactez moi par email ou rejoignez simplement le serveur Discord à cette adresse: https://discord.gg/v6DJQJcr
+Ainsi vous adoptez nos valeurs. Pour nous rejoindre contactez moi par email.
 
 Trivial
 
