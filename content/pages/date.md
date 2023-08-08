@@ -3,7 +3,7 @@ Date: 2023-08-08 20:45
 Modified: 2023-08-08 20:45
 Slug: date
 
-# Grande date de la religion nakantique
+# Grande date de la religion narkantique
 ---------------------------------------
 
 *Temps des machines UNIX*
