@@ -7,7 +7,7 @@ Summary:
 
 Voile et Annihilation est un Space Opera et une odysée galactique sous fond de guerre de religion par la conversion au Narkantisme à travers la figure de "Nominoë II" qui va lancer son jihad.
 
-C'est un véritable fléau, et va faire un exemple de la planète Terre que son pouvoir absolu est digne de sa démesure. Ainsi quand l'Eon va apparaître sur Terre, la planète est sous inquisition religieuse et l'humanité exterminé pour ne pas avoir cru à la révélation narkantique et refusé de ce convertir et accepter la soumission au prophète.
+C'est un véritable fléau, et va faire un exemple de la planète Terre que son pouvoir absolu est digne de sa démesure. Ainsi quand l'Eon va apparaître sur Terre, la planète est sous inquisition religieuse et l'humanité exterminé pour ne pas avoir cru à la révélation narkantique et refusé de ce convertir et accepté la soumission au prophète.
 
 Ainsi l'Eon et construction de la porte pour faire apparaïtre le Belphégor va définir un nouveau cycle sur Terre d'exploitation. Le Belphégor est un vaisseau de minage et terraformation planétaire principalement de classe Titan. Il vient en soutiens au prophète comme exosquelette. Et cela inclu une usine de clonage qui rend automatiquement immortel le prophète.
 
@@ -21,7 +21,7 @@ Le siège du pouvoir de l'empereur-prophète "Nominoë II" protegé par le veill
 
 Avalon a pour fonction de port spatial pour la colonisation, exploitation minière et la jihad du prophète. Elle ce développe comme une moisissure sur une pomme, tel un champignon qui consume de l'intérieur le fruit jusqu'à atteindre la graine.
 
-Avalon interface l'espace et la terre via un ascenceur spatial. Elle a une tour de 180km de haut ou son dispersé des grattes-ciels à environ 4km de hauteur en moyenne, mais les progrès de l'ingénierie civile et de la préssurisation des batiments permettent d'aller plus haut malgré le manque d'oxygène.
+Avalon interface l'espace et la terre via un ascenceur spatial. Elle a une tour de 180km de haut ou sont dispersé des grattes-ciels à environ 4km de hauteur en moyenne, mais les progrès de l'ingénierie civile et de la préssurisation des batiments permettent d'aller plus haut malgré le manque d'oxygène.
 
 Les fondations dans le souterrain atteignent 16km de profondeur ou commence les forges nucléaires qui recycle le magma pour produire des éléments et de l'eau. La citadelle d'Avalon est autonome et autarcique. C'est une ville underground. Comme toute place-forte, pour tenir un siège: on creuse en profondeur et bunkerise. Des machines de minages transforment la matière en fusion en vidant la planète pour atteindre la graine.
 
