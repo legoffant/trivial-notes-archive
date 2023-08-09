@@ -9,7 +9,7 @@ Apprendre à coder est un exercice plus complexe que l'on ne pense, cela demande
 
 On peut estimer que tous les ingénieurs et développeurs informatique utilisent Git pour le contrôle de version du code donc on estime à 70 millions de compte sur Github. Donc au maximum il y a pas plus de 150 millions de développeurs informatique dans le monde. On estime à 300 000 hackers professionnels à travers le monde. Ces statistiques viennent des comptes de hackers sur les plateformes de hacking tel que de CTF, bug bounty, Hacker One, TryHackMe, root-me....Si on compte les développeurs sur le kernel Linux, il y a seulement 13 000 individus travaillant à son intégration.
 
-Les langages informatiques qui le plus la côte selon IEEE Spectrum [(voir les stats)](https://spectrum.ieee.org/top-programming-languages-2022) reste en définitive:
+Les langages informatiques qui ont le plus la côte selon IEEE Spectrum [(voir les stats)](https://spectrum.ieee.org/top-programming-languages-2022) reste en définitive:
 
 1. Python
 2. C
