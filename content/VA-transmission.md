@@ -5,7 +5,7 @@ Tags:narkantisme
 Authors: Anthony Le Goff
 Summary:
 
-Le narkantisme islamique est un ordre religieux avec un système de conversion qui propage la religion. Les religieux narkantiques sont très rare. Il faut une configuration spécifique entre des conditions initiales pour obtenir un religieux. A defaut de certaine religion qui multiplie les religieux et temples pensant que le surnombre fait la force.... 
+Le narkantisme islamique est un ordre religieux avec un système de conversion qui propage la religion. Les religieux narkantiques sont très rare. Il faut une configuration spécifique entre des conditions initiales pour obtenir un religieux. A defaut de certaines religions qui multiplient les religieux et temples pensant que le surnombre fait la force.... 
 
 Le narkantisme il n'y en a pas beaucoup. Et la puissance nécessaire pour obtenir une configuration qui ouvre la voie divine à travers la porte narkantique et son hébergement est très protégé. 
 
