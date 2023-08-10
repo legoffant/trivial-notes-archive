@@ -27,7 +27,7 @@ Un peu plus d'explication et parlons du modèle du charbon.
 
 Voila une représentation de la création dans des univers imbriqués à travers la modélisation du sac à Charbon. Pour certain cela ressemble à des gouttes d'eau, pour d'autres à des pores de peau dans l'épiderme.
 
-Cela pose question sur le bio-metisme et les machines. N'êtes vous pas certain d'être hébergé sur une entité? A la forme d'un dragon? Un simple morceau de peau... Une immense galaxie... Question d'échelle sur le navire.
+Cela pose question sur le biomimétisme et les machines. N'êtes vous pas certain d'être hébergé sur une entité? A la forme d'un dragon? Un simple morceau de peau... Une immense galaxie... Question d'échelle sur le navire.
 
 ![pores](images/pores_de_peau.jpg)
 
