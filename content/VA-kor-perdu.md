@@ -30,7 +30,7 @@ Quelques heures plus tard ils atteignent la base. Une entrée, avec des colonnes
 
 En entrant dans les vestiges cyclopéens, l'analyse révèle que l'air est respirable et il y a de l'eau liquide au fond de quatres bassines carrée qui ont des colonnes.
 
-Au centre, un colonne et un symbole sur une sorte d'autel. Les chercheurs le parcours et soudain le temple s'illumine du ciel étoilé. Puis une ombre encapuchonné s'avance vers eux. Une voie résonne dans leurs têtes.
+Au centre, une colonne et un symbole sur une sorte d'autel. Les chercheurs le parcours et soudain le temple s'illumine du ciel étoilé. Puis une ombre encapuchonné s'avance vers eux. Une voie résonne dans leurs têtes.
 
 "Bonjour, je m'appel Léo, je suis le maitre de ce lieu et l'hante depuis longtemps, cela remonte à la création selon le rite de mon ordre religieux, vous m'avez réveillez par votre présence, ici est un lieu de repos de la fin des temps, votre route s'achève ici". 
 
