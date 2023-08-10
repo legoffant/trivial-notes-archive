@@ -31,5 +31,5 @@ Cela pose question sur le bio-metisme et les machines. N'êtes vous pas certain 
 
 ![pores](images/pores_de_peau.jpg)
 
-Dans la légende islamique, c'est occulté, le dragon à travers Bahamut. Et le créateur des dragons est introduit dans le silmarillion à travers Melkor. Un puzzle mondial. 
+Dans la légende islamique, c'est occulté, le dragon à travers [Bahamut](https://fr.wikipedia.org/wiki/Bahamut). Et le créateur des dragons est introduit dans le silmarillion à travers Melkor. Un puzzle mondial. 
 
