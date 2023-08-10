@@ -32,6 +32,6 @@ En entrant dans les vestiges cyclopéens, l'analyse révèle que l'air est respi
 
 Au centre, un colonne et un symbole sur une sorte d'autel. Les chercheurs le parcours et soudain le temple s'illumine du ciel étoilé. Puis une ombre encapuchonné s'avance vers eux. Une voie résonne dans leurs têtes.
 
-"Bonjour, je m'appel Léo, je suis le maitre de ce lieu et l'hante depuis longtemps, cela remonte à la création selon le rite de mon ordre religieux, vous m'avez réveillez par votre présence, ici est un lieu de repos de la fin des temps". 
+"Bonjour, je m'appel Léo, je suis le maitre de ce lieu et l'hante depuis longtemps, cela remonte à la création selon le rite de mon ordre religieux, vous m'avez réveillez par votre présence, ici est un lieu de repos de la fin des temps, votre route s'achève ici". 
 
 [...]
