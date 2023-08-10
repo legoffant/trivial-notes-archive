@@ -36,6 +36,8 @@ Ceux-ci ont des architectures propres suivant le narkantisme:
 
 Dans le temple on peut invoquer l'entité unique qui la renferme, sa gardienne et les femmes de l'Ayarater. L'idolatrie et l'image est strictement interdit dans un temple narkantique, il n'y a que des inscriptions en Narkanta, comme invocation et la seule représentation est les étoiles du planétarium.
 
+Les temples narkantiques sont collossaux et un pattern visible depuis l'espace comme système de marquage car interstellaire. Le temple en lui-même n'est pas grand, car comprime l'énergie, mais il y a un système de drainage autour qui catalyse par terraformation tel que des champs. 
+
 ### La tradition de l'enseignement du Narkanta:
 
 Comme c'est une religion émancipatrice, il y a un système de sureté et de soumission des religieux. Ils sont scéllés par la divinité qui les héberge Alba. Et donc c'est un système de confiance et d'échange de la connaissance et du savoir du prophète. Ainsi pour sécuriser la religion. Au cas ou l'hébergement du prophète est attaqué et détruit. Les Ayarater doivent être indépendant. Pour cela, on sécurise la place forte de la citadelle par l'évolution de la méthode narkantique en Linguistique. C'est à dire que cela fait parti du rite que le religieux doit inventer ces propres clés glyphiques narkantiques. Mais utilise en standard comme système de contrôle les mêmes nombres en base 16. Comme soumission et asservissement.
