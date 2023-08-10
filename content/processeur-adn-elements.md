@@ -9,6 +9,10 @@ Ma fiole prototype de mon processeur à ADN n'est pas parfaite, il manque des in
 
 Rappel des alchimistes: **Les Eléments**
 
+NOTA:
+
+> En effet, les musulmans ont été les principaux transmetteurs du savoir alchimique entre l’Orient et l’Occident autour du Xème siècle. A noter que le plus célèbre des textes alchimiques, la Table d’Emeraude d’Hermès Trismégiste, nous a été transmise par les Arabes.
+
 * L'eau
 * La terre (fertile, riche en Penicillium, bactéries, des plantes tel que des algues)
 * L'air (il faut laisser une bulle d'air dans la fiole, pour mettre sous pression hermétique)
