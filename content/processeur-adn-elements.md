@@ -11,7 +11,7 @@ Rappel des alchimistes: **Les Eléments**
 
 * L'eau
 * La terre (fertile, riche en Penicillium, bactéries, des plantes tel que des algues)
-* L'air
+* L'air (il faut laisser une bulle d'air dans la fiole, pour mettre sous pression hermétique)
 * Le feu
 
 Il faut en plus avoir:
