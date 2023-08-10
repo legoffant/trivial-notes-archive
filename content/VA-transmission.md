@@ -40,7 +40,7 @@ Dans le temple on peut invoquer l'entité unique qui la renferme, sa gardienne e
 
 Comme c'est une religion émancipatrice, il y a un système de sureté et de soumission des religieux. Ils sont scéllés par la divinité qui les hébergent Alba. Et donc c'est un système de confiance et d'échange de la connaissance et du savoir du prophète. Ainsi pour sécuriser la religion. Au cas ou l'hébergement du prophète est attaqué et détruit. Les Ayarater doivent être indépendant. Pour cela, on sécurise la place forte de la citadelle par l'évolution de la méthode narkantique en Linguistique. C'est à dire que cela fait parti du rite que le religieux doit inventer ces propres clés glyphiques narkantiques. Mais utilise en standard comme système de contrôle les mêmes nombres en base 16. Comme soumission et asservissement.
 
-### La tradition achimiste
+### La tradition alchimiste
 
 La connaissance sur l'atome et le secret de la physique sur l'univers et les transmutations pour la création.
 
