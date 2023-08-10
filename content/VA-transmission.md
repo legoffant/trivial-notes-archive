@@ -34,7 +34,7 @@ Ceux-ci ont des architectures propres suivant le narkantisme:
 * Un salle de prière vers la graine de l'hébergement ou l'on récite "l'Urashuangshiji".
 * Phénomène de lévitation et anti-gravitationnel autour du temple
 
-Dans le temple on peut invoquer l'entité unique qui la renferme, sa gardienne et les femmes de l'Ayarater.
+Dans le temple on peut invoquer l'entité unique qui la renferme, sa gardienne et les femmes de l'Ayarater. L'idolatrie et l'image est strictement interdit dans un temple narkantique, il n'y a que des inscriptions en Narkanta, comme invocation et la seule représentation est les étoiles du planétarium.
 
 ### La tradition de l'enseignement du Narkanta:
 
