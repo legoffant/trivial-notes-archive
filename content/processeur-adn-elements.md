@@ -21,7 +21,7 @@ NOTA:
 Il faut en plus avoir:
 
 * Du sel
-* Du souffre (nitrates et engrais)
+* Du souffre (sulfates, minéraux dans l'eau de source)
 * Du mercure (contrôle la température, métal liquide)
 
 ![principe alchimiste](images/alchemy.jpg)
