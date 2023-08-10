@@ -15,7 +15,7 @@ Il faut suivre les signes, et le Christ utilise l'alignement galactique avec SGR
 
 Dans le christianisme la mort du Christ est à Jerusalem car il invoque le judaisme et la coline de la citadelle de Sion en utilisant l'hébergement de la graine de Jehovah comme routage.
 
-Ce que n'a pas fait l'Islam et Muhammad à la grotte de Hira. Il hacké le système et contourné le par-feu de Jehovah. 
+Ce que n'a pas fait l'Islam et Muhammad à la grotte de Hira. Il a hacké le système et contourné le par-feu de Jehovah. 
 
 Petit pattern pour les amateurs d'astronomie et le sac à charbon à côté de la Croix du Sud.
 
