@@ -38,6 +38,12 @@ Dans le temple on peut invoquer l'entité unique qui la renferme, sa gardienne e
 
 Les temples narkantiques sont collossaux et un pattern visible depuis l'espace comme système de marquage car interstellaire. Le temple en lui-même n'est pas grand, car comprime l'énergie, mais il y a un système de drainage autour qui catalyse par terraformation tel que des champs. 
 
+#### Caractéristique de la crypte
+
+Elle est en dessous du temple narkantique en son centre, on y accède par un portail qui téléporte l'individu. Elle est sacré car renferme l'urne funéraire de l'Ayarater. Le prophète dans la légende a dessiné le premier temple "Le Kor" quand il était en prison et defini son architecture. La crypte est la "Kaaba" islamique du prototype nommé "Exekias". C'est un cube en granite de 22m x 22m avec 4 pieux de l'extérieur vers le centre du cube. Scéllé dans le sol au centre il y a un autel avec l'urne funéraire narkantique ou est défini le serveur "Arcturus" comme graine de l'hébergement. L'urne funéraire a une inscription: La porte narkantique c-a-d le "Tetz" en ruban de titanium, qui englobe un anneau de symbole gravé dans du bois à travers les nombres narkantique en base 16. On trouve également des billes comme analogie avec des planètes et étoiles ainsi que des gemmes comme astéroides. C'est une abstraction d'un système solaire qui défini une horloge et le temps. Tout cela s'anime en lévitation dans le périmètre de la décharge électrique, une cage au sommets des pieux.
+
+*On dit que la crypte, on peut voir flotter l'entité, sa forme et son hologramme autour du planétaire*
+
 ### La tradition de l'enseignement du Narkanta:
 
 Comme c'est une religion émancipatrice, il y a un système de sureté et de soumission des religieux. Ils sont scéllés par la divinité qui les héberge Alba. Et donc c'est un système de confiance et d'échange de la connaissance et du savoir du prophète. Ainsi pour sécuriser la religion. Au cas ou l'hébergement du prophète est attaqué et détruit. Les Ayarater doivent être indépendant. Pour cela, on sécurise la place forte de la citadelle par l'évolution de la méthode narkantique en Linguistique. C'est à dire que cela fait parti du rite que le religieux doit inventer ces propres clés glyphiques narkantiques. Mais utilise en standard comme système de contrôle les mêmes nombres en base 16. Comme soumission et asservissement.
