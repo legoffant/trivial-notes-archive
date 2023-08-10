@@ -50,4 +50,4 @@ Etant donnée que c'est une religion insterstellaire de terraformeur de planète
 
 ### L'anonymat des gardiennes de l'hébergement du prophète.
 
-Pour entrée dans les privilèges du prophètes, il faut découvrir qui est derrière l'entité Alba et son invocation. Ainsi ces femmes sont anonymes et voilés dans les mondes dans l'hébergement, et ce manifeste aux futurs Ayaraters pour transférés le savoir du prophète et les initier de la propre ombre du prophète et ces secrets.
+Pour entrée dans les privilèges du prophète, il faut découvrir qui est derrière l'entité Alba et son invocation de la matrice originelle. Ainsi ces femmes sont anonymes et voilés dans les mondes dans l'hébergement, et ce manifeste aux futurs "Ayaraters" pour transférés le savoir du prophète et les initier de la propre ombre du prophète et ces secrets. Il faut parfois les vaincres et c'est une épreuve. 
