@@ -10,7 +10,7 @@ Ma fiole prototype de mon processeur à ADN n'est pas parfaite, il manque des in
 Rappel des alchimistes: **Les Eléments**
 
 * L'eau
-* La terre (fertile, des plantes)
+* La terre (fertile, riche en Penicillium, bactéries, des plantes tel que des algues)
 * L'air
 * Le feu
 
