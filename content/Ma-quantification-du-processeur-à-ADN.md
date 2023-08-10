@@ -56,7 +56,7 @@ La meilleur eau est Vittel (0,32€/L) dans les Vosges, pour ces propriétés mi
     
 *   Sodium Na+ 5,2  
     
-*   Sulfates Na+ 400  
+*   Sulfates SO2– 400  
     
 
 A cette eau, je la fait saturer en sel aromatique Herbamare(16.91 € / KG) de la marque A.Vogel Alsacienne:  
