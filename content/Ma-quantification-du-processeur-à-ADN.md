@@ -13,25 +13,27 @@ C'est un rite, si vous copiez mes directives vous intégrer un cadre avec les m�
 
 **Formule:**  
 
-60% eau salée dopée herbe aromatique et iodé  
-30 % liquide vaisselle (corps gras à base glycérine)  
-5% d'éthanol  
+66% eau salée dopée herbe aromatique et iodé  
+22 % liquide vaisselle (corps gras à base glycérine)  
+4% d'éthanol  
 
-trace <1-5%:
+trace <1-8%:
 
 *   \- Lithium  
 *   \- Pénicillium
 *   \- glucose (gelée royale)
-*   \- Protéine (Fromage blanc)
 *   \- Poudre de Colombo
 *   \- Safran Sargol d'Iran
 *   \- Vinaigrette Maille
+*   \- Huile de Nigelle d'Egypte 
 *   \- Salive ADN + Bactérie de la bouche
 *   \- Blob  
 *   \- ADN méduse Aurélia Aurita, gène de transdifférenciation de l'immortalité  
 *   \- Poudre de fougère, teneur en REE(Rare Earth Element)
 *   \- Graines de chia
 *   \- Levure Saccharomyces Cerevisiae
+*   \- Cendre, bruler du papier ou de l'encens
+*   \- Mercure, metal liquide a température ambiante controle de la température
   
 
 **Composants**:  
@@ -76,18 +78,18 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 
 *   L'hydroxyde de Lithium pour catalyser la batterie nucléaire et la fusion D+T. Fournisseur [Laboratorium discounter](https://www.laboratoriumdiscounter.nl/fr/hydroxyde-de-lithium-monohydrate-pur.html). 250gr €47,31  
     
-*   Le Pénicillium, sous forme de moisissure et spore, j'ai ma préférence pour le fromage "Le Rustique". (11.67 € / KG )  
+*   Le Pénicillium, sous forme de moisissure et spore, on fait une mise en culture dans une boite de Pétri une pomme pour invoquer le trou de ver. 
     
 *   Pour le glucose sous forme de gelée royale et de miel, je prends la marque Lune de Miel. ( 250g 27.00 € / KG)  
-    
-*   Protéine et Calcium, un fromage blanc dans le commerce. (2.48 € / KG)  
     
 *   Epices: poudre de Colombo Indien, Conquête des saveurs 75gr 1,79€ Ingrédients (Cumin, curcuma, coriandre, piment fort, fenugrec, fenouil, ail, sel, gingembre, cannelle, poivre)
 
 *   Epices: poudre de Safran Sargol D'Iran sur [Safranpur](https://www.safranpur.com/safran-poudre/36-safran-en-poudre-1-gr.html) à 4,5€/ 1gr
 
 *   Vinaigrette Maille Légère Huile d'Olive (12%) Pointe d'Olive Noire 36 cl (8,5€ / L). Fournisseur de la cour de Louis XV. Ingrédients : eau, vinaigre de vin blanc, huile de tournesol 18%, huile d’olive vierge extra 12%, vinaigre de vin rouge, Aceto Balsamico di Modena IGP (vinaigre de vin, moût de raisin concentré), sucre, sel, olive noire déshydratée 0,5%, épaississants : arôme naturel, sirop de sucre caramélisé. Peut contenir : moutarde, sésame.​
-    
+
+*   Huile de Nigelle d'Egypte de préférence
+
 *   Blob, pack complet : trois sclérotes de Physarum polycephalum japonais. Adoptez Mikado. sur [Adopte un Blob](https://adopteunblob.fr/boutique-de-physarum-polycephalum-acheter-un-blob/Pack-complet-trois-scl%C3%A9rotes-de-Physarum-polycephalum-japonais-p377949753). (€29.90)  
     
 *   Votre propre ADN: Rincez-vous la bouche avec une brosse à dent pour récupérer des cellules et de la salive après quelques jours sans vous brossez les dents pour faire proliférer des bactéries. Si vous brosser assez fort vos gencives vous pouvez facilement récupérer un peu de sang composé à 44% de globules rouges, 1% de plaquettes et globules blancs et 55% de plasma. Les globules blancs ont des cellules à noyau avec ADN.
