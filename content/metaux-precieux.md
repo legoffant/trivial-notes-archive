@@ -10,7 +10,7 @@ Summary:
 Stratégie de coffre-fort du serveur Arcturus, on trouve entre autres:
 
 * Un grenier: Des graines, plantes, algues
-* Réserves en énergie: fiole pétrole brut, fiole eau, échantillon uranium 238
+* Réserves en énergie: fiole pétrole brut, Charbon(shungite), fiole eau, échantillon uranium 238
 * Gemmes et pierres précieuses (diamant, saphir, émeraude, zircon, ruby, peridot)
 * De l'ADN
 * Du stockage d'information sur microSD
