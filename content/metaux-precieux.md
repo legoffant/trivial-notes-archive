@@ -39,6 +39,6 @@ TOTAL
 ------
 TOTAL: 1788€
 
-Alors bien sur cette argent, je le dépense sur des années. Je peux pas me permettre, car je suis modeste et pas très riche d'investir rapidement. Je dois économiser. J'ai un budget assigné de 144€/mois rien que pour les capsules temporelles. Soit 8% du total de mes revenus (APL+AAH).
+Alors bien sur cet argent, je le dépense sur des années. Je peux pas me permettre, car je suis modeste et pas très riche d'investir rapidement. Je dois économiser. J'ai un budget assigné de 144€/mois rien que pour les capsules temporelles. Soit 8% du total de mes revenus (APL+AAH).
 
 Bien sur un coup de pouce serait pas de refus, en mettant dans la [cagnotte du porte-feuille de BTC](https://legoffant.github.io/pages/BTC.html), cela permet d'accélérer l'investissement. 
