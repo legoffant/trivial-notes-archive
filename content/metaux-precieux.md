@@ -28,7 +28,7 @@ Continuons l'investissement en métaux précieux, que cela soit pour la technolo
 * YTTERBIUM - 1oz Lingots - 62$  (terres rares)
 
 
-TOTAL
+SOIT:
 
 * 3x 360€
 * 3x 38€
