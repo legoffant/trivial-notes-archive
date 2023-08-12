@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-08-12T18:38:00+02:00</updated><entry><title>Minimaliste Linux</title><link href="/minimaliste-linux.html" rel="alternate"></link><published>2023-08-12T18:38:00+02:00</published><updated>2023-08-12T18:38:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-12:/minimaliste-linux.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Petit tour d'horizon des meilleurs distribution minimaliste sous Linux. Pourquoi choisir le minimalisme? Car "Less is more", mais également plus réduisé l'inferface graphique GUI, plus vous apprenez avec la ligne de commande CLI. Mais encore?&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-08-12T18:38:00+02:00</updated><entry><title>Minimaliste Linux</title><link href="/minimaliste-linux.html" rel="alternate"></link><published>2023-08-12T18:38:00+02:00</published><updated>2023-08-12T18:38:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-12:/minimaliste-linux.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Petit tour d'horizon des meilleurs distribution minimaliste sous Linux. Pourquoi choisir le minimalisme? Car "Less is more", mais également plus vous réduisez l'inferface graphique GUI, plus vous apprenez avec la ligne de commande CLI. Mais encore?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Permet de recycler des vieux PC, ou du reconditionné&lt;/li&gt;
 &lt;li&gt;Peut s'utiliser comme ordinateur de secours en cas de panne du principal&lt;/li&gt;
-&lt;li&gt;Idéal pour les débutants, moins de clics et de parasitage dans les inferfaces minimalistes.&lt;/li&gt;
+&lt;li&gt;Idéal pour les débutants, moins de clics et de parasitage d'icones etc..., dans les inferfaces minimalistes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Les Bureaux minimalistes.&lt;/h3&gt;
 &lt;p&gt;Il y a plusieurs bureaux dans les distributions minimaliste. En règle générale:&lt;/p&gt;

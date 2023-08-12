@@ -9,7 +9,7 @@ Petit tour d'horizon des meilleurs distribution minimaliste sous Linux. Pourquoi
 
 * Permet de recycler des vieux PC, ou du reconditionné
 * Peut s'utiliser comme ordinateur de secours en cas de panne du principal
-* Idéal pour les débutants, moins de clics et de parasitage d'icones etc..., dans les inferfaces minimalistes.
+* Idéal pour les débutants, moins de clics et de parasitage d'icones etc..., dans les interfaces minimalistes.
 
 
 ### Les Bureaux minimalistes.
