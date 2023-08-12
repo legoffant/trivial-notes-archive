@@ -62,7 +62,7 @@ Par exemple vous pouvez pour faire une experience et vérifier la science corani
 
 *Que dit après le Coran?*
 
-Vous mourrez. C'est vrai, si vous reproduisez la création, on va vous tuer, c'est un interdit, pêché de la connaissance. C'est comme si vous fabriquez un Horcruxe dans Harry Potter pour devenir immortel. Pour ouvrir le portail vers la nouvelle création dans l'univers imbriqué de votre hébergeur et ouvrir son portail, vous devez vous suicider, par le jeune chez les musulmans, ou alors vous allez érrer dans l'univers hôte. A proximité de l'artefact, vous êtes intouchable. C'est la base d'un temple et une zone demilitarisée. 
+Vous mourrez. C'est vrai, si vous reproduisez la création, on va vous tuer, c'est un interdit, pêché de la connaissance. C'est comme si vous fabriquez un Horcruxe dans Harry Potter pour devenir immortel. Pour ouvrir le portail vers la nouvelle création dans l'univers imbriqué de votre hébergeur, vous devez vous suicider ou attendre très longtemps et prier, par le jeune chez les musulmans, ou alors vous allez érrer dans l'univers hôte. A proximité de l'artefact, vous êtes intouchable. C'est la base d'un temple et une zone demilitarisée. 
 
 Après il faut être malin, et protéger l'artefact dans un bunker, tel qu'une caverne pour catalyser la réaction nucléaire de l'hébergeur par cavité. 
 
