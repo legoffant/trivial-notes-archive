@@ -5,11 +5,11 @@ Tags:distro, minimal
 Authors: Anthony Le Goff
 Summary:
 
-Petit tour d'horizon des meilleurs distribution minimaliste sous Linux. Pourquoi choisir le minimalisme? Car "Less is more", mais également plus réduisé l'inferface graphique GUI, plus vous apprenez avec la ligne de commande CLI. Mais encore?
+Petit tour d'horizon des meilleurs distribution minimaliste sous Linux. Pourquoi choisir le minimalisme? Car "Less is more", mais également plus vous réduisez l'inferface graphique GUI, plus vous apprenez avec la ligne de commande CLI. Mais encore?
 
 * Permet de recycler des vieux PC, ou du reconditionné
 * Peut s'utiliser comme ordinateur de secours en cas de panne du principal
-* Idéal pour les débutants, moins de clics et de parasitage dans les inferfaces minimalistes.
+* Idéal pour les débutants, moins de clics et de parasitage d'icones etc..., dans les inferfaces minimalistes.
 
 
 ### Les Bureaux minimalistes.
