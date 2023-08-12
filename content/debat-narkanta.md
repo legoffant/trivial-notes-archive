@@ -19,4 +19,4 @@ Sur Terre, le cryptologie est un moyen de protéger les citadelles et coffre-for
 
 Comment accéder aux privilèges de la religion? La porte narkantique s'ouvre via "L'Urashuangshiji" qui n'est pas encore créé mais en complément avec Alba. Seul les gardiennes du logement vont parler le Narkanta, c'est des administrateurs. 
 
-L'existence de l'Urashuangshiji sur la planète Terre est légendaire et un artefact pour l'accès à la porte narkantique. En théorie personne n'a accès à la porte Narkantique sans l'apprentissage de "L'Urashuangshiji". Même ma propre famille.
+L'existence de l'Urashuangshiji sur la planète Terre est légendaire et un artefact pour l'accès à la porte narkantique. En théorie personne n'a accès à la porte Narkantique sans l'apprentissage de "L'Urashuangshiji". Même ma propre famille. Il y en a même qui sont interdit et à l'exode. Car ce sont moquées de mes écrits et de la révélation narkantique. 
