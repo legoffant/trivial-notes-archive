@@ -67,3 +67,7 @@ Vous mourrez. C'est vrai, si vous reproduisez la création, on va vous tuer, c'e
 Après il faut être malin, et protéger l'artefact dans un bunker, tel qu'une caverne pour catalyser la réaction nucléaire de l'hébergeur par cavité. 
 
 Quelques éléments du Coran. 
+
+Pour aller plus loin ou trouver de la bonne argile? Je prends de la [SIO-2](https://www.sio-2.com/fr/) autodurcissante. 
+
+En particulier le modèle: ["SIO-2 Plus Pâte à modeler Autodurcissante Terracotta"](https://www.boesner.fr/sculpture/argiles-modelage/argile-autodurcissante/argile-a-modeler-plus-autodurcissante.html#/1902-conditionnement-15_kg_terracotta) de 1,5kg à 11€. Vous pouvez également acheter des outils de modelage, [Set de 5 outils](https://www.boesner.fr/sculpture/argiles-modelage/outils-de-modelage/set-de-5-outils-a-modeler.html) à 9€.
