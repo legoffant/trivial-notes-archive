@@ -194,3 +194,10 @@ Si vous avez besoin de lancer un terminal dans Vim
 ```bash
 :term
 ```
+
+#### Lancer une commande make dans Vim pour automatiser la compilation
+
+```bash
+:make
+```
+
