@@ -201,3 +201,5 @@ Si vous avez besoin de lancer un terminal dans Vim
 :make
 ```
 
+
+Autres: [100 useful Vim commands](https://www.ubuntupit.com/100-useful-vim-commands-that-youll-need-every-day/)
