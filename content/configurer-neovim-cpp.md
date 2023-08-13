@@ -157,6 +157,12 @@ let g:NERDTreeDirArrowCollapsible="~"
 " air-line
 let g:airline_powerline_fonts = 1
 
+let g:vim_ai_chat = {
+\  "options": {
+\    "model": "gpt-4",
+\    "temperature": 0.2,
+\  },
+\}
 
 ```
 
