@@ -221,7 +221,7 @@ $(TARGET): main.cpp
 	$(CC) $(CFLAGS) -o $(TARGET) main.cpp
 
 clean:
-	$(RM) $(TARGET)
+	rm -f $(TARGET)
 ```
 
 Lancer la commande dans Vim:
