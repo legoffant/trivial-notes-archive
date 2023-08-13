@@ -187,3 +187,10 @@ Télécharger et lancer le plugin:
 :packadd termdebug
 :Termdebug
 ```
+
+#### Lancer un terminal dans Vim
+
+Si vous avez besoin de lancer un terminal dans Vim
+```bash
+:term
+```
