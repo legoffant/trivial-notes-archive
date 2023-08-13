@@ -130,6 +130,13 @@ let g:NERDTreeDirArrowCollapsible=&amp;quot;~&amp;quot;
 
 &amp;quot; air-line
 let g:airline_powerline_fonts = 1
+
+let g:vim_ai_chat = {
+\  &amp;quot;options&amp;quot;: {
+\    &amp;quot;model&amp;quot;: &amp;quot;gpt-4&amp;quot;,
+\    &amp;quot;temperature&amp;quot;: 0.2,
+\  },
+\}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Sauvegarder le fichier, quitter et relancer &lt;code&gt;nvim&lt;/code&gt; puis lancer la commande:&lt;/p&gt;

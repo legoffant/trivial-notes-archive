@@ -203,6 +203,28 @@ Si vous avez besoin de lancer un terminal dans Vim
 
 #### Lancer une commande make dans Vim pour automatiser la compilation
 
+Un simple exemple de makefile:
+```makefile
+
+# Le compilateur gcc pour le programme C
+CC = g++
+
+# Flags de compilation
+CFLAGS = -Wall -Wextra -std=C++23
+
+# fichier binaire construit
+TARGET = hello
+
+all: $(TARGET)
+
+$(TARGET): main.cpp
+	$(CC) $(CFLAGS) -o $(TARGET) main.cpp
+
+clean:
+	$(RM) $(TARGET)
+```
+
+Lancer la commande dans Vim:
 ```bash
 :make
 ```
