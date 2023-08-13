@@ -98,7 +98,7 @@ $ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plu
 
 Création du fichier `init.vim` dans `~/.config/nvim/`
 
-```
+```text
 " Neovim configuration file init.vim
 " author: Anthony J.R Le Goff legoff.ant@gmail.com
 " date: 16th april 2022
