@@ -123,7 +123,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'tomasr/molokai'
 Plug 'raimondi/delimitmate'
-Plug 'kien/ctrlp.vim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'majutsushi/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -143,11 +143,11 @@ call plug#end()
 :let g:syntastic_check_on_wq = 0
 
 nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-,> :NERDTree<CR>
+nnoremap <C-;> :NERDTreeToggle<CR>
 
 nmap <C-r> :TagbarToggle<CR>
-nmap <C-p> :CtrlP<CR>
+nmap <C-q> :Telescope<CR>
 
 :colorscheme molokai
 
