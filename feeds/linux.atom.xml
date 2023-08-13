@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-08-13T08:45:00+02:00</updated><entry><title>Configurer (Neo)Vim comme IDE en langage C/C++</title><link href="/configurer-neovim-comme-ide-en-langage-cc.html" rel="alternate"></link><published>2023-08-13T08:45:00+02:00</published><updated>2023-08-13T08:45:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/configurer-neovim-comme-ide-en-langage-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On peut très bien apprendre à coder dans un terminal shell avec un simple éditeur de texte comme &lt;code&gt;Vim&lt;/code&gt; et utiliser le compilateur. C-a-d Ouvrir un terminal sous Linux:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-08-13T20:38:00+02:00</updated><entry><title>Jalon logiciel de CAO Next-Gen</title><link href="/jalon-logiciel-de-cao-next-gen.html" rel="alternate"></link><published>2023-08-13T20:38:00+02:00</published><updated>2023-08-13T20:38:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/jalon-logiciel-de-cao-next-gen.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Alors voila, j'avance sur mon grand projet d'ingénierie logicielle ou je compte créer le logiciel de CAO next-gen open source sous GNU/Linux. Le nom provisoir est &lt;em&gt;Qasari3D&lt;/em&gt;. Ce projet va bien m'occuper 10 à 15 ans. C'est du long terme.&lt;/p&gt;
+&lt;p&gt;L'intérêt est de rabattre les cartes sur le marché, rendre accessible la conception, et faire hurler Dassault Systemes qui m'a bien casser les couilles avec ces sbires à L'école des Mines. Il y a des joueurs. Chiche?&lt;/p&gt;
+&lt;p&gt;Voila les grands principes et exigence du logiciel:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intégration de la conception communautaire via une refonte de Git pour les plans de pièces et éléments.&lt;/li&gt;
+&lt;li&gt;Conception architecturale et le paradigme openBIM voir une amélioration du format STEP.&lt;/li&gt;
+&lt;li&gt;Rendu 3D basé sur les moteurs de jeux-vidéos en utilisant un Geometric kernel open source.&lt;/li&gt;
+&lt;li&gt;Langage de scripting (lua, python? A voir)&lt;/li&gt;
+&lt;li&gt;Interface et modulaire, extensible. La communauté doit pouvoir créer des modules&lt;/li&gt;
+&lt;li&gt;Intègre le calcul parallèle et distribué pour les HPC pour des opérations lourdes (éléments finis, CFD, etc...) Voir le projet BOINC.&lt;/li&gt;
+&lt;li&gt;Ce lance en ligne de commande avec une assistance par une intelligence articielle. Puis choix des modules et définition du projet à créer. Si on travail en plan2D, ou rendu 3D etc... &lt;/li&gt;
+&lt;li&gt;Base de donnée mondiale de pièce et élément standardisé pour des bibliothèques.&lt;/li&gt;
+&lt;li&gt;Automatise l'invention par le machine Learning et la méthode TRIZ.&lt;/li&gt;
+&lt;li&gt;En natif le logiciel fait de la génération procédurale au niveau des algorithmes et intègre les automates cellulaires et la conception de nanites.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rappel: &lt;a href="https://legoffant.github.io/qasari3d.html"&gt;article schématique qui résume l'idée&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Autant dire que c'est pour fabriquer des grands ensembles, des vaisseaux spatiaux de dizaines de kilometres, des structures pour de la terraformation, industrie lourde, naval, nucléaire et militaire. La fin des haricots.&lt;/p&gt;
+&lt;p&gt;Jalon d'apprentissage:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/jalon-apprentissage-c.html"&gt;Les bases du C++ et Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/configurer-neovim-comme-ide-en-langage-cc.html"&gt;Configurer et apprendre Neovim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/c-eco-systeme.html"&gt;Environnement et écosystème C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/preparation-de-projet-avancee-en-c.html"&gt;Démarrer un projet avec Cmake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bac à sable: &lt;em&gt;savoir et apprendre à programmer un Space Invader via SFML et un Game Engine(Pikuma tuto) en C++ (obligatoire)&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;En attente pour le projet: On démarre véritablement avec l'assistance de &lt;strong&gt;GPT-5&lt;/strong&gt; via le plugin Neovim "vim-ai". Donc je recherche des ingénieurs logicielles pour le projet, sachez que Dassault et sa mafia va vous hair, mais c'est pas grave, je suis un peu sado-masochiste sur les bords depuis la mort de Serge Dalai - Lama Dassault. Egalement des ingénieurs mécaniques qui sont les utilisateurs et donc des exigences sur les interfaces.&lt;/p&gt;</content><category term="Linux"></category><category term="c++"></category><category term="logiciel"></category><category term="ingénierie"></category><category term="open source"></category></entry><entry><title>Configurer (Neo)Vim comme IDE en langage C/C++</title><link href="/configurer-neovim-comme-ide-en-langage-cc.html" rel="alternate"></link><published>2023-08-13T08:45:00+02:00</published><updated>2023-08-13T08:45:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/configurer-neovim-comme-ide-en-langage-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On peut très bien apprendre à coder dans un terminal shell avec un simple éditeur de texte comme &lt;code&gt;Vim&lt;/code&gt; et utiliser le compilateur. C-a-d Ouvrir un terminal sous Linux:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;
 
 &lt;span class="c1"&gt;// Premier programme en C++ &lt;/span&gt;
