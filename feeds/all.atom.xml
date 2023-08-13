@@ -1,5 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-08-13T07:37:00+02:00</updated><entry><title>Voile et annihilation: le contrôle de la mort</title><link href="/voile-et-annihilation-le-controle-de-la-mort.html" rel="alternate"></link><published>2023-08-13T07:37:00+02:00</published><updated>2023-08-13T07:37:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/voile-et-annihilation-le-controle-de-la-mort.html</id><summary type="html"></summary><content type="html">&lt;p&gt;[...] En tant que futur prophète, il est à l'isolement sur la planète Terre comme martyr. Des milliards d'individu veulent sa mort pour diverse raison. On a monté les gens contre lui, et on refuse de lui donner du pouvoir. C'est un rapport de dominant-dominé. Il est donc banni. Et en toute logique c'est une prison à ciel ouvert ou ces relations sont contrôlés pour empêcher qu'il est des partisans. Plus particulièrement les femmes qui l'entourent. Car c'est aussi une guerre raciale et la transmission de ces gènes, pas seulement son savoir et sa connaissance. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-08-13T08:45:00+02:00</updated><entry><title>Configurer (Neo)Vim comme IDE en langage C/C++</title><link href="/configurer-neovim-comme-ide-en-langage-cc.html" rel="alternate"></link><published>2023-08-13T08:45:00+02:00</published><updated>2023-08-13T08:45:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/configurer-neovim-comme-ide-en-langage-cc.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On peut très bien apprendre à coder dans un terminal shell avec un simple éditeur de texte comme &lt;code&gt;Vim&lt;/code&gt; et utiliser le compilateur. C-a-d Ouvrir un terminal sous Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cpp&lt;/span&gt;
+
+&lt;span class="c1"&gt;// Premier programme en C++ &lt;/span&gt;
+
+&lt;span class="cp"&gt;#include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On compile en manuel, normalement gcc est intégré en natif dans le système Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;g++&lt;span class="w"&gt; &lt;/span&gt;hello.cpp&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;hello
+
+On&lt;span class="w"&gt; &lt;/span&gt;lance&lt;span class="w"&gt; &lt;/span&gt;le&lt;span class="w"&gt; &lt;/span&gt;fichier&lt;span class="w"&gt; &lt;/span&gt;binaire:
+&lt;span class="sb"&gt;```&lt;/span&gt;bash
+$&lt;span class="w"&gt; &lt;/span&gt;./hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Output:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Hello World!&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Voila, pour apprendre à utiliser Vim plus en détail, l'éditeur de texte pour les professionnels de l'informatique:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://linux.goffinet.org/administration/traitement-du-texte/editeur-de-texte-vi/"&gt;L’éditeur de texte VI&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ce chapitre est un incontournable de la maîtrise d’un système Linux. Dans 99,99 % des cas, l’éditeur VI est présent sur votre système. Pourquoi s’en passer ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Egalement le livre numérique [PDF] gratuit "&lt;a href="https://vimebook.com/fr"&gt;Vim pour les humains&lt;/a&gt;" est une très bonne ressource pour apprendre Vim.&lt;/p&gt;
+&lt;h3&gt;Transformer Vim en IDE (environnement de développement intégré)&lt;/h3&gt;
+&lt;p&gt;Vim est un peu lite, c'est du brute de décoffrage mais il est customisable et extensible. Pour avoir des fonctions supplémentaires et d'automatisation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Recherche dans le code&lt;/li&gt;
+&lt;li&gt;Navigation dans les fichiers&lt;/li&gt;
+&lt;li&gt;Controle de version Git&lt;/li&gt;
+&lt;li&gt;Refactoring&lt;/li&gt;
+&lt;li&gt;Coloration syntaxique&lt;/li&gt;
+&lt;li&gt;Code complétion&lt;/li&gt;
+&lt;li&gt;Assistance avec une IA&lt;/li&gt;
+&lt;li&gt;ctags&lt;/li&gt;
+&lt;li&gt;Intégration de makefile / cmake&lt;/li&gt;
+&lt;li&gt;Intégration du debugger&lt;/li&gt;
+&lt;li&gt;multi-fenetrage / tabs&lt;/li&gt;
+&lt;li&gt;snippet&lt;/li&gt;
+&lt;li&gt;CI/CD&lt;/li&gt;
+&lt;li&gt;test unitaire&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;etc...&lt;/p&gt;
+&lt;p&gt;On va donc apprendre à configurer le fork de Vim: &lt;code&gt;Neovim&lt;/code&gt; avec &lt;a href="https://github.com/neoclide/coc.nvim"&gt;Coc&lt;/a&gt;. Qui a plus de fonctionnalité pour du code en C/C++.&lt;/p&gt;
+&lt;p&gt;Prérequis sur le système:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;clang&lt;span class="w"&gt; &lt;/span&gt;ctags&lt;span class="w"&gt; &lt;/span&gt;neovim&lt;span class="w"&gt; &lt;/span&gt;nodejs&lt;span class="w"&gt; &lt;/span&gt;npm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vérifier l'installation&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;clangd&lt;span class="w"&gt; &lt;/span&gt;--version
+
+clangd&lt;span class="w"&gt; &lt;/span&gt;version&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;15&lt;/span&gt;.0.7
+Features:&lt;span class="w"&gt; &lt;/span&gt;linux
+Platform:&lt;span class="w"&gt; &lt;/span&gt;x86_64-pc-linux-gnu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Introduction à Neovim&lt;/h3&gt;
+&lt;p&gt;Vidéo explicative pour configurer Neovim:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=ViHgyApE9zM"&gt;Setting up (Neo)vim for C++: An IDE like experience with coc!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Y_UubM5eYAM&amp;amp;t=2s"&gt;Setting up (Neo)vim for C++ Part 2: IDE like Files, CMake and GTest integrations!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Configuration de Neovim&lt;/h3&gt;
+&lt;p&gt;Installation du gestionnaire de plugin "vim-plug" cf: &lt;a href="https://github.com/junegunn/vim-plug"&gt;https://github.com/junegunn/vim-plug&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sh&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;curl -fLo &amp;quot;${XDG_DATA_HOME:-$HOME/.local/share}&amp;quot;/nvim/site/autoload/plug.vim --create-dirs \&lt;/span&gt;
+&lt;span class="s1"&gt;       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Création du fichier &lt;code&gt;init.vim&lt;/code&gt; dans &lt;code&gt;~/.config/nvim/&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ss"&gt;&amp;quot; Neovim configuration file init.vim&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;author&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Anthony&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Le&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Goff&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;legoff&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ant&lt;/span&gt;&lt;span class="nv"&gt;@gmail&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot; date: 16th april 2022&lt;/span&gt;
+
+&lt;span class="ss"&gt;:set number&lt;/span&gt;
+&lt;span class="ss"&gt;:set autoindent&lt;/span&gt;
+&lt;span class="ss"&gt;:set tabstop=4&lt;/span&gt;
+&lt;span class="ss"&gt;:set shiftwidth=4&lt;/span&gt;
+&lt;span class="ss"&gt;:set smarttab&lt;/span&gt;
+&lt;span class="ss"&gt;:set softtabstop=4&lt;/span&gt;
+&lt;span class="ss"&gt;&amp;quot;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mouse&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+
+&lt;span class="k"&gt;call&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;plug#begin&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-fugitive&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tpope/vim-surround&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/nerdtree&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;scrooloose/syntastic&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vim-airline/vim-airline&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tomasr/molokai&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;raimondi/delimitmate&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;kien/ctrlp.vim&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ryanoasis/vim-devicons&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;majutsushi/tagbar&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;branch&amp;#39;&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;release&amp;#39;&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;span class="n"&gt;Plug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;madox2/vim-ai&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;encoding&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;UTF&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;
+
+&lt;span class="k"&gt;call&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;plug#end&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=%&lt;/span&gt;&lt;span class="n"&gt;#warningmsg&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=%&lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="n"&gt;SyntasticStatuslineFlag&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;statusline&lt;/span&gt;&lt;span class="o"&gt;+=%*&lt;/span&gt;
+
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_always_populate_loc_list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_auto_loc_list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_check_on_open&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;syntastic_check_on_wq&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+
+&lt;span class="n"&gt;nnoremap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeFocus&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="n"&gt;nnoremap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTree&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="n"&gt;nnoremap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeToggle&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;nmap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;TagbarToggle&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="n"&gt;nmap&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;CtrlP&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;CR&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;colorscheme&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;molokai&lt;/span&gt;
+
+&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeDirArrowExpandable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;+&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;NERDTreeDirArrowCollapsible&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;~&amp;quot;&lt;/span&gt;
+
+&lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;air&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;
+&lt;span class="n"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;g&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;airline_powerline_fonts&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sauvegarder le fichier, quitter et relancer &lt;code&gt;nvim&lt;/code&gt; puis lancer la commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;:PlugInstall
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Après cela vous aller pouvoir installer via le serveur de langage le code completion pour C/C++ avec Coc:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;:CocInstall&lt;span class="w"&gt; &lt;/span&gt;coc-clangd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Linux"></category><category term="vim"></category><category term="coc"></category></entry><entry><title>Voile et annihilation: le contrôle de la mort</title><link href="/voile-et-annihilation-le-controle-de-la-mort.html" rel="alternate"></link><published>2023-08-13T07:37:00+02:00</published><updated>2023-08-13T07:37:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/voile-et-annihilation-le-controle-de-la-mort.html</id><summary type="html"></summary><content type="html">&lt;p&gt;[...] En tant que futur prophète, il est à l'isolement sur la planète Terre comme martyr. Des milliards d'individu veulent sa mort pour diverse raison. On a monté les gens contre lui, et on refuse de lui donner du pouvoir. C'est un rapport de dominant-dominé. Il est donc banni. Et en toute logique c'est une prison à ciel ouvert ou ces relations sont contrôlés pour empêcher qu'il est des partisans. Plus particulièrement les femmes qui l'entourent. Car c'est aussi une guerre raciale et la transmission de ces gènes, pas seulement son savoir et sa connaissance. &lt;/p&gt;
 &lt;p&gt;Le prophète est un nécromancien, il a donc le pouvoir de rappeler les morts et de faire des prédictions grâce aux morts. Car lui-même est un mort-vivant sur la planète Terre. Il est mort il y a des dizaines d'années auparavant, et depuis rescussite régulièrement sans qu'il puisse s'en appercevoir. C'est un érrant.&lt;/p&gt;
 &lt;p&gt;Il génère une anomalie autour de lui, seulement par sa persistance dans l'univers et sur la planète. Une singularité grâce à son corps et son horloge naturelle à travers le coeur qui produit de la matière noire. C'est le calme autour de lui car l'oeil de l'ouragan: un chaos contrôlé. &lt;/p&gt;
 &lt;p&gt;Pour controler la mort, il doit devenir créateur à travers la fabrication d'un temple: un hébergeur des esprits. Ainsi l'hébergeur Arcturus qui est géré par la divinité Alba permet de rebooter le système, rendre invulnérable le prophète proche du temple mais egalement de rappeler les morts en hébergeant les esprits et relancer les machines virtuelles. C'est à dire que l'on transfert l'hébergement dans celui du prophète. &lt;/p&gt;
