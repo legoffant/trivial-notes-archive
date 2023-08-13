@@ -14,10 +14,10 @@
 
 &lt;p&gt;On compile en manuel, normalement gcc est intégré en natif dans le système Linux:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;g++&lt;span class="w"&gt; &lt;/span&gt;hello.cpp&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-On&lt;span class="w"&gt; &lt;/span&gt;lance&lt;span class="w"&gt; &lt;/span&gt;le&lt;span class="w"&gt; &lt;/span&gt;fichier&lt;span class="w"&gt; &lt;/span&gt;binaire:
-&lt;span class="sb"&gt;```&lt;/span&gt;bash
-$&lt;span class="w"&gt; &lt;/span&gt;./hello
+&lt;p&gt;On lance le fichier binaire:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;./hello
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Output:&lt;/p&gt;
