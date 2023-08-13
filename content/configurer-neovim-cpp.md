@@ -83,6 +83,8 @@ Platform: x86_64-pc-linux-gnu
 
 ### Introduction à Neovim
 
+lancer le tutorial dans un terminal `vimtutor`
+
 Vidéo explicative pour configurer Neovim:
 
 * [Setting up (Neo)vim for C++: An IDE like experience with coc!](https://www.youtube.com/watch?v=ViHgyApE9zM)
@@ -166,4 +168,14 @@ Sauvegarder le fichier, quitter et relancer `nvim` puis lancer la commande:
 Après cela vous aller pouvoir installer via le serveur de langage le code completion pour C/C++ avec Coc:
 ```bash
 :CocInstall coc-clangd
+```
+
+#### Intégration de C++23 dans clangd
+
+Créer le fichier `~/.config/clangd/config.yaml`
+
+config.yaml
+```text
+CompileFlags:  
+  Add: [-Wall, -Wextra, -std=c++23]
 ```
