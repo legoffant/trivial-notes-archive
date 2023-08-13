@@ -87,7 +87,7 @@ Vidéo explicative pour configurer Neovim:
 * [Setting up (Neo)vim for C++: An IDE like experience with coc!](https://www.youtube.com/watch?v=ViHgyApE9zM)
 * [Setting up (Neo)vim for C++ Part 2: IDE like Files, CMake and GTest integrations!](https://www.youtube.com/watch?v=Y_UubM5eYAM&t=2s)
 
-###Configuration de Neovim
+### Configuration de Neovim
 
 Installation du gestionnaire de plugin "vim-plug" cf: [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 
