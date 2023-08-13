@@ -217,60 +217,60 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
 </code></pre></div>
 
 <p>Création du fichier <code>init.vim</code> dans <code>~/.config/nvim/</code></p>
-<div class="highlight"><pre><span></span><code><span class="ss">&quot; Neovim configuration file init.vim</span>
-<span class="ss">&quot;</span><span class="w"> </span><span class="nl">author</span><span class="p">:</span><span class="w"> </span><span class="n">Anthony</span><span class="w"> </span><span class="n">J</span><span class="p">.</span><span class="n">R</span><span class="w"> </span><span class="n">Le</span><span class="w"> </span><span class="n">Goff</span><span class="w"> </span><span class="n">legoff</span><span class="p">.</span><span class="n">ant</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span>
-<span class="ss">&quot; date: 16th april 2022</span>
+<div class="highlight"><pre><span></span><code>&quot; Neovim configuration file init.vim
+&quot; author: Anthony J.R Le Goff legoff.ant@gmail.com
+&quot; date: 16th april 2022
 
-<span class="ss">:set number</span>
-<span class="ss">:set autoindent</span>
-<span class="ss">:set tabstop=4</span>
-<span class="ss">:set shiftwidth=4</span>
-<span class="ss">:set smarttab</span>
-<span class="ss">:set softtabstop=4</span>
-<span class="ss">&quot;</span><span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">mouse</span><span class="o">=</span><span class="n">a</span>
+:set number
+:set autoindent
+:set tabstop=4
+:set shiftwidth=4
+:set smarttab
+:set softtabstop=4
+&quot;:set mouse=a
 
-<span class="k">call</span><span class="w"> </span><span class="n">plug#begin</span><span class="p">()</span><span class="w"> </span>
+call plug#begin() 
 
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-fugitive&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tpope/vim-surround&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/nerdtree&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;scrooloose/syntastic&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;vim-airline/vim-airline&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;tomasr/molokai&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;raimondi/delimitmate&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;kien/ctrlp.vim&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;ryanoasis/vim-devicons&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;majutsushi/tagbar&#39;</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;neoclide/coc.nvim&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">{</span><span class="s1">&#39;branch&#39;</span><span class="err">:</span><span class="w"> </span><span class="s1">&#39;release&#39;</span><span class="err">}</span>
-<span class="n">Plug</span><span class="w"> </span><span class="s1">&#39;madox2/vim-ai&#39;</span>
+Plug &#39;tpope/vim-fugitive&#39;
+Plug &#39;tpope/vim-surround&#39;
+Plug &#39;scrooloose/nerdtree&#39;
+Plug &#39;scrooloose/syntastic&#39;
+Plug &#39;vim-airline/vim-airline&#39;
+Plug &#39;tomasr/molokai&#39;
+Plug &#39;raimondi/delimitmate&#39;
+Plug &#39;kien/ctrlp.vim&#39;
+Plug &#39;ryanoasis/vim-devicons&#39;
+Plug &#39;majutsushi/tagbar&#39;
+Plug &#39;neoclide/coc.nvim&#39;, {&#39;branch&#39;: &#39;release&#39;}
+Plug &#39;madox2/vim-ai&#39;
 
-<span class="k">set</span><span class="w"> </span><span class="n">encoding</span><span class="o">=</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+set encoding=UTF-8
 
-<span class="k">call</span><span class="w"> </span><span class="n">plug#end</span><span class="p">()</span>
+call plug#end()
 
-<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="n">#warningmsg</span><span class="err">#</span>
-<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%</span><span class="err">{</span><span class="n">SyntasticStatuslineFlag</span><span class="p">()</span><span class="err">}</span>
-<span class="err">:</span><span class="k">set</span><span class="w"> </span><span class="n">statusline</span><span class="o">+=%*</span>
+:set statusline+=%#warningmsg#
+:set statusline+=%{SyntasticStatuslineFlag()}
+:set statusline+=%*
 
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_always_populate_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_auto_loc_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_open</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
-<span class="err">:</span><span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">syntastic_check_on_wq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+:let g:syntastic_always_populate_loc_list = 1
+:let g:syntastic_auto_loc_list = 1
+:let g:syntastic_check_on_open = 1
+:let g:syntastic_check_on_wq = 0
 
-<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">f</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeFocus</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
-<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">n</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTree</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
-<span class="n">nnoremap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">t</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">NERDTreeToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+nnoremap &lt;C-f&gt; :NERDTreeFocus&lt;CR&gt;
+nnoremap &lt;C-n&gt; :NERDTree&lt;CR&gt;
+nnoremap &lt;C-t&gt; :NERDTreeToggle&lt;CR&gt;
 
-<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">r</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">TagbarToggle</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
-<span class="n">nmap</span><span class="w"> </span><span class="o">&lt;</span><span class="n">C</span><span class="o">-</span><span class="n">p</span><span class="o">&gt;</span><span class="w"> </span><span class="err">:</span><span class="n">CtrlP</span><span class="o">&lt;</span><span class="n">CR</span><span class="o">&gt;</span>
+nmap &lt;C-r&gt; :TagbarToggle&lt;CR&gt;
+nmap &lt;C-p&gt; :CtrlP&lt;CR&gt;
 
-<span class="err">:</span><span class="n">colorscheme</span><span class="w"> </span><span class="n">molokai</span>
+:colorscheme molokai
 
-<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowExpandable</span><span class="o">=</span><span class="ss">&quot;+&quot;</span>
-<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">NERDTreeDirArrowCollapsible</span><span class="o">=</span><span class="ss">&quot;~&quot;</span>
+let g:NERDTreeDirArrowExpandable=&quot;+&quot;
+let g:NERDTreeDirArrowCollapsible=&quot;~&quot;
 
-<span class="err">&quot;</span><span class="w"> </span><span class="n">air</span><span class="o">-</span><span class="n">line</span>
-<span class="n">let</span><span class="w"> </span><span class="nl">g</span><span class="p">:</span><span class="n">airline_powerline_fonts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+&quot; air-line
+let g:airline_powerline_fonts = 1
 </code></pre></div>
 
 <p>Sauvegarder le fichier, quitter et relancer <code>nvim</code> puis lancer la commande:</p>
@@ -346,9 +346,24 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
 </li>
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="/tag/matos.html">
+        <i class="icon-tag icon-large"></i>matos
+    </a>
+</li>
 <li class="tag-2">
-    <a href="/tag/machine.html">
-        <i class="icon-tag icon-large"></i>machine
+    <a href="/tag/hacking.html">
+        <i class="icon-tag icon-large"></i>hacking
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/mort.html">
+        <i class="icon-tag icon-large"></i>mort
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/narkantisme.html">
+        <i class="icon-tag icon-large"></i>narkantisme
     </a>
 </li>
 <li class="tag-2">
@@ -356,14 +371,14 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
         <i class="icon-tag icon-large"></i>programmation
     </a>
 </li>
-<li class="tag-3">
-    <a href="/tag/rando.html">
-        <i class="icon-tag icon-large"></i>rando
+<li class="tag-1">
+    <a href="/tag/ingenierie.html">
+        <i class="icon-tag icon-large"></i>ingenierie
     </a>
 </li>
-<li class="tag-3">
-    <a href="/tag/trek.html">
-        <i class="icon-tag icon-large"></i>trek
+<li class="tag-2">
+    <a href="/tag/industrie.html">
+        <i class="icon-tag icon-large"></i>industrie
     </a>
 </li>
 <li class="tag-3">
@@ -371,14 +386,59 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
         <i class="icon-tag icon-large"></i>science
     </a>
 </li>
+<li class="tag-2">
+    <a href="/tag/logiciel.html">
+        <i class="icon-tag icon-large"></i>logiciel
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/islam.html">
+        <i class="icon-tag icon-large"></i>islam
+    </a>
+</li>
 <li class="tag-1">
-    <a href="/tag/ingenierie.html">
-        <i class="icon-tag icon-large"></i>ingenierie
+    <a href="/tag/nucleaire.html">
+        <i class="icon-tag icon-large"></i>nucléaire
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/processeur.html">
+        <i class="icon-tag icon-large"></i>processeur
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/linux.html">
+        <i class="icon-tag icon-large"></i>linux
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/religion.html">
+        <i class="icon-tag icon-large"></i>religion
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/informatique.html">
+        <i class="icon-tag icon-large"></i>informatique
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/va.html">
+        <i class="icon-tag icon-large"></i>VA
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/bretagne.html">
+        <i class="icon-tag icon-large"></i>bretagne
     </a>
 </li>
 <li class="tag-3">
-    <a href="/tag/sysadmin.html">
-        <i class="icon-tag icon-large"></i>sysadmin
+    <a href="/tag/dynastie.html">
+        <i class="icon-tag icon-large"></i>dynastie
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/machine.html">
+        <i class="icon-tag icon-large"></i>machine
     </a>
 </li>
 <li class="tag-2">
@@ -387,33 +447,23 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
     </a>
 </li>
 <li class="tag-3">
-    <a href="/tag/cours.html">
-        <i class="icon-tag icon-large"></i>cours
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/informatique.html">
-        <i class="icon-tag icon-large"></i>informatique
+    <a href="/tag/ecriture.html">
+        <i class="icon-tag icon-large"></i>ecriture
     </a>
 </li>
 <li class="tag-3">
-    <a href="/tag/narkantisme.html">
-        <i class="icon-tag icon-large"></i>narkantisme
+    <a href="/tag/arduino.html">
+        <i class="icon-tag icon-large"></i>Arduino
     </a>
 </li>
-<li class="tag-4">
-    <a href="/tag/meduse.html">
-        <i class="icon-tag icon-large"></i>meduse
+<li class="tag-3">
+    <a href="/tag/ressources.html">
+        <i class="icon-tag icon-large"></i>Ressources
     </a>
 </li>
-<li class="tag-2">
-    <a href="/tag/islam.html">
-        <i class="icon-tag icon-large"></i>islam
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/bretagne.html">
-        <i class="icon-tag icon-large"></i>bretagne
+<li class="tag-3">
+    <a href="/tag/communaute.html">
+        <i class="icon-tag icon-large"></i>communauté
     </a>
 </li>
 <li class="tag-2">
@@ -421,14 +471,9 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
         <i class="icon-tag icon-large"></i>arch
     </a>
 </li>
-<li class="tag-2">
-    <a href="/tag/mines.html">
-        <i class="icon-tag icon-large"></i>mines
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/hacking.html">
-        <i class="icon-tag icon-large"></i>hacking
+<li class="tag-3">
+    <a href="/tag/serveur.html">
+        <i class="icon-tag icon-large"></i>serveur
     </a>
 </li>
 <li class="tag-1">
@@ -441,94 +486,14 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
         <i class="icon-tag icon-large"></i>c++
     </a>
 </li>
-<li class="tag-4">
-    <a href="/tag/mort.html">
-        <i class="icon-tag icon-large"></i>mort
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/hacker.html">
-        <i class="icon-tag icon-large"></i>hacker
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/logiciel-libre.html">
-        <i class="icon-tag icon-large"></i>logiciel libre
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/matos.html">
-        <i class="icon-tag icon-large"></i>matos
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/ecriture.html">
-        <i class="icon-tag icon-large"></i>ecriture
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/serveur.html">
-        <i class="icon-tag icon-large"></i>serveur
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/arduino.html">
-        <i class="icon-tag icon-large"></i>Arduino
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/communaute.html">
-        <i class="icon-tag icon-large"></i>communauté
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/innovation.html">
-        <i class="icon-tag icon-large"></i>innovation
-    </a>
-</li>
 <li class="tag-2">
     <a href="/tag/roman.html">
         <i class="icon-tag icon-large"></i>roman
     </a>
 </li>
-<li class="tag-1">
-    <a href="/tag/linux.html">
-        <i class="icon-tag icon-large"></i>linux
-    </a>
-</li>
-<li class="tag-4">
-    <a href="/tag/processeur.html">
-        <i class="icon-tag icon-large"></i>processeur
-    </a>
-</li>
 <li class="tag-2">
     <a href="/tag/adn.html">
         <i class="icon-tag icon-large"></i>adn
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/dynastie.html">
-        <i class="icon-tag icon-large"></i>dynastie
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/logiciel.html">
-        <i class="icon-tag icon-large"></i>logiciel
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/va.html">
-        <i class="icon-tag icon-large"></i>VA
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/religion.html">
-        <i class="icon-tag icon-large"></i>religion
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/narkanta.html">
-        <i class="icon-tag icon-large"></i>narkanta
     </a>
 </li>
 <li class="tag-4">
@@ -537,13 +502,18 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
     </a>
 </li>
 <li class="tag-3">
-    <a href="/tag/corsaire.html">
-        <i class="icon-tag icon-large"></i>corsaire
+    <a href="/tag/rando.html">
+        <i class="icon-tag icon-large"></i>rando
     </a>
 </li>
-<li class="tag-2">
-    <a href="/tag/industrie.html">
-        <i class="icon-tag icon-large"></i>industrie
+<li class="tag-3">
+    <a href="/tag/cours.html">
+        <i class="icon-tag icon-large"></i>cours
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/philosophie.html">
+        <i class="icon-tag icon-large"></i>philosophie
     </a>
 </li>
 <li class="tag-2">
@@ -551,19 +521,49 @@ Platform:<span class="w"> </span>x86_64-pc-linux-gnu
         <i class="icon-tag icon-large"></i>entreprise
     </a>
 </li>
-<li class="tag-3">
-    <a href="/tag/ressources.html">
-        <i class="icon-tag icon-large"></i>Ressources
+<li class="tag-2">
+    <a href="/tag/hacker.html">
+        <i class="icon-tag icon-large"></i>hacker
     </a>
 </li>
-<li class="tag-1">
-    <a href="/tag/nucleaire.html">
-        <i class="icon-tag icon-large"></i>nucléaire
+<li class="tag-2">
+    <a href="/tag/narkanta.html">
+        <i class="icon-tag icon-large"></i>narkanta
     </a>
 </li>
 <li class="tag-3">
-    <a href="/tag/philosophie.html">
-        <i class="icon-tag icon-large"></i>philosophie
+    <a href="/tag/sysadmin.html">
+        <i class="icon-tag icon-large"></i>sysadmin
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/mines.html">
+        <i class="icon-tag icon-large"></i>mines
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/trek.html">
+        <i class="icon-tag icon-large"></i>trek
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/innovation.html">
+        <i class="icon-tag icon-large"></i>innovation
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/meduse.html">
+        <i class="icon-tag icon-large"></i>meduse
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel-libre.html">
+        <i class="icon-tag icon-large"></i>logiciel libre
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/corsaire.html">
+        <i class="icon-tag icon-large"></i>corsaire
     </a>
 </li>
 
