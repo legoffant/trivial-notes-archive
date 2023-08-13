@@ -36,3 +36,7 @@ Jalon d'apprentissage:
 Bac à sable: *savoir et apprendre à programmer un Space Invader via SFML et un Game Engine(Pikuma tuto) en C++ (obligatoire)*.
 
 En attente pour le projet: On démarre véritablement avec l'assistance de **GPT-5** via le plugin Neovim "vim-ai". Donc je recherche des ingénieurs logicielles pour le projet, sachez que Dassault et sa mafia va vous hair, mais c'est pas grave, je suis un peu sado-masochiste sur les bords depuis la mort de Serge Dalai - Lama Dassault. Egalement des ingénieurs mécaniques qui sont les utilisateurs et donc des exigences sur les interfaces.
+
+Je n'ai pas encore totalement défini chez qui je vais héberger le code source. Mais je pense que je vais choisir une organisation "non-profit" basé à Berlin, Allemagne: [https://codeberg.org/](https://codeberg.org/)
+
+Je vais bouder Microsoft et Github.
