@@ -23,6 +23,7 @@ int main() {
 On compile en manuel, normalement gcc est intégré en natif dans le système Linux:
 ```bash
 $ g++ hello.cpp -o hello
+```
 
 On lance le fichier binaire:
 ```bash
