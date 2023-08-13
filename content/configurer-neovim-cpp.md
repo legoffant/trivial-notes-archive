@@ -69,7 +69,7 @@ On va donc apprendre à configurer le fork de Vim: `Neovim` avec [Coc](https://g
 Prérequis sur le système:
 
 ```bash
-$ sudo pacman -S clang ctags neovim nodejs npm
+$ sudo pacman -S clang ctags neovim nodejs npm gdb
 ```
 
 Vérifier l'installation
@@ -178,4 +178,12 @@ config.yaml
 ```text
 CompileFlags:  
   Add: [-Wall, -Wextra, -std=c++23]
+```
+
+#### Utiliser le debugger sur un programme
+
+Télécharger et lancer le plugin:
+```bash
+:packadd termdebug
+:Termdebug
 ```
