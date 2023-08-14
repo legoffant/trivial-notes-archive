@@ -28,4 +28,6 @@ Style:
 
 **Pour les chaussures** ont porte des sandales, référence à la légion romaine. Mais également pour facilité les ablutions.
 
-[Choix tendances de sandales du moment](https://www.ma-chaussure.com/sandale-homme-les-modeles-tendance-du-moment/)
+[Choix tendances de sandales du moment](https://www.ma-chaussure.com/sandale-homme-les-modeles-tendance-du-moment/). Je conseil des sandales de randonnée pour leur confort et la marche:
+
+[Choix de sandales "Au Vieux Campeur"](https://www.auvieuxcampeur.fr/activites/randonnee/sandales-de-randonnee)
