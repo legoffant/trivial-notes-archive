@@ -5,7 +5,7 @@ Tags: habit
 Authors: Anthony Le Goff
 Summary:
 
-Comme je rappel dans le narkantisme et la règle de la pudeur religieuse, la séduction est shunté source de MICE:
+Comme je rappel dans le narkantisme et la règle de la pudeur religieuse, la séduction est shunté [source de MICE](https://www.20minutes.fr/magazine/red-sparrow-mag/2419155-20180327-le-vice-la-methode-qu-emploient-les-espions-pour-manipuler-leur-prochain):
 
 La musulmane porte le Niqab. Noir ou nuance de gris / Bleu nuit. Vous trouverez des Abayas de Dubaï. Cela doit rester sobre, et le seul hornement autorisé est la broderie, lié au passé de la mode bretonne, couture.
 
