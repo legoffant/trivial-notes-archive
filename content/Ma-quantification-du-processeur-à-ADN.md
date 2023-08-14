@@ -34,6 +34,7 @@ trace <1-8%:
 *   \- Levure Saccharomyces Cerevisiae
 *   \- Cendre, bruler du papier ou de l'encens
 *   \- Mercure, metal liquide a température ambiante controle de la température
+*   \- Cendre, soit du papier brulée, ou de l'encens.
   
 
 **Composants**:  
@@ -101,6 +102,8 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 *   Graine de Chia, superaliment. 250gr Origine Bolivie. (13,56€/KG) Chez [Greenweez](https://www.greenweez.com/produit/graines-de-chia-bio-250g-1/2WEEZ0075/48817). Riche en fibre,protéine, calcium et Omega3, Omega6, anti-oxydants. A moudre dans un moulin à café pour en faire de la poudre.
 
 *   Levure Saccharomyces Cerevisiae - Classic Munich – Lallemand Danstar 11gr 4,25€ - [Le comptoir du brasseur](https://www.lecomptoirdubrasseur.fr/ingredients/levures/fermentation-haute/levure-munich-classic-11g-lallemand-danstar/)
+
+*   Mercure, sous forme d'un interrupteur PZ101, à casser pour récupérer une petit goutte de mercure
 
 C'est la tradition des alchimistes et c'est alimentaire avec une évolution minérale et la matière par la physique nucléaire contemporaine. Il faut du deuterium pour produire un réacteur à eau pressurisé. Isotope naturel sous forme de trace dans l'eau, et plus concentré dans les océans. Certaines eaux minérales ont du tritium.  
 
