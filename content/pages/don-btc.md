@@ -13,7 +13,12 @@ Mes articles sont mis à disposition gratuitement, il n'y a pas de Paywall ou d'
 
 Ce qui fait que pour mon travail d'écriture en particulier mes recherches en biohacking, linguistique et informatique vous pouvez faire un don et me permettre d'avoir un meilleur confort de vie. Sachez que je travail pas actuellement et vie de l'AAH. Je suis un écrivain modeste et relativement pieux. 
 
-Les dons iront à une organisation narkantique. En tant que construction de mosquée ou plutôt le "Kor".
+Les dons iront à une organisation narkantique. En tant que construction de mosquée ou plutôt le "Kor". 
+
+L'argent permet de financer l'hébergeur Arcturus: **prix unitaire 2200€**.
+Mais également d'aide au développement de processeur à ADN pour les enfants et adultes: **prix unitaire 8,8€ hors microSD**.
+
+L'organisation est en charge de garder les ingrédients de [la recette quantifiée du processeur à ADN](https://legoffant.github.io/ma-quantification-du-processeur-a-adn.html) et fournir à ces membres à titre gratuit ces connaissances et sa science. Certain ingrédients critiques sont mutualisés à cause de leur prix ou de leur accès. Ainsi l'organisation narkantique élève des méduses Aurelia Aurita dans des aquariums. Un gestionnaire d'aquarium [doit investir 450€](https://legoffant.github.io/aquarium-et-vie-des-meduses.html).
 
 ### Adresse Bitcoin BTC
 
