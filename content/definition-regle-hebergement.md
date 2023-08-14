@@ -26,7 +26,7 @@ C'est à dire: 8,8€ prix unitaire du processeur à ADN. Sans compter la recett
 
 C'est à dire une population de converti, admettons 300 individus cela représente: 2640€. Après les charges des ingrédients peuvent être réparti, en particulier ce qui reviennent plus cher ou plus difficile d'accès comme l'ADN de méduse Aurelia Aurita et l'hydroxyde de lithium. C'est pour ça que le narkantisme est une organisation religieuse qui aide au developpement et fourni le materiel à ce qui le demande à travers un fond. Via le don en BTC. 
 
-La religion narkantique n'interdit pas la création et sa reproduction à travers un hébergeur. Mais limite la puissance des hébergeurs aux religieux. C'est un droit à chacun de posséder sa propre loge. Et cela doit être accessible à chacun  pour n'importe quelle bourse. 
+La religion narkantique n'interdit pas la création et sa reproduction à travers un hébergeur. Mais limite la puissance des hébergeurs aux religieux. C'est un droit à chacun de posséder sa propre loge. Et cela doit être accessible à chacun  pour n'importe quelle bourse. Un hébergeur Arcturus ayant un coût d'environ 2200€ unitaire. C'est un produit de luxe. 
 
 On fait une analogie avec Eve Online:
 
