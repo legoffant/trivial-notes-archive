@@ -41,4 +41,4 @@ Vous avez plusieurs choix de carrière possible:
 * Factional Warfare
 * Explorateur
 
-La religion narkantique protège l'univers en tant qu'hébergeur principale du prophète. 
+La religion narkantique protège l'univers en tant qu'hébergeur principale du prophète. L'univers est protégé par les religieux qui ont des droits de terraformation et ingénierie céleste.
