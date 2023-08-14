@@ -32,7 +32,6 @@ trace <1-8%:
 *   \- Poudre de fougère, teneur en REE(Rare Earth Element)
 *   \- Graines de chia
 *   \- Levure Saccharomyces Cerevisiae
-*   \- Cendre, bruler du papier ou de l'encens
 *   \- Mercure, metal liquide a température ambiante controle de la température
 *   \- Cendre, soit du papier brulée, ou de l'encens.
   
