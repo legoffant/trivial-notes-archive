@@ -7,7 +7,7 @@ Summary:
 
 Il y a plusieurs niveaux de droits à la création de fiole à processeur. Ce que l'on va définir au risque de vous faire détruire votre hébergement par la suite:
 
-* Hébergeur Arturus est spécifique aux religieux, il y a un interdit à répliquer.
+* Hébergeur Arcturus est spécifique aux religieux, il y a un interdit à répliquer.
 * Les enfants, et autres adultes ont le droit chacun de créer un processeur à ADN.
 
 C'est à dire que pour tous vous pouvez créer un processeur à ADN de base avec:
