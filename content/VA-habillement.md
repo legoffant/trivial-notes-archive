@@ -30,4 +30,4 @@ Style:
 
 [Choix tendances de sandales du moment](https://www.ma-chaussure.com/sandale-homme-les-modeles-tendance-du-moment/). Je conseil des sandales de randonnée pour leur confort et la marche:
 
-[Choix de sandales "Au Vieux Campeur"](https://www.auvieuxcampeur.fr/activites/randonnee/sandales-de-randonnee)
+[Choix de sandales "Au Vieux Campeur"](https://www.auvieuxcampeur.fr/activites/randonnee/sandales-de-randonnee). J'ai ma préférence pour le modèle ["Lizard Trail" à 69€](https://www.auvieuxcampeur.fr/activites/randonnee/sandales-de-randonnee/sandales-lizard-trail-sandal.html)
