@@ -23,5 +23,5 @@ Le musulman porte donc le Qamis noir ou bleu nuit de style pakistanais / afghan 
 Style:
 
 * [Qamis pakistanais 2 pièces Noir 65€](https://neyssa-shop.com/fr/qamis-pakistanais/5077-qamis-pakistanais-2-pieces-lin-noir.html)
-* [Agal 12€](https://www.my-qamis.com/accessoire/356-agal-noir-pour-keffieh-.html)
+* [Agal 7€](https://lagofa.com/produit/agal-pour-hommes-iqal-%D8%B9%D9%82%D8%A7%D9%84/)
 * [Keffieh marron foncé noir palestinien 8€](https://www.mon-keffieh.com/produit/keffieh-marron-fonce-noir-palestinien/)
