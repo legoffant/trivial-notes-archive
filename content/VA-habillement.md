@@ -18,7 +18,7 @@ Style:
 
 Que faire contre la loi française et l'interdit du voile intégral? On s'en fou, s'il verbalise dite que vous faite partie de la secte narkantique pour faire le buzz et que votre anonymat est un fondement religieux.
 
-Le musulman porte donc le Qamis noir ou bleu nuit de style pakistanais / afghan deux pièces à col officier Mao. Mais également l'Agal, il est voilé avec un style palestinien de l'Intafada, et le cloitre de la bande Gaza.
+Le musulman porte donc le Qamis noir ou bleu nuit de style pakistanais / afghan deux pièces à col officier Mao. Mais également l'Agal, il est voilé avec un style palestinien de l'Intifada, et le cloitre de la bande Gaza.
 
 Style:
 
