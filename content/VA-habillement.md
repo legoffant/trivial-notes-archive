@@ -23,7 +23,7 @@ Le musulman porte donc le Qamis noir ou bleu nuit de style pakistanais / afghan 
 Style:
 
 * [Qamis pakistanais 2 pièces Noir 65€](https://neyssa-shop.com/fr/qamis-pakistanais/5077-qamis-pakistanais-2-pieces-lin-noir.html)
-* [Agal 7€](https://lagofa.com/produit/agal-pour-hommes-iqal-%D8%B9%D9%82%D8%A7%D9%84/)
+* [Agal 7€](https://www.iqrashop.com/Agal-pour-hommes-Iqal-vetements-pret-a-porter-Pret-a-porter-Hommes-p17449-262.html)
 * [Keffieh marron foncé noir palestinien 8€](https://www.mon-keffieh.com/produit/keffieh-marron-fonce-noir-palestinien/)
 
 **Pour les chaussures** ont porte des sandales, référence à la légion romaine. Mais également pour facilité les ablutions.
