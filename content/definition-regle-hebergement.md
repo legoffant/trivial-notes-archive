@@ -25,3 +25,9 @@ Et cela coût que dalle à créer un processeur à ADN:
 C'est à dire: 8,8€ prix unitaire du processeur à ADN. Sans compter la recette des ingrédients: maximum 150€ (l'ADN de méduse le plus cher, mais également ce procurer du lithium)
 
 La religion narkantique n'interdit pas la création et sa reproduction à travers un hébergeur. Mais limite la puissance des hébergeurs aux religieux. C'est un droit à chacun de posséder sa propre loge. Et cela doit être accessible à chacun  pour n'importe quelle bourse. 
+
+On fait une analogie avec Eve Online:
+
+Pour tous vous avez le droit à utiliser des frégates, et donc être immortel et avoir une station. Par contre monter dans un Titan, un Capital Ship est limitée. Pour l'escaladation de privilège, c'est plus compliquée. 
+
+Ce qui protège les religieux et leur pouvoir. 
