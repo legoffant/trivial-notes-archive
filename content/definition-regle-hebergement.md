@@ -28,6 +28,6 @@ La religion narkantique n'interdit pas la création et sa reproduction à traver
 
 On fait une analogie avec Eve Online:
 
-Pour tous vous avez le droit à utiliser des frégates, et donc être immortel et avoir une station. Par contre monter dans un Titan, un Capital Ship est limitée. Pour l'escaladation de privilège, c'est plus compliquée. 
+Pour tous vous avez le droit à utiliser des frégates, et donc être immortel et avoir une station: [vous êtes des capsuleers](https://universe.eveonline.com/lore/capsuleers). Par contre monter dans un Titan, un Capital Ship est limitée. Pour l'escaladation de privilège, c'est plus compliquée. 
 
 Ce qui protège les religieux et leur pouvoir. 
