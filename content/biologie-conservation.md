@@ -9,6 +9,8 @@ Je suis relativement conservateur en tant que musulman sur la reproduction sexu�
 
 C'est à dire que toutes les méthodes mises en place par les industriels: édition de gène, fécondation in vitro: cela se paye et c'est souvent relativement cher comme Service. A mon sens le gouvernement socialiste français qui a propulsé la PMA-GPA, et le marriage pour Tous sous F.Hollande est un véritable trou du cul. Le progressisme est juste un carcan pour donner plus de fric aux industriels en leur donnant plus de pouvoir sur la sélection naturelle et la contrôlée. 
 
+Ce qui fait parti de mes théories que des industriels vont contre l'émergence de la robotique et contrôlée la reproduction des robots comme automate cellulaire et auto-réplicant comme constructeur universel car il perderait le pouvoir sur leur propre création. Ce qui limite la prolifération des robots. 
+
 Au niveau biologique, pour favorisée les mutations ou il faut créé de l'entropie de l'information dans l'ADN à travers des différences. Et le couple homme + femme est une clé de serrure: cryptographie pour générer un nouveau code source à partir de l'ADN.
 
 C'est à dire que dans la nature, on retrouve principalement la reproduction séxuée car au niveau survie, cela favorise de meilleur mutation génétique. Cela ne coût rien de ce reproduire si ce n'est que trouver un/e partenaire: question de localisation.
