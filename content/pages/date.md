@@ -41,6 +41,7 @@ A venir:
 ----
 
 - Début de l'Ere d'exploitation d'Avalon :l'an 107
+- Inauguration de la tour de l'éternité d'Avalon: l'an 433
 - Fin de l'Ere d'exploitation d'Avalon: l'an 26 015
 
 ---
