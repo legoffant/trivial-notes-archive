@@ -5,7 +5,7 @@ Tags: laptop
 Authors: Anthony Le Goff
 Summary:
 
-J'ai eu une petite cure de rappel de la part d'un collègue sur Brest, Kevin qui a changé son PC portable et à fait le choix d'un PC de Gamer: `Lenovo Legion` poue 800€ en entrée de gamme.
+J'ai eu une petite cure de rappel de la part d'un collègue sur Brest, Kevin qui a changé son PC portable et à fait le choix d'un PC de Gamer: `Lenovo Legion` pour 800€ en entrée de gamme.
 
 C'est un très bon choix, et je lui est conseillé, il voulait jouer avec des potes à LoL (Leagues Of Legend). Si vous recherchez des PC bon marché de Gamer. Cela serait mon propre choix en meilleur rapport qualité / prix. Il y a également un autre modèle très bon produit que j'ai vu dans mon association d'informatique Linux sur Brest, un jeune ado faisait tourné Ubuntu sur un `Dell G15` dans la même gamme de prix.
 
@@ -25,4 +25,4 @@ Si je devais changer de PC pour un laptop de Gamer et upgrader la carte graphiqu
 En reconditionné [chez BackMarket à 1100€](https://www.backmarket.fr/fr-fr/p/lenovo-legion-5-15ach6h-15-ryzen-5-33-ghz-ssd-512-go-16-go-nvidia-geforce-rtx-3070-azerty-francais/d5770e67-f1b2-481b-9c1e-70d88ee7a74f#l=12). On peut le trouver en neuf [chez Amazon à 1555€](https://www.amazon.fr/Lenovo-Ordinateur-Portable-R%C3%A9tro%C3%A9clair%C3%A9-Fran%C3%A7ais/dp/B09S61D3LL)
 
 
-NOTA: le support des Lenovo Legion 5 est très supporté sous Arch Linux: [voir Legion Series sur le wiki](https://wiki.archlinux.org/title/Laptop/Lenovo#Legion_series)
+NOTA: le support des Lenovo Legion 5 est valide sous Arch Linux: [voir Legion Series sur le wiki](https://wiki.archlinux.org/title/Laptop/Lenovo#Legion_series)
