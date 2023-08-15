@@ -11,7 +11,7 @@ Cela tombe bien je suis un archiviste, et je dois mettre des livres dans ma caps
 
 On trouve une description d'Anna's Archive sur [wikipedia](https://en.wikipedia.org/wiki/Anna%27s_Archive).
 
-```
+```text
 The world’s largest open-source open-data library. Mirrors Sci-Hub, Library Genesis, Z-Library, and more. 21,278,536 books, 86,614,441 papers, 2,451,043 comics, 508,999 magazines — preserved forever.
 ```
 
@@ -27,4 +27,4 @@ Autres exemples en faisant une requête par filtre: sur "Jules Verne vingt" en l
 
 Egalement même type de requête avec: "Silmarillion tolkien", on trouve l'édition de 1977:
 
-*[Le Silmarillion](https://annas-archive.org/md5/c5232e2e9ef61a13f30dbbea70c1a731)
+* [Le Silmarillion](https://annas-archive.org/md5/c5232e2e9ef61a13f30dbbea70c1a731)
