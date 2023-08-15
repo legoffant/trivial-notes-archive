@@ -9,7 +9,7 @@ J'ai eu une petite cure de rappel de la part d'un collègue sur Brest, Kevin qui
 
 C'est un très bon choix, et je lui est conseillé, il voulait jouer avec des potes à LoL (Leagues Of Legend). Si vous recherchez des PC bon marché de Gamer. Cela serait mon propre choix en meilleur rapport qualité / prix. Il y a également un autre modèle très bon produit que j'ai vu dans mon association d'informatique Linux sur Brest, un jeune ado faisait tourné Ubuntu sur un `Dell G15` dans la même gamme de prix.
 
-Kevin est intéressé pour apprendre un peu la programmation et Linux, mais il est attaché à faire du gaming et donc utilisé Windows 11. Même si LoL est supporté sous Steam Linux. Il a fait un BTS dans l'electrotechnique. Il est un peu frileux d'apprendre à programmer, pense que c'est trop dur. Alors je lui explique mes trucs et astuces, les machines virtuelles Linux sous Virtual Box, ou WSL dans un terminal. 
+Kevin est intéressé pour apprendre un peu la programmation et Linux, mais il est attaché à faire du gaming et donc utilisé Windows 11. Même si LoL est supporté sous Steam Linux. Il a fait un BTS dans l'electrotechnique. Il est un peu frileux d'apprendre à programmer, pense que c'est trop dur. Alors je lui explique mes trucs et astuces, les machines virtuelles Linux sous Virtual Box, ou WSL dans un terminal. Il est intéressé d'utiliser Java en premier langage sous IDE Eclipse.
 
 Si je devais changer de PC pour un laptop de Gamer et upgrader la carte graphique je prendrais surement un Lenovo legion. Mon Thinkpad T480 à 450€ me convient largement car si je veux faire du gaming, je passe via une VM sur mon serveur Proxmox.
 
