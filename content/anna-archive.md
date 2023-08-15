@@ -24,3 +24,7 @@ Quelques exemples en faisant une requête par filtre: sur "dune herbert" en lang
 Autres exemples en faisant une requête par filtre: sur "Jules Verne vingt" en langue française, classé par "the newest" et au format "pdf", on trouve l'oeuvre:
 
 * [Vingt mille lieues sous les mers](https://annas-archive.org/md5/34800aaf06f40326861402fe5444a0ec)
+
+Egalement même type de requête avec: "Silmarillion tolkien", on trouve l'édition de 1977:
+
+*[Le Silmarillion](https://annas-archive.org/md5/c5232e2e9ef61a13f30dbbea70c1a731)
