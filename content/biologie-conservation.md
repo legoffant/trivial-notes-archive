@@ -19,4 +19,4 @@ Le cas de la polygamie chez les musulmans, est une stratégie de guerre biologiq
 
 Généralement les musulmanes sont lesbiennes, car cela permet de réduire les tensions dans le groupe.
 
-Les théoriciens sur l'homosexualités comme une forme de progrès, je les méprises totalement, et son aveuglés. 
+Les théoriciens sur l'homosexualités comme une forme de progrès, je les méprises totalement, et ils sont aveuglés. 
