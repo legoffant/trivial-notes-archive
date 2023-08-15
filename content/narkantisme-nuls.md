@@ -9,7 +9,7 @@ Les fondements du narkantisme parlons-en. Qui prends sa source dans le roman SF 
 
 "Voile et annihilation" permet de créer les briques des fondements de la révélation narkantique. Ce que l'on sait: le prophète fait le rite de la caverne à la fin des temps le 20/10/2040 dans le complex Lewisian en Ecosse, UK. Permettant d'invoquer la porte narkantique et la création de l'artefact: l'Urashuangshiji en Narkanta. Un livre sacré qui permet d'accéder au portail vers le royaume d'Albani. C'est une référence du nom de la divinité: **ALBA**, un dérivé d'Allah.
 
-Il existe trois grands temples de l'origine de religion: le "Kor" qui sont des Kaabas. Selon la légende enterrée comme comme graine et construction de fondation et balisage de zone d'exploitation à travers [l'hébergeur Arcturus](https://legoffant.github.io/serveur-experimental-nucleaire-arcturus-a-base-de2pz.html):
+Il existe trois grands temples de l'origine de la religion: le "Kor" qui sont des Kaabas. Selon la légende enterrée comme graine et construction de fondation et balisage de zone d'exploitation à travers [l'hébergeur Arcturus](https://legoffant.github.io/serveur-experimental-nucleaire-arcturus-a-base-de2pz.html):
 
 - Kor-Al-Maghrib à Huelgoat
 - Kor-Al-Layl à Scaër
