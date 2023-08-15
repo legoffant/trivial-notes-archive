@@ -23,3 +23,6 @@ Si je devais changer de PC pour un laptop de Gamer et upgrader la carte graphiqu
 * Clavier AZERTY
 
 En reconditionné [chez BackMarket à 1100€](https://www.backmarket.fr/fr-fr/p/lenovo-legion-5-15ach6h-15-ryzen-5-33-ghz-ssd-512-go-16-go-nvidia-geforce-rtx-3070-azerty-francais/d5770e67-f1b2-481b-9c1e-70d88ee7a74f#l=12)
+
+
+NOTA: le support des Lenovo Legion 5 est très supporté sous Arch Linux: [voir Legion Series sur le wiki](https://wiki.archlinux.org/title/Laptop/Lenovo#Legion_series)
