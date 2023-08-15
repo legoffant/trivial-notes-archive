@@ -5,7 +5,7 @@ Tags: reproduction
 Authors: Anthony Le Goff
 Summary:
 
-Je suis relativement conservateur en tant que musulman sur la reproduction sexuée. Et ne prone en aucun cas le mouvement LGBT que je considère comme une dérive du christianisme et de l'amour à outrance. Je tolère les LGBT mais ne participe pas aux mouvements, je considère que droit à avoir des enfants à un couple homosexuel comme une hérésie de bourgeois. Car la fécondation in vitro, ou de mêre porteuse est juste une question d'argent: vous pouvez avoir tous ce que vous voulez si vous payez et c'est une forme de corruption. 
+Je suis relativement conservateur en tant que musulman sur la reproduction sexuée. Et ne prone en aucun cas le mouvement LGBT que je considère comme une dérive du christianisme et de l'amour à outrance. Je tolère les LGBT mais ne participe pas aux mouvements, je considère que le droit à avoir des enfants à un couple homosexuel comme une hérésie de bourgeois. Car la fécondation in vitro, ou de mêre porteuse est juste une question d'argent: vous pouvez avoir tous ce que vous voulez si vous payez et c'est une forme de corruption. 
 
 C'est à dire que toutes les méthodes mises en place par les industriels: édition de gène, fécondation in vitro: cela se paye et c'est souvent relativement cher comme Service. A mon sens le gouvernement socialiste français qui a propulsé la PMA-GPA, et le marriage pour Tous sous F.Hollande est un véritable trou du cul. Le progressisme est juste un carcan pour donner plus de fric aux industriels en leur donnant plus de pouvoir sur la sélection naturelle et la contrôlée. 
 
