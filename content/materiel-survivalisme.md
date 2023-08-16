@@ -1,4 +1,4 @@
-Title:Liste matériel de survivalisme: 32 équipements à avoir
+Title:Liste matériel de survivalisme: 33 équipements à avoir
 Date: 2023-08-16 18:57
 Category:Inclassable
 Tags: trekking, survivalisme
@@ -148,4 +148,6 @@ Toujours utile pour communiquer. La marque célèbre et le [Baofeng UV-5R](https
 
 La tente est toujours essentiel pour dormir ou ce reposer, vous trouverez des modèles d'alpinismes et de trek relativement robuste en particulier pour la MUL (marche ultra-légère) mais le prix grimpe rapidement tel que la Nemo Hornet 1P ou La MSR HUBBA NX. Je possède une [CAMP Minima EVO1](https://www.monbivouac.com/tente-camp-minima-1-evo.html) à 230€, 1520gr. 
 
+33. Mousquetons
 
+Indispensable avec la paracorde, equipement de base du randonneur et trekker.
