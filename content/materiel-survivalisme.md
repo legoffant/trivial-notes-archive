@@ -1,4 +1,4 @@
-Title:Liste matériel de survivalisme: 31 équipements à avoir
+Title:Liste matériel de survivalisme: 32 équipements à avoir
 Date: 2023-08-16 18:57
 Category:Inclassable
 Tags: trekking, survivalisme
@@ -106,41 +106,45 @@ Utile pour essuyer, rhume, secher le firesteel ou servir d'allume-feu.
 
 Envie de chasser du gibier? Ou faire des liens et noeuds solides? [BENECREAT stainless Steel 120 m 0,3 mm 7 brins en Acier Inoxydable](https://www.amazon.fr/BENECREAT-Inoxydable-Artisanat-Colliers-Bracelets/dp/B089ZYCMTT/ref=sr_1_7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=GEDE0UQVM2RB&keywords=0.3%2Bbenecreat&qid=1692208036&sprefix=0.3%2Bbenecreat%2Caps%2C138&sr=8-7&th=1) 10€
 
-23. Dry Bag étanche IPX7
+23. Lame de scalpel
+
+Permet de découper avec précision et faire office de cutter
+
+24. Dry Bag étanche IPX7
 
 Pour compartimenter vos sacs de randonnée, mais également peut servir de transport d'eau potable. [Dry Bag translucide](https://www.amazon.fr/HEETA-Imperm%C3%A9ables-Etanches-Smartphone-Activit%C3%A9s/dp/B09Y8T5XPG/ref=sr_1_10?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1BW211LEV6IY6&keywords=dry%2Bbag%2B5L&qid=1692208228&sprefix=dry%2Bbag%2B5l%2Caps%2C144&sr=8-10&th=1) 2 x 5L à 18€
 
-24. Couverture de survie
+25. Couverture de survie
 
 Toujours utilise dans la trousse à pharmacie. 2€
 
-25. Gourde d'eau filtrante
+26. Gourde d'eau filtrante
 
 Je prends la [marque Lifestraw](https://www.amazon.fr/LifeStraw-2-Stage-Filter-Bottle-Unisex-Adult/dp/B07YT5L9ZX/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2CXDXHX0E5DLS&keywords=lifestraw&qid=1692208387&sprefix=lifestraw%2Caps%2C163&sr=8-2) à 40€
 
 Purifier l'eau avec de l'aquatabs en rab dans la trousse à pharmacie
 
-26. Kit à pharmacie de premier secours étanche
+27. Kit à pharmacie de premier secours étanche
 
 Je prends une [CARE PLUS "First Aid Kit Waterproof"](https://www.auvieuxcampeur.fr/activites/randonnee/hygiene-sante-et-entretien/trousse-soin-etanche.html) qui est complet à 40€
 
-27. Sac de couchage 0°C
+28. Sac de couchage 0°C
 
 La survie généralement c'est en hiver que cela se passe, et il faut du matos pour la montagne et l'hiver pour dormir au chaud et donc investir dans un sac de couchage température de confort 0°C. Ils sont cher + 200 à 450€. J'ai un [Cumulus Lite Line 400](https://www.aventurenordique.com/duvet-cumulus-lite-line-400.html) qui pèse que 705gr temp de confort 2°C à 325€. J'ai dormi avec à Murren en Suisse dans la Jungfrau à 1750m d'altitude en Hiver sous -10°C, et c'était agréable durant 20 jours. Pour gagner quelques degrées et l'hygiène n'oubliez pas de mettre un drap de soie (sac à viande).
 
-28. Poncho impérméable
+29. Poncho impérméable
 
 Basic pour la pluie. 
 
-29. Sous-vêtement thermique
+30. Sous-vêtement thermique
 
 Vous trouverez des sous-vêtements thermiques pour l'hiver de qualité en particulier dans le rayon ski de n'importe quel magasin de sport. Collant et maillot de corps à manche longue.
 
-30. Talkie-Walkies
+31. Talkie-Walkies
 
 Toujours utile pour communiquer. La marque célèbre et le [Baofeng UV-5R](https://shop.mes-talkie-walkie.fr/product/view/id/20-baofeng-uv5r) à 40€
 
-31. Un abri
+32. Un abri
 
 La tente est toujours essentiel pour dormir ou ce reposer, vous trouverez des modèles d'alpinismes et de trek relativement robuste en particulier pour la MUL (marche ultra-légère) mais le prix grimpe rapidement tel que la Nemo Hornet 1P ou La MSR HUBBA NX. Je possède une [CAMP Minima EVO1](https://www.monbivouac.com/tente-camp-minima-1-evo.html) à 230€, 1520gr. 
 
