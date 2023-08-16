@@ -55,7 +55,7 @@ Element essentiel pour créer des réseaux intelligents et capacités d'apprenti
 
 En infime quantité, on peut y ajouter:
 
-* De l'huile essentiel dans le liquide vaisselle *Clean Day Meyer's*
+* De l'huile essentielle dans le liquide vaisselle *Clean Day Meyer's*
 * de L'huile de Nigelle
 * Vinaigrette de marque Maille. 
 
@@ -99,3 +99,4 @@ C'est une méduse commune et a un composé, recherche en cours du gène de l'imm
 * Graines de chia
 * Levure Saccharomyces Cerevisiae
 * Encens Fleur de Lotus
+* Mercure
