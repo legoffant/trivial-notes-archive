@@ -68,7 +68,9 @@ Le meilleur modèle est la [marque Proster](https://www.amazon.fr/dp/B07D48D8FF/
 
 Un indispensable en rando et trek. Je prend la marque Black Diamond ou Petzl à 30€
 
-13. Clé USB étanche, prenez la marque [Corsair Flash Survivor](https://www.amazon.fr/Corsair-CMFSS3B-64GB-Survivor-Stealth-Etanch%C3%A9it%C3%A9/dp/B00YHL1LN8/ref=sr_1_7?keywords=corsair+voyager+usb&qid=1692207076&sr=8-7) 64GB à 33€ pour vos documents importants.
+### 13- Clé USB étanche
+
+Prenez la marque [Corsair Flash Survivor](https://www.amazon.fr/Corsair-CMFSS3B-64GB-Survivor-Stealth-Etanch%C3%A9it%C3%A9/dp/B00YHL1LN8/ref=sr_1_7?keywords=corsair+voyager+usb&qid=1692207076&sr=8-7) 64GB à 33€ pour vos documents importants.
 
 ### 14- Paracorde 
 
