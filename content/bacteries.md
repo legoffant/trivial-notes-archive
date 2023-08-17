@@ -5,7 +5,7 @@ Tags: bactéries
 Authors: Anthony Le Goff
 Summary:
 
-Il faut quelques bases en microbiologies pour faire des processeurs à ADN. Petit rappel que pour créer un calculateur: c'est en théorie de la résolution de problème. Et le premier principe à travers la survie est la recherche de nourriture. Si vous avez jouez au jeu-vidéo Spore, vous comprendrez la subilité. Mais également en étudiant le comportement du Blob et l'avoine. 
+Il faut quelques bases en microbiologies pour faire des processeurs à ADN. Petit rappel que pour créer un calculateur: c'est en théorie de la résolution de problème. Et le premier principe à travers la survie est la recherche de nourriture. Si vous avez jouez au jeu-vidéo Spore, vous comprendrez la subtilité. Mais également en étudiant le comportement du Blob et l'avoine. 
 
 On repart de zéro quand on reproduit la création dans des containers. Et la vie est sorti des océans, en particulier des sources hydrothermales: les fumeurs noirs. On reproduit donc les conditions dans les abysses.
 
