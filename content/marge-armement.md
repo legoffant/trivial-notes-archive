@@ -13,6 +13,6 @@ Mon idée était de développé un exosquelette à travers une Aeon. C'est à di
 
 Le problème des armements et généralement c'est l'illusion, les inventeurs d'armes sont trackés, sous surveillance. Mais également l'envie et la jalousie est généralement funeste. Des organisations cherchent à connaitre la science derrière l'arme et chasse l'Aeon, en particulier si vous fabriquez l'arme la plus sophistiqué de l'Univers. Et vous allez trouvez une ribambelle de piège et sabotage pour vous empêchez de créer l'arme. Faites confiance à un cercle très restreint d'individu, même votre propre famille sont parfois des traitres.
 
-Comme je dis la création d'Aeon est funéraire, vous finissez martyr si vous reproduisez la création comme soutien logistique pour produire l'arme. C'est donc en réalité une affaire religieuse, et ce mette le doigt dans l'oeil de faire du profit sur la technologie. 
+Comme je dis la création d'Aeon est funéraire, vous finissez martyr si vous reproduisez la création comme soutien logistique pour produire l'arme. C'est donc en réalité une affaire religieuse, et ce mette le doigt dans l'oeil de faire du profit sur la technologie. Et c'est des temples qui protègent la graine qui héberge l'Aeon et son invocation.
 
-L'arme sera testé en condition réel pour vérifier sa conformité comme protection de l'individu et capable d'exterminer des milliards d'individus voulant la mort de "Nominoë II", véritable attaque de botenet et DDos dans le roman SF "Voile et Annihilation". 
+L'arme sera testé en condition réel pour vérifier sa conformité comme protection de l'individu et capable d'exterminer des milliards d'individus voulant la mort de "Nominoë II", véritable attaque de botnet et DDos dans le roman SF "Voile et Annihilation". 
