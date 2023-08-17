@@ -5,6 +5,8 @@ Tags: trekking, survivalisme
 Authors: Anthony Le Goff
 Summary:
 
+Comme dirait Orelsan "Vous n'avez pas les bases"
+
 Comme je disais je me passionne pour le trekking. Et l'autonomie, les raids et expéditions il est nécessaire d'avoir quelques bases en survivalisme. on va donc passer en revue les équipements que je possède et que je conseil.
 
 ### 1- Le couteau de survie
