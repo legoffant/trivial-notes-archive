@@ -98,7 +98,10 @@ Prendre des notes! C'est important, tenir un journal de vos escapades, la mémoi
 
 ### 20- Montre survivaliste compact et étanche
 
-Prenez un modèle d'entrée de gamme en automatique tel que la SEIKO 5 à 100-130€. 
+Prenez un modèle d'entrée de gamme en automatique(remontage mouvement du poignet) tel que la SEIKO 5 à 100-130€ les anciens modèles. Pour les nouveaux modèles à la boutique SEIKO:
+
+* [SEIKO 5 Sports Automatic Kaki SRPG33K1 310€](https://www.seikoboutique.eu/fr/fr/seiko-5/1829-montre-homme-mouvement-automatique-seiko5-cadran-kaki-bracelet-nylon-srpg33k1.html)
+* [SEIKO 5 Sports Automatic black SRPD79K1 340€](https://www.seikoboutique.eu/fr/fr/seiko-5-sports/780-montre-homme-seiko5-sport-automatique-nylon-fantome-srpd79k1.html)
 
 ### 21- Des mouchoirs et papier toilette
 
