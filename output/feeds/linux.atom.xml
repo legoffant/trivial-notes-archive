@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-08-13T20:38:00+02:00</updated><entry><title>Jalon logiciel de CAO Next-Gen</title><link href="/jalon-logiciel-de-cao-next-gen.html" rel="alternate"></link><published>2023-08-13T20:38:00+02:00</published><updated>2023-08-13T20:38:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/jalon-logiciel-de-cao-next-gen.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Alors voila, j'avance sur mon grand projet d'ingénierie logicielle ou je compte créer le logiciel de CAO next-gen open source sous GNU/Linux. Le nom provisoir est &lt;em&gt;Qasari3D&lt;/em&gt;. Ce projet va bien m'occuper 10 à 15 ans. C'est du long terme.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-08-17T11:04:00+02:00</updated><entry><title>Laptop Framework</title><link href="/laptop-framework.html" rel="alternate"></link><published>2023-08-17T11:04:00+02:00</published><updated>2023-08-17T11:04:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-17:/laptop-framework.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Voila un modèle de PC portable intéressant que je viens de découvrir, c'est la marque &lt;a href="https://frame.work/fr/fr"&gt;Framework&lt;/a&gt;. Une alternative aux gros constructeurs comme Dell ou Lenovo. Il a la particularité d'être modulaire DIY. C'est à dire que c'est réparable et upgradable comme le Fairphone.&lt;/p&gt;
+&lt;p&gt;Le modèle d'entrée de gamme est à 1278€ en 13" sous AMD Ryzen. De plus cela est compatible sous GNU/Linux et livre l'ordinateur sans OS. &lt;/p&gt;
+&lt;p&gt;Configuration:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU AMD Ryzen 5 series&lt;/li&gt;
+&lt;li&gt;RAM 16GB DDR5-5600&lt;/li&gt;
+&lt;li&gt;Free OS&lt;/li&gt;
+&lt;li&gt;Disque dur: WD_Black SN770 NVMe - 250GB&lt;/li&gt;
+&lt;li&gt;Clavier AZERTY&lt;/li&gt;
+&lt;li&gt;Adaptateur secteur - EU&lt;/li&gt;
+&lt;li&gt;Port Expansion Cards: 1 USB-C, 2x USB-A, 1 HDMI, 1 RJ45, 1 Audio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lien de configuration et d'achat: &lt;a href="https://frame.work/fr/fr/products/laptop-diy-13-gen-amd?q=processor"&gt;https://frame.work/fr/fr/products/laptop-diy-13-gen-amd?q=processor&lt;/a&gt;&lt;/p&gt;</content><category term="Linux"></category><category term="laptop"></category></entry><entry><title>Jalon logiciel de CAO Next-Gen</title><link href="/jalon-logiciel-de-cao-next-gen.html" rel="alternate"></link><published>2023-08-13T20:38:00+02:00</published><updated>2023-08-13T20:38:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-13:/jalon-logiciel-de-cao-next-gen.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Alors voila, j'avance sur mon grand projet d'ingénierie logicielle ou je compte créer le logiciel de CAO next-gen open source sous GNU/Linux. Le nom provisoir est &lt;em&gt;Qasari3D&lt;/em&gt;. Ce projet va bien m'occuper 10 à 15 ans. C'est du long terme.&lt;/p&gt;
 &lt;p&gt;L'intérêt est de rabattre les cartes sur le marché, rendre accessible la conception, et faire hurler Dassault Systemes qui m'a bien casser les couilles avec ces sbires à L'école des Mines. Il y a des joueurs. Chiche?&lt;/p&gt;
 &lt;p&gt;Voila les grands principes et exigence du logiciel:&lt;/p&gt;
 &lt;ul&gt;
