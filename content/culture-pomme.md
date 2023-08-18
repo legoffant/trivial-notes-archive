@@ -23,6 +23,8 @@ Egalement nous allons comprimer dans un réacteur le vide et générer des fluct
 
 L'anneau de "supra" génère un micro trou noir et extrait de l'énergie du vide, c'est à dire que l'on contrôle le temps à proximité.
 
+Rappelez vous que les champignons de Paris, on les cultives dans les souterrains, pas seulement pour le contrôle de l'humidité mais par effet de cavitation dans un container. 
+
 Quelques photos de l'expérience, et prolifération des champignons au bout de 10 jours
 
 ![petri1](images/petri1.jpg)
