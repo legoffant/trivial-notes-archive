@@ -33,6 +33,8 @@ Un calendrier lunaire est basée sur 28 jours sur un cycle de 13 lunes soit 364 
 
 C'EST LE CALENDRIER EXACTE, le plus précis, au plus proche de la gravitation par les effets de marées. Mais par croyance et superstition, le chiffre 13 est banni en plus d'être un nombre premier. Pourquoi? Car dans une base 16, si vous lancer les dés au hasard, vos essais vont convergé vers le nombre 13. C'est la loi normale centrée réduite. 
 
+Si on divise en base 16, le nombre 13: 13/16 = 0,8125 sur un cyclé carré * 3 = 3,25 lunaisons soit 3 + 6 jours = 90 jours.
+
 ![petri1](images/petri1.jpg)
 
 ---
