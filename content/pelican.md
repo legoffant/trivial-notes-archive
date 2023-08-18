@@ -50,4 +50,6 @@ Pour cela le narkantisme est une secte islamique, c'est la suite et va produire 
 
 Le Coran est codé, et il y a une référence à "Noé" et son arche.
 
+Aujourd'hui, j'ai visité personnellement l'Hotel Atlantis qui se situe à Dubaï sur Palm Island dans l'Emirat ou l'on retrouve le plus haut donjon du monde: Burj Khalifa, une citadelle dans la demeure du ciel, ou on prend l'ascension et l'accès aux limbes. 
+
 [1] Le ciel dans les civilisations orientales; Cannuyer, Mawet, Ries
