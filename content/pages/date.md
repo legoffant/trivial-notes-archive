@@ -43,6 +43,7 @@ A venir:
 - Début de l'Ere d'exploitation d'Avalon :l'an 107
 - Inauguration de la tour de l'éternité d'Avalon: l'an 433
 - Fin de la première Ere: l'an 1727
+- Début de transfert sur Titan, Ere 13: l'an 21 167
 - Fin de l'Ere d'exploitation d'Avalon: l'an 26 027
 
 ---
