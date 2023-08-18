@@ -17,7 +17,7 @@ La ou la bas blesse dans le darwinisme et en particulier la sélection naturelle
 
 Le darwinisme ne précise pas comment cela se produit. Si on suit la théorie de Darwin, à travers l'apprentissage, un animal terrestre doit faire le mouvement de l'oiseau avec des membres pour commencer à avoir des ailes ou sauter tout le temps.... C'est à dire que son corps s'adapte et va évoluer. Cela parait absurde et pourtant c'est le darwinisme....
 
-Même réflexion sur l'oiseau volant, celui-ci doit essayer de sortir de l'eau pour avoir envie de prendre un peu d'air et lui voir pousser des ailes. Paye tes neuneus dans le darwinisme. Alors certain appel le hasard, il y a des probabilités à travers des mutations qu'il y ai des anomalies qui apparaissent et que des membres vont pousser ou des ailes: niant que c'est pré-construit dans l'ADN à travers des plans de conception qui s'active en fonction de l'environnement. 
+Même réflexion sur le poisson volant, celui-ci doit essayer de sortir de l'eau pour avoir envie de prendre un peu d'air et lui voir pousser des ailes. Paye tes neuneus dans le darwinisme. Alors certain appel le hasard, il y a des probabilités à travers des mutations qu'il y ai des anomalies qui apparaissent et que des membres vont pousser ou des ailes: niant que c'est pré-construit dans l'ADN à travers des plans de conception qui s'active en fonction de l'environnement. 
 
 Le changement de milieu est complexe, car il n'y a pas de raison que vous quitter votre milieu et évolué. Pourquoi décider d'aller sur la Terre ferme tel que les amphibiens grâce aux membres qui ont poussé. Durant des millions d'années certaine espèce n'évolue pas et stagne, alors que d'autres changent de milieu et s'adapte plus facilement. 
 
