@@ -42,9 +42,11 @@ A venir:
 
 - Début de l'Ere d'exploitation d'Avalon :l'an 107
 - Inauguration de la tour de l'éternité d'Avalon: l'an 433
-- Fin de l'Ere d'exploitation d'Avalon: l'an 26 015
+- Fin de l'Ere d'exploitation d'Avalon: l'an 25 867
 
 ---
 ```
+
+Rappel précession des équinoxes: 1° = 72 ans. Sur un cycle de 13 lunes, soit 936 lunaisons
 
 **ANNIHILATION PLANETAIRE**
