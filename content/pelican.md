@@ -29,7 +29,7 @@ Ce plan va marcher, la lignée de Jésus occulté par les mérovingiens vont rep
 
 Puis va venir une anomalie dans le désert saoudien sous le règne de Dagobert en France en l'an 600 avec l'arrivée de l'Islam sous la représentation d'une tribue (banni en arabe), les Quraysh, petit requin en arabe, et un symbole aquatique. Un nouveau prophète abrahamique via Muhammad. 
 
-Le Coran fait vite fait allusion aux pyramides et pharaons. L'Islam est une grande réforme Atlante de la religion. Qui par symbolisme sera islamisé au Mt Atlas et la création de la première université de savant à Fès. 
+Le Coran fait vite fait allusion aux pyramides et pharaons. L'Islam est une grande réforme Atlante de la religion. Qui par symbolisme sera islamisé au Mt Atlas et la création de la première université [Al Quaraouiyine](https://uaq.ma/) de savant à Fès de la Faculté Chariâa (Théologie). 
 
 L'Islam va tenter de convertir l'Egypte puis l'Europe et pénétrer la citadelle chrétienne, et cela va être la guerre de religion. Il va y avoir les Croisades et les musulmans vont camper le tombeau du Christ. Officielement cela s'arrête par la prise de Constantinople en 1453. La mosquée Sainte-Sophie islamique comme conversion des empereurs romains. Les musulmans ont plusieurs stratégies pour pénétrer l'Europe, et vont utiliser la lignée d'Ali pour de l'espionnage et s'associer avec les romains. Pour cela ils vont pénétrer le Vatican et ces secrêts dans les archives par le plus célèbre des savants d'origine arabe: Leonard de Vinci qui va coder dans ces oeuvres quelques secrets du Vatican et leak.
 
