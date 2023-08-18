@@ -31,7 +31,7 @@ RAPPEL: La Lune tourne autour de la Terre en un peu plus de 27 jours (27 j 7 h 4
 
 Un calendrier lunaire est basée sur 28 jours sur un cycle de 13 lunes soit 364 jours. 28 est divisible par 4 = 7 jours.
 
-C'EST LE CALENDRIER EXACTE, le plus précis, au plus proche de la gravitation par les effets de marées. Mais par croyance et superstition, le chiffre 13 est banni en plus d'être un nombre premier. 
+C'EST LE CALENDRIER EXACTE, le plus précis, au plus proche de la gravitation par les effets de marées. Mais par croyance et superstition, le chiffre 13 est banni en plus d'être un nombre premier. Pourquoi? Car dans une base 16, si vous lancer les dés au hasard, vos essais vont convergé vers le nombre 13. C'est la loi normale centrée réduite. 
 
 ![petri1](images/petri1.jpg)
 
