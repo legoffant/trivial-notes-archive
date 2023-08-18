@@ -60,11 +60,11 @@ Le liquide vaisselle à base glycérine j'utilise: Mrs. Meyer’s Clean Day - Av
 
 L'éthanol j'utilise du parfum et leurs propriétés:  
 
-* Fiole à ADN 1: Opium YSL 
+* Fiole à ADN 1: Opium YSL (https://www.fragrantica.fr/parfum/Yves-Saint-Laurent/Opium-Pour-Homme-562.html)
     
-* Fiole à ADN 2: Noir de Reminescence
+* Fiole à ADN 2: Noir de Reminescence (https://www.fragrantica.fr/parfum/Reminiscence/Noir-5516.html)
     
-* Fiole à ADN 3: Lolita Lempicka Homme
+* Fiole à ADN 3: Lolita Lempicka Homme (https://www.fragrantica.fr/parfum/Lolita-Lempicka/Lolita-Lempicka-Au-Masculin-458.html)
 
 Traces:
 
