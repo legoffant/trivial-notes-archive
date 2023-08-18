@@ -25,7 +25,7 @@ L'anneau de "supra" génère un micro trou noir et extrait de l'énergie du vide
 
 Rappelez vous que les champignons de Paris, on les cultives dans les souterrains, pas seulement pour le contrôle de l'humidité mais par effet de cavitation dans un container.
 
-Quelques photos de l'expérience, et prolifération des champignons au bout de 10 jours
+Quelques photos de l'expérience, et prolifération des champignons au bout de 10 jours. Temps de pourissement d'une pomme, une fois coupé : 3 à 5 jours. En 7 jours vous avez reproduit la création, par cycle de 1/4 de la lunaison sur 29,5 jours soi 7 jours, 9 heures plus exactement. Rappel on compte en base 16 soit 4*4: 
 
 ![petri1](images/petri1.jpg)
 
