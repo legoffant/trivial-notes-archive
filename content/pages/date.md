@@ -27,6 +27,8 @@ Slug: date
 A venir:
 
 ```text
+- Début d'horloge des "Kor" à Harvest Moon: 29/09/53
+- Activation "Kor": 25/04/54
 - Fondation de Kor-Al-Maghrib: 5/54
 - Pélerinage des gardiennes au sanctuaire: 22/06/54
 - Fondation de Kor-Al-Layl: 9/54
