@@ -33,7 +33,8 @@ trace <1-8%:
 *   \- Graines de chia
 *   \- Levure Saccharomyces Cerevisiae
 *   \- Mercure, metal liquide a température ambiante controle de la température
-*   \- Cendre, soit du papier brulée, ou de l'encens.
+*   \- Cendre, soit du papier brulée, ou de l'encens fleur de Lotus
+*   \- Phytoplancton
   
 
 **Composants**:  
@@ -62,6 +63,14 @@ La meilleur eau est Vittel (0,32€/L) dans les Vosges, pour ces propriétés mi
 A cette eau, je la fait saturer en sel aromatique Herbamare(16.91 € / KG) de la marque A.Vogel Alsacienne:  
 
 94% de sel marin, 6% de légumes et herbes aromatiques (céleri\*, poireau\*, cresson\*, oignon\*, ciboulette\*, persil\*, livèche\*, ail, basilic\*, marjolaine\*, romarin\*, thym\* ) et du kelp (algue marine iodé). Contient 93,7% de chlorure de sodium.  
+
+Préparation dans 25CL (un verre):
+
+* Vittel saturée en sel herbamare
+* 1/2 cuillère a café d'huile de Nigelle
+* 1/2 cuillère a café de vinaigrette Maille
+* 1/2 cuillère a café de phytoplancton
+* 1/2 cuillère a café de miel
 
 Le liquide vaisselle à base glycérine j'utilise: Mrs. Meyer’s Clean Day - Avec Huiles Essentielles\* - Parfum Verveine Citronnée - extraits d’aloe vera. (4,74 € / l)  
 
@@ -103,6 +112,10 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 *   Levure Saccharomyces Cerevisiae - Classic Munich – Lallemand Danstar 11gr 4,25€ - [Le comptoir du brasseur](https://www.lecomptoirdubrasseur.fr/ingredients/levures/fermentation-haute/levure-munich-classic-11g-lallemand-danstar/)
 
 *   Mercure, sous forme d'un interrupteur PZ101, à casser pour récupérer une petit goutte de mercure
+
+*   Seachem - reef phytoplankton - 250L 14€ [https://www.zoanthus.fr/fr/nourriture-coraux/716-seachem-reef-phytoplankton-250ml-concentre-de-phytoplancton-000116150606.html](https://www.zoanthus.fr/fr/nourriture-coraux/716-seachem-reef-phytoplankton-250ml-concentre-de-phytoplancton-000116150606.html)
+
+* Encens HEM Fleur de Lotus 4€ [https://www.amazon.fr/dp/B087BHCG9G?ref=ppx_yo2ov_dt_b_product_details&th=1](https://www.amazon.fr/dp/B087BHCG9G?ref=ppx_yo2ov_dt_b_product_details&th=1)
 
 C'est la tradition des alchimistes et c'est alimentaire avec une évolution minérale et la matière par la physique nucléaire contemporaine. Il faut du deuterium pour produire un réacteur à eau pressurisé. Isotope naturel sous forme de trace dans l'eau, et plus concentré dans les océans. Certaines eaux minérales ont du tritium.  
 
