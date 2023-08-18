@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Biohacking</title><link href="/" rel="alternate"></link><link href="/feeds/biohacking.atom.xml" rel="self"></link><id>/</id><updated>2023-08-17T23:04:00+02:00</updated><entry><title>Les bactéries [Biohacking]</title><link href="/les-bacteries-biohacking.html" rel="alternate"></link><published>2023-08-17T23:04:00+02:00</published><updated>2023-08-17T23:04:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-17:/les-bacteries-biohacking.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Il faut quelques bases en microbiologies pour faire des processeurs à ADN. Petit rappel que pour créer un calculateur: c'est en théorie de la résolution de problème. Et le premier principe à travers la survie est la recherche de nourriture. Si vous avez jouez au jeu-vidéo Spore, vous comprendrez la subtilité. Mais également en étudiant le comportement du Blob et l'avoine. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Biohacking</title><link href="/" rel="alternate"></link><link href="/feeds/biohacking.atom.xml" rel="self"></link><id>/</id><updated>2023-08-18T08:30:00+02:00</updated><entry><title>Mise en culture de pomme [Biohacking]</title><link href="/mise-en-culture-de-pomme-biohacking.html" rel="alternate"></link><published>2023-08-18T08:30:00+02:00</published><updated>2023-08-18T08:30:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-18:/mise-en-culture-de-pomme-biohacking.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Mettre en culture des pommes pour obtenir des moisissures pour le Penicillium n'est pas bien difficile, cela est accessible à n'importe quel adolescent. Mais il y a des techniques pour accélérer les transmutations de l'ADN.&lt;/p&gt;
+&lt;p&gt;Ce que vous avez besoin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 morceaux de pomme&lt;/li&gt;
+&lt;li&gt;Une boite de Petri&lt;/li&gt;
+&lt;li&gt;Un mouchoir découpé&lt;/li&gt;
+&lt;li&gt;Eau salée&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour que les moississures ce développe il faut un environnement humide saturé en eau. Egalement pour éviter la sécheresse des aliments durant leur décomposition et la mort des bactéries dans leur environnement nutritif: la pulpe. On va donc imbibé un peu notre papier mouchoir avec de l'eau salée (electrolyte). Egalement on créé un champs tournant en mettant 3 morceaux de pomme. C'est des petites astuces pour accélérer la circulation de l'énergie et donc les transmutations.&lt;/p&gt;
+&lt;p&gt;Egalement nous allons comprimer dans un réacteur le vide et générer des fluctuations quantiques. Pour cela il faut:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Un boite carrée en acier comme container&lt;/li&gt;
+&lt;li&gt;Un anneau "supra" de savon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L'anneau de "supra" génère un micro trou noir et extrait de l'énergie du vide, c'est à dire que l'on contrôle le temps à proximité.&lt;/p&gt;
+&lt;p&gt;Quelques photos de l'expérience, et prolifération des champignons au bout de 10 jours&lt;/p&gt;
+&lt;p&gt;&lt;img alt="petri1" src="images/petri1.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="petri2" src="images/petri2.jpg"&gt;&lt;/p&gt;</content><category term="Biohacking"></category><category term="moisissure"></category></entry><entry><title>Les bactéries [Biohacking]</title><link href="/les-bacteries-biohacking.html" rel="alternate"></link><published>2023-08-17T23:04:00+02:00</published><updated>2023-08-17T23:04:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-17:/les-bacteries-biohacking.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Il faut quelques bases en microbiologies pour faire des processeurs à ADN. Petit rappel que pour créer un calculateur: c'est en théorie de la résolution de problème. Et le premier principe à travers la survie est la recherche de nourriture. Si vous avez jouez au jeu-vidéo Spore, vous comprendrez la subtilité. Mais également en étudiant le comportement du Blob et l'avoine. &lt;/p&gt;
 &lt;p&gt;On repart de zéro quand on reproduit la création dans des containers. Et la vie est sorti des océans, en particulier des sources hydrothermales: les fumeurs noirs. On reproduit donc les conditions dans les abysses.&lt;/p&gt;
 &lt;p&gt;Tout d'abord il faut des propriétés de conservation (eau salée + éthanol) de l'ADN à travers la lyse des cellules via un détergent.&lt;/p&gt;
 &lt;p&gt;C'est à dire que notre couveuse de la création dans une batterie nucléaire doit être composé d'un électrolyte:&lt;/p&gt;
