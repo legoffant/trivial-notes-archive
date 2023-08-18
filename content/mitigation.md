@@ -9,7 +9,7 @@ Ma fiole prototype doit subir une grosse mise à jour, un patch de version pour 
 
 Composition de la fiole prototype à ADN d'octobre 2022:
 
-```
+```text
 60% d'eau robinet salée Herbe aromatique Herbamare
 30% liquide vaisselle Paic excel+ 
 5 % parfum Opium
@@ -44,7 +44,7 @@ Système de mitigation. Puis transfert de la fiole prototype avec les nouveaux p
 
 NOUVELLE RECETTE:
 
-```
+```text
 6 FIOLES A ADN 
 2 x 3 parfums (dual core en processeur)
 
