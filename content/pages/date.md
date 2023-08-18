@@ -47,6 +47,8 @@ A venir:
 ---
 ```
 
-Rappel précession des équinoxes: 1° = 72 ans. Sur un cycle de 13 lunes, soit 936 lunaisons
+Rappel précession des équinoxes: 1° = 72 ans. Sur un cycle de 13 lunes, soit 936 lunaisons.
+
+360 / base 16 = 22,5° durée de l'Ere soit 72 * 22,5 = 1620 ans.
 
 **ANNIHILATION PLANETAIRE**
