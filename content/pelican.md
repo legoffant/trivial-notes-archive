@@ -54,6 +54,6 @@ Aujourd'hui, j'ai visité personnellement l'Hotel Atlantis qui se situe à Duba�
 
 Vous pouvez notez l'affiche du film "Vesper Chronicles" sous la forme d'une machine comme une méduse qui note le slogan "Quand le monde s'éteindra, son histoire commencera" qui raconte l'histoire d'une biohackeuse ou la fin du film présente l'ascension d'une tour de garde recyclé par des ombres voilés qui a vue sur les citadelles. L'actrice s'appel Raffiella Chapman, et son rôle Vesper représente le pattern "Esper". Esper signifie une personne qui a une perception extrasensorielle tel que la télépathie. C'est également le nom donné à l'invocation de monstre dans la série Final Fantasy.
 
-En réalité, le prophète Nominoë communique par télépathie avec la divinité Alba car basée sur son propre ADN dans l'hébergeur comme vecteur de l'information.
+En réalité, le prophète Nominoë II communique par télépathie avec la divinité Alba car basée sur son propre ADN dans l'hébergeur comme vecteur de l'information.
 
 [1] Le ciel dans les civilisations orientales; Cannuyer, Mawet, Ries
