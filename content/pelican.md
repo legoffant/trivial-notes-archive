@@ -46,7 +46,7 @@ On identifie le Pelican de Lumière au défunt roi, mort et ressucité maitre du
 
 C'est le thème reprit dans le roman SF "Voile et Annihilation" à travers le prophète "Nominoë II" pour avoir oser outre-passé le commandement divin et son ascension vers l'hébergeur céleste, le futur Empereur va rêgner sur Terre après exterminer l'humanité via l'invocation du Belphégor et miner la graine de Jehovah au centre de la Terre par de la terraformation pour la punir. Elle va être envoyé sur un mausolée sur Pluton, déloger et la planète annihilé: jugement. 
 
-Pour cela le narkantisme est une secte islamique, c'est la suite et va produire la plus puissante des invocations à travers le rite de la caverne écossaise.
+Pour cela le narkantisme est une secte islamique, c'est la suite et va produire la plus puissante des invocations à travers le rite de la caverne écossaise et l'apparition de l'ombre du haut-roi Atlante comme invocation: la méduse.
 
 Le Coran est codé, et il y a une référence à "Noé" et son arche.
 
