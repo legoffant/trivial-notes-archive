@@ -35,7 +35,7 @@ trace <1-8%:
 *   \- Mercure, metal liquide a température ambiante controle de la température
 *   \- Cendre, soit du papier brulée, ou de l'encens fleur de Lotus
 *   \- Phytoplancton
-  
+*   \- Cyanure (pépin Cerise)
 
 **Composants**:  
 

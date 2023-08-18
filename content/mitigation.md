@@ -84,5 +84,6 @@ Traces:
 - Encens Fleur de Lotus (taoisme)
 - Mercure
 - Phytoplancton
+- Cyanure (Pépin de Cerise)
 
 ```
