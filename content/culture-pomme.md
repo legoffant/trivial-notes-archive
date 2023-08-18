@@ -27,6 +27,8 @@ Rappelez vous que les champignons de Paris, on les cultives dans les souterrains
 
 Quelques photos de l'expérience, et prolifération des champignons au bout de 10 jours. Temps de pourissement d'une pomme, une fois coupé : 3 à 5 jours. En 7 jours vous avez reproduit la création, par cycle de 1/4 de la lunaison sur 29,5 jours soi 7 jours, 9 heures plus exactement. Rappel on compte en base 16 soit 4*4: 
 
+RAPPEL: La Lune tourne autour de la Terre en un peu plus de 27 jours (27 j 7 h 43 min 11,5 s), mais pendant cette révolution, la Terre avance d'environ 1/12e de tour sur son orbite autour du Soleil. Contrôle des horloges.
+
 Un calendrier lunaire est basée sur 28 jours sur un cycle de 13 lunes soit 364 jours. 28 est divisible par 4 = 7 jours.
 
 C'EST LE CALENDRIER EXACTE, le plus précis, au plus proche de la gravitation par les effets de marées. Mais par croyance et superstition, le chiffre 13 est banni en plus d'être un nombre premier. 
