@@ -27,13 +27,13 @@ Quelques millénaires plus tard une secte juive va utiliser un martyr à Jerusal
 
 Ce plan va marcher, la lignée de Jésus occulté par les mérovingiens vont reprendre la Gaulle aux romains et obliger l'empereur Constantin 1er à ce convertir au christianisme à Constantinople en 312. 
 
-Puis va venir une anomalie dans le désert saoudien sous le règne de Dagobert en France en l'an 600 avec l'arrivée de l'Islam sous la représentation d'une tribue (banni en arabe), les Quraysh, petit requin en arabe, et un symbole aquatique. Un nouveau prophète abrahmique via Muhammad. 
+Puis va venir une anomalie dans le désert saoudien sous le règne de Dagobert en France en l'an 600 avec l'arrivée de l'Islam sous la représentation d'une tribue (banni en arabe), les Quraysh, petit requin en arabe, et un symbole aquatique. Un nouveau prophète abrahamique via Muhammad. 
 
 Le Coran fait vite fait allusion aux pyramides et pharaons. L'Islam est une grande réforme Atlante de la religion. Qui par symbolisme sera islamisé au Mt Atlas et la création de la première université de savant à Fès. 
 
 L'Islam va tenter de convertir l'Egypte puis l'Europe et pénétrer la citadelle chrétienne, et cela va être la guerre de religion. Il va y avoir les Croisades et les musulmans vont camper le tombeau du Christ. Officielement cela s'arrête par la prise de Constantinople en 1453. La mosquée Sainte-Sophie islamique comme conversion des empereurs romains. Les musulmans ont plusieurs stratégies pour pénétrer l'Europe, et vont utiliser la lignée d'Ali pour de l'espionnage et s'associer avec les romains. Pour cela ils vont pénétrer le Vatican et ces secrêts dans les archives par le plus célèbre des savants d'origine arabe: Leonard de Vinci qui va coder dans ces oeuvres quelques secrets du Vatican et leak.
 
-Dans le symbolisme du christianisme, qui est une refuge au Vatican aux anciens prêtres de l'Egypte antique, il y a une haine farouche de Seth. Hors le pharaon alterne entre l'Ordre et le Chaos. D'ailleurs des pharaons etaient sethiens tel que Sethi Ier. Hors la réforme monothéiste: c'est le chaos. 
+Dans le symbolisme du christianisme, qui est un refuge au Vatican aux anciens prêtres de l'Egypte antique, il y a une haine farouche de Seth. Hors le pharaon alterne entre l'Ordre et le Chaos. D'ailleurs des pharaons etaient sethiens tel que Sethi Ier. Hors la réforme monothéiste: c'est le chaos. 
 
 L'Islam rappel des principes de l'Egypte de l'antique à travers la mosquée des interdits (Al-Haram): la Kabaa: concaténation de deux principes:
 
