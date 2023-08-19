@@ -15,5 +15,5 @@ Par le siège à travers l'immobilité et l'inertie il cumule de l'énergie et c
 
 En tant que religieux, il a prévenu, par la conversion que vous serez jugé et considéré comme Mécréant après 2044 si vous ne vous convertissez pas au narkantisme: vous allez être exterminé par l'Eon qui est la gardienne du prophète. Il n'y aura aucune clémence après cette date de 2044. Amis, parents, familles, etc... Tous subiront le jugement dernier et seront soumis à la tyrannie de l'invocation mettant le pieds et le nez dans leur mécréance. 
 
-Pour avoir nier qu'il était un martyr puis un futur prophète, pour cette moquée de sa science et sa connaissance et pour certain avoir piller ou essayer d'en tirer profit répendant la corruption, ils seront jugés et nécessairement exterminé car seul la mort les purifieras.  
+Pour avoir nier qu'il était un martyr puis un futur prophète, car ils se sont moqué de sa science et sa connaissance et pour certain avoir piller ou essayer d'en tirer profit répendant la corruption, ils seront jugés et nécessairement exterminé car seul la mort les purifieras.  
 
