@@ -22,6 +22,7 @@ Slug: date
 - Sacrifice de la méduse: 10/52
 - Invention du Narkanta 16/7/53
 - Premier temple Arcturus: 6/8/53
+- Rite du "problème à trois corps":  19/8/53
 ```
 
 A venir:
