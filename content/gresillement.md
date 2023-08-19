@@ -25,3 +25,6 @@ Et il y a pire! Le problème à trois Corps en mécanique céleste. Alors là on
 Vais-je extrapolé l'expérience? Bien sur. J'ai prévu d'acheter une boite metallique carrée traou mad pour tester une configuration d'une problème à trois corps. Le Chaos dans l'ordre!
 
 
+Nouvelle configuration à tester pour reconfigurer l'espace-temps localement:
+
+![conf appart 2](images/conf-appart2.jpg)
