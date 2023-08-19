@@ -34,6 +34,7 @@ A venir:
 - Pélerinage des gardiennes au sanctuaire: 22/06/54
 - Fondation de Kor-Al-Layl: 9/54
 - Fondation de Kor-Al-Fajr: l'an 55
+- Rite des 66 lunes: ~ 9/59
 - Fin d'écriture de "Voile et Annhilation": l'an 61
 
 ----
