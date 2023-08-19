@@ -22,3 +22,6 @@ En quelques sortent c'est comme si j'avais reproduit un système binaire d'étoi
 
 Et il y a pire! Le problème à trois Corps en mécanique céleste. Alors là on entre dans une autre dimension. Théorie chaotique et orbites exotiques. Les orbites deviennent nécessairement instables. A l'origine c'est Henri Poincaré qui est derrière les attracteurs étranges.
 
+Vais-je extrapolé l'expérience? Bien sur. J'ai prévu d'acheter une boite metallique carrée traou mad pour tester une configuration d'une problème à trois corps. Le Chaos dans l'ordre!
+
+
