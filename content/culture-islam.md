@@ -54,7 +54,7 @@ Aller à la mosquée, généralement les principales mosquées dans les villes o
 
 ### Liens utiles
 
-* [Livres gratuits pour l'apprendre l'arabe](https://al-dirassa.com/fr/livres-gratuits-apprendre-arabe/)
+* [Livres gratuits pour apprendre l'arabe](https://al-dirassa.com/fr/livres-gratuits-apprendre-arabe/)
 * [Petit glossaire de la religion musulmane PDF](https://akademimg.akadem.org/Medias/Documents/6-Glossaire-Islam.pdf)
 * [Vocabulaire de l'Islam PDF](http://idiomas.astalaweb.com/franc%E9s/v3/Vocabulaire-De-Islam.Pdf)
 * [Les études islamiques (anglais apperçu)](https://en.wikipedia.org/wiki/Islamic_studies)
