@@ -1,0 +1,65 @@
+Title: Outils de productivité sous Linux
+Date: 2023-08-20 08:09
+Category:Linux
+Tags: productivité
+Authors: Anthony Le Goff
+Summary:
+
+Petit tour d'horizon de mes outils de productivité pour resté actif sous GNU/Linux dans mes tâches quotidiennes.
+
+Rappel de base sur des principes de productivité, en particulier si vous proscratiner:
+
+* Bloquer des distractions (pubs, brouillage, notification de réseaux sociaux)
+* Garder une trace de comment vous utiliser votre temps
+* Automatiser le travail manuel
+* Ce rappeler des importants to-do
+* Organiser et structurer la connaissance
+
+### 1. Manuskript
+
+Manuskript est l'outil de travail open-source des écrivains, qui permet de préparer l'écriture et d'organiser des romans. Il a un mode "free distraction" épuré pour juste se focaliser sur l'écriture.
+
+### 2. keepass
+
+Gérer ces mots de passe peut vite devenir un casse-tête, donc utiliser un gestionnaire pour augmenter votre productivité.
+
+### 3. Zim
+
+Un simple wiki
+
+### Terminal Velocity
+
+Un outil de prise de note rapide sous Linux
+
+### Freemind
+
+Outil de brainstorming et cartes mentales
+
+### Autokey
+
+Pour assigner des scripts, phrases, abbréviations sur des hotkeys.
+
+### Catfish via Thunar
+
+Outil de recherche de fichier en natif sous XFCE via Thunar
+
+### fzf
+
+Fuzzy finder
+
+### Obsidian
+
+Organiser la connaissance
+
+### Synapse
+
+Avec Synapse vous pouvez utiliser pour lancer des applications ainsi que trouver et accéder aux documents pertinents et des fichiers en utilisant le moteur de Zeitgeist. 
+
+### Neovim
+
+Editeur de texte pour codeur léger intégrant l'auto-completion avec Coc.
+
+### Oh-my-Zsh
+
+Shell de terminal customizable pouvant intégrer des plugins et l'auto-completion de commande
+
