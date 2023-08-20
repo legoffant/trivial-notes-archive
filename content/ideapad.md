@@ -33,4 +33,6 @@ Connectique:
 
 Lien vers l'offre chez Darty: [PC portable Pack Lenovo Ideapad 3](https://www.darty.com/nav/achat/informatique/ordinateur_portable-portable/portable/lenovo_pck_ip3_14_i5_16_512.html#product_description)
 
+NOTA: Pour le même prix vous pouvez avoir un Thinkpad T570 aux mêmes caractéristiques en reconditionné sur BackMarket. [Lien vers l'offre](https://www.backmarket.fr/fr-fr/p/lenovo-thinkpad-t570-15-core-i5-7300u-260ghz-ghz-ssd-512-go-16384-go/d814005f-4861-4e89-b32b-45e50f8ecfe2#l=11).
+
 ![ideapad](images/ideapad.jpg)
