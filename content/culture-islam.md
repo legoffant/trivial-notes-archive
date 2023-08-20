@@ -13,7 +13,7 @@ Pour apprendre l'arabe pour les musulmans, il est nécessaire de passer par le C
 
 C'est ce que j'ai fais pour avoir des notions d'arabe. Tout d'abord j'ai commencé par la base: j'ai pris un cahier et j'ai répété l'alphabet à l'écrit pour apprendre à dessiner et mémoriser les symboles. Je faisais ça en prison. 
 
-RAPPEL: L'Islam est la religion des savants et polymathes. Aucun ne peut se donner comme titre de savant en niant la théologie. L'athéisme est une négation des infinis borné à la quantification et à la mesure. 
+RAPPEL: L'Islam est la religion des savants et polymathes. Aucun ne peut se donner comme titre de savant en niant la théologie. L'athéisme est une négation des infinis borné à la quantification et à la mesure. La religion dépasse la notion du temps et le considère comme une illusion.
 
 ### Les 5 pilliers de l'Islam
 
