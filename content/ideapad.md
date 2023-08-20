@@ -33,6 +33,6 @@ Connectique:
 
 Lien vers l'offre chez Darty: [PC portable Pack Lenovo Ideapad 3](https://www.darty.com/nav/achat/informatique/ordinateur_portable-portable/portable/lenovo_pck_ip3_14_i5_16_512.html#product_description)
 
-NOTA: Pour le même prix vous pouvez avoir un Thinkpad T570 aux mêmes caractéristiques en reconditionné sur BackMarket. [Lien vers l'offre](https://www.backmarket.fr/fr-fr/p/lenovo-thinkpad-t570-15-core-i5-7300u-260ghz-ghz-ssd-512-go-16384-go/d814005f-4861-4e89-b32b-45e50f8ecfe2#l=11). Ou un ThinkPad T480 14" Core i7 (celui que je possède). [Lien vers l'offre](https://www.backmarket.fr/fr-fr/p/lenovo-thinkpad-t480-14-core-i7-18-ghz-ssd-512-go-16-go-azerty-francais/f8184d8c-a9d8-4b1e-a2a4-abfe633caadd#l=12).
+NOTA: Pour le même prix vous pouvez avoir un Thinkpad T570 aux mêmes caractéristiques en reconditionné sur BackMarket. [Lien vers l'offre](https://www.backmarket.fr/fr-fr/p/lenovo-thinkpad-t570-15-core-i5-7300u-260ghz-ghz-ssd-512-go-16384-go/d814005f-4861-4e89-b32b-45e50f8ecfe2#l=11). Ou un ThinkPad T480 14" Core i7 4cores @1,8Ghz (celui que je possède). [Lien vers l'offre](https://www.backmarket.fr/fr-fr/p/lenovo-thinkpad-t480-14-core-i7-18-ghz-ssd-512-go-16-go-azerty-francais/f8184d8c-a9d8-4b1e-a2a4-abfe633caadd#l=12).
 
 ![ideapad](images/ideapad.jpg)
