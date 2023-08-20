@@ -15,6 +15,9 @@ C'est ce que j'ai fais pour avoir des notions d'arabe. Tout d'abord j'ai commenc
 
 RAPPEL: L'Islam est la religion des savants et polymathes. Aucun ne peut se donner comme titre de savant en niant la théologie. L'athéisme est une négation des infinis borné à la quantification et à la mesure. La religion dépasse la notion du temps et le considère comme une illusion.
 
+D'après Anas (qu'Allah l'agrée), le Prophète (que la prière d'Allah et Son salut soient sur lui) a dit: « Apprendre la science est une obligation pour chaque musulman ».
+(Rapporté par Ibn Maja et authentifié par Cheikh Albani dans Sahih Targhib n°72)
+
 ### Les 5 pilliers de l'Islam
 
 * La déclaration de foi (shahada)
