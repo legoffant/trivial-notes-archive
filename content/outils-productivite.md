@@ -27,39 +27,42 @@ Gérer ces mots de passe peut vite devenir un casse-tête, donc utiliser un gest
 
 Un simple wiki
 
-### Terminal Velocity
+### 4. Terminal Velocity
 
 Un outil de prise de note rapide sous Linux
 
-### Freemind
+### 5. Freemind
 
 Outil de brainstorming et cartes mentales
 
-### Autokey
+### 6. Autokey
 
 Pour assigner des scripts, phrases, abbréviations sur des hotkeys.
 
-### Catfish via Thunar
+### 7. Catfish via Thunar
 
 Outil de recherche de fichier en natif sous XFCE via Thunar
 
-### fzf
+### 8. fzf
 
 Fuzzy finder
 
-### Obsidian
+### 9. Obsidian
 
 Organiser la connaissance
 
-### Synapse
+### 10. Synapse
 
 Avec Synapse vous pouvez utiliser pour lancer des applications ainsi que trouver et accéder aux documents pertinents et des fichiers en utilisant le moteur de Zeitgeist. 
 
-### Neovim
+### 11. Neovim
 
 Editeur de texte pour codeur léger intégrant l'auto-completion avec Coc.
 
-### Oh-my-Zsh
+### 12. Oh-my-Zsh
 
 Shell de terminal customizable pouvant intégrer des plugins et l'auto-completion de commande
 
+### 13. Pearltrees 
+
+Gestionnaire "social bookmarking" pour navigateur internet pour structurer ces bookmarks et faire des recherches sur des centres d'intérêts pour vite trouver des idées convergentes.
