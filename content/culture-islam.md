@@ -13,6 +13,24 @@ Pour apprendre l'arabe pour les musulmans, il est nécessaire de passer par le C
 
 C'est ce que j'ai fais pour avoir des notions d'arabe. Tout d'abord j'ai commencé par la base: j'ai pris un cahier et j'ai répété l'alphabet à l'écrit pour apprendre à dessiner et mémoriser les symboles. Je faisais ça en prison. 
 
+### Les 5 pilliers de l'Islam
+
+* La déclaration de foi (shahada)
+* L'aumône (zakat)
+* la prière islamique (salat)
+* le Jeûne du Ramadan
+* Le pélerinage à la Mecque vers la Kaaba
+
+### Les pilliers de la foi
+
+* La divinité unique: Allah
+* Les anges (malaikas)
+* Les livres sacrés
+* Les prophètes
+* Le jugement dernier
+* La prédestination
+
+
 ### Quels sont les meilleurs livres à avoir pour les musulmans convertis?
 
 * Le Coran arabe-français translitteration phonétique Edition Al-Bouracq
