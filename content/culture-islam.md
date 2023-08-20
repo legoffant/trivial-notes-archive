@@ -59,3 +59,9 @@ Aller à la mosquée, généralement les principales mosquées dans les villes o
 * [Vocabulaire de l'Islam PDF](http://idiomas.astalaweb.com/franc%E9s/v3/Vocabulaire-De-Islam.Pdf)
 * [Les études islamiques (anglais apperçu)](https://en.wikipedia.org/wiki/Islamic_studies)
 
+### Enseignement en ligne de l'Islam pour les musulmans
+
+* [IMED - Maison des savoirs](https://www.lamaisondessavoirs.com/)
+* [Institut Abu Hanifa](http://institut-abuhanifa.fr/)
+* [Institut Najah](https://institut-najah.com/)
+
