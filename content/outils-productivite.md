@@ -66,3 +66,8 @@ Shell de terminal customizable pouvant intégrer des plugins et l'auto-completio
 ### 13. Pearltrees 
 
 Gestionnaire "social bookmarking" pour navigateur internet pour structurer ces bookmarks et faire des recherches sur des centres d'intérêts pour vite trouver des idées convergentes.
+
+Vous pouvez accéder à ma propre base de donnée sur mes pseudo:
+
+* Ancien: [https://www.pearltrees.com/virtualdigit](https://www.pearltrees.com/virtualdigit)
+* Nouveau: [https://www.pearltrees.com/anthlegoff](https://www.pearltrees.com/anthlegoff)
