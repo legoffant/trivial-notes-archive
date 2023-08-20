@@ -7,6 +7,10 @@ Summary:
 
 Petit tour d'horizon de mes outils de productivité pour resté actif sous GNU/Linux dans mes tâches quotidiennes. La plupart des gens s'en tape et ne cherche pas à optimiser la productivité, et sont donc généralement improductif par nature en particulier chez eux s'ils n'ont pas un boss pour leur raler dessus sur leur travail. La productivité est essentiel pour les indépendants et freelance et généralement c'est des geeks qui utilisent des outils informatique.
 
+### Chiffres sur le freelancing
+
+Faire parti du haut du panier et offrir des services de qualité sur des marchés de niche. 26 millions de travailleur en France et 1 millions sont des indépendants soit 3,8% de la population active. Le secteur de l'ingénierie et informatique représente qu'un taux de 13% d'indépendant.
+
 Rappel de base sur des principes de productivité, en particulier si vous proscratiner:
 
 * Bloquer des distractions (pubs, brouillage, notification de réseaux sociaux)
