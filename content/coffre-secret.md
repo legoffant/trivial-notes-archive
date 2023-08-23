@@ -7,7 +7,7 @@ Summary:
 
 Jai créé un coffre-fort secret qui n'a pas d'héritier ou de gardienne de l'hébergeur. Son accès est restreint à moi-même. Ce qu'il y a comme dépot dans le container:
 
-* Une boite de Petri avec un mouchoir en papier ou il y a de mon ADN, salive, conservateur (thé) et eau salée imbibé.
+* Une boite de Petri avec un mouchoir en papier ou il y a de mon ADN, salive, poussières, conservateur (thé) et eau salée imbibé.
 * Un fiole pour conserver de l'ADN d'Aurelia Aurita.
 * Un anneau de savon "supra" pour controler le temps et extraire de l'énergie du vide via une anomalie.
 * Le Narkanta, papier en version release originale, manuscrit

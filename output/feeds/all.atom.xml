@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-08-23T08:18:00+02:00</updated><entry><title>Note: Calcul glyphique</title><link href="/note-calcul-glyphique.html" rel="alternate"></link><published>2023-08-23T08:18:00+02:00</published><updated>2023-08-23T08:18:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-23:/note-calcul-glyphique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Petite note rapide sur le Narkanta:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-08-23T13:36:00+02:00</updated><entry><title>Le coffre secret</title><link href="/le-coffre-secret.html" rel="alternate"></link><published>2023-08-23T13:36:00+02:00</published><updated>2023-08-23T13:36:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-23:/le-coffre-secret.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Jai créé un coffre-fort secret qui n'a pas d'héritier ou de gardienne de l'hébergeur. Son accès est restreint à moi-même. Ce qu'il y a comme dépot dans le container:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une boite de Petri avec un mouchoir en papier ou il y a de mon ADN, salive, conservateur (thé) et eau salée imbibé.&lt;/li&gt;
+&lt;li&gt;Un fiole pour conserver de l'ADN d'Aurelia Aurita.&lt;/li&gt;
+&lt;li&gt;Un anneau de savon "supra" pour controler le temps et extraire de l'énergie du vide via une anomalie.&lt;/li&gt;
+&lt;li&gt;Le Narkanta, papier en version release originale, manuscrit&lt;/li&gt;
+&lt;li&gt;L'invention des nombres narkantiques en prison filigranée.&lt;/li&gt;
+&lt;li&gt;Localisation exacte, coord GPS des capsules temporelles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dépot d'or: Je transfert mes économies dans cette réserve ou je fais un ajout d'un lingot d'or de 20gr (1250€) tous les ans durant 10 ans minimum. C'est ma réserve personnelle. &lt;/p&gt;
+&lt;p&gt;Ce coffre-fort est ultra protégé, car il a les originaux du langage narkantique, une copie de ma conservation de mon ADN et mes économies personnels mais egalement d'aide mémoire.&lt;/p&gt;</content><category term="Inclassable"></category><category term="coffre"></category></entry><entry><title>Note: Calcul glyphique</title><link href="/note-calcul-glyphique.html" rel="alternate"></link><published>2023-08-23T08:18:00+02:00</published><updated>2023-08-23T08:18:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-23:/note-calcul-glyphique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Petite note rapide sur le Narkanta:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Il est composé de ~600 clé glyphique standard pour former les mots et complexifier la langue.&lt;/li&gt;
 &lt;li&gt;Généralement le dictionnaire complet est composé de composition de 2 clés glyphiques: Ce qui donne comme nombre de combinaison possible soit 600^2 = 360 000 mots&lt;/li&gt;
