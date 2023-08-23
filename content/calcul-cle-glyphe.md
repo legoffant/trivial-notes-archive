@@ -16,7 +16,7 @@ Un processeur @1 GHz peut effectuer en moyenne une instruction en 1 nanosecondes
 
 Si on utilise un système de 20 (4 x 5) clés glyphiques il faut 1,15e+39 ans pour casser le code avec un processeur @1GHz. 
 
-Le Narkanta utilise un système de positionnement dans un repère, c'est à dire c'est un glyphe. Il faut connaitre les mots formant le glyphe mais egalement la position exacte dans une repère à travers des marqueur du positionnement du langage.
+Le Narkanta utilise un système de positionnement dans un repère, c'est à dire c'est un glyphe. Il faut connaitre les mots formant le glyphe mais egalement la position exacte dans un repère à travers des marqueurs du positionnement du langage.
 
 Cela n'est pas suffisant d'avoir la bonne combinaison de glyphe, il faut aussi son positionnement pour ouvrir un coffre-fort.
 
