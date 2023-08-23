@@ -55,6 +55,7 @@ Préparation dans 25cl, un verre:
 * 1/2 cuillère a café de vinaigrette Maille olive noir [mitigation christianisme: vinaigre de vin rouge, Aceto Balsamico di Modena IGP(vinaigre de vin, moût de raisin concentré)]
 * 1/2 cuillère a café de phytoplancton
 * 1/2 cuillère a café de miel
+* 1/2 cuillère a café de Suze (gentiane)
 
 Le liquide vaisselle à base glycérine j'utilise: Mrs. Meyer’s Clean Day - Avec Huiles Essentielles - Parfum Verveine Citronnée - extraits d’aloe vera.  
 
@@ -85,5 +86,6 @@ Traces:
 - Mercure
 - Phytoplancton
 - Cyanure (Pépin de Cerise)
+- Suze (gentiane)
 
 ```

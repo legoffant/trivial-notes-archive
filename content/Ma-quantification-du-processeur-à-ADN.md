@@ -36,6 +36,7 @@ trace <1-8%:
 *   \- Cendre, soit du papier brulée, ou de l'encens fleur de Lotus
 *   \- Phytoplancton
 *   \- Cyanure (pépin Cerise)
+*   \- Suze (gentiane)
 
 **Composants**:  
 
@@ -71,6 +72,7 @@ Préparation dans 25CL (un verre):
 * 1/2 cuillère a café de vinaigrette Maille
 * 1/2 cuillère a café de phytoplancton
 * 1/2 cuillère a café de miel
+* 1/2 cuillère a café de Suze
 
 Le liquide vaisselle à base glycérine j'utilise: Mrs. Meyer’s Clean Day - Avec Huiles Essentielles\* - Parfum Verveine Citronnée - extraits d’aloe vera. (4,74 € / l)  
 
