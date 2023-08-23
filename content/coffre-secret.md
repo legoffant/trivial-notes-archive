@@ -13,6 +13,7 @@ Jai créé un coffre-fort secret qui n'a pas d'héritier ou de gardienne de l'h�
 * Le Narkanta, papier en version release originale, manuscrit
 * L'invention des nombres narkantiques en prison filigranée.
 * Localisation exacte, coord GPS des capsules temporelles
+* Copie papier de roman "Voile et annihilation"
 
 Dépot d'or: Je transfert mes économies dans cette réserve ou je fais un ajout d'un lingot d'or de 20gr (1250€) tous les ans durant 10 ans minimum. C'est ma réserve personnelle. 
 
