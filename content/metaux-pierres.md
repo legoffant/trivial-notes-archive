@@ -28,6 +28,8 @@ Le choix d'investissement? On peut soit investir dans des pièces ou des lingots
 
 Ou acheter de l'Or? Dans les villes il y a des magasins de revendeur tel que [gold.fr](https://www.gold.fr/) - Le comptoir national de l'or. Il est conseillé de détenir de l'or sur plus de 22 ans pour être exonéré de la taxation sur la plus-value.
 
+Petit calcul à un taux de 8,69% que vous détenez durant 22 ans, cela prend 191%. Investissez un capital de 1000€ de départ au bout de 22 ans cela donne: 1000 x 1,91 = 1910€. Total 1910 + 1000 = **2910€**
+
 Les revendeurs de pièces et lingots:
 
 * [https://www.apmex.com/](https://www.apmex.com/)
