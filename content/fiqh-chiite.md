@@ -25,3 +25,5 @@ A la base les nizarites (réputé pour être la secte des assassins) sont des is
 * [Livres chiites sur le Fiqh à télécharger - Shiacity](https://shiacity.fr/livres-chiites-sur-le-fiqh-a-telecharger/)
 
 Les chiites sont plus prompt à faire la politique du [Taqîya](https://fr.wikipedia.org/wiki/Taq%C3%AEya), c'est à dire la dissimulation de la foi pour éviter les persécutions en particulier si leur génome révèle qu'ils sont de la famille du prophète et Ali.
+
+Pour la petite histoire de l'islamophobie en France, pendant que nos écrivains comme Houellebecq font des scandales sur la soumission à la France par un président islamique. Le maire de Londres Sadiq Khan, nos cheres voisins rosbeef est musulman sunnite immigré indo-pakistanais. 
