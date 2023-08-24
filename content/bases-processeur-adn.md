@@ -114,4 +114,5 @@ Il faut un kernel, un noyau dure pour générer un début de système d'exploita
 * Encens Fleur de Lotus
 * Mercure
 * Suze (gentiane)
+* Phytoplankton
 * Noyau en poudre de cerise
