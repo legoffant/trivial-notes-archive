@@ -119,6 +119,8 @@ L'éthanol j'utilise du parfum et leurs propriétés:
 
 * Encens HEM Fleur de Lotus 4€ [https://www.amazon.fr/dp/B087BHCG9G?ref=ppx_yo2ov_dt_b_product_details&th=1](https://www.amazon.fr/dp/B087BHCG9G?ref=ppx_yo2ov_dt_b_product_details&th=1)
 
+* Cerise avec noyau sechée 15€ 100gr [https://www.bioloklock.com/10-cerises-sechees-bio-fabrication-artisanale.html#/24-contenance-100g](https://www.bioloklock.com/10-cerises-sechees-bio-fabrication-artisanale.html#/24-contenance-100g)
+
 C'est la tradition des alchimistes et c'est alimentaire avec une évolution minérale et la matière par la physique nucléaire contemporaine. Il faut du deuterium pour produire un réacteur à eau pressurisé. Isotope naturel sous forme de trace dans l'eau, et plus concentré dans les océans. Certaines eaux minérales ont du tritium.  
 
 NOTA: N'oubliez pas de remuer la fiole comme centrifugeuse pour mélanger les composants, casser les cellules et faire agglomérer l'ADN qui n'est pas soluble dans le sel+ethanol. Cela permet de mettre sous pression hermétique la fiole(en particulier la mousse du liquide vaisselle). Ne vous inquiétez pas pour vos bactéries certaines vont survivre à l'extermination. Celle-ci vont trouvez de la nourriture en environnement hostile comme méthode de résolution de problème et de calcul du processeur pour sa croissance et transmutation temporelle. Il y a des supers récompenses et trésors tel que réveiller un blob.  

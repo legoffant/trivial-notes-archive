@@ -30,6 +30,15 @@ Respecter le dosage et les proportions, vous devez comprendre [les bases de l'é
 
 RAPPEL: Pour conserver de l'ADN pour que celui-ci ne soit pas soluble il faut du sel + ethanol. Le savon permet de casser les cellules, disolvants. 
 
+Préparation dans 25CL (un verre), en infime quantité:
+
+* Vittel saturée en sel herbamare
+* 1/2 cuillère a café d'huile de Nigelle
+* 1/2 cuillère a café de vinaigrette Maille
+* 1/2 cuillère a café de phytoplancton
+* 1/2 cuillère a café de miel
+* 1/2 cuillère a café de Suze
+
 ### Le lithium
 
 Permet de catalyser la fusion D+T nucléaire, et c'est la base des batteries Li-Ion. Les enzymes (Une cellulase est une enzyme qui peut décomposer la cellulose. Elles sont produites typiquement par des bactéries , champignons et des protozoaires) vont catalyser à froid les réactions nucléaires. C'est les travaux sur les transmutations biologiques de Corentin de Kervran.
@@ -83,6 +92,10 @@ C'est des bactéries et qui permettent de catalyser la fermentation.
 
 C'est une méduse commune et a un composé, recherche en cours du gène de l'immortalité de transdifférenciation.
 
+### Noyau de cerise
+
+Il faut un kernel, un noyau dure pour générer un début de système d'exploitation, de plus la cerise à du cyanure, qui est un poison le plus léthale et donc créer des pièges pour la résolution de problème des bactéries et soit contourné ou absorbé la substance pour muter.
+
 ### Sous formes de traces de 1-8%
 
 * Hydroxide de Lithium  
@@ -100,3 +113,5 @@ C'est une méduse commune et a un composé, recherche en cours du gène de l'imm
 * Levure Saccharomyces Cerevisiae
 * Encens Fleur de Lotus
 * Mercure
+* Suze (gentiane)
+* Noyau en poudre de cerise
