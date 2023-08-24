@@ -39,7 +39,7 @@ Les revendeurs de pièces et lingots:
 
 ### Les pierres précieuses
 
-C'est également un bon investissement, on y pense moins car c'est moins fréquent, mais il y a des marchés. Le diamant a un aussi bon taux de rendement que l'Or. Il faut vérifier le traitement que subis la pierre, sa taille et son reflet, sa dureté et le nombre de Carat.
+C'est également un bon investissement, on y pense moins car c'est moins fréquent, mais il y a des marchés. Le diamant a un aussi bon taux de rendement que l'Or jusqu'à 12% par an. Il faut vérifier le traitement que subis la pierre, sa taille et son reflet, sa dureté et le nombre de Carat.
 
 #### Liste des pierres précieuses
 
