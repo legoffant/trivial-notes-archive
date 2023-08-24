@@ -23,7 +23,10 @@ A la base les nizarites (réputé pour être la secte des assassins) sont des is
 * [Encyclopdia of Ismailism - Fiqh](http://heritage.ismaili.net/node/10323)
 * [Shia, But Shia of which Imam (leader)?](https://www.al-islam.org/examining-ismaili-imams-bohras-ali-azhar-arastu/shia-shia-which-imam-leader#ismailis)
 * [Livres chiites sur le Fiqh à télécharger - Shiacity](https://shiacity.fr/livres-chiites-sur-le-fiqh-a-telecharger/)
+* [Assassins, la secte médiévale qui a inventé le terrorisme](https://www.nationalgeographic.fr/histoire/assassins-la-secte-medievale-qui-a-invente-le-terrorisme)
 
 Les chiites sont plus prompt à faire la politique du [Taqîya](https://fr.wikipedia.org/wiki/Taq%C3%AEya), c'est à dire la dissimulation de la foi pour éviter les persécutions en particulier si leur génome révèle qu'ils sont de la famille du prophète et Ali.
+
+La principale divergence avec le sunnisme est ce que l'on appel l'Imanat et l'occultation de l'Imam. Le retour de l'Imam caché présage normalement la fin des temps.
 
 Pour la petite histoire de l'islamophobie en France, pendant que nos écrivains comme Houellebecq font des scandales sur la soumission à la France par un président islamique. Le maire de Londres Sadiq Khan, nos cheres voisins rosbeef est musulman sunnite immigré indo-pakistanais. 
