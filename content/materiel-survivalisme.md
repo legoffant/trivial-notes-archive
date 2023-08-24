@@ -1,6 +1,6 @@
 Title:Liste matériel de survivalisme: 33 équipements à avoir
 Date: 2023-08-16 18:57
-Category:Inclassable
+Category:Trek
 Tags: trekking, survivalisme
 Authors: Anthony Le Goff
 Summary:

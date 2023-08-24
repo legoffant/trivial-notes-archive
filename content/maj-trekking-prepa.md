@@ -1,6 +1,6 @@
 Title:Mise à jour objectif de trekking
 Date: 2023-08-03 16:53
-Category:Inclassable
+Category:Trek
 Tags:trekking
 Authors: Anthony Le Goff
 Summary:

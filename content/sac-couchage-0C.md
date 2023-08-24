@@ -1,6 +1,6 @@
 Title:Meilleurs sacs de couchage 0°C
 Date: 2023-08-17 02:00
-Category:Inclassable
+Category:Trek
 Tags: trekking, couchage
 Authors: Anthony Le Goff
 Summary:

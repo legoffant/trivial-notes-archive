@@ -1,6 +1,6 @@
 Title: Escapade à Ouessant
 Date: 2023-08-23 07:24
-Category:Inclassable
+Category:Trek
 Tags: trekking
 Authors: Anthony Le Goff
 Summary:

@@ -1,6 +1,6 @@
 Title:Astuce rangement backpacking
 Date: 2023-08-17 21:01
-Category:Inclassable
+Category:Trek
 Tags: trek, sac
 Authors: Anthony Le Goff
 Summary:
