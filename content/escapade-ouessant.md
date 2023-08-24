@@ -13,6 +13,17 @@ Objectif est dans 2 ans être un trekker pro et avaler des sorties de 10-12h par
 
 Pour financer se voyage je dois économiser 1000€ par an durant 7 ans. C'est le coût de ce type de trek: 7000€. J'ai vu de près la face nord la plus dangereuse d'Europe: Le Eiger, en Suisse et j'ai fais de rando autour dans la Jungfrau. Maintenant objectif, la montagne la plus dangereuse du monde. 
 
+Caractéristique de l'Ile D'Ouessant:
+
+* Entouré de 5 phares
+* Phare le plus puissant d'Europe
+* Ile de naufrageur
+* L'Eglise est St-Paul à Lampaul
+* On élève des moutons noirs
+* Fort courant: le fromveur
+* Yann Tiersen y vit: créé la musique d'Amelie Poulain
+* Musée des phares et balises
+
 *Revue d'équipement*
 
 ### Equipements 
