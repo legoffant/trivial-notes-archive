@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Les bactéries [Biohacking]</title>
+    <title>Configurer un environnement de programmation en Ruby</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Anthony Le Goff">
@@ -68,7 +68,7 @@
                 <li><a href="/pages/BTC.html">Don BTC</a></li>
                 <li><a href="/pages/lticba.html">LTICBA</a></li>
                           <li class="divider-vertical"></li>
-                  <li class="active">
+                  <li >
                     <a href="/category/biohacking.html">
 						<i class="icon-folder-open icon-large"></i>biohacking
 					</a>
@@ -83,7 +83,7 @@
 						<i class="icon-folder-open icon-large"></i>Entrepreneurship
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="/category/inclassable.html">
 						<i class="icon-folder-open icon-large"></i>Inclassable
 					</a>
@@ -124,8 +124,8 @@
                         <h1>
                                 <a href=""
                                         rel="bookmark"
-                                        title="Permalink to Les bactéries [Biohacking]">
-                                        Les bactéries [Biohacking]
+                                        title="Permalink to Configurer un environnement de programmation en Ruby">
+                                        Configurer un environnement de programmation en Ruby
                                 </a>
                         </h1>
                 </header>
@@ -133,56 +133,98 @@
                 <div class="well">
 <footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2023-08-17T23:04:00+02:00">
-        <i class="icon-calendar"></i>jeu. 17 août 2023
+<abbr class="published" title="2023-08-26T08:45:00+02:00">
+        <i class="icon-calendar"></i>sam. 26 août 2023
 </abbr>
 <span class="label">By</span>
 <a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
 <span class="label">Category</span>
-<a href="/category/biohacking.html"><i class="icon-folder-open"></i>Biohacking</a>.
+<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
 
 
 <span class="label">Tags</span>
-	<a href="/tag/bacteries.html"><i class="icon-tag"></i>bactéries</a>
+	<a href="/tag/ruby.html"><i class="icon-tag"></i>ruby</a>
 </footer><!-- /.post-info -->                </div>
-                <p>Il faut quelques bases en microbiologies pour faire des processeurs à ADN. Petit rappel que pour créer un calculateur: c'est en théorie de la résolution de problème. Et le premier principe à travers la survie est la recherche de nourriture. Si vous avez jouez au jeu-vidéo Spore, vous comprendrez la subtilité. Mais également en étudiant le comportement du Blob et l'avoine. </p>
-<p>On repart de zéro quand on reproduit la création dans des containers. Et la vie est sorti des océans, en particulier des sources hydrothermales: les fumeurs noirs. On reproduit donc les conditions dans les abysses.</p>
-<p>Tout d'abord il faut des propriétés de conservation (eau salée + éthanol) de l'ADN à travers la lyse des cellules via un détergent.</p>
-<p>C'est à dire que notre couveuse de la création dans une batterie nucléaire doit être composé d'un électrolyte:</p>
+                <p>Jaime bien et recommande d'apprendre la programmation en Ruby, pour plusieurs raison, c'est une alternative au Python, mais également pour le web development et le fameux framework "Ruby On Rails" et surtout en tant que hacker pour créer des modules sur Metasploit qui est codé en Ruby. C'est donc incontournable. Comme premier langage de scripting je recommande Ruby.</p>
+<p>Qu'es-ce que l'on peut faire avec Ruby?</p>
 <ul>
-<li>66% d'eau salée</li>
-<li>22% Liquide vaiselle</li>
-<li>4% d'ethanol</li>
+<li>DevOps</li>
+<li>Web servers</li>
+<li>Data processing</li>
+<li>Web crawling</li>
 </ul>
-<p>Pour créer une environnement viable océanique, riche en fumée, il faut de la cendre avec des contraintes et environnement défavorable. Certain appliquerait la loi de Pareto 80/20. Personnellement je préfére exterminé plus, être destructeur pour avoir des mutations plus robustes: la loi du survivant et de l'adaptation.</p>
-<h3>Ajout des bactéries.</h3>
-<p>Pour que les microbes puissent être actifs , ils doivent pouvoir bénéficier de conditions dites "favorables":</p>
+<p>Ruby est un excellent langage pour les SysAdmin comme scripting et automatiser les tâches. Les logiciels Puppet et Chef sont écrit en Ruby. Vous pouvez même faire de l'intelligence articielle en Ruby. Avec la gem <a href="https://github.com/libfann/fann">"ruby-fann"</a> pour Fast Artificial Neural Network.</p>
+<p>On va donc configurer un environnement basic pour la programmation en Ruby qui utilise:</p>
 <ul>
-<li>Chaleur</li>
-<li>Humidité</li>
-<li>Substances nutritives (algues, plantes, glucose, autres bactéries espèces différentes (cannibalisme), etc...)</li>
+<li>RVM packet manager</li>
+<li>Neovim et auto-completion</li>
+<li>Interpréteur avancé REPL Pry</li>
+<li>Debugger</li>
 </ul>
-<p>Le but recherché par les hygiénistes est de créer des conditions défavorables:</p>
-<ul>
-<li>Températures élevées (&gt; + 65 °C)</li>
-<li>Températures basses (&lt; + 3°C)</li>
-<li>Sécheresse (A.w)</li>
-<li>Absence de substances nutritives</li>
-<li>Acidité (pH)</li>
-<li>Concentrations élevées (en sel, en sucre)</li>
-<li>Alcool</li>
-<li>Radiations</li>
-<li>Hautes Pressions (pascalisation)</li>
-<li>Potentiel d’oxydo-reduction</li>
-</ul>
-<p>Il y a plusieurs types de bactéries, on peut cultiver ces propres bactéries que l'on embarque tel que la flore buccale. Mais egalement y ajoutez des ennemis qui proviennent de milieu de culture différent: </p>
-<ul>
-<li>Mise en culture de pommes</li>
-<li>Levure</li>
-</ul>
-<p>Parlons des pommes et de la gravité de newton quand il y a un trou de ver. une seule pomme regorge plus de 100 millions de bactérie, que cela soit dans les pépins, la pulpe ou la peau. C'est à dire que notre expérience de base de microbiologiste est de mettre en culture dans une boite de Pétri des morceaux de pomme pour obtenir des moisissures et donc du Penicillium, mais également faire proliférer les bactéries dans une environnement nutritif ou elles peuvent se multiplier.</p>
-<p>Dans un environnement favorable théorique une bactérie se réplique à hauteur de 69 milliards en 24 heures. La majorité de la taille des bactéries et spores ne font que de 0,5 à 10 microns: c'est invisible à l'oeil nu, mais cela peut-être jaugé et contrôlé.</p>
-<p>NOTA: pour récupérer des Archées, il y en toujours un peu <a href="https://www.topsante.com/medecine/votre-sante-vous/insolite/insolite-ce-qui-se-cache-vraiment-dans-notre-nombril-23583">dans le nombril</a>.</p>
+<h4>A. Nous devons installer les pré-requis. Sous GNU/Linux dans un terminal:</h4>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>base-devel<span class="w"> </span>tar<span class="w"> </span>gzip<span class="w"> </span>diffutils<span class="w"> </span>curl
+</code></pre></div>
+
+<p>En utilisant un packet manager en Ruby RVM</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>gpg<span class="w"> </span>--keyserver<span class="w"> </span>hkp://keys.gnupg.net<span class="w"> </span>--recv-keys<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>409B6B1796C275462A1703113804BB82D39DC0E3<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+$<span class="w"> </span><span class="se">\c</span>url<span class="w"> </span>-sSL<span class="w"> </span>https://get.rvm.io<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>stable<span class="w"> </span>--auto-dotfiles
+
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/.rvm/scripts/rvm
+
+$<span class="w"> </span>rvm<span class="w"> </span>pkg<span class="w"> </span>install<span class="w"> </span>openssl
+
+$<span class="w"> </span>rvm<span class="w"> </span>install<span class="w"> </span>ruby<span class="w"> </span>--with-openssl-dir<span class="o">=</span><span class="nv">$HOME</span>/.rvm/usr
+
+$<span class="w"> </span>ruby<span class="w"> </span>-v
+</code></pre></div>
+
+<p>Modifier <code>zshrc</code> pour ajouter le PATH des gems en fonction de votre version ruby</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">PATH</span><span class="o">=$</span><span class="n">PATH</span><span class="s1">&#39;:/home/trivial/.local/share/gem/ruby/3.0.0/bin&#39;</span>
+<span class="n">source</span><span class="w"> </span><span class="o">~/.</span><span class="n">rvm</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">rvm</span>
+</code></pre></div>
+
+<h4>B. Installer pry et debugger</h4>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>gem<span class="w"> </span>install<span class="w"> </span>pry<span class="w"> </span>pry-byebug
+</code></pre></div>
+
+<p>Pour utiliser Pry</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>pry
+<span class="nb">help</span>
+</code></pre></div>
+
+<h4>C. Configurer Neovim</h4>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>gem<span class="w"> </span>install<span class="w"> </span>solargraph
+</code></pre></div>
+
+<p>Une fois que vous avez installé Neovim, configurer le gestionnaire de plugin avec Coc</p>
+<div class="highlight"><pre><span></span><code>:CocInstall coc-solargraph
+</code></pre></div>
+
+<p>Et vous devriez avoir la gestion et support en Ruby, tel que l'auto-completion.</p>
+<h4>D. Mon premier programme en Ruby</h4>
+<p>D'abord on configure l'environnement de travail, dossier root de nos fichiers sources en <code>.rb</code>.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>src-rb
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>src-rb
+</code></pre></div>
+
+<p>Puis on initialise solargraph dans notre dossier de travail</p>
+<div class="highlight"><pre><span></span><code>solargraph<span class="w"> </span>config
+</code></pre></div>
+
+<p>Qui va générer un fichier de configuration dans notre projet <code>.solargraph.yml</code></p>
+<p>hello world</p>
+<div class="highlight"><pre><span></span><code>nvim<span class="w"> </span>hello.rb
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+</code></pre></div>
+
+<p>Pour lancer le script</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>ruby<span class="w"> </span>hello.rb
+</code></pre></div>
                 </div><!-- /.entry-content -->
         </article>
 </section>
