@@ -64,7 +64,7 @@ $&lt;span class="w"&gt; &lt;/span&gt;ruby&lt;span class="w"&gt; &lt;/span&gt;-v
 &lt;p&gt;Editer le fichier&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
   &amp;quot;codeLens.enable&amp;quot;: true,
-  &amp;quot;solargraph.useBundler&amp;quot;: true
+  &amp;quot;solargraph.useBundler&amp;quot;: false
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
