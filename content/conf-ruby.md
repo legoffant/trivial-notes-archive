@@ -85,7 +85,7 @@ Editer le fichier
 ```
 {
   "codeLens.enable": true,
-  "solargraph.useBundler": true
+  "solargraph.useBundler": false
 }
 ```
 
