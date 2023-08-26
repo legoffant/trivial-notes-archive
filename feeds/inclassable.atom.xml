@@ -25,7 +25,7 @@
 &lt;li&gt;&lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Dans notre exemple nous allons déployer sur Gitlab Pages. On va fuir Microsoft et Github, si c'était à refaire j'aurai transféré sur Gitlab.&lt;/p&gt;
-&lt;h4&gt;3. Etape par étape&lt;/h4&gt;
+&lt;h3&gt;3. Etape par étape&lt;/h3&gt;
 &lt;p&gt;A. Nous devons installer les pré-requis sur notre ordinateur en local tel que Git et un environnement Ruby. Sous GNU/Linux dans un terminal:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;base-devel&lt;span class="w"&gt; &lt;/span&gt;tar&lt;span class="w"&gt; &lt;/span&gt;gzip&lt;span class="w"&gt; &lt;/span&gt;diffutils&lt;span class="w"&gt; &lt;/span&gt;curl
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
