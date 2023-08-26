@@ -38,7 +38,7 @@ Maintenant vous pouvez automatiser la gestion du serveur web pour déployer le b
 
 Dans notre exemple nous allons déployer sur Gitlab Pages. On va fuir Microsoft et Github, si c'était à refaire j'aurai transféré sur Gitlab.
 
-#### 3. Etape par étape
+### 3. Etape par étape
 
 A. Nous devons installer les pré-requis sur notre ordinateur en local tel que Git et un environnement Ruby. Sous GNU/Linux dans un terminal:
 
