@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Entrepreneurship</title><link href="/" rel="alternate"></link><link href="/feeds/entrepreneurship.atom.xml" rel="self"></link><id>/</id><updated>2023-08-26T22:24:00+02:00</updated><entry><title>Start-up Journal</title><link href="/start-up-journal.html" rel="alternate"></link><published>2023-08-26T22:24:00+02:00</published><updated>2023-08-26T22:24:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-26:/start-up-journal.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je continus à faire la promotion de notebook Leuchtturm1917 que j'utilise personnellement avec la série "Journal". Ici c'est pour les entrepreneurs, c'est un aide mémoire et support de création de start-up. Il existe seulement en anglais et allemand.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Entrepreneurship</title><link href="/" rel="alternate"></link><link href="/feeds/entrepreneurship.atom.xml" rel="self"></link><id>/</id><updated>2023-08-26T22:40:00+02:00</updated><entry><title>Entreprise qui utilise Arch Linux</title><link href="/entreprise-qui-utilise-arch-linux.html" rel="alternate"></link><published>2023-08-26T22:40:00+02:00</published><updated>2023-08-26T22:40:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-26:/entreprise-qui-utilise-arch-linux.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Il y a quelques statistiques intéressante sur les entreprises et entrepreneurs qui utilisent Arch Linux. Vous pouvez trouver la liste d'entreprise référencée (25) qui utilise Arch Linux sur &lt;a href="https://stackshare.io/arch-linux"&gt;Stackshare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ma propre entreprise, un peu en stand-bye. Elle n'a plus de numéro SIRET en ce moment: Alpharatz tourne sous Arch Linux comme outil de travail, considéré comme le meilleur système d'exploitation sur ordinateur. &lt;a href="https://www.slant.co/options/2690/~arch-linux-review"&gt;Pages Statistiques&lt;/a&gt;. Les utilisateurs d'Arch Linux veulent la meilleure technologie possible.&lt;/p&gt;
+&lt;p&gt;Généralement les utilisateurs qui utilisent Arch linux sont:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Développeurs pro&lt;/li&gt;
+&lt;li&gt;Ingénieur système&lt;/li&gt;
+&lt;li&gt;Administrateur système&lt;/li&gt;
+&lt;li&gt;Hacker (via BlackArch)&lt;/li&gt;
+&lt;li&gt;Kernel developer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les pros &amp;amp; cons pour utiliser Arch Linux:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On peut fixer soi-même les bugs, si tu sais le faire&lt;/li&gt;
+&lt;li&gt;support architecture x86_64, ARM, RISC-V&lt;/li&gt;
+&lt;li&gt;Bleeding Edge&lt;/li&gt;
+&lt;li&gt;Documentation extensible et wiki&lt;/li&gt;
+&lt;li&gt;Arch Build System&lt;/li&gt;
+&lt;li&gt;Arch User Repository&lt;/li&gt;
+&lt;li&gt;Pacman Package manager&lt;/li&gt;
+&lt;li&gt;Customisable et minimaliste&lt;/li&gt;
+&lt;li&gt;Grande communauté&lt;/li&gt;
+&lt;li&gt;Rolling Release&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Entrepreneurship"></category><category term="stack"></category></entry><entry><title>Start-up Journal</title><link href="/start-up-journal.html" rel="alternate"></link><published>2023-08-26T22:24:00+02:00</published><updated>2023-08-26T22:24:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-26:/start-up-journal.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Je continus à faire la promotion de notebook Leuchtturm1917 que j'utilise personnellement avec la série "Journal". Ici c'est pour les entrepreneurs, c'est un aide mémoire et support de création de start-up. Il existe seulement en anglais et allemand.&lt;/p&gt;
 &lt;p&gt;C'est un notebook spécial, pour 31€. &lt;a href="https://www.leuchtturm1917.com/start-up-journal-english.html"&gt;Lien d'achat&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Synopsis&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;The guide to starting your own business
