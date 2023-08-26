@@ -19,4 +19,4 @@ BONUS: L'informatique rythme avec l'anglais en plus du [Bled tout-en-un](https:/
 * [Je me remets à l'anglais en 2 mois!  Pour les nuls 14€](https://www.pourlesnuls.fr/livres/langues/je-me-remets-l-anglais-en-2-mois-pour-les-nuls-9782412019320)
 
 
-Un investissement fort intéressant pour débutant en informatique, les livres sont en version papier et numérique.
+Un investissement fort intéressant pour débutant en informatique, les livres sont en version papier et numérique. [A completer avec une tablette Android comme liseuse numérique.](https://legoffant.github.io/pourquoi-acheter-une-tablette.html)
