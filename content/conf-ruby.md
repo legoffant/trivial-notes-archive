@@ -81,6 +81,7 @@ Configuration recommandé
 ```txt
 :CocConfig
 ```
+Editer le fichier
 ```
 {
   "codeLens.enable": true,
