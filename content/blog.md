@@ -71,7 +71,7 @@ export PATH=$PATH':/home/trivial/.local/share/gem/ruby/3.0.0/bin'
 source ~/.rvm/scripts/rvm
 ```
 
-Installer Jekyll et bundler
+Installer bundler
 ```bash
 $ gem install bundler
 ```
