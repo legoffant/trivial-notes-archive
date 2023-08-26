@@ -54,7 +54,17 @@ $&lt;span class="w"&gt; &lt;/span&gt;ruby&lt;span class="w"&gt; &lt;/span&gt;-v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Une fois que vous avez installé Neovim, configurer le gestionnaire de plugin avec Coc&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;:CocInstall coc-solargraph
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;:CocInstall coc-solargraph coc-json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configuration recommandé&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;:CocConfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+  &amp;quot;codeLens.enable&amp;quot;: true,
+  &amp;quot;solargraph.useBundler&amp;quot;: true
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Et vous devriez avoir la gestion et support en Ruby, tel que l'auto-completion.&lt;/p&gt;
