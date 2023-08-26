@@ -110,3 +110,5 @@ $ ruby hello.rb
 ```
 
 Les meilleurs livres pour apprendre Ruby gratuitement (anglais) : [https://www.linuxlinks.com/recommended-free-books-learn-ruby/](https://www.linuxlinks.com/recommended-free-books-learn-ruby/)
+
+Un introduction à Ruby - Zeste du Savoir: [https://zestedesavoir.com/tutoriels/634/une-introduction-a-ruby/](https://zestedesavoir.com/tutoriels/634/une-introduction-a-ruby/)
