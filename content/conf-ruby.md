@@ -73,7 +73,19 @@ $ gem install solargraph
 Une fois que vous avez installé Neovim, configurer le gestionnaire de plugin avec Coc
 
 ```txt
-:CocInstall coc-solargraph
+:CocInstall coc-solargraph coc-json
+```
+
+Configuration recommandé
+
+```txt
+:CocConfig
+```
+```
+{
+  "codeLens.enable": true,
+  "solargraph.useBundler": true
+}
 ```
 
 Et vous devriez avoir la gestion et support en Ruby, tel que l'auto-completion.
