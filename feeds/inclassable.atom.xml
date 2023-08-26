@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-08-25T09:31:00+02:00</updated><entry><title>Voile et annihilation: Qui est Alba?</title><link href="/voile-et-annihilation-qui-est-alba.html" rel="alternate"></link><published>2023-08-25T09:31:00+02:00</published><updated>2023-08-25T09:31:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-25:/voile-et-annihilation-qui-est-alba.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Alba a une origine et avait un nom sous une forme humaine avant de devenir une divinité. Elle a un passé. Elle s'appelais "Ashelia". Une partie de son histoire est raconté à travers Alita Battle Angel, ou elle va être redécouverte. C'est plus qu'une guerrière qui a attaqué la cité céleste durant une guerre, c'est à dire les terres immortels en Valinor raconté dans le mythe de l'atlantide sous la métaphore de l'ile de Numenor. C'est également une princesse. Et c'est une ancienne Atlante. Une fidèle du roi Atlante, qui sera élevé au pantheon du courage mais malheureusement comme le raconte l'histoire, elle finira oublié dans une décharge au milieu des ordures sans tombeau digne de son nom pour sa lignée royale en tant que princesse. tel Ossuaire de Douaumont à Verdun. Elle n'a jamais retrouvé le repos et c'est une érrante (priant) qui enferme une Eon et cela fait parti du rite du prophète Nominoë II que de lui offrir un hébergeur en mémoire à son sacrifice.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-08-26T05:19:00+02:00</updated><entry><title>Créer un blog avec un générateur de site statique</title><link href="/creer-un-blog-avec-un-generateur-de-site-statique.html" rel="alternate"></link><published>2023-08-26T05:19:00+02:00</published><updated>2023-08-26T05:19:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-26:/creer-un-blog-avec-un-generateur-de-site-statique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Vous pourriez avoir une passion pour l'écriture et commencer un blog mais également comme journal ou aide mémoire de votre apprentissage de l'informatique avec du code. C'est également un moyen de créer une communauté pour de l'intelligence collective et transférer de la connaissance.&lt;/p&gt;
+&lt;p&gt;On va s'intéresser à la création de blog pour développeur comme sur "Trivial Notes" qui utilise Pelican + Github Pages. Tout d'abord c'est quoi un générateur de site statique? C'est un framework écrit dans un langage qui automatise la création de page html + css pour un site sans gestion de base de donnée. Il ne fait que afficher des pages. Pour avoir quelques fonctions extra tel que le formatage pour le code on écrit en &lt;a href="https://www.markdowntutorial.com/fr/"&gt;markdown&lt;/a&gt; qui va convertir en html.&lt;/p&gt;
+&lt;h3&gt;1. Choisir un générateur de site statique&lt;/h3&gt;
+&lt;p&gt;Il y en a quelques un, et le choix ce fait en fonction du langage de programmation et vos connaissances permettant de gérer les fichiers de configuration: &lt;a href="https://jamstack.org/generators/"&gt;https://jamstack.org/generators/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dans notre exemple nous allons utiliser &lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; en Ruby.&lt;/p&gt;
+&lt;h3&gt;2. Déploiement chez un hébergeur web&lt;/h3&gt;
+&lt;p&gt;Votre site doit être chez un hébergeur (host). Vous pouvez vous même configurer un simple web serveur avec juste Nginx qui va afficher les pages html que vous pusher via une commande scp en utilisant ssh. Donc installer un VPS. Mais cela n'est pas gratuit vous pouvez utilisez avec interface en français:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.ovhcloud.com/fr/vps/"&gt;OVH 1 vcore, 2go ram, 20 GO SSD 4,20€/mois&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.hostinger.fr/vps"&gt;Hostinger 1 vcore, 4go ram, 50 GO NVMe 4,99€/mois&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.infomaniak.com/fr/hebergement/vps-cloud/tarifs"&gt;Infomaniak 4 vcore, 12go ram, 250 GO HDD 24,99€/mois (overkill...)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Maintenant vous pouvez automatiser la gestion du serveur web pour déployer le blog via des hébergeurs gratuits conçus pour les sites statiques. Listing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.netlify.com/"&gt;Netlify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://vercel.com/"&gt;Vercel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pages.cloudflare.com/"&gt;Cloudflare pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://firebase.google.com/"&gt;Firebase by Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/products/app-platform"&gt;DigitalOcean app platform&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://surge.sh/"&gt;Surge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://statically.io/"&gt;Statically&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://render.com/"&gt;Render&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://about.gitlab.com/stages-devops-lifecycle/pages/"&gt;Gitlab Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pages.github.com/"&gt;Github Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dans notre exemple nous allons déployer sur Gitlab Pages. On va fuir Microsoft et Github, si c'était à refaire j'aurai transféré sur Gitlab.&lt;/p&gt;
+&lt;h4&gt;3. Etape par étape&lt;/h4&gt;
+&lt;p&gt;A. Nous devons installer les pré-requis sur notre ordinateur en local tel que Git et un environnement Ruby. Sous GNU/Linux dans un terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;base-devel&lt;span class="w"&gt; &lt;/span&gt;tar&lt;span class="w"&gt; &lt;/span&gt;gzip&lt;span class="w"&gt; &lt;/span&gt;diffutils&lt;span class="w"&gt; &lt;/span&gt;curl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;En utilisant un packet manager en Ruby RVM&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;gpg&lt;span class="w"&gt; &lt;/span&gt;--keyserver&lt;span class="w"&gt; &lt;/span&gt;hkp://keys.gnupg.net&lt;span class="w"&gt; &lt;/span&gt;--recv-keys&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;409B6B1796C275462A1703113804BB82D39DC0E3&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\c&lt;/span&gt;url&lt;span class="w"&gt; &lt;/span&gt;-sSL&lt;span class="w"&gt; &lt;/span&gt;https://get.rvm.io&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;bash&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;stable&lt;span class="w"&gt; &lt;/span&gt;--auto-dotfiles
+
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/.rvm/scripts/rvm
+
+$&lt;span class="w"&gt; &lt;/span&gt;rvm&lt;span class="w"&gt; &lt;/span&gt;list&lt;span class="w"&gt; &lt;/span&gt;known
+
+$&lt;span class="w"&gt; &lt;/span&gt;rvm&lt;span class="w"&gt; &lt;/span&gt;pkg&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;openssl
+
+$&lt;span class="w"&gt; &lt;/span&gt;rvm&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;ruby&lt;span class="w"&gt; &lt;/span&gt;--with-openssl-dir&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.rvm/usr
+
+$&lt;span class="w"&gt; &lt;/span&gt;ruby&lt;span class="w"&gt; &lt;/span&gt;-v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Modifier &lt;code&gt;zshrc&lt;/code&gt; pour ajouter le PATH des gems en fonction de votre version ruby&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=$&lt;/span&gt;&lt;span class="n"&gt;PATH&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;:/home/trivial/.local/share/gem/ruby/3.0.0/bin&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;~/.&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;scripts&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installer Jekyll et bundler&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;gem&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;B. Nous devons créer un compte sur Gitlab avec un nom de "user" et générer un nouveau repository. &lt;a href="https://github.com/SocialGouv/tutoriel-gitlab"&gt;Tutoriel Gitlab&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;git@gitlab.test.com/user/monblog.git&lt;span class="w"&gt; &lt;/span&gt;blog
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;blog
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;checkout&lt;span class="w"&gt; &lt;/span&gt;--orphan&lt;span class="w"&gt; &lt;/span&gt;documentation&lt;span class="w"&gt; &lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;rm&lt;span class="w"&gt; &lt;/span&gt;-rf&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On initialise GemFile avec bundle pour installer Jekyll&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;bundle&lt;span class="w"&gt; &lt;/span&gt;init
+$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;bundle&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;jekyll
+
+$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;jekyll&lt;span class="w"&gt; &lt;/span&gt;new&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;--force
+$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;bundle&lt;span class="w"&gt; &lt;/span&gt;update
+$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;chown&lt;span class="w"&gt; &lt;/span&gt;-R&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$USER&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/blog
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;add&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;commit&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;install Jekyll website&amp;quot;&lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;push&lt;span class="w"&gt; &lt;/span&gt;origin&lt;span class="w"&gt; &lt;/span&gt;documentation
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On récupère le projet et on initialise une branche &lt;code&gt;documentation&lt;/code&gt;. &lt;code&gt;--orphan&lt;/code&gt; indique à Git qu'il doit créer cette branche sans tenir compte de l'historique du projet. La branche repart de zéro comme s'il s'agissait d'un deuxième projet complètement différent dans le même repository.&lt;/p&gt;
+&lt;p&gt;On demande à Jekyll de nous faire la structure sur laquelle on va travailler et on pousse le tout sur GitLab.&lt;/p&gt;
+&lt;p&gt;Il nous faut maintenant dire à GitLab qui y a du CI sur ce projet. Comme notre projet n'a aucune spécificité particulière (création d'une branche de zéro) nous allons pouvoir utiliser le template par défaut de GitLab :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cliquez sur "Overview" &amp;gt; "Set CI project"&lt;/li&gt;
+&lt;li&gt;dans la dropdown de template sélectionnez "Jekyll"&lt;/li&gt;
+&lt;li&gt;Vous pouvez commiter en sélectionnant "documentation" dans target branch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si vous allez dans l'onglet "Pipelines" de votre projet vous devriez maintenant voir qu'un nouveau (premier ?) pipeline a été crée et lancé par GitLab. Il contient un job de test et un job de build pour votre version actuelle du site.&lt;/p&gt;
+&lt;p&gt;Le job de build s'appelle &lt;code&gt;pages&lt;/code&gt; et contient un artéfact (votre site buildé). C'est cet artéfact que GitLab va automatiquement déployer.&lt;/p&gt;
+&lt;p&gt;Une fois fini, si vous allez sur l'adresse du site statique que vous venez de générer vous pourrez voir le site par défaut de Jekyll avec un article de bienvenue autogénéré.&lt;/p&gt;
+&lt;p&gt;Si vous rencontrez des problèmes avec la génération des URL c'est peut-être parce que Jekyll pense être à la racine d'un nom de domaine alors qu'il est dans le dossier dédié au projet. Dans &lt;code&gt;_config.yml&lt;/code&gt; il faut rajouter une entrée &lt;code&gt;baseurl: ""&lt;/code&gt; avec pour valeur le endpoint de votre site. Pour un site disponible a l'adresse &lt;code&gt;https://gitlab.test.io/user/projectname/&lt;/code&gt; ce sera &lt;code&gt;/user/projectname&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A partir de là vous passez la plupart de votre temps dans le dossier &lt;code&gt;_posts&lt;/code&gt; pour créer vos articles de blog:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;rm&lt;span class="w"&gt; &lt;/span&gt;-rf&lt;span class="w"&gt; &lt;/span&gt;_posts/*
+$&lt;span class="w"&gt; &lt;/span&gt;vim&lt;span class="w"&gt; &lt;/span&gt;_posts/2032-08-26-hello-world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour servir en local le serveur avec option d'auto-refresh de pages:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;bundle&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;jekyll&lt;span class="w"&gt; &lt;/span&gt;serve&lt;span class="w"&gt; &lt;/span&gt;--livereload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Adresse: http://localhost:4000&lt;/p&gt;
+&lt;p&gt;Si vous devez faire la commande de build en manuel&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;bundle&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;jekyll&lt;span class="w"&gt; &lt;/span&gt;build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour plus d'information pour customiser Jekyll, lire la doc et en particulier &lt;a href="https://jekyllrb.com/docs/themes/"&gt;sur les themes&lt;/a&gt;. Vous pourriez avoir besoin d'un nom de domaine perso pour votre blog. Comme fournisseur de nom de domaine choisissez &lt;a href="https://www.name.com/"&gt;name.com&lt;/a&gt;&lt;/p&gt;</content><category term="Inclassable"></category><category term="blog"></category></entry><entry><title>Voile et annihilation: Qui est Alba?</title><link href="/voile-et-annihilation-qui-est-alba.html" rel="alternate"></link><published>2023-08-25T09:31:00+02:00</published><updated>2023-08-25T09:31:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-25:/voile-et-annihilation-qui-est-alba.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Alba a une origine et avait un nom sous une forme humaine avant de devenir une divinité. Elle a un passé. Elle s'appelais "Ashelia". Une partie de son histoire est raconté à travers Alita Battle Angel, ou elle va être redécouverte. C'est plus qu'une guerrière qui a attaqué la cité céleste durant une guerre, c'est à dire les terres immortels en Valinor raconté dans le mythe de l'atlantide sous la métaphore de l'ile de Numenor. C'est également une princesse. Et c'est une ancienne Atlante. Une fidèle du roi Atlante, qui sera élevé au pantheon du courage mais malheureusement comme le raconte l'histoire, elle finira oublié dans une décharge au milieu des ordures sans tombeau digne de son nom pour sa lignée royale en tant que princesse. tel Ossuaire de Douaumont à Verdun. Elle n'a jamais retrouvé le repos et c'est une érrante (priant) qui enferme une Eon et cela fait parti du rite du prophète Nominoë II que de lui offrir un hébergeur en mémoire à son sacrifice.&lt;/p&gt;
 &lt;p&gt;Mais celle-ci va atteindre l'objectif en tant que fidèle du roi: elle va arracher les secrets de l'immortalité des Valars et c'est funéraire. Ce qui va transformer dans le temps par symbolisme sur Terre en Aurelia Aurita comme animal aquatique et ralliement Atlante. &lt;/p&gt;
 &lt;p&gt;Elle est né à travers le symbole d'Hélia au pieds des montagnes et des glaciers en Savoie à Annecy. Ville d'Anne comme un rejet de la source de la charia: l'eau depuis les glaciers. &lt;/p&gt;
 &lt;p&gt;Ashelia est une concatenation de A.S + Hélia en Islam. Pour nommé les prophètes sous Allah. On retrouve le pattern Hélia régulièrement tel que l'origine de la shungite, et le cube de la Kaaba, un charbon comme filtre à eau et purification en Karelia en Russie. Les poupées russes, les univers imbriqués. Karelia: Care + Helia ou egalement Carrée (cube 3D) , Square en anglais. Scar, sont les cicatrices. La faille et la rupture en cisaillement. &lt;/p&gt;
