@@ -23,6 +23,7 @@ Voici ma palylist perso de musique que j'utilise pour coder sur Youtube de type 
 * [Amelie Lens - 4 hour Essential Mix](https://www.youtube.com/watch?v=UgL36NhdmDc&t=657s)
 
 * ['Back To The 80's' | Marvel83' Edition | Best of Synthwave And Retro Electro Music Mix](https://www.youtube.com/watch?v=0QKQlf8r7ls)
+
  *[Neo Tokyo - Cyberpunk Mix](https://youtu.be/7JqKRqOmzi0?si=Pjsfd6ud4skDYasi)
 
 * [6 hours - {4K} EVE ONLINE OST [Full] OFFICIAL GAME SOUNDTRACK](https://www.youtube.com/watch?v=7teIWZu8uEI)
