@@ -19,8 +19,8 @@ J'ai continué pour optimiser le poids et le prix, et je suis arrivé à cette c
 
 * [Oreiller THERMAREST Trekker - 22€ - 58gr](https://ultralightoutdoorgear.co.uk/trekker-pillow-case/)
 
-* [Sac à Viande SEA TO SUMMIT Thermolite Reactor Compact Plus Liner 65€ - 268gr](https://ultralightoutdoorgear.co.uk/thermolite-reactor-compact-plus-liner/)
+* [Sac à Viande COCOON THERMOLITE SILKWEIGHT 79€ - 160gr](https://www.auvieuxcampeur.fr/drap-thermolite-silkweight.html)
 
 TOTAL
 
-**Prix: 682€ - Poids: 2444 gr**
+**Prix: 696€ - Poids: 2300 gr**
