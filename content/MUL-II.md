@@ -24,3 +24,5 @@ J'ai continué pour optimiser le poids et le prix, et je suis arrivé à cette c
 TOTAL
 
 **Prix: 696€ - Poids: 2300 gr**
+
+ASTUCE importante: Pour éviter de perçer avec une ronçe ou un chardon la tente ou le matelas gonflable, ajoutez une couverture de survie à 2€ sur le sol en plus de faire office d'isolement thermique.
