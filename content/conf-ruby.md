@@ -114,12 +114,20 @@ nvim hello.rb
 ```
 
 ```ruby
+#!/usr/bin/ruby
+
 puts "Hello World"
 ```
 
 Pour lancer le script
 ```bash
-$ pry hello.rb
+$ ruby hello.rb
+```
+
+ou alors
+```bash
+$ sudo chmod +x hello.rb
+$ ./hello.rb
 ```
 
 Les meilleurs livres pour apprendre Ruby gratuitement (anglais) : [https://www.linuxlinks.com/recommended-free-books-learn-ruby/](https://www.linuxlinks.com/recommended-free-books-learn-ruby/)
