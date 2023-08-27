@@ -9,7 +9,7 @@ Un retour sur l'equipement de trekking pour les MUL. Après mon premier post: [A
 
 J'ai continué pour optimiser le poids et le prix, et je suis arrivé à cette configuration:
 
-* [Sac WILSA Raid 38L - 92€ - 790gr](https://www.rayonrando.com/sacs-a-dos-de-randonnee-35-45-l/1533-sac-a-dos-trail-running-raid-38-l.html)
+* [sac Pajak XC3 42L - 189€ - 650gr](https://www.aventurenordique.com/pajak-xc3.html)
 
 * [Tente GRAM-COUNTER GEAR VLT 1P Tent 119€ 934gr](https://ultralightoutdoorgear.co.uk/vlt-1p-tent/)
 
@@ -23,6 +23,6 @@ J'ai continué pour optimiser le poids et le prix, et je suis arrivé à cette c
 
 TOTAL
 
-**Prix: 696€ - Poids: 2300 gr**
+**Prix: 793€ - Poids: 2196 gr**
 
 ASTUCE importante: Pour éviter de perçer avec une ronçe ou un chardon la tente ou le matelas gonflable, ajoutez une couverture de survie à 2€ sur le sol en plus de faire office d'isolement thermique.
