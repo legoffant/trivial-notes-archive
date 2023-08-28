@@ -69,7 +69,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Metasploit Modules&lt;/h3&gt;
-&lt;p&gt;Ruby est très pratique pour les hackers et le framework Metapsploit pour écrire ces propres exploits, c'est une fonction avancée nécessaire. Petit tour d'horizon:&lt;/p&gt;
+&lt;p&gt;Ruby est très pratique pour les hackers et le framework Metasploit pour écrire ces propres exploits, c'est une fonction avancée nécessaire. Petit tour d'horizon:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Metapsploit Unleashed - Building a module: &lt;a href="https://www.offsec.com/metasploit-unleashed/building-module/"&gt;https://www.offsec.com/metasploit-unleashed/building-module/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Metasploit docs - Writing an auxiliary module: &lt;a href="https://docs.metasploit.com/docs/development/developing-modules/guides/how-to-get-started-with-writing-an-auxiliary-module.html"&gt;https://docs.metasploit.com/docs/development/developing-modules/guides/how-to-get-started-with-writing-an-auxiliary-module.html&lt;/a&gt;&lt;/li&gt;

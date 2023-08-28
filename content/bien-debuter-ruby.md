@@ -37,6 +37,7 @@ On va faire rapidement un tour d'horizon de l'eco-système Ruby pour bien commen
 * Rubyfu (Black Hat Ruby): [https://rubyfu.net/](https://rubyfu.net/)
 * I love Ruby: [https://i-love-ruby.gitlab.io/book.html](https://i-love-ruby.gitlab.io/book.html)
 * The Well-Grounded Rubyist, 2nd ed (PDF): [https://archive.org/details/wellgroundedruby0000blac](https://archive.org/details/wellgroundedruby0000blac)
+*  Eloquent Ruby (PDF): [https://www.programmer-books.com/eloquent-ruby-by-russ-olsen-pdf/](https://www.programmer-books.com/eloquent-ruby-by-russ-olsen-pdf/)
 
 ### Cheatsheet
 
