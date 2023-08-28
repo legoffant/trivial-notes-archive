@@ -34,6 +34,8 @@ Ne croyez pas que Ruby est un langage inutile, une pâle copie de Python. Pour e
 
 Parlons donc du projet Odin et les compétences développés:
 
+---
+
 ### Foundation
 
 #### Prerequis
@@ -43,7 +45,7 @@ Parlons donc du projet Odin et les compétences développés:
 * Text Editors
 * Command Line Basics
 
----
+
 
 * Git Basics
 * HTML Foundations
@@ -62,6 +64,8 @@ Parlons donc du projet Odin et les compétences développés:
 * React
 
 Extra: tips to get hired
+
+---
 
 Je précise, pour être une développeur professionnel, il faut utiliser des outils open source et donc basculer sous GNU/Linux en système d'exploitation, trouvez-vous un Thinkpad reconditionné et mettez dessus [Xubuntu](https://xubuntu.org/) pour débuter pour avoir de la doc francophone.
 
