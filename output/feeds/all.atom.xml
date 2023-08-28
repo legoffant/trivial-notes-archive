@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-08-27T17:15:00+02:00</updated><entry><title>Le retour de la MUL</title><link href="/le-retour-de-la-mul.html" rel="alternate"></link><published>2023-08-27T17:15:00+02:00</published><updated>2023-08-27T17:15:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-27:/le-retour-de-la-mul.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Un retour sur l'equipement de trekking pour les MUL. Après mon premier post: &lt;a href="https://legoffant.github.io/au-sujet-de-la-mul-marche-ultra-legere.html"&gt;Au sujet de la MUL&lt;/a&gt;. Cette configuration j'ai éssayé de reduire le prix, et egalement avoir une configuration pour partir en Trek d'Avril à Octobre. Et une température de confort suffisante en sac de couchage avec un sac à viande solide.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-08-28T07:41:00+02:00</updated><entry><title>Mémo pour bien débuter en Ruby</title><link href="/memo-pour-bien-debuter-en-ruby.html" rel="alternate"></link><published>2023-08-28T07:41:00+02:00</published><updated>2023-08-28T07:41:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-28:/memo-pour-bien-debuter-en-ruby.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On va faire rapidement un tour d'horizon de l'eco-système Ruby pour bien commencer à coder et apprendre le langage.&lt;/p&gt;
+&lt;h3&gt;Sites web&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sites principaux&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Site officiel du langage : &lt;a href="https://www.ruby-lang.org"&gt;https://www.ruby-lang.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Site de la documentation : &lt;a href="http://ruby-doc.org/"&gt;http://ruby-doc.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tester Ruby en ligne&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Console Ruby en ligne : &lt;a href="https://ruby.github.io/TryRuby/"&gt;https://ruby.github.io/TryRuby/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Site d'actualités&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Ruby Inside, actualités et tutoriels (jusqu'à 2014): &lt;a href="http://www.rubyinside.com/"&gt;http://www.rubyinside.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby community IRC Channel: &lt;a href="https://ruby-community.com/pages/user_rules"&gt;https://ruby-community.com/pages/user_rules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News, infos, aggregated Rubyland: &lt;a href="https://rubyland.news/titles"&gt;https://rubyland.news/titles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Apprendre et progresser en Ruby&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Site de tutoriels Tutorials Point : &lt;a href="http://www.tutorialspoint.com/ruby/"&gt;http://www.tutorialspoint.com/ruby/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby Quicktips, des bouts de code utile : &lt;a href="http://rubyquicktips.com/"&gt;http://rubyquicktips.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Geeks For Geeks for Ruby: &lt;a href="https://www.geeksforgeeks.org/ruby-programming-language/"&gt;https://www.geeksforgeeks.org/ruby-programming-language/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Liste de bibliothèques pour Ruby&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Dépôt RubyGems : &lt;a href="https://rubygems.org/"&gt;https://rubygems.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dépôt The Ruby Toolbox : &lt;a href="https://www.ruby-toolbox.com/"&gt;https://www.ruby-toolbox.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby On Rails (RoR), le framework qui a fait connaître Ruby : &lt;a href="http://rubyonrails.org/"&gt;http://rubyonrails.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gosu, une bibliothèque pour faire des jeux 2D : &lt;a href="https://www.libgosu.org/"&gt;https://www.libgosu.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Principaux livres et ressources pour apprendre Ruby&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Une introduction à Ruby - Zeste de Savoir (français): &lt;a href="https://zestedesavoir.com/tutoriels/634/une-introduction-a-ruby/"&gt;https://zestedesavoir.com/tutoriels/634/une-introduction-a-ruby/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Learn Ruby The Hard Way: &lt;a href="https://learnrubythehardway.org/book/"&gt;https://learnrubythehardway.org/book/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby Best Practices (PDF): &lt;a href="https://web.archive.org/web/20120108191027/https://majesticseacreature.com/rbp-book/pdfs/rbp_1-0.pdf"&gt;https://web.archive.org/web/20120108191027/https://majesticseacreature.com/rbp-book/pdfs/rbp_1-0.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ruby Hacking Guide: &lt;a href="https://ruby-hacking-guide.github.io/"&gt;https://ruby-hacking-guide.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rubyfu (Black Hat Ruby): &lt;a href="https://rubyfu.net/"&gt;https://rubyfu.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I love Ruby: &lt;a href="https://i-love-ruby.gitlab.io/book.html"&gt;https://i-love-ruby.gitlab.io/book.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Well-Grounded Rubyist, 2nd ed (PDF): &lt;a href="https://archive.org/details/wellgroundedruby0000blac"&gt;https://archive.org/details/wellgroundedruby0000blac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Cheatsheet&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ruby Standard Library: &lt;a href="https://docs.ruby-lang.org/en/master/standard_library_rdoc.html"&gt;https://docs.ruby-lang.org/en/master/standard_library_rdoc.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Aide-mémoire Ruby: &lt;a href="https://xitog.github.io/dgx/informatique/ruby.html"&gt;https://xitog.github.io/dgx/informatique/ruby.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;My beloved Ruby Cheat Sheet: &lt;a href="https://dev.to/ericchapman/my-beloved-ruby-cheat-sheet-208o"&gt;https://dev.to/ericchapman/my-beloved-ruby-cheat-sheet-208o&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Autres ressources&lt;/h3&gt;
+&lt;p&gt;La documentation &lt;code&gt;ri&lt;/code&gt;. Voir: &lt;a href="https://ruby.github.io/rdoc/RI_rdoc.html"&gt;https://ruby.github.io/rdoc/RI_rdoc.html&lt;/a&gt; qui permet de documenter une fonction, class, methode, etc en ligne de commande. Pour l'utiliser installer l'interpreteur REPL &lt;code&gt;Pry&lt;/code&gt; et lancer &lt;code&gt;help&lt;/code&gt; pour plus d'info.&lt;/p&gt;
+&lt;h3&gt;Pour les SysAdmin&lt;/h3&gt;
+&lt;p&gt;Ruby permet d'invoquer des commandes systèmes OS du shell et donc s'utilise comme un langage de scripting pour les tâches d'automatisation. Mais également c'est utile pour intéragir avec l'OS pour écrire des Apps. Utiliser également le module &lt;a href="https://ruby-doc.org/3.2.0/stdlibs/fileutils/FileUtils.html?ref=akshaykhot.com"&gt;FileUtils&lt;/a&gt; pour copier, déplacer et supprimer des fichiers et dossiers. Pour cela utiliser la syntaxe:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="sb"&gt;`ls docs`&lt;/span&gt;
+
+&lt;span class="sx"&gt;%x{ ls docs }&lt;/span&gt;
+
+&lt;span class="nb"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ls&amp;#39;&lt;/span&gt;
+
+&lt;span class="nb"&gt;system&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ls&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;-l&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# PID&lt;/span&gt;
+&lt;span class="n"&gt;pid&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;spawn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;tar xf ruby.tar.bz2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="no"&gt;Process&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wait&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pid&lt;/span&gt;
+
+&lt;span class="no"&gt;IO&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;popen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ls&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;do&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;pipe&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nb"&gt;puts&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pipe&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readlines&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Metasploit Modules&lt;/h3&gt;
+&lt;p&gt;Ruby est très pratique pour les hackers et le framework Metapsploit pour écrire ces propres exploits, c'est une fonction avancée nécessaire. Petit tour d'horizon:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Metapsploit Unleashed - Building a module: &lt;a href="https://www.offsec.com/metasploit-unleashed/building-module/"&gt;https://www.offsec.com/metasploit-unleashed/building-module/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Metasploit docs - Writing an auxiliary module: &lt;a href="https://docs.metasploit.com/docs/development/developing-modules/guides/how-to-get-started-with-writing-an-auxiliary-module.html"&gt;https://docs.metasploit.com/docs/development/developing-modules/guides/how-to-get-started-with-writing-an-auxiliary-module.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;H 312: Writing a Custom Metasploit Module (25 pts): &lt;a href="https://bowneconsultingcontent.com/pub/EH/proj/H312.htm"&gt;https://bowneconsultingcontent.com/pub/EH/proj/H312.htm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Template type pour écrire un module:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;require&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;msf/core&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;MetasploitModule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;Msf&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Auxiliary&lt;/span&gt;
+
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="kp"&gt;include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;Msf&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Auxiliary&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Scanner&lt;/span&gt;
+
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{})&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;super&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;update_info&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Name&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;           &lt;/span&gt;&lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Module name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Description&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="sx"&gt;%q{&lt;/span&gt;
+&lt;span class="sx"&gt;        Say something that the user might want to know.&lt;/span&gt;
+&lt;span class="sx"&gt;      }&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Author&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Name&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;License&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;MSF_LICENSE&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;run&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="c1"&gt;# use `print_status` to print to the metasploit console, instead of `puts`&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Inclassable"></category><category term="ruby"></category></entry><entry><title>Le retour de la MUL</title><link href="/le-retour-de-la-mul.html" rel="alternate"></link><published>2023-08-27T17:15:00+02:00</published><updated>2023-08-27T17:15:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-27:/le-retour-de-la-mul.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Un retour sur l'equipement de trekking pour les MUL. Après mon premier post: &lt;a href="https://legoffant.github.io/au-sujet-de-la-mul-marche-ultra-legere.html"&gt;Au sujet de la MUL&lt;/a&gt;. Cette configuration j'ai éssayé de reduire le prix, et egalement avoir une configuration pour partir en Trek d'Avril à Octobre. Et une température de confort suffisante en sac de couchage avec un sac à viande solide.&lt;/p&gt;
 &lt;p&gt;J'ai continué pour optimiser le poids et le prix, et je suis arrivé à cette configuration:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
