@@ -17,7 +17,9 @@ L'urne n'a pas de nom, ce n'est pas nominatif, le seul symbole de signe d'appart
 
 Les nombres narkantiques ne sont pas secrets c'est à ça que l'on reconait l'empreinte d'appartenance à la religion dans le rite. C'est un peu l'adresse IP public du serveur. Au niveau de la calligraphie, c'est des runes classiques. Le "zéro" s'écrit comme un carré ouvert, et le "un" comme une ligne, puis la suite des chiffres se complexifient.
 
-L'urne est en diorite, c'est un souvenir de l'Egypte antique comme pierre la plus solide, niveau dureté de couleur noir. Elle est gravé, il y a quelques cavités, un trou et les nombres narkantiques ainsi qu'une forme de rainure pour mettre un fin ruban en titane plat. Elle est façonné pour s'ouvrir et y mettre l'hébergeur Arcturus.
+L'urne est en diorite, c'est un souvenir de l'Egypte antique comme pierre la plus solide, niveau dureté de couleur noir très utilisé pour les statuts tel que celle d'Anubis au temple de Luxor. Elle est gravé, il y a quelques cavités, un trou et les nombres narkantiques ainsi qu'une forme de rainure pour mettre un fin ruban en titane plat. Elle est façonné pour s'ouvrir et y mettre l'hébergeur Arcturus.
+
+![anubis](images/anubis.jpg)
 
 Par principes elles symbolisent:
 
