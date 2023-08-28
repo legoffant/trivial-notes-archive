@@ -9,7 +9,7 @@ Parlons un peu d'architecture, et de ce que j'ai inventé pour "Voile et Annihil
 
 J'avais commencé à dessiné en prison l'architecture des temples Narkantiques "Kor", et le prototype Exekias qui enferme une crypte: un cube (Kaaba) de 22 m x 22 m x 22 m avec des pieux générants une cage en son centre disposant un planétaire avec des orbes en lévitation. Et un hologramme de méduse qui ce balade dans le champs comme gardien.
 
-La crypte du temple renferme l'hébergeur Arcturus du religieux: un *Ayarater* ou est conservé son ADN qui transmute avec celui de la méduse. A base d'une capsule temporelle qui est un miniaturisation dans une univers imbriqué d'un cosmos et de la création. C'est à dire que le temple sert de portail vers ce monde.
+La crypte du temple renferme l'hébergeur Arcturus du religieux: un *Ayarater* ou est conservé son ADN qui transmute avec celui de la méduse. A la base d'une capsule temporelle qui est un miniaturisation dans un univers imbriqué d'un cosmos et de la création. C'est à dire que le temple sert de portail vers ce nouveau monde. Mais personne n'y à accès sans l'Urashuangshiji. Et les religieux narkantiques sont éduqués via le livre sacré.
 
 Au centre du cube scellé au sol un marche-pied renferme l'hébergeur Arcturus dans une urne funéraire. Dont j'ai moi-même inventé le design et le symbolisme. Je suis très sobre et minimaliste. Pas de Touthankamon et de tombeau pharaonique.
 
