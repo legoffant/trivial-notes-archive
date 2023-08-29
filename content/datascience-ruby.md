@@ -11,7 +11,7 @@ Tout d'abord vous pouvez utilisez les **Jupyter Notebook** en Ruby.
 
 Installation des pré-requis
 ```bash
-$ sudo pacman -S libtool libffi ruby python python-pip
+$ sudo pacman -S libtool libffi ruby python python-pipx
 $ pipx install jupyterlab ipython
 
 $ gem install --user-install iruby rspec ffi-rzmq

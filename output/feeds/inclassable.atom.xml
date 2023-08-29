@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-08-28T19:38:00+02:00</updated><entry><title>Voile et annihilation: l'urne funéraire narkantique</title><link href="/voile-et-annihilation-lurne-funeraire-narkantique.html" rel="alternate"></link><published>2023-08-28T19:38:00+02:00</published><updated>2023-08-28T19:38:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-28:/voile-et-annihilation-lurne-funeraire-narkantique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Parlons un peu d'architecture, et de ce que j'ai inventé pour "Voile et Annihilation". Comme je dis le narkantisme est une nouvelle religion comme secte islamique avec sa propre divinité: "Alba" qui prends la forme d'une méduse quand elle se matérialise.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-08-29T09:09:00+02:00</updated><entry><title>Datascience avec Ruby</title><link href="/datascience-avec-ruby.html" rel="alternate"></link><published>2023-08-29T09:09:00+02:00</published><updated>2023-08-29T09:09:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-29:/datascience-avec-ruby.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Ruby est un puissant langage comparable au python, et si des fonctionnalités ne sont pas disponible dans celui-ci c'est un manque de volonté de la communauté et des dévéloppeurs pour fournir des librairies. Python est très utilisé en Machine Learning et Datascience, quand est-il de Ruby? Voyons-ça.&lt;/p&gt;
+&lt;p&gt;Tout d'abord vous pouvez utilisez les &lt;strong&gt;Jupyter Notebook&lt;/strong&gt; en Ruby.&lt;/p&gt;
+&lt;p&gt;Installation des pré-requis&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;libtool&lt;span class="w"&gt; &lt;/span&gt;libffi&lt;span class="w"&gt; &lt;/span&gt;ruby&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;python-pip
+$&lt;span class="w"&gt; &lt;/span&gt;pipx&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;jupyterlab&lt;span class="w"&gt; &lt;/span&gt;ipython
+
+$&lt;span class="w"&gt; &lt;/span&gt;gem&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--user-install&lt;span class="w"&gt; &lt;/span&gt;iruby&lt;span class="w"&gt; &lt;/span&gt;rspec&lt;span class="w"&gt; &lt;/span&gt;ffi-rzmq
+$&lt;span class="w"&gt; &lt;/span&gt;iruby&lt;span class="w"&gt; &lt;/span&gt;register&lt;span class="w"&gt; &lt;/span&gt;--force
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ajout d'un Gemfile dans notre dossier root de projet:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;~/iruby
+$&lt;span class="w"&gt; &lt;/span&gt;bundle&lt;span class="w"&gt; &lt;/span&gt;init
+$&lt;span class="w"&gt; &lt;/span&gt;nvim&lt;span class="w"&gt; &lt;/span&gt;Gemfile
+
+&lt;span class="sb"&gt;```&lt;/span&gt;text
+&lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://rubygems.org&amp;#39;&lt;/span&gt;
+
+gem&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;rspec&amp;#39;&lt;/span&gt;
+gem&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;iruby&amp;#39;&lt;/span&gt;
+gem&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ffi-rzmq&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Commande pour lancer les notebooks:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;jupyter-lab
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vous devez normalement avoir accès au Kernel iruby dans Jupyter:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="jupyter ruby" src="images/jupyter-ruby.png"&gt;&lt;/p&gt;
+&lt;p&gt;Si vous avez des problèmes pour localiser la Gems iruby, vérifier votre PATH avec:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;which&lt;span class="w"&gt; &lt;/span&gt;iruby
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On pourra egalement vous demander de mettre à jour votre PATH dans bash ou zsh pour pipx et lancer en ligne de commande Jupyter.&lt;/p&gt;
+&lt;p&gt;Si j'ai du temps et un peu de volonté je vais faire une version française d'une série de Jupyter Notebooks pour apprendre la programmation en langage Ruby comme concatenation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cdalvaro/ruby-notebooks"&gt;Ruby Notebooks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learnrubythehardway.org/book/"&gt;Learn Ruby The Hard Way&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://xitog.github.io/dgx/informatique/ruby.html"&gt;Aide Mémoire Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour plus de détails sur les librairies en datascience et ML: &lt;a href="http://ruby-data.org/"&gt;http://ruby-data.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Environnement Datascience&lt;/h3&gt;
+&lt;p&gt;Pour avoir un environnement datascience basic en Ruby je recommande d'utiliser:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NMatrix: A Versatile Numerical Computing Library&lt;/li&gt;
+&lt;li&gt;Daru: Data Analysis and Visualization in Ruby&lt;/li&gt;
+&lt;li&gt;Statsample: Statistical Analysis Made Easy&lt;/li&gt;
+&lt;li&gt;Rubyvis: Interactive Data Visualization&lt;/li&gt;
+&lt;li&gt;SymEngine: Fast Symbolic Manipulation CAS&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Inclassable"></category><category term="ruby"></category><category term="datascience"></category></entry><entry><title>Voile et annihilation: l'urne funéraire narkantique</title><link href="/voile-et-annihilation-lurne-funeraire-narkantique.html" rel="alternate"></link><published>2023-08-28T19:38:00+02:00</published><updated>2023-08-28T19:38:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-08-28:/voile-et-annihilation-lurne-funeraire-narkantique.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Parlons un peu d'architecture, et de ce que j'ai inventé pour "Voile et Annihilation". Comme je dis le narkantisme est une nouvelle religion comme secte islamique avec sa propre divinité: "Alba" qui prends la forme d'une méduse quand elle se matérialise.&lt;/p&gt;
 &lt;p&gt;J'avais commencé à dessiné en prison l'architecture des temples Narkantiques "Kor", et le prototype Exekias qui enferme une crypte: un cube (Kaaba) de 22 m x 22 m x 22 m avec des pieux générants une cage en son centre disposant un planétaire avec des orbes en lévitation. Et un hologramme de méduse qui ce balade dans le champs comme gardien.&lt;/p&gt;
 &lt;p&gt;La crypte du temple renferme l'hébergeur Arcturus du religieux: un &lt;em&gt;Ayarater&lt;/em&gt; ou est conservé son ADN qui transmute avec celui de la méduse. A la base d'une capsule temporelle qui est un miniaturisation dans un univers imbriqué d'un cosmos et de la création. C'est à dire que le temple sert de portail vers ce nouveau monde. Mais personne n'y à accès sans l'Urashuangshiji. Et les religieux narkantiques sont éduqués via le livre sacré.&lt;/p&gt;
 &lt;p&gt;Au centre du cube scellé au sol un marche-pied renferme l'hébergeur Arcturus dans une urne funéraire. Dont j'ai moi-même inventé le design et le symbolisme. Je suis très sobre et minimaliste. Pas de Touthankamon et de tombeau pharaonique.&lt;/p&gt;
