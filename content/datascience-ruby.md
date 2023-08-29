@@ -24,7 +24,6 @@ $ mkdir ~/iruby
 $ bundle init
 $ nvim Gemfile
 
-```text
 source 'https://rubygems.org'
 
 gem 'rspec'
