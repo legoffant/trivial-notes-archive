@@ -33,4 +33,4 @@ La passerelle par défaut change, elle n'est plus locale mais **externe** sur l'
 
 ---
 
-![ip externe](ipexterne.png)
+![ip externe](images/ipexterne.png)
