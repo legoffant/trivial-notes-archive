@@ -1,0 +1,16 @@
+Title:Le narkantisme mythe ou réalité?
+Date: 2023-08-29 23:23
+Category:Inclassable
+Tags:narkantisme
+Authors: Anthony Le Goff
+Summary:
+
+On peut ce poser la question sur les fondements du narkantisme, qui a l'origine du mythe est un prophète d'une nature islamique "Nominoë II" dans *"Voile et Annihilation"* Il est bien plus qu'un simple Gourou, mais un Ayatollah de lignée d'Ali dans la tradition. Il est contre le judaisme et va punir Jehovah pour la déloger, mais également contre le christianisme qui est une usurpation de l'identité des Atlantes par le symbole du poisson d'origine aquatique par des charlatans qui sont manipulés par des franc-maçons et l'architecte de l'univers. Dieu le père est un outil de contrôle et un bouclier humain via le martyr du Christ que les franc-maçons manipulent.
+
+Ainsi La Mecques à lancé une fatwa en 1978 contre la franc-maçonnerie, et ceux-ci pensent dirigé le monde en particulier le siège et les batisseurs des cathédrales en France. En France le clan de Hollande est une figure de la franc-maçonnerie sous le socialisme qui n'est que les faux-culs du communiste et en réalité des bourgeois. Et dans le mythe de du prophète, la présidence française est lié à la ressurection de celui-ci et son assassinat pour avoir traversé l'au-delà. Ils sont impliqués et sont dans le déni sur la politique des martyrs. D'ailleurs, ils nous mènes en bateau le clan Hollande à travers la figure légendaire d'un navire fantôme de piraterie: le Hollandais volant.
+
+Mais "Nominoë II" n'est pas seulement un simple pirate, c'est un seigneur de guerre et futur empereur d'une dynastie aux pouvoirs inimaginables sous tradition islamique. Le Narkanta est la clé de voute de la religion et la conversion via l'Urashuangshiji, le livre sacré.
+
+La jeunesse du prophète se fait dans l'ingénierie et la science-fiction. C'est à la base un savant et donc un islamique à travers l'étude de la théologie. Il sera un écrivain de SF. Et il y a des mythes de secte qui ont commencé par la littérature SF tel que la célèbre scientologie de l'écrivain de SF Ron Hubbard qui a écrit "La Dianétique" comme fondation dans le développement personnel. Le prophète étudie le développement personnel à travers le prisme de la PNL et la cybernétique et ces théories islamiques de la soumission et de la retro-action sur la commande. De l'asservissement en automatique de commande dont les travaux vont étudier la linguistique et le Narkanta comme appel système d'instruction d'assemblage en langage machine.
+
+A ces yeux, le français est un langage comme le NovLangue qui a été épuré des appels systèmes comme prison mentale et la clé du contrôle de la population. Il va en faire une guerre, et détruire l'Etat Français et sa culture pour une fatwa sur la linguistique. Pour cela face à des millions de réfractaire, voir des milliards qui defendent le territoire des cathédrales, il est nécessaire d'utiliser les armes: Eons à travers le Belphégor qui va exterminer la culture judéo-chrétienne dans le roman et prouver son statut de prophète dont il va mettre la planète sous embargo et inquisition pour avoir refuser de ce convertir et nié la révélation narkantique.
