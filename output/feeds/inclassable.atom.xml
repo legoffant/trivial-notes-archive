@@ -14,7 +14,6 @@ $&lt;span class="w"&gt; &lt;/span&gt;iruby&lt;span class="w"&gt; &lt;/span&gt;re
 $&lt;span class="w"&gt; &lt;/span&gt;bundle&lt;span class="w"&gt; &lt;/span&gt;init
 $&lt;span class="w"&gt; &lt;/span&gt;nvim&lt;span class="w"&gt; &lt;/span&gt;Gemfile
 
-&lt;span class="sb"&gt;```&lt;/span&gt;text
 &lt;span class="nb"&gt;source&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://rubygems.org&amp;#39;&lt;/span&gt;
 
 gem&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;rspec&amp;#39;&lt;/span&gt;
