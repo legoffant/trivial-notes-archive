@@ -1,5 +1,5 @@
 Title:Voile et annihilation: Le premier Kor-Al-Maghrib à Huelgoat
-Date: 2023-08-28 07:41
+Date: 2023-08-31 15:23
 Category:Inclassable
 Tags:kor, temple
 Authors: Anthony Le Goff
