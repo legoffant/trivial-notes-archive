@@ -20,7 +20,7 @@ Les prévisions pour la fabrication pour de Kor-Al-Maghrib:
 * Création des processeurs à ADN initiaux: Périgée lunaire du 28 septembre 2023 (synchronisation des horloges célestes)
 * Enterrement prévue de la capsule temporelle: Mai 2024
 
-Pour utiliser ces fonctions c'est funéraire et c'est un rite. Vous n'avez pas accès au temple sans mourir. Soit par le jeune, le suicide ou le combat. Mais rappelez-vous que le lieu de mort à son importance ainsi ques pénalités, histoire d'en faire un symbole.
+Pour utiliser ces fonctions c'est funéraire et c'est un rite. Vous n'avez pas accès au temple sans mourir. Soit par le jeune, le suicide ou le combat. Mais rappelez-vous que le lieu de mort à son importance ainsi que ces pénalités, histoire d'en faire un symbole.
 
 Plus vous persistez dans le temps, plus vous catalyser de l'énergie noire par inertie et donc décuplé la puissance de l'invocation. Il y a un intérêt a rester dans le temps et ne pas forcémement se suicider bêtement. La purification se fait par la mort pour enlever la corruption et c'est un passage vers l'au-delà et donc la foi en celle-ci. Que la mort n'est qu'une illusion.
 
