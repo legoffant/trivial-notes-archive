@@ -13,7 +13,7 @@ Le temple narkantique ne sera pas en sécurité tant que le premier hébergeur A
 * Ressuscites les morts et disciples dans l'au-delà.
 * Lieu de prière et DMZ, invulnérabilité à proximité.
 
-Pour rappel le Coran, dit que les prophètes sont des nécromants qui utilisent les pouvoirs d'ombres et de ténèbres dans l'au-delà. Et sont des experts depuis la tradition des alchimistes. Les prophètes sont dans l'au-delà et son eux même des errants sur une planète par souvent il y a un bounty sur leur tête et on veut leur mort.
+Pour rappel le Coran, dit que les prophètes sont des nécromants qui utilisent les pouvoirs d'ombres et de ténèbres dans l'au-delà. Et sont des experts depuis la tradition des alchimistes. Les prophètes sont dans l'au-delà et sont eux même des errants sur une planète et souvent il y a un bounty sur leur tête et on veut leur mort, ce qui fait que empirer la nécrocancie.... et l'accès aux limbes en controlant le temps.
 
 Les prévisions pour la fabrication pour de Kor-Al-Maghrib:
 
