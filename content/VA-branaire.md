@@ -18,3 +18,7 @@ Le narkantisme est un remix du nazisme islamisé à travers le pouvoir hitlerien
 Il a changé de forme Adolf, il ressemble à Raspoutine et suit de prêt le petit Gregori Villemin, un sosie mort dans les Vosges, comme un artefact du passage dans l'au-delà du prophète Nominoë II....
 
 Car les nazis ont traqués les secrets des alchimistes, ils sont réputé pour, en particulier Fulcanelli qui a étudié le symbolisme des cathédrales.
+
+Adolf est un archetype d'Adam, dont son épouse s'appel Eva. C'est un leak, en particulier la construction de la base de sous-marin à Lorient, même configuration de Blockhaus que les pyramides de Giza. C'est un leak de leur utilisation, une métaphore d'un port pour héberger des navires ou vaisseaux Atlantes. 
+
+Le premier ordinateur s'appel egalement Adam Et Eve d'Apple. C'est un serveur Giza, et les premiers Atlantes sont apparu par la porte des étoiles à Giza venant de la constellation d'Orion. 
