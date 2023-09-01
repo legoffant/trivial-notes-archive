@@ -17,4 +17,10 @@ Tout d'abord Giza en tant que serveur à besoin d'énergie, et il fonctionne à 
 
 On peut simuler sur une "flood map" l'élévation de océans pour que l'eau atteigne le Sphinx. Il faut **+ 33 mètres** du niveau actuel. Il suffit ensuite de comparer les données du niveau des océans sur Terre, et cela s'estime à au moins 3 millions d'années.
 
-Et depuis c'est la mascarade sur la planète.
+Et depuis c'est la mascarade sur la planète. Car des religions essayent de s'accaparer Giza et les secrets de la création, c'est le squat, et tous les prophètes abrahamiques sont issue du savoir des alchimistes de Giza. En particulier dans le judéo-christianisme c'est un interdit car ils veulent garder pour eux le pouvoir, ce qui en symétrie en contre-pouvoir est apparu les musulmans.
+
+![giza sea level](images/giza-sea-level.png)
+
+---
+
+![sea level](images/sea-level.jpg)
