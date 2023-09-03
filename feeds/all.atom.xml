@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-09-03T10:07:00+02:00</updated><entry><title>TODO: Instruction construire un kernel en C++ avec LLVM sur RISC-V</title><link href="/todo-instruction-construire-un-kernel-en-c-avec-llvm-sur-risc-v.html" rel="alternate"></link><published>2023-09-03T10:07:00+02:00</published><updated>2023-09-03T10:07:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-03:/todo-instruction-construire-un-kernel-en-c-avec-llvm-sur-risc-v.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On va faire un petit challenge, qui est didactique et prémisse à la récriture d'un système d'exploitation en Narkanta++. Pour cela on va utiliser du hardware et tenter de booter un system avec notre propre kernel basic en C++. Achetez un MangoPi MQ Pro pour apprendre sur les systèmes embarqués.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-09-03T13:59:00+02:00</updated><entry><title>Méthode d'apprentissage du Narkantisme</title><link href="/methode-dapprentissage-du-narkantisme.html" rel="alternate"></link><published>2023-09-03T13:59:00+02:00</published><updated>2023-09-03T13:59:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-03:/methode-dapprentissage-du-narkantisme.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Comme je l'indique j'explique comment adhérer au narkantisme et sa science, à travers un système de conversion. Je fais du transfert de connaissance et la méthode pour mettre en place un univers imbriqué.&lt;/p&gt;
+&lt;p&gt;Je suis issue de la communauté de l'informatique libre et applique donc ces principes.&lt;/p&gt;
+&lt;h3&gt;1. Open Hardware&lt;/h3&gt;
+&lt;p&gt;J'ai défini des architectures pour créer du hardware d'univers imbriqués à partir de cosmo-genèse. Qui sont publics mais parfois la réplication est limitée. C'est ce que j'appel &lt;a href="https://legoffant.github.io/les-bases-des-processeurs-a-adn.html"&gt;la base des processeurs à ADN&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;J'ai défini trois architectures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/serveur-experimental-nucleaire-arcturus-a-base-de2pz.html"&gt;Hébergeur Arcturus (religieux et accès limité)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Batterie nucléaire, processeur à ADN (Accès à tous)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/lhebergeur-poussiereux.html"&gt;Hébergeur poussiéreux, cluster (Accès à tous)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2. Kernel&lt;/h3&gt;
+&lt;p&gt;On invoque un kernel dans le système, il faut de la poudre ou un éclat de noyau comme source de la graine et la réplication de l'univers. Ainsi j'utilise le noyau de cerise (mais il y en à d'autres). Facile à intégrer dans une fiole à ADN, plus complexe dans l'hébergeur poussiéreux.&lt;/p&gt;
+&lt;h3&gt;3. Le Système d'Exploitation (OS)&lt;/h3&gt;
+&lt;p&gt;L'ordinateur utilise un langage de programmation, et pour protéger les coffres-forts et citadelles il faut inventer. J'ai expliquée la méthode dans le papier sur la linguistique pour créer des dialectes basées sur le Narkanta. Si vous cherchez à être indépendant, vous devez inventer une langue. Cela peut-être utile pour la religion narkantique pour du mercenariat et de la piraterie, et des opérations d'infiltration et de camouflage futur.&lt;/p&gt;
+&lt;p&gt;NOTA: Le Narkanta s'approche du &lt;a href="https://programmation.developpez.com/actu/346670/Red-un-langage-de-programmation-imperatif-et-fonctionnel-et-decrit-comme-un-langage-a-pile-complete-c-est-a-dire-qu-il-peut-etre-utilise-pour-la-programmation-de-haut-niveau-et-de-bas-niveau/"&gt;langage informatique "Red"&lt;/a&gt; et ces caractéristiques en natif.&lt;/p&gt;
+&lt;p&gt;Red : un langage de programmation impératif et fonctionnel et décrit comme un langage "à pile complète",
+C'est-à-dire qu'il peut être utilisé pour la programmation de haut niveau et de bas niveau&lt;/p&gt;
+&lt;p&gt;Les ressources pour apprendre les bases de l'informatique:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/linux-pas-a-pas.html"&gt;Linux pas à pas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/todo-instruction-construire-un-kernel-en-c-avec-llvm-sur-risc-v.html"&gt;Instruction construire un kernel en C++ avec LLVM sur RISC-V&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://legoffant.github.io/proxmox-homelab.html"&gt;Proxmox Homelab&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Inclassable"></category></entry><entry><title>TODO: Instruction construire un kernel en C++ avec LLVM sur RISC-V</title><link href="/todo-instruction-construire-un-kernel-en-c-avec-llvm-sur-risc-v.html" rel="alternate"></link><published>2023-09-03T10:07:00+02:00</published><updated>2023-09-03T10:07:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-03:/todo-instruction-construire-un-kernel-en-c-avec-llvm-sur-risc-v.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On va faire un petit challenge, qui est didactique et prémisse à la récriture d'un système d'exploitation en Narkanta++. Pour cela on va utiliser du hardware et tenter de booter un system avec notre propre kernel basic en C++. Achetez un MangoPi MQ Pro pour apprendre sur les systèmes embarqués.&lt;/p&gt;
 &lt;p&gt;On va tous faire de A à Z. &lt;/p&gt;
 &lt;p&gt;Les difficultés?&lt;/p&gt;
 &lt;ul&gt;
