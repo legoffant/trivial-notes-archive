@@ -32,6 +32,8 @@ int main() {
    return 0;
 }
 
+```
+
 ```bash
 clang++ hello.cpp -o hello -Wall -Wextra -std=c++23
 ```
