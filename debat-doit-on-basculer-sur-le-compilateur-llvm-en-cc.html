@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Trivial notes - astronomie</title>
+    <title>Débat doit-on basculer sur le compilateur LLVM en C/C++?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Anthony Le Goff">
@@ -73,7 +73,7 @@
 						<i class="icon-folder-open icon-large"></i>biohacking
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="/category/cc.html">
 						<i class="icon-folder-open icon-large"></i>C/C++
 					</a>
@@ -118,35 +118,58 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="/choix-de-planetarium.html">Choix de planetarium</a></h1>
-                <div class="well small"><footer class="post-info">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Débat doit-on basculer sur le compilateur LLVM en C/C++?">
+                                        Débat doit-on basculer sur le compilateur LLVM en C/C++?
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2023-08-10T12:14:00+02:00">
-        <i class="icon-calendar"></i>jeu. 10 août 2023
+<abbr class="published" title="2023-09-03T09:05:00+02:00">
+        <i class="icon-calendar"></i>dim. 03 septembre 2023
 </abbr>
 <span class="label">By</span>
 <a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
 <span class="label">Category</span>
-<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+<a href="/category/cc.html"><i class="icon-folder-open"></i>C/C++</a>.
 
 
-<span class="label">Tags</span>
-	<a href="/tag/astronomie.html"><i class="icon-tag"></i>astronomie</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary">
-                        <a class="btn primary xsmall" href="/choix-de-planetarium.html">more ...</a>
-                </div>
-        </div>
-        <hr />
+</footer><!-- /.post-info -->                </div>
+                <p>Ma réponse serait <strong>"oui"</strong>. Outre le symbolisme du dragon comme logo, c'est un compilateur plus performant que GCC. Je l'utilise déjà pour Neovim et Coc pour l'auto-complétion avec clangd.</p>
+<p>Donc le projet Qasari devrait être codé avec LLVM.</p>
+<ul>
+<li><a href="https://alibabatech.medium.com/gcc-vs-clang-llvm-an-in-depth-comparison-of-c-c-compilers-899ede2be378">GCC vs Clang.LLVM: An In-Depth Comparison of C/C++ Compilers</a></li>
+<li><a href="https://www.phoronix.com/review/gcc13-clang16-raptorlake">LLVM Clang 16 vs. GCC 13 Compiler Performance On Intel Raptor Lake</a></li>
+</ul>
+<h3>Installation</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>llvm
+</code></pre></div>
 
-                <section id="content" class="body">
-                <h1>Pages</h1>
-                        <li><a href="/pages/contact.html">Contact</a></li>
-                        <li><a href="/pages/date.html">Date</a></li>
-                        <li><a href="/pages/BTC.html">Don BTC</a></li>
-                        <li><a href="/pages/lticba.html">LTICBA</a></li>
-                </section>
+<h3>Utilisation</h3>
+<p>Pour compiler on utilise l'utilitaire en front-end <code>clang</code></p>
+<p>hello.cpp</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">   </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="p">;</span>
+<span class="w">   </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="err">```</span><span class="n">bash</span>
+<span class="n">clang</span><span class="o">++</span><span class="w"> </span><span class="n">hello</span><span class="p">.</span><span class="n">cpp</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">hello</span><span class="w"> </span><span class="o">-</span><span class="n">Wall</span><span class="w"> </span><span class="o">-</span><span class="n">Wextra</span><span class="w"> </span><span class="o">-</span><span class="n">std</span><span class="o">=</span><span class="n">c</span><span class="o">++</span><span class="mi">23</span>
+</code></pre></div>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
