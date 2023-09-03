@@ -25,7 +25,7 @@ On invoque un kernel dans le système, il faut de la poudre ou un éclat de noya
 
 ### 3. Le Système d'Exploitation (OS)
 
-L'ordinateur utilise un langage de programmation, et pour protéger les coffres-forts et citadelles il faut inventer. J'ai expliquée la méthode dans le papier sur la linguistique pour créer des dialectes basées sur le Narkanta. Si vous cherchez à être indépendant, vous devez inventer une langue. Cela peut-être utile pour la religion narkantique pour du mercenariat et de la piraterie, et des opérations d'infiltration et de camouflage futur.
+L'ordinateur utilise un langage de programmation, et pour protéger les coffres-forts et citadelles il faut inventer. J'ai expliquée la méthode dans [le papier sur la linguistique](https://legoffant.github.io/etude-linguistique-et-recherche-narkantique.html) pour créer des dialectes basées sur le Narkanta. Si vous cherchez à être indépendant, vous devez inventer une langue. Cela peut-être utile pour la religion narkantique pour du mercenariat et de la piraterie, et des opérations d'infiltration et de camouflage futur.
 
 NOTA: Le Narkanta s'approche du [langage informatique "Red"](https://programmation.developpez.com/actu/346670/Red-un-langage-de-programmation-imperatif-et-fonctionnel-et-decrit-comme-un-langage-a-pile-complete-c-est-a-dire-qu-il-peut-etre-utilise-pour-la-programmation-de-haut-niveau-et-de-bas-niveau/) et ces caractéristiques en natif.
 
