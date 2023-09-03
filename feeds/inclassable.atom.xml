@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-09-03T13:59:00+02:00</updated><entry><title>Méthode d'apprentissage du Narkantisme</title><link href="/methode-dapprentissage-du-narkantisme.html" rel="alternate"></link><published>2023-09-03T13:59:00+02:00</published><updated>2023-09-03T13:59:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-03:/methode-dapprentissage-du-narkantisme.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Comme je l'indique j'explique comment adhérer au narkantisme et sa science, à travers un système de conversion. Je fais du transfert de connaissance et la méthode pour mettre en place un univers imbriqué.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Inclassable</title><link href="/" rel="alternate"></link><link href="/feeds/inclassable.atom.xml" rel="self"></link><id>/</id><updated>2023-09-03T16:32:00+02:00</updated><entry><title>Base pour démarrer un système d'exploitation en assembleur</title><link href="/base-pour-demarrer-un-systeme-dexploitation-en-assembleur.html" rel="alternate"></link><published>2023-09-03T16:32:00+02:00</published><updated>2023-09-03T16:32:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-03:/base-pour-demarrer-un-systeme-dexploitation-en-assembleur.html</id><summary type="html"></summary><content type="html">&lt;p&gt;On va montrer le code de base commenté pour démarrer un système d'exploitation, je n'affiche pas les instructions "Hello World". juste booter le segment en mémoire et être "Ready" pour écrire quelques choses. &lt;/p&gt;
+&lt;p&gt;Noter le bien, le processeur ne comprends que le langage d'assemblage spécifique au constructeur. Le Kernel Linux pour le créer il faut d'abord booter en assembleur qui invoque après le langage C. &lt;/p&gt;
+&lt;p&gt;Ce que vous avez besoin:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Un compilateur en assembleur &lt;code&gt;Nasm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Un émulateur via &lt;code&gt;Qemu&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Créer un &lt;code&gt;Makefile&lt;/code&gt; pour automatiser les tâches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;pacman&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;base-devel&lt;span class="w"&gt; &lt;/span&gt;nasm&lt;span class="w"&gt; &lt;/span&gt;qemu-full
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer un dossier de developpement disont &lt;code&gt;osdev&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mdkir&lt;span class="w"&gt; &lt;/span&gt;osdev
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;osdev
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;src
+$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On va créer notre fichier principal en asm&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;nvim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;src&lt;/span&gt;&lt;span class="err"&gt;/&lt;/span&gt;&lt;span class="no"&gt;main.asm&lt;/span&gt;
+
+&lt;span class="err"&gt;[&lt;/span&gt;&lt;span class="nf"&gt;org&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0x7C00&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;; initialisation des segment secteur boot&lt;/span&gt;
+&lt;span class="err"&gt;[&lt;/span&gt;&lt;span class="nf"&gt;bits&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;; on travail en 16 bits, processeur Intel 8086&lt;/span&gt;
+
+&lt;span class="nl"&gt;main:&lt;/span&gt;
+&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="nf"&gt;hlt&lt;/span&gt;
+
+&lt;span class="nl"&gt;.halt:&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nf"&gt;jmp&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;.halt&lt;/span&gt;
+
+
+&lt;span class="c1"&gt;; --- NOP Jusqu&amp;#39;à 510 ---&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nf"&gt;times&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;510&lt;/span&gt;&lt;span class="p"&gt;-(&lt;/span&gt;&lt;span class="no"&gt;$-$$&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;db&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nf"&gt;dw&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0xAA55&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Puis on va automatiser la compilation avec un Makefile&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;nvim&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Makefile&lt;/span&gt;
+
+&lt;span class="nv"&gt;ASM&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;nasm
+
+&lt;span class="nv"&gt;SRC_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;src
+&lt;span class="nv"&gt;BUILD_DIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;build
+
+&lt;span class="nf"&gt;$(BUILD_DIR)/main_floppy.img&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nv"&gt;BUILD_DIR&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/&lt;span class="n"&gt;main&lt;/span&gt;.&lt;span class="n"&gt;bin&lt;/span&gt; 
+&lt;span class="w"&gt;    &lt;/span&gt;cp&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BUILD_DIR&lt;span class="k"&gt;)&lt;/span&gt;/main.bin&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BUILD_DIR&lt;span class="k"&gt;)&lt;/span&gt;/main_floppy.img
+&lt;span class="w"&gt;    &lt;/span&gt;truncate&lt;span class="w"&gt; &lt;/span&gt;-s&lt;span class="w"&gt; &lt;/span&gt;1440k&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BUILD_DIR&lt;span class="k"&gt;)&lt;/span&gt;/main_floppy.img&lt;span class="w"&gt; &lt;/span&gt;
+
+&lt;span class="nf"&gt;$(BUILD_DIR)/main.bin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nv"&gt;SRC_DIR&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/&lt;span class="n"&gt;main&lt;/span&gt;.&lt;span class="n"&gt;asm&lt;/span&gt; 
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;ASM&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;SRC_DIR&lt;span class="k"&gt;)&lt;/span&gt;/main.asm&lt;span class="w"&gt; &lt;/span&gt;-f&lt;span class="w"&gt; &lt;/span&gt;bin&lt;span class="w"&gt; &lt;/span&gt;-o&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BUILD_DIR&lt;span class="k"&gt;)&lt;/span&gt;/main.bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pour lancer la compilation on tape la commande &lt;code&gt;make&lt;/code&gt; qui va générer notre binaire et copier dans un format .img&lt;/p&gt;
+&lt;p&gt;Puis on lance dans le terminal shell la virtualisation via &lt;code&gt;Qemu&lt;/code&gt; qui devrait ouvrir une fenètre confirmant le fonctionnement du code&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;qemu-system-i386&lt;span class="w"&gt; &lt;/span&gt;-fda&lt;span class="w"&gt; &lt;/span&gt;build/main_floppy.img
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Inclassable"></category><category term="asm"></category></entry><entry><title>Méthode d'apprentissage du Narkantisme</title><link href="/methode-dapprentissage-du-narkantisme.html" rel="alternate"></link><published>2023-09-03T13:59:00+02:00</published><updated>2023-09-03T13:59:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-03:/methode-dapprentissage-du-narkantisme.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Comme je l'indique j'explique comment adhérer au narkantisme et sa science, à travers un système de conversion. Je fais du transfert de connaissance et la méthode pour mettre en place un univers imbriqué.&lt;/p&gt;
 &lt;p&gt;Je suis issue de la communauté de l'informatique libre et applique donc ces principes.&lt;/p&gt;
 &lt;h3&gt;1. Open Hardware&lt;/h3&gt;
 &lt;p&gt;J'ai défini des architectures pour créer du hardware d'univers imbriqués à partir de cosmo-genèse. Qui sont publics mais parfois la réplication est limitée. C'est ce que j'appel &lt;a href="https://legoffant.github.io/les-bases-des-processeurs-a-adn.html"&gt;la base des processeurs à ADN&lt;/a&gt;.&lt;/p&gt;
