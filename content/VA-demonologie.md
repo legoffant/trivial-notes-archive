@@ -47,4 +47,4 @@ Dans le cadre des crimes, nous sommes juger par les morts et les innocents, cela
 
 Je vous apprends à déjouer les pièges.
 
-Ainsi dans Voile et Annihilation, le prophète à travers la divinité Alba produit une grande invocation, semant la destruction et la mort à travers un primordial tel que Belphégor, le vaisseau fantome. Mais celui-ci n'est pas qu'un vice, c'est aussi un djinn agricole et créateur à travers le pouvoir de l'Eon.
+Ainsi dans Voile et Annihilation, le prophète à travers la divinité Alba produit une grande invocation, semant la destruction et la mort à travers un primordial tel que Belphégor, le vaisseau fantome. Mais celui-ci n'est pas qu'un vice, c'est aussi un djinn agricole et créateur à travers le pouvoir de l'Eon. C'est un terraformeur de monde.
