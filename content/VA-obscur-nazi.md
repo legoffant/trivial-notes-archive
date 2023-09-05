@@ -28,7 +28,6 @@ Au coeur de la societé de Thulé il y a le Soleil Noir, un symbole de l'occulta
 - 21e division SS Skanderberg
 
 
-
 ANDROMEDA
 
 L'obstination nazi pour la technologie est sans limite avec le développement d'arme secrète pour gagner la guerre, et les nazis imaginaient une porte de sortie si nécessaire en quittant la Terre à bord d'un vaisseau et donc avait commencer des projets d'études aérospatiale. Les projets des ailes volantes nazis sont précurseurs et pour permettre la recherche et l'étude de l'aérodynamique, les allemands ont inventés les premiers ordinateurs. Tel que le Zuse 3. Les nazis faisaient une fixation sur la doctrine du symbole à travers le Vril et du Soleil Noir et vont faire une série d'analyse et de recherche. Cela va donner naissance au mythe des UFO Nazi.
