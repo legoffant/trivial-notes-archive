@@ -26,7 +26,7 @@ Lien vers le dossier Qasari sur MEGA (308 fichiers, 3,7 GO) téléchargeable: [h
 Autres ressources téléchargeables, ma sélection de livre en informatique dans "learn programming" sur Github + 200 livres:
 
 ```bash
-git clone https://github.com/legoffant/learnprogramming
+git https://github.com/legoffant/learnprogramming.git
 ```
 
 Pour lire les ebooks, je vous conseil d'utiliser Calibre: [https://calibre-ebook.com/fr](https://calibre-ebook.com/fr)
