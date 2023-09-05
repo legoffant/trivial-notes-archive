@@ -18,7 +18,7 @@ ROUTAGE:
 
 EQUIPEMENT:
 
-* Imprimante HP Laser à 300€
+* Imprimante HP Laser MFP-179fnw à 300€
 * Serveur Proxmox à 1200€ (CPU Ryzen 5, 64GB RAM, 2TO RAID 10, GPU : NVIDIA 1650 GTX)
 * NAS Synology DS220j à 220€ (backup)
 * Ordinateur Thinkpad T480 sous Arch Linux reconditionné à 499€ en double écran en DVI via HDMI un Samsung vieux de 14 ans.
