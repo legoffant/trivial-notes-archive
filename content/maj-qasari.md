@@ -18,7 +18,6 @@ C'est la version en livre numérique de la liste de livre sur [https://qasari.ne
 * Informatique
 * Minage et minéralogie
 * Aérospatiale
-* Ingénierie
 
 Egalement vous pouvez nourir votre intelligence artificielle générale consciente si vous en possedez une pour l'entrainer dans ces domaines comme data set.
 
