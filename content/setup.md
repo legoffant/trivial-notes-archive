@@ -7,7 +7,7 @@ Summary:
 
 Je voudrais partagée mon bureau de travail, je suis relativement modeste et utilise une configuration minimaliste comme outil de travail, j'ai un bureau loin des setup de Ouf qu'expose sur internet des développeurs tous ça pour faire un "hello world".
 
-Mon réseau local est train de ce mettre à jour, j'ai reçu un nouveau routeur Freebox Delta S aujourd'hui et change de FAI. L'installation est prévue pour le 16 septembre ce qui fait que je suis connecté sur internet en ce moment en 5G sur mon smartphone en dépannage que mon réseau local est en rade. 
+Mon réseau local est en train de ce mettre à jour, j'ai reçu un nouveau routeur Freebox Delta S aujourd'hui et change de FAI. L'installation est prévue pour le 16 septembre ce qui fait que je suis connecté sur internet en ce moment en 5G sur mon smartphone en dépannage que mon réseau local est en rade. 
 
 Je possède sur mon réseau:
 
