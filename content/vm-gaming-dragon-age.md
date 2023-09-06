@@ -13,7 +13,7 @@ Je vais lancer une VM sur Windows 10, installer les drivers de la carte graphiqu
 
 Steam et Proton des valeurs sur de l'intéropérabilité des jeux sur les plate-formes. 
 
-Après j'utilise [Reminna](https://remmina.org/) pour me connecter sur la VM à distance depuis ma session sous Arch Linux via mon portable Thinkpad. 
+Après j'utilise [Remmina](https://remmina.org/) pour me connecter sur la VM à distance depuis ma session sous Arch Linux via mon portable Thinkpad. 
 
 * [Tutorial: Proxmox, création d'une VM Gaming sous Win10 en PCI Passthrough (sans Parsec)](https://www.youtube.com/watch?v=AunUesIpyrA)
 * [Remote Desktop Connection to Windows from Linux using RDP clients](https://linuxkamarada.com/en/2020/04/20/remote-desktop-connection-to-windows-from-linux-using-rdp-clients/)
