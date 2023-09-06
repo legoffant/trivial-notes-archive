@@ -3,7 +3,7 @@
 &lt;p&gt;Comment je vais mettre en place mon Cloud Gaming sur Proxmox?&lt;/p&gt;
 &lt;p&gt;Je vais lancer une VM sur Windows 10, installer les drivers de la carte graphique NVIDIA 1650 GTX. Puis installer et créer un compte sur &lt;a href="https://store.steampowered.com/"&gt;Steam&lt;/a&gt;. Mais je crois que j'en ai déjà un. Je vais acheter &lt;a href="https://store.steampowered.com/app/47810/Dragon_Age_Origins__Ultimate_Edition/"&gt;le jeu pour 25€&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Steam et Proton des valeurs sur de l'intéropérabilité des jeux sur les plate-formes. &lt;/p&gt;
-&lt;p&gt;Après j'utilise &lt;a href="https://remmina.org/"&gt;Reminna&lt;/a&gt; pour me connecter sur la VM à distance depuis ma session sous Arch Linux via mon portable Thinkpad. &lt;/p&gt;
+&lt;p&gt;Après j'utilise &lt;a href="https://remmina.org/"&gt;Remmina&lt;/a&gt; pour me connecter sur la VM à distance depuis ma session sous Arch Linux via mon portable Thinkpad. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=AunUesIpyrA"&gt;Tutorial: Proxmox, création d'une VM Gaming sous Win10 en PCI Passthrough (sans Parsec)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://linuxkamarada.com/en/2020/04/20/remote-desktop-connection-to-windows-from-linux-using-rdp-clients/"&gt;Remote Desktop Connection to Windows from Linux using RDP clients&lt;/a&gt;&lt;/li&gt;
