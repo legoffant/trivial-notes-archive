@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-09-06T10:45:56-00:00</lastmod>
+<lastmod>2023-09-06T11:01:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-09-06T10:45:56-00:00</lastmod>
+<lastmod>2023-09-06T11:01:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-09-06T10:45:56-00:00</lastmod>
+<lastmod>2023-09-06T11:01:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-09-06T10:45:56-00:00</lastmod>
+<lastmod>2023-09-06T11:01:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-09-06T10:45:56-00:00</lastmod>
+<lastmod>2023-09-06T11:01:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -67,6 +67,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/avoir-le-courage-de-ne-pas-etre-aime.html</loc>
+<lastmod>2023-09-06T10:27:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/voile-et-annihilation-le-sceau-du-prophete-nominoe-ii.html</loc>
 <lastmod>2023-09-05T23:02:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -83,13 +90,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/mon-bureau-minimaliste-rate-my-setup.html</loc>
 <lastmod>2023-09-05T20:54:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/avoir-le-courage-de-ne-pas-etre-aime.html</loc>
-<lastmod>2023-09-05T10:27:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2707,7 +2707,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/inclassable.html</loc>
-<lastmod>2023-09-05T23:02:00+00:09</lastmod>
+<lastmod>2023-09-06T10:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2734,6 +2734,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/tag/livre.html</loc>
+<lastmod>2023-09-06T10:27:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/tag/sceau.html</loc>
 <lastmod>2023-09-05T23:02:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -2750,13 +2757,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/bureau.html</loc>
 <lastmod>2023-09-05T20:54:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/livre.html</loc>
-<lastmod>2023-09-05T10:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5269,7 +5269,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-09-05T23:02:00+00:09</lastmod>
+<lastmod>2023-09-06T10:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
