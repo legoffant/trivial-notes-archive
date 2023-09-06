@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-09-05T23:09:29-00:00</lastmod>
+<lastmod>2023-09-06T10:45:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-09-05T23:09:29-00:00</lastmod>
+<lastmod>2023-09-06T10:45:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-09-05T23:09:29-00:00</lastmod>
+<lastmod>2023-09-06T10:45:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-09-05T23:09:29-00:00</lastmod>
+<lastmod>2023-09-06T10:45:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-09-05T23:09:29-00:00</lastmod>
+<lastmod>2023-09-06T10:45:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -83,6 +83,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/mon-bureau-minimaliste-rate-my-setup.html</loc>
 <lastmod>2023-09-05T20:54:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/avoir-le-courage-de-ne-pas-etre-aime.html</loc>
+<lastmod>2023-09-05T10:27:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2748,6 +2755,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/tag/livre.html</loc>
+<lastmod>2023-09-05T10:27:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/tag/qasari.html</loc>
 <lastmod>2023-09-04T21:32:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -2904,13 +2918,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/music.html</loc>
 <lastmod>2023-08-26T20:48:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/livre.html</loc>
-<lastmod>2023-08-26T20:21:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
