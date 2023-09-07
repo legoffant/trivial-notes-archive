@@ -418,8 +418,14 @@ ruby:&lt;span class="w"&gt; &lt;/span&gt;/usr/bin/ruby&lt;span class="w"&gt; &lt
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;chown&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Gestion de la propriété des fichiers et répertoires. L’utilisation correcte de la commande chown peut empêcher les utilisateurs indésirables d’apporter des modifications à vos fichiers et contribuer à les protéger des personnes extérieures.
-shutdown&lt;/p&gt;
+&lt;p&gt;Gestion de la propriété des fichiers et répertoires. L’utilisation correcte de la commande chown peut empêcher les utilisateurs indésirables d’apporter des modifications à vos fichiers et contribuer à les protéger des personnes extérieures.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;shutdown&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet d'éteindre l'ordinateur&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;shutdown&lt;span class="w"&gt; &lt;/span&gt;now
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;chmod&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
