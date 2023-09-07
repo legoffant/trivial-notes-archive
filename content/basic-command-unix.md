@@ -436,7 +436,13 @@ $ passwd trivial
 * **chown**
 
 Gestion de la propriété des fichiers et répertoires. L’utilisation correcte de la commande chown peut empêcher les utilisateurs indésirables d’apporter des modifications à vos fichiers et contribuer à les protéger des personnes extérieures.
-shutdown
+
+* **shutdown**
+
+Permet d'éteindre l'ordinateur
+```
+$ sudo shutdown now
+```
 
 * **chmod**
 
