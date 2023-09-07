@@ -60,3 +60,7 @@ Il est nécessaire de répertorier votre activité dans des bases de donnée, po
 
 * [https://annuaire-freelance.com/](https://annuaire-freelance.com/)
 * [https://www.jeveuxunfreelance.fr/](https://www.jeveuxunfreelance.fr/)
+
+13. La prospection par email
+
+Cela peut-être intéressant, en particulier dans mon domaine si je recherche à atteindre des hauts cadres en particulier avec des besoins specifiques de protection de l'information: [5 tools to find any email](https://www.leadin.fr/en/5-tools-to-find-any-email-address/). Couplez avec de l'OSINT sur votre cible pour récupérer de l'information sur le client potentiel.
