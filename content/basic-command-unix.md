@@ -367,7 +367,7 @@ Le par-feu le plus simple d'utilisation
 
 * **sudo**
 
-Commande pour obtenir les droits administrateurs
+Commande pour obtenir les droits administrateur
 
 * **cal**
 

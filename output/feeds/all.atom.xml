@@ -65,7 +65,7 @@ drwxr-xr-x&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&g
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-&lt;li&gt;*&lt;em&gt;rmdir&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;rmdir&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Supprimer un dossier&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;rmdir&lt;span class="w"&gt; &lt;/span&gt;sources
@@ -369,7 +369,7 @@ lu&lt;span class="w"&gt; &lt;/span&gt;ma&lt;span class="w"&gt; &lt;/span&gt;me&l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-&lt;li&gt;date&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;date&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Affiche la date actuel&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;date
