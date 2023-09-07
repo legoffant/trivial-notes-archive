@@ -220,7 +220,7 @@ Outil de controle de version
 
 Affiche les processus actifs
 ```
-$ps -aux
+$ ps -aux
 
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root           1  0.0  0.0  23844  9972 ?        Ss   août29   0:21 /usr/lib/systemd/systemd --switched-root --syst
@@ -257,7 +257,7 @@ tmpfs                    1,7G    209k  1,7G   1% /run/user/1000
 * **lsblk**
 
 Affiche les partitions
-```
+```bash
 $ lsblk -l
 
 NAME                                      MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
@@ -280,7 +280,7 @@ nvme0n1p2                                 259:2    0   238G  0 part
 * **ip**
 
 Commande pour manipuler les outils réseaux, routage, équipements et tunneling
-```
+```bash
 $ ip addr
 
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -304,7 +304,7 @@ $ ip addr
 * **ping**
 
 Outil réseau qui permet de ping la connexion à un site, état du réseau
-```
+```bash
 $ ping www.google.fr
 
 PING www.google.fr(par21s06-in-x03.1e100.net (2a00:1450:4007:813::2003)) 56 octets de données
@@ -321,7 +321,7 @@ rtt min/avg/max/mdev = 40.920/45.561/50.203/4.641 ms
 Traceroute est un outil de Linux qui vous permet d’étudier les itinéraires des paquets de réseau. Il peut vous aider à identifier le facteur limitant les parcours de paquets de réseau.
 Traceroute est également utile pour dépanner des connexions de réseau lent en vérifiant le chemin empreinte par des paquets vers une destination.
 
-```
+```bash
 $ traceroute www.google.fr
 
 traceroute to www.google.fr (142.250.179.99), 30 hops max, 60 byte packets
