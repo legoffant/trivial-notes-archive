@@ -1,5 +1,433 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-09-07T09:46:00+02:00</updated><entry><title>Elaboration de ma stratégie marketing</title><link href="/elaboration-de-ma-strategie-marketing.html" rel="alternate"></link><published>2023-09-07T09:46:00+02:00</published><updated>2023-09-07T09:46:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-07:/elaboration-de-ma-strategie-marketing.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Comme je dis je vais changer de méthode pour élaborer ma stratégie marketing pour le projet "Kor 51". je vais sortir l'artillerie lourde pour obtenir des chances de diffusion et des clients potentiels. Car j'ai appris de mes erreurs dans le domaine.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-09-07T22:18:00+02:00</updated><entry><title>Apprendre la ligne de commande UNIX</title><link href="/apprendre-la-ligne-de-commande-unix.html" rel="alternate"></link><published>2023-09-07T22:18:00+02:00</published><updated>2023-09-07T22:18:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-07:/apprendre-la-ligne-de-commande-unix.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Les commandes UNIX s'utilise dans le cadre de procédure avec le shell dans un terminal, c'est des outils basics pour intéragir avec le système en ligne de commande. Cela est particulièrement utile pour les programmeurs et la gestion de serveur, ou il n'y a pas d'interface graphique. Egalement cela permet d'optimiser la productivité et automatiser des tâches avec des scripts bash. Vous pouvez absolument tout controler depuis votre terminal. Ceci est une liste de 42 commandes essentiels sous UNIX. Cela est nécessaire pour tous débutant en informatique que la maitrise des lignes de commande dans un terminal.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;vim&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vim est l'outil basic d'éditeur de texte du programmeur, c'est votre meilleur allié, ça maitrise au départ est complexe avec son mode modal, mais on s'y fait avec le tutorial à lancer en ligne de commande &lt;code&gt;vimtutor&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;vim&lt;span class="w"&gt; &lt;/span&gt;hello.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Créer un fichier hello en langage C.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ls&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Affiche les informations sur les fichiers et les dossiers ainsi que les permissions d'accès&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;ls&lt;span class="w"&gt; &lt;/span&gt;-la
+
+total&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;3364&lt;/span&gt;
+drwxr-xr-x&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="m"&gt;206&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;20&lt;/span&gt;:31&lt;span class="w"&gt; &lt;/span&gt;.
+drwxr-xr-x&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="m"&gt;448&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;29&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;08&lt;/span&gt;:16&lt;span class="w"&gt; &lt;/span&gt;..
+-rwxr--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;85344&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;19&lt;/span&gt;:33&lt;span class="w"&gt; &lt;/span&gt;hello
+-rwxr--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;85792&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;20&lt;/span&gt;:31&lt;span class="w"&gt; &lt;/span&gt;hello-gui
+-rw-r--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="m"&gt;116&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;20&lt;/span&gt;:31&lt;span class="w"&gt; &lt;/span&gt;hello-gui.red
+-rw-r--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="m"&gt;223&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;20&lt;/span&gt;:15&lt;span class="w"&gt; &lt;/span&gt;hello.red
+-rw-r--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;332088&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;19&lt;/span&gt;:32&lt;span class="w"&gt; &lt;/span&gt;libRedRT-defs.r
+-rw-r--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="m"&gt;414&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;19&lt;/span&gt;:33&lt;span class="w"&gt; &lt;/span&gt;libRedRT-extras.r
+-rw-r--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;69005&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;19&lt;/span&gt;:32&lt;span class="w"&gt; &lt;/span&gt;libRedRT-include.red
+-rwxr--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1300352&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;19&lt;/span&gt;:33&lt;span class="w"&gt; &lt;/span&gt;libRedRT.so
+-rwxr--r--&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;trivial&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1551836&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;juil.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;02&lt;/span&gt;:54&lt;span class="w"&gt; &lt;/span&gt;redc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pwd&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Affiche le dossier de travail&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;
+
+/home/trivial/red/src
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cd&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet de naviguer dans les différents dossiers&lt;/p&gt;
+&lt;p&gt;Naviguer à la racine&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Naviguer dans le dossier home&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Naviguer dans le dossier Documents&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/Documents
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Retourner au dossier parents&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;mkdir&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Créer un nouveau dossier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;sources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;*&lt;em&gt;rmdir&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Supprimer un dossier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;rmdir&lt;span class="w"&gt; &lt;/span&gt;sources
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;rm&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande pour supprimer un fichier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;rm&lt;span class="w"&gt; &lt;/span&gt;fichier.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;mv&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande pour bouger ou renomer un fichier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mv fichier1.txt fichier2.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cp&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande pour copier un fichier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;cp&lt;span class="w"&gt; &lt;/span&gt;fichier.txt&lt;span class="w"&gt; &lt;/span&gt;fichierv2.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;touch&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Créer un simple fichier vide brut ou avec une extension&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;touch&lt;span class="w"&gt; &lt;/span&gt;fichier
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cat&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Affiche le contenu d'un fichier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;cat&lt;span class="w"&gt; &lt;/span&gt;/etc/resolv.conf
+
+&lt;span class="c1"&gt;# Generated by NetworkManager&lt;/span&gt;
+nameserver&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;192&lt;/span&gt;.168.121.246
+nameserver&lt;span class="w"&gt; &lt;/span&gt;2a04:cec0:c029:6580::b
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;clear&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet de nettoyer l'ecran du terminal&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;clear
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;echo&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet d'afficher dans un terminal&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;hello world&amp;quot;&lt;/span&gt;
+
+hello&lt;span class="w"&gt; &lt;/span&gt;world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;less&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet d'afficher des pages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;man&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande d'aide et d'affichage du manuel&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;man&lt;span class="w"&gt; &lt;/span&gt;sudo
+
+SUDO&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt;                              &lt;/span&gt;System&lt;span class="w"&gt; &lt;/span&gt;Manager&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;s&lt;span class="w"&gt; &lt;/span&gt;Manual&lt;span class="w"&gt;                                     &lt;/span&gt;SUDO&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+
+NAME
+&lt;span class="w"&gt;       &lt;/span&gt;sudo,&lt;span class="w"&gt; &lt;/span&gt;sudoedit&lt;span class="w"&gt; &lt;/span&gt;—&lt;span class="w"&gt; &lt;/span&gt;execute&lt;span class="w"&gt; &lt;/span&gt;a&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;command&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;as&lt;span class="w"&gt; &lt;/span&gt;another&lt;span class="w"&gt; &lt;/span&gt;user
+
+SYNOPSIS
+&lt;span class="o"&gt;[&lt;/span&gt;...&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;uname&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Obtenir les informations basics sur l'OS&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;uname&lt;span class="w"&gt; &lt;/span&gt;-a
+
+Linux&lt;span class="w"&gt; &lt;/span&gt;arch-t480&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;6&lt;/span&gt;.4.12-zen1-1-zen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;#1 ZEN SMP PREEMPT_DYNAMIC Thu, 24 Aug 2023 00:37:46 +0000 x86_64 GNU/Linux&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;whoami&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Connaitre l'utilisateur actif&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;whoami
+
+trivial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;tar&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande pour extraire et compresser des fichier sous Linux&lt;/p&gt;
+&lt;p&gt;Pour créer une archive tar&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;tar&lt;span class="w"&gt; &lt;/span&gt;-cvf&lt;span class="w"&gt; &lt;/span&gt;exempleArchive.tar&lt;span class="w"&gt; &lt;/span&gt;/home/exempleArchive
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;grep&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Grep permet de chercher dans un fichier un pattern que nous définissons&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cat&lt;span class="w"&gt; &lt;/span&gt;fichier.txt&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;grep&lt;span class="w"&gt; &lt;/span&gt;pattern
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;diff&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet d'afficher la différence entre deux fichiers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;export&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet de créer des variables d'environnement et gérer le PATH&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;myvar&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;
+$&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$myvar&lt;/span&gt;
+&lt;span class="m"&gt;5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ssh&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet de ce connecter à un serveur distant sur le modèle "utilisateur"@"ip"&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ssh&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;trivial&lt;/span&gt;&lt;span class="mf"&gt;@83.13.145.56&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;git&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outil de controle de version&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ps&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Affiche les processus actifs&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;ps&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;aux&lt;/span&gt;
+
+&lt;span class="k"&gt;USER&lt;/span&gt;&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;PID&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;CPU&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;MEM&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;VSZ&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;RSS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;TTY&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;STAT&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;START&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nc"&gt;TIME&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;COMMAND&lt;/span&gt;
+&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="w"&gt;           &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mi"&gt;23844&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mi"&gt;9972&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vm"&gt;?&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;Ss&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;août29&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;systemd&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;systemd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;switched&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;syst&lt;/span&gt;
+&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="w"&gt;           &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vm"&gt;?&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;août29&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;00&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;kthreadd&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="w"&gt;           &lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.0&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="vm"&gt;?&lt;/span&gt;&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;août29&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;00&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;rcu_gp&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;kill&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet d'arrêter un processus via le PID&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;kill&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;51&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;df&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;vérifier l'espace disque&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;df&lt;span class="w"&gt; &lt;/span&gt;-H
+
+Sys.&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;fichiers&lt;span class="w"&gt;       &lt;/span&gt;Taille&lt;span class="w"&gt; &lt;/span&gt;Utilisé&lt;span class="w"&gt; &lt;/span&gt;Dispo&lt;span class="w"&gt; &lt;/span&gt;Uti%&lt;span class="w"&gt; &lt;/span&gt;Monté&lt;span class="w"&gt; &lt;/span&gt;sur
+/dev/mapper/vg-arch&lt;span class="w"&gt;      &lt;/span&gt;256G&lt;span class="w"&gt;    &lt;/span&gt;102G&lt;span class="w"&gt;  &lt;/span&gt;152G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;41&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/
+devtmpfs&lt;span class="w"&gt;                 &lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;,2M&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;,2M&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/dev
+tmpfs&lt;span class="w"&gt;                    &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;,3G&lt;span class="w"&gt;    &lt;/span&gt;319M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;,0G&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/dev/shm
+tmpfs&lt;span class="w"&gt;                    &lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;,4G&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;,9M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;,3G&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/run
+tmpfs&lt;span class="w"&gt;                    &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;,3G&lt;span class="w"&gt;     &lt;/span&gt;81M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;,2G&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/tmp
+/dev/mapper/vg-arch&lt;span class="w"&gt;      &lt;/span&gt;256G&lt;span class="w"&gt;    &lt;/span&gt;102G&lt;span class="w"&gt;  &lt;/span&gt;152G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;41&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/_snapshot
+/dev/mapper/vg-arch&lt;span class="w"&gt;      &lt;/span&gt;256G&lt;span class="w"&gt;    &lt;/span&gt;102G&lt;span class="w"&gt;  &lt;/span&gt;152G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;41&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/home
+/dev/nvme0n1p1&lt;span class="w"&gt;           &lt;/span&gt;535M&lt;span class="w"&gt;    &lt;/span&gt;254M&lt;span class="w"&gt;  &lt;/span&gt;282M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;48&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/boot
+tmpfs&lt;span class="w"&gt;                    &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;,7G&lt;span class="w"&gt;    &lt;/span&gt;209k&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;,7G&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/run/user/1000
+/dev/mapper/veracrypt1&lt;span class="w"&gt;   &lt;/span&gt;349M&lt;span class="w"&gt;    &lt;/span&gt;154M&lt;span class="w"&gt;  &lt;/span&gt;172M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;48&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;/mnt/veracrypt1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;lsblk&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Affiche les partitions&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;lsblk&lt;span class="w"&gt; &lt;/span&gt;-l
+
+NAME&lt;span class="w"&gt;                                      &lt;/span&gt;MAJ:MIN&lt;span class="w"&gt; &lt;/span&gt;RM&lt;span class="w"&gt;   &lt;/span&gt;SIZE&lt;span class="w"&gt; &lt;/span&gt;RO&lt;span class="w"&gt; &lt;/span&gt;TYPE&lt;span class="w"&gt;  &lt;/span&gt;MOUNTPOINTS
+loop0&lt;span class="w"&gt;                                       &lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;:0&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;366M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;loop&lt;span class="w"&gt;  &lt;/span&gt;
+sda&lt;span class="w"&gt;                                         &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;:0&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;0B&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;disk&lt;span class="w"&gt; &lt;/span&gt;
+zram0&lt;span class="w"&gt;                                     &lt;/span&gt;&lt;span class="m"&gt;253&lt;/span&gt;:0&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;8G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;disk&lt;span class="w"&gt;  &lt;/span&gt;
+luks-4779cffb-39d7-43a8-734e-5fff5180cff9&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;254&lt;/span&gt;:0&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;238G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;crypt&lt;span class="w"&gt; &lt;/span&gt;
+vg-arch&lt;span class="w"&gt;                                   &lt;/span&gt;&lt;span class="m"&gt;254&lt;/span&gt;:1&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;238G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;lvm&lt;span class="w"&gt;   &lt;/span&gt;/home
+&lt;span class="w"&gt;                                                                     &lt;/span&gt;/_snapshot
+&lt;span class="w"&gt;                                                                     &lt;/span&gt;/
+veracrypt1_1&lt;span class="w"&gt;                              &lt;/span&gt;&lt;span class="m"&gt;254&lt;/span&gt;:2&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;365&lt;/span&gt;,8M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;dm&lt;span class="w"&gt;    &lt;/span&gt;
+veracrypt1_0&lt;span class="w"&gt;                              &lt;/span&gt;&lt;span class="m"&gt;254&lt;/span&gt;:3&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;365&lt;/span&gt;,8M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;dm&lt;span class="w"&gt;    &lt;/span&gt;
+veracrypt1&lt;span class="w"&gt;                                &lt;/span&gt;&lt;span class="m"&gt;254&lt;/span&gt;:4&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;365&lt;/span&gt;,8M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;dm&lt;span class="w"&gt;    &lt;/span&gt;/mnt/veracrypt1
+nvme0n1&lt;span class="w"&gt;                                   &lt;/span&gt;&lt;span class="m"&gt;259&lt;/span&gt;:0&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;238&lt;/span&gt;,5G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;disk&lt;span class="w"&gt;  &lt;/span&gt;
+nvme0n1p1&lt;span class="w"&gt;                                 &lt;/span&gt;&lt;span class="m"&gt;259&lt;/span&gt;:1&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;511M&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;part&lt;span class="w"&gt;  &lt;/span&gt;/boot
+nvme0n1p2&lt;span class="w"&gt;                                 &lt;/span&gt;&lt;span class="m"&gt;259&lt;/span&gt;:2&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;238G&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;part&lt;span class="w"&gt; &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ip&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande pour manipuler les outils réseaux, routage, équipements et tunneling&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;ip&lt;span class="w"&gt; &lt;/span&gt;addr
+
+&lt;span class="m"&gt;1&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;lo:&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;mtu&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;65536&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;qdisc&lt;span class="w"&gt; &lt;/span&gt;noqueue&lt;span class="w"&gt; &lt;/span&gt;state&lt;span class="w"&gt; &lt;/span&gt;UNKNOWN&lt;span class="w"&gt; &lt;/span&gt;group&lt;span class="w"&gt; &lt;/span&gt;default&lt;span class="w"&gt; &lt;/span&gt;qlen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1000&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;link/loopback&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;00&lt;/span&gt;:00:00:00:00:00&lt;span class="w"&gt; &lt;/span&gt;brd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;00&lt;/span&gt;:00:00:00:00:00
+&lt;span class="w"&gt;    &lt;/span&gt;inet&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;127&lt;/span&gt;.0.0.1/8&lt;span class="w"&gt; &lt;/span&gt;scope&lt;span class="w"&gt; &lt;/span&gt;host&lt;span class="w"&gt; &lt;/span&gt;lo
+&lt;span class="w"&gt;       &lt;/span&gt;valid_lft&lt;span class="w"&gt; &lt;/span&gt;forever&lt;span class="w"&gt; &lt;/span&gt;preferred_lft&lt;span class="w"&gt; &lt;/span&gt;forever
+&lt;span class="w"&gt;    &lt;/span&gt;inet6&lt;span class="w"&gt; &lt;/span&gt;::1/128&lt;span class="w"&gt; &lt;/span&gt;scope&lt;span class="w"&gt; &lt;/span&gt;host&lt;span class="w"&gt; &lt;/span&gt;noprefixroute&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;valid_lft&lt;span class="w"&gt; &lt;/span&gt;forever&lt;span class="w"&gt; &lt;/span&gt;preferred_lft&lt;span class="w"&gt; &lt;/span&gt;forever
+&lt;span class="m"&gt;2&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;enp0s31f6:&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;NO-CARRIER,BROADCAST,MULTICAST,UP&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;mtu&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1500&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;qdisc&lt;span class="w"&gt; &lt;/span&gt;fq_codel&lt;span class="w"&gt; &lt;/span&gt;state&lt;span class="w"&gt; &lt;/span&gt;DOWN&lt;span class="w"&gt; &lt;/span&gt;group&lt;span class="w"&gt; &lt;/span&gt;default&lt;span class="w"&gt; &lt;/span&gt;qlen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1000&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;link/ether&lt;span class="w"&gt; &lt;/span&gt;e8:6a:64:8d:c0:4b&lt;span class="w"&gt; &lt;/span&gt;brd&lt;span class="w"&gt; &lt;/span&gt;ff:ff:ff:ff:ff:ff
+&lt;span class="m"&gt;3&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;wlp3s0:&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;mtu&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1500&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;qdisc&lt;span class="w"&gt; &lt;/span&gt;noqueue&lt;span class="w"&gt; &lt;/span&gt;state&lt;span class="w"&gt; &lt;/span&gt;UP&lt;span class="w"&gt; &lt;/span&gt;group&lt;span class="w"&gt; &lt;/span&gt;default&lt;span class="w"&gt; &lt;/span&gt;qlen&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1000&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;link/ether&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;50&lt;/span&gt;:76:af:2c:e2:42&lt;span class="w"&gt; &lt;/span&gt;brd&lt;span class="w"&gt; &lt;/span&gt;ff:ff:ff:ff:ff:ff
+&lt;span class="w"&gt;    &lt;/span&gt;inet&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;192&lt;/span&gt;.168.121.196/24&lt;span class="w"&gt; &lt;/span&gt;brd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;192&lt;/span&gt;.168.121.255&lt;span class="w"&gt; &lt;/span&gt;scope&lt;span class="w"&gt; &lt;/span&gt;global&lt;span class="w"&gt; &lt;/span&gt;dynamic&lt;span class="w"&gt; &lt;/span&gt;noprefixroute&lt;span class="w"&gt; &lt;/span&gt;wlp3s0
+&lt;span class="w"&gt;       &lt;/span&gt;valid_lft&lt;span class="w"&gt; &lt;/span&gt;2102sec&lt;span class="w"&gt; &lt;/span&gt;preferred_lft&lt;span class="w"&gt; &lt;/span&gt;2102sec
+&lt;span class="w"&gt;    &lt;/span&gt;inet6&lt;span class="w"&gt; &lt;/span&gt;2a04:cec0:c020:6580:c031:c188:4cdb:66/64&lt;span class="w"&gt; &lt;/span&gt;scope&lt;span class="w"&gt; &lt;/span&gt;global&lt;span class="w"&gt; &lt;/span&gt;dynamic&lt;span class="w"&gt; &lt;/span&gt;noprefixroute&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;valid_lft&lt;span class="w"&gt; &lt;/span&gt;6140sec&lt;span class="w"&gt; &lt;/span&gt;preferred_lft&lt;span class="w"&gt; &lt;/span&gt;6140sec
+&lt;span class="w"&gt;    &lt;/span&gt;inet6&lt;span class="w"&gt; &lt;/span&gt;fe80::89aa:f14f:c341:2216/64&lt;span class="w"&gt; &lt;/span&gt;scope&lt;span class="w"&gt; &lt;/span&gt;link&lt;span class="w"&gt; &lt;/span&gt;noprefixroute&lt;span class="w"&gt; &lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;valid_lft&lt;span class="w"&gt; &lt;/span&gt;forever&lt;span class="w"&gt; &lt;/span&gt;preferred_lft&lt;span class="w"&gt; &lt;/span&gt;forever
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ping&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outil réseau qui permet de ping la connexion à un site, état du réseau&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;ping&lt;span class="w"&gt; &lt;/span&gt;www.google.fr
+
+PING&lt;span class="w"&gt; &lt;/span&gt;www.google.fr&lt;span class="o"&gt;(&lt;/span&gt;par21s06-in-x03.1e100.net&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;2a00:1450:4007:813::2003&lt;span class="o"&gt;))&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;56&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;octets&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;données
+&lt;span class="m"&gt;64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;octets&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;par21s06-in-x03.1e100.net&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;2a00:1450:4007:813::2003&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;icmp_seq&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;ttl&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;111&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;temps&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt;.9&lt;span class="w"&gt; &lt;/span&gt;ms
+&lt;span class="m"&gt;64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;octets&lt;span class="w"&gt; &lt;/span&gt;de&lt;span class="w"&gt; &lt;/span&gt;par21s06-in-x03.1e100.net&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;2a00:1450:4007:813::2003&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;icmp_seq&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;ttl&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;111&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;temps&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;50&lt;/span&gt;.2&lt;span class="w"&gt; &lt;/span&gt;ms
+^C
+---&lt;span class="w"&gt; &lt;/span&gt;statistiques&lt;span class="w"&gt; &lt;/span&gt;ping&lt;span class="w"&gt; &lt;/span&gt;www.google.fr&lt;span class="w"&gt; &lt;/span&gt;---
+&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;paquets&lt;span class="w"&gt; &lt;/span&gt;transmis,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;reçus,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;%&lt;span class="w"&gt; &lt;/span&gt;packet&lt;span class="w"&gt; &lt;/span&gt;loss,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;time&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;1002ms
+rtt&lt;span class="w"&gt; &lt;/span&gt;min/avg/max/mdev&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt;.920/45.561/50.203/4.641&lt;span class="w"&gt; &lt;/span&gt;ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;traceroute&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Traceroute est un outil de Linux qui vous permet d’étudier les itinéraires des paquets de réseau. Il peut vous aider à identifier le facteur limitant les parcours de paquets de réseau.
+Traceroute est également utile pour dépanner des connexions de réseau lent en vérifiant le chemin empreinte par des paquets vers une destination.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;traceroute&lt;span class="w"&gt; &lt;/span&gt;www.google.fr
+
+traceroute&lt;span class="w"&gt; &lt;/span&gt;to&lt;span class="w"&gt; &lt;/span&gt;www.google.fr&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;142&lt;/span&gt;.250.179.99&lt;span class="o"&gt;)&lt;/span&gt;,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;30&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;hops&lt;span class="w"&gt; &lt;/span&gt;max,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;60&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;byte&lt;span class="w"&gt; &lt;/span&gt;packets
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;_gateway&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;192&lt;/span&gt;.168.121.246&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;.946&lt;span class="w"&gt; &lt;/span&gt;ms&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;.825&lt;span class="w"&gt; &lt;/span&gt;ms&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;.762&lt;span class="w"&gt; &lt;/span&gt;ms
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;6&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;11&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;12&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;13&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;14&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;15&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;16&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;17&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;18&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;19&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;20&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;21&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;22&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;23&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;24&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;25&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;26&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;27&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;29&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;span class="m"&gt;30&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*&lt;span class="w"&gt; &lt;/span&gt;*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;wget&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outil de téléchargement de fichier, ou de website tout entier avec une fonction récursive&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ufw&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le par-feu le plus simple d'utilisation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;sudo&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande pour obtenir les droits administrateurs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cal&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afficher le calendrier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;cal
+
+&lt;span class="w"&gt;   &lt;/span&gt;septembre&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2023&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;
+lu&lt;span class="w"&gt; &lt;/span&gt;ma&lt;span class="w"&gt; &lt;/span&gt;me&lt;span class="w"&gt; &lt;/span&gt;je&lt;span class="w"&gt; &lt;/span&gt;ve&lt;span class="w"&gt; &lt;/span&gt;sa&lt;span class="w"&gt; &lt;/span&gt;di
+&lt;span class="w"&gt;             &lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;6&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="m"&gt;9&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;
+&lt;span class="m"&gt;11&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;12&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;13&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;14&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;15&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;16&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;17&lt;/span&gt;
+&lt;span class="m"&gt;18&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;19&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;20&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;21&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;22&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;23&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;24&lt;/span&gt;
+&lt;span class="m"&gt;25&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;26&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;27&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;28&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;29&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;30&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;date&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Affiche la date actuel&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;date
+
+jeu.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;07&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;sept.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2023&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;22&lt;/span&gt;:08:33&lt;span class="w"&gt; &lt;/span&gt;CEST
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Affiche la date en seconde EPOCH UNIX&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;date&lt;span class="w"&gt; &lt;/span&gt;+%s
+
+&lt;span class="m"&gt;1694117320&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;dd&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La commande dd permet de copier tout ou partie d'un disque − EN BON ÉTAT − par blocs d'octets, indépendamment de la structure du contenu du disque en fichiers et en répertoires. Exemple réaliser une image .iso d'un cd.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;dd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/hdc&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;USER&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/moncd.iso&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;2048&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;conv&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;notrunc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Cette commande est utile pour graver des .iso vers des clés USB plus particulièrement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;whereis&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Permet de localiser un binaire executable&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;whereis&lt;span class="w"&gt; &lt;/span&gt;ruby
+
+ruby:&lt;span class="w"&gt; &lt;/span&gt;/usr/bin/ruby&lt;span class="w"&gt; &lt;/span&gt;/usr/lib/ruby&lt;span class="w"&gt; &lt;/span&gt;/usr/share/man/man1/ruby.1.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;locate et find&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Recherche de fichier&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;top&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outil de monitoring, affiche les processus, espace disque, état de la charge mémoire, des CPU&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;passwd&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commande pour changer de mot de passe à un utilisateur&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;passwd&lt;span class="w"&gt; &lt;/span&gt;trivial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;chown&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Gestion de la propriété des fichiers et répertoires. L’utilisation correcte de la commande chown peut empêcher les utilisateurs indésirables d’apporter des modifications à vos fichiers et contribuer à les protéger des personnes extérieures.
+shutdown&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;chmod&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rendre executable un script ou un fichier&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;chmod&lt;span class="w"&gt; &lt;/span&gt;+x&lt;span class="w"&gt; &lt;/span&gt;monScript.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sinon pour en savoir plus: &lt;a href="https://archives.framabook.org/unixpou-allerplusloinaveclalignedecommande/index.html"&gt;Unix. Pour aller plus loin avec la ligne de commande PDF&lt;/a&gt;&lt;/p&gt;</content><category term="Linux"></category><category term="cmd"></category><category term="shell"></category><category term="terminal"></category><category term="cli"></category></entry><entry><title>Elaboration de ma stratégie marketing</title><link href="/elaboration-de-ma-strategie-marketing.html" rel="alternate"></link><published>2023-09-07T09:46:00+02:00</published><updated>2023-09-07T09:46:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-07:/elaboration-de-ma-strategie-marketing.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Comme je dis je vais changer de méthode pour élaborer ma stratégie marketing pour le projet "Kor 51". je vais sortir l'artillerie lourde pour obtenir des chances de diffusion et des clients potentiels. Car j'ai appris de mes erreurs dans le domaine.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Les réseaux d'accompagnement&lt;/li&gt;
 &lt;/ul&gt;
