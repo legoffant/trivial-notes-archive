@@ -44,6 +44,7 @@ Il y a des techniques marketing avec les cartes de visite qui peuvent largement 
 C'est la méthode devenu la plus courante pour mettre en relation client et freelance IT. Les plus connus:
 
 * [Fiverr](https://www.fiverr.com/)
+* [Freelancer](https://www.fr.freelancer.com/)
 * [Codeur.com](https://www.codeur.com/)
 * [Upwork](https://www.upwork.com/)
 * [Le Hibou](https://www.lehibou.com/)
@@ -52,3 +53,10 @@ C'est la méthode devenu la plus courante pour mettre en relation client et free
 11. Linkedin et les réseaux sociaux pro
 
 Méthode également pour prospecter, mais cela sature, car tous le monde l'utilisent et parfois c'est la pagaille et trop de requète. Et les gens ne lisent plus les demandes de mise en contact.
+
+12. Les annuaires
+
+Il est nécessaire de répertorier votre activité dans des bases de donnée, pour cela quelques exemples:
+
+* [https://annuaire-freelance.com/](https://annuaire-freelance.com/)
+* [https://www.jeveuxunfreelance.fr/](https://www.jeveuxunfreelance.fr/)
