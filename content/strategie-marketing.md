@@ -64,3 +64,7 @@ Il est nécessaire de répertorier votre activité dans des bases de donnée, po
 * La prospection par email
 
 Cela peut-être intéressant, en particulier dans mon domaine si je recherche à atteindre des hauts cadres en particulier avec des besoins specifiques de protection de l'information: [5 tools to find any email](https://www.leadin.fr/en/5-tools-to-find-any-email-address/). Couplez avec de l'OSINT sur votre cible pour récupérer de l'information sur le client potentiel.
+
+* Le voisinage
+
+Faites-vous connaitre auprès de vos voisins dans votre copropriété et quartier. Cela peut-être un apéro, ou simplement laisser sa carte de visite.
