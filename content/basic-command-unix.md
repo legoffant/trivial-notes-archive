@@ -77,7 +77,7 @@ Créer un nouveau dossier
 ```
 $ mkdir sources
 ```
-* **rmdir*
+* **rmdir**
 
 Supprimer un dossier
 ```
@@ -384,7 +384,7 @@ lu ma me je ve sa di
 25 26 27 28 29 30 
 ```
 
-* date
+* **date**
 
 Affiche la date actuel
 ```
