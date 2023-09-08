@@ -22,7 +22,7 @@ Nous allons l'utiliser pour chiffrer nos messages sur un email et servir d'authe
 
 1] Tout d'abord créer un email généraliste ou l'on peut utiliser PGP et intégrer des API. Un compte webmail Gmail est suffisant, ne vous inquietez pas si l'email est sur les serveurs de Google, ils n'ont pas accès aux emails chiffrés. 
 
-2] Utiliser un outil pour générer des clés PGP public et privée. Mettez un mot de passe, taille de la clé 4096 bits, et algorithme RSA. Pas de temps d'expiration tel que sur [https://pgptool.org/](https://pgptool.org/). Récuperez les fichiers, rappel votre clé privée est personnel et ne se partage pas, elle doit être protégée sur une partition chiffrée.
+2] Utiliser un outil pour générer des clés PGP public et privée. Mettez un mot de passe, taille de la clé 4096 bits, et algorithme RSA. Pas de temps d'expiration tel que sur [https://pgptool.org/](https://pgptool.org/), vous pouvez également utiliser l'utilitaire [GnuPG](https://www.linuxfordevices.com/tutorials/linux/generate-pgp-keys-gnupg). Récuperez les fichiers, rappel votre clé privée est personnel et ne se partage pas, elle doit être protégée sur une partition chiffrée.
 
 3] Utilisez un outil qui gère la signature PGP pour les emails. Vous pouvez utiliser le client Thunderbird avec Enigmail. Mais egalement un webmail Gmail avec [Mailvelope](https://www.malekal.com/utiliser-pgp-sur-gmail-pour-le-chiffrement-de-mail/).
 
