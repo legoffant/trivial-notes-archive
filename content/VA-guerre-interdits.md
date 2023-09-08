@@ -21,4 +21,6 @@ A quel niveau vous situez vous de réfractaire et d'assimilation?
 
 Apprendre une langue? Accès et la recherche de la science? Ou trouvez un partenaire sexuel? 
 
-Comme le rappel l'anneau de pouvoir du Mordor qui est révélé dans le feu, est le parlé noir dans le seigneur des anneaux. Réflechissez-y. Juste une fable?
+Comme le rappel l'anneau de pouvoir du Mordor qui est révélé dans le feu, est le parlé noir dans le seigneur des anneaux. Réflechissez-y. Juste une fable? La méthode linguistique est de type chinoise et l'origine du mandarin est un critère religieux, inventé par la légende par l'empereur jaune: Huangdi, mais également à l'origine du taoisme.
+
+C'est le plus haut degré, et le pouvoir de l'empereur-prophète.
