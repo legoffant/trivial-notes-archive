@@ -5,7 +5,7 @@ Tags:mail, pgp
 Authors: Anthony Le Goff
 Summary:
 
-Tout utilisateur avancée de l'informatique protège son travail avec de la cryptographie et ces communications. C'est le domaine et le monde des cipherpunks. Globalement internet de plus en plus la cryptographie pour:
+Tout utilisateur avancée de l'informatique protège son travail avec de la cryptographie et ces communications. C'est le domaine et le monde des cipherpunks. Globalement internet utilise de plus en plus la cryptographie pour:
 
 * Sécuriser les transactions financières
 * Protéger l'intégrité des données
