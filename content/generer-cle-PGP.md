@@ -30,6 +30,6 @@ Nous allons l'utiliser pour chiffrer nos messages sur un email et servir d'authe
 
 5] Partager le lien de votre clé public pour pouvoir l'utiliser. Comment est formaté un lien public vers une clé PGP?
 
-C'est sous la forme: `nom + mail + signature` exemple pour ma propre clé: [Anthony Le Goff <legoff.ant[at]gmail.com> 0x6F3B7C4C](https://keyserver.ubuntu.com/pks/lookup?search=0x6F3B7C4C&fingerprint=on&op=index)
+C'est sous la forme: `nom + mail + signature` exemple pour ma propre clé: [Anthony Le Goff legoff.ant[at]gmail.com 0x6F3B7C4C](https://keyserver.ubuntu.com/pks/lookup?search=0x6F3B7C4C&fingerprint=on&op=index)
 
 Bienvenue dans le monde des cipherpunks.
