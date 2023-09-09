@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-09-09T13:17:15-00:00</lastmod>
+<lastmod>2023-09-09T17:50:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-09-09T13:17:15-00:00</lastmod>
+<lastmod>2023-09-09T17:50:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-09-09T13:17:15-00:00</lastmod>
+<lastmod>2023-09-09T17:50:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-09-09T13:17:15-00:00</lastmod>
+<lastmod>2023-09-09T17:50:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-09-09T13:17:15-00:00</lastmod>
+<lastmod>2023-09-09T17:50:43-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -69,6 +69,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/pages/lticba.html</loc>
 <lastmod>2021-12-01T20:30:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/levolution-transhumaniste-islamique.html</loc>
+<lastmod>2023-09-09T17:29:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2833,7 +2840,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/transhumanisme.html</loc>
-<lastmod>2023-04-04T08:03:00+00:09</lastmod>
+<lastmod>2023-09-09T17:29:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2841,6 +2848,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/category/trek.html</loc>
 <lastmod>2023-08-27T17:15:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/islam.html</loc>
+<lastmod>2023-09-09T17:29:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/transhumanisme.html</loc>
+<lastmod>2023-09-09T17:29:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -3163,13 +3184,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/blog.html</loc>
 <lastmod>2023-08-26T05:19:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/islam.html</loc>
-<lastmod>2023-08-24T17:58:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -4911,13 +4925,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/transhumanisme.html</loc>
-<lastmod>2022-09-18T20:06:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>/tag/openbox.html</loc>
 <lastmod>2022-09-18T14:26:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -5451,7 +5458,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-09-09T13:09:00+00:09</lastmod>
+<lastmod>2023-09-09T17:29:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
