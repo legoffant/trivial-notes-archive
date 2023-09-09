@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-09-08T19:02:00+02:00</updated><entry><title>Outil réseau sous GNU/Linux</title><link href="/outil-reseau-sous-gnulinux.html" rel="alternate"></link><published>2023-09-08T19:02:00+02:00</published><updated>2023-09-08T19:02:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-08:/outil-reseau-sous-gnulinux.html</id><content type="html"></content><category term="Linux"></category><category term="reseau"></category></entry><entry><title>Apprendre la ligne de commande UNIX</title><link href="/apprendre-la-ligne-de-commande-unix.html" rel="alternate"></link><published>2023-09-07T22:18:00+02:00</published><updated>2023-09-07T22:18:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-07:/apprendre-la-ligne-de-commande-unix.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Les commandes UNIX s'utilise dans le cadre de procédure avec le shell dans un terminal, c'est des outils basics pour intéragir avec le système en ligne de commande. Cela est particulièrement utile pour les programmeurs et la gestion de serveur, ou il n'y a pas d'interface graphique. Egalement cela permet d'optimiser la productivité et automatiser des tâches avec des scripts bash. Vous pouvez absolument tout controler depuis votre terminal. Ceci est une liste de 42 commandes essentiels sous UNIX. Cela est nécessaire pour tous débutant en informatique que la maitrise des lignes de commande dans un terminal.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes - Linux</title><link href="/" rel="alternate"></link><link href="/feeds/linux.atom.xml" rel="self"></link><id>/</id><updated>2023-09-08T19:02:00+02:00</updated><entry><title>Outil réseau sous GNU/Linux</title><link href="/outil-reseau-sous-gnulinux.html" rel="alternate"></link><published>2023-09-08T19:02:00+02:00</published><updated>2023-09-08T19:02:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-08:/outil-reseau-sous-gnulinux.html</id><summary type="html"></summary><content type="html">&lt;ul&gt;
+&lt;li&gt;ip&lt;/li&gt;
+&lt;li&gt;ping&lt;/li&gt;
+&lt;li&gt;whois&lt;/li&gt;
+&lt;li&gt;nslookup&lt;/li&gt;
+&lt;li&gt;host&lt;/li&gt;
+&lt;li&gt;dig&lt;/li&gt;
+&lt;li&gt;netstat&lt;/li&gt;
+&lt;li&gt;ss&lt;/li&gt;
+&lt;li&gt;nc&lt;/li&gt;
+&lt;li&gt;route&lt;/li&gt;
+&lt;li&gt;traceroute&lt;/li&gt;
+&lt;li&gt;nmap&lt;/li&gt;
+&lt;li&gt;ssh&lt;/li&gt;
+&lt;li&gt;curl&lt;/li&gt;
+&lt;li&gt;tcpdump&lt;/li&gt;
+&lt;li&gt;ufw&lt;/li&gt;
+&lt;li&gt;mtr&lt;/li&gt;
+&lt;li&gt;iftop&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Linux"></category><category term="reseau"></category></entry><entry><title>Apprendre la ligne de commande UNIX</title><link href="/apprendre-la-ligne-de-commande-unix.html" rel="alternate"></link><published>2023-09-07T22:18:00+02:00</published><updated>2023-09-07T22:18:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-09-07:/apprendre-la-ligne-de-commande-unix.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Les commandes UNIX s'utilise dans le cadre de procédure avec le shell dans un terminal, c'est des outils basics pour intéragir avec le système en ligne de commande. Cela est particulièrement utile pour les programmeurs et la gestion de serveur, ou il n'y a pas d'interface graphique. Egalement cela permet d'optimiser la productivité et automatiser des tâches avec des scripts bash. Vous pouvez absolument tout controler depuis votre terminal. Ceci est une liste de 42 commandes essentiels sous UNIX. Cela est nécessaire pour tous débutant en informatique que la maitrise des lignes de commande dans un terminal.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;vim&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
