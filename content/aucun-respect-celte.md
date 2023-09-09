@@ -5,7 +5,7 @@ Tags:celte
 Authors: Anthony Le Goff
 Summary:
 
-On va clarifier ma position sur la culture celtique, alors que je suis breton d'originaire de la campagne ou il y a une profonde assise celte. Pour être clair je les considèrent comme des attardés mentaux, certain diront faut-il sauver les langues celtiques comme le breton? Réellement peut d'intérêt un part un facteur culturel historique, je n'ai jamais appris le breton personnellement, même si je connais quelques mots et expressions. Mes grands parents le parlais.
+On va clarifier ma position sur la culture celtique, alors que je suis breton d'originaire de la campagne ou il y a une profonde assise celte. Pour être clair je les considèrent comme des attardés mentaux, certain diront faut-il sauver les langues celtiques comme le breton? Réellement peut d'intérêt à part un facteur culturel historique, je n'ai jamais appris le breton personnellement, même si je connais quelques mots et expressions. Mes grands parents le parlais.
 
 Là ou le bas blesse est que la Bretagne est devenu un lieu d'hérésie et de refuge pour toutes formes pratiques spirituels deviantes rétrograde tel que le pot pourri de la Wicca. Qu'es-ce que cela? C'est des éléments de croyances tel que le chamanisme, le druidisme, et les mythologie en particulier slave, celtique et nordique. De plus la croix celtique est un symbole de l'extreme-droite, l'ésostérisme celte fait parti du mouvement politique que ce donner des racines gauloises et ce référer à la tradition voir une forme de racisme contre toute forme de migration.
 
