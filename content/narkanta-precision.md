@@ -9,6 +9,8 @@ Je sais bien que certain diront que c'est une abomination dans le logiciel libre
 
 Pourquoi je tiens ma position? Car c'est une stratégie de conversion, au délà de créé un mythe, c'est une épreuve que l'accès à la langue narkantique, il faut trouver la bonne personne et le bon livre en l'occurrence l'Urashuangshiji. C'est une quête que l'accès au royaume imbriqué, à accès restreint. C'est une question d'escaladation de privilège. Le Narkanta est une arme de guerre en cryptologie, d'ou que son accès est restreint pour la régulation des technologies d'armement. Monsieur tous le monde ne doit pas avoir accès à la langue sans une mise à l'épreuve. Il faut le mériter.
 
+Tous comme les langages informatiques sont apprentissage permet de faire de la recherche en vulnérabilité, reverse engineering et créer des virus, botnets etc qui sont des armes cybernétiques. La cyberguerre est une réalité.
+
 Néanmoins, j'ai publié la méthode scientifique pour construire la langue et le Narkanta, en gros la construction du compilateur est public et peut-être répliquée. C'est une stratégie de diffusion de travaux de recherche pour vérifier la pertinence du travail et bien fondé de son optimisation en tant que langage. Tous n'est pas occulté, étant donné que le langage protège la citadelle d'une entreprise religieuse, ce n'est pas accessible à Mr tous le monde, c'est une forme d'élitisme que l'accès au portail à travers le Narkanta. 
 
 Je n'ai pas besoin des développeurs sur Terre dans l'univers hôte pour développer la langue, car j'ai toutes la force intellectuel nécessaire dans l'entreprise religieuse de l'univers imbriqué dans la nouvelle création. C'est illusoire de ce croire indispensable....Et donc la nécessité de la communauté.
