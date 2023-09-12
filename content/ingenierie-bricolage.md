@@ -1,4 +1,4 @@
-Title: Quand tu connais rien à l'ingénerie et que tu traites de bricoleur
+Title: Quand tu connais rien à l'ingénierie et que tu traites de bricoleur
 Date: 2023-09-12 08:07
 Category:Inclassable
 Tags:ingenierie
