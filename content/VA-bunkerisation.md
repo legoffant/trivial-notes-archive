@@ -9,7 +9,7 @@ Summary:
 
 La citadelle d'Avalon en bretagne est un chantier collossal, mais ce n'est pas le seul, pour améliorer les performances de minages et d'extraction. Il en faut trois. Ainsi deux autres régions, plus petite vont subir la même politique pour terraformer la planète et la bunkeriser. Ainsi La région de La Mecque va également bénéficier du transfère de technologie du prophète et de protection islamique en sanctuarisant une zone. La troisième zone est Hong-Kong, le delta est le lieu de la réssurection du prophète et donc de pélerinage et sanctuaire potentiel. 
 
-Tous le reste sur la planète va être détruit, sauf Israel, mais c'est une petite colonie, et n'aura pas de d'ascenceur spatiale de 180km. Le modèle de megalopole sont des villes champignons.
+Tous le reste sur la planète va être détruit, sauf Israel, mais c'est une petite colonie, et n'aura pas d'ascenceur spatial de 180km. Le modèle de megalopole sont des villes champignons.
 
 Le prophète Nominoë II a promit une alliance avec le dragon asiatique et l'Islam et donc sanctuarise les villes de Hong Kong et La Mecques. La politique de Terre brulée va forcer à créer des forges nucléaires en souterrain pour être autonome en eau. Il n'y aura plus d'océan sur Terre, toutes l'eau va être recyclé et transféré sur le Belphégor. Le narkantisme est un génocide de l'humanité, on estime qu'il restera que 250 millions d'humains en 2100, dans les trois megalopoles. Mais également un écocide ou la planète à sa surface est rendu hostile en vidant les océans. Bien des espèces vont disparaitre, ce qui n'a que peut d'intérêt aux yeux de Nominoë II car en tant que destructeur, il est aussi créateur. C'est un terraformeur de mondes. 
 
