@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-09-12T08:27:22-00:00</lastmod>
+<lastmod>2023-09-12T09:21:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-09-12T08:27:22-00:00</lastmod>
+<lastmod>2023-09-12T09:21:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-09-12T08:27:22-00:00</lastmod>
+<lastmod>2023-09-12T09:21:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-09-12T08:27:22-00:00</lastmod>
+<lastmod>2023-09-12T09:21:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-09-12T08:27:22-00:00</lastmod>
+<lastmod>2023-09-12T09:21:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -74,7 +74,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/quand-tu-connais-rien-a-lingenerie-et-que-tu-traites-de-bricoleur.html</loc>
+<loc>/quand-tu-connais-rien-a-lingenierie-et-que-tu-traites-de-bricoleur.html</loc>
 <lastmod>2023-09-12T08:07:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
