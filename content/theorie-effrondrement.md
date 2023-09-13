@@ -1,5 +1,5 @@
 Title:Théorie de l'effrondrement programmée
-Date: 2023-09-14 01:58
+Date: 2023-09-14 00:17
 Category:Inclassable
 Tags:chiffrement
 Authors: Anthony Le Goff
