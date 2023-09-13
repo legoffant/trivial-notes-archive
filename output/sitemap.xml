@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-09-13T08:25:06-00:00</lastmod>
+<lastmod>2023-09-13T08:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-09-13T08:25:06-00:00</lastmod>
+<lastmod>2023-09-13T08:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-09-13T08:25:06-00:00</lastmod>
+<lastmod>2023-09-13T08:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-09-13T08:25:06-00:00</lastmod>
+<lastmod>2023-09-13T08:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-09-13T08:25:06-00:00</lastmod>
+<lastmod>2023-09-13T08:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -74,6 +74,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/voile-et-annihilation-attaque-des-armes.html</loc>
+<lastmod>2023-09-13T08:12:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/et-lhomme-crea-un-dieu-f-herbert.html</loc>
 <lastmod>2023-09-12T19:04:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -97,13 +104,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/comment-jecris-un-livre-dinformatique-en-utilisant-mon-blog.html</loc>
 <lastmod>2023-09-12T10:09:00+02:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/voile-et-annihilation-attaque-des-armes.html</loc>
-<lastmod>2023-09-12T08:12:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2917,7 +2917,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/inclassable.html</loc>
-<lastmod>2023-09-12T19:04:00+00:09</lastmod>
+<lastmod>2023-09-13T08:12:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -2945,7 +2945,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/tag/sf.html</loc>
-<lastmod>2023-09-12T19:04:00+00:09</lastmod>
+<lastmod>2023-09-13T08:12:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -5584,7 +5584,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/anthony-le-goff.html</loc>
-<lastmod>2023-09-12T19:04:00+00:09</lastmod>
+<lastmod>2023-09-13T08:12:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
