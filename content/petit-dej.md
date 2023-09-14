@@ -7,9 +7,9 @@ Summary:
 
 Je vais donné mon petit déjeuné que j'ai décidé de prendre, pour plus d'hygiène alimentaire et une diète. Ma nourriture c'est:
 
-Un petit déjeuné en me levant
-Un repas principale à midi
-Une soupe le soirs
+* Un petit déjeuné en me levant
+* Un repas principale à midi
+* Une soupe le soir
 
 
 En faite je jeûne, c'est du jêune intermittent, et cela remplace le Ramadan pour les musulmans, il y a une jurisprudence islamique pour remplacer la notion de jeûne sur un mois à toute l'année.
