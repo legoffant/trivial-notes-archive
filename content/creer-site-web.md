@@ -38,6 +38,19 @@ Chez OVH il y a [l'offre Kimsufi à petit prix à 4,20€/mois](https://www.kims
 
 Quels sont les CMS pour gérer son site les plus plesbiscités? 50% des sites sont sur Wordpress. Il y a également Joomla et Drupal. C'est les trois leaders sur le marché basé sur une couche PHP. Avec Wordpress vous pouvez créer un blog (overkill), un site d'e-commerce avec des plugins, un site d'entreprise, etc...
 
+Liste de CMS:
+
+* Wordpress
+* Joomla!
+* Drupal
+* E-monsite
+* Wix
+* PrestaShop
+* Grav
+* Craft CMS
+* Ghost
+
+
 ### Les stacks serveurs
 
 Dans le développement web ils existent des leaders pour fabriquer des sites sur mesure de A à Z. A travers des stacks et frameworks tel que:
