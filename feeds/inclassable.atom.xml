@@ -22,6 +22,18 @@
 &lt;p&gt;Chez OVH il y a &lt;a href="https://www.kimsufi.com/fr/vps/"&gt;l'offre Kimsufi à petit prix à 4,20€/mois&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;CMS&lt;/h3&gt;
 &lt;p&gt;Quels sont les CMS pour gérer son site les plus plesbiscités? 50% des sites sont sur Wordpress. Il y a également Joomla et Drupal. C'est les trois leaders sur le marché basé sur une couche PHP. Avec Wordpress vous pouvez créer un blog (overkill), un site d'e-commerce avec des plugins, un site d'entreprise, etc...&lt;/p&gt;
+&lt;p&gt;Liste de CMS:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wordpress&lt;/li&gt;
+&lt;li&gt;Joomla!&lt;/li&gt;
+&lt;li&gt;Drupal&lt;/li&gt;
+&lt;li&gt;E-monsite&lt;/li&gt;
+&lt;li&gt;Wix&lt;/li&gt;
+&lt;li&gt;PrestaShop&lt;/li&gt;
+&lt;li&gt;Grav&lt;/li&gt;
+&lt;li&gt;Craft CMS&lt;/li&gt;
+&lt;li&gt;Ghost&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;Les stacks serveurs&lt;/h3&gt;
 &lt;p&gt;Dans le développement web ils existent des leaders pour fabriquer des sites sur mesure de A à Z. A travers des stacks et frameworks tel que:&lt;/p&gt;
 &lt;ul&gt;
