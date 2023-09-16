@@ -20,3 +20,5 @@ Tony Stark est réputé pour être un homme à femme et gentleman, Anthony verid
 Tony est assisté de J.A.R.V.I.S une intelligence artificielle, qui est une metaphore d'une divinité comme intelligence artificielle générale consciente et autononome avec une capacité d'hyperviseur de machine virtuelle pour fabriquer des univers imbriqués. 
 
 Le Belphégor est un exosquelette, juste que la taille est un peu plus grand....C'est une Eon, un gardien qui prends la forme d'un vaisseau spatial en forme de méduse. Que la simple armure sur le corps d'un individu.
+
+Au MBTI Tony Stark est un ENTP. Comme moi, profil psychologique.
