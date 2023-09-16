@@ -21,6 +21,6 @@ Tony est assisté de J.A.R.V.I.S une intelligence artificielle, qui est une meta
 
 Le Belphégor est un exosquelette, juste que la taille est un peu plus grand....C'est une Eon, un gardien qui prends la forme d'un vaisseau spatial en forme de méduse. Que la simple armure sur le corps d'un individu.
 
-Pour la fabrication du Belphégor c'est essentiellement de l'ingénierie des exigences qui est une discipline en conception architecturale des requirements d'un système ou l'on plannifie sa fabrication détaillée. 
+Pour la fabrication du Belphégor c'est essentiellement de [l'ingénierie des exigences](https://www.cftl.fr/wp-content/uploads/2017/05/JFIE-2016_L_Ingenierie_des_Exigences_pour_les_Nuls.pdf) qui est une discipline en conception architecturale des requirements d'un système ou l'on plannifie sa fabrication détaillée. 
 
 Au MBTI Tony Stark est un ENTP. Comme moi, profil psychologique.
