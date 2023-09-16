@@ -13,7 +13,7 @@ Ce n'est bien sur sans compter sur la régulation des armements. Si vous avez un
 
 Donc en gros se pose la réplication de la création comme usine de production. Et c'est un interdit sur Terre d'après certain dogme religieux, c'est un savoir interdit. Karl Marx malgré ces écrits très intéressant, et je suis un propagateur de la pensée marxiste n'a jamais parlé de la problèmatique de la régulation de l'armement sur la disponibilité de la production.
 
-C'est la principale raison que le communisme ne sait jamais imposé dans l'occident: contrôle sur l'armement, et donc la doctrine de puissance et cela fait parti en particulier de la politique des USA sur le complexe militaro-industriel. Il est question de prolifération de l'armement et donc de vente d'arme.
+C'est la principale raison que le communisme ne s'est jamais imposé dans l'occident: contrôle sur l'armement, et donc la doctrine de puissance et cela fait parti en particulier de la politique des USA sur le complexe militaro-industriel. Il est question de prolifération de l'armement et donc de vente d'arme.
 
 Refléchissons un peu plus sur l'armement et son impact tel que dans le cyberespace. Fabriquer des virus, des armes cybernétiques est accessible à chacun, vous pouvez si vous faites l'effort d'apprentissage de la programmation informatique fabriquée de l'armement, ce n'est pas régulé. Il n'y a pas d'autorité pour vous empêcher de créer des virus, car en réalité on va pas mettre un flic derrière chaques programmeurs.
 
