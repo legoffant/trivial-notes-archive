@@ -9,7 +9,7 @@ Parfois on utilise le storytelling pour faire passer des messages d'évenement o
 
 ![id](images/id.jpg)
 
-Le premier épisode d'Iron Man va être capturé et collaboré avec des terroristes. Tony Stark est un milliardaire et inventeur et donc un ingénieur. Il va tester à l'origine des transisteurs expérimentaux pour les armes et va sauter sur une mine au Vietnam. J'ai fais l'école des mines et je suis allez en Chine. De ce fait Tony Stark est une allégorie de la fusion de l'homme-machine et il va fabriquez un réacteur nucléaire pour ce faire transplanter son propre coeur défaillant. 
+Le premier épisode d'Iron Man va être capturé et collaboré avec des terroristes. Tony Stark est un milliardaire et inventeur et donc un ingénieur. Il va tester à l'origine des transistors expérimentaux pour les armes et va sauter sur une mine au Vietnam. J'ai fais l'école des mines et je suis allez en Chine. De ce fait Tony Stark est une allégorie de la fusion de l'homme-machine et il va fabriquez un réacteur nucléaire pour ce faire transplanter son propre coeur défaillant. 
 
 Le mythe est qu'il le fabrique dans une grotte capturé par les terroristes qui le font chanter pour récupérer ces connaissances d'ingénieurs pour la fabrication d'armement et le fournissent des outils. Cela va ce retourner contre-eux et il va fabriquer un exosquelette, c'est un forgeron (Le Goff en Breton) et va donc construire une armure metallique. 
 
