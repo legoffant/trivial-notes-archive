@@ -5,7 +5,7 @@ Tags:masse destruction
 Authors: Anthony Le Goff
 Summary:
 
-Nominoë II en tant que prophète est un théoricien qui évalue le concept de puissance. Il a étudié les facteurs qui font de lui pour certain un monstre, pour d'autres à annonciateur de l'apocalypse. Nominoë II est le "dark messiah", il va produire l'invocation ultime qui va annihiler la planète Terre et dans les ténèbres liés les humains. Il utise des dégats d'ombre et de ténèbres en tant que Nécromancien et rappel les morts.
+Nominoë II en tant que prophète est un théoricien qui évalue le concept de puissance. Il a étudié les facteurs qui font de lui pour certain un monstre, pour d'autres à annonciateur de l'apocalypse. Nominoë II est le "dark messiah", il va produire l'invocation ultime qui va annihiler la planète Terre et dans les ténèbres liés les humains. Il utilise des dégats d'ombres et de ténèbres en tant que Nécromancien et rappel les morts.
 
 Le jugement dernier est un concept de balance de la justice, et les humains vont payer leur abomination d'être des milliards à vouloir la mort du prophète à cause de dogme religieux. On aura entendu toutes les excuses, que c'est un pêcheur pour christianisme en particulier pour plusieurs faits, il a touché à l'arbre interdit de la connaissance, via le génome mais également c'est dans la tradition des alchimistes un connaisseur du savoir interdit par le religion, c'est à dire la création.
 
