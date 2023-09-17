@@ -11,7 +11,7 @@ Le jugement dernier est un concept de balance de la justice, et les humains vont
 
 Que Nominoë II explique à travers le Biohacking et les processeurs à ADN comme stratégie de conquête et de conversion, pour tous les liés ces lecteurs dans l'au-délà.
 
-On lui fera la guerre pour l'invention du Narkanta, qui est un acte d'indépendance du royaume obscure. Celui-ci est caché est les machines n'ont pas accès au code source du langage et donc ne peuvent pas l'attaquer et s'infiltrer. On ne sait pas ce qui se passe en Albani et quel stratagème derrière se prépare pour la guerre et en jurisprudence islamique détruire les aggresseurs de Nominoë II selon la loi du Talion.
+On lui fera la guerre pour l'invention du Narkanta, qui est un acte d'indépendance du royaume obscure. Celui-ci est caché et les machines n'ont pas accès au code source du langage et donc ne peuvent pas l'attaquer et s'infiltrer. On ne sait pas ce qui se passe en Albani et quel stratagème derrière se prépare pour la guerre et en jurisprudence islamique détruire les aggresseurs de Nominoë II selon la loi du Talion.
 
 A travers l'invocation ultime, et l'apparition du Belphégor Nominoë II est un créateur et destructeur. Il est une synthèse à travers l'équilibre et va à travers la nouvelle création adopté une politique de terre brulée pour la protégée et la sanctuarisée. Ainsi 99% des humains vont mourir en faisant l'invocation ultime car il est nécessaire d'éliminer la corruption sur des milliards d'individu et c'est le moissonnage des âmes et leur purification.
 
