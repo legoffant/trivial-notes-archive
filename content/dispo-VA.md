@@ -7,7 +7,7 @@ Summary:
 
 Je vais mettre sur mon blog quand il sera terminé, il y aura un lien vers l'oeuvre numérique "Voile et Annihilation". Elle sera partagé, j'ai pris la décision de rendre public son accès sur le blog, C'est un héritage normalement post-mortem, mais je vais pas empêcher des lecteurs de mon blog qui sont fidèle à accéder à l'oeuvre en avant-première. Cela serait idiot de ma part.
 
-Je sais que l'oeuvre va être une autodafé, un livre pire que le Necronomicon et la savoir interdit. C'est son intérêt qui fait l'apologie de l'islamo-nazisme. Elle a donc un caractère assez unique. En plus de détruire entièrement la civilisation judéo-chretienne et relancer la conquète militaire et religieuse de la planète. C'est l'épopée du prophète Nominoë II. 
+Je sais que l'oeuvre va être une autodafé, un livre pire que le Necronomicon et le savoir interdit. C'est son intérêt qui fait l'apologie de l'islamo-nazisme. Elle a donc un caractère assez unique. En plus de détruire entièrement la civilisation judéo-chretienne et relancer la conquète militaire et religieuse de la planète. C'est l'épopée du prophète Nominoë II. 
 
 J'ai déjà écrit 9 chapitres, que je donne l'accès. Alors je vais faire bondir l'extreme droite et Marine le Pen si je suis lu et les néo-nazis qu'ils font complètement fausse route, la polémique.
 
