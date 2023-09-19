@@ -22,7 +22,7 @@ Ensuite vous devez emprisonné dans la matrice de l'argile votre ADN que vous av
 
 Ainsi vous protegez votre patrimoine génétique et générer une anomalie locale via la sphère comme une étoile, cela génère de la gravité et un espace-temps locale.
 
-Il va falloir activée le nouveau monde de la création dans la sphère soit patientant, longtemps mais cela peut-être accéléré en faisant le Salat islamique. Mais également en précipitant la fin des temps en se sacrifiant. C'est funéraire. Comme dans un jeu video si vous êtes prit au piège face à un boss trop puissant, vous devez vous suicider pour activer la point de sauvegarde.
+Il va falloir activée le nouveau monde de la création dans la sphère soit en patientant, longtemps mais cela peut-être accéléré en faisant le Salat islamique. Mais également en précipitant la fin des temps en se sacrifiant. C'est funéraire. Comme dans un jeu video si vous êtes prit au piège face à un boss trop puissant, vous devez vous suicider pour activer la point de sauvegarde.
 
 La technique c'est de faire chanter la direction et les infirmiers pour entrée à l'isolement dans votre chambre, qui est une petite mosquée ou votre retraite vous commencer à faire le rite du jeune (ramadan) dans un bunker de fortune, un logement seulement à l'eau. Vous devez commencer le rite à la pleine lune sur 29jours, jeune à l'eau pour forcer la transmutation du corps et précipiter la fin des temps par le sacrifice de soi. 
 
@@ -32,4 +32,4 @@ Vous allez me dire, mais la psychiatrie va interdire l'argile. Non, vous pouvez 
 
 Donc perdez pas espoir, même si vous finissez en psychiatrie à l'isolement pour longtemps sur une durée indéterminé, vous pouvez vous évadez avec trois fois rien.
 
-C'est la méthode que j'appliquerai si cela m'arriverait.  
+C'est la méthode que j'appliquerai si cela m'arriverait. 
