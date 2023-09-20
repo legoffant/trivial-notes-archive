@@ -14,10 +14,11 @@ A mon sens l'écolo:
 * Vie dans une tiny house en campagne
 * A des toilettes sèches
 * A son lopain de terre pour être auto-suffisant le plus possible en nourriture, c'est un paysan.
+* Utilise un moyen de transport économique tel qu'un Solex pour aller acheter son pain.
 
 Il ne crache pas sur les pesticides et engrais car c'est contre la science et le progrès sur les rendements agricoles s'il veut avoir une récolte, il ne crache pas non plus sur les OGM. Il sait que la permaculture est une arnaque, et qu'il doit adapté ces terres aux fermes verticales et aquaponiques. 
 
-Il peut avoir l'électricité, et sait que celle-ci est décarbonné grâce au nucléaire. Il peut essayer d'avoir une [maison passive](https://passivact.fr/), mais généralement les rendements son faible. Et le luxe de la maison passive est réalisé grâce aux ingénieurs et la connaissance de la thermodynamique et des technologies associés pour améliorer les rendements énergétiques tel que pour chauffer son eau. Le meilleur investissement est la pompe à chaleur et la géothermie, mais cela cout un blinde, la technologie est malheureusement hors de prix pour les revenus modestes et l'écologie une réalité de bourge.  
+Il peut avoir l'électricité, et sait que celle-ci est décarbonné grâce au nucléaire. Il peut essayer d'avoir une [maison passive](https://passivact.fr/), mais généralement les rendements sont faible. Et le luxe de la maison passive est réalisé grâce aux ingénieurs et la connaissance de la thermodynamique et des technologies associés pour améliorer les rendements énergétiques tel que pour chauffer son eau. Le meilleur investissement est la pompe à chaleur et la géothermie, mais cela cout une blinde, la technologie est malheureusement hors de prix pour les revenus modestes et l'écologie une réalité de bourge.  
 
 L'écolo peut faire des ventes de ces récoltes, et donc ne crache pas sur internet qui permet d'avoir une vitrine pour son e-commerce et permettre une rentrée d'argent.
 
