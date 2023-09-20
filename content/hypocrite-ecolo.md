@@ -28,7 +28,7 @@ L'image de l'écologie, en particulier de canapé de quelques citadins, c'est de
 
 Mais la culture de la terre pour l'auto-suffisance n'est pas une histoire d'incantation en biodynamie comme Pierre Rabhi que les citadins adulent dans leur déni de la "sobriété heureuse".
 
-Un maire écolo dans une ville devrait accélérer la transformation des fermes verticales et des lopains de terre individuel pour favoriser les potager, et donner des leçons sur la récolte alimentaire. Pour le reste c'est du blabla, et leur connerie de ville verte. La plupart des maires écoloss sont des amateurs, il faut normalement accélérer le développement des fermes verticales, et aucun n'essaye de le faire en ville. Il faut donc également favorisé les propriétaires terriens ou la mise en communs de lopain de terre collectiviste. Mais on dira que je suis communiste, et le retour des kolkhozes.
+Un maire écolo dans une ville devrait accélérer la transformation des fermes verticales et des lopains de terre individuel pour favoriser les potager, et donner des leçons sur la récolte alimentaire. Pour le reste c'est du blabla, et leur connerie de ville verte. La plupart des maires écolos sont des amateurs, il faut normalement accélérer le développement des fermes verticales, et aucun n'essaye de le faire en ville. Il faut donc également favorisé les propriétaires terriens ou la mise en communs de lopain de terre collectiviste. Mais on dira que je suis communiste, et le retour des kolkhozes.
 
 Vous n'avez pas de terre agricole, vous n'avez aucune idée de l'écologie. Arrêter de donner des leçons. En particulier je viens de la campagne et je déteste la mentalité des écolos largement hérité des citadins qui n'ont aucune connaissance des contraintes pour adopter une attitude sobre.
 
