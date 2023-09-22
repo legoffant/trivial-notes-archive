@@ -1,5 +1,5 @@
 Title:La psychologie fatale du christianisme
-Date: 2023-09-20 05:12
+Date: 2023-09-22 05:12
 Category:Inclassable
 Tags:chretien
 Authors: Anthony Le Goff
