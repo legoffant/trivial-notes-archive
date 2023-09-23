@@ -32,4 +32,4 @@ Vous allez me dire, mais la psychiatrie va interdire l'argile. Non, vous pouvez 
 
 Donc perdez pas espoir, même si vous finissez en psychiatrie à l'isolement pour longtemps sur une durée indéterminé, vous pouvez vous évadez avec trois fois rien.
 
-C'est la méthode que j'appliquerai si cela m'arriverait. 
+C'est la méthode que j'appliquerai si cela m'arriverait.
