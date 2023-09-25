@@ -10,7 +10,7 @@ Slug: VA
 ### Voile et Annihilation
 #### - L'obsolescence narkantique -
 
-Document de téléchargement du livre: [voile-annihilation-v240923.pdf](https://mega.nz/file/1sAy3DIB#x2JYlNAKHqJfutB9wkUBeMEWSjNA__-UQwBmnJi5b2w)
+Document de téléchargement du livre en état d'ébauche: [voile-annihilation-v240923.pdf](https://mega.nz/file/1sAy3DIB#x2JYlNAKHqJfutB9wkUBeMEWSjNA__-UQwBmnJi5b2w)
 
 Egalement disponible sur la plateforme Wattpad [à cette adresse](https://www.wattpad.com/story/352807815-voile-et-annihilation-l%27obsolescence-narkantique) pour les communautés de lecteurs.
 
