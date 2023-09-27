@@ -20,4 +20,4 @@ Je vous invite à étudier les bases de la cryptologie en gardant en mémoire qu
 Voici quelques livres sur le sujet en EPUB et PDF:
 
 * [La cryptologie; Guillot](images/La_cryptologie-Guillot.pdf)
-* [La cryptologie au coeur du numérique; Stern](images/La_cryptologie_au_coeur_du_numerique-Stern.epub)
+* [La cryptologie au coeur du numérique; Stern](images/La_cryptologie_au_coeur_du_numérique-Stern.epub)
