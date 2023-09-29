@@ -14,7 +14,7 @@ Config Server mini-ITX CPU Ryzen 5  64GO RAM 4x2TO HDD RAID
 Par ldlc.com
 
 - Carte mère: ASRock A520M-ITX/ac 119€95
-- CPU: AMD Ryzen 5 5600 Wraith Stealth 6 cores (3.6 GHz / 4.2 GHz) 157€96
+- CPU: AMD Ryzen 5 5600G Wraith Stealth 6 cores (12 threads) (3.9 GHz / 4.4 GHz) 157€96
 - Boitier: Fractal Design Node 304 Noir 119€95
 - RAM: Corsair Vengeance LPX Series Low Profile 64 Go (2x 32 Go) DDR4 3200 MHz CL16 256€95
 - HDD: 4 x Seagate IronWolf 2 To 395€80
