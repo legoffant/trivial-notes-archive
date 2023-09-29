@@ -36,3 +36,5 @@ Entre temps mon serveur Proxmox était H.S, impossible de me logguer, il bloquai
 Depuis tout est up, j'ai ouvert les ports HTTP et HTTPS du routeur Netgear en DMZ. J'ai configuré une VM sous Debian 12 avec mon site Kor51.org, et je continus mes phases de tests. La bonne nouvelle c'est que le serveur web est up sur mon IP Public à l'adresse: [http://82.64.210.252/](http://82.64.210.252/)
 
 Il me reste à attacher un nom de domaine à l'IP et configurer SSL. Il y a quelques manips à faire dans les fichiers de configurations tels que `/etc/hosts` et celui du site "vhost" sous Nginx pour pointé vers le nom de domaine.
+
+EDIT: [https://kor51.org/](https://kor51.org/) est transféré entièrement en auto-hébergé, domaine OK, SSL OK
