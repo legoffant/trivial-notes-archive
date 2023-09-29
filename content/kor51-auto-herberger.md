@@ -7,7 +7,7 @@ Summary:
 
 Je suis retourné sur mon serveur Proxmox, pour rappel configuration materiel:
 
-```
+```text
 ###########################################################
 Config Server mini-ITX CPU Ryzen 5  64GO RAM 4x2TO HDD RAID
 ###########################################################
