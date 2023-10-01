@@ -19,6 +19,7 @@ Pour obtenir les composants de sa fabrication, j'ai cantiné:
 * Tube en verre de poivre
 
 Autres:
+
 * du thé
 * du sel
 
