@@ -92,6 +92,8 @@ Lien d'achat: [FNAC 7€](https://www.fnac.com/a1368845/Howard-Phillips-Lovecraf
 
 ### 10 L'empire des nécromants; Clark Ashton Smith
 
+«La légende de Mmatmuor et de Sodosma ne sera connue que dans les derniers cycles de la Terre. Auparavant, bien des ères s'écouleront, et les mers seront tombées au fond de leurs lits et de nouveaux continents auront vu le jour. Je vais raconter cette histoire comme les hommes la raconteront en Zothique, le dernier continent, sous un soleil obscur et des cieux où les étoiles scintillent dans leur éclat terrible avant la tombée de la nuit. »
+Après L'île inconnue et Ubbo-Sathla, voici le troisième recueil de nouvelles fantastiques de Clark Ashton Smith...
 « Personne ne sait faire jouer la note de l'horreur cosmique aussi bien que Clark Ashton Smith. L'étrangeté diabolique et la fertilité de sa création n'ont peut-être jamais été égalées par un autre écrivain, mort ou vivant. Qui d'autre a eu des visions aussi magnifiques, luxuriantes et déformées par la fièvre, de sphères infinies et de multiples dimensions, et y a survécu pour les exprimer ? » Ces mots de H.P. Lovecraft vous donnent la mesure de cet écrivain de génie, créateur de mondes mythiques.
 
 Lien d'achat: [Amazon occasion à 7€](https://www.amazon.fr/dp/2251771182?linkCode=osi&psc=1&tag=chasseauxlivr-21&th=1)
