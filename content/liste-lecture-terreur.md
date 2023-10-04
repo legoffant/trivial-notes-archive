@@ -89,3 +89,9 @@ Lien d'achat: [Neuf FNAC à 7€](https://www.fnac.com/a1172750/Edgar-Allan-Poe-
 Au cours d'une expédition en antarctique, deux scientifiques mettent au jour, derrière une chaîne de montagnes en apparence infranchissable, les vestiges d'une ancienne cité aux proportions gigantesques. Pendant cinq ans, un vénérable professeur d'université devient la proie d'étranges visions. Cherchant à comprendre ce qui l'a "possédé", il découvre en Australie des ruines plus qu'antédiluviennes cachées au regard des hommes.En visitant les dédales et recoins de ces lieux maudits, tous vont observer des fresques évoquant l'arrivée sur terre d'entités d'outre-espace. Et constater que la menace de les voir reprendre le contrôle de la planète existe toujours...
 
 Lien d'achat: [FNAC 7€](https://www.fnac.com/a1368845/Howard-Phillips-Lovecraft-Les-montagnes-hallucinees#omnsearchpos=5)
+
+### 10 L'empire des nécromants; Clark Ashton Smith
+
+« Personne ne sait faire jouer la note de l'horreur cosmique aussi bien que Clark Ashton Smith. L'étrangeté diabolique et la fertilité de sa création n'ont peut-être jamais été égalées par un autre écrivain, mort ou vivant. Qui d'autre a eu des visions aussi magnifiques, luxuriantes et déformées par la fièvre, de sphères infinies et de multiples dimensions, et y a survécu pour les exprimer ? » Ces mots de H.P. Lovecraft vous donnent la mesure de cet écrivain de génie, créateur de mondes mythiques.
+
+Lien d'achat: [Amazon occasion à 7€](https://www.amazon.fr/dp/2251771182?linkCode=osi&psc=1&tag=chasseauxlivr-21&th=1)
