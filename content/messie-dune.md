@@ -12,3 +12,6 @@ Ainsi va sortir le 12 octobre une édition collector de chez Pocket de Dune: [Le
 Pour la tome 2, Le Messie de Dune, il est à paraitre pour 9€. Je vais surement aller l'acheter à la librairie Dialogue de Brest dès qu'il est en rayon.
 
 Petite photo de ma version actuelle chez moi du "Messie de Dune" qui est très abimé et veillit, c'est mes premiers livres que j'ai acheté avec ma propre carte bancaire à l'époque, cela à bien 17 ans. La dernière fois que j'ai lu ce titre que j'ai un vague souvenir.  
+
+![messie dune](images/messie-dune.jpg)
+
