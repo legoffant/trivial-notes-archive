@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2023-10-07T07:31:11-00:00</lastmod>
+<lastmod>2023-10-07T09:37:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2023-10-07T07:31:11-00:00</lastmod>
+<lastmod>2023-10-07T09:37:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2023-10-07T07:31:11-00:00</lastmod>
+<lastmod>2023-10-07T09:37:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/authors.html</loc>
-<lastmod>2023-10-07T07:31:11-00:00</lastmod>
+<lastmod>2023-10-07T09:37:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2023-10-07T07:31:11-00:00</lastmod>
+<lastmod>2023-10-07T09:37:16-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1377,6 +1377,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/anneau-supraconducteur-low-tech.html</loc>
+<lastmod>2023-08-02T14:24:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/le-point-carree.html</loc>
 <lastmod>2023-08-02T14:24:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -4394,6 +4401,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/tag/supra.html</loc>
+<lastmod>2023-08-02T14:24:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/design-principe.html</loc>
 <lastmod>2023-08-02T14:24:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
