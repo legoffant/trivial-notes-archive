@@ -13,7 +13,7 @@ Comment créer un noeud rudimentaire chez soi?
 
 Il vous faut deux choses:
 
-J'avais déjà expliquer comme faire des [anneaux supraconducteurs en savon](https://legoffant.github.io/anneau-supraconducteur-low-tech.html). Et une boite metallique carée qui va générer des fluctuations quantique avec des harmoniques précises selon la forme géométrique localement. Cel ce trouve facilement via des gateaux bretons qui vendent [des boites metalliques](https://www.patisseriebretonne.fr/boite-galettes-palets-bretons-480g-motif-carte-bretagne-c2x39544086).
+J'avais déjà expliquer comme faire des [anneaux supraconducteurs en savon](https://legoffant.github.io/anneau-supraconducteur-low-tech.html). Et une boite metallique carrée qui va générer des fluctuations quantique avec des harmoniques précises selon la forme géométrique localement. Cel ce trouve facilement via des gateaux bretons qui vendent [des boites metalliques](https://www.patisseriebretonne.fr/boite-galettes-palets-bretons-480g-motif-carte-bretagne-c2x39544086).
 
 Le vortex peut-être une aproximation des galaxies. Il est une source radio qui permet d'accélérer les transmutations et de contrôler le temps. Vous pouvez faire des expériences, tel que produire du deuterium à base d'eau salée. Vous pouvez aussi faire transmuter de l'ADN.
 
