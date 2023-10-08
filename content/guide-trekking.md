@@ -23,7 +23,7 @@ Si vous décidez de partir à l'étranger il faut pas hésiter à se renseigner 
 
 ### Pratiquer la grande randonnée
 
-C'est décidé de randonnée en totale autonomie, ce que je préconise comme activité sportive et la plus gratifiante personnellement via le trekking. Vous dépendez d'aucun prestataire, vous pouvez aller à votre rythme. Vous devez être expérimenté et responsable pour gouter à la sensation d'indépendance absolu. Cela pose des contraintes logiques lourdes.
+C'est décidé de randonnée en totale autonomie, ce que je préconise comme activité sportive et la plus gratifiante personnellement via le trekking. Vous dépendez d'aucun prestataire, vous pouvez aller à votre rythme. Vous devez être expérimenté et responsable pour gouter à la sensation d'indépendance absolu. Cela pose des contraintes logistiques lourdes.
 
 Si vous partez en solo il faudra faire preuve d'un grande force morale et physique ainsi que de l'endurance. Et apprendre à réduire votre équipement. Vous devez transporter votre bivouac, vos vêtements, boissons et la popote pour la nourriture. Mais aussi votre matériel de navigation et d'orientation en plus d'une pharmacie et d'une trousse de soin et d'hygiène, et c'est un indispensable. Tout cela peut parâitre lourd sur les épaules et il faut un entrainement, surtout si vous marcher toute la journée. Ne doutez pas, il faut 6 mois de préparation avant de partir quelques jours en autonomie en trekking.
 
