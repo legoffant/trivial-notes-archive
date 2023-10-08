@@ -19,4 +19,6 @@ Vous pouvez remarquez que les mots narkantique sont parfois complexe et très pa
 
 Après la graphie des glyphes est particulière, ce n'est pas du chinois et cela ressemble plus à des runes. 
 
-La création du narkanta est un exercice difficile j'ai travaillé des années 2 ans, pour réfléchir aux concepts du langage et le finaliser. C'est particulièrement hardu de créer 700 glyphes différents et variés. J'ai eu des pannes d'inspiration, des fois j'en faisais une dizaine dans un mois, puis j'avais plus d'idée. Alors quand je me disais qu'il y avait plus de 512 à faire, cela risquait d'être long. 
+La création du narkanta est un exercice difficile j'ai travaillé des années 2 ans, pour réfléchir aux concepts du langage et le finaliser. C'est particulièrement hardu de créer 700 glyphes différents et variés. J'ai eu des pannes d'inspiration, des fois j'en faisais une dizaine dans un mois, puis j'avais plus d'idée. Alors quand je me disais qu'il y avait plus de 512 à faire, cela risquait d'être long.
+
+Tout le langage est fonctionnel pour être parlé, avec une structure grammatical. Il est ultra léger et tiens dans 30 pages A5 à sa compilation. 
