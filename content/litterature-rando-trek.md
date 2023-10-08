@@ -22,7 +22,6 @@ Il faut donc de la préparation et ce documenter, cela ne ce fait pas du jour au
 J'ai donc réuni de la littérature ici sur ce blog trouvé sur internet: voici la liste
 
 * [La randonnée pour les nuls EPUB](images/La_Randonnee_Pour_les_Nuls.epub)
-* [La randonnée; Leon EPUB](images/La_randonnee-Leon.epub)
 * [Le guide de randonnée - edition 2020 PDF](images/le-guide-de-la-randonnee-edition-2020.pdf)
 
 Vous trouverez d'autres guide intéressants tel que [le site des géonautrices](https://geonautrices.com/).
