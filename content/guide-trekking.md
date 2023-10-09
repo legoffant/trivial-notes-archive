@@ -40,3 +40,7 @@ La randonnée est conseiller pour le bien-être mental et est prescrite par les 
 * La marche sans smartphone permet d'apprendre à régler des problèmes sans l'aide technologique et donc stimule l'activité cognitive.
 * La randonnée aide également à prendre du recul si vous avez des problèmes de concentration ou de trouble psychique qui permet de contrôler ces impulsions.
 * L'activité pédestre stimule l'intelligence et maintiens les cellules cérébrales en bonne santé et assure leur fonctionnement.
+
+### La license
+
+Il est pratique d'avoir une license de randonnée, pour plusieurs raisons, cela permet d'avoir une assurance et une assistance 7j/7 24h/24. En cas de pépin c'est utile de vous couvrir. Vous pouvez avoir une licence fédérale de type IRA en vous adressant à un club affilié à la ffrandonée.
