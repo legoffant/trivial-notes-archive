@@ -94,7 +94,7 @@ Pain aux épices, barre de céréales, saucisson sec, fruits secs (abricots) th�
 
 Riz cantonais (pré-cuit en sachet) avec des sardines à l'huile, pain d'épice. Portion de fromage. + fruits si possible.
 
-Pour l'hydratation, prévoyez quelques gorgées toutes les heures avec une poche à eau de 2L + gourde filtrante. Se qui est la recomandation journalière.
+Pour l'hydratation, prévoyez quelques gorgées toutes les heures avec une poche à eau de 2L + gourde filtrante. Se qui est la recomandation journalière. Achetez en complément de la boisson énergétique en poudre pour l'hydratation pour l'effort de longue durée riche en glucide et electrolytes, anti-oxydant. Je conseil la marque Overtim's hydrixir anti-oxydant.
 
 #### 1.1.3. Le sommeil sous la tente
 
