@@ -1,0 +1,246 @@
+Title:Marcher dans la nature
+Date: 2023-10-10 14:03
+Category:Inclassable
+Tags:nature, trek
+Authors: Anthony Le Goff
+Summary:
+
+La suite de ce guide de trekking avec des généralités sur la marche et l'équipement aux formalités.
+
+### 2.1. La rando pédestre pratique
+
+Sous l'appelation rando pédestre il y a une multitude de manière de pratiquer: seul, accompagné, en groupe, en club. Mais aussi pour quelques heures, journées ou un voyage. Assistée ou autonomie complète.
+
+Contrairement aux touristes ou le voyage est organisé, et surtout programmé, le voyageur comme le randonneur part vers l'inconnu et la découverte, on est plus proche de l'exploration même s'il n'y a plus rien sur les cartes à découvrir. La marche reste le moyen le plus innée pour ce déplacer, et les moyens de locomotion moderne n'ont seulement que deux siècles depuis l'ère industriel.
+
+### 2.2. Préparer son départ
+
+Commencez par vous posez les bonnes questions:
+
+* Qu'est-ce que je veux faire?
+* Ou est-ce que je veux pratiquer?
+* Je dispose de combien de temps?
+* Je dois fixer des dates?
+* Es-ce que je me déplace en totale autonomie?
+* Que dois-je emporter?
+* Combien cela va-t-il me coûter?
+
+Une réponse argumentée est indispensable à ces interrogations pour que votre projet prenne vie. En plus vous devez trouver une fenêtre météo pour éviter les intempéries ou aller à la saison en limitant le risque. Si vous prenez l'avion, le train ou le ferry, il est important d'anticiper pour éviter de voir s'appliquer les tarifs maximals.
+
+**Préparer son itinéraire**
+
+En quittant les sentiers battus, vous risquez de passer dans des zones isolés, ou des zones blanches en couverture téléphonique et donc en cas de pépin, les secours auront des difficultés à vous rejoindre.
+
+Il faut donc préparer un itinéraire, avec une carte papier pour estimer les distances, les dénivelés, la durée des étapes et de repérer les points d'alimentation et d'eau proche des villes. Cela permet d'anticiper des problèmes sur le parcours ou des interruptions comme des endroits infranchissable. Sur le trajet repéré les abris potentiels au cas le temps se gâte et les solutions de repli au cas ou pour votre sécurité.
+
+Si vous évoluez en montagne, il faut prendre en compte particulièrement les conditions métérologiques qui peuvent changer brusquement en particulier à plus de 2500 m d'altitude. Savoir que l'acclimatation peut-être problématique et le manque d'oxygène pour la progression. De plus le soleil se couche plus tôt cacher par les montagnes. 
+
+Cette étape d'étude des cartes est indispensable.
+
+### 2.3. Premier pas sur les chemins
+
+**Vitesse et distance**
+
+Marcher à votre rythme sans jamais forcer, faites varier effort et distance, un adulte va en moyenne à 4km/h en plaine sur terrain plat, de 250 à 300 m de denivelée positif par heure et 350 à 400 m de dénivelée négatif par heure. Ces valeurs sont à ajuster en fonction de la forme physique et des difficultés du parcours. Attention au terrain trop monotones, aux mauvais amorti des chaussures, si elles sont trop sérrée ou montante voir trop neuve et risque d'échauffement, d'ampoule et tendinite synonyme d'immobilisation forcée, voir d'abandon.
+
+**Nourrir son effort**
+
+Gérer votre effort et n'attendez pas de tomber d'inanition ou en hypoglycémie, prévoyez une alimentation solide. Dans le cas d'une longue autonomie en randonnée l'alimentation est primordiale en plus d'être une surplus de poids dans le sac à prévoir. Pour s'hydrater il faut boire fréquemment en petite gorgée et de préférence des anti-oxydants tel que du thé. Eviter les excitants (alcool, café) ou les sodas car trop sucrée. Repérez les points d'eau sur la carte et garder une gourde filtrante ainsi que des pastilles de purification tel que Aquatabs. Ou trouvez de l'eau gratuite partout en France? Dans les cimetières, mais également en bas des chateau d'eau ou proche de toilette public. Sinon buvez de l'eau de ruisseau et rivière sur le parcours purifié. 
+
+**Les bobos du randonneur**
+
+* Hydratation: Il faut favoriser l'hydratation et la récupération énergétique au risque de tomber d'inanition ou avoir un coup de fringale.
+* Soleil: Les UV sont un risque pour vos parties du corps, prevoyez de la crème en particulier si vous prenez de l'altitude ou ils sont plus aggressif.
+* Blessures: Pour éviter une tendinite synonyme d'immobilisation prolongée, il faut de l'assouplissement et être ménagés. Entrainez-vous progressivement pour préparer l'organisme.
+* Plaie cutanés: De manière générale préférez les pansements sur les ecorchures, cataplasmes et pommades à appliquer, gel de premier secours.
+* Les ampoules: Sont le résultat d'échauffement localisés, vous devez déchausser 10 min toutes les deux heures, surveiller vos pieds, passer de la crème ou poser de l'adhesif sur la zone impactée.
+* Pieds: Pour éviter des ampoules, il faut de bonne chaussette en priorité.
+* Hygiène élémentaire: Soigner vos ongles aux risques d'avoir des surprises.
+
+### 2.4. Le Trekking
+
+Le trekking fait référence aux randonnées de longue durée et sur plusieurs jours, les fameux GR, ou itinéraire de grande randonnée. Cela demande une certaine autonomie et exige un bon équipement. Vous marchez toute la journée, donc prévoir 6 heures de randonnée par jour sur une distance de 27km en moyenne. Un bon trekkeur peut faire 35km par jour. 
+
+**Différence entre trekking et randonnée**
+
+La principale différence entre trekking et randonnée c’est sa durée. Une randonnée se pratique à la journée, alors que le trekking est une randonnée de plusieurs jours. Le randonneur fait donc une boucle pour revenir au point de départ de la randonnée alors que le trekkeur dort le long du trek.
+
+**Différence entre trekking et hiking**
+
+Apparu depuis peu, le terme « hiking » est en fait un mot purement marketing ! Hiking et randonnée sont synonymes, puisque ce n’est que la traduction en anglais de randonnée…
+
+### 2.5. L'équipement
+
+Voyager léger doit faire parti de votre propriété, il faudra donc investir dans du materiel adapté. Le poids est l'ennemi de la performance mais également du confort car la charge sur les épaules peut sérieusement réduire votre progression. Il faut ce préparer à tout type de temps et de chemin en particulier si on part plus plus d'une semaine. Il va falloir donc faire des choix dans l'equipement. Le bon equipement a un coût et compter au moins 2000€ pour vous équiper.
+
+**Le sac à dos**
+
+L'organisation du rangement dans votre sac est primordiale: le but est de ne pas perdre de temps à le vider à chaque fois que vous avez besoin de quelques chose. Au fond du sac on met généralement le duvet, couchage avec le matelas à l'extérieur sur des sangles. Ensuite caser le poids lourd prêt du dos, tel que casserole, réchaud, tente, poche à eau. Par dessus on entasse la nourriture puis le matériel dont on a besoin en urgence, tel que polaire, poncho. 
+
+Dans les poches extérieures de votre sac, répartissez les objets de poids moyen à leger dont vous risquez d'avoir besoin (provision de route, GPS, papier toilette, lampe frontale, guide de randonnée). Grâce à des sangles et mousquetons attaché à votre sac les batons de marche, mais également gourde, ou tongue.
+
+Pensez à compartimenter votre sac avec des drybag de 2-5L. Qui ont des couleurs différentes: tel que nourriture, pharmacie et hygiene, etc...
+
+En cas de forte précipitation prévoyé une cape de protection généralement fourni avec le sac. L'etancheité du sac sera mis à l'epreuve et vos affaires doivent rester au sec. Un poncho qui inclus une cape pour le sac est l'idéal, même si votre look risque d'en prendre un coup.
+
+Question de poids, il est admit que le sac doit faire environ 15% du poids de l'individu. Maximum 20%. En grande randonnée on porte généralement 12kgs sur plus de 6 heures. Vous pouvez vous renseignez sur la marche ultra-légère MUL pour alléger votre équipement mais le prix va egalement exploser.
+
+Un sac de 12kgs fait environ 55L. Au delà c'est pour de la grande randonnée à la semaine et 70L.
+
+Choisissez un sac qui comporte une poche à eau, des poches sur les côtés pour mettre vos batons de randonnées et pickets de tente. Et également des sangles intégrés pour attaché un matelas à l'extérieur en bas du sac. Comptez 150 - 200€ pour un sac de qualité. 
+
+**La tenue de marche**
+
+Le choix de votre tenu est crucial: elle conditionne votre confort pour préserver de la chaleur corporelle, vous protégez du chaud, des agressions du soleil, du froid, de la pluie, du vent mais également de la végétation et des insectes.
+
+* Par temps chaud, on porte des vêtements amples, légers, ventilés et respirants.
+* Par temps frais, on respecte la règle des trois couches : dans l’ordre, on enfile un maillot de corps ou une chemise, puis un sweat ou un pull en polaire et par-dessus une veste technique coupe-vent imperméable et respirante. Choisissez une veste coupe-vent légère, aérée, respirante, étanche, à manches longues de préférence pour conserver l’humidité de la peau sur les bras et les avant-bras afin d’éviter la déshydratation et les brûlures dues à l’exposition prolongée au soleil.
+* Par temps humide et pluvieux, un ciré ou un large poncho recouvrira le tout. Attention toutefois à la transpiration en dessous. En l’absence de vent fort, un vaste parapluie de berger fera également l’affaire si vous parvenez à le fixer solidement sur le côté de votre sac à dos.
+
+Les vêtements en particulier les sous-vêtements sont en double et doivent pouvoir se laver dans des relais et points d'étape. Vous devez pouvoir faire un roulement. Essayez de bannir le coton de votre garde robe qui est trop lourd et long à sêcher. 
+
+**La veste coupe vent imperméable**
+
+C'est un élement technique indispensable mais relativement cher, elle vous protégera des intempéries mais son tissus imperméable et respirant fait monter le prix. Il faut compter 200€ pour ces vestes avec de la technologie Gore-Tex. L'une des meilleurs rapport qualité prix est la "Marmot Minimalist Jacket" sur le marché qui est une veste hardshell. Qui offre une résistance aux intempéries, fonctionnalité et durabilité de qualité. Vous pouvez également regarder du côté des marques: "Mountain Hardwear Stretch Ozonic Jacket", "Outdoor Research Helium Rain Jacket"
+
+**Le pantalon softshell**
+
+On choisira un pantalon de type softshell c'est à dire type 3 saison: imperméable, mais ventilé, respirant mais coupe-vent. Pour cela en premier prix on retrouve le Forclaz TREK900 à 60€. Qui reste de qualité. Compté 80€ en entré de gamme.
+
+**Les chaussures**
+
+Vos chaussures de randonnées doivent être:
+
+* imperméables pour repousser l’eau de pluie mais aussi celle de la rosée, des flaques et des terrains boueux qu’inévitablement vous rencontrerez à un moment où à un autre ;
+* respirantes tout de même pour que votre pied ne souffre ni d’échauffements ni de transpiration ;
+*légères et souples pour minimiser vos efforts ;
+* robustes tout de même pour vous protéger des obstacles abrasifs ou fixes tels que les cailloux, les épineux ou les racines, ainsi que les souches et les troncs d’arbre rencontrés sur les chemins et les sentiers…
+
+Voici quelques critères à prendre en compte pour choisir des chaussures de randonnée :
+
+* L’ajustement : assurez-vous que la chaussure soit confortable et bien ajustée, sans être trop serrée ni trop lâche.
+* Le soutien de la cheville : une chaussure de randonnée doit bien soutenir votre cheville pour vous protéger des entorses.
+* La semelle : optez pour une semelle qui offre une bonne adhérence et une bonne absorption des chocs sur les terrains accidentés.
+* L’imperméabilité : si vous prévoyez de marcher dans des endroits humides, assurez-vous que la chaussure soit imperméable pour vous protéger des intempéries.
+* Le type de terrain : choisissez une chaussure adaptée au type de terrain sur lequel vous allez marcher (rocheux, boueux, etc.).
+
+Préférez des chaussures montantes pour une meilleure tenue de la charge. Les chaussures montantes sont conseillés quand on a de la charge à portée. L'impérméabilité de la chaussure généralement en Gore-Tex fait monter le prix à 150 - 250€ la paire. Vous pouvez regarder du côté de la "G Trek 5 GTX Millet", "SUPERALPH - AKU", "SALOMON X ULTRA 4 MID" comme type de modèle. 
+
+**Accessoires**
+
+Prenez une ceinture tactique militaire qui sont très robuste pour votre tour de taille ou vous pouvez accrocher des accessoires.
+
+Egalement le choix de vos batons de randonnée. Qui permet des soulagé vos genoux et dos pour répartir la charge en montée et descente. Pour calculer la longueur idéale de vos bâtons, multipliez votre taille par 0,7. Exemple : pour une taille de 1,60 mètre, la longueur des bâtons doit être de 1,12 mètre. Pour 1,70 mètre, on obtient un bâton de 1,19 mètre. Pour 1,80 mètre, un bâton de 1,26 mètre. Regardez du côté de "Alpin Loacker - Carbon Pro Series", "Black Diamond FLZ", "LEKI SHERPA FX CARBON"
+
+N’oubliez pas une lampe frontale à LED (pour économiser vos piles), indispensable pour la préparation du petit déjeuner après le réveil, le remplissage du sac à dos puis la marche dans la pénombre du petit matin.
+
+Un couteau multifonction comme un couteau-suisse mais également un couteau de survie de type militaire comme la série CAC.
+
+Personnellement je prévois un kit de secours de survie dans une petite boite metallique ou il y a:
+
+* Allumettes étanches
+* Bougie
+* Pierre à feu
+* Fil et aiguille de couture
+* Kit de pêche
+* Fil à Collets
+* Fil à Scier
+* Lame de scalpel
+* Préservatif
+* Sparadrap et steri-strip
+
+Il vous faudra le minimum vital dans une trousse de toilette, prevoyez coupe-ongle, pince à épiler, anti-transpirant, mais également de l'huile de massage à l'Arnica. Savon et dentifrice, brosse à dent. Prévoyez une serviette microfibre.
+
+La trousse à pharmacie, elle devra être composée très soigneusement, avec l’aide de votre médecin si vous suivez un traitement. Vous pourrez y adjoindre une trousse d’urgence à renouveler tout au long du parcours selon l’emploi et la nécessité pour parer aux petits bobos :
+
+* compresses désinfectantes ;
+* pansements de différentes tailles (Urgo) ;
+* compresses à l’arnica ;
+* rouleau de sparadrap ;
+* compresses de Bétadine ;
+* rouleau d’adhésif antiampoule ;
+* comprimés de Vogalib ;
+* sachet de suture chirurgical ;
+* sachets de Smecta ;
+* boîte de Doliprane ;
+* crème solaire ;
+* crème antifrottement et antiéchauffement ;
+* crème antimoustique ;
+* des comprimés purificateurs d’eau;
+* un gel pour les bobos et traumatisme bénin tel que "Z-Trauma".
+
+Pour mon matériel d'orientation j'utilise le strict minimum utile. C'est à dire une carte IGN série bleu avec topographie, une boussole de visée militaire Proster. Et enfin un GPS Garmin Foretrex 601 pour faire des relever de position exacte. 
+La carte permet d’identifier les reliefs, les chemins, les cours d’eau, les ponts, les bâtiments, les points remarquables, la nature du terrain ; les courbes de niveau reproduisent le dénivelé et précisent l’altitude. Une bonne lecture des cartes permet d’anticiper les difficultés du parcours et de planifier sa randonnée.
+
+Un carnet et un stylo pour les notes, les réflexions personnelles, si vous êtes écrivain et tenez un journal, les coordonnées des gens croisés sur la route à recontacter ou à remercier plus tard.
+
+### 2.6. Le matériel de bivouac
+
+**Le duvet**
+
+À moins que vous envisagiez de passer chaque nuit dans un endroit différent, en chambre d’hôte ou en auberge, le duvet doit être accueillant et douillet et s’imposer comme votre meilleur ami pour toute la durée de la randonnée. Prévoyez un modèle technique le plus léger possible pour une isolation et un confort adaptés à la saison, au climat et à la région. Prévoyez un « sac à viande » (drap de propreté intérieur amovible), car certains duvets supportent mal le lavage. Leur séchage peut être long, et le nettoyage d’un duvet ordinaire en pressing coûte très cher – le coût peut être équivalent au prix du duvet neuf !
+
+Pour le couchage et votre confort prévoyé un couchage température de confort 5° - 0°C. Vous trouverez de très bon modèle et léger: 
+
+* Thermarest Questar 20F/-6C ;   0° / - 23°C ; 991gr ; 360€
+* Thermarest Hyperion 20     ;   0° / - 23°C ; 567gr ; 440€
+* Marmot Hydrogen            ;   2° / - 20°C ; 770gr ; 359€
+* Cumulus Lite Line 400      ;   2° / - 20°C ; 705gr ; 325€
+* Carinthia Brenta           ;  -4° /  -30°C ; 1180gr; 209€
+
+**La tente**
+
+La prévoir légère, simple et robuste !
+
+* Légère : le poids est l’ennemi du randonneur. Votre tente doit donc être aussi légère que possible ; ce sera votre premier critère d’achat. Le choix du matériau est essentiel. Pliée, votre tente doit pouvoir se glisser facilement sur le dessus de votre sac à dos.
+* Simple : un système de tente qui se monte rapidement et se démonte en un tour de main, et une toile déperlante qui sèche vite le matin. Un auvent est toujours le bienvenu : vous pourrez y laisser tout ce qui encombrerait inutilement l’espace intérieur et craindrait l’humidité de la nuit. Selon la contrée visitée, assurez-vous de la présence de moustiquaires solides, pratiques et efficaces sur toutes les ouvertures.
+* Robuste : il va falloir monter et démonter cette tente matin et soir pendant de nombreux jours, alors autant investir dans du bon matériel ! Privilégiez la qualité en vous orientant vers des modèles conçus par des fabricants expérimentés.
+
+Quelques modèles pour la rando solo 1P:
+
+* Camp EVO minima 1
+* Big Agnes Sheep Mountain 1
+* MSR HUBBA NX
+* Nemo Hornet
+
+**Le matelas**
+
+Préférez la robustesse et le matelas en mousse est une valeur sur, même s'il est encombrant, en plus d'être pas cher. Je conseil le matelas "Thermarest Z-Lite".
+
+**L'oreiller**
+
+Prévoyez un oreiller que l'on peut rembourer tel que "Thermarest Trekker" qu'il suffit de mettre des vêtements dedans.
+
+**Sac à viande**
+
+N'importe quel drap de soie de qualité fera l'affaire. 
+
+**La popote**
+
+Même si c'est tentant de faire de manière traditionnel, c'est reglémenté de faire un feu, alors on utilise des réchauds le plus souvent à gaz et alcool. Chacun à sont avantage et inconvénient. Pour les trekkers, si les blogs on recommande souvent le réchaud à alcool car c'est économe. Ce procurer de l'alcool à bruler coût rien, alors que des bombones de gaz est relativement cher. La cuisson est plus longue pour des réchauds à alcool. Le set à l'achat n'est pas très cher tel que le kit d'Esbit à 60€. Il faudra pensez à acheter des couverts pliables également. 
+
+**La bouteille thermos**
+
+Prenez-en plusieurs, pour les boissons* chaudes tel que le thé et pour les boissons* froides, car une fois utilisée pour un type de boisson particulier la bouteille thermos reste imprégnée de son odeur. Il est ensuite très difficile de décaper l’intérieur de votre thermos, tout comme celui de votre gourde.
+
+### 2.7. Budget et formalité
+
+*Cotés finances*
+
+Compter un budget de 20€ par jour hors nuité d'hotel à l'étranger et prévoyer jusqu'à 35€ dans un pays comme la France. Cela s'ajoute vos frais de déplacement sur votre lieu de trekking (bus, train, avion) qui peuvent alourdir le prix du voyage. Il peut également avoir des frais de visas, ou de visite de lieu touristique. Choisissez des backpackers (auberge de jeunesse) quand c'est possible pour réduire les frais d'hotel. Vous pouvez également prévoir un budget timbre et carte postal.
+
+**Votre pochette administrative**
+
+Prévoyez 3 mois à minima avant un départ des formalités, en plus d'avoir des prix réduit pour le transport. Veuillez préparez:
+
+* Vérifiez que votre carte d’identité et votre passeport sont valides jusqu’à la date de votre retour (ça peut être obligatoire).
+* N’oubliez pas votre permis de conduire (éventuellement, faites la demande du permis de conduire international en préfecture).
+* Assurez-vous que vous disposez de tous les visas des pays traversés avec les dates valides (n’oubliez pas de mentionner votre animal le cas échéant, et assurez-vous qu’il n’encourt pas de période de quarantaine – pays anglo-saxons).
+* Mettez à jour vos vaccins.
+* Renseignez-vous sur votre couverture en termes d’assurances (êtes-vous couvert jusqu’à votre retour ?). En cas de maladie ou d’accident, prévoyez un contrat de rapatriement avec Europe Assistance – à moins que vous soyez couvert par votre carte Visa.
+
+Par sécurité ayez des copies de vos papiers dans un coffre-fort numérique accessible depuis internet dans le cloud au cas ou vous perdez vos papiers d'identité, cela vous dépanne le temps de faire la demande à une ambassade, qui prends du temps et va vous clouer sur place.
+
+Si vous voyagez hors de la zone euro, munissez-vous d’argent liquide dans la monnaie locale en quantité suffisante pour couvrir vos besoins sur toute la durée de votre expédition.
+
+Dans les zones à risques, fabriquez des petites pochettes en tissu ou en cuir que vous porterez à même la peau, pour y dissimuler vos grosses coupures.
