@@ -11,7 +11,7 @@ Et l'acharnement sur mon cas continu car je trouve pas d'emploi sur Brest, mais 
 
 Alors on peut ce demander que ce que cherche certain, des politiques, des gouvernements en particulier sur les musulmans qu'ils ne s'incèrent pas correctement dans la societé ou on peut d'opportunité d'évolution et de carrière. On s'étonne même de la récidive, je suis un ancien tolard avec des antécédents et je me dis que la société est moins aggressive en tôle après un délit ou l'on est nourris et loger que de subir la rue.
 
-Perso je ne vois aucune éclairci en tant qu'ancien tolard et patient d'UMD reconnu travailleur handicapé: au ban de la société, et s'il y n'avait pas l'AAH pour vivre à minima et être autonome on serait seulement des ombres à la rue car le système capitaliste netoye les opposants politiques et activistes soit par le suicide, et quand il n'y arrive pas: les morts dans la rue. En faisant en sorte de vous invisbilisé. C'est honteux dans un pays qui s'affirme démocratique et promoteur de la liberté, égalité et fraternité: c'est tout le contraire et un nid d'hypocrite.
+Perso je ne vois aucune éclairci en tant qu'ancien tolard et patient d'UMD reconnu travailleur handicapé: au ban de la société, et s'il y n'avait pas l'AAH pour vivre à minima et être autonome on serait seulement des ombres à la rue car le système capitaliste netoye les opposants politiques et activistes soit par le suicide, et quand il n'y arrive pas: les morts dans la rue. En faisant en sorte de vous invisibilisé. C'est honteux dans un pays qui s'affirme démocratique et promoteur de la liberté, égalité et fraternité: c'est tout le contraire et un nid d'hypocrite.
 
 Oui j'ai de quoi destester la France et ces dirigeants, car peu de personne on experimenté ma propre vie. 
 
