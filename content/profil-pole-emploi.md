@@ -17,4 +17,6 @@ Oui j'ai de quoi destester la France et ces dirigeants, car peu de personne on e
 
 PJ: Mon profil pole emploi pour les recruteurs, 407 vues aucune demande d'emploi ou d'entretien d'embauche pour un ingénieur système Linux...Si c'est pas louche ça.
 
+PJ2: Mon CV > [CV-alegoff2022-ingLinux.pdf](images/cv-alegoff2022-ingLinux.pdf) < 
+
 ![profil pole emploi](images/pole-emploi-profil.png)
