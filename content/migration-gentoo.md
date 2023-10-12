@@ -5,6 +5,8 @@ Tags:gentoo
 Authors: Anthony Le Goff
 Summary:
 
+ERRATUM: Non en faite c'est pas demain la veille que je quitterai Arch, je vous ai bien eu
+
 Je suis en train de préparer ma migration sur Gentoo, j'ai pris ma décision essentiellement pour quitter system-d. Mais également avoir plus de contrôle sur la distribution en compilant à la main. Je vais utiliser Pentoo. Je vais être en phase de test quelques temps pour tout vérifier que j'ai bien mes logiciels, la config visée:
 
 * Gentoo + Pentoo en overlay
