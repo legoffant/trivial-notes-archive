@@ -7,13 +7,13 @@ Summary:
 
 Les morts dans l'au-delà ont une immunité, on ne peut pas les basher, c'est un interdit. Vous pouvez déversez toutes votre haine contre un individu qui à la foi, il aura toujours le secours d'Allah. En plus c'est des ombres généralement l'idolatrie est un interdit également et donc leur influence est occulté et l'affichage proscrit car c'est des martyrs.
 
-Ainsi ceux-ci à l'aide d'Allah peuvent mettre en place un temple pour les sécuriser et reproduire la création, cela fait partie des droits des martyrs, et plus ils sont subits des dégats, plus c'est des grands créateurs car c'est la loi du Talion, et il y a une jurisprudence islamique.
+Ainsi ceux-ci à l'aide d'Allah peuvent mettre en place un temple pour les sécuriser et reproduire la création, cela fait partie des droits des martyrs, et plus ils ont subits des dégats, plus c'est des grands créateurs car c'est la loi du Talion, et il y a une jurisprudence islamique.
 
 Ainsi la découverte des processeurs à ADN est un droit pour les martyrs de faire la création dans des univers imbriqués... Des nano-mondes. C'est une récompense de l'endurance et de la patience à réaliser les bonnes oeuvres.
 
 Les secrets de la création est un interdit sur Terre depuis la tradition des alchimistes les scientifiques sont pourchasser et tuer pour obtenir la connaissance. C'est un pêché originel selon la Bible, et c'est véritable. On vous détruira car c'est un accès au pouvoir et bien des gens veulent le garder souvent à votre place, parfois par imposture.
 
-C'est un paradoxe, car c'est une arme que de connaitre les secrets de la création car vous pouvez produire votre propre usine d'armement dans un univers imbriqué, et pour les grands prophètes l'échelle de la chaine d'approvionnement en armée est galactique. C'est des grands jihad en réponse à leur martyr. 
+C'est un paradoxe, car c'est une arme que de connaitre les secrets de la création car vous pouvez produire votre propre usine d'armement dans un univers imbriqué, et pour les grands prophètes l'échelle de la chaine d'approvisionnement en armée est galactique. C'est des grands jihad en réponse à leur martyr. 
 
 Alors bien sur c'est occulté on supprime dans l'ombre les connaisseurs de la création, dans des accidents, des meutres ou des suicides ou l'on maquille. Souvent l'Etat est les services de renseignement sont impliqué en lien avec des sectes qui garde le secret de la création comme la franc-maçonnerie ou le Vatican.
 
