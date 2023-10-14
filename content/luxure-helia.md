@@ -9,7 +9,7 @@ Après avoir sécuriser le "Kor Al Maghrib" les gardiennes du logement vont pouv
 
 Cela fait quelques temps que Aël n'avait pas vu Hélia, ni Berivan, il ne sait pas si Oriane sera là, et l'appartement est petit pour héberger tous le monde et les deux soeurs. Hélia vit à travers le rappel des morts de Aël. Celle-ci est morte quand ils étaient en école d'ingénieur pour avoir couché ensemble et fait un scandale. Cela a révélé la secret sur son génome créant une anomalie dans l'univers qui à reboot. Ainsi dans cette univers alternatif, ils n'ont pas couché ensemble et elle n'est pas morte car protégée par Nominoë II, sa tâche de gardienne l'empêche de mourir dans le futur, et sa destinée lié à la religion narkantique.
 
-Mais cela ce fait attendre, et pour les retrouvailles c'est signe de luxure, rien à dire, rien à reprocher mais juste accepter certaine barrière entre eux qui ont rompu, une lutte instestine liée à l'ombre de la méduse et sa fusion. 
+Mais cela ce fait attendre, et pour les retrouvailles c'est sous le signe de la luxure, rien à dire, rien à reprocher mais juste accepter certaine barrière entre eux qui ont rompu, une lutte instestine liée à l'ombre de la méduse et sa fusion. 
 
 Ainsi pour la revoir il attend la date pour la doigter la chatte avec espoir de ce retrouver. Il a prévenu une simple robe noire courte, sans sous-vetement pour qu'une fois passer la porte du studio il l'embrasse et y mette un doua. Caresser l'intérieur de sa grotte pour la sentir mouiller avant de goutter à ces fesses. Il va ensuite doigté son anus ou elle a mis un plug anal pour jouer avec en relevant sa robe avant d'y mettre sa langue en profondeur dans son pot de miel. Le honeypot est arrivé. 
 
