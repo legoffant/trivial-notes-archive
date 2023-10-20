@@ -5,7 +5,7 @@ Tags:dark
 Authors: Anthony Le Goff
 Summary:
 
-J'aime bien l'oeuvre de Death Stranding parmi les jeux vidéos et certaine idées de l'au-delà qui peut devenir une cauchemar quand les mondes des morts et celui des vivants se rejoignet à l'approche d'une grande extinction. Voile et annihilation empreinte des éléments de Death Stranding, en la personne de Nominoë II il maitrise en réalité des échoués sur Terre, ce sont des ombres qui le protège. C'est un bouclier à travers les morts qui vont attaquer les humains quand le portail avec l'au-delà entre les mondes sera synchronisé.
+J'aime bien l'oeuvre de Death Stranding parmi les jeux vidéos et certaine idées de l'au-delà qui peut devenir une cauchemar quand les mondes des morts et celui des vivants se rejoignent à l'approche d'une grande extinction. Voile et annihilation empreinte des éléments de Death Stranding, en la personne de Nominoë II il maitrise en réalité des échoués sur Terre, ce sont des ombres qui le protège. C'est un bouclier à travers les morts qui vont attaquer les humains quand le portail avec l'au-delà entre les mondes sera synchronisé.
 
 Death Stranding dépasse la simple fable car c'est une approche du futur dans Voile et Annihilation quand Nominoë II traverse l'au-delà et rappel les morts. Il est le prophète à la fois le bien et le mal, il transcende l'idée même et le manicheisme des forces antagonistes. A l'image de Death Stranding, le personnage de Higgs, le terroriste serait un Nominoë II qui favorise les phénomènes de néantisation. La dogme religieux par l'annihilation se répercute dans son oeuvre ou il invoque la destruction pour forcer la création en conséquence. Comme c'est un religieux, il recycle les ames corrompus. Les gens ne meurt pas vraiment pour Nominoë II mais sont purifié à travers la mort. Ainsi plus la destruction du monde est enclenché par une extinction de masse, plus Nominoë II possède également un grand pouvoir de création en recyclant la corruption, il façonne un nouveau monde, un nouvel univers sur ces idées, qu'il a grapillé un peu partout par l'acquisition de la connaissance.
 
@@ -21,7 +21,7 @@ J'avais développé ces idées en prison, j'avais déssiné un vaisseau à base 
 
 Ainsi la religion Narkantique va conquérir des planètes et systèmes pour préparer l'ingénierie de cette entité et réorganisé la voie lactée en ce nourissant des étoiles pour créer le vaisseau, qui n'a pas encore de nom, et sa structure est unique, je ne connais pas d'organisme qui y ressemble. 
 
-Pour mettre cela en place, c'est dans le chapitre "nebuleuse obscure", ils vont aller chercher la source même de la création pour y planter la graine de cette entitée. C'est la quête du Belphégor en propageant le narkantisme dans la galaxie pour préparer l'ingénerie stellaire.
+Pour mettre cela en place, c'est dans le chapitre "nebuleuse obscure", ils vont aller chercher la source même de la création pour y planter la graine de cette entitée. C'est la quête du Belphégor en propageant le narkantisme dans la galaxie pour préparer l'ingénierie stellaire.
 
 Voici un apperçu du dessin original:
 
