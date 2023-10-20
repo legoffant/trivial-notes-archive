@@ -16,3 +16,19 @@ La puissance de feu du narkantisme est phénomènale, le Belphégor n'est qu'un 
 Il le sait Nominoë II que faire grossir l'entité à la démesure dans une sorte d'antevers, il n'est pas seul, d'autres entités existent dans une sorte de soupe cosmique de dimension supérieur et il est lui même le produit du dragon primordiale comme sytème de survie et mise à jour. Il lui doit beaucoup par sa science qu'il adopte à travers le Narkanta, un dérivé du mandarin des asiatiques.
 
 Ces entités sont capable de manger des galaxies entières, ils se nourissent des étoiles, nous n'en savons rien, nous croyons être épargné car protégé dans des univers imbriqués dans des dimensions inférieurs. 
+
+J'avais développé ces idées en prison, j'avais déssiné un vaisseau à base de nébuleuse stellaire comme système d'horloge et production, tel un réseau neuronal d'une entité qui déploie un exosquelette autour, j'avais imaginé la taille de 25 000 Années-lumières. Le narkantisme dépasse largement l'idée du Belphégor comme outil de minage planétaire. Le Belphégor serait un vaisseau de cette entité aussi longue que 1/4 de la galaxie. Il appartient à un meta organisme bien plus immense, de l'empire narkantique.
+
+Ainsi la religion Narkantique va conquérir des planètes et systèmes pour préparer l'ingénierie de cette entité et réorganisé la voie lactée en ce nourissant des étoiles pour créer le vaisseau, qui n'a pas encore de nom, et sa structure est unique, je ne connais pas d'organisme qui y ressemble. 
+
+Pour mettre cela en place, c'est dans le chapitre "nebuleuse obscure", ils vont aller chercher la source même de la création pour y planter la graine de cette entitée. C'est la quête du Belphégor en propageant le narkantisme dans la galaxie pour préparer l'ingénerie stellaire.
+
+Voici un apperçu du dessin original:
+
+NOM DU VAISSEAU: INCONNU
+COMMANDANT: INCONNU
+
+[meta-entite](images/meta-entite.jpg)
+
+
+
