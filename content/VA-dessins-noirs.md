@@ -7,7 +7,7 @@ Summary:
 
 J'aime bien l'oeuvre de Death Stranding parmi les jeux vidéos et certaine idées de l'au-delà qui peut devenir une cauchemar quand les mondes des morts et celui des vivants se rejoignet à l'approche d'une grande extinction. Voile et annihilation empreinte des éléments de Death Stranding, en la personne de Nominoë II il maitrise en réalité des échoués sur Terre, ce sont des ombres qui le protège. C'est un bouclier à travers les morts qui vont attaquer les humains quand le portail avec l'au-delà entre les mondes sera synchronisé.
 
-Death Stranding dépasse la simple fable car c'est une approche du futur dans Voile et Annihilation quand Nominoë II traverse l'au-delà et rappel les morts. Il est le prophète à la fois le bien et le mal, il transcende l'idée même et le manicheisme des forces antagonistes. A l'image de Death Stranding, le personnage de Higgs, le terroriste serait un Nominoë II qui favorise les phénomènes de néantisation. La dogme religieux par l'annihilation se répercute dans son oeuvre ou il invoque la destruction pour forcer la création en conséquence. Comme c'est un religieux, il recycle les ames corrompus. Les gens ne meurt pas vraiment pour Nominoë II mais sont purifié à travers la mort. Ainsi plus la destruction du monde est enclenché par une extinction de masse, plus Nominoë II possède également un grand pouvoir de création en recyclant la corruption, il façonne une nouveau monde, un nouvelle univers sur ces idées, qu'il a grapillé un peu partout par l'acquisition de la connaissance.
+Death Stranding dépasse la simple fable car c'est une approche du futur dans Voile et Annihilation quand Nominoë II traverse l'au-delà et rappel les morts. Il est le prophète à la fois le bien et le mal, il transcende l'idée même et le manicheisme des forces antagonistes. A l'image de Death Stranding, le personnage de Higgs, le terroriste serait un Nominoë II qui favorise les phénomènes de néantisation. La dogme religieux par l'annihilation se répercute dans son oeuvre ou il invoque la destruction pour forcer la création en conséquence. Comme c'est un religieux, il recycle les ames corrompus. Les gens ne meurt pas vraiment pour Nominoë II mais sont purifié à travers la mort. Ainsi plus la destruction du monde est enclenché par une extinction de masse, plus Nominoë II possède également un grand pouvoir de création en recyclant la corruption, il façonne un nouveau monde, un nouvel univers sur ces idées, qu'il a grapillé un peu partout par l'acquisition de la connaissance.
 
 Il puisent ces idées dans des jeux-vidéos et oeuvres de la littérature et va répandre son jihad infernal dans la galaxie, les gens n'ont pas le choix de ce convertir à la puissance du narkantisme au risque de périr, ou la planète est sous inquisition et le Belphégor prêt à la recycler et l'annihiler.
 
@@ -28,7 +28,7 @@ Voici un apperçu du dessin original:
 NOM DU VAISSEAU: INCONNU
 COMMANDANT: INCONNU
 
-[meta-entite](images/meta-entite.jpg)
+![meta-entite](images/meta-entite.jpg)
 
 
 
