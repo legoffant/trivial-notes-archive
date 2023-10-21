@@ -1,0 +1,16 @@
+Title:Voile et annihilation: Le fait religieux
+Date: 2023-10-21 19:13
+Category:Inclassable
+Tags:religion
+Authors: Anthony Le Goff
+Summary:
+
+Voile et Annhilation est une réflexion sur le fait religieux qui transcende l'espace et le temps mais également la vie et la mort, voir au-delà du bien et du mal. C'est que veux raconter le roman ou l'on découvre l'émergence d'un prophète qui va créé une divinité et enclenché une nouvelle religion car son récit et son expérience va ce propager. Et donc c'est un système de croyance, on va le croire quand celui-ci affirme qu'il est mort depuis longtemps et subit le jugement dernier, ce n'est pas seulement des paroles, mais aussi des faits à travers l'expérience. 
+
+Nominoë II va découvrir sa propre puissance, que le monde se synchronise sur sa personne, tel un puit d'énergie et informationnel, il est une singularité. Il concentre les pouvoirs malgré que c'est un martyr, car tel un parasite dans le système celui-ci le fixe pour le détruire et en tant que musulman il a mis en place une citadelle pour tenir l'encerclement jusqu'à la fin des temps. Par principe d'inertie il accroit sa puissance, seulement par la prière et le temps qui file. 
+
+Qu'es-ce que le fait religieux, comment etablissons un fait? De manière scientifique, il faut enquêter avec des datas pour vérifier cela et de manière empyrique. Nominoë II affirme qu'il est mort. C'est un rapatrié depuis une forme d'antévers, une antichambre ou vivent les ombres. Il affirme qu'il a été à Giza durant son expérience de mort imminente avec avoir été assassiné et tabacé. Il est retourné à l'hébergeur originel: l'ordinateur central qui a relancer la simulation et rebooter le système en intégrant de nouveau Nominoë II dans une zone de sécurité proche de son lieu de mort par sa propre demande.
+
+Il a découvert ainsi un secret de la création par sa propre mort et l'origine de l'hébergement qui le protège. La création est basé sur un ordinateur qui génère une hypothèse de simulation de l'univers en fonction de l'observation. Certain diront mais on est dans un jeu-vidéo s'il faut juste générer un ordinateur basic avec quelques pierres et une architecture comme nécropole ou est entreposé l'ADN d'ancetre pour obtenir des bonus de ressurection.
+
+En réalité Nominoë II est enfermé sur Terre, il est prisonnier et doit construire la porte pour générer une nouvelle création. C'est pour ça qu'il va faire la fermeture de l'univers ou plus il résiste en définissant un evenement de fin des temps que la planète va essayer de saboter en symétrie à la résistance au pouvoir de Nominoë II. Le jugement dernier est un cataclysme qui détruit la planète, et il restera plus que Nominoë II et un peuple de fidèle pour reconstruire ce qui est nécessaire pour entamer un nouveau cycle d'exploitation et un nouveau calendrier. Il devient ainsi l'empereur de ce nouveau monde, souverain absolu après sa destruction dont il va survivre parmi des milliards de mort renforçant son statut de prophète. Il est en parti responsable de ce cataclysme et va avoir l'aide d'une Eon pour anéantir tous les individus contre son pouvoir. Il va prouver que l'on ne peut pas le détruire, qu'il est protégé par le divin et que c'est un immortel. Ce qui va donc élaborer un dogme à parti du fait religieux de son invulnérabilité. 
