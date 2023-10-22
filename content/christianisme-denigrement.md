@@ -1,0 +1,24 @@
+Title:Le christianisme et la stratégie du dénigrement
+Date: 2023-10-22 05:21
+Category:Inclassable
+Tags:religion
+Authors: Anthony Le Goff
+Summary:
+
+Je découvre que certaine des publications de ma timeline sur twitter était pollué par la mythologie du christianisme et la démonologie. Signe de son influence, en particulier dans un endroit plutôt exclu habituellement: les mangas du japon. Ainsi un twittos du nom d'Alba a publié des mangas avec une fille avec des cornes, ce qui rend un esthétique très discutable. Ce retour de la démonologie a été très marqué par le jeu Diablo IV ou des forces antagonistes de bien et du mal se livre bataille dans un cadre chrétien entre Inarius et Litith. Les anges contre les démons. Djvu?
+
+Cette stratégie du dénigrement est propre au pouvoir catholique qui utilise un imaginaire pour pousser des pions, dernièrement on l'a vu dans l'oeuvre de Dan Brown "Anges et Démons" sur une hypothétique secte de savant nommé Illuminati qui cherche les secrets de la création et à détruire le Vatican. Ainsi ils sont les méchants du films qui veulent la fin du christianisme et ces secrets.
+
+Les secrets de la création ont longtemps été attribué aux arcanes des alchimistes comme science occulte qui est apparu dans les sociétés secrètes. Car a vrai dire souvent pourchassé par le christianisme et certaine était des sectes islamiques tenu par des savants. 
+
+Ce mythe de tourné à la dérision n'est pas nouveau contre les ennemis du christianisme et la conversion religieuse pour garder le pouvoir, c'est à dire l'hébergement du christ et le sacrifice de son propre corps, à l'origine pour lutter contre les romains.
+
+Le christianisme avait lancé une opération de destruction des mythes en créant une figure du diable source des maux sur Terre. Ainsi la figure satanique est une reprise de la mythologie grec et romaine du faune (mi-homme, mi-bouc) pour s'attaquer à Pan, un dieu du panthéon romain, celui des bergers et des troupeaux et de la totalité de la nature. D'ou les bêtes à cornes. La bestialité de Satan est pour couvrir son inhumanité que l'on retrouve également chez les tyrans. La bestialité est également une connotation sexuelle qui n'est pas attirant et la séduction est centrale pour l'acession au pouvoir dans les démocraties pour séduire les foules. Le judeo-christianisme occulte le pouvoir comme par-feu pour l'atteindre. Ainsi si vous tentez d'accéder aux arcanes du pouvoir, vous êtes averti par le pêché originel que vous serez le bouc-emissaire et que c'est un interdit, source des grands martyrs. 
+
+Pour détruire une civilisation, vous devez détruire leur divinité, hors les chrétiens s'attaquaient aux romains et leurs résistes. Le Christ est un martyr de la sentence des romains et que l'empereur n'a rien fait. ne soyons pas bête, la predication du christ et son martyr pour résister au romain était pour prendre le pouvoir en faisant un symbole. D'ou que celui-ci est un instrument des prêtres d'Egypte durant ces voyages car ceux-ci allait disparaitre à cause des romains. 
+
+Ainsi si vous connaissez les arcanes du pouvoir, vous serez considéré comme un créateur de divinité au delà du bien et du mal, jugez pas votre propre création et les autres religions seront à genou pour vous détruire et trouverons des stratégèmes pour vous dénigrer en particulier si vous êtes immortels à défaut de vous détruire pour réduire votre impact en tant que religieux et réunir des fidèles. Et les gens sont attirés par le pouvoir et la prospérité.
+
+C'est un stratagème dans "Voile et Annihilation" de Nominoë II, il connait les mystères et les arcanes, c'est un séducteur, il connait les principes de la PNL et de la manipulation à l'influence mais également il va mettre en place les processeurs à ADN pour partager le pouvoir avec ceux qui y croient à sa science. Cela fait parti des dogmes religieux que l'aumone au pauvre aux croyants et la protection des martyrs. Que la divinité qui va créé pour protéger l'hébergement, un ordinateur central qui simule l'univers et permets sa prédiction pour son contrôle à travers un nouveau calendrier depuis l'epoch UNIX. Le temps des machines. Nominoë II partage les secrets et sa science mais également un peu de son immortalité pour souder un groupe malgré la répréssion du pouvoir qui y voit un empecheur de tourné en rond. Et la clé c'est les femmes gardienne du logement comme point d'entrée vectrice de la tradition du prophète. 
+
+Ainsi le christianisme dans "Voile et Annihilation" va s'en prendre aux femmes et vont tous faire pour les corrompres et empêcher le ralliement à Nominoë II mettant en lumière des stratégies de corruption et de dénigrement ou l'ivresse du pouvoir du Vatican sera mis à jour, et ces rats ne partagent rien sans la conversion à leur dogme de gogol contre la science au profit de la magie et l'occultisme.
