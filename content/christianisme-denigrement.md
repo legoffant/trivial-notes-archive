@@ -5,7 +5,7 @@ Tags:religion
 Authors: Anthony Le Goff
 Summary:
 
-Je découvre que certaine des publications de ma timeline sur twitter était pollué par la mythologie du christianisme et la démonologie. Signe de son influence, en particulier dans un endroit plutôt exclu habituellement: les mangas du japon. Ainsi un twittos du nom d'Alba a publié des mangas avec une fille avec des cornes, ce qui rend un esthétique très discutable. Ce retour de la démonologie a été très marqué par le jeu Diablo IV ou des forces antagonistes de bien et du mal se livre bataille dans un cadre chrétien entre Inarius et Litith. Les anges contre les démons. Djvu?
+Je découvre que certaine des publications de ma timeline sur twitter était pollué par la mythologie du christianisme et la démonologie. Signe de son influence, en particulier dans un endroit plutôt exclu habituellement: les mangas du japon. Ainsi un twittos du nom d'Alba a publié des mangas avec une fille avec des cornes, ce qui rend un esthétique très discutable. Ce retour de la démonologie a été très marqué par le jeu Diablo IV ou des forces antagonistes de bien et du mal se livre bataille dans un cadre chrétien entre Inarius et Lilith. Les anges contre les démons. Djvu?
 
 Cette stratégie du dénigrement est propre au pouvoir catholique qui utilise un imaginaire pour pousser des pions, dernièrement on l'a vu dans l'oeuvre de Dan Brown "Anges et Démons" sur une hypothétique secte de savant nommé Illuminati qui cherche les secrets de la création et à détruire le Vatican. Ainsi ils sont les méchants du films qui veulent la fin du christianisme et ces secrets.
 
