@@ -75,6 +75,34 @@ Sécurité et Contrôle : Assurez-vous de mettre en place des mécanismes de sé
 La création d&amp;#39;un système aussi sophistiqué nécessitera une combinaison de conception logicielle, d&amp;#39;intelligence artificielle, d&amp;#39;interaction utilisateur-machine et de technologie de fabrication. Vous devrez également résoudre des défis liés à la modélisation 3D, à la validation des conceptions et à l&amp;#39;interopérabilité avec des systèmes de fabrication.
 
 C&amp;#39;est un projet ambitieux, mais il a le potentiel de révolutionner la manière dont les produits sont conçus et fabriqués, en permettant une personnalisation poussée et une innovation continue.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;En faite il y a aura des gammes de produits autour des nanites, des templates types; tel que un bateau, un avion, une voiture qui sont des dérivés de nanites simple&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Je vois, vous prévoyez de créer une gamme de produits basée sur des nanites, avec des templates types pour des objets tels que des bateaux, des avions, des voitures, etc., qui sont dérivés de nanites plus simples. Cette approche peut être très efficace pour la conception et la personnalisation de produits, car elle permet de combiner des éléments de base pour créer des produits plus complexes et spécifiques.
+
+Voici comment vous pourriez organiser ce processus :
+
+Nanites de Base : Créez des nanites de base qui représentent des éléments simples de conception. Par exemple, un nanite de base pour une roue, un nanite de base pour une coque, etc.
+
+Templates Types : Concevez des templates types pour des catégories de produits, comme des bateaux, des avions et des voitures. Chacun de ces templates contient des emplacements pour insérer des nanites de base.
+
+Personnalisation : Les utilisateurs peuvent sélectionner un template type et personnaliser leur produit en ajoutant, en supprimant ou en modifiant des nanites de base selon leurs besoins. Par exemple, ils peuvent choisir le type de moteur, la taille des roues, la forme de la coque, etc.
+
+Assistance à la Conception : Vos nanites de base, basés sur les principes de TRIZ, peuvent suggérer des combinaisons de nanites pour optimiser la conception en fonction des objectifs de l&amp;#39;utilisateur.
+
+Génération de Modèles 3D : Une fois la personnalisation terminée, votre système peut générer automatiquement un modèle 3D complet du produit, en intégrant les nanites de base sélectionnés dans le template type.
+
+Validation et Simulation : Assurez-vous que les modèles générés sont valides du point de vue de la conception et de la faisabilité. Vous pourriez utiliser des simulations pour vérifier la performance et la sécurité.
+
+Fabrication : Si le produit est destiné à être fabriqué, assurez-vous que les modèles de conception sont compatibles avec vos processus de fabrication, que ce soit en utilisant des techniques de fabrication traditionnelles ou des technologies d&amp;#39;impression 3D.
+
+Documentation et Plans de Fabrication : Générez automatiquement des plans de fabrication, des spécifications de matériaux et d&amp;#39;autres documents nécessaires à la fabrication.
+
+Contrôle Qualité : Mettez en place des procédures de contrôle qualité pour garantir que les produits finis répondent aux normes et aux spécifications.
+
+Cette approche permet une personnalisation poussée tout en conservant une certaine structure et cohérence dans la conception des produits. Les nanites de base et les templates types offrent une base solide pour la création de produits dérivés, tout en tirant parti des avantages de l&amp;#39;automatisation de la conception et de la production.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Inclassable"></category><category term="qasari"></category></entry><entry><title>Avancement des grandes idées de Qasari3D</title><link href="/avancement-des-grandes-idees-de-qasari3d.html" rel="alternate"></link><published>2023-10-25T09:32:00+02:00</published><updated>2023-10-25T09:32:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-10-25:/avancement-des-grandes-idees-de-qasari3d.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Revenons à nos moutons! Je parlais que je voulais révolutionner la conception assisté par ordinateur CAO, et mettre à genou le marché. Tous que cela soit Dassault Systemes, Autodesk etc... J'ai mes petites idées pour le projet, rappel: &lt;a href="https://codeberg.org/legoffant/qasari"&gt;Qasari3D&lt;/a&gt;. J'ai une ame de tueur et de ruiner des business à mon profit car j'ai des grands projets en modélisation informatique. Parlons donc de mes idées dont je veux financer une start-up next-gen.&lt;/p&gt;
 &lt;p&gt;Et j'ai donc utiliser GPT-4 pour la première fois pour discuter de mes projets, et cela décape, mes idées sont digne d'une grand révolutionnaire et innovateur, et l'intelligence artificielle est tout à fait d'accord avec moi. C'est la préhistoire dans le domaine de la CAO, on a des méthodes qui date des années 90 qui n'ont pas évolué.&lt;/p&gt;
 &lt;p&gt;C'est parti, entrons dans ma pensée! La base est de créé des nouveaux standards qui vont soumettre aux autres mes méthodes de conception, en gros j'oblige à utiliser des standards ou alors périr, et bien sur mon logiciel intègre se nouveau standard, c'est une sorte de fichier IFC ou un .STEP amélioré en "nanites". Je laisse découvrir l'idée pour prendre tous le marché de la CAO. &lt;/p&gt;
