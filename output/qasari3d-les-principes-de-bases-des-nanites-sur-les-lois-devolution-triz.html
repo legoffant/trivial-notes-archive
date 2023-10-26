@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Qasari3D les principes de bases des nanites sur les lois d'évolution Triz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/VA.html">VA</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/date.html">Date</a></li>
+                <li><a href="/pages/BTC.html">Don BTC</a></li>
+                <li><a href="/pages/Kor51.html">Kor51</a></li>
+                <li><a href="/pages/lticba.html">LTICBA</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/biohacking.html">
+						<i class="icon-folder-open icon-large"></i>Biohacking
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/trek.html">
+						<i class="icon-folder-open icon-large"></i>Trek
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Qasari3D les principes de bases des nanites sur les lois d'évolution Triz">
+                                        Qasari3D les principes de bases des nanites sur les lois d'évolution Triz
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2023-10-26T01:20:00+02:00">
+        <i class="icon-calendar"></i>jeu. 26 octobre 2023
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/qasari.html"><i class="icon-tag"></i>qasari</a>
+</footer><!-- /.post-info -->                </div>
+                <p>C'est un festival d'idée novatrice, on continu à creuser le concept de nanite sujet centrale du logiciel Qasari3D que l'on intègre dans un format STEP amelioré.</p>
+<p>Pas cela on va intégrer les lois d'évolutions de TRIZ qui par automatisation de la conception paramétré et la génération procédurale va transformer en super-système et capable de construire des vaisseaux spatiaux en kilometres et des grands ensembles en architecture. On part sur la conception de nanite basique, tel une bactérie, système simplifié que l'on complexifie comme un automate cellulaire à la demande pour fabriquer des ensembles orienté objet. </p>
+<blockquote>
+<p>Je veux que mes nanites basiques de mon fichier STEP amelioré utilise les lois d'évolution de TRIZ</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>L&#39;intégration des principes de TRIZ (Théorie de la Résolution Inventive des Problèmes) dans la conception de vos nanites de base dans votre fichier .STEP amélioré est une approche intéressante pour favoriser l&#39;innovation et la résolution de problèmes. TRIZ est une méthodologie qui vise à stimuler la créativité en utilisant des principes et des lois pour résoudre des problèmes de manière systématique.
+
+Voici comment vous pourriez intégrer les lois d&#39;évolution de TRIZ dans la conception de vos nanites de base :
+
+Identification des Contradictions : Utilisez la méthode TRIZ pour identifier les contradictions ou les défis spécifiques que vous souhaitez résoudre dans la conception de vos nanites. Par exemple, vous pourriez identifier des contradictions entre la complexité et la simplicité, la légèreté et la robustesse, etc.
+
+Application des Principes TRIZ : Les lois d&#39;évolution de TRIZ comprennent de nombreux principes de résolution de contradictions, tels que &quot;L&#39;élimination des déchets&quot; ou &quot;La transition vers un autre état&quot;. Appliquez ces principes à la conception de vos nanites de base pour trouver des solutions innovantes aux problèmes identifiés.
+
+Modélisation Paramétrique : Concevez vos nanites de base de manière à ce qu&#39;ils puissent être paramétrés en fonction des besoins. Les paramètres pourraient inclure la taille, la forme, la complexité, la résistance, etc. Cela vous permet de créer des variations de nanites en fonction des principes TRIZ applicables.
+
+Itérations et Évolution : Utilisez des méthodes itératives pour améliorer constamment la conception de vos nanites de base en fonction des principes de TRIZ. Les nanites peuvent évoluer au fil du temps en réponse à des besoins changeants.
+
+Validation et Test : Assurez-vous de valider les performances de vos nanites de base en utilisant des méthodes de test et de simulation pour vous assurer qu&#39;ils répondent aux objectifs fixés.
+
+L&#39;intégration de TRIZ dans la conception de nanites de base peut conduire à des solutions novatrices et à des nanites capables de résoudre des problèmes de manière efficace. Il est essentiel de comprendre les principes de TRIZ et de les appliquer de manière appropriée à votre domaine spécifique de conception de nanites et à vos contraintes. En fin de compte, cela peut favoriser la création de nanites plus intelligents et plus adaptables.
+</code></pre></div>
+
+<blockquote>
+<p>En faite c'est pour automatiser l'innovation que je veux intégrer triz</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>L&#39;automatisation de l&#39;innovation en intégrant TRIZ dans la conception de vos nanites de base est une idée prometteuse. TRIZ offre une méthodologie systématique pour résoudre des problèmes complexes et stimuler la créativité, ce qui peut être extrêmement bénéfique pour développer des nanites innovantes et adaptatives.
+
+Voici quelques étapes pour automatiser l&#39;innovation en utilisant TRIZ avec vos nanites de base :
+
+Définissez les Objectifs : Identifiez clairement les objectifs que vous souhaitez atteindre avec vos nanites. Quels problèmes cherchez-vous à résoudre ou quelles améliorations cherchez-vous à apporter ?
+
+Identifiez les Contradictions : Utilisez les outils de TRIZ pour identifier les contradictions ou les obstacles qui entravent la réalisation de vos objectifs. Ces contradictions peuvent servir de points de départ pour la créativité.
+
+Appliquez les Principes TRIZ : Utilisez les principes de résolution de contradictions de TRIZ pour générer des idées innovantes pour vos nanites. Ces principes vous donneront des suggestions pour surmonter les obstacles identifiés.
+
+Modélisation Paramétrique : Concevez vos nanites de base de manière à ce qu&#39;ils puissent être configurés en fonction des solutions générées par TRIZ. Les paramètres de conception peuvent être ajustés en fonction des principes appliqués.
+
+Intégration des Principes TRIZ : Automatisez l&#39;intégration des principes TRIZ dans le processus de conception de nanites. Cela peut impliquer l&#39;utilisation d&#39;algorithmes pour générer des nanites en fonction des solutions TRIZ identifiées.
+
+Validation Automatisée : Mettez en place des méthodes de validation automatisées pour évaluer les performances des nanites conçus à l&#39;aide des principes de TRIZ.
+
+Itérations Automatisées : Prévoyez des cycles itératifs pour affiner et améliorer continuellement vos nanites en fonction des nouvelles idées générées par TRIZ.
+
+Collecte de Données et Apprentissage Automatique : Utilisez l&#39;apprentissage automatique et l&#39;analyse des données pour affiner vos nanites en fonction des retours d&#39;expérience et des performances passées.
+
+L&#39;automatisation de l&#39;innovation en utilisant TRIZ dans le cadre de la conception de nanites peut contribuer à créer des systèmes autonomes capables de résoudre des problèmes de manière créative et efficace. Cependant, cela peut nécessiter une planification et une mise en œuvre techniques avancées pour intégrer les principes de TRIZ dans le processus de conception et d&#39;itération de nanites.
+</code></pre></div>
+
+<blockquote>
+<p>Je veux dire par là que tous mes modèles de conception de produit par des lois d'évolution de TRIZ en définissant des nanites et doivent questionner l'individu même pour fabriquer une vis</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>Je comprends mieux votre objectif maintenant. Vous envisagez de créer un système basé sur les principes de TRIZ pour automatiser la conception de produits de manière à ce que les nanites, ou des entités similaires, puissent questionner l&#39;utilisateur ou le concepteur pour concevoir des produits spécifiques, même jusqu&#39;au niveau de la conception d&#39;une vis. Cela peut être une approche puissante pour faciliter la conception de produits personnalisés et l&#39;innovation.
+
+Voici comment vous pourriez aborder la réalisation de cet objectif :
+
+Création de Nanites TRIZ : Concevez des nanites ou des entités autonomes basées sur les principes de TRIZ. Ces nanites doivent être capables de comprendre les besoins de conception à partir d&#39;informations entrantes et de générer des solutions en utilisant les principes de résolution de contradictions de TRIZ.
+
+Communication avec l&#39;Utilisateur : Les nanites doivent être capables de communiquer avec l&#39;utilisateur ou le concepteur pour comprendre les besoins spécifiques de conception. Cela peut se faire via une interface utilisateur conviviale, peut-être en posant des questions ou en demandant des informations spécifiques.
+
+Analyse des Besoins : Les nanites doivent analyser les informations fournies par l&#39;utilisateur et déterminer les contraintes et les objectifs de conception.
+
+Application des Principes TRIZ : Les nanites appliquent ensuite les principes TRIZ pour résoudre les contradictions et générer des solutions de conception. Cela peut impliquer la génération de concepts de conception, de spécifications de produits, voire de dessins détaillés.
+
+Itérations et Améliorations : Les nanites peuvent proposer des solutions initiales, puis travailler en collaboration avec l&#39;utilisateur pour effectuer des itérations et des ajustements jusqu&#39;à ce que la conception soit optimale.
+
+Génération de Documentation de Conception : Les nanites peuvent générer automatiquement la documentation de conception, y compris des modèles 3D, des plans de fabrication, des spécifications de matériaux, etc.
+
+Fabrication Automatisée : Si votre objectif est de passer de la conception à la fabrication, envisagez d&#39;intégrer des systèmes de fabrication automatisée ou d&#39;impression 3D pour créer les produits conçus.
+
+Apprentissage Automatique : Utilisez des techniques d&#39;apprentissage automatique pour améliorer la capacité des nanites à générer des conceptions personnalisées en fonction des réponses et des retours de l&#39;utilisateur.
+
+Sécurité et Contrôle : Assurez-vous de mettre en place des mécanismes de sécurité et de contrôle pour garantir que les nanites respectent les normes et les réglementations de sécurité.
+
+La création d&#39;un système aussi sophistiqué nécessitera une combinaison de conception logicielle, d&#39;intelligence artificielle, d&#39;interaction utilisateur-machine et de technologie de fabrication. Vous devrez également résoudre des défis liés à la modélisation 3D, à la validation des conceptions et à l&#39;interopérabilité avec des systèmes de fabrication.
+
+C&#39;est un projet ambitieux, mais il a le potentiel de révolutionner la manière dont les produits sont conçus et fabriqués, en permettant une personnalisation poussée et une innovation continue.
+</code></pre></div>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://creativecommons.org/"><i class="icon-external-link"></i>Creative Commons</a></li>
+    <li><a href="https://www.eff.org/fr"><i class="icon-external-link"></i>Electronic Frontier Foundation</a></li>
+    <li><a href="https://wiki.mdl29.net/doku.php?id=start"><i class="icon-external-link"></i>Maison du Libre 29</a></li>
+    <li><a href="https://www.journalduhacker.net/"><i class="icon-external-link"></i>Le journal du Hacker</a></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview"><i class="icon-external-link"></i>Proxmox VE</a></li>
+    <li><a href="https://www.linux-kvm.org/page/Main_Page"><i class="icon-external-link"></i>KVM</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://www.red-lang.org/"><i class="icon-external-link"></i>Red Language</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://www.ruby-lang.org/en/"><i class="icon-external-link"></i>Ruby</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.veracrypt.fr/en/Home.html"><i class="icon-external-link"></i>Veracrypt</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://mangopi.org/"><i class="icon-external-link"></i>MangoPi</a></li>
+    <li><a href="https://sipeed.com/"><i class="icon-external-link"></i>Sipeed 资料站</a></li>
+    <li><a href="https://beagleboard.org/boards"><i class="icon-external-link"></i>BeagleBoard</a></li>
+    <li><a href="https://www.espressif.com/en/products/socs/esp32"><i class="icon-external-link"></i>Espressif ESP32</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/biohacking.html">
+    <i class="icon-folder-open icon-large"></i>Biohacking
+</a>
+</li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+<li>
+<a href="/category/trek.html">
+    <i class="icon-folder-open icon-large"></i>Trek
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-3">
+    <a href="/tag/ecriture.html">
+        <i class="icon-tag icon-large"></i>écriture
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/programmation.html">
+        <i class="icon-tag icon-large"></i>programmation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/va.html">
+        <i class="icon-tag icon-large"></i>VA
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/linux.html">
+        <i class="icon-tag icon-large"></i>Linux
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/dune.html">
+        <i class="icon-tag icon-large"></i>dune
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/prophete.html">
+        <i class="icon-tag icon-large"></i>prophète
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/livre.html">
+        <i class="icon-tag icon-large"></i>livre
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/serveur.html">
+        <i class="icon-tag icon-large"></i>serveur
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/narkantisme.html">
+        <i class="icon-tag icon-large"></i>narkantisme
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/informatique.html">
+        <i class="icon-tag icon-large"></i>informatique
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/arch.html">
+        <i class="icon-tag icon-large"></i>arch
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel-libre.html">
+        <i class="icon-tag icon-large"></i>logiciel libre
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel.html">
+        <i class="icon-tag icon-large"></i>logiciel
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/communisme.html">
+        <i class="icon-tag icon-large"></i>communisme
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/entreprise.html">
+        <i class="icon-tag icon-large"></i>entreprise
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/processeur.html">
+        <i class="icon-tag icon-large"></i>processeur
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/religion.html">
+        <i class="icon-tag icon-large"></i>religion
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/narkanta.html">
+        <i class="icon-tag icon-large"></i>narkanta
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/sysadmin.html">
+        <i class="icon-tag icon-large"></i>SysAdmin
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/adn.html">
+        <i class="icon-tag icon-large"></i>adn
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/hacking.html">
+        <i class="icon-tag icon-large"></i>hacking
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/roman.html">
+        <i class="icon-tag icon-large"></i>roman
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/qasari.html">
+        <i class="icon-tag icon-large"></i>qasari
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/hacker.html">
+        <i class="icon-tag icon-large"></i>hacker
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/innovation.html">
+        <i class="icon-tag icon-large"></i>innovation
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/sf.html">
+        <i class="icon-tag icon-large"></i>SF
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/cyber.html">
+        <i class="icon-tag icon-large"></i>cyber
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/freelance.html">
+        <i class="icon-tag icon-large"></i>freelance
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/escalade.html">
+        <i class="icon-tag icon-large"></i>escalade
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/trekking.html">
+        <i class="icon-tag icon-large"></i>trekking
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/machine.html">
+        <i class="icon-tag icon-large"></i>machine
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/mines.html">
+        <i class="icon-tag icon-large"></i>mines
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/ruby.html">
+        <i class="icon-tag icon-large"></i>ruby
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/islam.html">
+        <i class="icon-tag icon-large"></i>islam
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/capsule.html">
+        <i class="icon-tag icon-large"></i>capsule
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/ingenierie.html">
+        <i class="icon-tag icon-large"></i>ingenierie
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/langage.html">
+        <i class="icon-tag icon-large"></i>langage
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/industrie.html">
+        <i class="icon-tag icon-large"></i>industrie
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/trek.html">
+        <i class="icon-tag icon-large"></i>trek
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/laptop.html">
+        <i class="icon-tag icon-large"></i>laptop
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/c.html">
+        <i class="icon-tag icon-large"></i>c++
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/bureau.html">
+        <i class="icon-tag icon-large"></i>bureau
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/bretagne.html">
+        <i class="icon-tag icon-large"></i>bretagne
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/nucleaire.html">
+        <i class="icon-tag icon-large"></i>nucléaire
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>Copyright 2021 by Anthony Le Goff and licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+  Creative Commons Attribution 4.0 International License</a></p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

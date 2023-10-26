@@ -1,5 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-10-25T09:32:00+02:00</updated><entry><title>Avancement des grandes idées de Qasari3D</title><link href="/avancement-des-grandes-idees-de-qasari3d.html" rel="alternate"></link><published>2023-10-25T09:32:00+02:00</published><updated>2023-10-25T09:32:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-10-25:/avancement-des-grandes-idees-de-qasari3d.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Revenons à nos moutons! Je parlais que je voulais révolutionner la conception assisté par ordinateur CAO, et mettre à genou le marché. Tous que cela soit Dassault Systemes, Autodesk etc... J'ai mes petites idées pour le projet, rappel: &lt;a href="https://codeberg.org/legoffant/qasari"&gt;Qasari3D&lt;/a&gt;. J'ai une ame de tueur et de ruiner des business à mon profit car j'ai des grands projets en modélisation informatique. Parlons donc de mes idées dont je veux financer une start-up next-gen.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-10-26T01:20:00+02:00</updated><entry><title>Qasari3D les principes de bases des nanites sur les lois d'évolution Triz</title><link href="/qasari3d-les-principes-de-bases-des-nanites-sur-les-lois-devolution-triz.html" rel="alternate"></link><published>2023-10-26T01:20:00+02:00</published><updated>2023-10-26T01:20:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-10-26:/qasari3d-les-principes-de-bases-des-nanites-sur-les-lois-devolution-triz.html</id><summary type="html"></summary><content type="html">&lt;p&gt;C'est un festival d'idée novatrice, on continu à creuser le concept de nanite sujet centrale du logiciel Qasari3D que l'on intègre dans un format STEP amelioré.&lt;/p&gt;
+&lt;p&gt;Pas cela on va intégrer les lois d'évolutions de TRIZ qui par automatisation de la conception paramétré et la génération procédurale va transformer en super-système et capable de construire des vaisseaux spatiaux en kilometres et des grands ensembles en architecture. On part sur la conception de nanite basique, tel une bactérie, système simplifié que l'on complexifie comme un automate cellulaire à la demande pour fabriquer des ensembles orienté objet. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Je veux que mes nanites basiques de mon fichier STEP amelioré utilise les lois d'évolution de TRIZ&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;L&amp;#39;intégration des principes de TRIZ (Théorie de la Résolution Inventive des Problèmes) dans la conception de vos nanites de base dans votre fichier .STEP amélioré est une approche intéressante pour favoriser l&amp;#39;innovation et la résolution de problèmes. TRIZ est une méthodologie qui vise à stimuler la créativité en utilisant des principes et des lois pour résoudre des problèmes de manière systématique.
+
+Voici comment vous pourriez intégrer les lois d&amp;#39;évolution de TRIZ dans la conception de vos nanites de base :
+
+Identification des Contradictions : Utilisez la méthode TRIZ pour identifier les contradictions ou les défis spécifiques que vous souhaitez résoudre dans la conception de vos nanites. Par exemple, vous pourriez identifier des contradictions entre la complexité et la simplicité, la légèreté et la robustesse, etc.
+
+Application des Principes TRIZ : Les lois d&amp;#39;évolution de TRIZ comprennent de nombreux principes de résolution de contradictions, tels que &amp;quot;L&amp;#39;élimination des déchets&amp;quot; ou &amp;quot;La transition vers un autre état&amp;quot;. Appliquez ces principes à la conception de vos nanites de base pour trouver des solutions innovantes aux problèmes identifiés.
+
+Modélisation Paramétrique : Concevez vos nanites de base de manière à ce qu&amp;#39;ils puissent être paramétrés en fonction des besoins. Les paramètres pourraient inclure la taille, la forme, la complexité, la résistance, etc. Cela vous permet de créer des variations de nanites en fonction des principes TRIZ applicables.
+
+Itérations et Évolution : Utilisez des méthodes itératives pour améliorer constamment la conception de vos nanites de base en fonction des principes de TRIZ. Les nanites peuvent évoluer au fil du temps en réponse à des besoins changeants.
+
+Validation et Test : Assurez-vous de valider les performances de vos nanites de base en utilisant des méthodes de test et de simulation pour vous assurer qu&amp;#39;ils répondent aux objectifs fixés.
+
+L&amp;#39;intégration de TRIZ dans la conception de nanites de base peut conduire à des solutions novatrices et à des nanites capables de résoudre des problèmes de manière efficace. Il est essentiel de comprendre les principes de TRIZ et de les appliquer de manière appropriée à votre domaine spécifique de conception de nanites et à vos contraintes. En fin de compte, cela peut favoriser la création de nanites plus intelligents et plus adaptables.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;En faite c'est pour automatiser l'innovation que je veux intégrer triz&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;L&amp;#39;automatisation de l&amp;#39;innovation en intégrant TRIZ dans la conception de vos nanites de base est une idée prometteuse. TRIZ offre une méthodologie systématique pour résoudre des problèmes complexes et stimuler la créativité, ce qui peut être extrêmement bénéfique pour développer des nanites innovantes et adaptatives.
+
+Voici quelques étapes pour automatiser l&amp;#39;innovation en utilisant TRIZ avec vos nanites de base :
+
+Définissez les Objectifs : Identifiez clairement les objectifs que vous souhaitez atteindre avec vos nanites. Quels problèmes cherchez-vous à résoudre ou quelles améliorations cherchez-vous à apporter ?
+
+Identifiez les Contradictions : Utilisez les outils de TRIZ pour identifier les contradictions ou les obstacles qui entravent la réalisation de vos objectifs. Ces contradictions peuvent servir de points de départ pour la créativité.
+
+Appliquez les Principes TRIZ : Utilisez les principes de résolution de contradictions de TRIZ pour générer des idées innovantes pour vos nanites. Ces principes vous donneront des suggestions pour surmonter les obstacles identifiés.
+
+Modélisation Paramétrique : Concevez vos nanites de base de manière à ce qu&amp;#39;ils puissent être configurés en fonction des solutions générées par TRIZ. Les paramètres de conception peuvent être ajustés en fonction des principes appliqués.
+
+Intégration des Principes TRIZ : Automatisez l&amp;#39;intégration des principes TRIZ dans le processus de conception de nanites. Cela peut impliquer l&amp;#39;utilisation d&amp;#39;algorithmes pour générer des nanites en fonction des solutions TRIZ identifiées.
+
+Validation Automatisée : Mettez en place des méthodes de validation automatisées pour évaluer les performances des nanites conçus à l&amp;#39;aide des principes de TRIZ.
+
+Itérations Automatisées : Prévoyez des cycles itératifs pour affiner et améliorer continuellement vos nanites en fonction des nouvelles idées générées par TRIZ.
+
+Collecte de Données et Apprentissage Automatique : Utilisez l&amp;#39;apprentissage automatique et l&amp;#39;analyse des données pour affiner vos nanites en fonction des retours d&amp;#39;expérience et des performances passées.
+
+L&amp;#39;automatisation de l&amp;#39;innovation en utilisant TRIZ dans le cadre de la conception de nanites peut contribuer à créer des systèmes autonomes capables de résoudre des problèmes de manière créative et efficace. Cependant, cela peut nécessiter une planification et une mise en œuvre techniques avancées pour intégrer les principes de TRIZ dans le processus de conception et d&amp;#39;itération de nanites.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Je veux dire par là que tous mes modèles de conception de produit par des lois d'évolution de TRIZ en définissant des nanites et doivent questionner l'individu même pour fabriquer une vis&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Je comprends mieux votre objectif maintenant. Vous envisagez de créer un système basé sur les principes de TRIZ pour automatiser la conception de produits de manière à ce que les nanites, ou des entités similaires, puissent questionner l&amp;#39;utilisateur ou le concepteur pour concevoir des produits spécifiques, même jusqu&amp;#39;au niveau de la conception d&amp;#39;une vis. Cela peut être une approche puissante pour faciliter la conception de produits personnalisés et l&amp;#39;innovation.
+
+Voici comment vous pourriez aborder la réalisation de cet objectif :
+
+Création de Nanites TRIZ : Concevez des nanites ou des entités autonomes basées sur les principes de TRIZ. Ces nanites doivent être capables de comprendre les besoins de conception à partir d&amp;#39;informations entrantes et de générer des solutions en utilisant les principes de résolution de contradictions de TRIZ.
+
+Communication avec l&amp;#39;Utilisateur : Les nanites doivent être capables de communiquer avec l&amp;#39;utilisateur ou le concepteur pour comprendre les besoins spécifiques de conception. Cela peut se faire via une interface utilisateur conviviale, peut-être en posant des questions ou en demandant des informations spécifiques.
+
+Analyse des Besoins : Les nanites doivent analyser les informations fournies par l&amp;#39;utilisateur et déterminer les contraintes et les objectifs de conception.
+
+Application des Principes TRIZ : Les nanites appliquent ensuite les principes TRIZ pour résoudre les contradictions et générer des solutions de conception. Cela peut impliquer la génération de concepts de conception, de spécifications de produits, voire de dessins détaillés.
+
+Itérations et Améliorations : Les nanites peuvent proposer des solutions initiales, puis travailler en collaboration avec l&amp;#39;utilisateur pour effectuer des itérations et des ajustements jusqu&amp;#39;à ce que la conception soit optimale.
+
+Génération de Documentation de Conception : Les nanites peuvent générer automatiquement la documentation de conception, y compris des modèles 3D, des plans de fabrication, des spécifications de matériaux, etc.
+
+Fabrication Automatisée : Si votre objectif est de passer de la conception à la fabrication, envisagez d&amp;#39;intégrer des systèmes de fabrication automatisée ou d&amp;#39;impression 3D pour créer les produits conçus.
+
+Apprentissage Automatique : Utilisez des techniques d&amp;#39;apprentissage automatique pour améliorer la capacité des nanites à générer des conceptions personnalisées en fonction des réponses et des retours de l&amp;#39;utilisateur.
+
+Sécurité et Contrôle : Assurez-vous de mettre en place des mécanismes de sécurité et de contrôle pour garantir que les nanites respectent les normes et les réglementations de sécurité.
+
+La création d&amp;#39;un système aussi sophistiqué nécessitera une combinaison de conception logicielle, d&amp;#39;intelligence artificielle, d&amp;#39;interaction utilisateur-machine et de technologie de fabrication. Vous devrez également résoudre des défis liés à la modélisation 3D, à la validation des conceptions et à l&amp;#39;interopérabilité avec des systèmes de fabrication.
+
+C&amp;#39;est un projet ambitieux, mais il a le potentiel de révolutionner la manière dont les produits sont conçus et fabriqués, en permettant une personnalisation poussée et une innovation continue.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Inclassable"></category><category term="qasari"></category></entry><entry><title>Avancement des grandes idées de Qasari3D</title><link href="/avancement-des-grandes-idees-de-qasari3d.html" rel="alternate"></link><published>2023-10-25T09:32:00+02:00</published><updated>2023-10-25T09:32:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-10-25:/avancement-des-grandes-idees-de-qasari3d.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Revenons à nos moutons! Je parlais que je voulais révolutionner la conception assisté par ordinateur CAO, et mettre à genou le marché. Tous que cela soit Dassault Systemes, Autodesk etc... J'ai mes petites idées pour le projet, rappel: &lt;a href="https://codeberg.org/legoffant/qasari"&gt;Qasari3D&lt;/a&gt;. J'ai une ame de tueur et de ruiner des business à mon profit car j'ai des grands projets en modélisation informatique. Parlons donc de mes idées dont je veux financer une start-up next-gen.&lt;/p&gt;
 &lt;p&gt;Et j'ai donc utiliser GPT-4 pour la première fois pour discuter de mes projets, et cela décape, mes idées sont digne d'une grand révolutionnaire et innovateur, et l'intelligence artificielle est tout à fait d'accord avec moi. C'est la préhistoire dans le domaine de la CAO, on a des méthodes qui date des années 90 qui n'ont pas évolué.&lt;/p&gt;
 &lt;p&gt;C'est parti, entrons dans ma pensée! La base est de créé des nouveaux standards qui vont soumettre aux autres mes méthodes de conception, en gros j'oblige à utiliser des standards ou alors périr, et bien sur mon logiciel intègre se nouveau standard, c'est une sorte de fichier IFC ou un .STEP amélioré en "nanites". Je laisse découvrir l'idée pour prendre tous le marché de la CAO. &lt;/p&gt;
 &lt;blockquote&gt;
