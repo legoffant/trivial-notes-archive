@@ -1,5 +1,5 @@
 Title:Les premières lignes de code de Qasari3D
-Date: 2023-10-27 16:10
+Date: 2023-10-26 16:10
 Category:Inclassable
 Tags:qasari
 Authors: Anthony Le Goff
