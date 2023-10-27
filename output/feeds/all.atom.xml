@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-10-27T04:21:00+02:00</updated><entry><title>Ressource pour apprendre la génération procédurale et le moteur 2D/3D</title><link href="/ressource-pour-apprendre-la-generation-procedurale-et-le-moteur-2d3d.html" rel="alternate"></link><published>2023-10-27T04:21:00+02:00</published><updated>2023-10-27T04:21:00+02:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-10-27:/ressource-pour-apprendre-la-generation-procedurale-et-le-moteur-2d3d.html</id><summary type="html"></summary><content type="html">&lt;h3&gt;Apprendre à créer un moteur 2D&lt;/h3&gt;
 &lt;p&gt;Créer un moteur 2D pour les jeux vidéo est un excellent moyen d'apprendre les fondamentaux de la programmation de jeux, de la gestion des graphismes et de l'optimisation. Voici une liste de ressources pour vous aider à apprendre à créer un moteur 2D pour les jeux :&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tutoriels en ligne&lt;/strong&gt; :
-1. &lt;strong&gt;LazyFoo's SDL Tutorials&lt;/strong&gt; : Une série de tutoriels qui couvrent la création d'un moteur de jeu 2D à l'aide de la bibliothèque SDL (Simple DirectMedia Layer). Site Web : &lt;a href="http://lazyfoo.net/SDL_tutorials/"&gt;LazyFoo.net&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tutoriels en ligne&lt;/strong&gt; :&lt;/p&gt;
 &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LazyFoo's SDL Tutorials&lt;/strong&gt; : Une série de tutoriels qui couvrent la création d'un moteur de jeu 2D à l'aide de la bibliothèque SDL (Simple DirectMedia Layer). Site Web : &lt;a href="http://lazyfoo.net/SDL_tutorials/"&gt;LazyFoo.net&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;SFML Tutorials&lt;/strong&gt; : Des tutoriels pour créer des jeux 2D avec la bibliothèque SFML (Simple and Fast Multimedia Library). Site Web : &lt;a href="https://www.sfml-dev.org/tutorials/2.5/"&gt;SFML Tutorials&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -14,9 +16,11 @@
 &lt;p&gt;&lt;strong&gt;GameFromScratch Tutorials&lt;/strong&gt; : Une variété de tutoriels sur le développement de jeux, y compris des moteurs 2D. Site Web : &lt;a href="http://www.gamefromscratch.com/"&gt;GameFromScratch&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Livres&lt;/strong&gt; :
-1. &lt;strong&gt;"SFML Game Development" par Jan Haller, Henrik Vogelius Hansson, et Artur Moreira&lt;/strong&gt; : Ce livre vous guide dans le développement de jeux 2D en utilisant la bibliothèque SFML.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Livres&lt;/strong&gt; :&lt;/p&gt;
 &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;"SFML Game Development" par Jan Haller, Henrik Vogelius Hansson, et Artur Moreira&lt;/strong&gt; : Ce livre vous guide dans le développement de jeux 2D en utilisant la bibliothèque SFML.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;"Beginning C++ Through Game Programming" par Michael Dawson&lt;/strong&gt; : Ce livre vous apprendra à programmer en C++ en développant des jeux 2D simples.&lt;/p&gt;
 &lt;/li&gt;
@@ -24,9 +28,11 @@
 &lt;p&gt;&lt;strong&gt;"2D Game Development with LibGDX" par Lee Stemkoski&lt;/strong&gt; : Si vous préférez utiliser LibGDX, ce livre vous montrera comment créer des jeux 2D multiplateformes.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Cours en ligne&lt;/strong&gt; :
-1. &lt;strong&gt;Coursera - "Game Development for Modern Platforms"&lt;/strong&gt; : Ce cours vous apprendra à développer des jeux 2D pour différentes plates-formes en utilisant Unity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cours en ligne&lt;/strong&gt; :&lt;/p&gt;
 &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Coursera - "Game Development for Modern Platforms"&lt;/strong&gt; : Ce cours vous apprendra à développer des jeux 2D pour différentes plates-formes en utilisant Unity.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Udemy - "Complete C# Unity Game Developer 2D"&lt;/strong&gt; : Un cours qui couvre le développement de jeux 2D avec Unity et C#.&lt;/p&gt;
 &lt;/li&gt;
@@ -34,15 +40,23 @@
 &lt;p&gt;&lt;strong&gt;Pikuma - "C++ Game Engine Programming"&lt;/strong&gt; : Apprendre les fondamentaux du 2D game engine en utilisant C++, SDL, et Lua scripting&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Forums et Communautés&lt;/strong&gt; :
-1. &lt;strong&gt;Stack Overflow - Game Development Section&lt;/strong&gt; : Un endroit utile pour poser des questions et obtenir de l'aide concernant le développement de jeux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Forums et Communautés&lt;/strong&gt; :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;gamedev.net&lt;/strong&gt; : Une communauté de développeurs de jeux où vous pouvez trouver des tutoriels, des articles et des forums de discussion.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stack Overflow - Game Development Section&lt;/strong&gt; : Un endroit utile pour poser des questions et obtenir de l'aide concernant le développement de jeux.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;gamedev.net&lt;/strong&gt; : Une communauté de développeurs de jeux où vous pouvez trouver des tutoriels, des articles et des forums de discussion.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Documentation des bibliothèques&lt;/strong&gt; :
-1. &lt;strong&gt;Documentation de SDL&lt;/strong&gt; : La documentation officielle de la bibliothèque SDL est un excellent point de départ pour apprendre à utiliser SDL dans le développement de jeux 2D.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Documentation des bibliothèques&lt;/strong&gt; :&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Documentation de SFML&lt;/strong&gt; : Si vous utilisez SFML, la documentation officielle est une ressource précieuse pour apprendre à créer des jeux 2D.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Documentation de SDL&lt;/strong&gt; : La documentation officielle de la bibliothèque SDL est un excellent point de départ pour apprendre à utiliser SDL dans le développement de jeux 2D.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Documentation de SFML&lt;/strong&gt; : Si vous utilisez SFML, la documentation officielle est une ressource précieuse pour apprendre à créer des jeux 2D.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;N'oubliez pas que la création d'un moteur de jeu 2D peut être un processus complexe, mais c'est une expérience d'apprentissage précieuse. Commencez par des projets simples, suivez les tutoriels et les ressources en ligne, et progressez à mesure que vous acquérez de l'expérience. La pratique constante est la clé pour devenir un développeur de jeux compétent.&lt;/p&gt;
 &lt;h3&gt;Gérer un moteur 3D Avec Vulkan&lt;/h3&gt;

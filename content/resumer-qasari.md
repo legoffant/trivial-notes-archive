@@ -48,7 +48,7 @@ Liste des modules "CORE"
     - Construit comme un moteur de jeu.
 
 8. **Génération Procédurale** :
-    - Module de génération procédurale : Permet la création de modèles et de formes géométriques à l'aide d'algorithmes de génération procédurale. Il peut utiliser des scripts personnalisés en Lua pour définir ces algorithmes. Implementation: Boost.Geometry
+    - Module de génération procédurale : Permet la création de modèles et de formes géométriques à l'aide d'algorithmes de génération procédurale. Il peut utiliser des scripts personnalisés en Lua pour définir ces algorithmes. Implementation: Boost.Geometry et openFrameworks (OF) (equivalent à processing).
 
 9. **Kernel Géométrique** :
     - Kernel géométrique : Fournit des fonctionnalités essentielles pour le traitement et la manipulation des données géométriques, y compris des opérations de géométrie de base, de modélisation, et de rendu.
