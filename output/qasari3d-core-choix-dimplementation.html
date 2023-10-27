@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Qasari3D Core choix d'implémentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/VA.html">VA</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/date.html">Date</a></li>
+                <li><a href="/pages/BTC.html">Don BTC</a></li>
+                <li><a href="/pages/Kor51.html">Kor51</a></li>
+                <li><a href="/pages/lticba.html">LTICBA</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/biohacking.html">
+						<i class="icon-folder-open icon-large"></i>Biohacking
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/trek.html">
+						<i class="icon-folder-open icon-large"></i>Trek
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Qasari3D Core choix d'implémentation">
+                                        Qasari3D Core choix d'implémentation
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2023-10-27T03:33:00+02:00">
+        <i class="icon-calendar"></i>ven. 27 octobre 2023
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/qasari.html"><i class="icon-tag"></i>qasari</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Voila un résumer de comment est architecturé la partie "Core" de Qasari à programmer et développer, avec l'implémentation technologique.
+Rappel rapide des outils de développement:</p>
+<ul>
+<li>Langage C++</li>
+<li>Compilateur LLVM</li>
+<li>Build manager Cmake</li>
+<li>Documentation Doxigen</li>
+<li>Plateforme UNIX Like</li>
+<li>Editeur de texte (neo)vim</li>
+</ul>
+<p>Liste des modules "CORE"</p>
+<ol>
+<li><strong>Initialisation du Projet</strong> :</li>
+<li>
+<p>Module d'initialisation du projet : Créez un nouveau projet de CAO, configurez les paramètres initiaux, gérez les fichiers de projet et configurez l'environnement de travail.</p>
+</li>
+<li>
+<p><strong>Gestion des Nanites</strong> :</p>
+</li>
+<li>Module de création de nanites : Permet la création, l'édition et l'organisation des nanites, qui servent d'éléments de base pour la modélisation.</li>
+<li>Module de transformation : Gère les transformations géométriques (translation, rotation, mise à l'échelle) pour les nanites et les objets.</li>
+<li>Module d'interaction avec les nanites : Pour interagir avec les nanites via une interface utilisateur, y compris la sélection, la modification et la suppression.</li>
+<li>Module de cotation automatique : Pour générer automatiquement des cotations sur les dessins à l'aide des nanites.</li>
+<li>
+<p>Module de loi d'évolution de TRIZ pour gérer l'automatisation des nanites</p>
+</li>
+<li>
+<p><strong>Scripts Personnalisés en Lua</strong> :</p>
+</li>
+<li>Module d'exécution de scripts Lua : Charge, exécute et interagit avec des scripts Lua personnalisés. Fournit une interface pour les scripts Lua pour interagir avec l'ensemble de l'application, y compris le moteur de modélisation et le générateur procédural. Implémentation: LuaBridge comme "Binding C++"</li>
+<li>
+<p>Permet d'écrire également en mode console CLI des formes complexes et personnalisés</p>
+</li>
+<li>
+<p><strong>Interface Utilisateur</strong> :</p>
+</li>
+<li>Module d'interface utilisateur : Crée et gère l'interface utilisateur de l'application, y compris les panneaux de dessin, les menus, les boîtes de dialogue et les outils de dessin. Implementation: Dear ImGui</li>
+<li>
+<p>Intégration de Lua dans l'interface utilisateur : Permet aux utilisateurs d'utiliser des scripts Lua directement à partir de l'interface utilisateur. </p>
+</li>
+<li>
+<p><strong>Gestion des Fichiers</strong> :</p>
+</li>
+<li>Module de gestion de fichiers : Gère le chargement, l'enregistrement et la gestion des fichiers de dessins et de projets.</li>
+<li>
+<p>Gestion de conversion des .STEP amelioré</p>
+</li>
+<li>
+<p><strong>Optimisation et Performance</strong> :</p>
+</li>
+<li>
+<p>Module d'optimisation de performance : Veille à ce que l'application fonctionne de manière fluide, même avec des dessins complexes.</p>
+</li>
+<li>
+<p><strong>Moteur de Modélisation 2D/3D</strong> :</p>
+</li>
+<li>Moteur de modélisation : Inclut les composants pour la création, la modification et la visualisation de modèles en 2D et en 3D. Gère les objets, les matériaux, les éclairages, les textures, etc. Implementation: Vulkan + GLFW + GLM (vkvg pour le 2D vectoriel)</li>
+<li>Intégration de nanites : Permet l'utilisation des nanites comme composants du moteur de modélisation, permettant la création de modèles complexes.</li>
+<li>
+<p>Construit comme un moteur de jeu.</p>
+</li>
+<li>
+<p><strong>Génération Procédurale</strong> :</p>
+</li>
+<li>
+<p>Module de génération procédurale : Permet la création de modèles et de formes géométriques à l'aide d'algorithmes de génération procédurale. Il peut utiliser des scripts personnalisés en Lua pour définir ces algorithmes. Implementation: Boost.Geometry</p>
+</li>
+<li>
+<p><strong>Kernel Géométrique</strong> :</p>
+</li>
+<li>Kernel géométrique : Fournit des fonctionnalités essentielles pour le traitement et la manipulation des données géométriques, y compris des opérations de géométrie de base, de modélisation, et de rendu.</li>
+<li>
+<p>Native utilise la generation procédurale basée sur les automates cellulaires. Implémentation: Libfive</p>
+</li>
+<li>
+<p><strong>Base de Données</strong> :</p>
+</li>
+<li>
+<p>Module de gestion de base de données : Intègre un système de gestion de base de données pour stocker et gérer des projets, des modèles, des scripts, des métadonnées, et d'autres informations pertinentes. Assurez-vous que la base de données est capable de gérer les opérations CRUD (Create, Read, Update, Delete) et de fournir des fonctionnalités de recherche et de requête. Implémentation: SurrealDB pour de la graph database noSQL.</p>
+</li>
+<li>
+<p><strong>Documentation et Aide</strong> :</p>
+<ul>
+<li>Module de documentation : Fournit de l'aide et de la documentation aux utilisateurs, y compris des tutoriels pour l'utilisation des nanites, des scripts Lua, de la génération procédurale, et du kernel géométrique. Implémentation: Doxygen + Wiki + CLI</li>
+</ul>
+</li>
+<li>
+<p><strong>Tests et Débogage</strong> :</p>
+<ul>
+<li>Module de tests et de débogage : Facilite les tests unitaires, le débogage, et l'assurance qualité de l'ensemble de l'application.</li>
+</ul>
+</li>
+<li>
+<p><strong>Sauvegarde et Contrôle de Version</strong> :</p>
+<ul>
+<li>Module de sauvegarde et de contrôle de version : Gère les versions et la sauvegarde des dessins, des projets, et des données générées par la génération procédurale. Implémentation: Perforce Helix Core pour gérer des .STEP amelioré en binaire.</li>
+</ul>
+</li>
+</ol>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://creativecommons.org/"><i class="icon-external-link"></i>Creative Commons</a></li>
+    <li><a href="https://www.eff.org/fr"><i class="icon-external-link"></i>Electronic Frontier Foundation</a></li>
+    <li><a href="https://wiki.mdl29.net/doku.php?id=start"><i class="icon-external-link"></i>Maison du Libre 29</a></li>
+    <li><a href="https://www.journalduhacker.net/"><i class="icon-external-link"></i>Le journal du Hacker</a></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview"><i class="icon-external-link"></i>Proxmox VE</a></li>
+    <li><a href="https://www.linux-kvm.org/page/Main_Page"><i class="icon-external-link"></i>KVM</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://www.red-lang.org/"><i class="icon-external-link"></i>Red Language</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://www.ruby-lang.org/en/"><i class="icon-external-link"></i>Ruby</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.veracrypt.fr/en/Home.html"><i class="icon-external-link"></i>Veracrypt</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://mangopi.org/"><i class="icon-external-link"></i>MangoPi</a></li>
+    <li><a href="https://sipeed.com/"><i class="icon-external-link"></i>Sipeed 资料站</a></li>
+    <li><a href="https://beagleboard.org/boards"><i class="icon-external-link"></i>BeagleBoard</a></li>
+    <li><a href="https://www.espressif.com/en/products/socs/esp32"><i class="icon-external-link"></i>Espressif ESP32</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/biohacking.html">
+    <i class="icon-folder-open icon-large"></i>Biohacking
+</a>
+</li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+<li>
+<a href="/category/trek.html">
+    <i class="icon-folder-open icon-large"></i>Trek
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-2">
+    <a href="/tag/narkantisme.html">
+        <i class="icon-tag icon-large"></i>narkantisme
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/laptop.html">
+        <i class="icon-tag icon-large"></i>laptop
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/arch.html">
+        <i class="icon-tag icon-large"></i>arch
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/langage.html">
+        <i class="icon-tag icon-large"></i>langage
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/hacking.html">
+        <i class="icon-tag icon-large"></i>hacking
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/informatique.html">
+        <i class="icon-tag icon-large"></i>informatique
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/sysadmin.html">
+        <i class="icon-tag icon-large"></i>SysAdmin
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/bureau.html">
+        <i class="icon-tag icon-large"></i>bureau
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/ecriture.html">
+        <i class="icon-tag icon-large"></i>écriture
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/hacker.html">
+        <i class="icon-tag icon-large"></i>hacker
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/freelance.html">
+        <i class="icon-tag icon-large"></i>freelance
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/ruby.html">
+        <i class="icon-tag icon-large"></i>ruby
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/communisme.html">
+        <i class="icon-tag icon-large"></i>communisme
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/trekking.html">
+        <i class="icon-tag icon-large"></i>trekking
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/processeur.html">
+        <i class="icon-tag icon-large"></i>processeur
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/bretagne.html">
+        <i class="icon-tag icon-large"></i>bretagne
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/prophete.html">
+        <i class="icon-tag icon-large"></i>prophète
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/ingenierie.html">
+        <i class="icon-tag icon-large"></i>ingenierie
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/c.html">
+        <i class="icon-tag icon-large"></i>c++
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/narkanta.html">
+        <i class="icon-tag icon-large"></i>narkanta
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/sf.html">
+        <i class="icon-tag icon-large"></i>SF
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/serveur.html">
+        <i class="icon-tag icon-large"></i>serveur
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/adn.html">
+        <i class="icon-tag icon-large"></i>adn
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/religion.html">
+        <i class="icon-tag icon-large"></i>religion
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/innovation.html">
+        <i class="icon-tag icon-large"></i>innovation
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/machine.html">
+        <i class="icon-tag icon-large"></i>machine
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/va.html">
+        <i class="icon-tag icon-large"></i>VA
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel-libre.html">
+        <i class="icon-tag icon-large"></i>logiciel libre
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/trek.html">
+        <i class="icon-tag icon-large"></i>trek
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/dune.html">
+        <i class="icon-tag icon-large"></i>dune
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/mines.html">
+        <i class="icon-tag icon-large"></i>mines
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/capsule.html">
+        <i class="icon-tag icon-large"></i>capsule
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/programmation.html">
+        <i class="icon-tag icon-large"></i>programmation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/islam.html">
+        <i class="icon-tag icon-large"></i>islam
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/entreprise.html">
+        <i class="icon-tag icon-large"></i>entreprise
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/cyber.html">
+        <i class="icon-tag icon-large"></i>cyber
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/qasari.html">
+        <i class="icon-tag icon-large"></i>qasari
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/escalade.html">
+        <i class="icon-tag icon-large"></i>escalade
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/industrie.html">
+        <i class="icon-tag icon-large"></i>industrie
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/nucleaire.html">
+        <i class="icon-tag icon-large"></i>nucléaire
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/livre.html">
+        <i class="icon-tag icon-large"></i>livre
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/linux.html">
+        <i class="icon-tag icon-large"></i>Linux
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/roman.html">
+        <i class="icon-tag icon-large"></i>roman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel.html">
+        <i class="icon-tag icon-large"></i>logiciel
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>Copyright 2021 by Anthony Le Goff and licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+  Creative Commons Attribution 4.0 International License</a></p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

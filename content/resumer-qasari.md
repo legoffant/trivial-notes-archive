@@ -18,14 +18,14 @@ Rappel rapide des outils de développement:
 Liste des modules "CORE"
 
 1. **Initialisation du Projet** :
-   - Module d'initialisation du projet : Créez un nouveau projet de CAO, configurez les paramètres initiaux, gérez les fichiers de projet et configurez l'environnement de travail.
+    - Module d'initialisation du projet : Créez un nouveau projet de CAO, configurez les paramètres initiaux, gérez les fichiers de projet et configurez l'environnement de travail.
 
 2. **Gestion des Nanites** :
-   - Module de création de nanites : Permet la création, l'édition et l'organisation des nanites, qui servent d'éléments de base pour la modélisation.
-   - Module de transformation : Gère les transformations géométriques (translation, rotation, mise à l'échelle) pour les nanites et les objets.
-   - Module d'interaction avec les nanites : Pour interagir avec les nanites via une interface utilisateur, y compris la sélection, la modification et la suppression.
-   - Module de cotation automatique : Pour générer automatiquement des cotations sur les dessins à l'aide des nanites.
-   - Module de loi d'évolution de TRIZ pour gérer l'automatisation des nanites
+    - Module de création de nanites : Permet la création, l'édition et l'organisation des nanites, qui servent d'éléments de base pour la modélisation.
+    - Module de transformation : Gère les transformations géométriques (translation, rotation, mise à l'échelle) pour les nanites et les objets.
+    - Module d'interaction avec les nanites : Pour interagir avec les nanites via une interface utilisateur, y compris la sélection, la modification et la suppression.
+    - Module de cotation automatique : Pour générer automatiquement des cotations sur les dessins à l'aide des nanites.
+    - Module de loi d'évolution de TRIZ pour gérer l'automatisation des nanites
 
 3. **Scripts Personnalisés en Lua** :
    - Module d'exécution de scripts Lua : Charge, exécute et interagit avec des scripts Lua personnalisés. Fournit une interface pour les scripts Lua pour interagir avec l'ensemble de l'application, y compris le moteur de modélisation et le générateur procédural. Implémentation: LuaBridge comme "Binding C++"
