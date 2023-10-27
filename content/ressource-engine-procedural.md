@@ -10,6 +10,7 @@ Summary:
 Créer un moteur 2D pour les jeux vidéo est un excellent moyen d'apprendre les fondamentaux de la programmation de jeux, de la gestion des graphismes et de l'optimisation. Voici une liste de ressources pour vous aider à apprendre à créer un moteur 2D pour les jeux :
 
 **Tutoriels en ligne** :
+
 1. **LazyFoo's SDL Tutorials** : Une série de tutoriels qui couvrent la création d'un moteur de jeu 2D à l'aide de la bibliothèque SDL (Simple DirectMedia Layer). Site Web : [LazyFoo.net](http://lazyfoo.net/SDL_tutorials/)
 
 2. **SFML Tutorials** : Des tutoriels pour créer des jeux 2D avec la bibliothèque SFML (Simple and Fast Multimedia Library). Site Web : [SFML Tutorials](https://www.sfml-dev.org/tutorials/2.5/)
@@ -19,6 +20,7 @@ Créer un moteur 2D pour les jeux vidéo est un excellent moyen d'apprendre les 
 4. **GameFromScratch Tutorials** : Une variété de tutoriels sur le développement de jeux, y compris des moteurs 2D. Site Web : [GameFromScratch](http://www.gamefromscratch.com/)
 
 **Livres** :
+
 1. **"SFML Game Development" par Jan Haller, Henrik Vogelius Hansson, et Artur Moreira** : Ce livre vous guide dans le développement de jeux 2D en utilisant la bibliothèque SFML.
 
 2. **"Beginning C++ Through Game Programming" par Michael Dawson** : Ce livre vous apprendra à programmer en C++ en développant des jeux 2D simples.
@@ -26,6 +28,7 @@ Créer un moteur 2D pour les jeux vidéo est un excellent moyen d'apprendre les 
 3. **"2D Game Development with LibGDX" par Lee Stemkoski** : Si vous préférez utiliser LibGDX, ce livre vous montrera comment créer des jeux 2D multiplateformes.
 
 **Cours en ligne** :
+
 1. **Coursera - "Game Development for Modern Platforms"** : Ce cours vous apprendra à développer des jeux 2D pour différentes plates-formes en utilisant Unity.
 
 2. **Udemy - "Complete C# Unity Game Developer 2D"** : Un cours qui couvre le développement de jeux 2D avec Unity et C#.
@@ -33,11 +36,13 @@ Créer un moteur 2D pour les jeux vidéo est un excellent moyen d'apprendre les 
 3. **Pikuma - "C++ Game Engine Programming"** : Apprendre les fondamentaux du 2D game engine en utilisant C++, SDL, et Lua scripting
 
 **Forums et Communautés** :
+
 1. **Stack Overflow - Game Development Section** : Un endroit utile pour poser des questions et obtenir de l'aide concernant le développement de jeux.
 
 2. **gamedev.net** : Une communauté de développeurs de jeux où vous pouvez trouver des tutoriels, des articles et des forums de discussion.
 
 **Documentation des bibliothèques** :
+
 1. **Documentation de SDL** : La documentation officielle de la bibliothèque SDL est un excellent point de départ pour apprendre à utiliser SDL dans le développement de jeux 2D.
 
 2. **Documentation de SFML** : Si vous utilisez SFML, la documentation officielle est une ressource précieuse pour apprendre à créer des jeux 2D.
