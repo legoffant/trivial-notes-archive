@@ -25,31 +25,31 @@ En 60 heures voila les chapitres à apprendre à chacun dès le collège (4eme �
 
 I] Tronc de base (15heures)
 
-* #1 Histoire de l'informatique
-* #2 Mouvement et eco-système open source
-* #3 Les hackers
-* #4 Chercher de l'aide sur internet
-* #5 Assistance avec intelligence artificielle
-* #6 Base sur les lois et la cybercriminalité
-* #7 Cyberculture
-* #8 Principe des machines
+* 1# Histoire de l'informatique
+* 2# Mouvement et eco-système open source
+* 3# Les hackers
+* 4# Chercher de l'aide sur internet
+* 5# Assistance avec intelligence artificielle
+* 6# Base sur les lois et la cybercriminalité
+* 7# Cyberculture
+* 8# Principe des machines
 
 II] Linux (15 heures)
 
-* #1 Definition d'un logiciel libre
-* #2 Pourquoi apprendre Linux
-* #3 Les distributions minimalistes
-* #4 Les bases du shell et de la ligne de commande
-* #5 Notion de script shell
-* #6 Gestion de paquets
-* #7 Disques et systèmes de fichier
+* 1# Definition d'un logiciel libre
+* 2# Pourquoi apprendre Linux
+* 3# Les distributions minimalistes
+* 4# Les bases du shell et de la ligne de commande
+* 5# Notion de script shell
+* 6# Gestion de paquets
+* 7# Disques et systèmes de fichier
 
 III] Réseaux (5 heures)
 
-* #1 Notion de réseau informatique
-* #2 Protocole TCP/IP
-* #3 Modèle OSI
-* #4 Les outils réseaux
+* 1# Notion de réseau informatique
+* 2# Protocole TCP/IP
+* 3# Modèle OSI
+* 4# Les outils réseaux
 
 IV] Installer Arch Linux (20 - 40 heures)
 
@@ -61,15 +61,15 @@ VI] Sauvegarde (2 heures)
 
 VII] Programmation (20 heures)
 
-* #1 Configurer un environnement en python
-* #2 Base de Python
-* #3 Programmation orienté-objet
-* #4 Mini-projet python
+* 1# Configurer un environnement en python
+* 2# Base de Python
+* 3# Programmation orienté-objet
+* 4# Mini-projet python
 
 VIII] Git et le version contrôle (5 heures)
 
-* #1 base de Git
-* #2 Contribuer à l'open source
+* 1# base de Git
+* 2# Contribuer à l'open source
 
 
 Pour que cela soit totalement possible il faut bien sur que chaque élèves est un ordinateur pour lancer une machine virtuelle et apprendre dans un environnement containeriser. 
