@@ -23,3 +23,9 @@ Quelques éléments à connaitre:
 * [What is a DAO? Mapping Out the Ecosystem](https://thedefiant.io/what-is-a-dao)
 * [Create a Web3 startup: Everything You Need to Know to Build a Successful Web3 Company](https://julianivaldy.medium.com/create-a-web3-startup-everything-you-need-to-know-to-build-a-successful-web3-company-4f70fbf1bee7)
 * [100 tools to create and grow your Web3 startup (NFT, DeFi, DApp, DAO…)](https://julianivaldy.medium.com/100-tools-to-create-and-grow-your-web3-startup-nft-defi-dapp-dao-5dc466af375e)
+
+Livres:
+
+* [How to Create a Web3 Startup: A Guide for Tomorrow’s Breakout Companies - 26€ Kindle](https://www.amazon.fr/How-Create-Web3-Startup-Tomorrows-ebook/dp/B0BKW7PJG5/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)
+* [The Social Token Revolution: The next big thing in crypto is here, and it will revolutionize how people work together - 9,99€ Kindle](https://www.amazon.com/Social-Token-Revolution-revolutionize-together/dp/B09NGTB395)
+* [DAO - Decentralized Autonomous Organizations for Beginners: The Ultimate Beginner's Guide (Easy & Simple Introduction To The Organization Of The Future - 6,49€ Kindle)](https://www.amazon.com/DAO-Decentralized-Organizations-Introduction-Organization-ebook/dp/B09DT9XF99/ref=sr_1_1?crid=10V04ZGB94PCB&keywords=dao+decentralized+organization&qid=1698561955&s=books&sprefix=dao+decentralised+organization%2Cstripbooks%2C150&sr=1-1)
