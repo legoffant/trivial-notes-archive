@@ -80,6 +80,7 @@ Le rapport à la religion narkantique:
 * Grimoire: création de l'Urashuangshiji
 * Symboles: L'utilisation de la porte narkantique le "Tetz" comme ancrage
 * Incantation et formules magiques: tradition islamique, le doua pour faire des invocations
+* Sacrifice et offrandes: le propre corps du prophète et sacrifié et l'hébergeur Arcturus à sacrifié une méduse et fait des offrandes
 * Rituel de communication avec les morts: Le prophète est lui même dans l'au-delà pour communiquer avec les morts
 * Création du mort-vivant: la proximité du prophète et la chasse à ces partisans créé des morts-vivants et les ressucites
 * Invocation d'entitée surnaturelles: le Belphégor, comme vaisseau organique en forme de méduse et entité cosmique
