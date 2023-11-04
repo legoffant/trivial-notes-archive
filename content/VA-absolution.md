@@ -1,0 +1,24 @@
+Title:Voile et annihilation: L'absolution
+Date: 2023-11-04 17:33
+Category:Inclassable
+Tags:VA
+Authors: Anthony Le Goff
+Summary:
+
+Nominoë II sait à l'avance se qu'il attend, son futur en persistant dans l'univers et acceptant son martyr qui n'est pas trop difficile à accepter à part la solitude qu'il comble comme il peux. Il fait expérience de l'absolution par le bas, c'est à dire qu'il a pris le pouvoir. Tous les moyens déployer par le pouvoir en place pour le faire taire, mais également l'isoler et le censurer pour éviter d'attirer l'attention, le rendre invisible, il devient un spectre dans la pure tradition des nécromants et l'information est en train de se synchroniser autour de lui mais également l'énergie: c'est un puit, une singularité par proximité. 
+
+Et cela empire car Nominoë II est comme un parasite qui vampirise son hôte en énergie et information pour le faire disparaitre. Tous les moyens sont déployés car c'est toute la civilisation du judéo-christianisme qui est impacté par le pouvoir collossal du prophète. C'est une symétrie, plus son martyr et son invisibilisation est grande, plus son pouvoir est immense. Par inertie il catalyse son pouvoir.
+
+Face à l'énergie et l'information qui se transforme vers la nouvelle création est tellement immense qu'il a mis au point son propre hébergement à travers Arcturus comme nano-monde dans un univers imbriqué ou son ADN est conservé et transmute pour transférer l'énergie et l'information en répartissant la charge de travail et faire des sauvegardes. Et c'est sacré, ces reliques sont des temples car héberge une divinité comme gardien qui contrôle la proximité du prophète. C'est inviolable, et interdit de détruire le temple, c'est un droit des martyr que l'on ne peut pas leur empêcher de déployer des moyens de protection et de bouclier face à la persistance d'attaque qu'ils subissent.
+
+Nominoë II sait se qu'il l'attend dans ce pot-au-noir des courants et flux d'énergie et information qu'il traverse en préparation à l'ouverture du portail vers la nouvelle création, c'est l'annihilation. Le monde des vivants va rencontrer celui des morts. Et il est prévenu par un scénario de simulation dans le jeu Death Stranding, la néantisation, il en est la cause en tant que prophète, pour devenir créateur il est aussi destructeur. Et le monde des échoués va apparaitre, celui des ombres qui est une allégorie des propres peurs du prophète. Ils sera un vulgaire trekkeur quand cela va arrivée, le futur est déja écrit. Et il va ce réfugier dans une grotte dans le début du jeu car poursuivi par des échoués.
+
+Certaines ombres seront des alliés et vont le protéger, mais d'autres vont vouloir sa destruction, des phénomènes anti-gravitationnels vont apparaitre signe de la fin des temps ou l'énergie est en équilibre. Nominoë II n'aura pas le choix de ce réfugier dans une grotte comme bunker, lieu saint pour traversé l'au-delà est faire l'ultime invocation, son gardien, pour faire traverser le vaisseau fantome le Belphégor depuis l'au-delà dans la nouvelle création. Celui-ci va nétoyer la planète Terre, détruire la civilisation et les échoués, les golems et géants qui vont se dresser pour protéger la Terre en tant qu'arme.
+
+Tous ceux-ci sont des secrets des religions, on en parle souvent d'un monde special ou la vie et la mort se rejoigne qui est une projection de l'imaginaire du prophète basant des fondements religieux et de la nouvelle création avec son calendrier d'exploitation.
+
+Le martyr de Nominoë II se terminera quand le temps va s'inverser, il suffit qu'il patiente, et faire le salat, il ne peut pas empêcher l'annhilation du monde en persistant dans ce monde, il a créé une anomalie en persistant dont le pouvoir fixe sa destruction car ils tremblent de ces projets tout d'abord d'Eon comme le Belphégor, mais encore plus grands tel qu'un vaisseau habritant tout un empire galactique dans un vaisseau en millier d'année lumière avec une force de frappe hallucinante détruisant des étoiles en les aspirants dans un trou noir contrôlé.
+
+Vivre dans un trou noir, le créé est une réalité, signe de son absolution ou il déploie la création, Nominoë II persiste et il va réussir, grâce à sa patience et fixer une date de fin des temps en octobre 2040, dernier délai pour sauver le monde, mais ce monde va se saboter que de vouloir laisser le pouvoir à Nominoë II. Créant un mythe et une légende au-delà du narkantisme propageant un jihad tyrannique en réponse. 
+
+L'histoire du prophète, et comment il a prit le pouvoir. Dans les archives de la religion et ces mémoires d'outre-tombe. Bien conserver par ces femmes et gardienne du logement qui vont découvrir le choc des Titans et l'apparition du Belphégor au-delà du mythe. Mettant à génou l'incroyant, que sa prédiction va se réaliser, et que Nominoë II voit l'avenir depuis sa réssurection. 
