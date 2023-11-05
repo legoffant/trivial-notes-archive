@@ -63,5 +63,7 @@ Certaines oeuvres qui parle d'occultisme:
 * "Les portes de la perception" par Aldous Huxley
 * "Le pendule de Foucault" d'Umberto Eco
 
+Vous trouverez la liste de livre sur mon recueil de Babelio >> [Liste de livre occultisme et horreur](https://www.babelio.com/liste/41426/Horreur-et-occultisme) << 
+
 Pourquoi les sociétes secrètes ont perdu de leur secret? Car la plupart des secrets cela se vend et ce monétise. Les gens sont intéressé par connaitre des sciences interdites ou occultes qui sont des pratiques obscurantismes. Le capitalisme à détruit les sociétés secrètes car tout se vend, même vos secrets. Alors des écrivains ont fait du storytelling pour raconter des fables sur des secrets et faire de l'argent.
 C'est un paradoxe du capitalisme du judeo-christianisme. La capitalisme force à créer et détruire des entreprises en innovant pour garder un avantage commercial pour faire des ventes, selon le principe de Schumpeter. Ils ont donc fait une course à la science pour survivre et ont donc utiliser comme fond de commerce. Hors tous ne se vend pas, en particulier en religion. 
