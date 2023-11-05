@@ -41,11 +41,13 @@ C'est des années, depuis un centenaire que les écrivains occultistes ont foiso
 
 Pour étudier les oeuvres d'occultisme:
 
-* "La Clef de la Magie Noire" par Eliphas Levi
+* "La Clef de la Magie Noire" par Stanislas de Guaita
 * "Le Livre des Ombres" par Gerald Gardner
-* "La Magie du Chaos" par Peter J. Carroll
+* "Chaos Compendium" par Peter J. Carroll
 * "Le Grand Grimoire" (ou Le Dragon Rouge)
-* "Magie et Alchimie" par Mircea Eliade
+* "Forgerons et alchimistes" par Mircea Eliade
+
+Pour récupérer ces lives sur MEGA >> [Lien vers les livres d'occultisme](https://mega.nz/folder/EpwBCACC#Bh90_jf2O5iraGbsedJ6aA) <<
 
 Eliphas Levi : Un érudit français de l'occultisme qui a influencé de nombreux occultistes ultérieurs.
 
@@ -64,6 +66,8 @@ Certaines oeuvres qui parle d'occultisme:
 * "Le pendule de Foucault" d'Umberto Eco
 
 Vous trouverez la liste de livre sur mon recueil de Babelio >> [Liste de livre occultisme et horreur](https://www.babelio.com/liste/41426/Horreur-et-occultisme) << 
+
+Vous pouvez récupérez les livres sur [Anna's Archive](https://fr.annas-archive.org/)
 
 Pourquoi les sociétes secrètes ont perdu de leur secret? Car la plupart des secrets cela se vend et ce monétise. Les gens sont intéressé par connaitre des sciences interdites ou occultes qui sont des pratiques obscurantismes. Le capitalisme à détruit les sociétés secrètes car tout se vend, même vos secrets. Alors des écrivains ont fait du storytelling pour raconter des fables sur des secrets et faire de l'argent.
 C'est un paradoxe du capitalisme du judeo-christianisme. La capitalisme force à créer et détruire des entreprises en innovant pour garder un avantage commercial pour faire des ventes, selon le principe de Schumpeter. Ils ont donc fait une course à la science pour survivre et ont donc utiliser comme fond de commerce. Hors tous ne se vend pas, en particulier en religion. 
