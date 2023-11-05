@@ -47,7 +47,7 @@ Pour étudier les oeuvres d'occultisme:
 * "Le Grand Grimoire" (ou Le Dragon Rouge)
 * "Forgerons et alchimistes" par Mircea Eliade
 
-Pour récupérer ces lives sur MEGA >> [Lien vers les livres d'occultisme](https://mega.nz/folder/EpwBCACC#Bh90_jf2O5iraGbsedJ6aA) <<
+Pour récupérer ces livres format PDF et EPUB sur MEGA >> [Lien vers les livres d'occultisme](https://mega.nz/folder/EpwBCACC#Bh90_jf2O5iraGbsedJ6aA) <<
 
 Eliphas Levi : Un érudit français de l'occultisme qui a influencé de nombreux occultistes ultérieurs.
 
