@@ -37,7 +37,7 @@ Aël le sait, le monde va se saboter à cause de sa présence et cela va empirer
 
 ### VIII. Le pot-au-noir
 
-Le monde devient de plus en plus instable et tenir le siège est difficile malgré la mise en place du prototype Meduza jusqu'à la date de fin des temps en octobre 20240. Il y a une fenêtre énergétique et un alignement planétaire pour faire le rite de la caverne selon la tradition islamique pour forcer l'ouverture de la porte et le rappel de la matrice originel tout en purgeant son propre corps à l'eau pour invoquer l'annhilation du système depuis ce bunker naturel reculé du monde en Ecosse. Futur lieu saint de religion et point de routage vers la porte narkantique.
+Le monde devient de plus en plus instable et tenir le siège est difficile malgré la mise en place du prototype Meduza jusqu'à la date de fin des temps en octobre 2040. Il y a une fenêtre énergétique et un alignement planétaire pour faire le rite de la caverne selon la tradition islamique pour forcer l'ouverture de la porte et le rappel de la matrice originel tout en purgeant son propre corps à l'eau pour invoquer l'annhilation du système depuis ce bunker naturel reculé du monde en Ecosse. Futur lieu saint de religion et point de routage vers la porte narkantique.
 
 ### IX. Le royaume des ombres
 
