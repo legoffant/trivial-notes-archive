@@ -39,24 +39,24 @@ Aël le sait, le monde va se saboter à cause de sa présence et cela va empirer
 
 Le monde devient de plus en plus instable et tenir le siège est difficile malgré la mise en place du prototype Meduza jusqu'à la date de fin des temps en octobre 20240. Il y a une fenêtre énergétique et un alignement planétaire pour faire le rite de la caverne selon la tradition islamique pour forcer l'ouverture de la porte et le rappel de la matrice originel tout en purgeant son propre corps à l'eau pour invoquer l'annhilation du système depuis ce bunker naturel reculé du monde en Ecosse. Futur lieu saint de religion et point de routage vers la porte narkantique.
 
-### VIII. Le royaume des ombres
+### IX. Le royaume des ombres
 
 C'est un evenement ou le monde des morts et des vivants se rejoignent et ce battent entre eux, il y a des phénomènes de néantisation et anti-gravitationnel ou l'énergie est en équilibre, une partie provient de la Terre qui se défend de la présence du prophète. Le prophète va invoquer le Belphégor pour nétoyer la corruption sur Terre et le protéger à travers l'ombre de la méduse. Des golems et des géants tels des ombres vont attaquer, c'est des armes de la Terre et de sa graine: Jehovah. Elle réplique et est ouvertement hostile. A bord du Belphégor va être rapatrier le patriarche de la famille dans l'attente, en la personne d'Adolf Hitler comme conseiler religieux et un immortel qui va aider le jeune Nominoë II à la conquête de la Terre par les armes et la voie militaire tout en convertissant. Cet évenement de destruction et de chaos va faire le génocide de l'humanité ou 90% de la population va périr, il devrait pas rester plus de 250 millions de personnes sur Terre. Le pouvoir du prophète est à la démesure. La Terre sera chaotique par la matière noire quel aura canalyser durant toutes ces années d'attente et la puissance de la singularité par inertie. 
 
-### IX. Avalon et sa cité cybernétique
+### X. Avalon et sa cité cybernétique
 
-Nominoë II va créé la megalopole d'Avalon pour exploiter la planète Terre et miner sa graine jusqu'au centre, il va consommer la Terre, la rongger tel une moisissure sur une pomme avec une armée de machine, tout en terraformant la planète. 
+Nominoë II va créé la megalopole d'Avalon pour exploiter la planète Terre et miner sa graine jusqu'au centre, il va consommer la Terre, la ronger tel une moisissure sur une pomme avec une armée de machine, tout en terraformant la planète. 
 
-### X. Le jihad narkantique
+### XI. Le jihad narkantique
 
 Avant le jihad, et le transfert des restes des colonies terrestre sur Titan, Nominoë II va mettre à l'isolement dans un mausolée sur Pluton la graine de Jehovah. Elle est en punitence mais protégée de la supernova solaire, son culte n'est pas interdit mais sous contrôle. Il ne pouvait pas détruire totalement la Terre. Le rare visiteur qu'elle aura sera Nominoë II qui aura déployer une technologie de communication avec la graine et mis en énergie restreint pluton en terraformant.
 Nominoë II va propager la religion dans la galaxie et on estime à 60 milliards de mort pour avoir oser resister, le Belphégor va détruire et annihiler des mondes, toujours selon le même rite d'envoyer un émissaire en la personne du prophète qui va precher en annonçant un grand malheur et l'apocalypse s'il ne se mette pas à genou face à la nouvelle divinité et se convertisse. 
 
-### XI. La nébuleuse obscure
+### XII. La nébuleuse obscure
 
 Nominoë II va inventer un nouveau vaisseau et faire germer la graine dans des nébuleuses obscures au coeur de la création stellaire, une sorte de meta-organisme, une Eon collossale englobant un empire galactique pouvant héberger le Belphégor et des étoiles dans une nébuleuse à travers un trou noir controlé. L'entité fait des milliers d'années lumières. Il prépare un instrument de guerre et d'invasion.
 
-### XII. Le Siège de Venezia sur les Terre immortels
+### XIII. Le Siège de Venezia sur les Terre immortels
 
 Nominoë II va rendre justice, en tant que juge il condamne ceux qui ont commanditer sa mort et va les détruire et retirer leur immortalité, il va s'attaquer à des valars qui se protègent derrière le christ. Pour cela il va attaquer avec une armada les terres immortels dans un univers supérieur imbriqué. Pour cela il va négocier l'accès à la porte avec l'entité locale, le dragon celeste pour purger cette corruption et installer un nouveau cosmos ou des nouvelles forces qui règnent selon la loi narkantique. Dans un accord commun le dragon celeste laisse Nominoë II et son entité naviguer à ces côtés et le remerci pour avoir nétoyer cette corruption qui interdisait l'immortalité. 
 
