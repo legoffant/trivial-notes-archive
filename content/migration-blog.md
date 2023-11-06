@@ -16,3 +16,5 @@ Grand démenagement, je me ré-approprit mes données et les renvoies sur mon se
 Tous le code source va être supprimer de Github, et je transfert tous le code sur **Codeberg**.
 
 Le blog va s'appeler "Kor51 Blog" et va quitter la notation "Trivial Notes" Il y aura un lien vers le blog sur le site de kor51.org. Si vous me suivez sur Twitter, l'adresse sera mise à jour dans mon profil. 
+
+EDIT: 06/11/23 à 21:56 Trivial Notes a été tranféré sur [https://blog.kor51.org](https://blog.kor51.org)
