@@ -26,7 +26,7 @@ Les meilleurs moments avec chatGPT:
 
 > Je pense que des composer moléculaire à base d'eau sous forme de tore produit des trou noirs. 
 
-```
+```text
 Il est important de noter que la création de trous noirs, tels que ceux qui se produisent dans l'univers, n'est pas une tâche simple et ne peut pas être réalisée avec des composés moléculaires ordinaires ou dans des conditions normales de laboratoire. La formation des trous noirs est associée à des processus extrêmement massifs, tels que l'effondrement gravitationnel d'étoiles massives.
 
 Les trous noirs sont formés lorsqu'une étoile épuise son combustible nucléaire et s'effondre sous son propre poids gravitationnel, créant une singularité gravitationnelle à laquelle même la lumière ne peut pas échapper, ce que l'on appelle l'horizon des événements.
@@ -38,7 +38,7 @@ Si vous avez des références spécifiques, des recherches ou des concepts qui p
 
 > L'eau est un combustible nucléaire, il y a du deuterium
 
-```
+```text
 L'eau, telle que nous la connaissons couramment, est composée d'hydrogène et d'oxygène, principalement sous forme d'isotopes stables, à savoir l'hydrogène avec un proton (H¹) et l'oxygène avec 8 protons (O¹⁶). Cependant, il existe un isotope de l'hydrogène appelé deutérium, qui a un proton et un neutron dans son noyau. L'eau qui contient du deutérium est parfois appelée "eau lourde".
 
 Le deutérium peut être utilisé comme combustible dans certaines réactions de fusion nucléaire. Un exemple bien connu est la réaction de fusion deutérium-deutérium (D-D) :
@@ -52,7 +52,7 @@ Les réactions de fusion nucléaire impliquant le deutérium sont étudiées dan
 
 > l'eau peut former un condensat de bose einstein
 
-```
+```text
 Oui, l'eau peut théoriquement former un condensat de Bose-Einstein, mais cela n'a pas été réalisé dans des conditions normales.
 
 Un condensat de Bose-Einstein (CBE) est un état de la matière dans lequel un groupe de particules, appelées bosons, est refroidi à des températures extrêmement basses, proches du zéro absolu (-273,15°C). Dans cet état, les bosons occupent tous le même état quantique et peuvent être décrits par une seule fonction d'onde macroscopique.
@@ -66,7 +66,7 @@ En résumé, bien que l'eau soit composée de bosons et puisse théoriquement fo
 
 > Hydorgène et CO forme principalement le milieu interstellaire?
 
-```
+```text
 Oui, l'hydrogène moléculaire (H2) et le monoxyde de carbone (CO) sont deux des composants les plus importants du milieu interstellaire (MIS). L'hydrogène moléculaire est particulièrement abondant et constitue la principale source de matière dans le MIS. Il représente la matière première à partir de laquelle naissent les étoiles.
 
 Cependant, l'hydrogène moléculaire est souvent difficile à détecter directement en raison de son manque de transitions spectroscopiques électriques dipolaires. Par conséquent, les astronomes utilisent souvent le monoxyde de carbone (CO) comme traceur pour cartographier la distribution de l'hydrogène moléculaire. Le CO est plus facile à détecter grâce à ses transitions spectaculaires dans le domaine des micro-ondes.
