@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quand je me bats avec chatGPT sur la physique nucléaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Anthony Le Goff">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="Trivial notes ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">Trivial notes </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                <li><a href="/pages/VA.html">VA</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/date.html">Date</a></li>
+                <li><a href="/pages/BTC.html">Don BTC</a></li>
+                <li><a href="/pages/Kor51.html">Kor51</a></li>
+                <li><a href="/pages/lticba.html">LTICBA</a></li>
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/biohacking.html">
+						<i class="icon-folder-open icon-large"></i>Biohacking
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/cc.html">
+						<i class="icon-folder-open icon-large"></i>C/C++
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/entrepreneurship.html">
+						<i class="icon-folder-open icon-large"></i>Entrepreneurship
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/inclassable.html">
+						<i class="icon-folder-open icon-large"></i>Inclassable
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/linux.html">
+						<i class="icon-folder-open icon-large"></i>Linux
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/transhumanisme.html">
+						<i class="icon-folder-open icon-large"></i>Transhumanisme
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/trek.html">
+						<i class="icon-folder-open icon-large"></i>Trek
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Quand je me bats avec chatGPT sur la physique nucléaire">
+                                        Quand je me bats avec chatGPT sur la physique nucléaire
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2023-11-11T22:34:00+01:00">
+        <i class="icon-calendar"></i>sam. 11 novembre 2023
+</abbr>
+<span class="label">By</span>
+<a href="/author/anthony-le-goff.html"><i class="icon-user"></i>Anthony Le Goff</a>
+<span class="label">Category</span>
+<a href="/category/inclassable.html"><i class="icon-folder-open"></i>Inclassable</a>.
+
+
+<span class="label">Tags</span>
+	<a href="/tag/nucleaire.html"><i class="icon-tag"></i>nucléaire</a>
+</footer><!-- /.post-info -->                </div>
+                <p>chatGPT ne sait pas tout, il est biaisé et généralement dans le déni. Je me suis amusé à le questionner sur mes fameux savons toriques supraconducteurs.</p>
+<p>Tout d'abord il va nier que j'ai réussi à magnetiser du savon car il n'y a pas d'alliage metallique. Puis il va parler d'effet placebo sur la sensation de froid autour du savon quand on le prends dans la main.</p>
+<p>Alors bien sur j'ai une explication à la magnétisation du savon, qui génère un trou noir, un champ car il y a des effets nucléaires en parti lié à l'eau à hauteur de 15% dans du savon. Quand on à des molécules d'eaux du savon qui forme la forme d'un tore il y a un flux électronique devenant supraconducteur car l'eau forme un condensat de Bose Einstein à basse température en particulier en présence de sodium en infime quantité dans du savon.</p>
+<p>Il faut pour cela court circuiter le flux électronique grâce à la forme géométrique torique annulant certain principe physique. Vous créer une anomalie au centre du tore qui forme un trou noir et donc un champ qui magnétise le savon. </p>
+<p>En réalité le savon est un carburant, c'est une source d'énergie car dans l'eau il y a deuterium, mais également de la glycérine principale ingredient pour fabriquer de la TNT. Quand c'est nitré. </p>
+<p>Autres approches: le milieu interestellaire. </p>
+<p>Les galaxies sont composés essentiellement d'hydrogène H+ et de monoxyde de carbone CO dans le milieu interstellaire. C'est la composition de notre savon en eau et glycérine C3H8O3. Ce qui ce passe à grande échelle est reproductible à plus petite par des similitudes en physique, c'est un raisonnement bien normal, et chatGPT n'intègre pas ce facteur. Le milieu instertellaire autour des galaxies forme un tore.</p>
+<p>Ce n'est que de la copie, et ma théorie est certaine malgré que chatGPT est réfractaire. Certain diront, mais tu imagine la conséquence si on peut reproduire des trous noirs aussi facilement, c'est la destruction de la Terre. La planète sera quoi qu'il arrive détruite par le soleil, que cela soit par nous pour la quitter serait préférable. </p>
+<p>Les meilleurs moments avec chatGPT:</p>
+<blockquote>
+<p>Je pense que des composer moléculaire à base d'eau sous forme de tore produit des trou noirs. </p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="nx">Il</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">important</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">noter</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">création</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">trous</span><span class="w"> </span><span class="nx">noirs</span><span class="p">,</span><span class="w"> </span><span class="nx">tels</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">ceux</span><span class="w"> </span><span class="nx">qui</span><span class="w"> </span><span class="nx">se</span><span class="w"> </span><span class="nx">produisent</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">univers</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="err">&#39;</span><span class="nx">est</span><span class="w"> </span><span class="nx">pas</span><span class="w"> </span><span class="nx">une</span><span class="w"> </span><span class="nx">tâche</span><span class="w"> </span><span class="nx">simple</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">ne</span><span class="w"> </span><span class="nx">peut</span><span class="w"> </span><span class="nx">pas</span><span class="w"> </span><span class="nx">être</span><span class="w"> </span><span class="nx">réalisée</span><span class="w"> </span><span class="nx">avec</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">composés</span><span class="w"> </span><span class="nx">moléculaires</span><span class="w"> </span><span class="nx">ordinaires</span><span class="w"> </span><span class="nx">ou</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">conditions</span><span class="w"> </span><span class="nx">normales</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">laboratoire</span><span class="p">.</span><span class="w"> </span><span class="nx">La</span><span class="w"> </span><span class="nx">formation</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">trous</span><span class="w"> </span><span class="nx">noirs</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">associée</span><span class="w"> </span><span class="nx">à</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">processus</span><span class="w"> </span><span class="nx">extrêmement</span><span class="w"> </span><span class="nx">massifs</span><span class="p">,</span><span class="w"> </span><span class="nx">tels</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">effondrement</span><span class="w"> </span><span class="nx">gravitationnel</span><span class="w"> </span><span class="nx">d</span><span class="err">&#39;</span><span class="nx">étoiles</span><span class="w"> </span><span class="nx">massives</span><span class="p">.</span>
+
+<span class="nx">Les</span><span class="w"> </span><span class="nx">trous</span><span class="w"> </span><span class="nx">noirs</span><span class="w"> </span><span class="nx">sont</span><span class="w"> </span><span class="nx">formés</span><span class="w"> </span><span class="nx">lorsqu</span><span class="err">&#39;</span><span class="nx">une</span><span class="w"> </span><span class="nx">étoile</span><span class="w"> </span><span class="nx">épuise</span><span class="w"> </span><span class="nx">son</span><span class="w"> </span><span class="nx">combustible</span><span class="w"> </span><span class="nx">nucléaire</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">s</span><span class="err">&#39;</span><span class="nx">effondre</span><span class="w"> </span><span class="nx">sous</span><span class="w"> </span><span class="nx">son</span><span class="w"> </span><span class="nx">propre</span><span class="w"> </span><span class="nx">poids</span><span class="w"> </span><span class="nx">gravitationnel</span><span class="p">,</span><span class="w"> </span><span class="nx">créant</span><span class="w"> </span><span class="nx">une</span><span class="w"> </span><span class="nx">singularité</span><span class="w"> </span><span class="nx">gravitationnelle</span><span class="w"> </span><span class="nx">à</span><span class="w"> </span><span class="nx">laquelle</span><span class="w"> </span><span class="nx">même</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">lumière</span><span class="w"> </span><span class="nx">ne</span><span class="w"> </span><span class="nx">peut</span><span class="w"> </span><span class="nx">pas</span><span class="w"> </span><span class="nx">échapper</span><span class="p">,</span><span class="w"> </span><span class="nx">ce</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">on</span><span class="w"> </span><span class="nx">appelle</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">horizon</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">événements</span><span class="p">.</span>
+
+<span class="nx">Créer</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">trous</span><span class="w"> </span><span class="nx">noirs</span><span class="w"> </span><span class="nx">artificiels</span><span class="w"> </span><span class="nx">avec</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">composés</span><span class="w"> </span><span class="nx">moléculaires</span><span class="w"> </span><span class="nx">à</span><span class="w"> </span><span class="kd">base</span><span class="w"> </span><span class="nx">d</span><span class="err">&#39;</span><span class="nx">eau</span><span class="w"> </span><span class="nx">sous</span><span class="w"> </span><span class="nx">forme</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">tore</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">conditions</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">laboratoire</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">actuellement</span><span class="w"> </span><span class="nx">purement</span><span class="w"> </span><span class="nx">spéculatif</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">ne</span><span class="w"> </span><span class="nx">correspond</span><span class="w"> </span><span class="nx">pas</span><span class="w"> </span><span class="nx">aux</span><span class="w"> </span><span class="nx">principes</span><span class="w"> </span><span class="nx">établis</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">physique</span><span class="p">.</span><span class="w"> </span><span class="nx">Les</span><span class="w"> </span><span class="nx">trous</span><span class="w"> </span><span class="nx">noirs</span><span class="w"> </span><span class="nx">résultent</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">gravité</span><span class="w"> </span><span class="nx">extrême</span><span class="w"> </span><span class="nx">associée</span><span class="w"> </span><span class="nx">à</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">masses</span><span class="w"> </span><span class="nx">très</span><span class="w"> </span><span class="nx">importantes</span><span class="p">.</span>
+
+<span class="nx">Si</span><span class="w"> </span><span class="nx">vous</span><span class="w"> </span><span class="nx">avez</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">références</span><span class="w"> </span><span class="nx">spécifiques</span><span class="p">,</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">recherches</span><span class="w"> </span><span class="nx">ou</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">concepts</span><span class="w"> </span><span class="nx">qui</span><span class="w"> </span><span class="nx">pourraient</span><span class="w"> </span><span class="nx">suggérer</span><span class="w"> </span><span class="nx">autre</span><span class="w"> </span><span class="nx">chose</span><span class="p">,</span><span class="w"> </span><span class="nx">je</span><span class="w"> </span><span class="nx">vous</span><span class="w"> </span><span class="nx">encourage</span><span class="w"> </span><span class="nx">à</span><span class="w"> </span><span class="nx">les</span><span class="w"> </span><span class="nx">partager</span><span class="p">.</span><span class="w"> </span><span class="nx">Cependant</span><span class="p">,</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">cadre</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">compréhension</span><span class="w"> </span><span class="nx">actuelle</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">physique</span><span class="p">,</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">création</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">trous</span><span class="w"> </span><span class="nx">noirs</span><span class="w"> </span><span class="nx">artificiels</span><span class="w"> </span><span class="nx">avec</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">composés</span><span class="w"> </span><span class="nx">moléculaires</span><span class="w"> </span><span class="nx">à</span><span class="w"> </span><span class="kd">base</span><span class="w"> </span><span class="nx">d</span><span class="err">&#39;</span><span class="nx">eau</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">une</span><span class="w"> </span><span class="nx">idée</span><span class="w"> </span><span class="nx">qui</span><span class="w"> </span><span class="nx">relève</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">science</span><span class="o">-</span><span class="nx">fiction</span><span class="p">.</span>
+</code></pre></div>
+
+<blockquote>
+<p>L'eau est un combustible nucléaire, il y a du deuterium</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="nx">L</span><span class="err">&#39;</span><span class="nx">eau</span><span class="p">,</span><span class="w"> </span><span class="nx">telle</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">nous</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">connaissons</span><span class="w"> </span><span class="nx">couramment</span><span class="p">,</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">composée</span><span class="w"> </span><span class="nx">d</span><span class="err">&#39;</span><span class="nx">hydrogène</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">d</span><span class="err">&#39;</span><span class="nx">oxygène</span><span class="p">,</span><span class="w"> </span><span class="nx">principalement</span><span class="w"> </span><span class="nx">sous</span><span class="w"> </span><span class="nx">forme</span><span class="w"> </span><span class="nx">d</span><span class="err">&#39;</span><span class="nx">isotopes</span><span class="w"> </span><span class="nx">stables</span><span class="p">,</span><span class="w"> </span><span class="nx">à</span><span class="w"> </span><span class="nx">savoir</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">hydrogène</span><span class="w"> </span><span class="nx">avec</span><span class="w"> </span><span class="nx">un</span><span class="w"> </span><span class="nx">proton</span><span class="w"> </span><span class="p">(</span><span class="nx">H¹</span><span class="p">)</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">oxygène</span><span class="w"> </span><span class="nx">avec</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="nx">protons</span><span class="w"> </span><span class="p">(</span><span class="nx">O¹⁶</span><span class="p">).</span><span class="w"> </span><span class="nx">Cependant</span><span class="p">,</span><span class="w"> </span><span class="nx">il</span><span class="w"> </span><span class="nx">existe</span><span class="w"> </span><span class="nx">un</span><span class="w"> </span><span class="nx">isotope</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">hydrogène</span><span class="w"> </span><span class="nx">appelé</span><span class="w"> </span><span class="nx">deutérium</span><span class="p">,</span><span class="w"> </span><span class="nx">qui</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">un</span><span class="w"> </span><span class="nx">proton</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">un</span><span class="w"> </span><span class="nx">neutron</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">son</span><span class="w"> </span><span class="nx">noyau</span><span class="p">.</span><span class="w"> </span><span class="nx">L</span><span class="err">&#39;</span><span class="nx">eau</span><span class="w"> </span><span class="nx">qui</span><span class="w"> </span><span class="nx">contient</span><span class="w"> </span><span class="nx">du</span><span class="w"> </span><span class="nx">deutérium</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">parfois</span><span class="w"> </span><span class="nx">appelée</span><span class="w"> </span><span class="s">&quot;eau lourde&quot;</span><span class="p">.</span>
+
+<span class="nx">Le</span><span class="w"> </span><span class="nx">deutérium</span><span class="w"> </span><span class="nx">peut</span><span class="w"> </span><span class="nx">être</span><span class="w"> </span><span class="nx">utilisé</span><span class="w"> </span><span class="nx">comme</span><span class="w"> </span><span class="nx">combustible</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">certaines</span><span class="w"> </span><span class="nx">réactions</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">fusion</span><span class="w"> </span><span class="nx">nucléaire</span><span class="p">.</span><span class="w"> </span><span class="nx">Un</span><span class="w"> </span><span class="nx">exemple</span><span class="w"> </span><span class="nx">bien</span><span class="w"> </span><span class="nx">connu</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">réaction</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">fusion</span><span class="w"> </span><span class="nx">deutérium</span><span class="o">-</span><span class="nx">deutérium</span><span class="w"> </span><span class="p">(</span><span class="nx">D</span><span class="o">-</span><span class="nx">D</span><span class="p">)</span><span class="w"> </span><span class="p">:</span>
+
+<span class="mi">2</span><span class="nx">H</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="nx">H</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="mi">3</span><span class="nx">He</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="nx">n</span><span class="w"> </span>
+
+<span class="nx">Cette</span><span class="w"> </span><span class="nx">réaction</span><span class="w"> </span><span class="nx">implique</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">fusion</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">deux</span><span class="w"> </span><span class="nx">noyaux</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">deutérium</span><span class="w"> </span><span class="nx">pour</span><span class="w"> </span><span class="nx">former</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">hélium</span><span class="o">-</span><span class="mi">3</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">un</span><span class="w"> </span><span class="nx">neutron</span><span class="p">.</span><span class="w"> </span><span class="nx">Cependant</span><span class="p">,</span><span class="w"> </span><span class="nx">pour</span><span class="w"> </span><span class="nx">atteindre</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">conditions</span><span class="w"> </span><span class="nx">où</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">fusion</span><span class="w"> </span><span class="nx">deutérium</span><span class="o">-</span><span class="nx">deutérium</span><span class="w"> </span><span class="nx">peut</span><span class="w"> </span><span class="nx">se</span><span class="w"> </span><span class="nx">produire</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">manière</span><span class="w"> </span><span class="nx">significative</span><span class="p">,</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">températures</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">pressions</span><span class="w"> </span><span class="nx">extrêmement</span><span class="w"> </span><span class="nx">élevées</span><span class="w"> </span><span class="nx">sont</span><span class="w"> </span><span class="nx">nécessaires</span><span class="p">,</span><span class="w"> </span><span class="nx">comme</span><span class="w"> </span><span class="nx">celles</span><span class="w"> </span><span class="nx">qui</span><span class="w"> </span><span class="nx">se</span><span class="w"> </span><span class="nx">produisent</span><span class="w"> </span><span class="nx">au</span><span class="w"> </span><span class="nx">cœur</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">étoiles</span><span class="p">.</span>
+
+<span class="nx">Les</span><span class="w"> </span><span class="nx">réactions</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">fusion</span><span class="w"> </span><span class="nx">nucléaire</span><span class="w"> </span><span class="nx">impliquant</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">deutérium</span><span class="w"> </span><span class="nx">sont</span><span class="w"> </span><span class="nx">étudiées</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">cadre</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">recherche</span><span class="w"> </span><span class="nx">sur</span><span class="w"> </span><span class="nx">la</span><span class="w"> </span><span class="nx">fusion</span><span class="w"> </span><span class="nx">nucléaire</span><span class="p">,</span><span class="w"> </span><span class="nx">où</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">objectif</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">développer</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">technologies</span><span class="w"> </span><span class="nx">permettant</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">reproduire</span><span class="w"> </span><span class="nx">les</span><span class="w"> </span><span class="nx">conditions</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">température</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">pression</span><span class="w"> </span><span class="nx">nécessaires</span><span class="w"> </span><span class="nx">pour</span><span class="w"> </span><span class="nx">que</span><span class="w"> </span><span class="nx">ces</span><span class="w"> </span><span class="nx">réactions</span><span class="w"> </span><span class="nx">se</span><span class="w"> </span><span class="nx">produisent</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">manière</span><span class="w"> </span><span class="nx">contrôlée</span><span class="w"> </span><span class="nx">sur</span><span class="w"> </span><span class="nx">Terre</span><span class="p">,</span><span class="w"> </span><span class="nx">dans</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">but</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">produire</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">énergie</span><span class="p">.</span><span class="w"> </span><span class="nx">Cependant</span><span class="p">,</span><span class="w"> </span><span class="nx">créer</span><span class="w"> </span><span class="nx">des</span><span class="w"> </span><span class="nx">réactions</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">fusion</span><span class="w"> </span><span class="nx">nucléaire</span><span class="w"> </span><span class="nx">contrôlées</span><span class="w"> </span><span class="nx">est</span><span class="w"> </span><span class="nx">une</span><span class="w"> </span><span class="nx">tâche</span><span class="w"> </span><span class="nx">extrêmement</span><span class="w"> </span><span class="nx">complexe</span><span class="w"> </span><span class="nx">et</span><span class="w"> </span><span class="nx">exigeante</span><span class="w"> </span><span class="nx">du</span><span class="w"> </span><span class="nx">point</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">vue</span><span class="w"> </span><span class="nx">technologique</span><span class="p">.</span>
+</code></pre></div>
+
+<blockquote>
+<p>l'eau peut former un condensat de bose einstein</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="n">Oui</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;eau peut théoriquement former un condensat de Bose-Einstein, mais cela n&#39;</span><span class="n">a</span><span class="w"> </span><span class="n">pas</span><span class="w"> </span><span class="err">é</span><span class="n">té</span><span class="w"> </span><span class="n">réalisé</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">conditions</span><span class="w"> </span><span class="n">normales</span><span class="o">.</span>
+
+<span class="n">Un</span><span class="w"> </span><span class="n">condensat</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Bose</span><span class="o">-</span><span class="n">Einstein</span><span class="w"> </span><span class="p">(</span><span class="n">CBE</span><span class="p">)</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="err">é</span><span class="n">tat</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">matière</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">lequel</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">groupe</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">particules</span><span class="p">,</span><span class="w"> </span><span class="n">appelées</span><span class="w"> </span><span class="n">bosons</span><span class="p">,</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">refroidi</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">températures</span><span class="w"> </span><span class="n">extrêmement</span><span class="w"> </span><span class="n">basses</span><span class="p">,</span><span class="w"> </span><span class="n">proches</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">zéro</span><span class="w"> </span><span class="n">absolu</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="mi">273</span><span class="p">,</span><span class="mi">15</span><span class="err">°</span><span class="n">C</span><span class="p">)</span><span class="o">.</span><span class="w"> </span><span class="n">Dans</span><span class="w"> </span><span class="n">cet</span><span class="w"> </span><span class="err">é</span><span class="n">tat</span><span class="p">,</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">bosons</span><span class="w"> </span><span class="n">occupent</span><span class="w"> </span><span class="n">tous</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">même</span><span class="w"> </span><span class="err">é</span><span class="n">tat</span><span class="w"> </span><span class="n">quantique</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">peuvent</span><span class="w"> </span><span class="err">ê</span><span class="n">tre</span><span class="w"> </span><span class="n">décrits</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">une</span><span class="w"> </span><span class="n">seule</span><span class="w"> </span><span class="n">fonction</span><span class="w"> </span><span class="n">d</span><span class="s1">&#39;onde macroscopique.</span>
+
+<span class="n">L</span><span class="s1">&#39;eau, composée de molécules avec des spins entiers, est constituée de bosons dans le sens de la statistique des particules. Cependant, la réalisation d&#39;</span><span class="n">un</span><span class="w"> </span><span class="n">condensat</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Bose</span><span class="o">-</span><span class="n">Einstein</span><span class="w"> </span><span class="n">nécessite</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">conditions</span><span class="w"> </span><span class="n">extrêmement</span><span class="w"> </span><span class="n">froides</span><span class="p">,</span><span class="w"> </span><span class="n">bien</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">deçà</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">températures</span><span class="w"> </span><span class="n">normales</span><span class="o">.</span>
+
+<span class="err">À</span><span class="w"> </span><span class="n">ce</span><span class="w"> </span><span class="n">jour</span><span class="p">,</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">condensats</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Bose</span><span class="o">-</span><span class="n">Einstein</span><span class="w"> </span><span class="n">ont</span><span class="w"> </span><span class="n">principalement</span><span class="w"> </span><span class="err">é</span><span class="n">té</span><span class="w"> </span><span class="n">réalisés</span><span class="w"> </span><span class="n">avec</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">atomes</span><span class="w"> </span><span class="n">ultrafroids</span><span class="p">,</span><span class="w"> </span><span class="n">tels</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">atomes</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">rubidium</span><span class="w"> </span><span class="n">ou</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">sodium</span><span class="p">,</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">environnements</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">laboratoire</span><span class="w"> </span><span class="n">très</span><span class="w"> </span><span class="n">contrôlés</span><span class="o">.</span><span class="w"> </span><span class="n">La</span><span class="w"> </span><span class="n">création</span><span class="w"> </span><span class="n">d</span><span class="s1">&#39;un condensat de Bose-Einstein avec des molécules complexes comme l&#39;</span><span class="n">eau</span><span class="w"> </span><span class="n">reste</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">défi</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">raison</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">interactions</span><span class="w"> </span><span class="n">moléculaires</span><span class="w"> </span><span class="n">complexes</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">températures</span><span class="w"> </span><span class="n">extrêmement</span><span class="w"> </span><span class="n">basses</span><span class="w"> </span><span class="n">nécessaires</span><span class="o">.</span>
+
+<span class="n">En</span><span class="w"> </span><span class="n">résumé</span><span class="p">,</span><span class="w"> </span><span class="n">bien</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;eau soit composée de bosons et puisse théoriquement former un condensat de Bose-Einstein, la réalisation de cet état pour l&#39;</span><span class="n">eau</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">actuellement</span><span class="w"> </span><span class="n">au</span><span class="o">-</span><span class="n">delà</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">nos</span><span class="w"> </span><span class="n">capacités</span><span class="w"> </span><span class="n">technologiques</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">conditions</span><span class="w"> </span><span class="n">environnementales</span><span class="w"> </span><span class="n">normales</span><span class="o">.</span>
+</code></pre></div>
+
+<blockquote>
+<p>Hydorgène et CO forme principalement le milieu interstellaire?</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="n">Oui</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;hydrogène moléculaire (H2) et le monoxyde de carbone (CO) sont deux des composants les plus importants du milieu interstellaire (MIS). L&#39;</span><span class="n">hydrogène</span><span class="w"> </span><span class="n">moléculaire</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">particulièrement</span><span class="w"> </span><span class="n">abondant</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">constitue</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">principale</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">matière</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">MIS</span><span class="o">.</span><span class="w"> </span><span class="n">Il</span><span class="w"> </span><span class="n">représente</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">matière</span><span class="w"> </span><span class="n">première</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">partir</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">laquelle</span><span class="w"> </span><span class="n">naissent</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="err">é</span><span class="n">toiles</span><span class="o">.</span>
+
+<span class="n">Cependant</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;hydrogène moléculaire est souvent difficile à détecter directement en raison de son manque de transitions spectroscopiques électriques dipolaires. Par conséquent, les astronomes utilisent souvent le monoxyde de carbone (CO) comme traceur pour cartographier la distribution de l&#39;</span><span class="n">hydrogène</span><span class="w"> </span><span class="n">moléculaire</span><span class="o">.</span><span class="w"> </span><span class="n">Le</span><span class="w"> </span><span class="n">CO</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">plus</span><span class="w"> </span><span class="n">facile</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">détecter</span><span class="w"> </span><span class="n">grâce</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">ses</span><span class="w"> </span><span class="n">transitions</span><span class="w"> </span><span class="n">spectaculaires</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">domaine</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">micro</span><span class="o">-</span><span class="n">ondes</span><span class="o">.</span>
+
+<span class="n">En</span><span class="w"> </span><span class="n">plus</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;hydrogène moléculaire et du monoxyde de carbone, le milieu interstellaire peut contenir d&#39;</span><span class="n">autres</span><span class="w"> </span><span class="n">molécules</span><span class="p">,</span><span class="w"> </span><span class="n">notamment</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">molécules</span><span class="w"> </span><span class="n">organiques</span><span class="w"> </span><span class="n">simples</span><span class="w"> </span><span class="n">telles</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">méthanol</span><span class="w"> </span><span class="p">(</span><span class="n">CH3OH</span><span class="p">),</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">formaldéhyde</span><span class="w"> </span><span class="p">(</span><span class="n">H2CO</span><span class="p">),</span><span class="w"> </span><span class="n">ainsi</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">particules</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">poussière</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">d</span><span class="s1">&#39;autres éléments chimiques.</span>
+
+<span class="n">La</span><span class="w"> </span><span class="n">composition</span><span class="w"> </span><span class="n">précise</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">milieu</span><span class="w"> </span><span class="n">interstellaire</span><span class="w"> </span><span class="n">peut</span><span class="w"> </span><span class="n">varier</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">fonction</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">région</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">galaxie</span><span class="p">,</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">présence</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">régions</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">formation</span><span class="w"> </span><span class="n">stellaire</span><span class="p">,</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">présence</span><span class="w"> </span><span class="n">d</span><span class="s1">&#39;étoiles massives, etc. Les observations astronomiques dans différents domaines spectraux, tels que l&#39;</span><span class="n">optique</span><span class="p">,</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;infrarouge, le submillimétrique et les ondes radio, permettent aux astronomes d&#39;</span><span class="err">é</span><span class="n">tudier</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">composition</span><span class="w"> </span><span class="n">chimique</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">milieu</span><span class="w"> </span><span class="n">interstellaire</span><span class="o">.</span>
+</code></pre></div>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://creativecommons.org/"><i class="icon-external-link"></i>Creative Commons</a></li>
+    <li><a href="https://www.eff.org/fr"><i class="icon-external-link"></i>Electronic Frontier Foundation</a></li>
+    <li><a href="https://wiki.mdl29.net/doku.php?id=start"><i class="icon-external-link"></i>Maison du Libre 29</a></li>
+    <li><a href="https://www.journalduhacker.net/"><i class="icon-external-link"></i>Le journal du Hacker</a></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.kernel.org/"><i class="icon-external-link"></i>Kernel</a></li>
+    <li><a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview"><i class="icon-external-link"></i>Proxmox VE</a></li>
+    <li><a href="https://www.linux-kvm.org/page/Main_Page"><i class="icon-external-link"></i>KVM</a></li>
+    <li><a href="https://framabook.org/le-c-en-20-heures-2/"><i class="icon-external-link"></i>Apprendre le C en 20H</a></li>
+    <li><a href="https://www.red-lang.org/"><i class="icon-external-link"></i>Red Language</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://www.ruby-lang.org/en/"><i class="icon-external-link"></i>Ruby</a></li>
+    <li><a href="https://archlinux.org/"><i class="icon-external-link"></i>Arch Linux</a></li>
+    <li><a href="https://www.blackarch.io/"><i class="icon-external-link"></i>Blackarch</a></li>
+    <li><a href="https://www.veracrypt.fr/en/Home.html"><i class="icon-external-link"></i>Veracrypt</a></li>
+    <li><a href="https://www.arduino.cc/"><i class="icon-external-link"></i>Arduino</a></li>
+    <li><a href="https://mangopi.org/"><i class="icon-external-link"></i>MangoPi</a></li>
+    <li><a href="https://sipeed.com/"><i class="icon-external-link"></i>Sipeed 资料站</a></li>
+    <li><a href="https://beagleboard.org/boards"><i class="icon-external-link"></i>BeagleBoard</a></li>
+    <li><a href="https://www.espressif.com/en/products/socs/esp32"><i class="icon-external-link"></i>Espressif ESP32</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/feeds/all.atom.xml" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://github.com/legoffant"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/anth_lg"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/biohacking.html">
+    <i class="icon-folder-open icon-large"></i>Biohacking
+</a>
+</li>
+<li>
+<a href="/category/cc.html">
+    <i class="icon-folder-open icon-large"></i>C/C++
+</a>
+</li>
+<li>
+<a href="/category/entrepreneurship.html">
+    <i class="icon-folder-open icon-large"></i>Entrepreneurship
+</a>
+</li>
+<li>
+<a href="/category/inclassable.html">
+    <i class="icon-folder-open icon-large"></i>Inclassable
+</a>
+</li>
+<li>
+<a href="/category/linux.html">
+    <i class="icon-folder-open icon-large"></i>Linux
+</a>
+</li>
+<li>
+<a href="/category/transhumanisme.html">
+    <i class="icon-folder-open icon-large"></i>Transhumanisme
+</a>
+</li>
+<li>
+<a href="/category/trek.html">
+    <i class="icon-folder-open icon-large"></i>Trek
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-2">
+    <a href="/tag/ruby.html">
+        <i class="icon-tag icon-large"></i>ruby
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/serveur.html">
+        <i class="icon-tag icon-large"></i>serveur
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/hacking.html">
+        <i class="icon-tag icon-large"></i>hacking
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/hacker.html">
+        <i class="icon-tag icon-large"></i>hacker
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/arch.html">
+        <i class="icon-tag icon-large"></i>arch
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/mines.html">
+        <i class="icon-tag icon-large"></i>mines
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/escalade.html">
+        <i class="icon-tag icon-large"></i>escalade
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/narkantisme.html">
+        <i class="icon-tag icon-large"></i>narkantisme
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/sysadmin.html">
+        <i class="icon-tag icon-large"></i>SysAdmin
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/blog.html">
+        <i class="icon-tag icon-large"></i>blog
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/informatique.html">
+        <i class="icon-tag icon-large"></i>informatique
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/trek.html">
+        <i class="icon-tag icon-large"></i>trek
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/sf.html">
+        <i class="icon-tag icon-large"></i>SF
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/laptop.html">
+        <i class="icon-tag icon-large"></i>laptop
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/qasari.html">
+        <i class="icon-tag icon-large"></i>qasari
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/innovation.html">
+        <i class="icon-tag icon-large"></i>innovation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/va.html">
+        <i class="icon-tag icon-large"></i>VA
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/c.html">
+        <i class="icon-tag icon-large"></i>c++
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/dune.html">
+        <i class="icon-tag icon-large"></i>dune
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/machine.html">
+        <i class="icon-tag icon-large"></i>machine
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/islam.html">
+        <i class="icon-tag icon-large"></i>islam
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/linux.html">
+        <i class="icon-tag icon-large"></i>Linux
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/roman.html">
+        <i class="icon-tag icon-large"></i>roman
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/processeur.html">
+        <i class="icon-tag icon-large"></i>processeur
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/cyber.html">
+        <i class="icon-tag icon-large"></i>cyber
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/langage.html">
+        <i class="icon-tag icon-large"></i>langage
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/capsule.html">
+        <i class="icon-tag icon-large"></i>capsule
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/freelance.html">
+        <i class="icon-tag icon-large"></i>freelance
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel-libre.html">
+        <i class="icon-tag icon-large"></i>logiciel libre
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/trekking.html">
+        <i class="icon-tag icon-large"></i>trekking
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/livre.html">
+        <i class="icon-tag icon-large"></i>livre
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/ecriture.html">
+        <i class="icon-tag icon-large"></i>ecriture
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/ingenierie.html">
+        <i class="icon-tag icon-large"></i>ingenierie
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/industrie.html">
+        <i class="icon-tag icon-large"></i>industrie
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel.html">
+        <i class="icon-tag icon-large"></i>logiciel
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/adn.html">
+        <i class="icon-tag icon-large"></i>adn
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/programmation.html">
+        <i class="icon-tag icon-large"></i>programmation
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/narkanta.html">
+        <i class="icon-tag icon-large"></i>narkanta
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/prophete.html">
+        <i class="icon-tag icon-large"></i>prophète
+    </a>
+</li>
+<li class="tag-4">
+    <a href="/tag/bureau.html">
+        <i class="icon-tag icon-large"></i>bureau
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/religion.html">
+        <i class="icon-tag icon-large"></i>religion
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/bretagne.html">
+        <i class="icon-tag icon-large"></i>bretagne
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/nucleaire.html">
+        <i class="icon-tag icon-large"></i>nucléaire
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/entreprise.html">
+        <i class="icon-tag icon-large"></i>entreprise
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>Copyright 2021 by Anthony Le Goff and licensed under a <a rel="license"
+  href="http://creativecommons.org/licenses/by/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+  Creative Commons Attribution 4.0 International License</a></p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
