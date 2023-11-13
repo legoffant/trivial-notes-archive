@@ -21,6 +21,8 @@ J'en ai eu pour 67€ en e-cigarette et 2x e-liquide. J'ai acheté chez [vapoteu
 
 Pour l'e-liquide j'ai pris [E-LIQUIDE CLASSIC N°1 CBD MARIE JEANNE Tbc Blond](https://mariejeanne-cbd.com/fr/e-liquides-cbd/19-96-e-liquide-classic-n1.html#/dosage,300mg-30mg-ml), une marque française avec un dosage moyen à 300mg. Ce qui fait que c'est un peu cher. un e-liquide normal cout 5€. Ici on monte à 15€. Donc j'espère que c'est de la qualité et que c'est agréable à fumer.
 
+J'ai également acheté des résistances calibrés pour utiliser à 15W spécifique au CBD. [GTX Mesh COIL à 11€](https://www.amazon.fr/dp/B088ZYC166?psc=1&smid=A3GAYFTOXYIW66&ref_=chk_typ_imgToDp)
+
 ![target 80](images/target80.png)
 
 ---
