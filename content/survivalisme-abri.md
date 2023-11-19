@@ -23,7 +23,7 @@ Il faudra protéger votre trou que vous avez creuser et créer une fermeture, vo
 
 Il faut un minimum d'équipement que tout survivaliste doit avoir:
 
-* [1 Pelle / hache pliable de survie militaire - 48€](https://fr.aliexpress.com/item/1005005069808923.html?)
+* [1 Pelle / hache pliable de survie militaire - 68€](https://fr.aliexpress.com/item/1005001311282102.html?)
 * [De la ficelle pour assembler les branches en jute - 4€](https://www.amazon.fr/cordeline-Jardinage-Bricolage-activit%C3%A9s-BJN100/dp/B09Z36L23W/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=21RKXA52RJB6A&keywords=ficelle+jute&qid=1700356885&sprefix=ficelle+jute%2Caps%2C97&sr=8-5)
 * [Une Tarp comme tissus de protection - 48€](https://www.amazon.fr/Unigear-Anti-Pluie-Imperm%C3%A9able-Randonn%C3%A9e-Protection/dp/B07M76YN4D/ref=sr_1_14?keywords=tarp%2Bsurvie&qid=1700356753&sr=8-14&th=1)
 * [Des couvertures de survie (isolant thermique supplémentaire) - 8€ x3](https://www.amazon.fr/Couverture-210%C3%97160cm-R%C3%A9utilisable-Thermique-lext%C3%A9rieur/dp/B0B2W8QMMT/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1430WMTU8IB6J&keywords=couverture%2Bde%2Bsurvie&qid=1700356935&sprefix=couverture%2Bde%2Bsurvie%2Caps%2C104&sr=8-5&th=1)
