@@ -10,7 +10,8 @@ Alors je suis pas serein en tant que radin sur ma consommation pour vapoter. Je 
 Donc j'ai cherché à réduire cela, et j'ai trouvé quelques solutions pour retomber sur un budget à 30€ par mois.
 
 1. Vapoter du [Bio France Blond M à 2,99€ x10 fiole de 10ML](https://www.levapoteur-discount.fr/e-liquide-bio-france/1948-e-liquide-blond-m-bio-france)
-2. Vapoter du [CBDVORE Skunk à 11,94€ fiole de 50ML](https://www.cdiscount.com/au-quotidien/articles-fumeur/e-liquide-cbdvore-cbd-skunk-50ml-300mg/f-127120505-auc0754932995667.html)
+2. Vapoter du [Tribeca Halo à 14,43€ x4 fiole de 50ML](https://www.levapoteur-discount.fr/e-liquide-halo/1364-e-liquide-tribeca-50-ml-halo)
+3. Vapoter du [CBDVORE Skunk à 11,94€ fiole de 50ML](https://www.cdiscount.com/au-quotidien/articles-fumeur/e-liquide-cbdvore-cbd-skunk-50ml-300mg/f-127120505-auc0754932995667.html)
 
 Donc je viens de changer de marque et je vais tester CBDVORE. Avec le petit Koala en logo. Tant pis pour Mariejeanne. 
 
