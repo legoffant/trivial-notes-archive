@@ -53,6 +53,8 @@ Dans une maison low-tech voila se que l'on peut intégré:
 * un compost bokashi
 * un garde-manger
 
-De ce fait, il est conseillé pour plus d'autonomie d'avoir son potager et de cultiver des parcelles de terre, cela n'est pas négligeable tel que l'optique du survivalisme. Personnellement pour des questions de rendement, je préfère la culture aquaponique et verticale. J'ai mes avis sur l'agriculture et les modes urbaines ou la terre est limité avec de faible parcelle. Dans ma famille, on à encore 3 hectares, héritage car nous sommes des paysans à l'origine. Ma grand-mère et mon grand-père avait une ferme et vivait en pleine campagne, le bourg le plus proche est à 6km.  
+De ce fait, il est conseillé pour plus d'autonomie d'avoir son potager et de cultiver des parcelles de terre, cela n'est pas négligeable tel que l'optique du survivalisme. Personnellement pour des questions de rendement, je préfère la culture aquaponique et verticale. J'ai mes avis sur l'agriculture et les modes urbaines ou la terre est limité avec de faible parcelle. Dans ma famille, on à encore 3 hectares, héritage car nous sommes des paysans à l'origine. Ma grand-mère et mon grand-père avait une ferme et vivait en pleine campagne, le bourg le plus proche est à 6km. 
+
+Mes processeurs à ADN, mes recherches en biohacking sont dans une optique low-tech de faire conserver et transmuter de l'ADN pour le clonage et donc rendre accessible au plus grand nombre l'immortalité, qui n'est pas juste une lubbie de millionnaire avec le transhumanisme.
 
 Le Low-Tech est à la mode car cela attire son aspect communautaire, la réparabilité et la durabilité, c'est un pied de nez contre la société de consommation et donc le capitalisme.
