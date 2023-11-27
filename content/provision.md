@@ -7,6 +7,7 @@ Summary:
 
 Dans mon projet DOOM de survivalisme j'ai commencé à faire des provisions, mais cela cout cher et j'ai étalé sur des mois mes achats en fonction des priorités. On va faire le point de mes réserves et ou j'en suis dans mes stocks.
 
+* Riz 15kgs
 * Boite de sardine 42
 * Mayonnaise 2 pots
 * Barre de cérale 5 boites
