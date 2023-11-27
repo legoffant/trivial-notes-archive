@@ -38,7 +38,7 @@ Il me manque donc:
 * 12 L d'eau de source
 
 EXTRA: [24 Ration BP-ER à voir. 109€](https://www.amazon.fr/Ration-DUrgence-Nourriture-Consomm%C3%A9e-Imm%C3%A9diatement/dp/B087C2CCJV/ref=sr_1_8_mod_primary_new?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=F4JVK2FTWQZR&keywords=nrg-5&qid=1701080543&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=nrg-5%2Caps%2C144&sr=8-8).
-Egalement carton de [nouille chinoise Yum Yum x 30 à 17€](https://www.lecarreasiatique.com/carton-de-30-nouilles-yum-yum-japanese-chicken-60g-c2x31478134)
+Egalement carton de [nouille chinoise Yum Yum x 30 à 26€](https://www.amazon.fr/Carton-Soupes-Nouilles-Yum-Curry/dp/B00555Y30I)
 
 Il me faut encore 2-3 mois pour étaler de tel dépense en alimentaire, les sardines cout cher plus particulièrement, c'est un aliment premium.
 
