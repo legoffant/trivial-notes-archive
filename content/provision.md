@@ -31,6 +31,7 @@ Il me manque donc:
 * Barre de céréale 5 boites
 * Muesli 7kg
 * Lait en poudre 1200gr (12L)
+* Semoule 1kg
 * Sel 3
 * Kube Or 3
 * Sachets de soupe 20
