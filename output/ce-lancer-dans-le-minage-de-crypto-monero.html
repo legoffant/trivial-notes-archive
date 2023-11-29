@@ -147,7 +147,7 @@
 <span class="label">Tags</span>
 	<a href="/tag/crypto.html"><i class="icon-tag"></i>crypto</a>
 </footer><!-- /.post-info -->                </div>
-                <p>Monero fait parti des meilleurs cryptomonnaie à miner car elle est résistante au minage ASIC. Nous alons donc voir comment mettre en place un serveur de minage de cette cryptomonnaie. Sachez qu'il est difficile de faire du profit, il faut des fermes de serveur informatique et investir au moins 10 000 à 20 000 euros avec les meilleurs cartes GPU du marché pour avoir les meilleurs taux de hashage. </p>
+                <p>Monero fait parti des meilleurs cryptomonnaie à miner car elle est résistante au minage ASIC. Nous allons donc voir comment mettre en place un serveur de minage de cette cryptomonnaie. Sachez qu'il est difficile de faire du profit, il faut des fermes de serveur informatique et investir au moins 10 000 à 20 000 euros avec les meilleurs cartes GPU du marché pour avoir les meilleurs taux de hashage. </p>
 <p>Je vais déployer une machine virtuelle sur Proxmox conçu pour le minage. Sa capacité n'est pas conséquente avec 4 cores de processeur dédié j'atteinds 396 H/s. Ce qui utilise mon processeur un AMD ryzen 5600G à 33% de sa charge.</p>
 <p>Pour obtenir des stats sur le Pool de minage que nous allons rejoindre, veuillez vous référez à l'adresse: <a href="https://moneroocean.stream/">https://moneroocean.stream/</a> et désactiver les adblockers ou anti-scripts. Vous pourrez voir des stats sur votre addresse Monero. Il faudra penser à changer le XMR Threshold à 0,003 dans le setting de votre adresse Monero.</p>
 <p>Nous allons utiliser le logiciel <a href="https://xmrig.com/">xmrig</a> pour miner en CLI développé en C++ sur une machine en Ubuntu Server 22.04. </p>
@@ -223,7 +223,7 @@ $<span class="w"> </span>make<span class="w"> </span>-j<span class="k">$(</span>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/bash</span>
 
 <span class="nb">set</span><span class="w"> </span>-m
-/trivial/xmrig/build/./xmrig<span class="w"> </span><span class="p">&amp;</span>
+nohup<span class="w"> </span>/trivial/xmrig/build/./xmrig<span class="w"> </span><span class="p">&amp;</span>
 </code></pre></div>
 
 <p>On le rend executable</p>
@@ -307,118 +307,8 @@ $<span class="w"> </span>make<span class="w"> </span>-j<span class="k">$(</span>
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 <li class="tag-2">
-    <a href="/tag/ruby.html">
-        <i class="icon-tag icon-large"></i>ruby
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/capsule.html">
-        <i class="icon-tag icon-large"></i>capsule
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/logiciel.html">
-        <i class="icon-tag icon-large"></i>logiciel
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/qasari.html">
-        <i class="icon-tag icon-large"></i>qasari
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/freelance.html">
-        <i class="icon-tag icon-large"></i>freelance
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/islam.html">
-        <i class="icon-tag icon-large"></i>islam
-    </a>
-</li>
-<li class="tag-4">
-    <a href="/tag/blog.html">
-        <i class="icon-tag icon-large"></i>blog
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/sf.html">
-        <i class="icon-tag icon-large"></i>SF
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/sysadmin.html">
-        <i class="icon-tag icon-large"></i>SysAdmin
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/logiciel-libre.html">
-        <i class="icon-tag icon-large"></i>logiciel libre
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/laptop.html">
-        <i class="icon-tag icon-large"></i>laptop
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/trekking.html">
-        <i class="icon-tag icon-large"></i>trekking
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/innovation.html">
-        <i class="icon-tag icon-large"></i>innovation
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/entreprise.html">
-        <i class="icon-tag icon-large"></i>entreprise
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/langage.html">
-        <i class="icon-tag icon-large"></i>langage
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/survivalisme.html">
-        <i class="icon-tag icon-large"></i>survivalisme
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/mines.html">
-        <i class="icon-tag icon-large"></i>mines
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/religion.html">
-        <i class="icon-tag icon-large"></i>religion
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/ecriture.html">
-        <i class="icon-tag icon-large"></i>ecriture
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/narkantisme.html">
-        <i class="icon-tag icon-large"></i>narkantisme
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/nucleaire.html">
-        <i class="icon-tag icon-large"></i>nucléaire
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/serveur.html">
-        <i class="icon-tag icon-large"></i>serveur
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/narkanta.html">
-        <i class="icon-tag icon-large"></i>narkanta
+    <a href="/tag/trek.html">
+        <i class="icon-tag icon-large"></i>trek
     </a>
 </li>
 <li class="tag-1">
@@ -427,68 +317,38 @@ $<span class="w"> </span>make<span class="w"> </span>-j<span class="k">$(</span>
     </a>
 </li>
 <li class="tag-2">
-    <a href="/tag/programmation.html">
-        <i class="icon-tag icon-large"></i>programmation
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/c.html">
-        <i class="icon-tag icon-large"></i>c++
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/linux.html">
-        <i class="icon-tag icon-large"></i>Linux
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/informatique.html">
-        <i class="icon-tag icon-large"></i>informatique
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/communisme.html">
-        <i class="icon-tag icon-large"></i>communisme
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/arch.html">
-        <i class="icon-tag icon-large"></i>arch
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/hacking.html">
-        <i class="icon-tag icon-large"></i>hacking
-    </a>
-</li>
-<li class="tag-3">
-    <a href="/tag/bretagne.html">
-        <i class="icon-tag icon-large"></i>bretagne
+    <a href="/tag/qasari.html">
+        <i class="icon-tag icon-large"></i>qasari
     </a>
 </li>
 <li class="tag-4">
-    <a href="/tag/cyber.html">
-        <i class="icon-tag icon-large"></i>cyber
+    <a href="/tag/blog.html">
+        <i class="icon-tag icon-large"></i>blog
     </a>
 </li>
 <li class="tag-2">
-    <a href="/tag/hacker.html">
-        <i class="icon-tag icon-large"></i>hacker
-    </a>
-</li>
-<li class="tag-1">
-    <a href="/tag/va.html">
-        <i class="icon-tag icon-large"></i>VA
-    </a>
-</li>
-<li class="tag-2">
-    <a href="/tag/processeur.html">
-        <i class="icon-tag icon-large"></i>processeur
+    <a href="/tag/logiciel.html">
+        <i class="icon-tag icon-large"></i>logiciel
     </a>
 </li>
 <li class="tag-2">
     <a href="/tag/industrie.html">
         <i class="icon-tag icon-large"></i>industrie
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/religion.html">
+        <i class="icon-tag icon-large"></i>religion
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/islam.html">
+        <i class="icon-tag icon-large"></i>islam
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/adn.html">
+        <i class="icon-tag icon-large"></i>adn
     </a>
 </li>
 <li class="tag-2">
@@ -497,13 +357,123 @@ $<span class="w"> </span>make<span class="w"> </span>-j<span class="k">$(</span>
     </a>
 </li>
 <li class="tag-2">
-    <a href="/tag/trek.html">
-        <i class="icon-tag icon-large"></i>trek
+    <a href="/tag/ruby.html">
+        <i class="icon-tag icon-large"></i>ruby
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/hacking.html">
+        <i class="icon-tag icon-large"></i>hacking
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/processeur.html">
+        <i class="icon-tag icon-large"></i>processeur
     </a>
 </li>
 <li class="tag-4">
-    <a href="/tag/cbd.html">
-        <i class="icon-tag icon-large"></i>CBD
+    <a href="/tag/thinkpad.html">
+        <i class="icon-tag icon-large"></i>thinkpad
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/programmation.html">
+        <i class="icon-tag icon-large"></i>programmation
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/survivalisme.html">
+        <i class="icon-tag icon-large"></i>survivalisme
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/trekking.html">
+        <i class="icon-tag icon-large"></i>trekking
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/entreprise.html">
+        <i class="icon-tag icon-large"></i>entreprise
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/nucleaire.html">
+        <i class="icon-tag icon-large"></i>nucléaire
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/informatique.html">
+        <i class="icon-tag icon-large"></i>informatique
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/sysadmin.html">
+        <i class="icon-tag icon-large"></i>SysAdmin
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/c.html">
+        <i class="icon-tag icon-large"></i>c++
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/capsule.html">
+        <i class="icon-tag icon-large"></i>capsule
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/narkantisme.html">
+        <i class="icon-tag icon-large"></i>narkantisme
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/hacker.html">
+        <i class="icon-tag icon-large"></i>hacker
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/bretagne.html">
+        <i class="icon-tag icon-large"></i>bretagne
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/ecriture.html">
+        <i class="icon-tag icon-large"></i>ecriture
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/communisme.html">
+        <i class="icon-tag icon-large"></i>communisme
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/narkanta.html">
+        <i class="icon-tag icon-large"></i>narkanta
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/laptop.html">
+        <i class="icon-tag icon-large"></i>laptop
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/freelance.html">
+        <i class="icon-tag icon-large"></i>freelance
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/serveur.html">
+        <i class="icon-tag icon-large"></i>serveur
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/mines.html">
+        <i class="icon-tag icon-large"></i>mines
+    </a>
+</li>
+<li class="tag-1">
+    <a href="/tag/va.html">
+        <i class="icon-tag icon-large"></i>VA
     </a>
 </li>
 <li class="tag-1">
@@ -511,9 +481,29 @@ $<span class="w"> </span>make<span class="w"> </span>-j<span class="k">$(</span>
         <i class="icon-tag icon-large"></i>ingenierie
     </a>
 </li>
+<li class="tag-4">
+    <a href="/tag/cyber.html">
+        <i class="icon-tag icon-large"></i>cyber
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/logiciel-libre.html">
+        <i class="icon-tag icon-large"></i>logiciel libre
+    </a>
+</li>
+<li class="tag-3">
+    <a href="/tag/langage.html">
+        <i class="icon-tag icon-large"></i>langage
+    </a>
+</li>
 <li class="tag-1">
-    <a href="/tag/adn.html">
-        <i class="icon-tag icon-large"></i>adn
+    <a href="/tag/linux.html">
+        <i class="icon-tag icon-large"></i>Linux
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/innovation.html">
+        <i class="icon-tag icon-large"></i>innovation
     </a>
 </li>
 <li class="tag-1">
@@ -521,9 +511,19 @@ $<span class="w"> </span>make<span class="w"> </span>-j<span class="k">$(</span>
         <i class="icon-tag icon-large"></i>livre
     </a>
 </li>
+<li class="tag-2">
+    <a href="/tag/arch.html">
+        <i class="icon-tag icon-large"></i>arch
+    </a>
+</li>
 <li class="tag-4">
-    <a href="/tag/thinkpad.html">
-        <i class="icon-tag icon-large"></i>thinkpad
+    <a href="/tag/cbd.html">
+        <i class="icon-tag icon-large"></i>CBD
+    </a>
+</li>
+<li class="tag-2">
+    <a href="/tag/sf.html">
+        <i class="icon-tag icon-large"></i>SF
     </a>
 </li>
 
