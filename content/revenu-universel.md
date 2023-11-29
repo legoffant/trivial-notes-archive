@@ -20,4 +20,4 @@ Pourquoi personne n'y a encore penser? Pourquoi les politiques ne font rien dans
 Mon coup de gueule contre les cryptomonnaie qui tourne autour du pot ou même les pouvoirs publics.
 
 
-C'est ma conclusion en minant du Monero, accessible à chacun, en mettant en place un puissance d'une machine virtuelle à un taux de 225 H/s, je produit que 0,0298 XMR soit 4,53€ par mois. Qui fixe le cour de la monnaie et sa valeur marchande, cela m'indigne complètement.
+C'est ma conclusion en minant du Monero, accessible à chacun, en mettant en place un puissance d'une machine virtuelle à un taux de 656 H/s, je produit que 0,0862 XMR soit 13,09€ par mois. Qui fixe le cour de la monnaie et sa valeur marchande, cela m'indigne complètement.
