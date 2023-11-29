@@ -5,7 +5,7 @@ Tags:crypto
 Authors: Anthony Le Goff
 Summary:
 
-Monero fait parti des meilleurs cryptomonnaie à miner car elle est résistante au minage ASIC. Nous alons donc voir comment mettre en place un serveur de minage de cette cryptomonnaie. Sachez qu'il est difficile de faire du profit, il faut des fermes de serveur informatique et investir au moins 10 000 à 20 000 euros avec les meilleurs cartes GPU du marché pour avoir les meilleurs taux de hashage. 
+Monero fait parti des meilleurs cryptomonnaie à miner car elle est résistante au minage ASIC. Nous allons donc voir comment mettre en place un serveur de minage de cette cryptomonnaie. Sachez qu'il est difficile de faire du profit, il faut des fermes de serveur informatique et investir au moins 10 000 à 20 000 euros avec les meilleurs cartes GPU du marché pour avoir les meilleurs taux de hashage. 
 
 Je vais déployer une machine virtuelle sur Proxmox conçu pour le minage. Sa capacité n'est pas conséquente avec 4 cores de processeur dédié j'atteinds 396 H/s. Ce qui utilise mon processeur un AMD ryzen 5600G à 33% de sa charge.
 
@@ -105,7 +105,7 @@ Script `startup-xmrig.sh`
 #!/usr/bin/bash
 
 set -m
-/trivial/xmrig/build/./xmrig &
+nohup /trivial/xmrig/build/./xmrig &
 ```
 
 On le rend executable

@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-11-28T06:34:00+01:00</updated><entry><title>Curation sur le survialisme</title><link href="/curation-sur-le-survialisme.html" rel="alternate"></link><published>2023-11-28T06:34:00+01:00</published><updated>2023-11-28T06:34:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-11-28:/curation-sur-le-survialisme.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Quelques liens de bon site sur le survivalisme:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Trivial notes</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2023-11-29T08:37:00+01:00</updated><entry><title>Ce lancer dans le minage de crypto Monero</title><link href="/ce-lancer-dans-le-minage-de-crypto-monero.html" rel="alternate"></link><published>2023-11-29T08:37:00+01:00</published><updated>2023-11-29T08:37:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-11-29:/ce-lancer-dans-le-minage-de-crypto-monero.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Monero fait parti des meilleurs cryptomonnaie à miner car elle est résistante au minage ASIC. Nous alons donc voir comment mettre en place un serveur de minage de cette cryptomonnaie. Sachez qu'il est difficile de faire du profit, il faut des fermes de serveur informatique et investir au moins 10 000 à 20 000 euros avec les meilleurs cartes GPU du marché pour avoir les meilleurs taux de hashage. &lt;/p&gt;
+&lt;p&gt;Je vais déployer une machine virtuelle sur Proxmox conçu pour le minage. Sa capacité n'est pas conséquente avec 4 cores de processeur dédié j'atteinds 396 H/s. Ce qui utilise mon processeur un AMD ryzen 5600G à 33% de sa charge.&lt;/p&gt;
+&lt;p&gt;Pour obtenir des stats sur le Pool de minage que nous allons rejoindre, veuillez vous référez à l'adresse: &lt;a href="https://moneroocean.stream/"&gt;https://moneroocean.stream/&lt;/a&gt; et désactiver les adblockers ou anti-scripts. Vous pourrez voir des stats sur votre addresse Monero. Il faudra penser à changer le XMR Threshold à 0,003 dans le setting de votre adresse Monero.&lt;/p&gt;
+&lt;p&gt;Nous allons utiliser le logiciel &lt;a href="https://xmrig.com/"&gt;xmrig&lt;/a&gt; pour miner en CLI développé en C++ sur une machine en Ubuntu Server 22.04. &lt;/p&gt;
+&lt;h3&gt;I. Récupérer un wallet et des adresses Monero&lt;/h3&gt;
+&lt;p&gt;Nous allons utiliser le &lt;a href="https://featherwallet.org/"&gt;wallet Feather&lt;/a&gt; qui est sur les distributions Linux comme Arch dans les dépots. Vous pouvez le configurer en lançant la commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;yay&lt;span class="w"&gt; &lt;/span&gt;-S&lt;span class="w"&gt; &lt;/span&gt;monero-feather-git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Il va installer le réseau Tor dont il a besoin pour utiliser et se synchroniser. Si le Wallet à des problèmes pour synchroniser et à un status "déconnecté", il peut y avoir un problème de permission dans le fichier de configuration de &lt;code&gt;Tor&lt;/code&gt;. Lançer en manuel alors:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;tor
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Vous trouverez vos adresses Monero dans l'onglet "Receive" que l'on va copier pour la configuration de xmrig.&lt;/p&gt;
+&lt;h3&gt;II. Installation de xmrig&lt;/h3&gt;
+&lt;p&gt;Pour commencer nous allons utiliser la dernière version LTS d'Ubuntu Server 22.04. Une fois installer dans une machine virtuelle, nous lançons les commandes de mise à jour et d'installation des dépendances ainsi que xmrig.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;apt&lt;span class="w"&gt; &lt;/span&gt;update&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;apt&lt;span class="w"&gt; &lt;/span&gt;upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On reboot le serveur&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;reboot&lt;span class="w"&gt; &lt;/span&gt;now
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On lance l'installation des dépendances&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;apt-get&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;build-essential&lt;span class="w"&gt; &lt;/span&gt;cmake&lt;span class="w"&gt; &lt;/span&gt;automake&lt;span class="w"&gt; &lt;/span&gt;libtool&lt;span class="w"&gt; &lt;/span&gt;autoconf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On git clone le repo de xmrig dans home de l'user, dans mon cas "Trivial" &lt;code&gt;~&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;https://github.com/xmrig/xmrig.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On créé un dossier &lt;code&gt;build&lt;/code&gt; et navigue dans les scripts&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;xmrig/build&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;xmrig/scripts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On lance l'installation des scripts et navigue dans le dossier build après&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;./build_deps.sh&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;../build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Installation de xmrig en lançant make&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;cmake&lt;span class="w"&gt; &lt;/span&gt;..&lt;span class="w"&gt; &lt;/span&gt;-DXMRIG_DEPS&lt;span class="o"&gt;=&lt;/span&gt;scripts/deps
+$&lt;span class="w"&gt; &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;-j&lt;span class="k"&gt;$(&lt;/span&gt;nproc&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Fichier de configuration&lt;/h3&gt;
+&lt;p&gt;Vous pouvez créer un fichier de configuration avec le wizard à cette addresse: &lt;a href="https://xmrig.com/wizard"&gt;https://xmrig.com/wizard&lt;/a&gt;. Puis copiez-collez dans un fichier &lt;code&gt;config.json&lt;/code&gt; dans le dossier build.&lt;/p&gt;
+&lt;p&gt;Mon propre fichier de configuration:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;autosave&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;cpu&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;opencl&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;cuda&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;pools&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;url&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;gulf.moneroocean.stream:10128&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;user&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;monero wallet&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;pass&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;x&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;tls&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;keepalive&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;            &lt;/span&gt;&lt;span class="nt"&gt;&amp;quot;nicehash&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans ce fichier on configure le Pool, l'utilisation du CPU/GPU, l'addresse du wallet, TLS etc... Pour le password "x" signifie sans mot de passe.&lt;/p&gt;
+&lt;h3&gt;Lancer le programme&lt;/h3&gt;
+&lt;p&gt;Pour lancer le programme, toujours dans le dossier build par la commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;./xmrig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Nous allons configurer automatiquement le démarrage au boot de la machine virtuelle et en background avec un script bash&lt;/p&gt;
+&lt;p&gt;Script &lt;code&gt;startup-xmrig.sh&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/bash&lt;/span&gt;
+
+&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-m
+/trivial/xmrig/build/./xmrig&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On le rend executable&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;sudo&lt;span class="w"&gt; &lt;/span&gt;chmod&lt;span class="w"&gt; &lt;/span&gt;+x&lt;span class="w"&gt; &lt;/span&gt;startup-xmrig.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Configuration d'une tache cron&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$&lt;span class="w"&gt; &lt;/span&gt;crontab&lt;span class="w"&gt; &lt;/span&gt;-e
+
+@reboot&lt;span class="w"&gt; &lt;/span&gt;bash&lt;span class="w"&gt; &lt;/span&gt;/trivial/startup-xmrig.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Inclassable"></category><category term="crypto"></category></entry><entry><title>Curation sur le survialisme</title><link href="/curation-sur-le-survialisme.html" rel="alternate"></link><published>2023-11-28T06:34:00+01:00</published><updated>2023-11-28T06:34:00+01:00</updated><author><name>Anthony Le Goff</name></author><id>tag:None,2023-11-28:/curation-sur-le-survialisme.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Quelques liens de bon site sur le survivalisme:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.survivre.com/"&gt;https://www.survivre.com/&lt;/a&gt; - Spécialiste du materiel de survie&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://espritsurvivaliste.com/"&gt;https://espritsurvivaliste.com/&lt;/a&gt; - Offre des informations sur la survie&lt;/li&gt;
