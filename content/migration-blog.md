@@ -5,6 +5,8 @@ Tags:blog
 Authors: Anthony Le Goff
 Summary:
 
+**MAJ du 1 Decembre 2023**, plus que 7 jours avant migration, vous pouvez déjà allez sur la nouvelle adresse.
+
 ### AVERTISSEMENT
 
 Le Blog Trivial Notes va changer. Je vais quitter Github Pages ou il est hébergé pour basculer sur une solution en auto-hébergé. Pour plusieurs raison je quitte Microsoft.
