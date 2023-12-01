@@ -1,5 +1,5 @@
 Title:AVERTISSEMENT: migration du blog 
-Date: 2023-11-06 13:46
+Date: 2023-12-01 06:49
 Category:Inclassable
 Tags:blog
 Authors: Anthony Le Goff
