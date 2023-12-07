@@ -1,9 +1,11 @@
 Title:AVERTISSEMENT: migration du blog 
-Date: 2023-12-01 06:49
+Date: 2023-12-07 19:45
 Category:Inclassable
 Tags:blog
 Authors: Anthony Le Goff
 Summary:
+
+**MAJ du 7 decembre 2023**, Demain dans 24h ce blog va basculer entièrement sur [https://blog.kor51.org](https://blog.kor51.org)
 
 **MAJ du 1 Decembre 2023**, plus que 7 jours avant migration, vous pouvez déjà allez sur la nouvelle adresse.
 
